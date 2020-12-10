@@ -260,6 +260,22 @@ function wikiLink(newUrl, event) {
 } 
 
 function createOccurrenceLi(occurrence, occurrenceParent, occurrenceValue, newUl, n, myFrames, myList) {	//occurrenceValue è instance nella funzione precedente
+	//se newUl.childNodes[0].nodeValue è in uppercase, ma occurrenceValue non lo è, allora metti in minuscolo newUl.childNodes[0].nodeValue, tranne la prima lettera:
+	var ulTextNode = newUl.childNodes[0].nodeValue;
+	if (ulTextNode === ulTextNode.toUpperCase() && occurrenceValue !== occurrenceValue.toUpperCase()) {
+		if (/\s/g.test(ulTextNode)) {
+			var words = ulTextNode.split(' ');  
+	    	var CapitalizedWords = [];  
+	    	words.forEach(element => {  
+	        	CapitalizedWords.push(element[0].toUpperCase() + element.slice(1, element.length).toLowerCase());  
+	    	});  
+	    	newUlTextNode = CapitalizedWords.join(' ');  
+    	}
+    	else {newUlTextNode = ulTextNode[0].toUpperCase()+ulTextNode.slice(1).toLowerCase()} //codice ale per maiuscola uppercase in una parola singola e resto lowercase
+    	newUl.childNodes[0].nodeValue = newUlTextNode;
+	}
+
+
 	var occurrenceLi = document.createElement('li');
 
 	//recuperare il parent per scriverlo in instanceNode come punto di riferimento per l'user
