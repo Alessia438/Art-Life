@@ -41,6 +41,7 @@ border-bottom: 10px solid black;
 section img{
   position: relative;
   top: 50px;
+  padding-top:1.5em;
 }
 
 body{
@@ -66,7 +67,7 @@ p{
   font-size: 14pt;
   font-weight: lighter;
   text-align: justify;
-  margin-right: 20mm; /*secondo Tscihold*/
+  margin-right: 20mm; /* vW? secondo Tscihold*/
   margin-left: 20mm;
   line-height: 21pt;
  /* text-indent: 3em; */
@@ -81,6 +82,7 @@ img{
   filter: grayscale(100%) contrast(80%) saturate(60%);
 }
 p a{text-decoration: none;}
+p a:link{color: black;}
 /*
 #bottom{
   bottom: 0px;
