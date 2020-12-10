@@ -116,11 +116,6 @@ q, blockquote{
   font-style:lowercase;
 }
 
-
-
-p:first-of-type {
-  text-indent: inherit;
-}
 figcaption{font-family: "Bauhaus 93";}
 
 img{
