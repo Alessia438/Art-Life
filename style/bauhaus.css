@@ -66,7 +66,7 @@ figcaption{font-family: "Bauhaus 93";}
 
 img{
   width: 60%;
-  filter: grayscale(100%) contrast(70%) saturate(80%);
+  filter: grayscale(100%) contrast(100%) saturate(80%);
 }
 /*
 #bottom{
