@@ -30,7 +30,7 @@ p{text-align: justify;}
 /* stile per articoli*/
 
 body{
-  background-image: url('../style/sfondo_beige.jpg');
+  background-image: url('sfondo_beige.jpg');
   /*font-family: "Bayer Sans"; */
 }
 
