@@ -40,8 +40,8 @@ h3{font-family: "Bauhaus 93";}
 p{font-family: "P22 Bayer Universal Regular";}
 figcaption{font-family: "Bauhaus 93";}
 img{
-  width: 50%;
-  filter:saturate(0%) sepia(100%) contrast(100%) saturate(100%);
+  width: 60%;
+  filter:saturate(0%) grayscale(100%); contrast(100%) saturate(100%);
 }
 /*
 #bottom{
