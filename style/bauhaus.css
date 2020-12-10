@@ -91,14 +91,17 @@ h1{
   padding-left: 0.5em;
 }
 
-h2{font-family: "Bauhaus 93";}
+h2{
+  font-family: "Bauhaus 93";
+  font-size: 120%;}
+
 h3{font-family: "Bauhaus 93";}
 
 p{
   font-family: "P22 Bayer Universal Regular";
   font-size: 14pt;
   font-weight: lighter;
-  text-align: justify;
+  text-align: justify; /* or left? */
   margin-right: 20mm; /* vW? secondo Tscihold*/
   margin-left: 20mm;
   line-height: 1.6; /* 21pt;*/
@@ -111,6 +114,18 @@ q, blockquote{
   font-size: 14pt;
   font-weight: lighter;
   font-style:lowercase;
+}
+
+blockquote:not(p.blockquote){
+  margin-right: 20mm; /* vW? secondo Tscihold*/
+  margin-left: 20mm;
+  font-family: "P22 Bayer Universal Regular";
+  font-size: 14pt;
+  font-weight: lighter;
+  font-style:lowercase;
+  text-align: justify;
+  text-align-last: left;
+
 }
 
 figcaption{font-family: "Bauhaus 93";}
