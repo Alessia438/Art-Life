@@ -55,6 +55,7 @@ h1{
   font-style: bold;
   transform: rotate(-10deg);
   height: 50px;
+  position: static;
 }
 
 h2{font-family: "Bauhaus 93";}
@@ -71,7 +72,7 @@ p{
  /* text-indent: 3em; */
   text-align-last: left;
 }
-p:first-letter{color: #ff0000;}
+/* p:first-letter{color: #ff0000;} non mi serve più */
 
 figcaption{font-family: "Bauhaus 93";}
 
