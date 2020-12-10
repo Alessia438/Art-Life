@@ -40,37 +40,37 @@ border-bottom: 10px solid black;
 }
 
 section img{
-  position: relative;
-  top: 50px;
+ /* position: relative;
+  top: 50px; */
   padding-top:1.5em;
   padding-bottom:3.5em;
 }
 
 video{
-  width: 60%
+  width: 40%
   padding-top:1.5em;
   padding-bottom:3.5em;
 }
 
 p.byline{
-  position:relative;
+  /*position:relative;
   bottom: 75px;
-  left: 507px;
+  left: 507px;*/
   transform: rotate(-15deg);
 
 }
 
 p.publicationDate{
-  position:relative;
+  /*position:relative;
   bottom: 500px;
-  left: 600px;
+  left: 600px;*/
   transform: rotate(-15deg); 
 }
 
 p.subtitle{
   transform: rotate(90deg);
-  position: relative;
-  left: 30px;
+ /* position: relative;
+  left: 30px; */
 }
 
 body{
@@ -84,10 +84,9 @@ h1{
   font-size: 150%;  /* boh o large*/
   font-style: bold;
   transform: rotate(-15deg);
-  height: 50px;
-  
+  height: 30em;
   padding-top:3.5em;
-  padding-bottom:3.5em;
+  padding-bottom:4.5em;
   padding-left: 0.5em;
 }
 
