@@ -48,17 +48,23 @@ section img{
 
 p.byline{
   position:relative;
-  bottom: 90px;
-  left: 505px;
+  bottom: 75px;
+  left: 507px;
   transform: rotate(-15deg);
 
 }
 
 p.publicationDate{
   position:relative;
-  bottom: 100px;
-  left: 500px;
+  bottom: 500px;
+  left: 600px;
   transform: rotate(-15deg); 
+}
+
+p.subtitle{
+  transform: rotate(90deg);
+  position: relative;
+  left: 30px;
 }
 
 body{
