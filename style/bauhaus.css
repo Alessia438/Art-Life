@@ -127,7 +127,9 @@ blockquote:not(p.blockquote){
   text-align-last: left;
 
 }
-
+p:first-of-type {
+  text-indent: inherit;
+}
 figcaption{font-family: "Bauhaus 93";}
 
 img{
