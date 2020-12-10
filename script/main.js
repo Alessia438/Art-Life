@@ -7,6 +7,7 @@ function myFunction() {
     }
 
 function changeCSS(cssFile) {
+	location.reload();
     	for (var i = 0; i < document.getElementsByTagName("iframe").length; i++) {
 		if (i=== 1){cssFile='../'+cssFile;}
 		var frameHead = document.getElementsByTagName("iframe")[i].contentWindow.document.head,
