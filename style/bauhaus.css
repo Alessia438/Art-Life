@@ -40,7 +40,7 @@ border-bottom: 10px solid black;
 }
 section img{
   position: relative;
-  bottom: 800px;
+  top: 300px;
 }
 
 body{
