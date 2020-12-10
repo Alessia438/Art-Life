@@ -44,6 +44,13 @@ section img{
   padding-top:1.5em;
 }
 
+p.publicationDate{
+  position:relative;
+  bottom: 30px;
+  left: 50px;
+  transform: rotate(90deg); 
+}
+
 body{
   background-image: url('sfondo_beige.jpg');
   /*font-family: "Bayer Sans"; */
