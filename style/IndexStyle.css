@@ -701,8 +701,8 @@ function myFunction() {
   position: relative;
   height: 38.5em;
  /* padding-left: 15px;  per farci stare il bottone prevArticle */
-   /* flex: 0 0 70%;
-   max-width: 73%; */
+   /* flex: 0 0 70%; */
+  max-width: 73%;
   flex: 3 0px;
   order: 1;
   border-right: 2px solid;
@@ -715,8 +715,8 @@ function myFunction() {
   position: relative;
   height: 38.5em;
   overflow: scroll;  
-  /* flex: 0 0 28%; 
-  max-width: 26%;*/
+  /* flex: 0 0 28%; */
+  max-width: 26%;
   order: 2;
   border-left: 2px solid;
   border-bottom: 2px solid;
