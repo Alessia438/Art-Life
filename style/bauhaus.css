@@ -81,20 +81,20 @@ body{
 h1{
   font-family: "Bauhaus 93";
   text-decoration: underline;
-  font-size: 150%;  /* boh o large*/
+  font-size: larger;  /* boh o large*/
   font-style: bold;
   transform: rotate(-15deg);
-  height: 50px;
+  height: 80px;
   
   padding-top:3.5em;
-  padding-bottom:3.5em;
+  padding-bottom:4.5em;
   padding-left: 0.5em;
 }
 
 h2{font-family: "Bauhaus 93";}
 h3{font-family: "Bauhaus 93";}
 
-p{
+p, q{
   font-family: "P22 Bayer Universal Regular";
   font-size: 14pt;
   font-weight: lighter;
