@@ -39,7 +39,6 @@ section{
 border-bottom: 10px solid black;
 }
 section img{
-  position: relative;
   bottom: 50px;
 }
 
@@ -55,7 +54,6 @@ h1{
   font-style: bold;
   transform: rotate(-10deg);
   height: 50px;
-  position: static;
 }
 
 h2{font-family: "Bauhaus 93";}
@@ -64,7 +62,7 @@ h3{font-family: "Bauhaus 93";}
 p{
   font-family: "P22 Bayer Universal Regular";
   font-size: 14pt;
-  font-weight: bold;
+  font-weight: lighter;
   text-align: justify;
   margin-right: 20mm; /*secondo Tscihold*/
   margin-left: 20mm;
