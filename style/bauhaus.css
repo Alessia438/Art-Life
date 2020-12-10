@@ -116,17 +116,8 @@ q, blockquote{
   font-style:lowercase;
 }
 
-blockquote:not(p.blockquote){
-  margin-right: 20mm; /* vW? secondo Tscihold*/
-  margin-left: 20mm;
-  font-family: "P22 Bayer Universal Regular";
-  font-size: 14pt;
-  font-weight: lighter;
-  font-style:lowercase;
-  text-align: justify;
-  text-align-last: left;
 
-}
+
 p:first-of-type {
   text-indent: inherit;
 }
