@@ -39,12 +39,12 @@ section{ /* come faccio a dirgli solo dopo il primo voglio la riga? */
 border-bottom: 10px solid black;
 }
 
-section img{
- /* position: relative;
-  top: 50px; */
+/* section img{
+  position: relative;
+  top: 50px; 
   padding-top:1.5em;
   padding-bottom:3.5em;
-}
+}*/
 
 video{
   width: 40%
@@ -70,7 +70,7 @@ p.publicationDate{
 p.subtitle{
   transform: rotate(90deg);
  /* position: relative;
-  left: 30px; */
+  left: 30px;*/
 }
 
 body{
@@ -81,13 +81,13 @@ body{
 h1{
   font-family: "Bauhaus 93";
   text-decoration: underline;
-  font-size: 150%;  /* boh o large*/
+ /* font-size: 150%;   boh o large*/
   font-style: bold;
   transform: rotate(-15deg);
-  height: 30em;
+  height: 80em;
   padding-top:3.5em;
-  padding-bottom:4.5em;
-  padding-left: 0.5em;
+  padding-bottom:0.5em;
+  padding-left: 1em;
 }
 
 h2{font-family: "Bauhaus 93";}
