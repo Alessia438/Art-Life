@@ -57,6 +57,9 @@ h1{
   transform: rotate(-10deg);
   height: 50px;
   position: static;
+  padding-top:3.5em;
+  padding-bottom:3.5em;
+  padding-left: 0.5em;
 }
 
 h2{font-family: "Bauhaus 93";}
