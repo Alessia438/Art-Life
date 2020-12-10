@@ -1,6 +1,6 @@
 @font-face {
-  font-family: Bayer Sans;
-  src: url("bayer-sans.ttf");
+  font-family: P22 Bayer Universal Regular;
+  src: url("P22 Bayer Universal Regular.ttf");
   
 }
 @font-face {
@@ -37,7 +37,7 @@ body{
 h1{font-family: "Bauhaus 93";}
 h2{font-family: "Bauhaus 93";}
 h3{font-family: "Bauhaus 93";}
-p{font-family: "Bayer Sans";}
+p{font-family: "P22 Bayer Universal Regular";}
 figcaption{font-family: "Bauhaus 93";}
 img{
   width: 50%;
