@@ -507,14 +507,13 @@ border-right: 32px;
   margin-left: 0em;
   margin-right: 0em;  
   order: 3;
+  width: 100%;
 
   /* modifiche per tenere sotto il footer 
   position: absolute; 
   bottom: 0; /* togliendo bottom:0 viene su safari
   width: 100%;
-  height: 2.5rem;
-  /* per fissarlo sotto con FLEX --> BODY DISPLAY: FLEX;
-  flex-shrink: 0; */
+  height: 2.5rem; */
 }
 .footer a{text-decoration: none;}
 .footer a:link{color:white;}
@@ -663,27 +662,21 @@ function myFunction() {
 
 
 
+/* Medium screens --> #metadata below #content? */
+@media screen and (max-width: 799px) {
+  #flex-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* We tell all items to be 100% width, via flex-basis */
+  #flex-container > * {
+    flex: 1 100%;
+  }
 
-
-
-/* contenitore di #content e #metadata, se si aggiunge margine a uno dei due non stanno più allineati */
-#flex-container {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-between;
+  #metadata { order: 1; }
+  #content { order: 2; }
 }
-
-/* We tell all items to be 100% width, via flex-basis */
-#flex-container > * {
-  flex: 1 100%;
-}
-
-/* We rely on source order for mobile-first approach in this case:
- * 1. main (#content)
- * 2. aside (#metadata)
- * 3. footer
- */
 
 /* Medium screens
 @media all and (min-width: 600px) {
@@ -693,35 +686,46 @@ function myFunction() {
 */
 
 
-/* We invert order of first sidebar and main and tell the main element to take twice as much width as the other two sidebars */
+/* Smartphones? */
 
 
-/* @media (min-width: 768px) OPPURE @media all and (min-width: 800px) */
-#content {
-  position: relative;
-  height: 38.5em;
- /* padding-left: 15px;  per farci stare il bottone prevArticle */
-   /* flex: 0 0 70%; */
-  max-width: 73%;
-  flex: 3 0px;
-  order: 1;
-  border-right: 2px solid;
-  border-left: 2px solid;
-  margin-left: 0.05em;
-  border-bottom: 2px solid;
-}
+/* Large screens */
+@media all and (min-width: 800px) {
 
-#metadata {
-  position: relative;
-  height: 38.5em;
-  overflow: scroll;  
-  /* flex: 0 0 28%; */
-  max-width: 26%;
-  order: 2;
-  border-left: 2px solid;
-  border-bottom: 2px solid;
-  border-right: 2px solid;
-  margin-right: 0.05em;
+  #flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  #content {
+    position: relative;
+    height: 38.5em;
+    /* padding-left: 15px;  per farci stare il bottone prevArticle */
+    /* flex: 0 0 70%; */
+    width: 73%;
+    flex: 3 0px;
+    order: 1;
+    border-right: 2px solid;
+    border-left: 2px solid;
+    margin-left: 0.05em;
+    border-bottom: 2px solid;
+  }
+
+  #metadata {
+    position: relative;
+    height: 38.5em;
+    overflow: scroll;  
+    /* flex: 0 0 28%; */
+    width: 26%;
+    order: 2;
+    border-left: 2px solid;
+    border-bottom: 2px solid;
+    border-right: 2px solid;
+    margin-right: 0.05em;
+  }
+
 }
 
 
