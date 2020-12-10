@@ -94,7 +94,6 @@ h1{
 h2{
   font-family: "Bauhaus 93";
   font-size: 120%;}
-
 h3{font-family: "Bauhaus 93";}
 
 p{
@@ -114,6 +113,10 @@ q, blockquote{
   font-size: 14pt;
   font-weight: lighter;
   font-style:lowercase;
+}
+
+p.blockquote{
+  text-indent: 2em;
 }
 
 figcaption{font-family: "Bauhaus 93";}
