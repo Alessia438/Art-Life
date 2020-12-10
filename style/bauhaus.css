@@ -109,22 +109,16 @@ p{
   text-align-last: left;
 }
 /* p:first-letter{color: #ff0000;} non mi serve più */
-q{
+q, blockquote{
   font-family: "P22 Bayer Universal Regular";
   font-size: 14pt;
   font-weight: lighter;
   font-style:lowercase;
 }
 
-p blockquote{
-  font-family: "P22 Bayer Universal Regular";
-  font-size: 14pt;
-  font-weight: lighter;
-  font-style:lowercase;
-}
-
-blockquote{
-  text-indent: 2em;
+blockquote:not(p blockquote){
+  margin-right: 20mm; /* vW? secondo Tscihold*/
+  margin-left: 20mm;
 }
 
 figcaption{font-family: "Bauhaus 93";}
