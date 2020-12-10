@@ -35,9 +35,10 @@ span[onclick] {cursor:pointer;}
 
 /* stile del titolo con righe colorate e immagini quadrato, cerchio, triangolo*/
 
-section(0){
+section{ /* come faccio a dirgli solo dopo il primo voglio la riga? */
 border-bottom: 10px solid black;
 }
+
 section img{
   position: relative;
   top: 50px;
@@ -45,12 +46,13 @@ section img{
 }
 p.byline, p.subtitle{
   position: static;
+  top: 40px;
 }
 
 p.publicationDate{
   position:relative;
-  bottom: 30px;
-  left: 50px;
+  bottom: 20px;
+  left: 60px;
   transform: rotate(90deg); 
 }
 
