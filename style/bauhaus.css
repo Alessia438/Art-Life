@@ -28,10 +28,19 @@ body#cover{
 p{text-align: justify;}
 
 /* stile per articoli*/
+
+[onClick] {cursor:pointer;}
+span[onclick] {cursor:pointer;}
+[onclick]:hover {color: #ff0000;}
+
 /* stile del titolo con righe colorate e immagini quadrato, cerchio, triangolo*/
 
 section{
 border-bottom: 10px solid black;
+}
+section img{
+  position: relative;
+  bottom: 50px;
 }
 
 body{
@@ -45,6 +54,8 @@ h1{
   font-size: 150%;  /* boh o large*/
   font-style: bold;
   transform: rotate(-10deg);
+  height: 50px;
+  position: static;
 }
 
 h2{font-family: "Bauhaus 93";}
@@ -61,7 +72,7 @@ p{
  /* text-indent: 3em; */
   text-align-last: left;
 }
-p:first-word{color: #ff0000;}
+p:first-letter{color: #ff0000;}
 
 figcaption{font-family: "Bauhaus 93";}
 
