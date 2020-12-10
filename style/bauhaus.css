@@ -46,13 +46,13 @@ section img{
 }
 p.byline, p.subtitle{
   position: static;
-  top: 40px;
+  top: 50px;
 }
 
 p.publicationDate{
   position:relative;
   bottom: 20px;
-  left: 60px;
+  left: 80px;
   transform: rotate(90deg); 
 }
 
