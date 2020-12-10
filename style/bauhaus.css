@@ -4,39 +4,53 @@
   
 }
 @font-face {
-  font-family: 'Bauhaus 93';
+  font-family: "Bauhaus 93";
   src: url("bauhaus93.ttf"); 
 }
+
+/*
 h1, .byline{
-  font-family: 'Bauhaus 93';
+  font-family: "Bauhaus 93";
 }
+*/
 
 /* stile per cover page*/
-
+/*
 body#cover{
-	background-image: url('bauhaus_sfondo.jpg');
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	font-family: 'Bauhaus 93';
+  background-image: url('bauhaus_sfondo.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100%;
+  font-family: "Bauhaus 93";
+  font-weight:normal;
+  font-style:normal;
 }
 p{text-align: justify;}
 
+/* stile per articoli*/
+
 body{
-	background-image: 
-    linear-gradient(
-      rgba(255, 255, 240, 0.5), 
-      rgba(255, 255, 240, 0.5)
-    ),
-    url('bauhaus_sfondo.jpg');
-    font-family: Bayer Sans;
-    font-weight:normal;
-	font-style:normal;
-	margin-right: 20vW;
-	margin-left: 30vW;
-	margin-top: 20vW;
-	margin-bottom: 30vW;
+  background-image: url('sfondo_beige.jpg');
+  /*font-family: "Bayer Sans"; */
 }
-p:first-child:first-letter{
-	text-indent: 2em;
-	font-family: 'Bauhaus 93'
+
+h1{font-family: "Bauhaus 93";}
+h2{font-family: "Bauhaus 93";}
+h3{font-family: "Bauhaus 93";}
+p{font-family: "Bayer Sans";}
+figcaption{font-family: "Bauhaus 93";}
+img{
+  width: 50%;
+  filter:saturate(0%) sepia(100%) contrast(100%) saturate(100%);
 }
+#bottom{
+  bottom: 0px;
+}
+/*p:first-of-type:first-letter:not(.subtitle){
+  text-indent: 2em;
+  font-family: "Bayer Sans";
+}
+
+p.pubnote{text-transform: rotate(-90deg);}
+h1{font-family: "Bauhaus 93";}
+*/
