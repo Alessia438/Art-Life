@@ -43,16 +43,18 @@ section img{
   position: relative;
   top: 50px;
   padding-top:1.5em;
+  padding-bottom:3.5em;
 }
-p.byline, p.subtitle{
+
+/*p.byline, p.subtitle{
   position: static;
   top: 70px;
-}
+}*/
 
 p.publicationDate{
   position:relative;
-  bottom: 20px;
-  left: 95px;
+  bottom: 10px;
+  left: 105px;
   transform: rotate(90deg); 
 }
 
