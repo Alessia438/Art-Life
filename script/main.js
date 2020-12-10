@@ -1,4 +1,4 @@
-import { Octokit } from "https://cdn.skypack.dev/@octokit/core";
+//import { Octokit } from "https://cdn.skypack.dev/@octokit/core";
 
 function myFunction() {
 	var x = document.getElementById("myTopnav");

@@ -505,9 +505,12 @@ border-right: 32px;
   margin-top: 0em;  /* or 0em;  */
   margin-bottom: 0em;
   margin-left: 0em;
-  margin-right: 0em;  /* modifiche per tenere sotto il footer */
+  margin-right: 0em;  
+  order: 3;
+
+  /* modifiche per tenere sotto il footer 
   position: absolute; 
-  bottom: 0; /* togliendo bottom:0 viene su safari*/
+  bottom: 0; /* togliendo bottom:0 viene su safari
   width: 100%;
   height: 2.5rem;
   /* per fissarlo sotto con FLEX --> BODY DISPLAY: FLEX;
@@ -671,13 +674,37 @@ function myFunction() {
   justify-content: space-between;
 }
 
-/* @media (min-width: 768px) */
+/* We tell all items to be 100% width, via flex-basis */
+#flex-container > * {
+  flex: 1 100%;
+}
+
+/* We rely on source order for mobile-first approach in this case:
+ * 1. main (#content)
+ * 2. aside (#metadata)
+ * 3. footer
+ */
+
+/* Medium screens
+@media all and (min-width: 600px) {
+  /* We tell both sidebars to share a row
+  .aside { flex: 1 auto; }
+}
+*/
+
+
+/* We invert order of first sidebar and main and tell the main element to take twice as much width as the other two sidebars */
+
+
+/* @media (min-width: 768px) OPPURE @media all and (min-width: 800px) */
 #content {
   position: relative;
   height: 38.5em;
  /* padding-left: 15px;  per farci stare il bottone prevArticle */
-  flex: 0 0 73%;
+   /* flex: 0 0 70%; */
   max-width: 73%;
+  flex: 3 0px;
+  order: 1;
   border-right: 2px solid;
   border-left: 2px solid;
   margin-left: 0.05em;
@@ -687,9 +714,10 @@ function myFunction() {
 #metadata {
   position: relative;
   height: 38.5em;
-  overflow: scroll;
-  flex: 0 0 26%;
+  overflow: scroll;  
+  /* flex: 0 0 28%; */
   max-width: 26%;
+  order: 2;
   border-left: 2px solid;
   border-bottom: 2px solid;
   border-right: 2px solid;
