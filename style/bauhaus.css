@@ -39,11 +39,31 @@ body{
   /*font-family: "Bayer Sans"; */
 }
 
-h1{font-family: "Bauhaus 93";}
+h1{
+  font-family: "Bauhaus 93";
+  text-decoration: underline;
+  font-size: 150%;  /* boh*/
+  text-shadow: 2px 2px black;
+  font-style: bold;
+}
+
 h2{font-family: "Bauhaus 93";}
 h3{font-family: "Bauhaus 93";}
-p{font-family: "P22 Bayer Universal Regular";}
+
+p{
+  font-family: "P22 Bayer Universal Regular";
+  font-size: 14pt;
+  text-align: justify;
+  margin-right: 20mm; /*secondo Tscihold*/
+  margin-left: 20mm;
+  line-height: 21pt;
+  text-indent: 3em;
+  text-align-last: left;
+}
+p::nth-word(1){color: #ff0000;}
+
 figcaption{font-family: "Bauhaus 93";}
+
 img{
   width: 60%;
   filter:saturate(0%) grayscale(100%); contrast(100%) saturate(100%);
