@@ -94,6 +94,7 @@ h1{
 h2{
   font-family: "Bauhaus 93";
   font-size: 120%;}
+
 h3{font-family: "Bauhaus 93";}
 
 p{
@@ -108,15 +109,23 @@ p{
   text-align-last: left;
 }
 /* p:first-letter{color: #ff0000;} non mi serve più */
-q, blockquote{
+p.q{
   font-family: "P22 Bayer Universal Regular";
   font-size: 14pt;
   font-weight: lighter;
   font-style:lowercase;
 }
 
-p.blockquote{
-  text-indent: 2em;
+blockquote{
+  font-family: "P22 Bayer Universal Regular";
+  font-size: 14pt;
+  font-weight: lighter;
+  text-align: justify; /* or left? */
+  margin-right: 20mm; /* vW? secondo Tscihold*/
+  margin-left: 20mm;
+  line-height: 1.6; /* 21pt;*/
+ /* text-indent: 3em; */
+  text-align-last: left;
 }
 
 figcaption{font-family: "Bauhaus 93";}
