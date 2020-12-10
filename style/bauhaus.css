@@ -35,7 +35,7 @@ span[onclick] {cursor:pointer;}
 
 /* stile del titolo con righe colorate e immagini quadrato, cerchio, triangolo*/
 
-section{
+section(0){
 border-bottom: 10px solid black;
 }
 section img{
@@ -46,6 +46,7 @@ section img{
 p.byline, p.subtitle{
   position: static;
 }
+
 p.publicationDate{
   position:relative;
   bottom: 30px;
