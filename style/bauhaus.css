@@ -43,7 +43,9 @@ section img{
   top: 50px;
   padding-top:1.5em;
 }
-
+p.byline, p.subtitle{
+  position: static;
+}
 p.publicationDate{
   position:relative;
   bottom: 30px;
