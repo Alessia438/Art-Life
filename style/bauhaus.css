@@ -81,8 +81,8 @@ img{
   width: 60%;
   filter: grayscale(100%) contrast(80%) saturate(60%);
 }
-p a{text-decoration: none;}
-p a:link{color: black;}
+p a{color: black;}
+
 /*
 #bottom{
   bottom: 0px;
