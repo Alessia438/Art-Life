@@ -29,11 +29,11 @@ p{text-align: justify;}
 
 /* stile per articoli*/
 /* stile del titolo con righe colorate e immagini quadrato, cerchio, triangolo*/
-section.h1{transform: rotate(-10deg)}
 
 section{
-border-bottom: 3px solid black;
+border-bottom: 10px solid black;
 }
+
 body{
   background-image: url('sfondo_beige.jpg');
   /*font-family: "Bayer Sans"; */
@@ -43,8 +43,8 @@ h1{
   font-family: "Bauhaus 93";
   text-decoration: underline;
   font-size: 150%;  /* boh*/
-  text-shadow: 2px 2px black;
   font-style: bold;
+  transform: rotate(-10deg)
 }
 
 h2{font-family: "Bauhaus 93";}
@@ -57,7 +57,7 @@ p{
   margin-right: 20mm; /*secondo Tscihold*/
   margin-left: 20mm;
   line-height: 21pt;
-  text-indent: 3em;
+ /* text-indent: 3em; */
   text-align-last: left;
 }
 p::nth-word(1){color: #ff0000;}
