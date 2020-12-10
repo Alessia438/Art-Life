@@ -41,7 +41,7 @@ border-bottom: 10px solid black;
 
 section img{
   position: relative;
-  top: 50px; 
+  top: 50px;
   padding-top:1.5em;
   padding-bottom:3.5em;
 }
@@ -53,24 +53,24 @@ video{
 }
 
 p.byline{
-  /*position:relative;
+  position:relative;
   bottom: 75px;
-  left: 507px;*/
+  left: 507px;
   transform: rotate(-15deg);
 
 }
 
 p.publicationDate{
-  /*position:relative;
+  position:relative;
   bottom: 500px;
-  left: 600px;*/
+  left: 600px;
   transform: rotate(-15deg); 
 }
 
 p.subtitle{
   transform: rotate(90deg);
- /* position: relative;
-  left: 30px;*/
+  position: relative;
+  left: 30px;
 }
 
 body{
@@ -84,16 +84,17 @@ h1{
   font-size: 150%;  /* boh o large*/
   font-style: bold;
   transform: rotate(-15deg);
-  height: 80em;
+  height: 50px;
+  
   padding-top:3.5em;
-  padding-bottom:0.5em;
-  padding-left: 4em;
+  padding-bottom:3.5em;
+  padding-left: 0.5em;
 }
 
 h2{font-family: "Bauhaus 93";}
 h3{font-family: "Bauhaus 93";}
 
-p, q{
+p{
   font-family: "P22 Bayer Universal Regular";
   font-size: 14pt;
   font-weight: lighter;
