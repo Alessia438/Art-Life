@@ -48,15 +48,15 @@ section img{
 
 p.byline{
   position:relative;
-  bottom: 30px;
-  left: 600px;
+  bottom: 90px;
+  left: 505px;
   transform: rotate(-15deg);
 
 }
 
 p.publicationDate{
   position:relative;
-  bottom: 20px;
+  bottom: 100px;
   left: 500px;
   transform: rotate(-15deg); 
 }
