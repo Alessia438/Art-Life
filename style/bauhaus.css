@@ -46,16 +46,19 @@ section img{
   padding-bottom:3.5em;
 }
 
-/*p.byline, p.subtitle{
-  position: static;
-  top: 70px;
-}*/
+p.byline{
+  position:relative;
+  top: 30px;
+  left: 400px;
+  transform: rotate(-15deg);
+
+}
 
 p.publicationDate{
   position:relative;
-  bottom: 10px;
-  left: 105px;
-  transform: rotate(90deg); 
+  bottom: 08px;
+  left: 300px;
+  transform: rotate(-15deg); 
 }
 
 body{
