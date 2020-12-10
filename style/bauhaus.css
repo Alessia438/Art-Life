@@ -43,11 +43,11 @@ section img{
   position: relative;
   top: 50px;
   padding-top:1.5em;
-  padding-bottom:3.5em;
+ /* padding-bottom:3.5em; */
 }
 
 video{
-  width: 40%
+  width: 30%
   padding-top:1.5em;
   padding-bottom:3.5em;
 }
@@ -106,7 +106,7 @@ p{
   text-align-last: left;
 }
 /* p:first-letter{color: #ff0000;} non mi serve più */
-q{
+q, blockquote{
   font-family: "P22 Bayer Universal Regular";
   font-size: 14pt;
   font-weight: lighter;
