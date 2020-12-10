@@ -81,10 +81,10 @@ body{
 h1{
   font-family: "Bauhaus 93";
   text-decoration: underline;
-  font-size: larger;  /* boh o large*/
+  font-size: 180%;  /* boh o large*/
   font-style: bold;
   transform: rotate(-15deg);
-  height: 80px;
+ /* height: 80px; */
   
   padding-top:3.5em;
   padding-bottom:4.5em;
