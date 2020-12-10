@@ -110,6 +110,7 @@ q, blockquote{
   font-family: "P22 Bayer Universal Regular";
   font-size: 14pt;
   font-weight: lighter;
+  font-style:lowercase;
 }
 
 figcaption{font-family: "Bauhaus 93";}
