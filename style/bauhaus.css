@@ -43,10 +43,11 @@ img{
   width: 50%;
   filter:saturate(0%) sepia(100%) contrast(100%) saturate(100%);
 }
+/*
 #bottom{
   bottom: 0px;
 }
-/*p:first-of-type:first-letter:not(.subtitle){
+p:first-of-type:first-letter:not(.subtitle){
   text-indent: 2em;
   font-family: "Bayer Sans";
 }
