@@ -47,6 +47,7 @@ span[onclick] {cursor:pointer;}
 
 section{ /* come faccio a dirgli solo dopo il primo voglio la riga? */
 border-bottom: 10px solid black;
+bottom: 10pt;
 }
 
 section img{
