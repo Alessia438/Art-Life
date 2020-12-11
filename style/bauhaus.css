@@ -45,11 +45,12 @@ span[onclick] {cursor:pointer;}
 /* stile del titolo con righe colorate e immagini quadrato, cerchio, triangolo*/
 
 body:not(.h1){
-  background: url('sfondo_beige.jpg')left top repeat, url('bau-esclama.png') right top no-repeat;
+  background: url('sfondo_beige.jpg') left top repeat, url('bau-esclama.png') right top no-repeat;
   /*background-repeat: no-repeat, no-repeat;
   background-attachment: fixed, fixed;
   background-position: initial, right top;*/
   background-size: 100%, 80%;
+  padding: 10px;
   font-family: "Ronda Regular";
   font-size: 14pt;
   font-weight: lighter;
