@@ -34,23 +34,23 @@ function manageBodoni(iframeN){
 			var elToMove = document.getElementsByTagName("iframe")[iframeN].contentWindow.document.body.getElementsByTagName(el)[0];
 			contentDiv.appendChild(elToMove);
 		}
-		else{//if (el=='publicationDate'){var impresso = document.createElement('p'); impresso.innerHTML = 'Impresso co' tipi bodoniani'; contentDiv.appendChild(impresso);}
-			var elToMove = document.getElementsByTagName("iframe")[iframeN].contentWindow.document.body.getElementsByClassName(el),
-			    listCopy = elToMove;
-				//for (var n=0; n<elToMove.length; n++){
-				while (elToMove.length>0) {
-					contentDiv.appendChild(listCopy[0]);
-				}
+		else{
+			//var found = False;
+			//if (el=='publicationDate'){found = true;}
+			var elToMove = document.getElementsByTagName("iframe")[iframeN].contentWindow.document.body.getElementsByClassName(el);
+			while (elToMove.length>0) {contentDiv.appendChild(elToMove[0]);}
+			//if (found === true){var impresso = document.createElement('p'); impresso.innerHTML = 'Impresso co' tipi bodoniani'; contentDiv.insertBefore(impresso, document.getElementsByTagName(el)[0]);}
 		}
 	}
-	//document.getElementsByTagName("iframe")[iframeN].contentWindow.document.body.appendChild(contentDiv);	
 	document.getElementsByTagName("iframe")[iframeN].contentWindow.document.body.insertBefore(contentDiv, document.getElementsByTagName("iframe")[iframeN].contentWindow.document.body.children[0])
 }
 
 /*
 function liberty(iframeN){
 	var totImgs = document.getElementsByTagName("img");
-	
+	if totImgs.length== 1{}
+	else if totImgs.length== 1{}
+	else{}
 }
 */
 
