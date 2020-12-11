@@ -43,6 +43,7 @@ body#cover {
 	color: rgb(137, 136, 103);
 	text-transform: lowercase;
     	font-family: 'Auriol';
+	line-height: 1em;
 }
 
 p{
