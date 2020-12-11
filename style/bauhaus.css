@@ -59,6 +59,13 @@ body:not(.h1){
   overflow-x:hidden;
 }
 
+body{
+  background: url(bau-esclama.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: right top;
+}
+
 section{ /* come faccio a dirgli solo dopo il primo voglio la riga? */
 border-bottom: 40px solid red;
 bottom: 20pt;
