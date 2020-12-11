@@ -1,3 +1,91 @@
+var articleInfo = [
+	{
+		'issueName': 'Art and society',
+		'issueFile': 'Issue1.html#coverPage1',
+		 'articles': [
+	 		{
+				'articleName': 'How art and culture can help us rethink time',
+				'articleFile': 'Issue1.html#article1'	
+			}
+			 {
+				'articleName': 'How to create an iconic image',
+				'articleFile': 'Issue1.html#article2'	
+			}
+			 {
+				'articleName': 'The death of the artist and the birth of the creative entrepreneur',
+				'articleFile': 'Issue1.html#article3'	
+			}
+			 {
+				'articleName': 'HWelcome to Airspace',
+				'articleFile': 'Issue1.html#article4'	
+			}
+			 {
+				'articleName': 'Style is an algorithm',
+				'articleFile': 'Issue1.html#article5'	
+			}
+		 ]
+	}
+	{
+		'issueName': 'Art and Covid-19',
+		'issueFile': 'Issue2.html#coverPage2',
+		 'articles': [
+	 		{
+				'articleName': 'In the Midst of COVID-19, Chinese Galleries Adapt and Persevere',
+				'articleFile': 'Issue2.html#article1'	
+			}
+			 {
+				'articleName': 'How 9 artists are living and creating during self-isolation',
+				'articleFile': 'Issue2.html#article2'	
+			}
+			 {
+				'articleName': 'With Museums Empty, Security Experts Hope Thieves Stay Home, Too',
+				'articleFile': 'Issue2.html#article3'	
+			}
+			 {
+				'articleName': 'Bye bye, blockbusters: can the art world adapt to Covid-19?',
+				'articleFile': 'Issue2.html#article4'	
+			}
+			 {
+				'articleName': 'Now Virtual and in Video, Museum Websites Shake Off the Dust',
+				'articleFile': 'Issue2.html#article5'	
+			}
+		 ]
+	}
+	{
+		'issueName': 'Art and Ecology',
+		'issueFile': 'Issue3.html#coverPage3',
+		 'articles': [
+	 		{
+				'articleName': 'An artist set out to paint climate change. She ended up on a journey through grief',
+				'articleFile': 'Issue3.html#article1'	
+			}
+			 {
+				'articleName': 'Can Art Help Save the Planet?',
+				'articleFile': 'Issue3.html#article2'	
+			}
+			 {
+				'articleName': 'ENVIRONMENTAL ART: PROPOSALS FOR A FUTURE WORLD',
+				'articleFile': 'Issue3.html#article3'	
+			}
+			 {
+				'articleName': 'Fabrics With Powerful Stories to Tell',
+				'articleFile': 'Issue3.html#article4'	
+			}
+			 {
+				'articleName': 'PHOTOS: New "Washed Ashore" exhibit in Little Rock showcases wildly colorful art made from plastic trash collected at beaches',
+				'articleFile': 'Issue3.html#article5'	
+			}
+		 ]
+	}
+	{
+		'issueName': 'Issue 4',
+		'issueFile': 'Issue4.html#coverPage4',
+		 'articles': []
+	}
+]
+
+
+
 function myFunction() {
 	var x = document.getElementById("myTopnav");
 	if (x.className === "topnav") {x.className += " responsive";} 
