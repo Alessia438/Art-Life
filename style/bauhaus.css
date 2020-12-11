@@ -63,12 +63,12 @@ section{ /* come faccio a dirgli solo dopo il primo voglio la riga? */
 border-bottom: 40px solid red;
 bottom: 20pt;
 }
-/*
+
 section img{
   position: relative;
-  top: 20px;
+  top: 30px;
 }
-*/
+
 
 video source{
   width: 30%;
@@ -127,7 +127,12 @@ p.subtitle{
   transform: rotate(90deg);
   position: relative;
   left: 500px;
-  bottom: 60%;
+  bottom: 80%;
+  box-sizing: content-box;  
+  width: 60%;
+  height: 60px;  
+  border: 0px;
+
 }
 
 
@@ -203,7 +208,7 @@ img{
  /*padding-right: 5pt;
   padding-left: 0pt;
   padding-top: 2%;*/
-  filter:saturate(90%) sepia(90%) contrast(100%) saturate(90%);
+  filter:saturate(90%) sepia(90%) contrast(90%);
   
 }
 
