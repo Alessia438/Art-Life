@@ -203,7 +203,8 @@ img{
   padding-right: 5pt;
   padding-left: 0pt;
   padding-top: 2%;
-  filter: grayscale(100%) contrast(80%) saturate(60%);
+  filter: sepia(100%) contrast(80%) saturate(60%);
+  border: 2pt white;
 }
 
 p a{color: black;}
