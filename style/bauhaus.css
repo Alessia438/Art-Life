@@ -1,8 +1,16 @@
+/*
 @font-face {
   font-family: P22 Bayer Universal Regular;
   src: url("P22 Bayer Universal Regular.ttf");
   
 }
+*/
+@font-face {
+  font-family: Ronda Regular;
+  src: url("rondaregular.ttf");
+  
+}
+
 @font-face {
   font-family: "Bauhaus 93";
   src: url("bauhaus93.ttf"); 
@@ -98,7 +106,7 @@ h2{
 h3{font-family: "Bauhaus 93";}
 
 p{
-  font-family: "P22 Bayer Universal Regular";
+  font-family: "Ronda Regular";
   font-size: 14pt;
   font-weight: lighter;
   text-align: justify; /* or left? */
