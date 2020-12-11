@@ -4,7 +4,10 @@
 
 [onClick] {cursor:pointer;}
 span[onclick] {cursor:pointer;}
-[onclick]:hover {background-color: #b38316c4;}
+body#cover[onclick]:hover {
+	text-decoration: underline;
+	color: rgb(203, 125, 106);
+}
 
 h1 { 
 	font-family: "P22 Vienna Regular"; 
