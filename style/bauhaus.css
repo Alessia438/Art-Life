@@ -203,7 +203,7 @@ img{
   padding-right: 5pt;
   padding-left: 0pt;
   padding-top: 2%;
-  filter: sepia(100%) contrast(80%) saturate(60%);
+  filter:saturate(5%) sepia(90%) contrast(90%) saturate(100%);
   border: 2pt white;
 }
 
