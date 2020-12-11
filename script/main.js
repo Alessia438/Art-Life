@@ -39,7 +39,7 @@ function manageBodoni(iframeN){
 			    listCopy = elToMove;
 				//for (var n=0; n<elToMove.length; n++){
 				while (elToMove.length>0) {
-					contentDiv.appendChild(listCopy[n]);
+					contentDiv.appendChild(listCopy[0]);
 				}
 		}
 	}
