@@ -85,7 +85,7 @@ p.subtitle{
   transform: rotate(90deg);
   position: relative;
   left: 500px;
-  bottom: 70px;
+  bottom: 60%;
 }
 
 body{
