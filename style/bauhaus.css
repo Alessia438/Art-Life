@@ -11,12 +11,12 @@
   
 }
 
-/*
+
 @font-face {
   font-family: "Bauhaus 93";
   src: url("bauhaus93.ttf"); 
 }
-*/
+
 
 /*
 h1, .byline{
@@ -89,7 +89,7 @@ body{
 }
 
 h1{
-  font-family: "P22 Bayer Universal Regular";
+  font-family: "Bauhaus 93";
   text-decoration: underline;
   font-size: 180%;  /* boh o large*/
   font-style: bold;
@@ -102,10 +102,10 @@ h1{
 }
 
 h2{
-  font-family: "P22 Bayer Universal Regular";
+  font-family: "Bauhaus 93";
   font-size: 120%;}
 
-h3{font-family: "P22 Bayer Universal Regular";}
+h3{font-family: "Bauhaus 93";}
 
 p{
   font-family: "Ronda Regular";
