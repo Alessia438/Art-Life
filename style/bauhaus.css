@@ -68,7 +68,7 @@ p.byline{
   position:relative;
   bottom: 100px;
   left: 600px;
-  transform: rotate(-15deg);
+  transform: rotate(15deg);
 
 }
 
@@ -77,15 +77,15 @@ p.publicationDate{
   position:relative;
   bottom: 400px;
   left: 500px;
-  transform: rotate(-15deg); 
+  transform: rotate(15deg); 
 }
 
 p.subtitle{
   font-style:lowercase;
   transform: rotate(90deg);
   position: relative;
-  left: 300px;
-  bottom: 40px;
+  left: 500px;
+  bottom: 70px;
 }
 
 body{
