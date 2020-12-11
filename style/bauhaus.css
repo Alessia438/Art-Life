@@ -95,7 +95,7 @@ body{
 h1{
   font-family: "Bauhaus 93";
   text-decoration: underline;
-  text-transform: upperrcase;
+  text-transform: uppercase;
   font-size: 200%;  /* boh o large*/
   font-style: bold;
   transform: rotate(-15deg);
@@ -111,7 +111,7 @@ h2{
 
 h3{
   font-family: "Bauhaus 93";
-  font-size: 150%
+  font-size: 170%
 }
 
 p{
@@ -149,15 +149,15 @@ blockquote{
   
 }
 
-figcaption{
+img figcaption{
   font-family: "P22 Bayer Universal Regular";
   font-size: 13pt;
   text-align: justify;
-  margin-right: img[width];
 }
 
 img{
   width: 60%;
+  border: 0px;
   filter: grayscale(100%) contrast(80%) saturate(60%);
 }
 p a{color: black;}
