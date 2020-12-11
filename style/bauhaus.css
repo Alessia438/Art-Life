@@ -60,13 +60,13 @@ body:not(.h1){
 }
 
 section{ /* come faccio a dirgli solo dopo il primo voglio la riga? */
-border-bottom: 10px solid black;
+border-bottom: 40px solid red;
 bottom: 40pt;
 }
 
 section img{
   position: relative;
-  top: 50px;
+  top: 40px;
   padding-top:2.5em;
  /* padding-bottom:3.5em; */
 }
@@ -118,7 +118,8 @@ p.publicationDate{
   position:relative;
   bottom: 400px;
   left: 500px;
-  transform: rotate(15deg); 
+  transform: rotate(15deg);
+  color: blue; 
 }
 
 p.subtitle{
@@ -171,20 +172,20 @@ p.q{
   margin-left: 20mm;
   text-transform: lowercase;
 }
-
+*/
 blockquote{
-  font-family: "Ronda Regular";
+  margin-right: 0mm; 
+  margin-left: 0mm;
+  /*font-family: "Ronda Regular";
   font-style:lowercase;
   font-size: 14pt;
   font-weight: lighter;
   text-align: justify; 
   text-align-last: left;
-  margin-right: 20mm; 
-  margin-left: 20mm;
   line-height: 1.6; 
-  text-transform: lowercase; 
+  text-transform: lowercase; */
 }
-*/
+
 
 figcaption{
   font-family: "P22 Bayer Universal Regular";
