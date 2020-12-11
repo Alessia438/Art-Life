@@ -1,8 +1,3 @@
-/*import { Octokit } from "https://cdn.skypack.dev/@octokit/core";
-var response = fetch('/cookbook-cakes/articles/issue1_art1/art1-bbc1.html');
-var y = 2*1;*/
-var luckyEditions = document.getElementById("prova_navigazione");
-
 function myFunction() {
 	var x = document.getElementById("myTopnav");
 	if (x.className === "topnav") {x.className += " responsive";} 
