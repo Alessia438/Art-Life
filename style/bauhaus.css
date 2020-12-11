@@ -76,7 +76,7 @@ video source{
 }
 
 h1{
-  font-family: "Joost-Stencil";
+  font-family: "Bauhaus 93";
   text-align: left;
   text-transform: uppercase;
   font-size: 198%;  /* boh o large*/
@@ -129,8 +129,8 @@ p.subtitle{
   height: 60px;  
   border: 0px;
   position: relative;
-  left: 50%;
-  bottom: 150%;
+  left: 70%;
+  bottom: 170%;
 }
 
 
