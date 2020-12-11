@@ -1,20 +1,22 @@
-/*
+
 @font-face {
   font-family: P22 Bayer Universal Regular;
   src: url("P22 Bayer Universal Regular.ttf");
   
 }
-*/
+
 @font-face {
   font-family: Ronda Regular;
   src: url("rondaregular.ttf");
   
 }
 
+/*
 @font-face {
   font-family: "Bauhaus 93";
   src: url("bauhaus93.ttf"); 
 }
+*/
 
 /*
 h1, .byline{
@@ -87,7 +89,7 @@ body{
 }
 
 h1{
-  font-family: "Bauhaus 93";
+  font-family: "P22 Bayer Universal Regular";
   text-decoration: underline;
   font-size: 180%;  /* boh o large*/
   font-style: bold;
@@ -100,10 +102,10 @@ h1{
 }
 
 h2{
-  font-family: "Bauhaus 93";
+  font-family: "P22 Bayer Universal Regular";
   font-size: 120%;}
 
-h3{font-family: "Bauhaus 93";}
+h3{font-family: "P22 Bayer Universal Regular";}
 
 p{
   font-family: "Ronda Regular";
@@ -118,14 +120,14 @@ p{
 }
 /* p:first-letter{color: #ff0000;} non mi serve più */
 p.q{
-  font-family: "P22 Bayer Universal Regular";
+  font-family: "Ronda Regular";
   font-size: 14pt;
   font-weight: lighter;
   font-style:lowercase;
 }
 
 blockquote{
-  font-family: "P22 Bayer Universal Regular";
+  font-family: "Ronda Regular";
   font-size: 14pt;
   font-weight: lighter;
   text-align: justify; /* or left? */
@@ -136,7 +138,7 @@ blockquote{
   text-align-last: left;
 }
 
-figcaption{font-family: "Bauhaus 93";}
+figcaption{font-family: "P22 Bayer Universal Regular";}
 
 img{
   width: 60%;
