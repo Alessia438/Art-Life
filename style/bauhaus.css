@@ -46,8 +46,8 @@ span[onclick] {cursor:pointer;}
 
 body:not(.h1){
   background-image: url('sfondo_beige.jpg'), url(bau-esclama.png);
-  background-repeat: no-repeat, no-repeat;
-  background-attachment: scroll, fixed;
+  background-repeat: repeat, no-repeat;
+  background-attachment: fixed, fixed;
   background-position: initial, right top;
   font-family: "Ronda Regular";
   font-size: 14pt;
