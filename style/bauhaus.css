@@ -56,6 +56,7 @@ body:not(.h1){
   text-align-last: left;
   text-transform: lowercase;
   text-decoration: none; 
+  overflow-x:hidden;
 }
 
 section{ /* come faccio a dirgli solo dopo il primo voglio la riga? */
@@ -129,10 +130,10 @@ p.subtitle{
   height: 60px;  
   border: 0px;
   position: relative;
-  left: 70%;
-  bottom: 180%;
-  padding-bottom: 70pt; 
-  padding-right: 30pt; 
+  left: 50%;
+  bottom: 170%;
+  padding-bottom: 40pt; 
+  padding-right: 20pt; 
 }
 
 
