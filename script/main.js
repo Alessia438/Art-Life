@@ -34,9 +34,10 @@ function manageBodoni(iframeN){
 			contentDiv.appendChild(elToMove);
 		}
 		else{//if (el=='publicationDate'){var impresso = document.createElement('p'); impresso.innerHTML = 'Impresso co' tipi bodoniani'; contentDiv.appendChild(impresso);}
-			var elToMove = document.getElementsByTagName("iframe")[iframeN].contentWindow.document.body.getElementsByClassName(el);
+			var elToMove = document.getElementsByTagName("iframe")[iframeN].contentWindow.document.body.getElementsByClassName(el),
+			    listCopy = elToMove;
 				for (var n=0; n<elToMove.length; n++){
-					contentDiv.appendChild(elToMove[n]);
+					contentDiv.appendChild(listCopy[n]);
 				}
 		}
 	}
