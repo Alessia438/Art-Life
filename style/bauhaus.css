@@ -104,12 +104,11 @@ h1{
  /* height: 80px; */
   padding-top:3.5em;
   padding-bottom:4.5em;
-  padding-left: 0.5em;
+  padding-left: 2.5em;
   color: #141514;
   box-sizing: content-box;  
   width: 30%;
-  height: 100px;
-    
+  height: 100px;  
   border: 0px;
 }
 
