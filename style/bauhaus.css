@@ -57,7 +57,7 @@ section img{
  /* padding-bottom:3.5em; */
 }
 
-video{
+video source{
   width: 30%
   padding-top:2.5em;
   padding-bottom:3.5em;
@@ -121,7 +121,7 @@ h3{
   font-size: 170%
 }
 
-p{
+p, q{
   font-family: "Ronda Regular";
   font-size: 14pt;
   font-weight: lighter;
@@ -169,6 +169,7 @@ figcaption{
 img{
   width: 60%;
   padding-right: 5pt;
+  padding-top: 2%;
   filter: grayscale(100%) contrast(80%) saturate(60%);
 }
 
