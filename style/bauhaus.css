@@ -97,7 +97,7 @@ h1{
   font-family: "Bauhaus 93";
  /* text-decoration: underline; */
   text-transform: uppercase;
-  font-size: 200%;  /* boh o large*/
+  font-size: 180%;  /* boh o large*/
   /*font-style: bold;*/
   /* va a capo alla quarta parola*/
   transform: rotate(-15deg);
