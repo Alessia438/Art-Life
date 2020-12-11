@@ -1,4 +1,6 @@
 //import { Octokit } from "https://cdn.skypack.dev/@octokit/core";
+var response = fetch('/articles/issue1_art1/art1-bbc1.html');
+var y = 2*1;
 
 function myFunction() {
 	var x = document.getElementById("myTopnav");
