@@ -45,6 +45,19 @@ span[onclick] {cursor:pointer;}
 
 /* stile del titolo con righe colorate e immagini quadrato, cerchio, triangolo*/
 
+body{
+  background-image: url('sfondo_beige.jpg');
+  font-family: "Ronda Regular";
+  font-size: 14pt;
+  font-weight: lighter;
+  text-align: justify; /* or left? */
+  margin-right: 20mm; /* vW? secondo Tscihold*/
+  margin-left: 20mm;
+  line-height: 1.6; /* 21pt;*/
+  text-align-last: left;
+  text-transform: lowercase;
+}
+
 section{ /* come faccio a dirgli solo dopo il primo voglio la riga? */
 border-bottom: 10px solid black;
 bottom: 40pt;
@@ -61,48 +74,6 @@ video source{
   width: 30%
   padding-top:2.5em;
   padding-bottom:3.5em;
-}
-
-p.byline{
-  font-style:lowercase;
-  position:relative;
-  bottom: 100px;
-  left: 600px;
-  transform: rotate(15deg);
-
-}
-
-p.publicationDate{
-  font-style:lowercase;
-  position:relative;
-  bottom: 400px;
-  left: 500px;
-  transform: rotate(15deg); 
-}
-
-p.subtitle{
-  font-style:lowercase;
-  transform: rotate(90deg);
-  position: relative;
-  left: 500px;
-  bottom: 60%;
-}
-
-body{
-  background-image: url('sfondo_beige.jpg');
-  /*font-family: "Bayer Sans"; */
-}
-
-body{
-  font-family: "Ronda Regular";
-  font-size: 14pt;
-  font-weight: lighter;
-  text-align: justify; /* or left? */
-  margin-right: 20mm; /* vW? secondo Tscihold*/
-  margin-left: 20mm;
-  line-height: 1.6; /* 21pt;*/
-  text-align-last: left;
-  text-transform: lowercase;
 }
 
 h1{
@@ -133,21 +104,47 @@ h3{
   font-size: 170%
 }
 
+p.byline{
+  font-style:lowercase;
+  position:relative;
+  bottom: 100px;
+  left: 600px;
+  transform: rotate(15deg);
+}
 
+p.publicationDate{
+  font-style:lowercase;
+  position:relative;
+  bottom: 400px;
+  left: 500px;
+  transform: rotate(15deg); 
+}
+
+p.subtitle{
+  font-style:lowercase;
+  transform: rotate(90deg);
+  position: relative;
+  left: 500px;
+  bottom: 60%;
+}
+
+
+
+/*
 p{
   font-family: "Ronda Regular";
   font-size: 14pt;
   font-weight: lighter;
-  text-align: justify; /* or left? */
-  margin-right: 20mm; /* vW? secondo Tscihold*/
+  text-align: justify; 
+  margin-right: 20mm; 
   margin-left: 20mm;
-  line-height: 1.6; /* 21pt;*/
- /* text-indent: 3em; */
+  line-height: 1.6; 
   text-align-last: left;
   text-transform: lowercase;
-}
+} */
 /* p:first-letter{color: #ff0000;} non mi serve più */
 
+/*
 q{
   font-family: "Ronda Regular";
   font-size: 14pt;
@@ -156,14 +153,15 @@ q{
   margin-left: 20mm;
   text-transform: lowercase;
   }
-  
+*/
+/*
 p.q{
   font-family: "Ronda Regular";
   font-size: 14pt;
   font-weight: lighter;
   text-transform: lowercase;
 }
-
+*/
 /*q{
   font-family: "Ronda Regular";
   font-size: 14pt;
@@ -206,11 +204,12 @@ img{
 }
 
 p a{color: black;}
-
+/*
 section#id{
   font-family: "Bauhaus 93";
   font-size: 170%
 }
+*/
 /*
 #bottom{
   bottom: 0px;
