@@ -121,7 +121,7 @@ h3{
   font-size: 170%
 }
 
-p, q{
+p{
   font-family: "Ronda Regular";
   font-size: 14pt;
   font-weight: lighter;
@@ -135,6 +135,13 @@ p, q{
 }
 /* p:first-letter{color: #ff0000;} non mi serve più */
 p.q{
+  font-family: "Ronda Regular";
+  font-size: 14pt;
+  font-weight: lighter;
+  text-transform: lowercase;
+}
+
+q{
   font-family: "Ronda Regular";
   font-size: 14pt;
   font-weight: lighter;
