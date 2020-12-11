@@ -52,32 +52,35 @@ border-bottom: 10px solid black;
 section img{
   position: relative;
   top: 50px;
-  padding-top:1.5em;
+  padding-top:2.5em;
  /* padding-bottom:3.5em; */
 }
 
 video{
   width: 30%
-  padding-top:1.5em;
+  padding-top:2.5em;
   padding-bottom:3.5em;
 }
 
 p.byline{
+  font-style:lowercase;
   position:relative;
-  bottom: 75px;
-  left: 507px;
+  bottom: 100px;
+  left: 600px;
   transform: rotate(-15deg);
 
 }
 
 p.publicationDate{
+  font-style:lowercase;
   position:relative;
-  bottom: 500px;
-  left: 600px;
+  bottom: 400px;
+  left: 500px;
   transform: rotate(-15deg); 
 }
 
 p.subtitle{
+  font-style:lowercase;
   transform: rotate(90deg);
   position: relative;
   left: 30px;
@@ -91,11 +94,10 @@ body{
 h1{
   font-family: "Bauhaus 93";
   text-decoration: underline;
-  font-size: 180%;  /* boh o large*/
+  font-size: 200%;  /* boh o large*/
   font-style: bold;
   transform: rotate(-15deg);
  /* height: 80px; */
-  
   padding-top:3.5em;
   padding-bottom:4.5em;
   padding-left: 0.5em;
@@ -117,6 +119,7 @@ p{
   line-height: 1.6; /* 21pt;*/
  /* text-indent: 3em; */
   text-align-last: left;
+  font-style:lowercase;
 }
 /* p:first-letter{color: #ff0000;} non mi serve più */
 p.q{
@@ -128,6 +131,7 @@ p.q{
 
 blockquote{
   font-family: "Ronda Regular";
+  font-style:lowercase;
   font-size: 14pt;
   font-weight: lighter;
   text-align: justify; /* or left? */
@@ -138,7 +142,11 @@ blockquote{
   text-align-last: left;
 }
 
-figcaption{font-family: "P22 Bayer Universal Regular";}
+figcaption{
+  font-family: "P22 Bayer Universal Regular";
+  text-align: justify;
+  margin-right: 50em;
+}
 
 img{
   width: 60%;
