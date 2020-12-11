@@ -120,6 +120,17 @@ h3{
   font-family: "Bauhaus 93";
   font-size: 170%
 }
+body{
+  font-family: "Ronda Regular";
+  font-size: 14pt;
+  font-weight: lighter;
+  text-align: justify; /* or left? */
+  margin-right: 20mm; /* vW? secondo Tscihold*/
+  margin-left: 20mm;
+  line-height: 1.6; /* 21pt;*/
+  text-align-last: left;
+  text-transform: lowercase;
+}
 
 p{
   font-family: "Ronda Regular";
@@ -145,6 +156,8 @@ q{
   font-family: "Ronda Regular";
   font-size: 14pt;
   font-weight: lighter;
+  margin-right: 20mm; /* vW? secondo Tscihold*/
+  margin-left: 20mm;
   text-transform: lowercase;
 }
 
