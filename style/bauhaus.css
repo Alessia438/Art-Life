@@ -119,7 +119,7 @@ p{
   line-height: 1.6; /* 21pt;*/
  /* text-indent: 3em; */
   text-align-last: left;
-  font-style:lowercase;
+  font-style:uppercase;
 }
 /* p:first-letter{color: #ff0000;} non mi serve più */
 p.q{
@@ -145,9 +145,9 @@ blockquote{
 
 figcaption{
   font-family: "P22 Bayer Universal Regular";
-  font-size: 12pt;
+  font-size: 13pt;
   text-align: justify;
-  margin-right: 15em;
+  margin-right: img[width];
 }
 
 img{
