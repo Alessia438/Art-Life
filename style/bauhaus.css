@@ -47,7 +47,7 @@ span[onclick] {cursor:pointer;}
 
 section{ /* come faccio a dirgli solo dopo il primo voglio la riga? */
 border-bottom: 10px solid black;
-bottom: 10pt;
+bottom: 40pt;
 }
 
 section img{
@@ -145,15 +145,14 @@ blockquote{
   margin-left: 20mm;
   line-height: 1.6; /* 21pt;*/
   text-transform: lowercase;
- /* text-indent: 3em; */
-  
+ /* text-indent: 3em; */ 
 }
 
 figcaption{
   font-family: "P22 Bayer Universal Regular";
   font-size: 13pt;
   text-align: justify;
-  padding-right: 5pt;
+  /*padding-right: 5pt;*/
 }
 
 img{
@@ -161,6 +160,7 @@ img{
   padding-right: 5pt;
   filter: grayscale(100%) contrast(80%) saturate(60%);
 }
+
 p a{color: black;}
 
 /*
