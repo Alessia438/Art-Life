@@ -38,7 +38,7 @@ function manageBodoni(iframeN){
 			//var found = False;
 			//if (el=='publicationDate'){found = true;}
 			var elToMove = document.getElementsByTagName("iframe")[iframeN].contentWindow.document.body.getElementsByClassName(el);
-			while (elToMove.length>0) {contentDiv.appendChild(listCopy[0]);}
+			while (elToMove.length>0) {contentDiv.appendChild(elToMove[0]);}
 			//if (found === true){var impresso = document.createElement('p'); impresso.innerHTML = 'Impresso co' tipi bodoniani'; contentDiv.insertBefore(impresso, document.getElementsByTagName(el)[0]);}
 		}
 	}
