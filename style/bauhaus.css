@@ -66,9 +66,9 @@ bottom: 40pt;
 
 section img{
   position: relative;
-  top: 40px;
+  top: 20px;
   padding-top:2.5em;
- /* padding-bottom:3.5em; */
+  border: 3px solid #f9f9eb;
 }
 
 video source{
@@ -204,7 +204,7 @@ img{
   padding-left: 0pt;
   padding-top: 2%;
   filter:saturate(5%) sepia(90%) contrast(90%) saturate(100%);
-  border: 2pt white;
+  border: 3px solid #f9f9eb;
 }
 
 p a{color: black;}
