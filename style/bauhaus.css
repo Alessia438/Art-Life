@@ -69,6 +69,10 @@ section img{
   top: 60px;
 }
 
+#heading img {
+  position: relative;
+  top: 60px;
+}
 
 video source{
   width: 30%;
