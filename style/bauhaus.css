@@ -48,7 +48,7 @@ body:not(.h1){
   background-image: url('sfondo_beige.jpg'), url(bau-esclama.png);
   background-repeat: no-repeat, no-repeat;
   background-attachment: fixed, fixed;
-  background-position: initial, right top;
+  background-position: initial, center;
   background-size: 100%, 80%;
   font-family: "Ronda Regular";
   font-size: 14pt;
