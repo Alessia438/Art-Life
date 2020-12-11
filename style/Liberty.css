@@ -2,6 +2,9 @@
 @font-face { font-family: "P22 Vienna Regular"; src: url("p22_vienna_regular.ttf"); }
 @font-face { font-family: "Auriol"; src: url("Auriol.otf"); }
 
+[onClick] {cursor:pointer;}
+span[onclick] {cursor:pointer;}
+[onclick]:hover {background-color: #b38316c4;}
 
 h1 { 
 	font-family: "P22 Vienna Regular"; 
@@ -14,15 +17,27 @@ h1 {
 body#cover {
   background-image: url('liberty_background.jpg');
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: inherit;
   height: 100%;
-  font-family: "Auriol"; 
+  font-family: "P22 Vienna Regular";
   font-weight:normal;
   font-style:normal;
+  margin-right: 32vW;
+  margin-left: 30vW;
+  margin-top: 35vW;
+  margin-bottom: 30vW;
+  background-size: 100vw;
+  font-size: 2em;
 }
+
+#cover p{
+	margin-bottom: 2em;
+    	text-align: left;
+}
+
 p{
 	line-height: 20px;
-  text-align:justify;
+  	text-align:justify;
 }
 
 body{
