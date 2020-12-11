@@ -204,7 +204,7 @@ img{
   padding-left: 0pt;
   padding-top: 2%;
   filter:saturate(5%) sepia(90%) contrast(90%) saturate(100%);
-  border: 3px solid #f9f9eb;
+  border: 5px solid black;
 }
 
 p a{color: black;}
