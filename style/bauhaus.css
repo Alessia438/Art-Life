@@ -45,7 +45,10 @@ span[onclick] {cursor:pointer;}
 /* stile del titolo con righe colorate e immagini quadrato, cerchio, triangolo*/
 
 body:not(.h1){
-  background-image: url('sfondo_beige.jpg');
+  background-image: url('sfondo_beige.jpg'), url(bau-esclama.png);
+  background-repeat: no-repeat, no-repeat;
+  background-attachment: scroll, fixed;
+  background-position: initial, right top;
   font-family: "Ronda Regular";
   font-size: 14pt;
   font-weight: lighter;
@@ -57,10 +60,6 @@ body:not(.h1){
   text-transform: lowercase;
   text-decoration: none; 
   overflow-x:hidden;
-  background-image: url(bau-esclama.png);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: right top;
 }
 
 
