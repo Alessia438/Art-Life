@@ -135,17 +135,18 @@ blockquote{
   font-size: 14pt;
   font-weight: lighter;
   text-align: justify; /* or left? */
+  text-align-last: left;
   margin-right: 20mm; /* vW? secondo Tscihold*/
   margin-left: 20mm;
   line-height: 1.6; /* 21pt;*/
  /* text-indent: 3em; */
-  text-align-last: left;
+  
 }
 
 figcaption{
   font-family: "P22 Bayer Universal Regular";
   text-align: justify;
-  margin-right: 50em;
+  margin-right: 20em;
 }
 
 img{
