@@ -84,7 +84,7 @@ p.subtitle{
   font-style:lowercase;
   transform: rotate(90deg);
   position: relative;
-  left: 100px;
+  left: 90%;
 }
 
 body{
@@ -104,7 +104,7 @@ h1{
   padding-top:3.5em;
   padding-bottom:4.5em;
   padding-left: 0.5em;
-  color: #44413c;
+  color: #1f1e1e;
 }
 
 h2{
@@ -154,7 +154,7 @@ figcaption{
   font-family: "P22 Bayer Universal Regular";
   /*font-size: 13pt;*/
   text-align: justify;
-  font-size: 0.8em;
+  font-size: 2em;
   font-weight: lighter;
   padding-top: 2%;
   padding-bottom: 2%;
