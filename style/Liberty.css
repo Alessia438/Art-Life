@@ -22,7 +22,7 @@ body#cover {
   font-family: "Auriol";
   font-weight:normal;
   font-style:normal;
-  margin-right: 30vW;
+  margin-right: 28vW;
   margin-left: 32vW;
   margin-top: 30vW;
   margin-bottom: 30vW;
@@ -44,7 +44,15 @@ body#cover {
 	text-transform: lowercase;
     	font-family: 'Auriol';
 	line-height: 1em;
+	letter-spacing: 0.04em;
+	word-spacing: 0.1em;
+	font-size: 1.1em;
+	margin-bottom: 1.5em;
+	-webkit-hyphenate-character: auto;
+	 hyphens: auto;
 }
+
+#cover p::first-letter {text-transform: capitalize;}
 
 p{
 	line-height: 20px;
