@@ -208,7 +208,7 @@ img{
  /*padding-right: 5pt;
   padding-left: 0pt;
   padding-top: 2%;*/
-  filter:saturate(1000%) sepia(100%) contrast(90%);
+  filter:saturate(100%) sepia(100%) contrast(100%);
   
 }
 
