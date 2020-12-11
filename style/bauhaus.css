@@ -84,7 +84,8 @@ p.subtitle{
   font-style:lowercase;
   transform: rotate(90deg);
   position: relative;
-  left: 90%;
+  left: 300px;
+  bottom: 40px;
 }
 
 body{
@@ -96,7 +97,7 @@ h1{
   font-family: "Bauhaus 93";
  /* text-decoration: underline; */
   text-transform: uppercase;
-  font-size: 300%;  /* boh o large*/
+  font-size: 200%;  /* boh o large*/
   /*font-style: bold;*/
   /* va a capo alla quarta parola*/
   transform: rotate(-15deg);
@@ -104,7 +105,7 @@ h1{
   padding-top:3.5em;
   padding-bottom:4.5em;
   padding-left: 0.5em;
-  color: #1f1e1e;
+  color: #141514;
 }
 
 h2{
@@ -154,7 +155,7 @@ figcaption{
   font-family: "P22 Bayer Universal Regular";
   /*font-size: 13pt;*/
   text-align: justify;
-  font-size: 2em;
+  font-size: 12pt;
   font-weight: lighter;
   padding-top: 2%;
   padding-bottom: 2%;
