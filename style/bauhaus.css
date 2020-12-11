@@ -130,8 +130,8 @@ p.subtitle{
   height: 60px;  
   border: 0px;
   position: relative;
-  left: 100pt;
-  bottom: 90%;
+  left: 500%;
+  bottom: 200%;
 
 }
 
@@ -208,7 +208,7 @@ img{
  /*padding-right: 5pt;
   padding-left: 0pt;
   padding-top: 2%;*/
-  filter:saturate(90%) sepia(90%) contrast(90%);
+  filter:saturate(1000%) sepia(100%) contrast(90%);
   
 }
 
