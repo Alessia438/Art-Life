@@ -71,8 +71,7 @@ section img{
 
 #heading img {
   position: relative;
-  top: 60px;
-  border-radius: 50%;
+  top: 50px;
 }
 
 video source{
@@ -205,7 +204,7 @@ figcaption{
   font-weight: lighter;
   padding-top: 2%;
   padding-bottom: 2%;
-  width: 60%;
+  width: 65%;
 }
 
 img{
