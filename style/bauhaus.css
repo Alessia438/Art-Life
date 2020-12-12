@@ -23,14 +23,14 @@ h1, .byline{
 }
 */
 
-/* stile per cover page
+/* stile per cover page*/
 
 body#cover{
   background: url('triangle.jpg') right top no-repeat, url('sfondo_beige.jpg') right top repeat;
   background-size: 50%, 100%;
 }
 
-p#cover{transform: rotate(15deg);} */
+p#cover{transform: rotate(15deg);} 
 
 /* stile per articoli*/
 
