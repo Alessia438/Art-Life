@@ -64,6 +64,9 @@ body:not(.h1){
   text-transform: lowercase;
   text-decoration: none; 
   overflow-x:hidden;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
 }
 
 
