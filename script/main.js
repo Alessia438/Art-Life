@@ -80,34 +80,38 @@ var articleInfo = [
 	{
 		'issueName': 'Issue 4',
 		'issueFile': 'Issue4.html#coverPage4',
-		 'articles': [{
-				'articleName': 'She ended up on a journey through grief. An artist set out to paint climate change. ',
-				'articleFile': 'Issue4.html#article1'	
-			}]
+		 'articles': []
 	}
 ]
 
 function fillTheGaps(){
+	//forloop tra tutti gli oggetti dell'array articleInfo (contiene tutte le info rilevanti sui nostri issue e articoli)
 	for (var n=0; n<articleInfo.length; n++){
+		//check se la sezione issue è vuota, quindi se non abbiamo articoli e l'issue non deve essere mostrato
 		if (articleInfo[n].articles.length>0){
+			//creato bottone dell' issue corrente
 			var issueBut = document.createElement('a');
 			issueBut.setAttribute('class', 'buttonIssue');
 			issueBut.setAttribute('href', 'https://alessia438.github.io/cookbook-cakes/'+articleInfo[n].issueFile);
 			issueBut.innerHTML = articleInfo[n].issueName;
-			//da qua rischio errore
+			//check se siamo nell'issue corrente
 			if (window.location.href.includes(articleInfo[n].issueFile.split('#')[0])){
 				var curIssue = "issue"+(n+1);
+				//operazioni da fare per ogni oggetto dell'array articles contenuto nell'oggetto issue corrente dell'array articleInfo
 				for (var i=1; i<=articleInfo[n].articles.length;i++){
+					//riempimento bottoni degli articoli
 					var articleBut = document.createElement('a');
 					articleBut.setAttribute('class', 'buttonArticle');
 					var curArticle = "article"+i;
 					articleBut.setAttribute('onclick', 'changeArticle("'+curArticle+'", "'+curIssue+'")');
 					articleBut.innerHTML = articleInfo[n].articles[i-1].articleName;
 					document.getElementById('changeArguments').appendChild(articleBut);
+					//riempimento iFrame
 				}
+				//aggiunto attributo onclick al bottone dell'issue corrente solo a questo punto perchè va aggiunto solo sul bottone dell'issue mostrato all'utente
 				issueBut.setAttribute('onclick', 'changeIssue("'+curIssue+'")');
 			}
-			//fino a qua a rischio errore
+			//appeso bottone dell'issue corrente
 			document.getElementById('DynamicGeneratorPowerButton2000').appendChild(issueBut);
 		}
 	}
