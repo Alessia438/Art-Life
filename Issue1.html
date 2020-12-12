@@ -12,7 +12,7 @@
 		<link href="https://fonts.googleapis.com/css2?family=Proza+Libre&display=swap" rel="stylesheet">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 	</head>
-	<body onload="metadataViewer('issue1'), findOrigin()">
+	<body onload="fillTheGaps()", "metadataViewer('issue1'), findOrigin()">
 		<!-- main navigation navbar -->
 		<div class="topnav" id="metanav">			
 			<a id="mmm" style="float: left;">Art&amp;Life</a>
@@ -64,7 +64,7 @@
 				<button id="prev" onclick="prevArticle()"/>&lt;</button>
 				<button id="next" onclick="nextArticle()"/>&gt;</button>
         
-				<div id="issue1" onload="fillTheGaps()">
+				<div id="issue1">
 					
 					<!-- cover page 1 -->
 					
