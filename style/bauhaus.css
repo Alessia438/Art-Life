@@ -26,6 +26,7 @@ h1, .byline{
 /* stile per cover page*/
 h1#cover{
   font-family: 'Bauhaus 93';
+  color: #141514;
   box-sizing: content-box;  
   width: 30%;
   height: 100px;  
@@ -33,12 +34,13 @@ h1#cover{
   position: relative;
   top: 70pt;
   left: 50pt;
-
 }
 
-body#cover:not(.h1#cover){
+body#cover{
   background: url('triangle.jpg') right top no-repeat, url('sfondo_beige.jpg') right top repeat;
   background-size: 50%, 100%;
+}
+p#cover{
   font-family: 'P22 Bayer Universal Regular';
   font-weight:normal;
   font-style:normal; 
@@ -46,7 +48,7 @@ body#cover:not(.h1#cover){
   text-transform: lowercase;
 }
 
-p{text-align: justify;}
+
 
 /* stile per articoli*/
 
@@ -132,6 +134,8 @@ h3{
   font-family: "Bauhaus 93";
   font-size: 170%
 }
+
+p{text-align: justify;}
 
 p.byline{
   font-style:lowercase;
