@@ -98,7 +98,7 @@ video source{
   padding-bottom:3.5em;
 }
 
-h1:not(h1#cover){
+h1:not(.h1#cover){
   font-family: "Bauhaus 93";
   text-align: left;
   text-transform: uppercase;
