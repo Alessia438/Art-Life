@@ -901,7 +901,11 @@ button#sort:hover, button#appearanceSort:hover, button#frequencySort:hover {
   font-weight:bold;
 }
 
-
+iframe {
+	border-style: none; 
+	width: 100%; 
+	height: 35.85em;
+}
 
 
 
