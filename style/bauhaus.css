@@ -63,8 +63,8 @@ body:not(.h1){
   -webkit-hyphens: auto;
   -ms-hyphens: auto;
   hyphens: auto;
- /* letter-spacing: 0.03em;  prima non c'era serve per gli orphans
-  word-spacing: 0.04em;*/
+ letter-spacing: 0.03em; 
+ word-wrap: break-word; /*serve?*/
 }
 
 
@@ -76,12 +76,12 @@ bottom: 20pt;
 
 section img{
   position: relative;
-  top: 60px;
+  top: 30pt; /* era px*/
 }
 
 #heading img {
   position: relative;
-  top: 60px;
+  top: 30px;
 }
 
 video source{
