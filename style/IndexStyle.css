@@ -574,11 +574,11 @@ Bottom right text
   list-style-type: none;
   margin: 0;
   padding: 0;
-  overflow: hidden;
   background-color: #bfbfbf;
   border-bottom: 3px solid;
   /* position: sticky;
-  width: 100%; */
+  width: 100%; 
+  overflow: hidden;*/
 }
 /* per rendere sticky la navbar del selector*/
 
