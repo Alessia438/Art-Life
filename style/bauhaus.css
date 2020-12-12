@@ -28,7 +28,6 @@ h1, .byline{
 body#cover{
   background: url('triangle.jpg') right top no-repeat, url('sfondo_beige.jpg') right top repeat;
   background-size: 50%, 100%;
-  transform: rotate(-15deg); 
 }
 
 
