@@ -35,6 +35,7 @@ body#cover:first-of-type{
    transform: rotate(15deg);
    position: relative;
    left: 60pt;
+   text-decoration: underline;
 }
 
 
