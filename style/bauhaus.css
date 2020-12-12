@@ -31,18 +31,16 @@ body#cover{
   
 
 }
-body#cover:nth-child(2){
+body#cover:first-of-type{
    transform: rotate(15deg);
    position: relative;
    left: 60pt;
    text-decoration: underline;
 }
 
-body#cover:first-of-child{
+p#cover{
   text-decoration: none;
 }
-
-
 
 /* stile per articoli*/
 
