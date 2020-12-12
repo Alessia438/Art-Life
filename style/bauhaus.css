@@ -30,20 +30,8 @@ body#cover{
   background-size: 50%, 100%;
 }
 
-h1{
-  font-family: 'Bauhaus 93';
-  color: #141514;
-  transform: rotate(90deg);
-  box-sizing: content-box;  
-  width: 30%;
-  height: 100px;  
-  border: 0px;
-  position: relative;
-  top: 70pt;
-  left: 50pt;
-}
 
-p{
+p#cover{
   font-family: 'P22 Bayer Universal Regular';
   font-weight:normal;
   font-style:normal;
