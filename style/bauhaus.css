@@ -54,7 +54,7 @@ body{
   
 }
 
-body:not(.h1){
+body:not(h1){
   font-family: "Ronda Regular";
   font-size: 14pt;
   font-weight: lighter;
