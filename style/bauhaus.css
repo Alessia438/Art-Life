@@ -114,13 +114,16 @@ h1{
   width: 60%; /*era 30*/
  /* height: 90px;  era 100*/
   border: 0px;
+  transform: rotate(30deg);
 }
+
 section h1{
   transform: rotate(-15deg);
 }
+
 h2{
   font-family: "Bauhaus 93";
-  font-size: 180%;
+  font-size: 150%;
 }
 
 h3{
