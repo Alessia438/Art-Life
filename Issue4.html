@@ -32,15 +32,15 @@
 				<!-- selector vav -->
 				<ul id="selectorNav">
 					<li class="dropdown"><a class="dropbtn">Issues</a>
-						<div class="dropdown-content">
-							<a class="buttonIssue" href="https://alessia438.github.io/cookbook-cakes/Issue1.html#coverPage1" onclick="changeIssue('issue1')">Art and Society</a>
+						<div class="dropdown-content" id="DynamicGeneratorPowerButton2000">
+							<!-- <a class="buttonIssue" href="https://alessia438.github.io/cookbook-cakes/Issue1.html#coverPage1" onclick="changeIssue('issue1')">Art and Society</a>
 							<a class="buttonIssue" href="https://alessia438.github.io/cookbook-cakes/Issue2.html#coverPage2">Art and Covid-19</a>
-							<a class="buttonIssue" href="https://alessia438.github.io/cookbook-cakes/Issue3.html#coverPage3">Art and Ecology</a> 
+							<a class="buttonIssue" href="https://alessia438.github.io/cookbook-cakes/Issue3.html#coverPage3">Art and Ecology</a> -->
 						</div>
 					</li>	
 					<li class="dropdown"><a class="dropbtn">Articles</a>
 						<div class="dropdown-content" id="changeArguments">
-						<a class="buttonArticle" onclick="changeArticle('article1', 'issue4')"></a>
+						<!-- <a class="buttonArticle" onclick="changeArticle('article1', 'issue4')"></a> -->
 					</li>
 
 					<li class="dropdown"><a class="dropbtn">Themes</a>
@@ -62,14 +62,13 @@
 				<button id="next" onclick="nextArticle()"/>&gt;</button>
         
 				<div id="issue4">
-					<!-- article 1 -->
-
-					<div class="article1 article" id="article16">
-						<iframe src="" frameborder="0" border="0" cellspacing="0" style="border-style: none; width: 100%; height: 35.85em"></iframe>
-			    		</div>
+					<div id="coverPage4">
+						<iframe src="cover_pages/cover_page4.html" name="coverPage4" frameborder="0" border="0" cellspacing="0"></iframe>
+					</div>
 				</div>
 				
 		    	</div> <!-- si chiude il div content -->
+			<script> fillTheGaps(); </script>
 
 			<div id="metadata">  <!-- div che contiene il metadata viewer -->
 
