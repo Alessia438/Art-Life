@@ -92,6 +92,17 @@ function fillTheGaps(){
 			issueBut.setAttribute('href', 'https://alessia438.github.io/cookbook-cakes/'+articleInfo[n].issueFile);
 			issueBut.innerHTML = articleInfo[n].issueName;
 			document.getElementById('DynamicGeneratorPowerButton2000').appendChild(issueBut);
+			//da qua rischio errore
+			if (window.location.href.includes(articleInfo[n].issueFile.split('#')[0])){
+				for (var i=1; i<=articleInfo[n].articles.length;i++){
+					var articleBut = document.createElement('a');
+					articleBut.setAttribute('class', 'buttonArticle');
+					articleBut.setAttribute('onclick', 'changeArticle("article"+i, "issue"+(n+1))');
+					articleBut.innerHTML = articleInfo[n].articles[i-1].articleName;
+					document.getElementById('changeArguments').appendChild(articleBut);
+				}
+			}
+			//fino a qua a rischio errore
 		}
 	}
 }
