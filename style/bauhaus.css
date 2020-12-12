@@ -36,7 +36,7 @@ h1#cover{
 
 }
 
-body#cover:not(.h1){
+body#cover:not(.h1#cover){
   background: url('triangle.jpg') right top no-repeat, url('sfondo_beige.jpg') right top repeat;
   background-size: 50%, 100%;
   font-family: 'P22 Bayer Universal Regular';
