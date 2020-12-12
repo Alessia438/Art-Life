@@ -31,7 +31,7 @@ body#cover{
   
 
 }
-body#cover:first-of-type{
+body#cover:nth-child(2){
    transform: rotate(15deg);
    position: relative;
    left: 60pt;
