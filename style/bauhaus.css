@@ -27,6 +27,7 @@ h1, .byline{
 h1#cover{
   font-family: 'Bauhaus 93';
   color: #141514;
+  transform: rotate(15deg);
   box-sizing: content-box;  
   width: 30%;
   height: 100px;  
@@ -44,7 +45,7 @@ p#cover{
   font-family: 'P22 Bayer Universal Regular';
   font-weight:normal;
   font-style:normal; 
-  transform: rotate(-15deg);
+  
   text-transform: lowercase;
 }
 
