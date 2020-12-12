@@ -48,8 +48,8 @@ body{
   /*background-repeat: no-repeat, no-repeat;
   background-attachment: fixed, fixed;
   background-position: initial, right top;*/
-  background-size: 30%, 100%;
-  padding: 10px;
+  background-size: 60%, 100%;
+  
 }
 
 body:not(.h1){
