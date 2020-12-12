@@ -36,7 +36,7 @@ body#cover:first-of-type{
    position: relative;
    left: 60pt;
    text-decoration: underline;
-   width: 80%;
+   width: 65%;
 }
 
 /* stile per articoli*/
@@ -114,6 +114,7 @@ h1{
  /* height: 90px;  era 100*/
   border: 0px;
   transform: rotate(-30deg);
+  width: 50vmin;
 }
 
 section h1{
