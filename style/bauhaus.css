@@ -29,7 +29,7 @@ body#cover{
   background: url('triangle.jpg') right top no-repeat, url('sfondo_beige.jpg') right top repeat;
   background-size: 50%, 100%;
   
- 
+
 }
 body#cover:first-of-type{
    transform: rotate(15deg);
@@ -38,6 +38,9 @@ body#cover:first-of-type{
    text-decoration: underline;
 }
 
+body#cover:first-of-child{
+  text-decoration: none;
+}
 
 
 
