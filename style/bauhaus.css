@@ -31,7 +31,7 @@ body#cover{
   transform: rotate(-15deg); 
 }
 
-h1{transform: rotate(90deg); }
+h1#cover{transform: rotate(90deg); }
 
 /* stile per articoli*/
 
@@ -89,7 +89,7 @@ video source{
   padding-bottom:3.5em;
 }
 
-h1{
+h1:not(h1#cover){ /*prima non c'era :noth1cover*/
   font-family: "Bauhaus 93";
   text-align: left;
   text-transform: uppercase;
@@ -103,8 +103,8 @@ h1{
   padding-left: 2.5em;
   color: #141514;
   box-sizing: content-box;  
-  width: 30%;
-  height: 100px;  
+  width: 40%; /*era 30*/
+  height: 90px;  /*era 100*/
   border: 0px;
 }
 
@@ -118,7 +118,14 @@ h3{
   font-size: 170%
 }
 
-p{text-align: justify;}
+p{
+  text-align: justify;
+  letter-spacing: 0.03em;
+  word-spacing: 0.04em;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+}
 
 p.byline{
   font-style:lowercase;
