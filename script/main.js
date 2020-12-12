@@ -5,23 +5,28 @@ var articleInfo = [
 		 'articles': [
 	 		{
 				'articleName': 'How art and culture can help us rethink time',
-				'articleFile': 'Issue1.html#article1'	
+				'articleFile': 'Issue1.html#article1',	
+				'htmlName': 'art1-bbc1.html'
 			},
 			 {
 				'articleName': 'How to create an iconic image',
-				'articleFile': 'Issue1.html#article2'	
+				'articleFile': 'Issue1.html#article2',
+				 'htmlName': 'art2-bbc2.html'
 			},
 			 {
 				'articleName': 'The death of the artist and the birth of the creative entrepreneur',
-				'articleFile': 'Issue1.html#article3'	
+				'articleFile': 'Issue1.html#article3',	
+				 'htmlName': 'art3-Atl.html'
 			},
 			 {
 				'articleName': 'HWelcome to Airspace',
-				'articleFile': 'Issue1.html#article4'	
+				'articleFile': 'Issue1.html#article4',	
+				 'htmlName': 'art4-verge.html'
 			},
 			 {
 				'articleName': 'Style is an algorithm',
-				'articleFile': 'Issue1.html#article5'	
+				'articleFile': 'Issue1.html#article5',	
+				 'htmlName': 'art5-vox.html'
 			}
 		 ]
 	},
@@ -107,6 +112,20 @@ function fillTheGaps(){
 					articleBut.innerHTML = articleInfo[n].articles[i-1].articleName;
 					document.getElementById('changeArguments').appendChild(articleBut);
 					//riempimento iFrame
+					var divIFrame = document.createElement('div');
+					divIFrame.class = curArticle;
+					divIFrame.class = 'article';
+					divIFrame.id = 'article'+(n*5+i);
+					var iFrame = document.createElement('iframe');
+					iFrame.src = 'articles/'+curIssue+'_art'+i+'/'+articleInfo[n].articles[i-1].htmlName;
+					iFrame.name = 'iframe'+(n*5+i);
+					iFrame.id = 'iframe'+(n*5+i);
+					iFrame.frameborder = '0';
+					iFrame.border = '0';
+					iFrame.cellspacing = '0';
+					//aggiungere nel css gli elementi di stile
+					divIFrame.appendChild(iFrame);
+					document.getElementById(curIssue).appendChild(divIFrame);
 				}
 				//aggiunto attributo onclick al bottone dell'issue corrente solo a questo punto perchè va aggiunto solo sul bottone dell'issue mostrato all'utente
 				issueBut.setAttribute('onclick', 'changeIssue("'+curIssue+'")');
