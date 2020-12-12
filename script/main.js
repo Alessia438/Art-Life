@@ -113,8 +113,8 @@ function fillTheGaps(){
 					document.getElementById('changeArguments').appendChild(articleBut);
 					//riempimento iFrame
 					var divIFrame = document.createElement('div');
-					divIFrame.class = curArticle;
-					divIFrame.class = 'article';
+					divIFrame.className = curArticle;
+					divIFrame.className = 'article';
 					divIFrame.id = 'article'+(n*5+i);
 					var iFrame = document.createElement('iframe');
 					iFrame.src = 'articles/'+curIssue+'_art'+i+'/'+articleInfo[n].articles[i-1].htmlName;
