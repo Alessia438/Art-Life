@@ -30,7 +30,7 @@ body#cover{
   background-size: 50%, 100%;
 }
 
-p#cover{transform: rotate(15deg);} 
+
 
 /* stile per articoli*/
 
@@ -127,6 +127,8 @@ p{
   -ms-hyphens: auto;
   hyphens: auto;
 }
+
+p#cover{transform: rotate(15deg);} 
 
 p.byline{
   font-style:lowercase;
