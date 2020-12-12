@@ -44,11 +44,11 @@ span[onclick] {cursor:pointer;}
 
 /* stile del titolo con righe colorate e immagini quadrato, cerchio, triangolo*/
 body{
-  background: url('bau-esclama.png') right top no-repeat, url('sfondo_beige.jpg') left top repeat; 
+  background: url('bau-esclama.png') right top no-repeat, url('sfondo_beige.jpg') right top repeat; 
   /*background-repeat: no-repeat, no-repeat;
   background-attachment: fixed, fixed;
   background-position: initial, right top;*/
-  background-size: 80%, 100%;
+  background-size: 30%, 100%;
   padding: 10px;
 }
 
