@@ -31,13 +31,7 @@ body#cover{
   transform: rotate(-15deg); 
 }
 
-h1#cover{
-  font-family: "Bauhaus 93";
-  text-align: left;
-  text-transform: uppercase;
-  font-size: 198%;
-  transform: rotate(90deg); 
-}
+h1#cover{transform: rotate(90deg); }
 
 /* stile per articoli*/
 
@@ -95,7 +89,7 @@ video source{
   padding-bottom:3.5em;
 }
 
-h1:not(h1#cover){ /*prima non c'era :noth1cover*/
+h1{
   font-family: "Bauhaus 93";
   text-align: left;
   text-transform: uppercase;
