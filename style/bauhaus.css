@@ -24,10 +24,16 @@ h1, .byline{
 */
 
 /* stile per cover page*/
-h1#cover{
+
+body#cover{
+  background: url('triangle.jpg') right top no-repeat, url('sfondo_beige.jpg') right top repeat;
+  background-size: 50%, 100%;
+}
+
+h1{
   font-family: 'Bauhaus 93';
   color: #141514;
-  transform: rotate(15deg);
+  transform: rotate(90deg);
   box-sizing: content-box;  
   width: 30%;
   height: 100px;  
@@ -37,14 +43,11 @@ h1#cover{
   left: 50pt;
 }
 
-body#cover{
-  background: url('triangle.jpg') right top no-repeat, url('sfondo_beige.jpg') right top repeat;
-  background-size: 50%, 100%;
-}
-p#cover{
+p{
   font-family: 'P22 Bayer Universal Regular';
   font-weight:normal;
-  font-style:normal; 
+  font-style:normal;
+  transform: rotate(-15deg); 
   text-transform: lowercase;
 }
 
