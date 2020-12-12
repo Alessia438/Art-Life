@@ -24,16 +24,15 @@ h1, .byline{
 */
 
 /* stile per cover page*/
-/*
+
 body#cover{
-  background-image: url('bauhaus_sfondo.jpg');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  height: 100%;
-  font-family: "Bauhaus 93";
+  background: url('triangle.jpg') right top no-repeat, url('sfondo_beige.jpg') right top repeat;
+  background-size: 50%, 100%;
+  font-family: 'Bauhaus 93';
   font-weight:normal;
-  font-style:normal;
+  font-style:normal; 
 }
+
 p{text-align: justify;}
 
 /* stile per articoli*/
