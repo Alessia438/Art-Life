@@ -80,7 +80,10 @@ var articleInfo = [
 	{
 		'issueName': 'Issue 4',
 		'issueFile': 'Issue4.html#coverPage4',
-		 'articles': []
+		 'articles': [{
+				'articleName': 'She ended up on a journey through grief. An artist set out to paint climate change. ',
+				'articleFile': 'Issue4.html#article1'	
+			}]
 	}
 ]
 
@@ -91,20 +94,21 @@ function fillTheGaps(){
 			issueBut.setAttribute('class', 'buttonIssue');
 			issueBut.setAttribute('href', 'https://alessia438.github.io/cookbook-cakes/'+articleInfo[n].issueFile);
 			issueBut.innerHTML = articleInfo[n].issueName;
-			document.getElementById('DynamicGeneratorPowerButton2000').appendChild(issueBut);
 			//da qua rischio errore
 			if (window.location.href.includes(articleInfo[n].issueFile.split('#')[0])){
+				var curIssue = "issue"+(n+1);
 				for (var i=1; i<=articleInfo[n].articles.length;i++){
 					var articleBut = document.createElement('a');
 					articleBut.setAttribute('class', 'buttonArticle');
-					var curArticle = "article"+i, 
-					    curIssue = "issue"+(n+1);
+					var curArticle = "article"+i;
 					articleBut.setAttribute('onclick', 'changeArticle("'+curArticle+'", "'+curIssue+'")');
 					articleBut.innerHTML = articleInfo[n].articles[i-1].articleName;
 					document.getElementById('changeArguments').appendChild(articleBut);
 				}
+				issueBut.setAttribute('onclick', 'changeIssue("'+curIssue+'")');
 			}
 			//fino a qua a rischio errore
+			document.getElementById('DynamicGeneratorPowerButton2000').appendChild(issueBut);
 		}
 	}
 }
