@@ -119,6 +119,10 @@ h1{
 
 section h1{
   transform: rotate(-15deg);
+    -webkit-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+
 }
 
 h2{
