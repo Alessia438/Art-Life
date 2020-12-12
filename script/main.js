@@ -80,7 +80,10 @@ var articleInfo = [
 	{
 		'issueName': 'Issue 4',
 		'issueFile': 'Issue4.html#coverPage4',
-		 'articles': []
+		 'articles': [{
+				'articleName': 'She ended up on a journey through grief. An artist set out to paint climate change. ',
+				'articleFile': 'Issue4.html#article1'	
+			}]
 	}
 ]
 
