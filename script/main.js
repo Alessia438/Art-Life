@@ -113,14 +113,15 @@ function fillTheGaps(){
 					document.getElementById('changeArguments').appendChild(articleBut);
 					//riempimento iFrame
 					var divIFrame = document.createElement('div');
-					divIFrame.className = curArticle;
-					divIFrame.className = 'article';
+					divIFrame.className = curArticle + ' article';
+					//divIFrame.className = 'article';
 					divIFrame.id = 'article'+(n*5+i);
 					var iFrame = document.createElement('iframe');
 					iFrame.src = 'articles/'+curIssue+'_art'+i+'/'+articleInfo[n].articles[i-1].htmlName;
 					iFrame.name = 'iframe'+(n*5+i);
 					iFrame.id = 'iframe'+(n*5+i);
-					iFrame.frameborder = '0';
+					//iFrame.frameborder = '0';
+					iFrame.setAttribute('frameborder', '0');
 					iFrame.border = '0';
 					iFrame.cellspacing = '0';
 					//aggiungere nel css gli elementi di stile
