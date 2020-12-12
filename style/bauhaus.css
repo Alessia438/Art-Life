@@ -31,16 +31,7 @@ body#cover{
   transform: rotate(-15deg); 
 }
 
-
-p#cover{
-  font-family: 'P22 Bayer Universal Regular';
-  font-weight:normal;
-  font-style:normal;
-  transform: rotate(-15deg); 
-  text-transform: lowercase;
-}
-
-
+h1{transform: rotate(90deg); }
 
 /* stile per articoli*/
 
