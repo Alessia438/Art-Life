@@ -12,12 +12,11 @@
 		<link rel="stylesheet" type="text/css" href="style/IndexStyle.css">
 		<link href="https://fonts.googleapis.com/css2?family=Proza+Libre&display=swap" rel="stylesheet">
 		<meta name="viewport" content="width=device-width, initial-scale=1"> 
-		<!-- <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
 		<script src="script/main.js"></script>
 	</head>
 	<body onload="metadataViewer('issue4'), findOrigin()">
 		<!-- main navigation navbar -->
-		<div class="topnav">			
+		<div class="topnav" id="metanav">			
 			<a id="mmm" style="float: left;">Art&amp;Life</a>
 			<a href="index.html">Home</a>
 			<a href="disclaimer.html">Disclaimer</a> <!-- dovrebbe stare nel selector -->
@@ -33,14 +32,11 @@
 				<ul id="selectorNav">
 					<li class="dropdown"><a class="dropbtn">Issues</a>
 						<div class="dropdown-content" id="DynamicGeneratorPowerButton2000">
-							<!-- <a class="buttonIssue" href="https://alessia438.github.io/cookbook-cakes/Issue1.html#coverPage1" onclick="changeIssue('issue1')">Art and Society</a>
-							<a class="buttonIssue" href="https://alessia438.github.io/cookbook-cakes/Issue2.html#coverPage2">Art and Covid-19</a>
-							<a class="buttonIssue" href="https://alessia438.github.io/cookbook-cakes/Issue3.html#coverPage3">Art and Ecology</a> -->
 						</div>
 					</li>	
 					<li class="dropdown"><a class="dropbtn">Articles</a>
 						<div class="dropdown-content" id="changeArguments">
-						<!-- <a class="buttonArticle" onclick="changeArticle('article1', 'issue4')"></a> -->
+						</div>
 					</li>
 
 					<li class="dropdown"><a class="dropbtn">Themes</a>
@@ -88,25 +84,14 @@
 					</li>
 				</ul>
 
-				   <!-- <div id="changeOrderBtns">
-					      <p class="metadataText" onclick="showMetaContent()">METADATA VIEWER</p>
-					      <p class="metadataText" id="contentToShow" style="display:none">Here you can find all the metadata of all the articles of the issue. You can jump from a metadata to the correspondent place in the article and vice versa.</p>
-					      <p class="metadataText">Order your list by:</p>
-					      <button id="sort" onclick="sortOccurrences('class')">Alphabet</button> 
-					      <button id="appearanceSort" onclick="sortOccurrences('data-position')">Appearance</button>
-					      <button id="frequencySort" onclick="sortByFreq()">Frequency</button> 
-				    </div> -->
-
 				    <ul id="listIssue"></ul>
 
 			</div> <!-- si chiude il div che contiene il metadata viewer -->
 
-			<div class="footer"> <!-- text-align: justify; background: rgba(38, 38, 38); color: white; -->
+			<div class="footer"> 
 	    		<h5>© Art&amp;Life: Created by Alessia Cioffi, Sara Coppini and Ariele Santello</h5>  
 			</div>
 
 		</div> <!-- si chiude il div flex-container -->
-
-
 	</body>
 </html>

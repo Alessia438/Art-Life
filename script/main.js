@@ -230,11 +230,11 @@ function changeArticleCommon(c, articleNum, myOrigin, isCover, strToSplit, issue
 		if ("article" + i === articleNum){
 			c[i].style.display = "block";
 			getLinkOrigin(c[i], myOrigin);
+			if (isCover) {top.window.location.href =  window.location.href.split(strToSplit)[0]+issueNum[0].toUpperCase()+issueNum.slice(1)+'.html#'+c[i].id;}
+			else{window.location.href =  window.location.href.split(strToSplit)[0]+'#'+c[i].id;}	
 		}
 		else {c[i].style.display = "none";}
 	}
-	if (isCover) {top.window.location.href =  window.location.href.split(strToSplit)[0]+issueNum[0].toUpperCase()+issueNum.slice(1)+'.html#'+articleNum;}
-	else{window.location.href =  window.location.href.split(strToSplit)[0]+'#'+articleNum;}	
 }
 
 function changeArticle(articleNum, issueNum){
@@ -705,7 +705,7 @@ function showMetaContent(){
 function findOrigin(){
 	if(window.location.href.includes('#article')){
 		if(document.getElementById("Origin").href.length <1){
-			getLinkOrigin(document.getElementsByClassName(window.location.href.slice(window.location.href.indexOf('#')+1, window.location.href.length))[0], document.getElementById("Origin"));
+			getLinkOrigin(document.getElementById(window.location.href.slice(window.location.href.indexOf('#')+1, window.location.href.length)), document.getElementById("Origin"));
 		}
 	}
 }

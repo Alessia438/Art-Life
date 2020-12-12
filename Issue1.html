@@ -32,18 +32,10 @@
 				<ul id="selectorNav">
 					<li class="dropdown"><a class="dropbtn">Issues</a>
 						<div class="dropdown-content" id="DynamicGeneratorPowerButton2000">
-							<!-- <a class="buttonIssue" href="https://alessia438.github.io/cookbook-cakes/Issue1.html#coverPage1" onclick="changeIssue('issue1')">Art and Society</a>
-							<a class="buttonIssue" href="https://alessia438.github.io/cookbook-cakes/Issue2.html#coverPage2">Art and Covid-19</a>
-							<a class="buttonIssue" href="https://alessia438.github.io/cookbook-cakes/Issue3.html#coverPage3">Art and Ecology</a> -->
 						</div>
 					</li>	
 					<li class="dropdown"><a class="dropbtn">Articles</a>
 						<div class="dropdown-content" id="changeArguments">
-						<!-- <a class="buttonArticle" onclick="changeArticle('article1', 'issue1')">How art and culture can help us rethink time</a>
-						<a class="buttonArticle" onclick="changeArticle('article2', 'issue1')">How to create an iconic image</a>
-						<a class="buttonArticle" onclick="changeArticle('article3', 'issue1')">The death of the artist and the birth of the creative entrepreneur</a>
-						<a class="buttonArticle" onclick="changeArticle('article4', 'issue1')">Welcome to Airspace</a>
-						<a class="buttonArticle" onclick="changeArticle('article5', 'issue1')">Style is an algorithm</a> -->
 						</div>
 					</li>
 
@@ -70,75 +62,33 @@
 					<div id="coverPage1">
 						<iframe src="cover_pages/cover_page1.html" name="coverPage1" frameborder="0" border="0" cellspacing="0"></iframe>
 					</div>
-
-
-					<!-- 
-					<div class="article1 article" id="article1">
-						<iframe src="articles/issue1_art1/art1-bbc1.html" name="iframe1" id="iframe1" frameborder="0" border="0" cellspacing="0" style="border-style: none; width: 100%; height: 35.85em"></iframe>
-			    		</div>
-
-
-					<div class="article2 article" id="article2">
-						<iframe src="articles/issue1_art2/art2-bbc2.html" name="iframe2" id="iframe2" frameborder="0" border="0" cellspacing="0" style="border-style: none; width: 100%; height: 35.85em;"></iframe>
-			    		</div>
-
-
-					<div class="article3 article" id="article3">
-						<iframe src="articles/issue1_art3/art3-Atl.html" name="iframe3" id="iframe3" frameborder="0" border="0" cellspacing="0" style="border-style: none; width: 100%; height: 35.85em;"></iframe>
-			    		</div>
-					
-
-					<div class="article4 article" id="article4">
-						<iframe src="articles/issue1_art4/art4-verge.html" name="iframe4" id="iframe4" frameborder="0" border="0" cellspacing="0" style="border-style: none; width: 100%; height: 35.85em;"></iframe>
-			    		</div>
-
-					<div class="article5 article" id="article5">
-						<iframe src="articles/issue1_art5/art5-vox.html" name="iframe5" id="iframe5" frameborder="0" border="0" cellspacing="0" style="border-style: none; width: 100%; height: 35.85em;"></iframe>
-			    		</div>
-
-					-->
-			    	
-			    </div>
+			    	</div>
 				
 		    	</div> <!-- si chiude il div content -->
 			<script> fillTheGaps(); </script>
 
-	    	<div id="metadata">  <!-- div che contiene il metadata viewer -->
-	
-			<ul id="selectorNav" class="stickynav">    
-				<li class="dropdown"><a class="dropbtn" onclick="showMetaContent()">About metadata</a>
-					<div class="dropdown-content">	
-						<a class="buttonIssue" id="contentToShow" style="display: none;">Here you can find all the metadata of all the articles of the issue. You can jump from a metadata to the correspondent place in the article and vice versa.</a>
-					</div>
-				</li>
+			<div id="metadata">  <!-- div che contiene il metadata viewer -->
 
-				<li class="dropdown"><a class="dropbtn">Order by</a>
-					<div class="dropdown-content">
-					    <a class="buttonIssue" id="sort" onclick="sortOccurrences('class')">Alphabet</a>
-					    <a class="buttonIssue" id="appearanceSort" onclick="sortOccurrences('data-position')">Appearence</a>
-					    <a class="buttonIssue" id="frequencySort" onclick="sortByFreq()">Frequency</a>
-					</div>
-				</li>
-			</ul>
-			
-			
-			<!--
-			    <div id="changeOrderBtns">
-				      <p class="metadataText" onclick="showMetaContent()">METADATA VIEWER</p>
-				      <p class="metadataText" id="contentToShow" style="display:none">Here you can find all the metadata of all the articles of the issue. You can jump from a metadata to the correspondent place in the article and vice versa.</p>
-				      <p class="metadataText">Order your list by:</p>
-				      <button id="sort" onclick="sortOccurrences('class')">Alphabet</button> 
-				      <button id="appearanceSort" onclick="sortOccurrences('data-position')">Appearance</button> 
-				      <button id="frequencySort" onclick="sortByFreq()">Frequency</button> 
-			    </div>
-			-->
-			    <ul id="listIssue"></ul>
+				<ul id="selectorNav" class="stickynav">    
+					<li class="dropdown"><a class="dropbtn" onclick="showMetaContent()">About metadata</a>
+						<div class="dropdown-content">	
+							<a class="buttonIssue" id="contentToShow" style="display: none;">Here you can find all the metadata of all the articles of the issue. You can jump from a metadata to the correspondent place in the article and vice versa.</a>
+						</div>
+					</li>
 
+					<li class="dropdown"><a class="dropbtn">Order by</a>
+						<div class="dropdown-content">
+						    <a class="buttonIssue" id="sort" onclick="sortOccurrences('class')">Alphabet</a>
+						    <a class="buttonIssue" id="appearanceSort" onclick="sortOccurrences('data-position')">Appearence</a>
+						    <a class="buttonIssue" id="frequencySort" onclick="sortByFreq()">Frequency</a>
+						</div>
+					</li>
+				</ul>
+				<ul id="listIssue"></ul>
 			</div> <!-- si chiude il div che contiene il metadata viewer -->		
 
-
 			<div class="footer"> <!-- text-align: justify; background: rgba(38, 38, 38); color: white; -->
-	    		<h5>© Art&amp;Life: Created by Alessia Cioffi, Sara Coppini and Ariele Santello</h5>  
+			<h5>© Art&amp;Life: Created by Alessia Cioffi, Sara Coppini and Ariele Santello</h5>  
 			</div>
 
 		</div> <!-- si chiude il div flex-container -->
