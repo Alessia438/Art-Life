@@ -49,7 +49,7 @@ body{
   background-attachment: fixed, fixed;
   background-position: initial, right top;*/
   background-size: 60%, 100%;
-  
+  padding: 20px;
 }
 
 body:not(.h1){
