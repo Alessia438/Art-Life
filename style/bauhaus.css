@@ -222,7 +222,7 @@ img{
  /*padding-right: 5pt;
   padding-left: 0pt;
   padding-top: 2%;*/
-  filter:saturate(0%) sepia(100%) contrast(80%) saturate(150%); 
+  filter:saturate(0%) sepia(100%) contrast(80%) saturate(100%); 
 }
 
 p a{color: black;}
