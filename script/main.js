@@ -99,7 +99,7 @@ function fillTheGaps(){
 					articleBut.setAttribute('class', 'buttonArticle');
 					var curArticle = "article"+i, 
 					    curIssue = "issue"+(n+1);
-					articleBut.setAttribute('onclick', 'changeArticle(curArticle, curIssue)');
+					articleBut.setAttribute('onclick', 'changeArticle("'+curArticle+'", "'+curIssue+'")');
 					articleBut.innerHTML = articleInfo[n].articles[i-1].articleName;
 					document.getElementById('changeArguments').appendChild(articleBut);
 				}
