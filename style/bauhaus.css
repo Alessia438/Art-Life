@@ -117,7 +117,11 @@ h1{
   width: 60vmin;
 }
 @media only screen and (max-width: 600px) {
-  h1{width: 30%}
+  h1{
+    width: 100%;
+    position: relative;
+    right: 40pt;
+  }
 }
 
 section h1{
