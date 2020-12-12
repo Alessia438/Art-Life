@@ -52,7 +52,7 @@ body:not(.h1){
   font-family: "Ronda Regular";
   font-size: 14pt;
   font-weight: lighter;
-  text-align: justify; /* or left? */
+  text-align: justify; 
   margin-right: 20mm; /* vW? secondo Tscihold*/
   margin-left: 20mm;
   line-height: 1.6; /* 21pt;*/
@@ -63,7 +63,7 @@ body:not(.h1){
   -webkit-hyphens: auto;
   -ms-hyphens: auto;
   hyphens: auto;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.03em; /* prima non c'era serve per gli orphans*/
   word-spacing: 0.04em;
 }
 
