@@ -24,13 +24,20 @@ h1, .byline{
 */
 
 /* stile per cover page*/
+h1#cover{
+  font-family: 'Bauhaus 93';
+  position: relative;
+  top: 70pt;
 
+}
 body#cover{
   background: url('triangle.jpg') right top no-repeat, url('sfondo_beige.jpg') right top repeat;
   background-size: 50%, 100%;
-  font-family: 'Bauhaus 93';
+  font-family: 'P22 Bayer Universal Regular';
   font-weight:normal;
   font-style:normal; 
+  transform: rotate(-15deg);
+  text-transform: lowercase;
 }
 
 p{text-align: justify;}
