@@ -120,11 +120,9 @@ function fillTheGaps(){
 					iFrame.src = 'articles/'+curIssue+'_art'+i+'/'+articleInfo[n].articles[i-1].htmlName;
 					iFrame.name = 'iframe'+(n*5+i);
 					iFrame.id = 'iframe'+(n*5+i);
-					//iFrame.frameborder = '0';
 					iFrame.setAttribute('frameborder', '0');
-					iFrame.border = '0';
-					iFrame.cellspacing = '0';
-					//aggiungere nel css gli elementi di stile
+					iFrame.setAttribute('border', '0');
+					iFrame.setAttribute('cellspacing', '0');
 					divIFrame.appendChild(iFrame);
 					document.getElementById(curIssue).appendChild(divIFrame);
 				}
