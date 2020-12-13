@@ -26,10 +26,8 @@ h1, .byline{
 /* stile per cover page*/
 
 body#cover{
-  background: url('triangle.jpg') right top no-repeat, url('sfondo_beige.jpg') right top repeat;
-  background-size: 50%, 100%;
-  
-
+  background: url('croce.png') right top no-repeat, url('sfondo_beige.jpg') right top repeat;
+  background-size: 50%, 100%;  
 }
 body#cover:first-of-type{
    transform: rotate(15deg);
