@@ -2,6 +2,10 @@
 @font-face { font-family: "P22 Vienna Regular"; src: url("p22_vienna_regular.ttf"); }
 @font-face { font-family: "Auriol"; src: url("Auriol.otf"); }
 
+/* global styling */
+@-ms-viewport {width: device-width;}
+
+/* PC */
 [onClick] {cursor:pointer;}
 span[onclick] {cursor:pointer;}
 #cover p[onclick]:hover {text-decoration: underline;}
@@ -22,19 +26,20 @@ body#cover {
   font-family: "Auriol";
   font-weight:normal;
   font-style:normal;
-  margin-right: 28vW;
-  margin-left: 32vW;
-  margin-top: 30vW;
+  margin-right: 25vW;
+  /*margin-left: 32vW;*/
+  margin-top: 25vW;
   margin-bottom: 30vW;
-  background-size: 100vw;
-  font-size: 2em;
+  background-size: 100% 100%;
+  /*font-size: 2em;*/
 }
 
 #cover h1 {
     color: rgb(203, 125, 106);
     font-family: 'Auriol';
     text-transform: uppercase;
-    font-size: 2em;
+    font-size: 4em;
+    margin-left: 25vw;
 }
 
 #cover p{
@@ -46,10 +51,11 @@ body#cover {
 	line-height: 1em;
 	letter-spacing: 0.04em;
 	word-spacing: 0.1em;
-	font-size: 1.1em;
+	font-size: 2em;
 	margin-bottom: 1.5em;
 	-webkit-hyphenate-character: auto;
 	 hyphens: auto;
+	 margin-left: 30vw;
 }
 
 #cover p::first-letter {text-transform: capitalize;}
@@ -99,6 +105,22 @@ body{
 
     img .twoLat{}
     img .oneCenter{}
+
+
+
+/* TABLET */
+/* @media only screen and (max-width: 700px) */
+  @media /* only */ screen and (max-width: 700px){
+   
+}
+
+/* SMARTPHONE */
+
+  @media screen and (max-width: 550px){
+}
+
+
+
 
 /*FONTI
 -  leopone westside
