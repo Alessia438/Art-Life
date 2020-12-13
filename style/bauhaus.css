@@ -53,7 +53,7 @@ body{
   
 }
 
-body:not(h1){
+body{
   font-family: "Ronda Regular";
   font-size: 14pt;
   font-weight: lighter;
@@ -95,7 +95,7 @@ video source{
   padding-bottom:3.5em;
 }
 
-h1{
+#cover h1{  /*era solo h1*/
   font-family: "Bauhaus 93";
   text-align: left;
   text-transform: uppercase;
@@ -111,9 +111,10 @@ h1{
   width: 60%; /*era 30*/
  /* height: 90px;  era 100*/
   border: 0px;
-  transform: rotate(-30deg);
+  transform: rotate(-15deg); /*era 30*/
   width: 60vmin;
 }
+
 @media only screen and (max-width: 600px) {
   h1{
     width: 100%;
