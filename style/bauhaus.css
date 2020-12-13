@@ -115,6 +115,22 @@ video source{
   width: 60vmin;
 }
 
+body h1{  
+  font-family: "Bauhaus 93";
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 180%;  /* boh o large*/
+  padding-top:4.5em;
+  padding-bottom:4.5em;
+  padding-left: 2.5em;
+  color: #141514;
+  box-sizing: content-box;
+  transform: rotate(-30deg);
+  width: 60%; /*era 30*/
+  border: 0px;
+  width: 60vmin;
+}
+
 @media only screen and (max-width: 600px) {
   h1{
     width: 100%;
@@ -140,7 +156,7 @@ video source{
 }
 
 section h1{
-  transform: rotate(0deg);
+  transform: rotate(-30deg);
     -webkit-hyphens: none;
   -ms-hyphens: none;
   hyphens: none;
