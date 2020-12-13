@@ -19,7 +19,7 @@ var articleInfo = [
 				 'htmlName': 'art3-Atl.html'
 			},
 			 {
-				'articleName': 'HWelcome to Airspace',
+				'articleName': 'Welcome to Airspace',
 				'articleFile': 'Issue1.html#article4',	
 				'htmlName': 'art4-verge.html'
 			},
