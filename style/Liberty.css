@@ -30,7 +30,7 @@ body#cover {
   /*margin-left: 32vW;*/
   margin-top: 25vW;
   margin-bottom: 30vW;
-  background-size: 100% 100%;
+  background-size: 100vw;
   /*font-size: 2em;*/
 }
 
@@ -38,8 +38,10 @@ body#cover {
     color: rgb(203, 125, 106);
     font-family: 'Auriol';
     text-transform: uppercase;
-    font-size: 4em;
-    margin-left: 25vw;
+    /*font-size: 4em;
+    margin-left: 25vw;*/
+    font-size: 6vw;
+    margin-left: 20vw;
 }
 
 #cover p{
@@ -48,15 +50,21 @@ body#cover {
 	color: rgb(137, 136, 103);
 	text-transform: lowercase;
     	font-family: 'Auriol';
-	line-height: 1em;
+	/*line-height: 1em;*/
+	line-height: 4vw;
 	letter-spacing: 0.04em;
 	word-spacing: 0.1em;
-	font-size: 2em;
-	margin-bottom: 1.5em;
+	/*font-size: 2em;
+	margin-bottom: 1.5em;*/
+	font-size: 3.5vw;
+    	margin-bottom: 2.5vw;
 	-webkit-hyphenate-character: auto;
 	 hyphens: auto;
-	 margin-left: 30vw;
+	 padding-left: 25vw;
 }
+
+#cover p:nth-child(3) {padding-right: 1vw;}
+#cover p:nth-child(6) {padding-left: 31vw;}
 
 #cover p::first-letter {text-transform: capitalize;}
 
@@ -109,9 +117,31 @@ body{
 
 
 /* TABLET */
-/* @media only screen and (max-width: 700px) */
   @media /* only */ screen and (max-width: 700px){
-   
+	/*  body#cover {
+		      margin-top: 30vW;
+	  }
+	#cover h1 {
+	    font-size: 4em;
+	}
+
+	#cover p{
+		margin-bottom: 2em;
+		text-align: left;
+		color: rgb(137, 136, 103);
+		text-transform: lowercase;
+		font-family: 'Auriol';
+		line-height: 1em;
+		letter-spacing: 0.04em;
+		word-spacing: 0.1em;
+		font-size: 2em;
+		margin-bottom: 1.5em;
+		-webkit-hyphenate-character: auto;
+		 hyphens: auto;
+		 margin-left: 30vw;
+	}
+	  */
+	  
 }
 
 /* SMARTPHONE */
