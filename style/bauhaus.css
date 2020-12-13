@@ -28,6 +28,10 @@ h1, .byline{
 body#cover{
   background: url('croce.png') left top no-repeat, url('sfondo_beige.jpg') right top repeat;
   background-size: 60%, 100%;  /*era 50. 100*/ 
+  box-sizing: content-box;  
+  width: 60%; 
+  height: 60%;
+  border: 0px;
 }
 body#cover:first-of-type{
    transform: rotate(15deg);
