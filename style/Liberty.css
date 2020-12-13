@@ -28,7 +28,7 @@ body#cover {
   font-style:normal;
   margin-right: 25vW;
   /*margin-left: 32vW;*/
-  margin-top: 32vW;
+  margin-top: 25vW;
   margin-bottom: 30vW;
   background-size: 100vw;
   /*font-size: 2em;*/
@@ -60,8 +60,11 @@ body#cover {
     	margin-bottom: 2.5vw;
 	-webkit-hyphenate-character: auto;
 	 hyphens: auto;
-	 margin-left: 30vw;
+	 padding-left: 25vw;
 }
+
+#cover p:nth-child(3) {padding-right: 1vw;}
+#cover p:nth-child(6) {padding-left: 31vw;}
 
 #cover p::first-letter {text-transform: capitalize;}
 
