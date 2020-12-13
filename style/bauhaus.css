@@ -32,8 +32,8 @@ body#cover{
 body#cover:first-of-type{
    transform: rotate(15deg);
    position: relative;
-   left: 20vw; /* era 60 pt*/
-   text-decoration: underline;
+   left: 25vw; /* era 60 pt*/
+   /*text-decoration: underline;*/
    width: 65%;
 }
 
@@ -113,6 +113,9 @@ video source{
   border: 0px;
   transform: rotate(-15deg); /*era 30*/
   width: 60vmin;
+  position: relative;
+  right: 37%;
+  bottom: 10%;
 }
 
 body h1{  
