@@ -27,12 +27,12 @@ h1, .byline{
 
 body#cover{
   background: url('croce.png') left top no-repeat, url('sfondo_beige.jpg') right top repeat;
-  background-size: 50%, 100%;  
+  background-size: 60%, 100%;  /*era 50. 100*/ 
 }
 body#cover:first-of-type{
    transform: rotate(15deg);
    position: relative;
-   left: 60pt;
+   left: 20vw; /* era 60 pt*/
    text-decoration: underline;
    width: 65%;
 }
@@ -123,7 +123,7 @@ h1{
 }
 
 section h1{
-  transform: rotate(-15deg);
+  /*transform: rotate(-15deg);*/ 
     -webkit-hyphens: none;
   -ms-hyphens: none;
   hyphens: none;
