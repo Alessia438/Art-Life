@@ -26,7 +26,7 @@ h1, .byline{
 /* stile per cover page*/
 
 body#cover{
-  background: url('croce.png') right top no-repeat, url('sfondo_beige.jpg') right top repeat;
+  background: url('croce.png') left top no-repeat, url('sfondo_beige.jpg') right top repeat;
   background-size: 50%, 100%;  
 }
 body#cover:first-of-type{
