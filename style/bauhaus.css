@@ -118,16 +118,31 @@ h1{
   h1{
     width: 100%;
     position: relative;
-    right: 40pt;
+    right: 28vw;
+    font-size: 7vw;
   }
+
+  p{
+    font-size: 0.08em;
+    width:60vw;
+  }
+
+  section{
+    border-bottom-style: dotted;
+  }
+
+  blockquote{
+    font-size: 0.8em;
+    border-left: 3px solid red;
+  }
+
 }
 
 section h1{
-  /*transform: rotate(-15deg);*/ 
+  transform: rotate(0deg);
     -webkit-hyphens: none;
   -ms-hyphens: none;
   hyphens: none;
-
 }
 
 h2{
@@ -226,6 +241,7 @@ p.q{
 blockquote{
   margin-right: 0mm; 
   margin-left: 0mm;
+  border-left: 3px solid red;
   /*font-family: "Ronda Regular";
   font-style:lowercase;
   font-size: 14pt;
