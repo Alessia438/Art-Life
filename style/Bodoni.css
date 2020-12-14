@@ -22,9 +22,29 @@ body#cover {
   font-family: 'Bodoni Six ITC';
   font-weight:normal;
   font-style:normal;
+  margin-right: 0vW;
+  margin-left: 0vW;
+  margin-top: 0vW;
+  margin-bottom: 0vW;
 }
 
-#cover p{text-indent: 0em;}
+div#coverText {
+    background-image: url(../sfondo_bodoni.jpg);
+    padding-left: 28vw;
+    padding-right: 18vw;
+    padding-bottom: 30vw;
+    padding-top: 20vw;
+    margin-bottom: 2vw;
+    margin-top: 2vw;
+    margin-left: 4vw;
+    margin-right: 4vw;
+}
+
+#cover p{
+	text-indent: 0em;
+	margin-top: 2vw;
+	margin-bottom: 2vw;
+}
 
 p{
 	line-height: 1.5em;
