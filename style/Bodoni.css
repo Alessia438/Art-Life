@@ -15,13 +15,17 @@ h1, .byline{
 
 body#cover {
   background-image: url('aminta_cover_page.jpg');
-  background-repeat: no-repeat;
+  background-repeat: round;
   background-attachment: fixed;
+  background-size: contain;
   height: 100%;
   font-family: 'Bodoni Six ITC';
   font-weight:normal;
   font-style:normal;
 }
+
+#cover p{text-indent: 0em;}
+
 p{
 	line-height: 1.5em;
 	text-align:justify;
