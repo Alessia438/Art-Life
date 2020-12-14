@@ -675,7 +675,15 @@ function myFunction() {
 
   #metadata { order: 1; }
   #content { order: 2; }
+	
+   #listIssue {
+    	    width: 90vw;
+	    padding-inline-start: 0px;
+	    padding: 0 3vw 0 3vw;
+   }
 }
+
+
 
 /* Medium screens
 @media all and (min-width: 600px) {
@@ -724,6 +732,13 @@ function myFunction() {
     border-right: 2px solid;
     margin-right: 0.05em;
   }
+	
+	
+#listIssue {
+    width: 22vw;
+    padding-inline-start: 0px;
+    padding: 0 3vw 0 3vw;
+}
 
 }
 
@@ -846,11 +861,6 @@ span[onclick] {cursor:pointer;}
   padding-inline-start: 0px;
 }
 */
-#listIssue {
-    width: 15em;
-    padding-inline-start: 0px;
-    padding: 0 3vw 0 3vw;
-}
 
 #listIssue>li {
   font-size: 17px;
