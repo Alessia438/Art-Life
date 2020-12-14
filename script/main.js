@@ -50,6 +50,17 @@ function myFunction() {
 	else {x.className = "topnav";}
     }
 
+/*function findLocation(){
+	if (document.getElementsByTagName('section').length == 0){
+		var newSec = document.createElement('section');
+		newSec.appendChild(getElementsByTagName('h1')[0]);
+		newSec.appendChild(getElementsByTagName('img')[0]);
+		newSec.appendChild(getElementsByClassName('subtitle'));
+		'subtitle', 'byline', 'publicationDate
+	}
+	
+}*/
+
 function changeCSS(cssFile) {
     	for (var i = 0; i < document.getElementsByTagName("iframe").length; i++) {
 		if (i=== 1){cssFile='../'+cssFile;}
