@@ -61,20 +61,20 @@ function changeCSS(cssFile) {
 			newlink.href = cssFile;
 			frameHead.appendChild(newlink);
 		}
-		if (document.getelementsByTagName('section').length<1){addSectionToDom(i);}
+		if (document.getElementsByTagName("iframe")[i].contentWindow.document.body.getElementsByTagName('section').length<1){addSectionToDom(i);}
 		//if (cssFile.includes('Bodoni.css') && i>0){manageBodoni(i);}
 		//else if (cssFile.includes('Liberty.css') && i>0){liberty(i);}
 	}
 }
 
-function addSectionToDom(){
-		var elArray = ['h1','subtitle', 'byline', 'FIGURE-1-', 'publicationDate', 'publicationTime'];
-		var newSec = document.createElement('section');
-		for (var el of elArray){
-		if (el == 'h1'){newSec.appendChild(document.getElementsByTagName(el)[0]);}
-		else if (el == 'FIGURE-1-'){newSec.appendChild(document.querySelector('[id^="FIGURE-1-"]'));} 
-		else{while (document.getElementsByClassName('subtitle').length>0) {newSec.appendChild(document.getElementsByClassName('subtitle')[0]);}}
-		document.getElementsByTagName("body")[0].insertBefore(newSec, document.getElementsByTagName("body")[0].children[0])
+function addSectionToDom(i){
+	var elArray = ['h1','subtitle', 'byline', 'FIGURE-1-', 'publicationDate', 'publicationTime'];
+	var newSec = document.createElement('section');
+	for (var el of elArray){
+	if (el == 'h1'){newSec.appendChild( document.getElementsByTagName("iframe")[i].contentWindow.document.body.getElementsByTagName(el)[0]);}
+	else if (el == 'FIGURE-1-'){newSec.appendChild(document.getElementsByTagName("iframe")[i].contentWindow.document.body.querySelector('[id^="FIGURE-1-"]'));} 
+	else{while (document.getElementsByTagName("iframe")[i].contentWindow.document.body.getElementsByClassName(el).length>0) {newSec.appendChild(document.getElementsByTagName("iframe")[i].contentWindow.document.body.getElementsByClassName(el)[0]);}}
+	document.getElementsByTagName("iframe")[i].contentWindow.document.body.insertBefore(newSec, document.getElementsByTagName("iframe")[i].contentWindow.document.body.children[0]);
 }
 
 /*function manageBodoni(iframeN){
