@@ -53,11 +53,18 @@ function myFunction() {
 
 function changeCSS(cssFile) {
     	for (var i = 0; i < document.getElementsByTagName("iframe").length; i++) {
-		if (i=== 1){cssFile='../'+cssFile;}
 		var frameHead = document.getElementsByTagName("iframe")[i].contentWindow.document.head,
     		allLinks = frameHead.getElementsByTagName("link"),
     		found=false;
-    		for (var l=0; l<allLinks.length; l++) {if (allLinks[l].rel == "stylesheet") {found=true; allLinks[l].href = cssFile; break;}}
+		if (i=== 1){cssFile='../'+cssFile;}
+    		for (var l=0; l<allLinks.length; l++) {
+			if (allLinks[l].rel == "stylesheet") {
+				found=true; 
+				if (allLinks[l].href === cssFile){break;}
+				allLinks[l].href = cssFile; 
+				break;
+			}
+		}
     		if (found === false) {
 			var newlink = document.createElement("link");
 			newlink.rel = "stylesheet"; 
