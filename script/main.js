@@ -60,7 +60,7 @@ function changeCSS(cssFile) {
     		for (var l=0; l<allLinks.length; l++) {
 			if (allLinks[l].rel == "stylesheet") {
 				found=true; 
-				if (allLinks[l].href === cssFile){break;}
+				if (allLinks[l].href === cssFile){return;}
 				allLinks[l].href = cssFile; 
 				break;
 			}
