@@ -179,7 +179,7 @@ h2, h3 {
         box-ordinal-group: 3;
 }
 
-#imageGroup img{
+[id^="FIGURE-1-"] img{
 	border-radius: 50%;
 	height: 14em;
         width: 14em;
@@ -188,7 +188,7 @@ h2, h3 {
         margin-right: auto;
 }
 
-#imageGroup{
+[id^="FIGURE-1-"]{
 	-webkit-box-ordinal-group: 4;
         -moz-box-ordinal-group: 4;
         box-ordinal-group: 4;
