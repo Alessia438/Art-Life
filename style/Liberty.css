@@ -78,6 +78,14 @@ body{
     column-span: all;
     padding-bottom: 3vw;
     margin:0vw;
+	width: 100%;
+}
+
+figure {
+    margin-block-start: 0vw;
+    margin-block-end: 0vw;
+    margin-inline-start: 0vw;
+    margin-inline-end: 0vw;
 }
 
 img{
@@ -116,6 +124,9 @@ p{
 	font-family: "Auriol";
 	font-weight:normal;
 	font-style:normal;
+	margin-bottom: 0vw;
+        margin-top: 0vw;
+        text-indent: 2vw;
 }
 
     /* Set additional styling options for the columns*/
@@ -125,9 +136,11 @@ p{
     	flex-wrap: nowrap;
     	/*width: 100%;*/
     }
-    .row, img{
-    	text-align: justify;
-    } 
+img{
+    width: 30vw;
+    padding-bottom: 2vw;
+    padding-top: 2vw;
+} 
 
    /* #image img{    
     	width: 100vW;
