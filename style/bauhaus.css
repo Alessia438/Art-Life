@@ -75,6 +75,7 @@ body{
   hyphens: auto;
  letter-spacing: 0.03em; 
  word-wrap: break-word; /*serve?*/
+ orphans: 2;
 }
 
 
