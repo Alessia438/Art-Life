@@ -179,13 +179,16 @@ h2, h3 {
         box-ordinal-group: 3;
 }
 
-#imageGroup {
+#imageGroup img{
 	border-radius: 50%;
 	height: 14em;
         width: 14em;
         display: block;
         margin-left: auto;
         margin-right: auto;
+}
+
+#imageGroup{
 	-webkit-box-ordinal-group: 4;
         -moz-box-ordinal-group: 4;
         box-ordinal-group: 4;
