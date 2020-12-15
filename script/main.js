@@ -70,7 +70,7 @@ function changeCSS(cssFile) { //aggiungere come parametro d'ingresso il document
 		}
 		if (i>0 && document.getElementsByTagName("iframe")[i].contentWindow.document.body.getElementsByTagName('section').length<1){addSectionToDom(i);}
 		//if (cssFile.includes('Bodoni.css') && i>0){manageBodoni(i);}
-		else if (cssFile.includes('Liberty.css') && i>0){liberty(i);}
+		if (cssFile.includes('Liberty.css') && i>0){liberty(i);}
 	}
 }
 
