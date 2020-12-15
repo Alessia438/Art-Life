@@ -25,6 +25,7 @@ body#cover {
   margin-top: 25vW;
   margin-bottom: 30vW;
   background-size: 100vw;
+  column-count: 1;
   /*font-size: 2em;*/
 }
 
@@ -76,6 +77,7 @@ body{
 [id^="FIGURE-1-"] {
     column-span: all;
     padding-bottom: 3vw;
+    margin:0vw;
 }
 
 img{
