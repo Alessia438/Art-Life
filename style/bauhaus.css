@@ -210,6 +210,15 @@ p.publicationDate{
   color: blue; 
 }
 
+p.publicationTime{
+  font-style:lowercase;
+  position:relative;
+  bottom: 30vw;
+  left: 55vw;
+  transform: rotate(15deg);
+  color: blue; 
+}
+
 p.subtitle{
   font-style:lowercase;
   transform: rotate(90deg);
