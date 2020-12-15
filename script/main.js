@@ -72,7 +72,7 @@ function changeCSS(cssFile) {
 			newlink.href = cssFile;
 			frameHead.appendChild(newlink);
 		}
-		if (cssFile.includes('Bodoni.css') && i>0){manageBodoni(i);}
+		//if (cssFile.includes('Bodoni.css') && i>0){manageBodoni(i);}
 		//else if (cssFile.includes('Liberty.css') && i>0){liberty(i);}
 	}
 }
