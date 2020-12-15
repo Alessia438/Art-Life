@@ -75,7 +75,7 @@ body{
   hyphens: auto;
  letter-spacing: 0.03em; 
  word-wrap: break-word; /*serve?*/
- orphans: 2;
+ orphans: 3;
 }
 
 
@@ -196,16 +196,16 @@ p{
 p.byline{
   font-style:lowercase;
   position:relative;
-  bottom: 100px;
-  left: 600px;
+  bottom: 30vw;
+  left: 55vw;
   transform: rotate(15deg);
 }
 
 p.publicationDate{
   font-style:lowercase;
   position:relative;
-  bottom: 400px;
-  left: 500px;
+  bottom: 30vw;
+  left: 55vw;
   transform: rotate(15deg);
   color: blue; 
 }
