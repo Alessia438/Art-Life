@@ -102,7 +102,7 @@ p.byline, p.pubnote, p.subtitle, p.publicationDate, img, h1 {
 	hyphens: none;
 }
 
-img {
+img, video {
 	width:100%;
 	padding-top:1.5em;
 	padding-bottom:1.5em;
