@@ -320,8 +320,9 @@ img{
 
 p a{color: black;}
 
-#References section{
-  border: 2px solid red;
+.biblioItem{
+  border: 2px solid blue; /*risolvere problema dell'ordine di byline, pubdate etc prima delle immagini*/
+  padding: 1vw;
 }
 /*
 section#id{
