@@ -109,18 +109,21 @@ video source{
   /* va a capo alla quarta parola
   transform: rotate(-15deg); */
   padding-top:9vw;
-  padding-bottom:16vw;
-  padding-left: 10vw;
+  padding-bottom:0vw;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  margin-bottom: 14vw;
   color: #141514;
   box-sizing: content-box;  
-  width: 60%; /*era 30*/
+ /* width: 60%; era 30*/
  /* height: 90px;  era 100*/
   border: 0px;
   transform: rotate(-15deg); /*era 30*/
-  width: 60vmin;
- /* position: relative;
-  right: 30%;
-  bottom: 10%;*/
+  width: 60%;
+  position: relative;
+  right: 13vw;
+  bottom: -3vw;
+  background-color: #f4e4c8;
 }
 
 body h1{  
