@@ -40,7 +40,7 @@ function myFunction() {
 	else {x.className = "topnav";}
     }
 
-function changeCSS(cssFile) {
+function changeCSS(cssFile) { //aggiungere come parametro d'ingresso il documento corrente
     	for (var i = 0; i < document.getElementsByTagName("iframe").length; i++) {
 		var frameHead = document.getElementsByTagName("iframe")[i].contentWindow.document.head,
     		allLinks = frameHead.getElementsByTagName("link"),
@@ -49,7 +49,14 @@ function changeCSS(cssFile) {
     		for (var l=0; l<allLinks.length; l++) {
 			if (allLinks[l].rel == "stylesheet") {
 				found=true; 
-				if (allLinks[l].href === cssFile){return;}
+				//if (allLinks[l].href === cssFile){return;}
+				//parte per eliminare le differenze con liberty
+				if (allLinks[l].href.includes('Liberty.css')){
+					document.getElementsByTagName("iframe")[i].contentWindow.document.body.querySelector('[id^="FIGURE-1-"]').remove();
+					var oldImg = document.getElementsByTagName("iframe")[i].contentWindow.document.body.querySelector('[id^="original: "]');
+					oldImg.id = oldImg.id.split(' ')[1];
+					oldImg.style.display = 'block';
+				}
 				allLinks[l].href = cssFile; 
 				break;
 			}
@@ -63,7 +70,7 @@ function changeCSS(cssFile) {
 		}
 		if (i>0 && document.getElementsByTagName("iframe")[i].contentWindow.document.body.getElementsByTagName('section').length<1){addSectionToDom(i);}
 		//if (cssFile.includes('Bodoni.css') && i>0){manageBodoni(i);}
-		//else if (cssFile.includes('Liberty.css') && i>0){liberty(i);}
+		else if (cssFile.includes('Liberty.css') && i>0){liberty(i);}
 	}
 }
 
@@ -80,34 +87,13 @@ function addSectionToDom(i){
 	document.getElementsByTagName("iframe")[i].contentWindow.document.body.insertBefore(newSec, document.getElementsByTagName("iframe")[i].contentWindow.document.body.children[0]);
 }
 
-/*function manageBodoni(iframeN){
-	var elArray = ['h1','subtitle', 'byline', 'img', 'publicationDate', 'publicationTime'];
-	var contentDiv = document.createElement('div');
-	contentDiv.setAttribute('id', 'heading');
-	for (var el of elArray){
-		if (el == 'h1' || el=='img'){
-			var elToMove = document.getElementsByTagName("iframe")[iframeN].contentWindow.document.body.getElementsByTagName(el)[0];
-			contentDiv.appendChild(elToMove);
-		}
-		else{
-			//var found = False;
-			//if (el=='publicationDate'){found = true;}
-			var elToMove = document.getElementsByTagName("iframe")[iframeN].contentWindow.document.body.getElementsByClassName(el);
-			while (elToMove.length>0) {contentDiv.appendChild(elToMove[0]);}
-			//if (found === true){var impresso = document.createElement('p'); impresso.innerHTML = 'Impresso co' tipi bodoniani'; contentDiv.insertBefore(impresso, document.getElementsByTagName(el)[0]);}
-		}
-	}
-	document.getElementsByTagName("iframe")[iframeN].contentWindow.document.body.insertBefore(contentDiv, document.getElementsByTagName("iframe")[iframeN].contentWindow.document.body.children[0])
-}*/
-
-/*
-function liberty(iframeN){
-	var totImgs = document.getElementsByTagName("img");
-	if totImgs.length== 1{}
-	else if totImgs.length== 1{}
-	else{}
+function liberty(i){
+	var firstImage = document.getElementsByTagName("iframe")[i].contentWindow.document.body.querySelector('[id^="FIGURE-1-"]');
+	var cln = firstImage.cloneNode(true);
+	firstImage.id = 'original: ' + firstImage.id;
+	firstImage.style.display = 'none';
+	document.getElementsByTagName("iframe")[i].contentWindow.document.body.insertBefore(cln, document.getElementsByTagName("iframe")[i].contentWindow.document.body.children[0]);
 }
-*/
 
 function changeIssue(issueN){
 	document.getElementById(issueN).children[0].style.display = "block";
@@ -625,3 +611,23 @@ if (curCategory.includes(" ")) { //se c'è uno spazio in teoria vuol dire che c'
 
 
 */
+
+/*function manageBodoni(iframeN){
+	var elArray = ['h1','subtitle', 'byline', 'img', 'publicationDate', 'publicationTime'];
+	var contentDiv = document.createElement('div');
+	contentDiv.setAttribute('id', 'heading');
+	for (var el of elArray){
+		if (el == 'h1' || el=='img'){
+			var elToMove = document.getElementsByTagName("iframe")[iframeN].contentWindow.document.body.getElementsByTagName(el)[0];
+			contentDiv.appendChild(elToMove);
+		}
+		else{
+			//var found = False;
+			//if (el=='publicationDate'){found = true;}
+			var elToMove = document.getElementsByTagName("iframe")[iframeN].contentWindow.document.body.getElementsByClassName(el);
+			while (elToMove.length>0) {contentDiv.appendChild(elToMove[0]);}
+			//if (found === true){var impresso = document.createElement('p'); impresso.innerHTML = 'Impresso co' tipi bodoniani'; contentDiv.insertBefore(impresso, document.getElementsByTagName(el)[0]);}
+		}
+	}
+	document.getElementsByTagName("iframe")[iframeN].contentWindow.document.body.insertBefore(contentDiv, document.getElementsByTagName("iframe")[iframeN].contentWindow.document.body.children[0])
+}*/
