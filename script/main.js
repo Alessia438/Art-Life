@@ -40,17 +40,6 @@ function myFunction() {
 	else {x.className = "topnav";}
     }
 
-/*function findLocation(){
-	if (document.getElementsByTagName('section').length == 0){
-		var newSec = document.createElement('section');
-		newSec.appendChild(getElementsByTagName('h1')[0]);
-		newSec.appendChild(getElementsByTagName('img')[0]);
-		newSec.appendChild(getElementsByClassName('subtitle'));
-		'subtitle', 'byline', 'publicationDate
-	}
-	
-}*/
-
 function changeCSS(cssFile) {
     	for (var i = 0; i < document.getElementsByTagName("iframe").length; i++) {
 		var frameHead = document.getElementsByTagName("iframe")[i].contentWindow.document.head,
@@ -72,12 +61,23 @@ function changeCSS(cssFile) {
 			newlink.href = cssFile;
 			frameHead.appendChild(newlink);
 		}
+		if (document.getelementsByTagName('section').length<1){addSectionToDom(i);}
 		//if (cssFile.includes('Bodoni.css') && i>0){manageBodoni(i);}
 		//else if (cssFile.includes('Liberty.css') && i>0){liberty(i);}
 	}
 }
 
-function manageBodoni(iframeN){
+function addSectionToDom(){
+		var elArray = ['h1','subtitle', 'byline', 'FIGURE-1-', 'publicationDate', 'publicationTime'];
+		var newSec = document.createElement('section');
+		for (var el of elArray){
+		if (el == 'h1'){newSec.appendChild(document.getElementsByTagName(el)[0]);}
+		else if (el == 'FIGURE-1-'){newSec.appendChild(document.querySelector('[id^="FIGURE-1-"]'));} 
+		else{while (document.getElementsByClassName('subtitle').length>0) {newSec.appendChild(document.getElementsByClassName('subtitle')[0]);}}
+		document.getElementsByTagName("body")[0].insertBefore(newSec, document.getElementsByTagName("body")[0].children[0])
+}
+
+/*function manageBodoni(iframeN){
 	var elArray = ['h1','subtitle', 'byline', 'img', 'publicationDate', 'publicationTime'];
 	var contentDiv = document.createElement('div');
 	contentDiv.setAttribute('id', 'heading');
@@ -95,7 +95,7 @@ function manageBodoni(iframeN){
 		}
 	}
 	document.getElementsByTagName("iframe")[iframeN].contentWindow.document.body.insertBefore(contentDiv, document.getElementsByTagName("iframe")[iframeN].contentWindow.document.body.children[0])
-}
+}*/
 
 /*
 function liberty(iframeN){
@@ -611,16 +611,6 @@ function findOrigin(){
 	}
 }
 
-
-/*
-function removeHighligth(iFrameN){
-	var isOnView = document.getElementById(iFrameN).contentWindow.document.getElementsByName("onView");
-    	if(isOnView){
-        	isOnView.removeAttribute("name");
-    	}
-}
-*/
-
 /*
 //ULTIMA DELLE QUESTIONI DA RISOLVERE: da scrivere dopo la riga 307, per il problema delle doppie classi tipo class = "person artist"
 if (curCategory.includes(" ")) { //se c'è uno spazio in teoria vuol dire che c'è più di una classe
@@ -631,32 +621,4 @@ if (curCategory.includes(" ")) { //se c'è uno spazio in teoria vuol dire che c'
 }
 
 
-*/
-
-// body della funzione parsing!!
-//var container = parent.innerHTML.replace(/<[^>]*>/gi, ' ') //or gi:To perform a global, case-insensitive search
-	//.replace(/\s{2,}/gi, ' ')
-	//.trim();
-/*	
-	// se riusciamo a trovare un modo di far funzionare la riga 401, allora dalla 385 alla 400 sono inutili
-	if (numIstanza != 0) {
-		// vedere come gestire le posizioni 0
-		var occorrenzeArray = [];
-		var pos = container.indexOf(span);
-		occorrenzeArray.push(pos);
-		// calcolo del numero di occorrenze
-		c = 1;
-		while (c < numero di occorrenze) {
-			pos = container.indexOf(span, pos+1);
-			occorrenzeArray.push(pos);
-			c++;
-		}
-		//da rivedere
-		var posIstanzaCorrente = occorrenzeArray[numIstanza];
-	}
-
-	//versione con stringa di regexp che non va
-	var regExp = eval("/(\\S+\\s){0,5}\\S*" + span + "\\*(\\S+\\s+) {0,5}/g");
-	var snippetArray = container.match(regExp);
-	return snippetArray[numIstanza];
 */
