@@ -76,6 +76,7 @@ body{
 [id^="FIGURE-1-"] {
     column-span: all;
     padding-bottom: 3vw;
+    margin:0vw;
 }
 
 img{
