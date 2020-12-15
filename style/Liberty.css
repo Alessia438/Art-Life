@@ -10,13 +10,7 @@
 span[onclick] {cursor:pointer;}
 #cover p[onclick]:hover {text-decoration: underline;}
 
-h1 { 
-	font-family: "P22 Vienna Regular"; 
-	font-weight: bold;
-	font-size: 2.5em;
-	text-align: center;
-}
-.byline { font-family: "P22 Vienna Regular"; }
+/*Only for cover*/
 
 body#cover {
   background-image: url('liberty_background.jpg');
@@ -68,14 +62,60 @@ body#cover {
 
 #cover p::first-letter {text-transform: capitalize;}
 
+/*For both cover and articles*/
+body{
+  background-color: #fcfcf4;
+    column-count: 3;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+    column-gap: 2vw;
+    /*margin: 8px;*/
+}
+
+[id^="FIGURE-1-"] {
+    column-span: all;
+    padding-bottom: 3vw;
+}
+
+img{
+    width: 100%;
+    padding-bottom: 2vw;
+    padding-top: 2vw;
+}
+
+[id^="SECTION-1-"] {
+    padding-top: 0vw;
+    margin-top: 0vw;
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    box-orient: vertical;
+}
+
+h1 { 
+	font-family: "P22 Vienna Regular"; 
+	font-weight: bold;
+	font-size: 2.5em;
+	text-align: center;
+}
+
+.byline { 
+	margin-bottom: 2vw;
+	margin-top: 2vw;
+}
+.subtitle {text-indent:0vw;}
+
 p{
 	line-height: 20px;
   	text-align:justify;
+	font-family: "Auriol";
+	font-weight:normal;
+	font-style:normal;
 }
 
-body{
-  background-color: #fcfcf4;
-}
     /* Set additional styling options for the columns*/
 
     .row{display: flex;
@@ -84,15 +124,10 @@ body{
     	/*width: 100%;*/
     }
     .row, img{
-    	/*width: 100%;
-    	column-count: 3;
-    	column-gap: 1em;
-    	column-rule-style: solid;
-    	column-rule-width: 0.7px;*/
     	text-align: justify;
     } 
 
-    #image img{    
+   /* #image img{    
     	width: 100vW;
     	height: 40vh;
     }
@@ -113,7 +148,7 @@ body{
 
     img .twoLat{}
     img .oneCenter{}
-
+*/
 
 
 /* TABLET */
