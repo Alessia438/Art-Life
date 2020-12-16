@@ -101,9 +101,10 @@ p.pubnote {
         word-spacing: 1vw;
 	line-height: 3.5vw;
         padding-top: 10vw;
+	text-indent:0vw;
 }
 
-p.pubnote:first-of-type:first-letter{font-size: 2em;}
+p.pubnote:first-letter{font-size: 2em;}
 
 p.byline, p.subtitle, p.publicationDate, img, h1 {
 	text-align: center;
