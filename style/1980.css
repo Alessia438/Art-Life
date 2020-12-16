@@ -4,6 +4,10 @@
 }
 
 h1{
+	
+}
+
+h1#cover {
 	font-family: "Lato Black";
 	color: white;
 	font-weight: bold;
