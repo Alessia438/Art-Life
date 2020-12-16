@@ -63,7 +63,8 @@ function changeCSS(cssFile) { //aggiungere come parametro d'ingresso il document
 						if (allBylines[el].id.includes('originalByline')){allBylines[el].id = allBylines[el].id.split(' ')[1]; allBylines[el].style.display = 'block';}
 						else{allClones.push(allBylines[el]);}
 					}
-					while(allClones[0]){allClones[0].parentNode.removeChild(allClones[0]);}
+					//while(allClones[0]){allClones[0].parentNode.removeChild(allClones[0]);}
+					while(allClones[0]){allClones[0].parentNode.removeChild(allClones[0]).remove();}
 					
 						/*var oldBylines = frameBody.querySelectorAll('[id^="originalByline"]');
 						for (var m=0; m<oldBylines.length; m++){
