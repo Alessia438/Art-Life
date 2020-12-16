@@ -57,13 +57,19 @@ function changeCSS(cssFile) { //aggiungere come parametro d'ingresso il document
 					oldImg.style.display = 'block';
 				}
 				if (allLinks[l].href.includes('1980.css') && i>0){ // modificare da qui
-					var allBylines = frameBody.getElementsByClassName('byline');
-					while(allBylines[0]) {allBylines[0].parentNode.removeChild(allBylines[0]);}
-					var oldBylines = frameBody.querySelectorAll('[id^="originalByline"]');
-					for (var m=0; m<oldBylines.length; m++){
-						oldBylines[m].id = oldBylines[m].id.split(' ')[1];
-						oldBylines[m].style.display = 'block';
-					}					// a qui
+					var allBylines = frameBody.getElementsByClassName('byline'),
+					    allClones = [];
+					for (var el= 0; el<allBylines.length; el++){
+						if (allBylines[el].includes('originalByline')){allBylines[el].id = allBylines[el].id.split(' ')[1]; allBylines[el].style.display = 'block';}
+						else{allClones.push(allBylines[el]);}
+					}
+					while(allClones[0]){allClones[0].parentNode.removeChild(allClones[0]);}
+					
+						/*var oldBylines = frameBody.querySelectorAll('[id^="originalByline"]');
+						for (var m=0; m<oldBylines.length; m++){
+							oldBylines[m].id = oldBylines[m].id.split(' ')[1];
+							oldBylines[m].style.display = 'block';
+						}*/					// a qui
 				}
 				allLinks[l].href = cssFile; 
 				break;
