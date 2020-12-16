@@ -129,11 +129,14 @@ h1 {
 	text-align: center;
 }
 
-.byline { 
-	margin-bottom: 2vw;
-	margin-top: 2vw;
-	font-family: Bold;
+.byline, .publicationDate {
+    margin-bottom: 2vw;
+    margin-top: 2vw;
+    font-family: Bold;
+    text-indent: 0vw;
+    text-align: right;
 }
+
 .subtitle {
 	text-indent:0vw;
 	font-family: Bold;
