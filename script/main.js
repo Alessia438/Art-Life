@@ -60,7 +60,7 @@ function changeCSS(cssFile) { //aggiungere come parametro d'ingresso il document
 					var allBylines = frameBody.getElementsByClassName('byline'),
 					    allClones = [];
 					for (var el= 0; el<allBylines.length; el++){
-						if (allBylines[el].includes('originalByline')){allBylines[el].id = allBylines[el].id.split(' ')[1]; allBylines[el].style.display = 'block';}
+						if (allBylines[el].id.includes('originalByline')){allBylines[el].id = allBylines[el].id.split(' ')[1]; allBylines[el].style.display = 'block';}
 						else{allClones.push(allBylines[el]);}
 					}
 					while(allClones[0]){allClones[0].parentNode.removeChild(allClones[0]);}
