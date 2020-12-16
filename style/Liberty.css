@@ -88,33 +88,44 @@ body{
 }
 
 figure {
-    margin-block-start: 0vw;
-    margin-block-end: 0vw;
-    margin-inline-start: 0vw;
-    margin-inline-end: 0vw;
+	margin-block-start: 0vw;
+	margin-block-end: 0vw;
+	margin-inline-start: 0vw;
+	margin-inline-end: 0vw;
 }
+
+/*img{
+	width: 100%;
+	padding-bottom: 2vw;
+	padding-top: 2vw;
+}
+*/
 
 img{
-    width: 100%;
-    padding-bottom: 2vw;
-    padding-top: 2vw;
-}
+	width: 30vw;
+	padding-bottom: 2vw;
+	padding-top: 2vw;
+	filter: contrast(150%) grayscale(100%);
+} 
+
+img:first-child {width: 100%;}
+
 
 [id^="SECTION-1-"] {
-    padding-top: 0vw;
-    margin-top: 0vw;
-    display: -webkit-box;
-    display: -moz-box;
-    display: box;
-    -webkit-box-orient: vertical;
-    -moz-box-orient: vertical;
-    box-orient: vertical;
+	padding-top: 0vw;
+	margin-top: 0vw;
+	display: -webkit-box;
+	display: -moz-box;
+	display: box;
+	-webkit-box-orient: vertical;
+	-moz-box-orient: vertical;
+	box-orient: vertical;
 }
 
 h1 { 
 	font-family: "P22 Vienna Regular"; 
 	font-weight: bold;
-	font-size: 2.5em;
+	font-size: 4vw;
 	text-align: center;
 }
 
@@ -143,21 +154,6 @@ p{
         margin-top: 0vw;
         text-indent: 2vw;
 }
-
-    /* Set additional styling options for the columns*/
-
-  /*  .row{display: flex;
-    	flex-direction: column;
-    	flex-wrap: nowrap;
-    	/*width: 100%;*/
-    }*/
-img{
-    width: 30vw;
-    padding-bottom: 2vw;
-    padding-top: 2vw;
-} 
-
-img:first-child {width: 100%;}
 
 a:visited {
     color: black;
