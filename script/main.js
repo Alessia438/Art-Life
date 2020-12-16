@@ -108,7 +108,7 @@ function my1980(i){
 	totByline = bylineList.length;
 	for (var n=0; n<totByline; n++){
 		var cln = bylineList[n].cloneNode(true);
-		bylineList[n].id = 'originalByline'+n+': ' + bylineList.id;
+		bylineList[n].id = 'originalByline'+n+': ' + bylineList[n].id;
 		bylineList[n].style.display = 'none';
 		document.getElementsByTagName("iframe")[i].contentWindow.document.body.appendChild(cln);	
 	}
