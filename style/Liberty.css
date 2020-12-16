@@ -1,6 +1,7 @@
 @font-face { font-family: "P22 Vienna Regular"; src: url("P22 Vienna Regular Regular.ttf"); }
 @font-face { font-family: "P22 Vienna Regular"; src: url("p22_vienna_regular.ttf"); }
 @font-face { font-family: "Auriol"; src: url("Auriol.otf"); }
+@font-face { font-family: "Auriol"; src: url("Auriol-Bold.otf"); }
 
 /* global styling */
 @-ms-viewport {width: device-width;}
@@ -65,13 +66,15 @@ body#cover {
 
 /*For both cover and articles*/
 body{
-  background-color: #fcfcf4;
-    column-count: 3;
-    -webkit-hyphens: auto;
-    -ms-hyphens: auto;
-    hyphens: auto;
-    column-gap: 2vw;
-    /*margin: 8px;*/
+	background-color: #fcfcf4;
+	column-count: 3;
+	-webkit-hyphens: auto;
+	-ms-hyphens: auto;
+	hyphens: auto;
+	column-gap: 2vw;
+	padding-right: 1.5vw;
+	padding-left: 3.75vw;
+	margin: 0vw;
 }
 
 [id^="FIGURE-1-"] {
@@ -143,6 +146,16 @@ img{
 } 
 
 img:first-child {width: 100%;}
+
+a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+blockquote {
+    font-weight: bold;
+    font-family: 'Auriol';
+}
 
    /* #image img{    
     	width: 100vW;
