@@ -1,7 +1,10 @@
 @font-face { font-family: "P22 Vienna Regular"; src: url("P22 Vienna Regular Regular.ttf"); }
 @font-face { font-family: "P22 Vienna Regular"; src: url("p22_vienna_regular.ttf"); }
-@font-face { font-family: "Auriol"; src: url("Auriol.otf"); }
-/*@font-face { font-family: "Auriol"; src: url("Auriol-Bold.otf"); }*/
+/*@font-face { font-family: "Auriol"; src: url("Auriol.otf"); }
+@font-face { font-family: "Auriol"; src: url("Auriol-Bold.otf"); }*/
+@font-face { font-family: Normal; src: url("Auriol.otf"); }
+@font-face { font-family: Bold; src: url("Auriol-Bold.otf"); }
+
 
 /* global styling */
 @-ms-viewport {width: device-width;}
@@ -118,8 +121,17 @@ h1 {
 .byline { 
 	margin-bottom: 2vw;
 	margin-top: 2vw;
+	font-family: Bold;
 }
-.subtitle {text-indent:0vw;}
+.subtitle {
+	text-indent:0vw;
+	font-family: Bold;
+	    }
+
+figcaption{
+	font-family: Bold;
+	padding-bottom: 5vw;
+}
 
 p{
 	line-height: 20px;
@@ -153,8 +165,10 @@ a:visited {
 }
 
 blockquote {
-    font-weight: bold;
-    font-family: 'Auriol';
+	font-family: Bold;
+	margin-inline-start: 2vw;
+	margin-inline-end: 2vw;
+	text-align: justify;
 }
 
    /* #image img{    
