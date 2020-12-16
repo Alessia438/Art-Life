@@ -1,7 +1,7 @@
 @font-face { font-family: "P22 Vienna Regular"; src: url("P22 Vienna Regular Regular.ttf"); }
 @font-face { font-family: "P22 Vienna Regular"; src: url("p22_vienna_regular.ttf"); }
 @font-face { font-family: "Auriol"; src: url("Auriol.otf"); }
-@font-face { font-family: "Auriol"; src: url("Auriol-Bold.otf"); }
+/*@font-face { font-family: "Auriol"; src: url("Auriol-Bold.otf"); }*/
 
 /* global styling */
 @-ms-viewport {width: device-width;}
