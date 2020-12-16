@@ -102,6 +102,7 @@ p.pubnote {
 	line-height: 3.5vw;
         padding-top: 10vw;
 	text-indent:0vw;
+	font-style: italic;
 }
 
 p.pubnote:first-letter{font-size: 2em;}
