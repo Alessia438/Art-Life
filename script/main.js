@@ -105,7 +105,7 @@ function liberty(i){
 //modificare/commentare my1980 se qualcosa non va
 function my1980(i){
 	var bylineList = document.getElementsByTagName("iframe")[i].contentWindow.document.body.getElementsByClassName('byline'),
-	totByline = bylineList;
+	totByline = bylineList.length;
 	for (var n=0; n<totByline.length; n++){
 		var cln = bylineList[n].cloneNode(true);
 		bylineList[n].id = 'originalByline'+n+': ' + bylineList.id;
