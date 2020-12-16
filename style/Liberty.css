@@ -131,16 +131,18 @@ p{
 
     /* Set additional styling options for the columns*/
 
-    .row{display: flex;
+  /*  .row{display: flex;
     	flex-direction: column;
     	flex-wrap: nowrap;
     	/*width: 100%;*/
-    }
+    }*/
 img{
     width: 30vw;
     padding-bottom: 2vw;
     padding-top: 2vw;
 } 
+
+img:first-child {width: 100%;}
 
    /* #image img{    
     	width: 100vW;
@@ -167,7 +169,15 @@ img{
 
 
 /* TABLET */
-  @media /* only */ screen and (max-width: 700px){
+  @media /* only */ screen and (min-width: 600px){
+	  
+	  body{
+	    column-count: 2;
+	    column-gap: 4vw;
+	  }
+	  
+	  img {width: 47.5vw;}
+	  
 	/*  body#cover {
 		      margin-top: 30vW;
 	  }
@@ -196,7 +206,9 @@ img{
 
 /* SMARTPHONE */
 
-  @media screen and (max-width: 550px){
+  @media screen and (min-width: 320px){
+	body{column-count: 1;}
+	img {width: 95vw;}
 }
 
 
