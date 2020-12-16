@@ -51,7 +51,7 @@ function changeCSS(cssFile) { //aggiungere come parametro d'ingresso il document
 				found=true; 
 				//if (allLinks[l].href === cssFile){return;}
 				//parte per eliminare le differenze con liberty
-				if (allLinks[l].href.includes('Liberty.css')){
+				if (allLinks[l].href.includes('Liberty.css') && i>0){
 					document.getElementsByTagName("iframe")[i].contentWindow.document.body.querySelector('[id^="FIGURE-1-"]').remove();
 					var oldImg = document.getElementsByTagName("iframe")[i].contentWindow.document.body.querySelector('[id^="original: "]');
 					oldImg.id = oldImg.id.split(' ')[1];

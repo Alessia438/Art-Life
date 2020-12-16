@@ -1,6 +1,10 @@
 @font-face { font-family: "P22 Vienna Regular"; src: url("P22 Vienna Regular Regular.ttf"); }
 @font-face { font-family: "P22 Vienna Regular"; src: url("p22_vienna_regular.ttf"); }
-@font-face { font-family: "Auriol"; src: url("Auriol.otf"); }
+/*@font-face { font-family: "Auriol"; src: url("Auriol.otf"); }
+@font-face { font-family: "Auriol"; src: url("Auriol-Bold.otf"); }*/
+@font-face { font-family: Normal; src: url("Auriol.otf"); }
+@font-face { font-family: Bold; src: url("Auriol-Bold.otf"); }
+
 
 /* global styling */
 @-ms-viewport {width: device-width;}
@@ -17,7 +21,7 @@ body#cover {
   background-repeat: no-repeat;
   background-attachment: inherit;
   height: 100%;
-  font-family: "Auriol";
+  font-family: Normal;
   font-weight:normal;
   font-style:normal;
   margin-right: 25vW;
@@ -65,69 +69,106 @@ body#cover {
 
 /*For both cover and articles*/
 body{
-  background-color: #fcfcf4;
-    column-count: 3;
-    -webkit-hyphens: auto;
-    -ms-hyphens: auto;
-    hyphens: auto;
-    column-gap: 2vw;
-    /*margin: 8px;*/
+	background-color: #fcfcf4;
+	column-count: 3;
+	-webkit-hyphens: auto;
+	-ms-hyphens: auto;
+	hyphens: auto;
+	column-gap: 2vw;
+	padding-right: 1.5vw;
+	padding-left: 3.75vw;
+	margin: 0vw;
 }
 
 [id^="FIGURE-1-"] {
     column-span: all;
     padding-bottom: 3vw;
     margin:0vw;
+	width: 100%;
 }
+
+figure {
+	margin-block-start: 0vw;
+	margin-block-end: 0vw;
+	margin-inline-start: 0vw;
+	margin-inline-end: 0vw;
+}
+
+/*img{
+	width: 100%;
+	padding-bottom: 2vw;
+	padding-top: 2vw;
+}
+*/
 
 img{
-    width: 100%;
-    padding-bottom: 2vw;
-    padding-top: 2vw;
-}
+	width: 30vw;
+	padding-bottom: 2vw;
+	padding-top: 2vw;
+	filter: contrast(150%) grayscale(100%);
+} 
+
+img:first-child {width: 100%;}
+
 
 [id^="SECTION-1-"] {
-    padding-top: 0vw;
-    margin-top: 0vw;
-    display: -webkit-box;
-    display: -moz-box;
-    display: box;
-    -webkit-box-orient: vertical;
-    -moz-box-orient: vertical;
-    box-orient: vertical;
+	padding-top: 0vw;
+	margin-top: 0vw;
+	display: -webkit-box;
+	display: -moz-box;
+	display: box;
+	-webkit-box-orient: vertical;
+	-moz-box-orient: vertical;
+	box-orient: vertical;
 }
 
 h1 { 
 	font-family: "P22 Vienna Regular"; 
 	font-weight: bold;
-	font-size: 2.5em;
+	font-size: 4vw;
 	text-align: center;
 }
 
-.byline { 
-	margin-bottom: 2vw;
-	margin-top: 2vw;
+.byline, .publicationDate {
+    margin-bottom: 2vw;
+    margin-top: 2vw;
+    font-family: Bold;
+    text-indent: 0vw;
+    text-align: right;
 }
-.subtitle {text-indent:0vw;}
+
+.subtitle {
+	text-indent:0vw;
+	font-family: Bold;
+	    }
+
+figcaption{
+	font-family: Bold;
+	padding-bottom: 5vw;
+}
 
 p{
 	line-height: 20px;
   	text-align:justify;
-	font-family: "Auriol";
+	font-family: Normal;
 	font-weight:normal;
 	font-style:normal;
+	margin-bottom: 0vw;
+        margin-top: 0vw;
+        text-indent: 2vw;
 }
 
-    /* Set additional styling options for the columns*/
+a:visited {
+    color: black;
+    text-decoration: none;
+}
 
-    .row{display: flex;
-    	flex-direction: column;
-    	flex-wrap: nowrap;
-    	/*width: 100%;*/
-    }
-    .row, img{
-    	text-align: justify;
-    } 
+blockquote {
+	font-family: Bold;
+	margin-inline-start: 2vw;
+	margin-inline-end: 2vw;
+	text-align: justify;
+}
 
    /* #image img{    
     	width: 100vW;
@@ -154,7 +195,15 @@ p{
 
 
 /* TABLET */
-  @media /* only */ screen and (max-width: 700px){
+@media screen and (max-width: 600px){
+	body {
+		column-count: 2;
+		column-gap: 4vw;
+	}
+	img {width: 47.5vw;}
+}
+
+	  
 	/*  body#cover {
 		      margin-top: 30vW;
 	  }
@@ -177,16 +226,18 @@ p{
 		 hyphens: auto;
 		 margin-left: 30vw;
 	}
-	  */
+	  
 	  
 }
 
+*/
+
 /* SMARTPHONE */
 
-  @media screen and (max-width: 550px){
+@media screen and (max-width: 400px){
+	body {column-count: 1;}
+	img {width: 95vw;}
 }
-
-
 
 
 /*FONTI

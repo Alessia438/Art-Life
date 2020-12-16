@@ -91,9 +91,22 @@ p:first-of-type {
   text-indent: inherit;
 }
 
-p.pubnote {text-transform: uppercase;}
+p.pubnote {
+	text-transform: none;
+	text-align:left;
+	-webkit-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+	font-family: 'Bodoni Six ITC';
+        word-spacing: 1vw;
+	line-height: 3.5vw;
+        padding-top: 10vw;
+	text-indent:0vw;
+}
 
-p.byline, p.pubnote, p.subtitle, p.publicationDate, img, h1 {
+p.pubnote:first-letter{font-size: 2em;}
+
+p.byline, p.subtitle, p.publicationDate, img, h1 {
 	text-align: center;
 	text-transform: uppercase;
 	word-spacing: 0.5em;
@@ -207,9 +220,12 @@ h2, h3 {
 }
 
 
-
-
-
+@media screen and (max-width: 600px){
+	p.pubnote{
+		word-spacing: 2vw;
+		line-height: 5vw;
+	}
+}
 
 
 
