@@ -21,7 +21,7 @@ body#cover {
   background-repeat: no-repeat;
   background-attachment: inherit;
   height: 100%;
-  font-family: "Auriol";
+  font-family: Normal;
   font-weight:normal;
   font-style:normal;
   margin-right: 25vW;
@@ -136,7 +136,7 @@ figcaption{
 p{
 	line-height: 20px;
   	text-align:justify;
-	font-family: "Auriol";
+	font-family: Normal;
 	font-weight:normal;
 	font-style:normal;
 	margin-bottom: 0vw;
