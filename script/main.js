@@ -109,7 +109,7 @@ function my1980(i){
 		var cln = bylineList[n].cloneNode(true);
 		bylineList[n].id = 'originalByline'+n+': ' + bylineList.id;
 		bylineList[n].style.display = 'none';
-		document.getElementsByTagName("iframe")[i].contentWindow.document.body.insertAfter(cln, document.getElementsByTagName("iframe")[i].contentWindow.document.body.children[document.getElementsByTagName("iframe")[i].contentWindow.document.body.children.length-1]);	
+		document.getElementsByTagName("iframe")[i].contentWindow.document.body.appendChild(cln);	
 	}
 }
 
