@@ -220,9 +220,12 @@ h2, h3 {
 }
 
 
-
-
-
+@media screen and (max-width: 600px){
+	p.pubnote{
+		word-spacing: 2vw;
+		line-height: 5vw;
+	}
+}
 
 
 
