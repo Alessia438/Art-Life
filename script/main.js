@@ -64,7 +64,7 @@ function changeCSS(cssFile) { //aggiungere come parametro d'ingresso il document
 						else{allClones.push(allBylines[el]);}
 					}
 					//while(allClones[0]){allClones[0].parentNode.removeChild(allClones[0]);}
-					while(allClones[0]){allClones[0].parentNode.removeChild(allClones[0]).remove();}
+					while(allClones[0]){allClones[0].remove();}
 					
 						/*var oldBylines = frameBody.querySelectorAll('[id^="originalByline"]');
 						for (var m=0; m<oldBylines.length; m++){
