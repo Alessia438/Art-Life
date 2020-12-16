@@ -43,19 +43,27 @@ function myFunction() {
 function changeCSS(cssFile) { //aggiungere come parametro d'ingresso il documento corrente
     	for (var i = 0; i < document.getElementsByTagName("iframe").length; i++) {
 		var frameHead = document.getElementsByTagName("iframe")[i].contentWindow.document.head,
+		frameBody = document.getElementsByTagName("iframe")[i].contentWindow.document.body,
     		allLinks = frameHead.getElementsByTagName("link"),
     		found=false;
 		if (i=== 1){cssFile='../'+cssFile;}
     		for (var l=0; l<allLinks.length; l++) {
 			if (allLinks[l].rel == "stylesheet") {
 				found=true; 
-				//if (allLinks[l].href === cssFile){return;}
-				//parte per eliminare le differenze con liberty
 				if (allLinks[l].href.includes('Liberty.css') && i>0){
-					document.getElementsByTagName("iframe")[i].contentWindow.document.body.querySelector('[id^="FIGURE-1-"]').remove();
-					var oldImg = document.getElementsByTagName("iframe")[i].contentWindow.document.body.querySelector('[id^="original: "]');
+					frameBody.querySelector('[id^="FIGURE-1-"]').remove();
+					var oldImg = frameBody.querySelector('[id^="originalImage: "]');
 					oldImg.id = oldImg.id.split(' ')[1];
 					oldImg.style.display = 'block';
+				}
+				if (allLinks[l].href.includes('1980.css') && i>0){ // modificare da qui
+					var allBylines = frameBody.getElementsByClassName('byline');
+					while(allBylines[0]) {allBylines[0].parentNode.removeChild(allBylines[0]);}
+					var oldBylines = frameBody.querySelectorAll('[id^="originalByline"]');
+					for (var m=0; m<oldBylines.length; m++){
+						oldBylines[m].id = oldBylines[m].id.split(' ')[1];
+						oldBylines[m].style.display = 'block';
+					}					// a qui
 				}
 				allLinks[l].href = cssFile; 
 				break;
@@ -69,8 +77,8 @@ function changeCSS(cssFile) { //aggiungere come parametro d'ingresso il document
 			frameHead.appendChild(newlink);
 		}
 		if (i>0 && document.getElementsByTagName("iframe")[i].contentWindow.document.body.getElementsByTagName('section').length<1){addSectionToDom(i);}
-		//if (cssFile.includes('Bodoni.css') && i>0){manageBodoni(i);}
 		if (cssFile.includes('Liberty.css') && i>0){liberty(i);}
+		else if (cssFile.includes('1980.css') && i>0){my1980(i);} //modificare questa
 	}
 }
 
@@ -90,9 +98,19 @@ function addSectionToDom(i){
 function liberty(i){
 	var firstImage = document.getElementsByTagName("iframe")[i].contentWindow.document.body.querySelector('[id^="FIGURE-1-"]');
 	var cln = firstImage.cloneNode(true);
-	firstImage.id = 'original: ' + firstImage.id;
+	firstImage.id = 'originalImage: ' + firstImage.id;
 	firstImage.style.display = 'none';
 	document.getElementsByTagName("iframe")[i].contentWindow.document.body.insertBefore(cln, document.getElementsByTagName("iframe")[i].contentWindow.document.body.children[0]);
+}
+//modificare/commentare my1980 se qualcosa non va
+function my1980(i){
+	var bylineList = document.getElementsByTagName("iframe")[i].contentWindow.document.body.getElementsByClassName('byline');
+	for (var n=0; n<bylineList.length; n++)
+		var cln = bylineList[n].cloneNode(true);
+		bylineList[n].id = 'originalByline'+n+': ' + bylineList.id;
+		bylineList[n].style.display = 'none';
+		document.getElementsByTagName("iframe")[i].contentWindow.document.body.insertAfter(cln, document.getElementsByTagName("iframe")[i].contentWindow.document.body.children[document.getElementsByTagName("iframe")[i].contentWindow.document.body.children.length-1]);	
+	}
 }
 
 function changeIssue(issueN){
