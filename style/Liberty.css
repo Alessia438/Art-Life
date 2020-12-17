@@ -131,26 +131,36 @@ img:first-child {width: 100%;}
 h1 { 
 	font-family: "P22 Vienna Regular"; 
 	font-weight: bold;
-	font-size: 4vw;
+	/*font-size: 4vw;*/
 	text-align: center;
+	font-size: 2em;
+	margin-block-start: 1vw;
 }
+
+h3{font-family: Bold;}
 
 .byline, .publicationDate {
     margin-bottom: 2vw;
     margin-top: 2vw;
-    font-family: Bold;
+    font-family: Normal;
     text-indent: 0vw;
     text-align: right;
+    font-size: 0.85em;
 }
+
 
 .subtitle {
 	text-indent:0vw;
 	font-family: Bold;
+	font-size: 1em;
+	padding-bottom: 2.5vw;
 	    }
 
 figcaption{
 	font-family: Bold;
 	padding-bottom: 5vw;
+	font-size: 0.9em;
+	word-spacing: 0.05em;
 }
 
 p{
@@ -162,6 +172,9 @@ p{
 	margin-bottom: 0vw;
         margin-top: 0vw;
         text-indent: 2vw;
+	font-size: 1em;
+	letter-spacing: 0.02vw;
+	word-spacing: 0.01vw;
 }
 
 a:visited {
