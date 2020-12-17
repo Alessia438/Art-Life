@@ -97,7 +97,6 @@ function addSectionToDom(i){
 		}
 	}
 	document.getElementsByTagName("iframe")[i].contentWindow.document.body.insertBefore(newSec, document.getElementsByTagName("iframe")[i].contentWindow.document.body.children[0]);
-	liberty(i);
 }
 
 function liberty(i){
@@ -106,6 +105,7 @@ function liberty(i){
 	firstImage.id = 'originalImage: ' + firstImage.id;
 	firstImage.style.display = 'none';
 	document.getElementsByTagName("iframe")[i].contentWindow.document.body.insertBefore(cln, document.getElementsByTagName("iframe")[i].contentWindow.document.body.children[0]);
+	liberty(i);
 }
 
 function my1980(i){
