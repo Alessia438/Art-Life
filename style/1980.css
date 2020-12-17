@@ -8,11 +8,12 @@ h1 {
 	color: white;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     font-size: 14vmax;
-    letter-spacing: -2px;
+    letter-spacing: -7px;
     word-spacing: -4px;
     text-align: center;
     height: 200;
-    /* box-sizing: border-box; width: 100%*/
+    box-sizing: border-box; 
+    width: 100%;
 }
 
 #cover {
@@ -25,4 +26,48 @@ h1 {
     overflow-x: hidden;
     background-position: top center;
     background-attachment: fixed;
+}
+
+#cover p:nth-child(1) {
+  color: red;
+  border-bottom-style: solid;
+  border-image: 
+    linear-gradient(
+      to right, 
+      #ce8f50, 
+      rgba(0, 0, 0, 0)
+    ) 100% 0%;
+}
+
+#cover p:nth-child(2) {
+color: blue;
+border-bottom-style: solid;
+border-image: 
+    linear-gradient(
+      to right, 
+      #ce8f50, 
+      rgba(0, 0, 0, 0)
+    ) 100% 0%;
+}
+
+#cover p:nth-child(3) {
+color: yellow;
+border-bottom-style: solid;
+border-image: 
+    linear-gradient(
+      to right, 
+      #ce8f50, 
+      rgba(0, 0, 0, 0)
+    ) 100% 0%;
+}
+
+#cover p:nth-child(4) {
+color: green;
+border-bottom-style: solid;
+border-image: 
+    linear-gradient(
+      to right, 
+      #ce8f50, 
+      rgba(0, 0, 0, 0)
+    ) 100% 0%;
 }
