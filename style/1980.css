@@ -2,7 +2,10 @@
   font-family: "Lato Black";
   src: url("Lato-Black.ttf");
 }
-
+@font-face {
+  font-family: "Assistant-ExtraBold";
+  src: url("Assistant-ExtraBold.ttf");
+}
 h1 {
 	font-family: "Lato Black";
 	color: white;
@@ -33,11 +36,12 @@ span[onclick] {cursor:pointer;}
 [onclick]:hover {background-color: #c6aa71;}
 
 #cover p{
-    font-family: "Lato Black";
+    font-family: "Assistant-ExtraBold";
     /*font-weight: 200;*/
     font-style: bold;
     max-width: 25vw;
     padding: 1rem;
+    letter-spacing: -0.5px;
 
 }
 
