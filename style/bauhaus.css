@@ -228,7 +228,7 @@ p.subtitle{
   border: 0px;
   position: relative;
   left: 60%;
-  bottom: 190%;
+  top: 50vw;
   /*padding-bottom: 200pt; per spostarlo a destra
   padding-right: 200pt; */
 }
