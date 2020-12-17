@@ -56,15 +56,33 @@ function changeCSS(cssFile) { //aggiungere come parametro d'ingresso il document
 					oldImg.id = oldImg.id.split(' ')[1];
 					oldImg.style.display = 'block';
 				}
-				if (allLinks[l].href.includes('1980.css') && i>0){ // modificare da qui
+				/*if (allLinks[l].href.includes('1980.css') && i>0){ // modificare da qui: 1. inserire in all clones tutti i cloni 2. eliminare i cloni 3. ripristinari i tag originari
+					var allBylines = frameBody.getElementsByClassName('byline'),
+					    allClones = [];
+					for (var el= 0; el<allBylines.length; el++){
+						if (allBylines[el].id.includes('originalByline')){allBylines[el].id = allBylines[el].id.split(' ')[1]; allBylines[el].style.display = 'block';}
+						else{allClones.push(allBylines[el]);}
+					}
+					while(allClones[0]){allClones[0].remove();}				// a qui
+				}*/
+				
+				
+				if (allLinks[l].href.includes('1980.css') && i>0){ // modificare da qui: 1. inserire in all clones tutti i cloni 2. eliminare i cloni 3. ripristinari i tag originari
 					var allBylines = frameBody.getElementsByClassName('byline');
-					while(allBylines[0]) {allBylines[0].parentNode.removeChild(allBylines[0]);}
-					var oldBylines = frameBody.querySelectorAll('[id^="originalByline"]');
-					for (var m=0; m<oldBylines.length; m++){
-						oldBylines[m].id = oldBylines[m].id.split(' ')[1];
-						oldBylines[m].style.display = 'block';
-					}					// a qui
+					for (var el= 0; el<allBylines.length; el++){
+						if (!allBylines[el].id.includes('originalByline')){
+							document.getElementsByTagName("iframe")[i].contentWindow.document.getElementById(allBylines[el].id).remove();
+							el--;
+						}
+					}
+					for (var el= 0; el<allBylines.length; el++){
+						allBylines[el].id = allBylines[el].id.split(' ')[1];
+						allBylines[el].style.display = 'block';
+					}	// a qui
 				}
+				
+				
+				
 				allLinks[l].href = cssFile; 
 				break;
 			}
@@ -106,9 +124,9 @@ function liberty(i){
 function my1980(i){
 	var bylineList = document.getElementsByTagName("iframe")[i].contentWindow.document.body.getElementsByClassName('byline'),
 	totByline = bylineList.length;
-	for (var n=0; n<totByline.length; n++){
+	for (var n=0; n<totByline; n++){
 		var cln = bylineList[n].cloneNode(true);
-		bylineList[n].id = 'originalByline'+n+': ' + bylineList.id;
+		bylineList[n].id = 'originalByline'+n+': ' + bylineList[n].id;
 		bylineList[n].style.display = 'none';
 		document.getElementsByTagName("iframe")[i].contentWindow.document.body.appendChild(cln);	
 	}
