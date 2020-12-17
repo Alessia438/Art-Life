@@ -116,7 +116,7 @@ function my1980(i){
 		var cln = bylineList[n].cloneNode(true);
 		bylineList[n].id = 'originalByline'+n+': ' + bylineList[n].id;
 		bylineList[n].style.display = 'none';
-		if (curBody.children[curBody.children.length-1].className === 'pubnote'){curBody.appendBefore(cln, curBody.children[curBody.children.length-1]);}
+		if (curBody.children[curBody.children.length-1].className === 'pubnote'){curBody.insertBefore(cln, curBody.children[curBody.children.length-1]);}
 		else{curBody.appendChild(cln);}	
 	}
 }
