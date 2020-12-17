@@ -56,18 +56,7 @@ function changeCSS(cssFile) { //aggiungere come parametro d'ingresso il document
 					oldImg.id = oldImg.id.split(' ')[1];
 					oldImg.style.display = 'block';
 				}
-				/*if (allLinks[l].href.includes('1980.css') && i>0){ // modificare da qui: 1. inserire in all clones tutti i cloni 2. eliminare i cloni 3. ripristinari i tag originari
-					var allBylines = frameBody.getElementsByClassName('byline'),
-					    allClones = [];
-					for (var el= 0; el<allBylines.length; el++){
-						if (allBylines[el].id.includes('originalByline')){allBylines[el].id = allBylines[el].id.split(' ')[1]; allBylines[el].style.display = 'block';}
-						else{allClones.push(allBylines[el]);}
-					}
-					while(allClones[0]){allClones[0].remove();}				// a qui
-				}*/
-				
-				
-				if (allLinks[l].href.includes('1980.css') && i>0){ // modificare da qui: 1. inserire in all clones tutti i cloni 2. eliminare i cloni 3. ripristinari i tag originari
+				if (allLinks[l].href.includes('1980.css') && i>0){ 
 					var allBylines = frameBody.getElementsByClassName('byline');
 					for (var el= 0; el<allBylines.length; el++){
 						if (!allBylines[el].id.includes('originalByline')){
@@ -78,11 +67,8 @@ function changeCSS(cssFile) { //aggiungere come parametro d'ingresso il document
 					for (var el= 0; el<allBylines.length; el++){
 						allBylines[el].id = allBylines[el].id.split(' ')[1];
 						allBylines[el].style.display = 'block';
-					}	// a qui
+					}
 				}
-				
-				
-				
 				allLinks[l].href = cssFile; 
 				break;
 			}
@@ -96,7 +82,7 @@ function changeCSS(cssFile) { //aggiungere come parametro d'ingresso il document
 		}
 		if (i>0 && document.getElementsByTagName("iframe")[i].contentWindow.document.body.getElementsByTagName('section').length<1){addSectionToDom(i);}
 		if (cssFile.includes('Liberty.css') && i>0){liberty(i);}
-		else if (cssFile.includes('1980.css') && i>0){my1980(i);} //modificare questa
+		else if (cssFile.includes('1980.css') && i>0){my1980(i);} 
 	}
 }
 
@@ -120,7 +106,7 @@ function liberty(i){
 	firstImage.style.display = 'none';
 	document.getElementsByTagName("iframe")[i].contentWindow.document.body.insertBefore(cln, document.getElementsByTagName("iframe")[i].contentWindow.document.body.children[0]);
 }
-//modificare/commentare my1980 se qualcosa non va
+
 function my1980(i){
 	var bylineList = document.getElementsByTagName("iframe")[i].contentWindow.document.body.getElementsByClassName('byline'),
 	totByline = bylineList.length;
