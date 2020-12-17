@@ -27,6 +27,13 @@ h1 {
     background-position: top center;
     background-attachment: fixed;
 }
+#cover p{
+    font-family: "Lato Black";
+    font-weight: 200;
+    font-style: bold;
+    max-width: 20vw;
+    padding: 1rem;
+}
 
 #cover p:nth-child(1) {
   color: red;
@@ -51,7 +58,7 @@ border-image:
 }
 
 #cover p:nth-child(3) {
-color: yellow;
+color: #ffcc00;
 border-bottom-style: solid;
 border-image: 
     linear-gradient(
@@ -63,6 +70,16 @@ border-image:
 
 #cover p:nth-child(4) {
 color: green;
+border-bottom-style: solid;
+border-image: 
+    linear-gradient(
+      to right, 
+      #ce8f50, 
+      rgba(0, 0, 0, 0)
+    ) 100% 0%;
+}
+#cover p:nth-child(4) {
+color: white;
 border-bottom-style: solid;
 border-image: 
     linear-gradient(
