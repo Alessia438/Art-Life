@@ -10,8 +10,7 @@ h1#cover {
 }
 
 body#cover {
-  background-image: url('detail_picture.jpg');
-  opacity: 50%;
+  background-image: url('phoenix.png');
   background-repeat: no-repeat;
   background-size: 100%;
 }
