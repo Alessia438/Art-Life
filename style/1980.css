@@ -27,6 +27,11 @@ h1 {
     background-position: top center;
     background-attachment: fixed;
 }
+
+[onClick] {cursor:pointer;}
+span[onclick] {cursor:pointer;}
+[onclick]:hover {background-color: #f8f9eb;}
+
 #cover p{
     font-family: "Lato Black";
     font-weight: 200;
