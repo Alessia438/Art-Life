@@ -30,14 +30,15 @@ h1 {
 
 [onClick] {cursor:pointer;}
 span[onclick] {cursor:pointer;}
-[onclick]:hover {background-color: #f8f9eb;}
+[onclick]:hover {background-color: #c6aa71;}
 
 #cover p{
     font-family: "Lato Black";
-    font-weight: 200;
+    /*font-weight: 200;*/
     font-style: bold;
     max-width: 25vw;
     padding: 1rem;
+
 }
 
 #cover p:nth-child(1) {
