@@ -33,12 +33,12 @@ body#cover {
 
 #cover h1 {
     color: rgb(203, 125, 106);
-    font-family: 'Auriol';
+    font-family: 'P22 Vienna Regular';
     text-transform: uppercase;
     /*font-size: 4em;
     margin-left: 25vw;*/
-    font-size: 6vw;
-    margin-left: 20vw;
+    font-size: 5em;
+    margin-left: 0vw;
 }
 
 #cover p{
