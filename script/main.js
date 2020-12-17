@@ -56,7 +56,7 @@ function changeCSS(cssFile) { //aggiungere come parametro d'ingresso il document
 					oldImg.id = oldImg.id.split(' ')[1];
 					oldImg.style.display = 'block';
 				}
-				if (allLinks[l].href.includes('1980.css') && i>0){ 
+				if (allLinks[l].href.includes('1980.css') || allLinks[l].href.includes('Liberty.css') && i>0){ 
 					var allBylines = frameBody.getElementsByClassName('byline');
 					for (var el= 0; el<allBylines.length; el++){
 						if (!allBylines[el].id.includes('originalByline')){
@@ -105,6 +105,7 @@ function liberty(i){
 	firstImage.id = 'originalImage: ' + firstImage.id;
 	firstImage.style.display = 'none';
 	document.getElementsByTagName("iframe")[i].contentWindow.document.body.insertBefore(cln, document.getElementsByTagName("iframe")[i].contentWindow.document.body.children[0]);
+	my1980(i);
 }
 
 function my1980(i){
