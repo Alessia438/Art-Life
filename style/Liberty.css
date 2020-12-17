@@ -65,7 +65,7 @@ body#cover {
 
 #cover p::first-letter {text-transform: capitalize;}
 
-/*For both cover and articles*/
+/*For articles*/
 body{
 	background-color: #fcfcf4;
 	column-count: 3;
@@ -76,6 +76,9 @@ body{
 	padding-right: 1.5vw;
 	padding-left: 3.75vw;
 	margin: 0vw;
+}
+
+body:not(#cover){
 	background-image: linear-gradient(rgba(255, 255, 240, 0.5), rgba(255, 255, 240, 0.5) ),url(https://www.onlygfx.com/wp-content/uploads/2015/10/old-paper-texture-1-695x1024.jpg);
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
