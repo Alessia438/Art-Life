@@ -6,13 +6,14 @@
 h1#cover {
 	font-family: "Lato Black";
 	color: white;
-	font-weight: bold;
+	font-weight: 200;
     font-size: 12vmax;
+    position: center;
 }
 
 body#cover {
-  background-image: url('phoenix.png');
-  background-repeat: no-repeat;
+    background-image: url('cover.png');
+    background-repeat: no-repeat;
     background-position: 98%, top;
     background-size: cover;
     padding-left: 2%;
