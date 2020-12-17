@@ -7,6 +7,11 @@
   src: url("Assistant-ExtraBold.ttf");
 }
 
+@font-face {
+  font-family: "UniversLTStd-Bold";
+  src: url("UniversLTStd-Bold.otf");
+}
+
 #cover h1 {
 	font-family: "Lato Black";
 	color: white;
@@ -17,7 +22,7 @@
     text-align: center;
     height: 200;
     box-sizing: border-box; 
-    width: 100%;
+    width: 101%;
 }
 
 #cover {
@@ -29,7 +34,6 @@
     padding-bottom: 2%;
     overflow-x: hidden;
     background-position: top center;
- 
 }
 
 [onClick] {cursor:pointer;}
@@ -37,7 +41,7 @@ span[onclick] {cursor:pointer;}
 [onclick]:hover {background-color: #c6aa71;}
 
 #cover p{
-    font-family: "Assistant-ExtraBold";
+    font-family: "UniversLTStd-Bold";
     font-size: 3vmax;
     font-style: bold;
     max-width: 25vw;
