@@ -37,7 +37,7 @@ span[onclick] {cursor:pointer;}
 
 #cover p{
     font-family: "Assistant-ExtraBold";
-    /*font-weight: 200;*/
+    font-size: 7vmax;
     font-style: bold;
     max-width: 25vw;
     padding: 1rem;
