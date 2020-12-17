@@ -38,7 +38,7 @@ body#cover {
     /*font-size: 4em;
     margin-left: 25vw;*/
     font-size: 5em;
-    margin-left: 0vw;
+    margin-left: 25vw;
 }
 
 #cover p{
@@ -243,45 +243,46 @@ blockquote {
 
 @media screen and (max-width: 400px){
 	body#cover {
-	    background-image: url(flores_def.png);
-	    background-repeat: no-repeat;
-	    background-attachment: inherit;
-	    height: 100%;
-	    margin-right: 25vW;
-	    /* margin-left: 32vW; */
-	    /* margin-top: 5vW; */
-	    /* margin-bottom: 30vW; */
-	    background-size: 50vw;
-	    column-count: 1;
-	    /* font-size: 2em; */
-	    background-position: right bottom;
-	    font-family: P22 Vienna Regular;
+		background-image: url(flores_def.png);
+		background-repeat: no-repeat;
+		background-attachment: inherit;
+		height: 100%;
+		margin-right: 20vW;
+		margin-left: 0vW; 
+		margin-top: 0vW;
+		margin-bottom: 0vW; 
+		background-size: 50vw;
+		column-count: 1;
+		background-position: right bottom;
+		font-family: P22 Vienna Regular;
+		hyphens: none;
 	}
 	#cover p {
-	    margin-bottom: 2em;
-	    text-align: left;
-	    color: rgb(137, 136, 103);
-	    text-transform: lowercase;
-	    font-family: 'P22 Vienna Regular';
-	    /* line-height: 1em; */
-	    line-height: 1em;
-	    letter-spacing: 0.04em;
-	    word-spacing: 0.1em;
-	    font-size: 1.2em;
-	    margin-bottom: 1.2em;
-	    -webkit-hyphenate-character: auto;
-	    hyphens: auto;
-	    padding-left: 2vw;
-	    text-indent: 0vw;
-	    text-shadow: 0.05em 0.05em white;
+		margin-bottom: 2em;
+		text-align: left;
+		color: rgb(137, 136, 103);
+		text-transform: lowercase;
+		font-family: 'P22 Vienna Regular';
+		line-height: 1em;
+		letter-spacing: 0.04em;
+		word-spacing: 0.1em;
+		font-size: 1.2em;
+		margin-bottom: 1em;
+		-webkit-hyphenate-character: auto;
+		hyphens: auto;
+		padding-left: 2vw;
+		text-indent: 0vw;
+		text-shadow: 0.05em 0.05em white;
 	}
 	
-	#cover p:nth-child(6) {padding-left: 0vw;}
+	#cover p:nth-child(6) {padding-left: 2vw;}
 	
 	#cover h1 {
-	    color: rgb(203, 125, 106);
-	    text-transform: uppercase;
-	    font-size: 5em;
+		color: rgb(203, 125, 106);
+		text-transform: uppercase;
+		font-size: 15vw;
+		margin-left: 0vw;
+		padding-left: 0vw;
 	}
 	
 	body {column-count: 1;}
