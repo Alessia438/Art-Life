@@ -3,7 +3,7 @@
   src: url("Lato-Black.ttf");
 }
 
-h1#cover {
+h1 {
 	font-family: "Lato Black";
 	color: white;
 	font-weight: 200;
@@ -11,7 +11,7 @@ h1#cover {
     position: center;
 }
 
-body#cover {
+#cover {
     background-image: url('cover.png');
     background-repeat: no-repeat;
     background-position: 98%, top;
