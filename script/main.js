@@ -56,7 +56,7 @@ function changeCSS(cssFile) { //aggiungere come parametro d'ingresso il document
 					oldImg.id = oldImg.id.split(' ')[1];
 					oldImg.style.display = 'block';
 				}
-				if (allLinks[l].href.includes('1980.css') && i>0){ 
+				if (allLinks[l].href.includes('1980.css') || allLinks[l].href.includes('Liberty.css') && i>0){ 
 					var allBylines = frameBody.getElementsByClassName('byline');
 					for (var el= 0; el<allBylines.length; el++){
 						if (!allBylines[el].id.includes('originalByline')){
@@ -97,6 +97,7 @@ function addSectionToDom(i){
 		}
 	}
 	document.getElementsByTagName("iframe")[i].contentWindow.document.body.insertBefore(newSec, document.getElementsByTagName("iframe")[i].contentWindow.document.body.children[0]);
+	liberty(i);
 }
 
 function liberty(i){
