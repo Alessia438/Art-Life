@@ -56,7 +56,7 @@ function changeCSS(cssFile) { //aggiungere come parametro d'ingresso il document
 					oldImg.id = oldImg.id.split(' ')[1];
 					oldImg.style.display = 'block';
 				}
-				if (allLinks[l].href.includes('1980.css') && i>0){ // modificare da qui: 1. inserire in all clones tutti i cloni 2. eliminare i cloni 3. ripristinari i tag originari
+				/*if (allLinks[l].href.includes('1980.css') && i>0){ // modificare da qui: 1. inserire in all clones tutti i cloni 2. eliminare i cloni 3. ripristinari i tag originari
 					var allBylines = frameBody.getElementsByClassName('byline'),
 					    allClones = [];
 					for (var el= 0; el<allBylines.length; el++){
@@ -64,7 +64,25 @@ function changeCSS(cssFile) { //aggiungere come parametro d'ingresso il document
 						else{allClones.push(allBylines[el]);}
 					}
 					while(allClones[0]){allClones[0].remove();}				// a qui
+				}*/
+				
+				
+				if (allLinks[l].href.includes('1980.css') && i>0){ // modificare da qui: 1. inserire in all clones tutti i cloni 2. eliminare i cloni 3. ripristinari i tag originari
+					var allBylines = frameBody.getElementsByClassName('byline');
+					for (var el= 0; el<allBylines.length; el++){
+						if (!allBylines[el].id.includes('originalByline')){
+							frameBody.getElementById(allBylines[el].id).remove;
+							el--;
+						}
+					}
+					for (var el= 0; el<allBylines.length; el++){
+						allBylines[el].id = allBylines[el].id.split(' ')[1];
+						allBylines[el].style.display = 'block';
+					}	// a qui
 				}
+				
+				
+				
 				allLinks[l].href = cssFile; 
 				break;
 			}
