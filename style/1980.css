@@ -28,7 +28,7 @@ h1 {
     padding-bottom: 2%;
     overflow-x: hidden;
     background-position: top center;
-    background-attachment: fixed;
+ 
 }
 
 [onClick] {cursor:pointer;}
@@ -37,7 +37,7 @@ span[onclick] {cursor:pointer;}
 
 #cover p{
     font-family: "Assistant-ExtraBold";
-    font-size: 7vmax;
+    font-size: 3vmax;
     font-style: bold;
     max-width: 25vw;
     padding: 1rem;
@@ -45,21 +45,10 @@ span[onclick] {cursor:pointer;}
 
 }
 
-#cover p:nth-child(1) {
-  color: red;
+#cover p:nth-child(2) {
+  color: green;
   border-bottom-style: solid;
   border-image: 
-    linear-gradient(
-      to right, 
-      #ce8f50, 
-      rgba(0, 0, 0, 0)
-    ) 100% 0%;
-}
-
-#cover p:nth-child(2) {
-color: blue;
-border-bottom-style: solid;
-border-image: 
     linear-gradient(
       to right, 
       #ce8f50, 
@@ -79,7 +68,7 @@ border-image:
 }
 
 #cover p:nth-child(4) {
-color: green;
+color: red;
 border-bottom-style: solid;
 border-image: 
     linear-gradient(
@@ -88,7 +77,18 @@ border-image:
       rgba(0, 0, 0, 0)
     ) 100% 0%;
 }
+
 #cover p:nth-child(5) {
+color: blue;
+border-bottom-style: solid;
+border-image: 
+    linear-gradient(
+      to right, 
+      #ce8f50, 
+      rgba(0, 0, 0, 0)
+    ) 100% 0%;
+}
+#cover p:nth-child(6) {
 color: white;
 border-bottom-style: solid;
 border-image: 
