@@ -31,7 +31,7 @@ h1 {
     font-family: "Lato Black";
     font-weight: 200;
     font-style: bold;
-    max-width: 20vw;
+    max-width: 25vw;
     padding: 1rem;
 }
 
@@ -78,7 +78,7 @@ border-image:
       rgba(0, 0, 0, 0)
     ) 100% 0%;
 }
-#cover p:nth-child(4) {
+#cover p:nth-child(5) {
 color: white;
 border-bottom-style: solid;
 border-image: 
