@@ -324,21 +324,32 @@ p a{color: black;}
   border: 2px solid blue; /*risolvere problema dell'ordine di byline, pubdate etc prima delle immagini*/
   padding: 1vw;
 }
-/*
-section#id{
-  font-family: "Bauhaus 93";
-  font-size: 170%
-}
-*/
-/*
-#bottom{
-  bottom: 0px;
-}
-p:first-of-type:first-letter:not(.subtitle){
-  text-indent: 2em;
-  font-family: "Bayer Sans";
+
+[id^="SECTION-1-"] {
+        display: -webkit-box;
+        display: -moz-box;
+        display: box;
+        
+        -webkit-box-orient: vertical;
+        -moz-box-orient: vertical;
+        box-orient: vertical;
+    }
+
+[class^="P-1-"]{
+  -webkit-box-ordinal-group: 3;
+        -moz-box-ordinal-group: 3;
+        box-ordinal-group: 3;
 }
 
-p.pubnote{text-transform: rotate(-90deg);}
-h1{font-family: "Bauhaus 93";}
-*/
+
+[class^="P-2-1-"]{
+  -webkit-box-ordinal-group: 4;
+        -moz-box-ordinal-group: 4;
+        box-ordinal-group: 4;
+}
+
+[class^="P-3-1-"]{
+  -webkit-box-ordinal-group: 5;
+        -moz-box-ordinal-group: 5;
+        box-ordinal-group: 5;
+}
