@@ -12,5 +12,9 @@ h1#cover {
 body#cover {
   background-image: url('phoenix.png');
   background-repeat: no-repeat;
-  background-size: 100%;
+    background-position: 2% 98%, top;
+    background-size: 15%, cover;
+    padding-left: 2%;
+    padding-bottom: 2%;
+    overflow-x: hidden;
 }
