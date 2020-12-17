@@ -71,7 +71,7 @@ function changeCSS(cssFile) { //aggiungere come parametro d'ingresso il document
 					var allBylines = frameBody.getElementsByClassName('byline');
 					for (var el= 0; el<allBylines.length; el++){
 						if (!allBylines[el].id.includes('originalByline')){
-							frameBody.getElementById(allBylines[el].id).remove();
+							document.getElementsByTagName("iframe")[i].contentWindow.document.getElementById(allBylines[el].id).remove();
 							el--;
 						}
 					}
