@@ -105,7 +105,7 @@ function liberty(i){
 	firstImage.id = 'originalImage: ' + firstImage.id;
 	firstImage.style.display = 'none';
 	document.getElementsByTagName("iframe")[i].contentWindow.document.body.insertBefore(cln, document.getElementsByTagName("iframe")[i].contentWindow.document.body.children[0]);
-	liberty(i);
+	my1980(i);
 }
 
 function my1980(i){
