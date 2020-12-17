@@ -10,7 +10,8 @@ h1#cover {
 }
 
 body#cover {
-  background-image: url('SamFrancis.jpg');
+  background-image: url('detail_picture.jpg');
+  opacity: 50%;
   background-repeat: no-repeat;
   background-size: 100%;
 }
