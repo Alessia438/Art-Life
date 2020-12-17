@@ -335,21 +335,39 @@ p a{color: black;}
         box-orient: vertical;
     }
 
-.byline {
+[id^="H1-1-"]{
+  -webkit-box-ordinal-group: 1;
+        -moz-box-ordinal-group: 1;
+        box-ordinal-group: 1;
+}
+
+.subtitle {
+        -webkit-box-ordinal-group: 2;
+        -moz-box-ordinal-group: 2;
+        box-ordinal-group: 2;
+}
+
+[id^="FIGURE-1-"]{
   -webkit-box-ordinal-group: 3;
         -moz-box-ordinal-group: 3;
         box-ordinal-group: 3;
 }
 
-
-.publicationDate {
+.byline {
   -webkit-box-ordinal-group: 4;
         -moz-box-ordinal-group: 4;
         box-ordinal-group: 4;
 }
 
-.publicationTime {
+
+.publicationDate {
   -webkit-box-ordinal-group: 5;
         -moz-box-ordinal-group: 5;
         box-ordinal-group: 5;
+}
+
+.publicationTime {
+  -webkit-box-ordinal-group: 6;
+        -moz-box-ordinal-group: 6;
+        box-ordinal-group: 6;
 }
