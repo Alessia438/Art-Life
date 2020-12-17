@@ -109,13 +109,15 @@ function liberty(i){
 }
 
 function my1980(i){
-	var bylineList = document.getElementsByTagName("iframe")[i].contentWindow.document.body.getElementsByClassName('byline'),
-	totByline = bylineList.length;
+	var curBody = document.getElementsByTagName("iframe")[i].contentWindow.document.body,
+	 bylineList = curBody.getElementsByClassName('byline'),
+	 totByline = bylineList.length;
 	for (var n=0; n<totByline; n++){
 		var cln = bylineList[n].cloneNode(true);
 		bylineList[n].id = 'originalByline'+n+': ' + bylineList[n].id;
 		bylineList[n].style.display = 'none';
-		document.getElementsByTagName("iframe")[i].contentWindow.document.body.appendChild(cln);	
+		if (curBody.children[curBody.children.length-1].tagName === 'pubnote'){curBody.appendBefore(cln, curBody.children[curBody.children.length-1]);}
+		else{curBody.appendChild(cln);}	
 	}
 }
 
