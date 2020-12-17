@@ -275,6 +275,9 @@ blockquote {
 	    text-indent: 0vw;
 	    text-shadow: 0.05em 0.05em white;
 	}
+	
+	#cover p:nth-child(6) {padding-left: 0vw;}
+	
 	#cover h1 {
 	    color: rgb(203, 125, 106);
 	    text-transform: uppercase;
