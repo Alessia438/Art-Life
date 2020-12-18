@@ -84,7 +84,7 @@ body{
   padding-bottom: 30vW;
 }
 
-p:not(.byline){text-indent: 2em;}
+p{text-indent: 2em;}
 
 p:first-of-type:not(.subtitle):not(.byline):first-letter{font-size: 2em;}
 p:first-of-type {
@@ -115,6 +115,7 @@ p.byline, p.subtitle, p.publicationDate, img, h1 {
 	-webkit-hyphens: none;
 	-ms-hyphens: none;
 	hyphens: none;
+	text-indent: 0vw;
 }
 
 img, video {
