@@ -121,7 +121,7 @@ p.pubnote {
 	font-size: 0.9em;
 }
 
-p.pubnote:first-letter{font-size: 2em;}
+/*p.pubnote:first-letter{font-size: 2em;}*/
 
 p.byline, p.subtitle, p.publicationDate, img, h1 {
 	text-align: center;
@@ -261,6 +261,7 @@ blockquote {
 	margin-right: 0vw;
 	text-align: left;
 	word-spacing: 0.65em;
+	line-height: 1.2em;
 	-webkit-hyphens: none;
 	-ms-hyphens: none;
 	hyphens: none;
