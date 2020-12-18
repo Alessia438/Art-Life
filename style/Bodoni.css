@@ -37,7 +37,7 @@ div#coverText {
 #cover p{
 	text-indent: 0em;
 	margin-top: 2vw;
-	margin-bottom: 2vw;
+	margin-bottom: 5vw;
 }
 
 /* stile per articoli*/
@@ -326,7 +326,23 @@ blockquote.person, .place, .artwork, .work, blockquote:first-letter {text-transf
 	}
 	
 	[id^="SECTION-2-"] p:first-child {margin-top: 20em;}
+
+	div#coverText{
+		padding-left: 21vw;
+		padding-right: 14vw;
+		padding-bottom: 21vw;
+		padding-top: 14vw;
+	}
 	
+	#cover p {
+		text-indent: 0em;
+		margin-top: 2vw;
+		margin-bottom: 5vw;
+		text-align: left;
+		hyphens: auto;
+		line-height: 1.3em;
+		font-size: 0.95em;
+	}
 	
 }
 
