@@ -256,10 +256,12 @@ h2, h3 {
 	}
 	
 	p.byline {
-		font-size: 1.1em;
+		font-size: 0.8em;
 		line-height: 2vw;
 		padding-bottom: 4vw;
 	}
+	
+	p.byline .person {font-size: 1.3em;}
 	
 	figure {margin: 0vw;}
 	
@@ -287,6 +289,10 @@ h2, h3 {
 		word-spacing: 2vw;
 		line-height: 5vw;
 	}
+	
+	[id^="SECTION-2-"] p:first-child {margin-top: 20em;}
+	
+	section+p {margin-top: 20em;}
 	
 }
 
