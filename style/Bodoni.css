@@ -90,7 +90,7 @@ p:first-of-type:not(.subtitle):not(.byline):first-letter{font-size: 2em;}
 p:first-of-type {
   text-indent: 0vw;
 }
-p:first-of-type:not(.byline):not(.subtitle) {margin-top: 30vw;}
+/*p:first-of-type:not(.byline):not(.subtitle) {margin-top: 30vw;}*/
 
 p.pubnote {
 	text-transform: none;
@@ -186,6 +186,8 @@ h2, h3 {
         box-orient: vertical;
     }
 
+section+p {margin-top: 20em;}
+
 [id^="H1-1-"]{
 	-webkit-box-ordinal-group: 1;
         -moz-box-ordinal-group: 1;
@@ -257,7 +259,7 @@ h2, h3 {
 	
 	p.byline {
 		font-size: 0.8em;
-		line-height: 2vw;
+		line-height: 5vw;
 		padding-bottom: 4vw;
 	}
 	
@@ -292,7 +294,6 @@ h2, h3 {
 	
 	[id^="SECTION-2-"] p:first-child {margin-top: 20em;}
 	
-	section+p {margin-top: 20em;}
 	
 }
 
