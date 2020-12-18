@@ -207,11 +207,11 @@ section+p {margin-top: 20em;}
 
 [id^="FIGURE-1-"] img{
 	border-radius: 50%;
-	height: 40vw;
-    	width: 40vw;
-        display: block;
-        /*margin-left: auto;
-        margin-right: auto;*/
+	height: 30vw;
+    	width: 30vw;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 [id^="FIGURE-1-"]{
