@@ -1,61 +1,46 @@
 @font-face {
-  font-family: Bodoni Six ITC;
-  src: url(bodoni-six-itc-book.ttf);
+	font-family: Bodoni Six ITC;
+	src: url(bodoni-six-itc-book.ttf);
   
 }
 @font-face {
-  font-family: "Bodoni Seventytwo ITC";
-  src: url("bodoni-seventytwo-itc-book.ttf"); 
-}
-h1, .byline{
-  font-family: "Bodoni Seventytwo ITC";
+	font-family: "Bodoni Seventytwo ITC";
+	src: url("bodoni-seventytwo-itc-book.ttf"); 
 }
 
 /* stile per cover page*/
 
 body#cover {
-  background-image: url('aminta_cover_page.jpg');
-  background-repeat: round;
-  background-attachment: fixed;
-  background-size: contain;
-  height: 100%;
-  font-family: 'Bodoni Six ITC';
-  font-weight:normal;
-  font-style:normal;
-  margin-right: 0vW;
-  margin-left: 0vW;
-  margin-top: 0vW;
-  margin-bottom: 0vW;
+	background-image: url('aminta_cover_page.jpg');
+	background-repeat: round;
+	background-attachment: fixed;
+	background-size: contain;
+	height: 100%;
+	font-family: 'Bodoni Six ITC';
+	font-weight:normal;
+	font-style:normal;
+	margin-right: 0vW;
+	margin-left: 0vW;
+	margin-top: 0vW;
+	margin-bottom: 0vW;
 }
 
 div#coverText {
-    background-image: url(../sfondo_bodoni.jpg);
-    padding-left: 28vw;
-    padding-right: 18vw;
-    padding-bottom: 30vw;
-    padding-top: 20vw;
-    margin-bottom: 2vw;
-    margin-top: 2vw;
-    margin-left: 4vw;
-    margin-right: 4vw;
+	background-image: url(../sfondo_bodoni.jpg);
+	padding-left: 28vw;
+	padding-right: 18vw;
+	padding-bottom: 30vw;
+	padding-top: 20vw;
+	margin-bottom: 2vw;
+	margin-top: 2vw;
+	margin-left: 4vw;
+	margin-right: 4vw;
 }
 
 #cover p{
 	text-indent: 0em;
 	margin-top: 2vw;
 	margin-bottom: 2vw;
-}
-
-p{
-	line-height: 1.5em;
-	text-align:justify;
-	letter-spacing: 0.03em;
-    	word-spacing: 0.04em;
-	-webkit-hyphens: auto;
-	-ms-hyphens: auto;
-	hyphens: auto;
-	margin-bottom: 0em;
-    	margin-top: 0em;
 }
 
 /* stile per articoli*/
@@ -65,32 +50,59 @@ span[onclick] {cursor:pointer;}
 [onclick]:hover {background-color: #b38316c4;}
 
 body{
-   background-image: 
-    linear-gradient(
-      rgba(255, 255, 240, 0.5), 
-      rgba(255, 255, 240, 0.5)
-    ),
-    url('../sfondo_bodoni.jpg');
-	
-  background-color: #fcfcf4;
-  /*background-image: url('../sfondo_bodoni.jpg');*/
-  color: #44413c; /*black ink*/
-  font-family: 'Bodoni Six ITC';
-  font-weight:normal;
-  font-style:normal;
-  padding-right: 20vW;
-  padding-left: 30vW;
-  padding-top: 20vW;
-  padding-bottom: 30vW;
+	background-image: 
+	linear-gradient(
+	rgba(255, 255, 240, 0.5), 
+	rgba(255, 255, 240, 0.5)
+	),
+	url('../sfondo_bodoni.jpg');
+
+	background-color: #fcfcf4;
+	/*background-image: url('../sfondo_bodoni.jpg');*/
+	color: #44413c; /*black ink*/
+	font-family: 'Bodoni Six ITC';
+	font-weight:normal;
+	font-style:normal;
+	padding-right: 20vW;
+	padding-left: 30vW;
+	padding-top: 20vW;
+	padding-bottom: 30vW;
 }
 
-p{text-indent: 2em;}
+
+h1, .byline {font-family: "Bodoni Seventytwo ITC";}
+
+h1 {
+	line-height: 1.5em;
+	letter-spacing: 0.07em;
+    	word-spacing: 0.25em;
+    	font-size: 2.5em;
+}
+
+h2, h3 {
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 4em;
+	margin-top: 6em;
+}
+
+p{
+	line-height: 1.5em;
+	letter-spacing: 0.03em;
+	text-align:justify;
+	text-indent: 2em;
+    	word-spacing: 0.04em;
+	-webkit-hyphens: auto;
+	-ms-hyphens: auto;
+	hyphens: auto;
+	margin-bottom: 0em;
+    	margin-top: 0em;
+}
 
 p:first-of-type:not(.subtitle):not(.byline):first-letter{font-size: 2em;}
 p:first-of-type {
   text-indent: 0vw;
 }
-/*p:first-of-type:not(.byline):not(.subtitle) {margin-top: 30vw;}*/
 
 p.pubnote {
 	text-transform: none;
@@ -133,13 +145,6 @@ img, video {
 	text-indent:0vw;
 }
 
-h1 {
-	line-height: 1.5em;
-	letter-spacing: 0.07em;
-    	word-spacing: 0.25em;
-    	font-size: 2.5em;
-}
-
 p.byline {
 	font-size: 0.7em;
 	line-height: 3rem;
@@ -169,13 +174,6 @@ p.publicationDate {
 }
 
 figcaption {margin-bottom:2em;}
-
-h2, h3 {
-	text-transform: uppercase;
-	text-align: center;
-	margin-bottom: 2.5em;
-    	margin-top: 2.5em;
-}
 
 [id^="SECTION-1-"] {
         display: -webkit-box;
