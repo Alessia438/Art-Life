@@ -21,7 +21,8 @@ body#cover {
 	font-style:normal;
 	padding: 0vw;
     	margin: 0vw;
-
+}
+	
 div#coverText {
 	background-image: url(../sfondo_bodoni.jpg);
 	padding-left: 28vw;
