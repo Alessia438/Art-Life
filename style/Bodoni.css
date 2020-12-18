@@ -248,17 +248,22 @@ figcaption {
 }
 
 blockquote {
-    font-family: 'Bodoni Six ITC';
-    font-size: 0.8em;
-    text-transform: lowercase;
-    border-bottom: 1px dotted;
-    border-top: 1px dotted;
-    padding-top: 2vw;
-    padding-bottom: 2vw;
-    margin-top: 2vw;
-    margin-bottom: 2vw;
-    margin-left: 0vw;
-    margin-right: 0vw;
+	font-family: 'Bodoni Six ITC';
+	font-size: 0.8em;
+	text-transform: lowercase;
+	border-bottom: 1px dotted;
+	border-top: 1px dotted;
+	padding-top: 2vw;
+	padding-bottom: 2vw;
+	margin-top: 2vw;
+	margin-bottom: 2vw;
+	margin-left: 0vw;
+	margin-right: 0vw;
+	text-align: left;
+	word-spacing: 0.65em;
+	-webkit-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
 }
 
 blockquote.person, .place, .artwork, .work, blockquote:first-letter {text-transform: capitalize;}
