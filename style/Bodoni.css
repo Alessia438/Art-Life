@@ -138,7 +138,7 @@ img, video {
 	filter: grayscale(100%) brightness(70%) sepia(70%) contrast(100%);
 }
 
-img+figcaption {margin-bottom: 0.7em;}
+img+figcaption {margin-bottom: 3em;}
 
 .publicationTime, .lastModification {
 	text-align: center;
