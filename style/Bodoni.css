@@ -78,10 +78,10 @@ body{
   font-family: 'Bodoni Six ITC';
   font-weight:normal;
   font-style:normal;
-  margin-right: 20vW;
-  margin-left: 30vW;
-  margin-top: 20vW;
-  margin-bottom: 30vW;
+  padding-right: 20vW;
+  padding-left: 30vW;
+  padding-top: 20vW;
+  padding-bottom: 30vW;
 }
 
 p:not(.byline){text-indent: 2em;}
@@ -90,6 +90,7 @@ p:first-of-type:first-letter:not(.subtitle){font-size: 2em;}
 p:first-of-type {
   text-indent: inherit;
 }
+p:first-of-type:not(.subtitle) {margin-top: 30vw;}
 
 p.pubnote {
 	text-transform: none;
@@ -121,6 +122,14 @@ img, video {
 	padding-top:1.5em;
 	padding-bottom:1.5em;
 	filter: grayscale(100%) brightness(70%) sepia(70%) contrast(100%);
+}
+
+.publicationTime, .lastModification {
+	text-align: center;
+	text-transform: uppercase;
+	word-spacing: 0.5em;
+	hyphens: auto;
+	text-indent:0vw;
 }
 
 h1 {
@@ -222,10 +231,61 @@ h2, h3 {
 
 
 @media screen and (max-width: 600px){
+	body {
+		padding-right: 14vW;
+		padding-left: 21vW;
+		padding-top: 14vW;
+		padding-bottom: 21vW;
+		margin-right: 0vw;
+		margin-left: 0vw;
+	}
+	
+	h1{
+		line-height: 1.6em;
+		letter-spacing: 0.07em;
+		word-spacing: 0.25em;
+		font-size: 1.7em;
+	}
+	
+	p.subtitle {
+		font-size: 0.9em;
+		line-height: 1.75em;
+		padding-bottom: 5vw;
+	}
+	
+	p.byline {
+		font-size: 1.1em;
+		line-height: 2vw;
+		padding-bottom: 4vw;
+	}
+	
+	figure {margin: 0vw;}
+	
+	[id^="FIGURE-1-"] img {
+		margin-block-start: 1em;
+		margin-inline-start: 10vw;
+		margin-inline-end: 10vw;
+	}
+	
+	figcaption {
+		margin-bottom: 6vw;
+		text-transform: uppercase;
+		font-style: italic;
+		font-size: 2.5vw;
+		line-height: 3.5vw;
+		hyphens: auto;
+	}
+	
+	p.publicationDate, .publicationTime, .lastModification {
+		font-size: 0.7em;
+		margin-bottom: 1vw;
+	}
+	
 	p.pubnote{
 		word-spacing: 2vw;
 		line-height: 5vw;
 	}
+	
 }
 
 
