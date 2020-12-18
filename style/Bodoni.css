@@ -86,7 +86,7 @@ body{
 
 p:not(.byline){text-indent: 2em;}
 
-p:first-of-type:first-letter:not(.subtitle){font-size: 2em;}
+p:first-of-type:not(.subtitle):not(.byline):first-letter{font-size: 2em;}
 p:first-of-type {
   text-indent: inherit;
 }
