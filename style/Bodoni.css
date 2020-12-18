@@ -244,7 +244,23 @@ figcaption {
 	margin-bottom: 2.5em;
 }
 
+blockquote {
+    font-family: 'Bodoni Six ITC';
+    font-size: 0.8em;
+    text-transform: lowercase;
+    border-bottom: 1px dotted;
+    border-top: 1px dotted;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    margin-left: 0vw;
+    margin-right: 0vw;
+}
 
+blockquote.person, .place, .artwork, .work, blockquote:first-letter {text-transform: capitalize;}
+
+/*for small and medium screens*/
 @media screen and (max-width: 600px){
 	body {
 		padding-right: 14vW;
