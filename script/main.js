@@ -87,7 +87,7 @@ function changeCSS(cssFile) { //aggiungere come parametro d'ingresso il document
 }
 
 function addSectionToDom(i){
-	var elArray = ['h1','subtitle', 'byline', 'FIGURE-1-', 'publicationDate', 'publicationTime'];
+	var elArray = ['h1','subtitle', 'byline', 'FIGURE-1-', 'publicationDate', 'publicationTime', 'lastModification'];
 	var newSec = document.createElement('section');
 	for (var el of elArray){
 		if (el == 'h1'){newSec.appendChild( document.getElementsByTagName("iframe")[i].contentWindow.document.body.getElementsByTagName(el)[0]);}
