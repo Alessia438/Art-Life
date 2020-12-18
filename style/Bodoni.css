@@ -88,7 +88,7 @@ p:not(.byline){text-indent: 2em;}
 
 p:first-of-type:not(.subtitle):not(.byline):first-letter{font-size: 2em;}
 p:first-of-type {
-  text-indent: inherit;
+  text-indent: 0vw;
 }
 p:first-of-type:not(.byline):not(.subtitle) {margin-top: 30vw;}
 
