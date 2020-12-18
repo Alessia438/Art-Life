@@ -137,6 +137,8 @@ img, video {
 	filter: grayscale(100%) brightness(70%) sepia(70%) contrast(100%);
 }
 
+img+figcaption {margin-bottom: 0.7em;}
+
 .publicationTime, .lastModification {
 	text-align: center;
 	text-transform: uppercase;
@@ -230,6 +232,16 @@ section+p {margin-top: 20em;}
         -webkit-box-ordinal-group: 6;
         -moz-box-ordinal-group: 6;
         box-ordinal-group: 6;
+}
+
+figcaption {
+	font-size: 0.7em;
+	font-family: 'Bodoni Six ITC';
+	line-height: 1.2em;
+	word-spacing: 0.3em;
+	letter-spacing: 0.05em;
+	font-style: italic;
+	margin-bottom: 2.5em;
 }
 
 
