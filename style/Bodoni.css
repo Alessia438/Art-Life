@@ -268,8 +268,8 @@ section+p {margin-top: 20em;}
 	
 	[id^="FIGURE-1-"] img {
 		margin-block-start: 1em;
-		margin-inline-start: 10vw;
-		margin-inline-end: 10vw;
+		margin-inline-start: 16vw;
+		margin-inline-end: 16vw;
 	}
 	
 	figcaption {
