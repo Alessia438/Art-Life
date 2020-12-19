@@ -87,7 +87,7 @@ function changeCSS(cssFile) { //aggiungere come parametro d'ingresso il document
 }
 
 function addSectionToDom(i){
-	var elArray = ['h1','subtitle', 'byline', 'FIGURE-1-', 'publicationDate', 'publicationTime'];
+	var elArray = ['h1','subtitle', 'byline', 'FIGURE-1-', 'publicationDate', 'publicationTime', 'lastModification'];
 	var newSec = document.createElement('section');
 	for (var el of elArray){
 		if (el == 'h1'){newSec.appendChild( document.getElementsByTagName("iframe")[i].contentWindow.document.body.getElementsByTagName(el)[0]);}
@@ -496,7 +496,7 @@ function parsing(instance, parent, numIstanza){
 	else{
 		var cleanInstance = instance;
 	}
-	var e = new RegExp('(\\S+\\s){0,5}\\S*' + cleanInstance + '(\\,?\\s+\\S+){0,5}', 'ig');
+	var e = new RegExp("(\\S+\\s){0,5}\\S*" + cleanInstance + "(\\’?\\)?\\,?\\s+\\S+){0,5}", "ig");
   	var res = container.match(e);
   	return res[numIstanza];
 }

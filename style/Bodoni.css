@@ -1,61 +1,44 @@
 @font-face {
-  font-family: Bodoni Six ITC;
-  src: url(bodoni-six-itc-book.ttf);
+	font-family: Bodoni Six ITC;
+	src: url(bodoni-six-itc-book.ttf);
   
 }
 @font-face {
-  font-family: "Bodoni Seventytwo ITC";
-  src: url("bodoni-seventytwo-itc-book.ttf"); 
-}
-h1, .byline{
-  font-family: "Bodoni Seventytwo ITC";
+	font-family: "Bodoni Seventytwo ITC";
+	src: url("bodoni-seventytwo-itc-book.ttf"); 
 }
 
 /* stile per cover page*/
 
 body#cover {
-  background-image: url('aminta_cover_page.jpg');
-  background-repeat: round;
-  background-attachment: fixed;
-  background-size: contain;
-  height: 100%;
-  font-family: 'Bodoni Six ITC';
-  font-weight:normal;
-  font-style:normal;
-  margin-right: 0vW;
-  margin-left: 0vW;
-  margin-top: 0vW;
-  margin-bottom: 0vW;
+	background-image: url('aminta_cover_page.jpg');
+	background-repeat: round;
+	background-attachment: fixed;
+	background-size: contain;
+	height: 100%;
+	font-family: 'Bodoni Six ITC';
+	font-weight:normal;
+	font-style:normal;
+	padding: 0vw;
+    	margin: 0vw;
 }
-
+	
 div#coverText {
-    background-image: url(../sfondo_bodoni.jpg);
-    padding-left: 28vw;
-    padding-right: 18vw;
-    padding-bottom: 30vw;
-    padding-top: 20vw;
-    margin-bottom: 2vw;
-    margin-top: 2vw;
-    margin-left: 4vw;
-    margin-right: 4vw;
+	background-image: url(../sfondo_bodoni.jpg);
+	padding-left: 28vw;
+	padding-right: 18vw;
+	padding-bottom: 30vw;
+	padding-top: 20vw;
+	margin-bottom: 2vw;
+	margin-top: 2vw;
+	margin-left: 4vw;
+	margin-right: 4vw;
 }
 
 #cover p{
 	text-indent: 0em;
 	margin-top: 2vw;
-	margin-bottom: 2vw;
-}
-
-p{
-	line-height: 1.5em;
-	text-align:justify;
-	letter-spacing: 0.03em;
-    	word-spacing: 0.04em;
-	-webkit-hyphens: auto;
-	-ms-hyphens: auto;
-	hyphens: auto;
-	margin-bottom: 0em;
-    	margin-top: 0em;
+	margin-bottom: 5vw;
 }
 
 /* stile per articoli*/
@@ -65,30 +48,58 @@ span[onclick] {cursor:pointer;}
 [onclick]:hover {background-color: #b38316c4;}
 
 body{
-   background-image: 
-    linear-gradient(
-      rgba(255, 255, 240, 0.5), 
-      rgba(255, 255, 240, 0.5)
-    ),
-    url('../sfondo_bodoni.jpg');
-	
-  background-color: #fcfcf4;
-  /*background-image: url('../sfondo_bodoni.jpg');*/
-  color: #44413c; /*black ink*/
-  font-family: 'Bodoni Six ITC';
-  font-weight:normal;
-  font-style:normal;
-  margin-right: 20vW;
-  margin-left: 30vW;
-  margin-top: 20vW;
-  margin-bottom: 30vW;
+	background-image: 
+	linear-gradient(
+	rgba(255, 255, 240, 0.5), 
+	rgba(255, 255, 240, 0.5)
+	),
+	url('../sfondo_bodoni.jpg');
+
+	background-color: #fcfcf4;
+	/*background-image: url('../sfondo_bodoni.jpg');*/
+	color: #44413c; /*black ink*/
+	font-family: 'Bodoni Six ITC';
+	font-weight:normal;
+	font-style:normal;
+	padding-right: 20vW;
+	padding-left: 30vW;
+	padding-top: 20vW;
+	padding-bottom: 30vW;
 }
 
-p:not(.byline){text-indent: 2em;}
 
-p:first-of-type:first-letter:not(.subtitle){font-size: 2em;}
+h1, .byline {font-family: "Bodoni Seventytwo ITC";}
+
+h1 {
+	line-height: 1.5em;
+	letter-spacing: 0.07em;
+    	word-spacing: 0.25em;
+    	font-size: 2.5em;
+}
+
+h2, h3 {
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 4em;
+	margin-top: 6em;
+}
+
+p{
+	line-height: 1.5em;
+	letter-spacing: 0.03em;
+	text-align:justify;
+	text-indent: 2em;
+    	word-spacing: 0.04em;
+	-webkit-hyphens: auto;
+	-ms-hyphens: auto;
+	hyphens: auto;
+	margin-bottom: 0em;
+    	margin-top: 0em;
+}
+
+p:first-of-type:not(.subtitle):not(.byline):first-letter{font-size: 2em;}
 p:first-of-type {
-  text-indent: inherit;
+  text-indent: 0vw;
 }
 
 p.pubnote {
@@ -98,14 +109,17 @@ p.pubnote {
 	-ms-hyphens: none;
 	hyphens: none;
 	font-family: 'Bodoni Six ITC';
-        word-spacing: 1vw;
-	line-height: 3.5vw;
-        padding-top: 10vw;
-	text-indent:0vw;
+        word-spacing: 0.7vw;
+	line-height: 2.5vw;
+	padding-top: 3vw;
+	text-indent: 0vw;
 	font-style: italic;
+	border-top: 1px dotted;
+	margin-top: 3vw;
+	font-size: 0.9em;
 }
 
-p.pubnote:first-letter{font-size: 2em;}
+/*p.pubnote:first-letter{font-size: 2em;}*/
 
 p.byline, p.subtitle, p.publicationDate, img, h1 {
 	text-align: center;
@@ -114,6 +128,7 @@ p.byline, p.subtitle, p.publicationDate, img, h1 {
 	-webkit-hyphens: none;
 	-ms-hyphens: none;
 	hyphens: none;
+	text-indent: 0vw;
 }
 
 img, video {
@@ -123,16 +138,20 @@ img, video {
 	filter: grayscale(100%) brightness(70%) sepia(70%) contrast(100%);
 }
 
-h1 {
-	line-height: 1.5em;
-	letter-spacing: 0.07em;
-    	word-spacing: 0.25em;
-    	font-size: 2.5em;
+img+figcaption {margin-bottom: 3em;}
+
+.publicationTime, .lastModification {
+	text-align: center;
+	text-transform: uppercase;
+	word-spacing: 0.5em;
+	hyphens: auto;
+	text-indent:0vw;
 }
 
 p.byline {
 	font-size: 0.7em;
 	line-height: 3rem;
+	margin-top: 4vw;
 }
 
 p.byline .person {font-size: 2rem;;}
@@ -149,6 +168,7 @@ p.byline .person::after{
 p.subtitle {
 	font-size: 1.02em;
 	line-height:2.5em;
+	margin-top: 4vw;
 }
 
 p.publicationDate {
@@ -157,13 +177,6 @@ p.publicationDate {
 }
 
 figcaption {margin-bottom:2em;}
-
-h2, h3 {
-	text-transform: uppercase;
-	text-align: center;
-	margin-bottom: 2.5em;
-    	margin-top: 2.5em;
-}
 
 [id^="SECTION-1-"] {
         display: -webkit-box;
@@ -174,6 +187,8 @@ h2, h3 {
         -moz-box-orient: vertical;
         box-orient: vertical;
     }
+
+section+p {margin-top: 20em;}
 
 [id^="H1-1-"]{
 	-webkit-box-ordinal-group: 1;
@@ -195,11 +210,11 @@ h2, h3 {
 
 [id^="FIGURE-1-"] img{
 	border-radius: 50%;
-	height: 40vw;
-    	width: 40vw;
-        display: block;
-        /*margin-left: auto;
-        margin-right: auto;*/
+	height: 30vw;
+    	width: 30vw;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 [id^="FIGURE-1-"]{
@@ -220,16 +235,120 @@ h2, h3 {
         box-ordinal-group: 6;
 }
 
+figcaption {
+	font-size: 0.7em;
+	font-family: 'Bodoni Six ITC';
+	line-height: 1.2em;
+	word-spacing: 0.3em;
+	letter-spacing: 0.05em;
+	font-style: italic;
+	margin-bottom: 2.5em;
+}
 
+blockquote {
+	font-family: 'Bodoni Six ITC';
+	font-size: 0.8em;
+	text-transform: lowercase;
+	border-bottom: 1px dotted;
+	border-top: 1px dotted;
+	padding-top: 2vw;
+	padding-bottom: 2vw;
+	margin-top: 2vw;
+	margin-bottom: 2vw;
+	margin-left: 0vw;
+	margin-right: 0vw;
+	text-align: left;
+	word-spacing: 0.65em;
+	line-height: 1.2em;
+	-webkit-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+blockquote.person, .place, .artwork, .work, blockquote:first-letter {text-transform: capitalize;}
+
+/*for small and medium screens*/
 @media screen and (max-width: 600px){
+	body {
+		padding-right: 14vW;
+		padding-left: 21vW;
+		padding-top: 14vW;
+		padding-bottom: 21vW;
+		margin-right: 0vw;
+		margin-left: 0vw;
+	}
+	
+	h1{
+		line-height: 1.6em;
+		letter-spacing: 0.07em;
+		word-spacing: 0.25em;
+		font-size: 1.7em;
+	}
+	
+	p.subtitle {
+		font-size: 0.9em;
+		line-height: 1.75em;
+		padding-bottom: 5vw;
+	}
+	
+	p.byline {
+		font-size: 0.8em;
+		line-height: 5vw;
+		padding-bottom: 4vw;
+	}
+	
+	p.byline .person {font-size: 1.3em;}
+	
+	figure {margin: 0vw;}
+	
+	[id^="FIGURE-1-"] img {
+		margin-block-start: 1em;
+		margin-inline-start: 16vw;
+		margin-inline-end: 16vw;
+	}
+	
+	figcaption {
+		margin-bottom: 6vw;
+		text-transform: uppercase;
+		font-style: italic;
+		font-size: 2.5vw;
+		line-height: 3.5vw;
+		hyphens: auto;
+	}
+	
+	p.publicationDate, .publicationTime, .lastModification {
+		font-size: 0.7em;
+		margin-bottom: 1vw;
+	}
+	
 	p.pubnote{
 		word-spacing: 2vw;
 		line-height: 5vw;
 	}
+	
+	[id^="SECTION-2-"] p:first-child {margin-top: 20em;}
+
+	div#coverText{
+		padding-left: 21vw;
+		padding-right: 14vw;
+		padding-bottom: 21vw;
+		padding-top: 14vw;
+	}
+	
+	#cover p {
+		text-indent: 0em;
+		margin-top: 2vw;
+		margin-bottom: 5vw;
+		text-align: left;
+		hyphens: auto;
+		line-height: 1.3em;
+		font-size: 0.95em;
+	}
+	
 }
 
 
 
-
-
+https://museobodoniano.it/tipi/itc-bodoni/ (per cornicetta bodoni)
+http://bibliotecabodoni.net/it/libro/manuale-tipografico-2 (idem)
 
