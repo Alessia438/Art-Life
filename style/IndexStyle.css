@@ -728,7 +728,8 @@ div#bookmarks {
   #metadata {
     position: relative;
     height: 38.5em;
-    overflow: scroll;  
+    overflow-x: auto;
+    overflow-y: auto;  /* prima era overflow: scroll */
     /* flex: 0 0 28%; */
     width: 26%;
     order: 2;
