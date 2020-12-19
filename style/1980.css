@@ -109,8 +109,6 @@ border-image:
     ) 100% 0%;
 }
 
-
-
 section h1{
     font-family: 'Assistant-Bold';
     font-size: 5vw;
@@ -120,7 +118,7 @@ section h1{
     column-span: all; 
 }
 section h1::after{
-     content: [id^="FIGURE-1-"];
+     content: [id^="FIGURE-1-"];  /*come metto l'immagine dopo il titolo?*/
 }
 
 body{
