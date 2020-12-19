@@ -113,19 +113,19 @@ section h1{
     font-family: 'Assistant-Bold';
     font-weight: normal;
     text-align: justify;
-    border-bottom: 2px solid black;
-    
+    border-bottom: 2px solid black;    
 }
 
 body{
     font-family: 'Cheltenham Book Regular';
     font-weight: normal;
+    color: #1f1e1e;
     text-align: justify;
     column-count: 3;
     column-gap: 2vw;
     column-rule-style: solid;
     column-rule-width: 0.3vw;
-    border: 0.3vw solid black;
+    border: 0.2vw solid black;
     padding-left: 1.4vw;
     padding-right: 0.3vw;
     padding-bottom: 0.6vw;
@@ -134,10 +134,13 @@ body{
 
 p::first-letter {
   font-weight: bold;
-  font-size: 200;
+  font-size: 2vw;
   color: red;
 }
 
+img{
+    width: 70%;
+}
 .subtitle{
     font-family: 'Cheltenham Book Regular';
     font-style: italic;
@@ -146,5 +149,9 @@ p::first-letter {
 
 .byline{
     font-family: 'Assistant-Bold';
+    text-align: right;
+}
+.publicationDate{
+    font-family: "Assistant-Bold";
     text-align: right;
 }
