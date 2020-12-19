@@ -145,13 +145,20 @@ p{
     orphans: 3;
 }
 
-p:not(.publicationDate)::first-letter { /*voglio la prima lettera grande solo del primo p */
+p:nth-child(5)::first-letter {
+    font-weight: bold;
+    font-size: 3vw;
+    color: #1f1e1e;
+}
+
+/*
+p:not(.publicationDate)::first-letter { voglio la prima lettera grande solo del primo p 
       font-weight: bold;
       font-size: 3vw;
       color: #1f1e1e;
       
 }
-
+*/
 p a{color: #1f1e1e;}
 
 img{
