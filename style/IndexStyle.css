@@ -42,7 +42,8 @@ border-right: 32px;
   background-color: #e6e6e6;
   box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
   width: 100%;
-  z-index: 3;
+  z-index: 3;  
+  /* position: sticky; /* serve? */ 
 }
 
 .header div {
@@ -51,7 +52,6 @@ border-right: 32px;
   list-style: none;
   overflow: hidden;
   background-color: #e6e6e6;
-  position: sticky; /* serve? */ 
   text-align: right;
 }
 
@@ -174,27 +174,6 @@ border-right: 32px;
     display: none;
   }
 }
-
-
-
-
-
-/*.topnav .icon {  
-  display: none;
-}
-
-@media screen and (max-width: 500px) {
-      .topnav a {
-      float: none;
-      display: block;
-    }
-}*/
-    
-
-
-
-
-
 
 
 
@@ -416,7 +395,7 @@ border-right: 32px;
 }
 
 
-  /******* DIVS FOR ARTICLE PAGES *************************************************************************/
+/******* DIVS FOR ARTICLE PAGES *************************************************************************/
 /* styling vecchio, non usiamo più questi id 
 #selector{
   width: 60%;
@@ -691,10 +670,12 @@ Bottom right text
   padding: 0;
   background-color: #ffffff;
   border-bottom: 3px solid;
-  /* position: sticky;
-  width: 100%; 
+  /* position: sticky; NON VIENE STICKY
+  /*width: 100%; 
   overflow: hidden;*/
 }
+
+
 /* per rendere sticky la navbar del selector*/
 
 /* 
@@ -1120,15 +1101,3 @@ blockquote{
 	font-style: italic;
 	font-weight: bold;
 }
-
-
-
-
-
-
-
-
-
-
-
-
