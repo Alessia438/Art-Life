@@ -51,18 +51,17 @@ border-right: 32px;
   list-style: none;
   overflow: hidden;
   background-color: #e6e6e6;
-  position: sticky; /* PERCHE'? */
+  position: sticky; /* serve? */ 
   text-align: right;
 }
 
 .header a {
   display: inline-block; /* prima qua era inline-block, mentre su jsfiddle è display: block */
   padding: 10px 12px;
-  border-right: 1px solid #f4f4f4; /* PERCHE'? */
   font-size: 17px;
   text-align: center;
   text-decoration: none;
-  color: black;
+  color: black; /* serve? */ 
 }
 
 
@@ -77,15 +76,11 @@ border-right: 32px;
 }
 
 
-/* .header .logo { /*blogo sarebbe la classe per l'h1 però mi sembra inutile 
-  display: block;
-  float: left;
-  font-size: 2em;
-  padding: 10px 20px;
-  text-decoration: none;
+.header #logo { /* logo sarebbe la classe per il primo elemento a di header */
+  font-size: 1.2em;
+  font-weight: 600;
+  padding: 10px 15px;
 }
-*/
-
 
 /* menu */
 
