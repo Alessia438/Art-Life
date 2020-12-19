@@ -173,6 +173,9 @@ border-right: 32px;
     display: none;
   }
 
+}
+
+@media (max-width: 47em) {
   .topnav {border-bottom: 2px solid;}
 }
 
