@@ -684,9 +684,9 @@ div#bookmarks {
   #content { order: 2; }
 	
    #listIssue {
-    	    width: 90vw;
+    	width: 90vw;
 	    padding-inline-start: 0px;
-	    padding: 0 3vw 0 3vw;
+	    padding: 0 2vw 0 2vw;
    }
 }
 
