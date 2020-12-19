@@ -670,6 +670,8 @@ function myFunction() {
 	overflow: scroll;
 }
 
+#docuContent h1{padding-top: 5vw;}
+
 div#bookmarks {
 	display: flex;
 	align-items: center;
