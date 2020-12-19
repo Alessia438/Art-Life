@@ -57,8 +57,8 @@ border-right: 32px;
   width: 100%;
 }
 
-.header a {
-  display: block; /* prima qua era inline-block, mentre su jsfiddle è display: block */
+.header a, .header h1 {
+  display: inline-block; /* prima qua era inline-block, mentre su jsfiddle è display: block */
   padding: 10px 12px;
   border-right: 1px solid #f4f4f4; /* PERCHE'? */
   font-size: 17px;
