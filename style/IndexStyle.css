@@ -31,39 +31,160 @@ img{width: 93%;
 border-right: 32px; 
 }
 
+
+
+
+
+
 /* styling navbar */
-.topnav {
-  list-style-type: none;
+
+.header {
+  background-color: #e6e6e6;
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+  position: fixed; /* DA CAMBIARE?? */
+  width: 100%;
+  z-index: 3;
+}
+
+.header div {
+  margin: 0;
+  padding: 0;
+  list-style: none;
   overflow: hidden;
   background-color: #e6e6e6;
-  position: sticky;
+  position: sticky; /* PERCHE'? */
   text-align: right;
   width: 100%;
-  margin: 0 !important;
 }
 
-.topnav  a {
-  display: inline-block;
-  color: black;
+.header a {
+  display: inline-block; /* su jsfiddle è display: block */
   padding: 10px 12px;
-  text-decoration: none;
+  border-right: 1px solid #f4f4f4; /* PERCHE'? */
   font-size: 17px;
   text-align: center;
-  
-}
-
-.topnav a:hover {
-  background-color: #a6a6a6;
+  text-decoration: none;
   color: black;
 }
-    
-.topnav a.active {
-  background-color: #1a1a1a;
-  color: white
 
+
+.header a:hover, .header .menu-btn:hover {
+  background-color: #a6a6a6;
+  color: black; /* serve? */ 
+}
+  
+.header a.active {
+  background-color: #1a1a1a;
+  color: white;
 }
 
-.topnav .icon {  
+
+.header .logo { /* logo sarebbe la classe per l'h1 però mi sembra inutile */
+  display: block;
+  float: left;
+  font-size: 2em;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+/* menu */
+
+.header .topnav {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+/* menu icon */
+
+.header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.header .menu-icon .navicon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #333;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .topnav {
+  max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+/* 48em = 768px */
+
+@media (min-width: 48em) {
+  .header li {
+    float: left;
+  }
+  .header li a {
+    padding: 20px 30px;
+  }
+  .header .topnav {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+}
+
+
+
+
+
+/*.topnav .icon {  
   display: none;
 }
 
@@ -72,7 +193,7 @@ border-right: 32px;
       float: none;
       display: block;
     }
-}
+}*/
     
 
 
