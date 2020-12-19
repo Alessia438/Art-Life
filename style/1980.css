@@ -128,13 +128,14 @@ body{
     column-rule-style: solid;
     column-rule-width: 0.2vw;
     border: 0.2vw solid black;
-    margin-left: 1.4vw;
-    margin-right: 0.3vw;
-    margin-bottom: 0.6vw;
+    padding: 1vw;
+    margin-left: 3vw;
+    margin-right: 1vw;
+    margin-bottom: 0.5vw;
     margin-top: 0.7vw;
 }
 
-p::first-letter:not(.publicationDate) {
+p::first-letter { /*not publicationDate*/
   font-weight: bold;
   font-size: 3vw;
   color: #1f1e1e;
