@@ -200,40 +200,6 @@ SELECTORNAV STICKY PER ISSUE1, ISSUE2, ISSUE3 E ISSUE4 */
   overflow: hidden;*/
 }
 
-
-/* per rendere sticky la navbar del selector !!!!!!!!!!!!NON SERVE PIU'!!!!!!!!!!!!!!!!! */
-/* 
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-.sticky + .content {
-  padding-top: 60px;
-}
-*/
-
-
-/* per rendere sticky la navbar del selector con JS*/
-
-/*
-<script>
-window.onscroll = function() {myFunction()};
-
-var selectorNav = document.getElementById("selectorNav");
-var sticky = selectorNav.offsetTop;
-
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    selectorNav.classList.add("sticky")
-  } else {
-    selectorNav.classList.remove("sticky");
-  }
-}
-</script>
-*/
-
 #selectorNav > li {
   display: inline-block;
 }
@@ -276,57 +242,6 @@ function myFunction() {
   display: block;
 }
 
-
-
-
-
-/* styling selector */
-/* styling vecchio, non usiamo più questi id 
-.articleMenu {
-  list-style-type: none;
-  overflow: hidden;
-  background-color: #a6a6a6; 
-  position: sticky;
-  text-align: left;
-  width: 100%;
-  margin: 0 !important;
-    }
-
-.articleMenu  a {
-  display: inline-block;
-  color: black;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-  text-align: center;
-  
-}
-
-.articleMenu a:hover {
-  background-color: #e6e6e6;
-  color: black;
-}
-    
-.articleMenu a.active {
-  background-color: #1a1a1a;
-  color: white
-
-}
-
-.articleMenu .icon {  
-  display: none;
-}
-
-
- @media screen and (max-width: 500px) {
-      .articleMenu a {
-      float: none;
-      display: block;
-    }
-}
- */
-
-/* end styling selector */ 
 
 
 
@@ -485,42 +400,6 @@ function myFunction() {
   border-color: gray;
 }
 
-
-/******* DIVS FOR ARTICLE PAGES *************************************************************************/
-/* styling vecchio, non usiamo più questi id 
-#selector{
-  width: 60%;
-  position: relative;
-  z-index: 1;
-  top: 0;
-  overflow-x: hidden;
-  padding-top: 5px;
-  margin-top: 0px;
-  margin-left: 0px;
-  left: 0;
-}
-
-
-#metadataViewer {
-  width: 40%;
-  position: relative;
-  z-index: 1;
-  top: 0;
-  overflow-x: hidden;
-  padding-top: 5px;
-  margin-top: 0px;
-  margin-right: 0px;
-    right: 0;
-}
-
-#textContent {
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-*/
 
 /* adapting pictures */
 
@@ -709,42 +588,6 @@ function myFunction() {
 
 
 
-/* tables cells separated equally: non servono più
-.issues tr td {
-  width:33.3333%;
-}
-
-.articles tr td {
-  width:33.3333%;
-}
-
-Container holding the image and the text: non servono più 
-.container {
-  position: relative;
-  display: inline-block;
-}
-
-Bottom right text
-.text-block {
-  position: absolute;
-  bottom: 25%; 
-  right: 35%; 
-  background: rgb(0,0,0);
-  background: rgba(0,0,0,0.2);
-  color: white;
-  text-align: center;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-.text-block:hover, .text-block:active {font-size: 110%; transition: 0.50s;}
-
-*/
-
-
-
-
-
 
 
 /*DOCUMENTATION*/
@@ -894,50 +737,6 @@ div#bookmarks {
 
 }
 
-
-
-/*extra per la navbar generale
-
-@media (min-width: 992px)
-.navbar-expand-lg {
-    -ms-flex-flow: row nowrap;
-    flex-flow: row nowrap;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
-}
-
-.topnav {
-    position: relative;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -ms-flex-align: center;
-    align-items: center;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    padding: .5rem 1rem;
-}*/
-
-/* extra per selectorNav */
-/* selectorNav {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    width: 100%;
-    background-color: white;
-    z-index: 1500;
-    border-bottom: 4px solid black;
-    padding-top: 5px;
-    height: 60px;
-    font-size: 18px;
-}
-.sticky-top {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    z-index: 1020;
-}*/
 
 
 
