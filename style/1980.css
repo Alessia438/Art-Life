@@ -113,7 +113,7 @@ section h1{
     font-family: 'Assistant-Bold';
     font-weight: normal;
     text-align: justify;
-    letter-spacing: -4px;
+    letter-spacing: -1px;
     border-bottom: 2px solid black;    
 }
 
@@ -126,17 +126,18 @@ body{
     column-count: 3;
     column-gap: 2vw;
     column-rule-style: solid;
-    column-rule-width: 0.3vw;
+    column-rule-width: 0.2vw;
     border: 0.2vw solid black;
-    padding-left: 1.4vw;
-    padding-right: 0.3vw;
-    padding-bottom: 0.6vw;
-    padding-top: 0.7vw;
+    margin-left: 1.4vw;
+    margin-right: 0.3vw;
+    margin-bottom: 0.6vw;
+    margin-top: 0.7vw;
 }
 
 p::first-letter:not(.publicationDate) {
   font-weight: bold;
-  font-size: 2vw;
+  font-size: 3vw;
+  color: #1f1e1e;
 }
 
 img{
