@@ -34,9 +34,7 @@ border-right: 32px;
 
 
 
-
-
-/* styling navbar */
+/* HEADER TOPNAV ////////////////////////////////////////////////////////////////////////////////////////*/
 
 .header {
   background-color: #e6e6e6;
@@ -173,7 +171,111 @@ border-right: 32px;
   .header .menu-icon {
     display: none;
   }
+
+  .topnav {border-bottom: 2px solid;}
 }
+
+
+
+/* TOPNAV STICKY PER INDEX, ABOUT, DOCUMENTATION E DISCLAIMER //
+SELECTORNAV STICKY PER ISSUE1, ISSUE2, ISSUE3 E ISSUE4 */
+
+.stickynav {
+    top: 0;
+    width: 100%;
+    position: sticky;
+}
+
+/* SELECTORNAV //////////////////////////////////////////////////////////////////////////////////////////////////*/
+      
+.dropdown:hover{cursor:pointer;}
+
+#selectorNav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  border-bottom: 3px solid;
+  /*width: 100%; 
+  overflow: hidden;*/
+}
+
+
+/* per rendere sticky la navbar del selector !!!!!!!!!!!!NON SERVE PIU'!!!!!!!!!!!!!!!!! */
+/* 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+*/
+
+
+/* per rendere sticky la navbar del selector con JS*/
+
+/*
+<script>
+window.onscroll = function() {myFunction()};
+
+var selectorNav = document.getElementById("selectorNav");
+var sticky = selectorNav.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    selectorNav.classList.add("sticky")
+  } else {
+    selectorNav.classList.remove("sticky");
+  }
+}
+</script>
+*/
+
+#selectorNav > li {
+  display: inline-block;
+}
+
+#Origin, .dropbtn {
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 10px 12px;
+  text-decoration: none;
+  /* font-size: 17px; */
+}
+
+#selectorNav > li a:hover, .dropdown:hover .dropbtn {
+  background-color: #a6a6a6;
+  color: black;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  /* position: fixed;  con position:fixed si crea margine tra selectorNav e il dropdown-content */ 
+  background-color: #bfbfbf;
+  min-width: 160px;
+  box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 10px 12px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #a6a6a6;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
 
 
 
@@ -230,18 +332,7 @@ border-right: 32px;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-/* styling divs */
+/* INDEX.HTML DIVS ///////////////////////////////////////////////////////////////////////////////////////////////// */
 
 /* the div class "row" is both for issues and articles */
 .row {
@@ -651,106 +742,7 @@ Bottom right text
 */
 
 
-/* STYLING DI METDADATA_MODEL.HTML */
-      
-.topnav#metanav{border-bottom: 2px solid;}
-.stickynav {
-    top: 0;
-    width: 100%;
-    position: sticky;
-}
 
-/* styling selector navbar */
-      
-.dropdown:hover{cursor:pointer;}
-
-#selectorNav {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  background-color: #ffffff;
-  border-bottom: 3px solid;
-  /* position: sticky; NON VIENE STICKY
-  /*width: 100%; 
-  overflow: hidden;*/
-}
-
-
-/* per rendere sticky la navbar del selector*/
-
-/* 
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-.sticky + .content {
-  padding-top: 60px;
-}
-*/
-
-
-/* per rendere sticky la navbar del selector con JS*/
-
-/*
-<script>
-window.onscroll = function() {myFunction()};
-
-var selectorNav = document.getElementById("selectorNav");
-var sticky = selectorNav.offsetTop;
-
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    selectorNav.classList.add("sticky")
-  } else {
-    selectorNav.classList.remove("sticky");
-  }
-}
-</script>
-*/
-
-#selectorNav > li {
-  display: inline-block;
-}
-
-#Origin, .dropbtn {
-  display: inline-block;
-  color: black;
-  text-align: center;
-  padding: 10px 12px;
-  text-decoration: none;
-  /* font-size: 17px; */
-}
-
-#selectorNav > li a:hover, .dropdown:hover .dropbtn {
-  background-color: #a6a6a6;
-  color: black;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  /* position: fixed;  con position:fixed si crea margine tra selectorNav e il dropdown-content */ 
-  background-color: #bfbfbf;
-  min-width: 160px;
-  box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 10px 12px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-.dropdown-content a:hover {background-color: #a6a6a6;}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
 
 
 
@@ -1087,17 +1079,20 @@ iframe {
   margin-top: 1.5em;
   margin-bottom: 2em;
 }
+
 .card img {
   max-width: 100%;
   max-height: 100%;
   display: block;
 }
+
 .card:hover {box-shadow: 0 16px 21px 0 rgba(0,0,0,0.5);}
 .container {padding: 2px 10px;}
-.card{display:inline-block;}
+.card {display:inline-block;}
 
-.figcaption{font-style: italic;}
-blockquote{
+.figcaption {font-style: italic;}
+
+blockquote {
 	font-style: italic;
 	font-weight: bold;
 }
