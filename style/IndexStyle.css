@@ -779,6 +779,69 @@ function myFunction() {
 
 
 
+/*DOCUMENTATION*/
+
+#docuContent {
+	position: relative;
+	height: 38.5em;
+	width: 73%;
+	flex: 3 0px;
+	order: 1;
+	margin-left: 0.05em;
+	overflow: scroll;
+}
+
+#docuContent h1{padding-top: 5vw;}
+
+div#bookmarks {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	position: relative;
+	overflow: scroll;
+	width: 20%;
+	order: 2;
+	border-left: 2px solid;
+	margin-right: 0.05em;
+}
+
+#bookmarks a {
+	margin-bottom: 2vw;
+	width: 14vw;
+	text-align: center;
+	font-size: 12px;
+	letter-spacing: 2px;
+	padding: 13px 17px;
+	border-color: #0c0c0c;
+	color: black;
+	border: 2px solid;
+	background: transparent;
+	text-decoration:none;
+	font-size: 1em;
+}
+
+.docuFooter {
+    text-align: center;
+    font-size: small;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: rgba(38, 38, 38);
+    color: white;
+    margin-top: 0em;
+    margin-bottom: 0em;
+    margin-left: 0em;
+    margin-right: 0em;
+    order: 3;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+/*fine documentation*/
+
+
+
 
 
 
@@ -1062,6 +1125,10 @@ blockquote{
 	font-style: italic;
 	font-weight: bold;
 }
+
+
+
+
 
 
 
