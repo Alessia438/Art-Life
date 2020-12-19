@@ -41,7 +41,6 @@ border-right: 32px;
 .header {
   background-color: #e6e6e6;
   box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
-  position: fixed; /* DA CAMBIARE?? */
   width: 100%;
   z-index: 3;
 }
@@ -54,10 +53,9 @@ border-right: 32px;
   background-color: #e6e6e6;
   position: sticky; /* PERCHE'? */
   text-align: right;
-  width: 100%;
 }
 
-.header a, .header h1 {
+.header a {
   display: inline-block; /* prima qua era inline-block, mentre su jsfiddle è display: block */
   padding: 10px 12px;
   border-right: 1px solid #f4f4f4; /* PERCHE'? */
@@ -79,13 +77,15 @@ border-right: 32px;
 }
 
 
-.header .logo { /* logo sarebbe la classe per l'h1 però mi sembra inutile */
+/* .header .logo { /*blogo sarebbe la classe per l'h1 però mi sembra inutile 
   display: block;
   float: left;
   font-size: 2em;
   padding: 10px 20px;
   text-decoration: none;
 }
+*/
+
 
 /* menu */
 
