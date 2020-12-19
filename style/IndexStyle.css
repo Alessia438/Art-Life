@@ -33,8 +33,9 @@ border-right: 32px;
 
 
 
+/* INDEX /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
-/* HEADER TOPNAV ////////////////////////////////////////////////////////////////////////////////////////*/
+/* HEADER TOPNAV */
 
 .header {
   background-color: #e6e6e6;
@@ -186,68 +187,9 @@ SELECTORNAV STICKY PER ISSUE1, ISSUE2, ISSUE3 E ISSUE4 */
     position: sticky;
 }
 
-/* SELECTORNAV //////////////////////////////////////////////////////////////////////////////////////////////////*/
-      
-.dropdown:hover{cursor:pointer;}
-
-#selectorNav {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  background-color: #ffffff;
-  border-bottom: 3px solid;
-  /*width: 100%; 
-  overflow: hidden;*/
-}
-
-#selectorNav > li {
-  display: inline-block;
-}
-
-#Origin, .dropbtn {
-  display: inline-block;
-  color: black;
-  text-align: center;
-  padding: 10px 12px;
-  text-decoration: none;
-  /* font-size: 17px; */
-}
-
-#selectorNav > li a:hover, .dropdown:hover .dropbtn {
-  background-color: #a6a6a6;
-  color: black;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  /* position: fixed;  con position:fixed si crea margine tra selectorNav e il dropdown-content */ 
-  background-color: #bfbfbf;
-  min-width: 160px;
-  box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 10px 12px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-.dropdown-content a:hover {background-color: #a6a6a6;}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
 
 
-
-
-
-
-/* INDEX.HTML DIVS ///////////////////////////////////////////////////////////////////////////////////////////////// */
+/* INDEX.HTML DIVS */
 
 /* the div class "row" is both for issues and articles */
 .row {
@@ -260,7 +202,7 @@ SELECTORNAV STICKY PER ISSUE1, ISSUE2, ISSUE3 E ISSUE4 */
 
 
 
-/******* DIVS FOR ISSUES GRID/TABLE *************************************************************************/
+/* DIVS FOR ISSUES GRID/TABLE */
 
 /* the div class "issue-block" is only for issues */
 .issue-block {
@@ -286,7 +228,7 @@ SELECTORNAV STICKY PER ISSUE1, ISSUE2, ISSUE3 E ISSUE4 */
 
 
 
-/***** DIVS FOR ARTICLES GRID/TABLE ************************************************************************/
+/* DIVS FOR ARTICLES GRID/TABLE */
 
 /* the div class "block" is only for articles */
 .block {
@@ -556,8 +498,6 @@ SELECTORNAV STICKY PER ISSUE1, ISSUE2, ISSUE3 E ISSUE4 */
 }
 
 
-
-
 .footer {
   text-align: justify;
   text-align: center;
@@ -590,7 +530,12 @@ SELECTORNAV STICKY PER ISSUE1, ISSUE2, ISSUE3 E ISSUE4 */
 
 
 
-/*DOCUMENTATION*/
+
+
+
+
+
+/*DOCUMENTATION ///////////////////////////////////////////////////////////////////////////////////////////////////*/
 
 #docuContent {
 	position: relative;
@@ -656,6 +601,70 @@ div#bookmarks {
 
 
 
+
+
+
+
+/* ISSUE1.HTML, ISSUE2.HTML, ISSUE3.HTML, ISSUE4.HTML ////////////////////////////////////////////////////////////////*/
+
+/* SELECTORNAV */
+      
+.dropdown:hover{cursor:pointer;}
+
+#selectorNav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+  border-bottom: 3px solid;
+  /*width: 100%; 
+  overflow: hidden;*/
+}
+
+#selectorNav > li {
+  display: inline-block;
+}
+
+#Origin, .dropbtn {
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 10px 12px;
+  text-decoration: none;
+  /* font-size: 17px; */
+}
+
+#selectorNav > li a:hover, .dropdown:hover .dropbtn {
+  background-color: #a6a6a6;
+  color: black;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  /* position: fixed;  con position:fixed si crea margine tra selectorNav e il dropdown-content */ 
+  background-color: #bfbfbf;
+  min-width: 160px;
+  box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 10px 12px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #a6a6a6;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+
 /* Medium screens --> #metadata below #content? */
 @media screen and (max-width: 799px) {
   #flex-container {
@@ -677,8 +686,6 @@ div#bookmarks {
 	    padding: 0 3vw 0 3vw;
    }
 }
-
-
 
 /* Medium screens
 @media all and (min-width: 600px) {
@@ -738,14 +745,6 @@ div#bookmarks {
 }
 
 
-
-
-
-
-
-
-
-
 button#prev, button#next  {
   background: rgba(0,0,0,0.4);
   padding-left: 5px;
@@ -770,20 +769,12 @@ button#prev, button#next  {
 
 
 
-
-
-
-
-
-/* METTIAMO IN BLOCK TUTTI I DIV DEGLI ARTICOLI E DELLE COVER */
 #coverPage1, #coverPage2, #coverPage3 { display: none; } 
 
 #coverPage1:target, #coverPage2:target, #coverPage3:target { display: block; }
 
 
 #article1:target, #article2:target, #article3:target, #article4:target, #article5:target, #article6:target, #article7:target, #article8:target, #article9:target, #article10:target, #article11:target, #article12:target, #article13:target, #article14:target, #article15:target { display: block; }
-
-
 
 
 
@@ -796,7 +787,6 @@ button#prev, button#next  {
 
 
 
-
 [onClick] {cursor:pointer;}
 span[onclick] {cursor:pointer;}
 
@@ -806,6 +796,7 @@ span[onclick] {cursor:pointer;}
   margin: 8px;
   display: inline-block;
 }
+
 /*
 #listIssue {
   width: 350px;
@@ -868,7 +859,15 @@ iframe {
 }
 
 
-/* About */
+
+
+
+
+
+
+
+
+/* ABOUT ///////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
 .card {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
