@@ -109,16 +109,7 @@ border-image:
     ) 100% 0%;
 }
 
-[id^="SECTION-1-"] {
-    padding-top: 0vw;
-    margin-top: 0vw;
-    display: -webkit-box;
-    display: -moz-box;
-    display: box;
-    -webkit-box-orient: vertical;
-    -moz-box-orient: vertical;
-    box-orient: vertical;
-}
+
 
 section h1{
     font-family: 'Assistant-Bold';
@@ -126,10 +117,10 @@ section h1{
     text-align: justify;
     letter-spacing: -1px;
     border-bottom: 2px solid black;
-    column-span: all;
-    -webkit-box-ordinal-group: 1;
-        -moz-box-ordinal-group: 1;
-        box-ordinal-group: 1;    
+    column-span: all; 
+}
+section h1::after{
+     content: [id^="FIGURE-1-"];
 }
 
 body{
