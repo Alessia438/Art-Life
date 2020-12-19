@@ -119,6 +119,7 @@ section h1{
 
 body{
     font-family: 'Cheltenham Book Regular';
+    font-size: 0.5vw;
     font-weight: normal;
     color: #1f1e1e;
     background-color: #fffeef;
@@ -129,17 +130,17 @@ body{
     column-rule-width: 0.2vw;
     border: 0.2vw solid black;
     padding: 1vw;
-    margin-left: 3vw;
+   /* margin-left: 3vw;
     margin-right: 1vw;
     margin-bottom: 0.5vw;
-    margin-top: 0.7vw;
+    margin-top: 0.7vw; */
 }
 
 p:not(.publicationDate)::first-letter { /*voglio la prima lettera grande solo del primo p */
   font-weight: bold;
   font-size: 3vw;
   color: #1f1e1e;
-  indent: 0.5vw;
+  text-indent: 0.5vw;
 }
 
 
