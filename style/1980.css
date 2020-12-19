@@ -113,6 +113,7 @@ section h1{
     font-family: 'Assistant-Bold';
     font-weight: normal;
     text-align: justify;
+    letter-spacing: -4px;
     border-bottom: 2px solid black;    
 }
 
@@ -136,7 +137,6 @@ body{
 p::first-letter:not(.publicationDate) {
   font-weight: bold;
   font-size: 2vw;
-  color: red;
 }
 
 img{
