@@ -135,14 +135,17 @@ body{
     margin-top: 0.7vw;
 }
 
-p::first-letter { /*not publicationDate*/
+p:not(.publicationDate)::first-letter { /*voglio la prima lettera grande solo del primo p */
   font-weight: bold;
   font-size: 3vw;
   color: #1f1e1e;
+  indent: 0.5vw;
 }
 
+
+
 img{
-    width: 70%;
+    width: 90%;
 }
 .subtitle{
     font-family: 'Cheltenham Book Regular';
