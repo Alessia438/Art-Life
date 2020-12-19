@@ -145,7 +145,7 @@ p{
     orphans: 3;
 }
 
-p:nth-child(5)::first-letter {
+p:nth-child(1)::first-letter {
     font-weight: bold;
     font-size: 3vw;
     color: #1f1e1e;
