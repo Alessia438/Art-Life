@@ -110,13 +110,14 @@ border-image:
 }
 
 [id^="SECTION-1-"] {
-        display: -webkit-box;
-        display: -moz-box;
-        display: box;
-        
-        -webkit-box-orient: vertical;
-        -moz-box-orient: vertical;
-        box-orient: vertical;
+    padding-top: 0vw;
+    margin-top: 0vw;
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    box-orient: vertical;
 }
 
 section h1{
@@ -127,8 +128,8 @@ section h1{
     border-bottom: 2px solid black;
     column-span: all;
     -webkit-box-ordinal-group: 1;
-    -moz-box-ordinal-group: 1;
-    box-ordinal-group: 1;    
+        -moz-box-ordinal-group: 1;
+        box-ordinal-group: 1;    
 }
 
 body{
