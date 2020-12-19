@@ -684,8 +684,8 @@ div#bookmarks {
 }
 
 #bookmarks a {
-	margin-bottom: 3vw;
-	width: 10em;
+	margin-bottom: 2vw;
+	width: 14vw;
 	text-align: center;
 	font-size: 12px;
 	letter-spacing: 2px;
@@ -694,6 +694,8 @@ div#bookmarks {
 	color: black;
 	border: 2px solid;
 	background: transparent;
+	text-decoration:none;
+	font-size: 1em;
 }
 
 .docuFooter {
