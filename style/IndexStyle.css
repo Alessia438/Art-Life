@@ -58,7 +58,7 @@ border-right: 32px;
 }
 
 .header a {
-  display: inline-block; /* su jsfiddle è display: block */
+  display: block; /* su jsfiddle è display: block */
   padding: 10px 12px;
   border-right: 1px solid #f4f4f4; /* PERCHE'? */
   font-size: 17px;
