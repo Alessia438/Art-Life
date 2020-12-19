@@ -133,7 +133,7 @@ body{
     padding-top: 0.7vw;
 }
 
-p::first-letter {
+p::first-letter:not(.publicationDate) {
   font-weight: bold;
   font-size: 2vw;
   color: red;
@@ -148,11 +148,7 @@ img{
     text-align: justify;
 }
 
-.byline{
+.byline, .publicationDate{
     font-family: 'Assistant-Bold';
-    text-align: right;
-}
-.publicationDate{
-    font-family: "Assistant-Bold";
     text-align: right;
 }
