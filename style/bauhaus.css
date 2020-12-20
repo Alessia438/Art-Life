@@ -275,20 +275,19 @@ p.q{
   text-transform: lowercase;
 }
 */
-blockquote{
-  margin-right: 0mm; 
-  margin-left: 0mm;
+/*blockquote{
+
   border-left: 3px solid red;
-  /*font-family: "Ronda Regular";
+  font-family: "Ronda Regular";
   font-style:lowercase;
   font-size: 14pt;
   font-weight: lighter;
   text-align: justify; 
   text-align-last: left;
   line-height: 1.6; 
-  text-transform: lowercase; */
+  text-transform: lowercase; 
 }
-
+*/
 figcaption{
   font-family: "P22 Bayer Universal Regular";
   /*font-size: 13pt;*/
