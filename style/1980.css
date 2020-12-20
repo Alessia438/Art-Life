@@ -146,9 +146,6 @@ p{
     word-spacing: 0.01vw;
     text-indent: 1.5vw;
     line-height: 20px;
-    orphans: 3;
-    -webkit-hyphens: auto;
-    -ms-hyphens: auto;
     hyphens: auto;
 }
 
