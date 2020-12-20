@@ -599,6 +599,10 @@ div#bookmarks {
 
 @media screen and (max-width: 799px) {
 	#bookmarks{display: none;}
+	#docuContent{
+		align-self: center;
+		padding: 4vw;
+	}
 	div#docuContent h1 {
 		text-align: center;
 		padding: 2vw;
