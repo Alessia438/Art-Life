@@ -601,6 +601,7 @@ div#bookmarks {
 	#docuContent{
 		align-self: center;
 		padding: 4vw;
+		width: 90%;
 	}
 	div#docuContent h1 {
 		text-align: center;
@@ -609,7 +610,7 @@ div#bookmarks {
 		margin-bottom: 1em;
 	}
 	#bodoniClass, #libertyClass, #bauhausClass, #stile2ariClass, #stile1saraClass, #stile2saraClass {display:none}
-	#bodoni{
+	#bodoni, div#bookmarks:nth-child(1) {
 		background-image: url(aminta_cover_page.jpg);
     		color: white;
 	}
