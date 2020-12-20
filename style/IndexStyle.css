@@ -608,7 +608,7 @@ div#bookmarks {
 		font-size: 1.4em;
 		margin-bottom: 1em;
 	}
-	.bodoniClass, .libertyClass, .bauhausClass, .stile2ariClass, .stile1saraClass, .stile2saraClass {display:none}
+	#bodoniClass, #libertyClass, #bauhausClass, #stile2ariClass, #stile1saraClass, #stile2saraClass {display:none}
 	#bodoni{
 		background-image: url(aminta_cover_page.jpg);
     		color: white;
