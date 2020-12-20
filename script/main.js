@@ -627,7 +627,7 @@ function findOrigin(){
 }
 
 function onresizeFunc(){
-	var docuParagraphs = docuement.getElementsByTagName('docuParagraph');
+	var docuParagraphs = docuement.getElementsByClassName('docuParagraph');
 	if (window.innerWidth < 799){var curStyle = 'none';}
 	else{var curStyle = 'block';}
 	for (var n=0; n<docuParagraphs.length; n++){docuParagraphs[n].style.display=curStyle;}
