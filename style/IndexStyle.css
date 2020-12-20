@@ -597,14 +597,15 @@ div#bookmarks {
 #bookmarks .bauhaus {
     background-image: url(pattern-1.jpg);
     background-position: center;
-    color: #990000;
+    color: #000066;
    
 }
 
 #bookmarks .the1980s {
     background-image: url(pattern-2.jpg);
     background-position: top right;
-    background-size: 90%;
+    background-repeat: no-repeat;
+    background-size: 98%;
 }
    
 }
