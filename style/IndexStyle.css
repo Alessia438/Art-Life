@@ -633,7 +633,7 @@ div#bookmarks {
     margin-right: 0em;
     order: 3;
     width: 100%;
-    position: fixed;
+    /*position: fixed;*/ /* con position: fixed il footer nasconde parte del testo della pagina */
     bottom: 0;
 }
 
@@ -991,3 +991,21 @@ blockquote {
 	font-style: italic;
 	font-weight: bold;
 }
+
+
+
+
+
+
+
+
+
+/* DISCLAIMER ///////////////////////////////////////////////////////////////////////////////////////////////////*/
+#disclaimer a { 
+  color: #000000;
+  font-weight: bold;
+}
+
+#disclaimer a:visited { color: #2e2e2e; }
+
+#disclaimer {padding-left: 2.5vw; }
