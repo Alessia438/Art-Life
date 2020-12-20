@@ -31,122 +31,168 @@ img{width: 93%;
 border-right: 32px; 
 }
 
-/* styling navbar */
-.topnav {
-  list-style-type: none;
+
+
+/* INDEX /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+/* HEADER TOPNAV */
+
+.header {
+  background-color: #e6e6e6;
+  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+  width: 100%;
+  z-index: 3;  
+  /* position: sticky; /* serve? */ 
+}
+
+.header div {
+  margin: 0;
+  padding: 0;
+  list-style: none;
   overflow: hidden;
   background-color: #e6e6e6;
-  position: sticky;
   text-align: right;
-  width: 100%;
-  margin: 0 !important;
 }
 
-.topnav  a {
-  display: inline-block;
-  color: black;
+.header a {
+  display: inline-block; /* prima qua era inline-block, mentre su jsfiddle è display: block */
   padding: 10px 12px;
-  text-decoration: none;
   font-size: 17px;
   text-align: center;
-  
+  text-decoration: none;
+  color: black; /* serve? */ 
 }
 
-.topnav a:hover {
+
+.header a:hover, .header .menu-btn:hover {
   background-color: #a6a6a6;
-  color: black;
+  color: black; /* serve? */ 
 }
-    
-.topnav a.active {
-  background-color: #1a1a1a;
-  color: white
-
-}
-
-.topnav .icon {  
-  display: none;
-}
-
-@media screen and (max-width: 500px) {
-      .topnav a {
-      float: none;
-      display: block;
-    }
-}
-    
-
-
-
-
-
-
-
-
-
-/* styling selector */
-/* styling vecchio, non usiamo più questi id 
-.articleMenu {
-  list-style-type: none;
-  overflow: hidden;
-  background-color: #a6a6a6; 
-  position: sticky;
-  text-align: left;
-  width: 100%;
-  margin: 0 !important;
-    }
-
-.articleMenu  a {
-  display: inline-block;
-  color: black;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-  text-align: center;
   
-}
-
-.articleMenu a:hover {
-  background-color: #e6e6e6;
-  color: black;
-}
-    
-.articleMenu a.active {
+.header a.active {
   background-color: #1a1a1a;
-  color: white
-
+  color: white;
 }
 
-.articleMenu .icon {  
+
+.header #logo { /* logo sarebbe la classe per il primo elemento a di header */
+  font-size: 1.2em;
+  font-weight: 600;
+  padding: 10px 15px;
+}
+
+/* menu */
+
+.header .topnav {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+/* menu icon */
+
+.header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.header .menu-icon .navicon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #333;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
   display: none;
 }
 
-
- @media screen and (max-width: 500px) {
-      .articleMenu a {
-      float: none;
-      display: block;
-    }
+.header .menu-btn:checked ~ .topnav {
+  max-height: 240px;
 }
- */
 
-/* end styling selector */ 
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+/* 48em = 768px */
+
+@media (min-width: 48em) {
+  .header li {
+    float: left;
+  }
+  .header li a {
+    padding: 20px 30px;
+  }
+  .header .topnav {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+
+}
+
+@media (max-width: 47em) {
+  .topnav {border-bottom: 2px solid;}
+}
 
 
 
+/* TOPNAV STICKY PER INDEX, ABOUT, DOCUMENTATION E DISCLAIMER //
+SELECTORNAV STICKY PER ISSUE1, ISSUE2, ISSUE3 E ISSUE4 */
+
+.stickynav {
+    top: 0;
+    width: 100%;
+    position: sticky;
+}
 
 
 
-
-
-
-
-
-
-
-
-
-
-/* styling divs */
+/* INDEX.HTML DIVS */
 
 /* the div class "row" is both for issues and articles */
 .row {
@@ -159,7 +205,7 @@ border-right: 32px;
 
 
 
-/******* DIVS FOR ISSUES GRID/TABLE *************************************************************************/
+/* DIVS FOR ISSUES GRID/TABLE */
 
 /* the div class "issue-block" is only for issues */
 .issue-block {
@@ -185,7 +231,7 @@ border-right: 32px;
 
 
 
-/***** DIVS FOR ARTICLES GRID/TABLE ************************************************************************/
+/* DIVS FOR ARTICLES GRID/TABLE */
 
 /* the div class "block" is only for articles */
 .block {
@@ -299,42 +345,6 @@ border-right: 32px;
   border-color: gray;
 }
 
-
-  /******* DIVS FOR ARTICLE PAGES *************************************************************************/
-/* styling vecchio, non usiamo più questi id 
-#selector{
-  width: 60%;
-  position: relative;
-  z-index: 1;
-  top: 0;
-  overflow-x: hidden;
-  padding-top: 5px;
-  margin-top: 0px;
-  margin-left: 0px;
-  left: 0;
-}
-
-
-#metadataViewer {
-  width: 40%;
-  position: relative;
-  z-index: 1;
-  top: 0;
-  overflow-x: hidden;
-  padding-top: 5px;
-  margin-top: 0px;
-  margin-right: 0px;
-    right: 0;
-}
-
-#textContent {
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-*/
 
 /* adapting pictures */
 
@@ -491,8 +501,6 @@ border-right: 32px;
 }
 
 
-
-
 .footer {
   text-align: justify;
   text-align: center;
@@ -523,49 +531,86 @@ border-right: 32px;
 
 
 
-/* tables cells separated equally: non servono più
-.issues tr td {
-  width:33.3333%;
+
+
+
+
+
+
+
+/*DOCUMENTATION ///////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+#docuContent {
+	position: relative;
+	height: 38.5em;
+	width: 73%;
+	flex: 3 0px;
+	order: 1;
+	margin-left: 0.05em;
+	overflow: scroll;
 }
 
-.articles tr td {
-  width:33.3333%;
+#docuContent h1{padding-top: 5vw;}
+
+div#bookmarks {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	position: relative;
+	overflow: scroll;
+	width: 20%;
+	order: 2;
+	border-left: 2px solid;
+	margin-right: 0.05em;
 }
 
-Container holding the image and the text: non servono più 
-.container {
-  position: relative;
-  display: inline-block;
+#bookmarks a {
+	margin-bottom: 2vw;
+	width: 14vw;
+	text-align: center;
+	font-size: 12px;
+	letter-spacing: 2px;
+	padding: 13px 17px;
+	border-color: #0c0c0c;
+	color: black;
+	border: 2px solid;
+	background: transparent;
+	text-decoration:none;
+	font-size: 1em;
 }
 
-Bottom right text
-.text-block {
-  position: absolute;
-  bottom: 25%; 
-  right: 35%; 
-  background: rgb(0,0,0);
-  background: rgba(0,0,0,0.2);
-  color: white;
-  text-align: center;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-.text-block:hover, .text-block:active {font-size: 110%; transition: 0.50s;}
-
-*/
-
-
-/* STYLING DI METDADATA_MODEL.HTML */
-      
-.topnav#metanav{border-bottom: 2px solid;}
-.stickynav {
-    top: 0;
+.docuFooter {
+    text-align: center;
+    font-size: small;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: rgba(38, 38, 38);
+    color: white;
+    margin-top: 0em;
+    margin-bottom: 0em;
+    margin-left: 0em;
+    margin-right: 0em;
+    order: 3;
     width: 100%;
-    position: sticky;
+    position: fixed;
+    bottom: 0;
 }
 
-/* styling selector navbar */
+/*fine documentation*/
+
+
+
+
+
+
+
+
+
+
+/* ISSUE1.HTML, ISSUE2.HTML, ISSUE3.HTML, ISSUE4.HTML ////////////////////////////////////////////////////////////////*/
+
+/* SELECTORNAV */
       
 .dropdown:hover{cursor:pointer;}
 
@@ -575,43 +620,9 @@ Bottom right text
   padding: 0;
   background-color: #ffffff;
   border-bottom: 3px solid;
-  /* position: sticky;
-  width: 100%; 
+  /*width: 100%; 
   overflow: hidden;*/
 }
-/* per rendere sticky la navbar del selector*/
-
-/* 
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-.sticky + .content {
-  padding-top: 60px;
-}
-*/
-
-
-/* per rendere sticky la navbar del selector con JS*/
-
-/*
-<script>
-window.onscroll = function() {myFunction()};
-
-var selectorNav = document.getElementById("selectorNav");
-var sticky = selectorNav.offsetTop;
-
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    selectorNav.classList.add("sticky")
-  } else {
-    selectorNav.classList.remove("sticky");
-  }
-}
-</script>
-*/
 
 #selectorNav > li {
   display: inline-block;
@@ -657,10 +668,6 @@ function myFunction() {
 
 
 
-
-
-
-
 /* Medium screens --> #metadata below #content? */
 @media screen and (max-width: 799px) {
   #flex-container {
@@ -677,13 +684,11 @@ function myFunction() {
   #content { order: 2; }
 	
    #listIssue {
-    	    width: 90vw;
+    	width: 90vw;
 	    padding-inline-start: 0px;
-	    padding: 0 3vw 0 3vw;
+	    padding: 0 2vw 0 2vw;
    }
 }
-
-
 
 /* Medium screens
 @media all and (min-width: 600px) {
@@ -723,7 +728,8 @@ function myFunction() {
   #metadata {
     position: relative;
     height: 38.5em;
-    overflow: scroll;  
+    overflow-x: auto;
+    overflow-y: auto;  /* prima era overflow: scroll */
     /* flex: 0 0 28%; */
     width: 26%;
     order: 2;
@@ -741,58 +747,6 @@ function myFunction() {
 }
 
 }
-
-
-
-/*extra per la navbar generale
-
-@media (min-width: 992px)
-.navbar-expand-lg {
-    -ms-flex-flow: row nowrap;
-    flex-flow: row nowrap;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
-}
-
-.topnav {
-    position: relative;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -ms-flex-align: center;
-    align-items: center;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    padding: .5rem 1rem;
-}*/
-
-/* extra per selectorNav */
-/* selectorNav {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    width: 100%;
-    background-color: white;
-    z-index: 1500;
-    border-bottom: 4px solid black;
-    padding-top: 5px;
-    height: 60px;
-    font-size: 18px;
-}
-.sticky-top {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    z-index: 1020;
-}*/
-
-
-
-
-
-
-
 
 
 button#prev, button#next  {
@@ -819,20 +773,12 @@ button#prev, button#next  {
 
 
 
-
-
-
-
-
-/* METTIAMO IN BLOCK TUTTI I DIV DEGLI ARTICOLI E DELLE COVER */
 #coverPage1, #coverPage2, #coverPage3 { display: none; } 
 
 #coverPage1:target, #coverPage2:target, #coverPage3:target { display: block; }
 
 
 #article1:target, #article2:target, #article3:target, #article4:target, #article5:target, #article6:target, #article7:target, #article8:target, #article9:target, #article10:target, #article11:target, #article12:target, #article13:target, #article14:target, #article15:target { display: block; }
-
-
 
 
 
@@ -845,7 +791,6 @@ button#prev, button#next  {
 
 
 
-
 [onClick] {cursor:pointer;}
 span[onclick] {cursor:pointer;}
 
@@ -855,6 +800,7 @@ span[onclick] {cursor:pointer;}
   margin: 8px;
   display: inline-block;
 }
+
 /*
 #listIssue {
   width: 350px;
@@ -917,7 +863,15 @@ iframe {
 }
 
 
-/* About */
+
+
+
+
+
+
+
+
+/* ABOUT ///////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
 .card {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -927,25 +881,20 @@ iframe {
   margin-top: 1.5em;
   margin-bottom: 2em;
 }
+
 .card img {
   max-width: 100%;
   max-height: 100%;
   display: block;
 }
+
 .card:hover {box-shadow: 0 16px 21px 0 rgba(0,0,0,0.5);}
 .container {padding: 2px 10px;}
-.card{display:inline-block;}
+.card {display:inline-block;}
 
-.figcaption{font-style: italic;}
-blockquote{
+.figcaption {font-style: italic;}
+
+blockquote {
 	font-style: italic;
 	font-weight: bold;
 }
-
-
-
-
-
-
-
-
