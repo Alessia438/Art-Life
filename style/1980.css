@@ -149,7 +149,7 @@ p{
     word-spacing: 0.01vw;
     text-indent: 1.5vw;
     line-height: 20px;
-    hyphens: auto;
+    hyphens: none;
 }
 
 p:nth-child(1)::first-letter { /* p:first-of-type:not(.subtitle):not(.byline):first-letter */
