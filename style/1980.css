@@ -144,7 +144,7 @@ body:not(#cover){
     margin-bottom: 0.5vw;
     margin-top: 0.7vw; */
 }
-p:not(#cover){
+p{
     letter-spacing: -0.01vw;
     word-spacing: 0.01vw;
     text-indent: 1.5vw;
