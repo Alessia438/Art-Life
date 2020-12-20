@@ -7,7 +7,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1"> <!-- , user-scalable=no" -->
 		<script src="script/main.js"></script>
 	</head>
-	<body>
+	<body onresize="onresizeFunc()">
 		<header class="header stickynav">
 			<a id="logo">Art&amp;Life</a>
 			 <input class="menu-btn" type="checkbox" id="menu-btn" />  
@@ -25,71 +25,75 @@
 		
 		<div id="flex-container">
 		    <div id="docuContent">
-    			<div class="bodoniClass">
-				<h1 id="bodoni">Bodoni</h1>
-				<p>
-					STILE BODONI
-					The Bodoni style is one of the most known styles netween the XVIII and XIX centuries. It is a neoclassical style, in which there is a lot of attention for the beauty and the readability of words.
+			<h1 id="bodoniId" class="bodoni" onclick="showStyleDocu('bodoniClass')">Bodoni</h1>
+    				<div id="bodoniClass" class="docuParagraph">
+					<h2>STILE BODONI</h2>
+					<p>The Bodoni style is one of the most known styles between the XVIII and XIX centuries. It is a neoclassical style, in which there is a lot of attention for the beauty and the readability of words.
 					Wide spaces and curate, but never eccessive serifs. Only a few images, symbols or ornaments are used, since the attention has to be on the text, on the beauty of the text.
-					
-					FONT AND MEASURES
-					Aminta per 
+					</p>
+					<h2>FONT AND MEASURES</h2>
+					<p>Aminta per 
 					- dimensioni font:
 						- .byline .author = 2/3 H1
 						- .byline = 17/5 H1
 						- per pubnote le pagine in poesia dedicate alla marchesa Anna Malaspina
 					- margins: imagined as the left page of a book (left 2/3 right and top 2/3 bottom: gold ratio).
 					Castle of Otranto for
-					- proportion char space and word space
-					
-					INSPIRATIONS
-					SOURCES
-				</p>
-        		</div>
-    			<div class="libertyClass">
-				<h1 id="liberty">Art Nouveau</h1>
-				<p>
-					- https://en.wikipedia.org/wiki/Auriol_(typeface)
-					- foto con il gatto (https://www.idesign.wiki/wp-content/uploads/2015/10/ver-sacrum-cat.jpg)
-					- https://digi.ub.uni-heidelberg.de/diglit/jugend1900_2/0009/image (per 1 immagine orizzontale)
-					- https://digi.ub.uni-heidelberg.de/diglit/jugend1900_2/0032/image (per 1 immagine verticale)
-					- https://www.pde.it/2018/11/09/ver-sacrum-da-klimt-al-futuro-la-bellezza-tra-le-pagine/ (per due immagini verticali)
-					- https://digi.ub.uni-heidelberg.de/diglit/jugend1900_2/0017/image (per 1 immagine in mezzo a tante)
-					- https://digi.ub.uni-heidelberg.de/diglit/jugend1900_2/0120/image (per 1 immagine in mezzo a tante)
-					- https://digi.ub.uni-heidelberg.de/diglit/jugend1900_2/0365/image (per molto testo senza immagini)
-					- https://digi.ub.uni-heidelberg.de/diglit/jugend1900_2/0128/image (per molto testo senza immagini)
-					- https://www.clipartmax.com/png/middle/174-1748085_art-deco-flowers-art-deco-flower-clipart-41-bee-balm-art-nouveau.png (decorazione per sottotitoli)
-					- https://digi.ub.uni-heidelberg.de/diglit/jugend1900_2/0002/image (ispirazione per la cover page)
-					- http://histoire.typographie.org/auriol/peignot-auriol.html (per il font)
-					- http://www.typographie.org/histoire-imprimerie/peignot/peignot-auriol.html# (sempre per il font)
-					- https://gallica.bnf.fr/ark:/12148/btv1b10506413c (colore font cover page)
-					- http://www.eyemagazine.com/feature/article/a-tradition-with-breaks
-					- http://www.typographie.org/histoire-imprimerie/peignot/specimen-grasset.html
-					- https://stackoverflow.com/questions/32988776/how-to-center-an-image-between-two-columns-in-css
-				</p>
-        		</div>
-			<div id="bauhausClass">
-				<h1 id="bauhaus">Bauhaus</h1>
+					- proportion char space and word space</p>
+
+					<h2>INSPIRATIONS</h2>
+					<h2>SOURCES</h2>
+					</p>
+        			</div>
+				
+			<h1 id="libertyId"  class="liberty" onclick="showStyleDocu('libertyClass')">Art Nouveau</h1>
+    				<div id="libertyClass" class="docuParagraph">
+					<p>
+						- https://en.wikipedia.org/wiki/Auriol_(typeface)
+						- foto con il gatto (https://www.idesign.wiki/wp-content/uploads/2015/10/ver-sacrum-cat.jpg)
+						- https://digi.ub.uni-heidelberg.de/diglit/jugend1900_2/0009/image (per 1 immagine orizzontale)
+						- https://digi.ub.uni-heidelberg.de/diglit/jugend1900_2/0032/image (per 1 immagine verticale)
+						- https://www.pde.it/2018/11/09/ver-sacrum-da-klimt-al-futuro-la-bellezza-tra-le-pagine/ (per due immagini verticali)
+						- https://digi.ub.uni-heidelberg.de/diglit/jugend1900_2/0017/image (per 1 immagine in mezzo a tante)
+						- https://digi.ub.uni-heidelberg.de/diglit/jugend1900_2/0120/image (per 1 immagine in mezzo a tante)
+						- https://digi.ub.uni-heidelberg.de/diglit/jugend1900_2/0365/image (per molto testo senza immagini)
+						- https://digi.ub.uni-heidelberg.de/diglit/jugend1900_2/0128/image (per molto testo senza immagini)
+						- https://www.clipartmax.com/png/middle/174-1748085_art-deco-flowers-art-deco-flower-clipart-41-bee-balm-art-nouveau.png (decorazione per sottotitoli)
+						- https://digi.ub.uni-heidelberg.de/diglit/jugend1900_2/0002/image (ispirazione per la cover page)
+						- http://histoire.typographie.org/auriol/peignot-auriol.html (per il font)
+						- http://www.typographie.org/histoire-imprimerie/peignot/peignot-auriol.html# (sempre per il font)
+						- https://gallica.bnf.fr/ark:/12148/btv1b10506413c (colore font cover page)
+						- http://www.eyemagazine.com/feature/article/a-tradition-with-breaks
+						- http://www.typographie.org/histoire-imprimerie/peignot/specimen-grasset.html
+						- https://stackoverflow.com/questions/32988776/how-to-center-an-image-between-two-columns-in-css
+					</p>
+        			</div>
+			
+			<h1 id="bauhausId" class="bauhaus" onclick="showStyleDocu('libertyClass')">Bauhaus</h1>
+			<div id="bauhausClass" class="docuParagraph">
 			</div>
-			<div id="stile2ariClass">
-				<h1 id="stile2ari">2 stile ari</h1>
+			
+			<h1 id="stile2ariId" class="stile2ari" onclick="showStyleDocu('stile2ariClass')">2 stile ari</h1>
+			<div id="stile2ariClass" class="docuParagraph">
 			</div>
-			<div id="stile1saraClass">
-				<h1 id="stile1sara">1 stile sara</h1>
+			
+			<h1 id="stile1sarId" class="stile1sara" onclick="showStyleDocu('stile1saraClass')">1 stile sara</h1>
+			<div id="stile1saraClass" class="docuParagraph">
 			</div>
-			<div id="stile2saraClass">
-				<h1 id="stile2sara">2 stile sara</h1>
+			
+			<h1 id="stile2sarId" class="stile2sara" onclick="showStyleDocu('stile2saraClass')">2 stile sara</h1>
+			<div id="stile2saraClass" class="docuParagraph">
 			</div>
     
         	</div>
 			
 	        <div id="bookmarks">
-			    <a href="#bodoni">BODONI</a>
-			    <a href="#liberty">LIBERTY</a>
-			    <a href="#bauhaus">BAUHAUS</a>
-			    <a href="#stile2ari">STILE 2 ARI</a>
-			    <a href="#stile1sara">STILE 1 SARA</a>
-			    <a href="#stile2ari">STILE 2 SARA</a>
+			    <a class="bodoni" href="#bodoniId">BODONI</a>
+			    <a class="liberty" href="#libertyId">LIBERTY</a>
+			    <a class="bauhaus" href="#bauhausId">BAUHAUS</a>
+			    <a class="stile2ari" href="#stile2ariId">STILE 2 ARI</a>
+			    <a class="stile1sara" href="#stile1saraId">STILE 1 SARA</a>
+			    <a class="stile2sara" href="#stile2ariId">STILE 2 SARA</a>
 
 	        </div>
 			

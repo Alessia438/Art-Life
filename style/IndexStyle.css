@@ -552,6 +552,8 @@ SELECTORNAV STICKY PER ISSUE1, ISSUE2, ISSUE3 E ISSUE4 */
 
 #docuContent h1{padding-top: 5vw;}
 
+#bodoniClass, #libertyClass, #bauhausClass, #stile2ariClass, #stile1saraClass, #stile2saraClass {display:block;}
+
 div#bookmarks {
 	display: flex;
 	align-items: center;
@@ -580,6 +582,29 @@ div#bookmarks {
 	font-size: 1em;
 }
 
+#bookmarks .bodoni{
+	background-image: url(aminta_cover_page.jpg);
+    	color: white;
+}
+#bookmarks .liberty{
+	background-image: url(fiore_odificato.png);
+	background-position-y: center;
+	background-size: 100%;
+	border: crimson;
+	border-style: outset;
+}
+
+#bookmarks .stile1sara {
+    background-image: url(painting.png);
+    background-position: center;
+    background-size: 160%;
+}
+
+#bookmarks .stile2sara {
+    background-image: url(90spattern2.jpg);
+    color: white;
+}
+
 .docuFooter {
     text-align: center;
     font-size: small;
@@ -595,6 +620,45 @@ div#bookmarks {
     width: 100%;
     position: fixed;
     bottom: 0;
+}
+
+@media screen and (max-width: 799px) {
+	#docuContent{
+		align-self: center;
+		padding: 4vw;
+		width: 90%;
+	}
+	div#docuContent h1 {
+		text-align: center;
+		padding: 2vw;
+		font-size: 1.4em;
+		margin-bottom: 1em;
+	}
+	#bodoniClass, #libertyClass, #bauhausClass, #stile2ariClass, #stile1saraClass, #stile2saraClass {display:none;}
+	.bodoni {
+		background-image: url(aminta_cover_page.jpg);
+    		color: white;
+	}
+	.liberty{
+		background-image: url(fiore_odificato.png);
+		background-position-y: center;
+		background-size: 100%;
+		border: crimson;
+		border-style: outset;
+	}
+	
+	.stile1sara {
+	    background-image: url(painting.png);
+	    background-position: center;
+	    background-size: 160%;
+	}	
+	
+	.stile2sara {
+		background-image: url(style/90spattern2.jpg);
+		color: white;
+	}
+	
+	div#bookmarks{display: none;}
 }
 
 /*fine documentation*/

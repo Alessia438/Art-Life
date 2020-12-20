@@ -230,6 +230,11 @@ function metadataViewer (issueN) {
 
 			//first check: if the category already exist
 			for (var span of spans) {
+
+				// special cases
+				if (span.innerText.toLowerCase() === "us") {span.innerText = "United States"}
+				else if (span.innerText.toLowerCase() === "uk") {span.innerText = "United Kingdom"}
+
 				// creating the variable for the parent
 				var options = ["I", "A", "Q", "SPAN", "EM", "STRONG", "B", "CITE"];
 				if (options.indexOf(span.parentNode.tagName) > -1) {
@@ -250,7 +255,7 @@ function metadataViewer (issueN) {
 					createCategoryLi(curCategory, myList);
 					var matchedLi = myList.getElementsByClassName(curCategory)[0];
 				}
-				else{
+				else {
 					for (c=0; c<matchedLi.children.length; c++){
 						if (span.innerText.toLowerCase().includes(matchedLi.children[c].className.toLowerCase()) || matchedLi.children[c].className.toLowerCase().includes(span.innerText.toLowerCase())) { // partial matching
 							instanceFound = true;
@@ -624,6 +629,20 @@ function findOrigin(){
 			getLinkOrigin(document.getElementById(window.location.href.slice(window.location.href.indexOf('#')+1, window.location.href.length)), document.getElementById("Origin"));
 		}
 	}
+}
+
+function onresizeFunc(){
+	var docuParagraphs = document.getElementsByClassName('docuParagraph');
+	if (window.innerWidth < 799){var curStyle = 'none';}
+	else{var curStyle = 'block';}
+	for (var n=0; n<docuParagraphs.length; n++){docuParagraphs[n].style.display=curStyle;}
+}
+
+function showStyleDocu(a) {
+	if (window.innerWidth < 799){
+	      if (document.getElementById(a).style.display==='none'){document.getElementById(a).style.display='block';}
+	      else{document.getElementById(a).style.display='none';}
+    	}
 }
 
 /*
