@@ -54,7 +54,7 @@ body#cover {
 	word-spacing: 0.1em;
 	/*font-size: 2em;
 	margin-bottom: 1.5em;*/
-	font-size: 3.5vw;
+	font-size: 3.3vw;
 	margin-right: 25vW;
     	margin-bottom: 2.5vw;
 	-webkit-hyphenate-character: auto;
@@ -297,7 +297,7 @@ blockquote {
 	
 	#cover p:nth-child(6) {
 		padding-left: 2vw;
-		margin-right: 15vW;
+		margin-right: 25vW;
 	}
 	
 	#cover h1 {
