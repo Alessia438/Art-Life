@@ -53,7 +53,9 @@ span[onclick] {cursor:pointer;}
     padding: 1rem;
     letter-spacing: -0.5px;
     line-height: 3vw;
-
+    text-indent: 0vw;
+    word-spacing: 0.01vw;
+    hyphens: auto;
 }
 
 #cover p:nth-child(2) {
