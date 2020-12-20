@@ -52,7 +52,7 @@ span[onclick] {cursor:pointer;}
     max-width: 25vw;
     padding: 1rem;
     letter-spacing: -0.5px;
-    line-height: 1vw;
+    line-height: 3vw;
 
 }
 
@@ -142,7 +142,7 @@ body:not(#cover){
     margin-bottom: 0.5vw;
     margin-top: 0.7vw; */
 }
-p:not(#cover p){
+p:not(#cover){
     letter-spacing: -0.01vw;
     word-spacing: 0.01vw;
     text-indent: 1.5vw;
