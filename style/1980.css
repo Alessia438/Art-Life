@@ -149,11 +149,12 @@ p{
     orphans: 3;
 }
 
-p:nth-child(1)::first-letter {
+p:nth-child(1):not(.subtitle):not(.byline)::first-letter { /* p:first-of-type:not(.subtitle):not(.byline):first-letter */
     font-weight: bold;
     font-size: 3vw;
     color: #1f1e1e;
 }
+
 
 /*
 p:not(.publicationDate)::first-letter { voglio la prima lettera grande solo del primo p 
