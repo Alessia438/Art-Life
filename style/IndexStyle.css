@@ -607,11 +607,11 @@ div#bookmarks {
 	}
 	.bodoniClass, .libertyClass, .bauhausClass, .stile2ariClass, .stile1saraClass, .stile2saraClass {display:none}
 	#bodoni{
-		background-image: url(style/aminta_cover_page.jpg);
+		background-image: url(aminta_cover_page.jpg);
     		color: white;
 	}
 	#liberty{
-		background-image: url(style/fiore_odificato.png);
+		background-image: url(fiore_odificato.png);
 		background-position-y: center;
 		background-size: 100%;
 		border: crimson;
