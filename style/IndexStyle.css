@@ -596,7 +596,7 @@ div#bookmarks {
 
 #bookmarks .bauhaus {
     background-image: url(pattern-1.jpg);
-    background-position: center;
+    background-position: top;
     color: #990000;
    
 }
@@ -670,8 +670,10 @@ div#bookmarks {
 
   .the1980s{
     background-image: url(pattern-2.jpg);
-    background-position-y: top;
+    background-position-y: bottom;
+    background-repeat:
     background-size: 80%;
+
   }
 
 	.stile1sara {
