@@ -52,7 +52,10 @@ span[onclick] {cursor:pointer;}
     max-width: 25vw;
     padding: 1rem;
     letter-spacing: -0.5px;
-
+    line-height: 3vw;
+    text-indent: 0vw;
+    word-spacing: 0.01vw;
+    hyphens: auto;
 }
 
 #cover p:nth-child(2) {
@@ -121,7 +124,7 @@ section h1::after{
      content: [id^="FIGURE-1-"];  /*come metto l'immagine dopo il titolo?*/
 }
 
-body:not(#cover body){
+body:not(#cover){
     font-family: 'Cheltenham Book Regular';
     font-size: 1.5vw;
     font-weight: normal;
@@ -141,12 +144,12 @@ body:not(#cover body){
     margin-bottom: 0.5vw;
     margin-top: 0.7vw; */
 }
-p:not(#cover p){
+p{
     letter-spacing: -0.01vw;
     word-spacing: 0.01vw;
     text-indent: 1.5vw;
     line-height: 20px;
-    hyphens: auto;
+    hyphens: none;
 }
 
 p:nth-child(1)::first-letter { /* p:first-of-type:not(.subtitle):not(.byline):first-letter */

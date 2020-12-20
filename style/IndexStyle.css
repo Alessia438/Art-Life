@@ -552,7 +552,7 @@ SELECTORNAV STICKY PER ISSUE1, ISSUE2, ISSUE3 E ISSUE4 */
 
 #docuContent h1{padding-top: 5vw;}
 
-#bodoniClass, #libertyClass, #bauhausClass, #stile2ariClass, #stile1saraClass, #stile2saraClass {display:block;}
+#bodoniClass, #libertyClass, #bauhausClass, #the1980sClass, #stile1saraClass, #stile2saraClass {display:block;}
 
 div#bookmarks {
 	display: flex;
@@ -594,6 +594,32 @@ div#bookmarks {
 	border-style: outset;
 }
 
+#bookmarks .bauhaus {
+    background-image: url(pattern-1.jpg);
+    background-position: center;
+    color: #990000;
+   
+}
+
+#bookmarks .the1980s {
+    background-image: url(pattern-2.jpg);
+    background-position: top right;
+    background-size: 90%;
+}
+   
+}
+
+#bookmarks .stile1sara {
+    background-image: url(painting.png);
+    background-position: center;
+    background-size: 160%;
+}
+
+#bookmarks .stile2sara {
+    background-image: url(90spattern2.jpg);
+    color: white;
+}
+
 .docuFooter {
     text-align: center;
     font-size: small;
@@ -623,7 +649,7 @@ div#bookmarks {
 		font-size: 1.4em;
 		margin-bottom: 1em;
 	}
-	#bodoniClass, #libertyClass, #bauhausClass, #stile2ariClass, #stile1saraClass, #stile2saraClass {display:none;}
+	#bodoniClass, #libertyClass, #bauhausClass, #the1980sClass, #stile1saraClass, #stile2saraClass {display:none;}
 	.bodoni {
 		background-image: url(aminta_cover_page.jpg);
     		color: white;
@@ -634,6 +660,31 @@ div#bookmarks {
 		background-size: 100%;
 		border: crimson;
 		border-style: outset;
+	}
+	
+  .bauhaus{
+    background-image: url(pattern-1.jpg);
+    color: #990000;
+
+  }
+
+  .the1980s{
+    background-image: url(pattern-2.jpg);
+    background-position: center;
+    background-repeat:
+    background-size: 50%;
+
+  }
+
+	.stile1sara {
+	    background-image: url(painting.png);
+	    background-position: center;
+	    background-size: 160%;
+	}	
+	
+	.stile2sara {
+		background-image: url(style/90spattern2.jpg);
+		color: white;
 	}
 	
 	div#bookmarks{display: none;}
