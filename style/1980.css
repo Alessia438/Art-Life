@@ -121,7 +121,7 @@ section h1::after{
      content: [id^="FIGURE-1-"];  /*come metto l'immagine dopo il titolo?*/
 }
 
-body:not(#cover body){
+body:not(#cover){
     font-family: 'Cheltenham Book Regular';
     font-size: 1.5vw;
     font-weight: normal;
