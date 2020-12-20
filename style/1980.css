@@ -45,6 +45,14 @@
 span[onclick] {cursor:pointer;}
 [onclick]:hover {background-color: #c6aa71;}
 
+p:not(#cover p){
+    letter-spacing: -0.01vw;
+    word-spacing: 0.01vw;
+    text-indent: 1.5vw;
+    line-height: 20px;
+    hyphens: auto;
+}
+
 #cover p{
     font-family: "UniversLTStd-Bold";
     font-size: 3vmax;
@@ -141,13 +149,7 @@ body:not(#cover){
     margin-bottom: 0.5vw;
     margin-top: 0.7vw; */
 }
-p:not(#cover){
-    letter-spacing: -0.01vw;
-    word-spacing: 0.01vw;
-    text-indent: 1.5vw;
-    line-height: 20px;
-    hyphens: auto;
-}
+
 
 p:nth-child(1)::first-letter { /* p:first-of-type:not(.subtitle):not(.byline):first-letter */
     font-weight: bold;
