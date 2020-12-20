@@ -230,6 +230,11 @@ function metadataViewer (issueN) {
 
 			//first check: if the category already exist
 			for (var span of spans) {
+
+				// special cases
+				if (span.innerText.toLowerCase() === "us") {span.innerText = "United States"}
+				else if (span.innerText.toLowerCase() === "uk") {span.innerText = "United Kingdom"}
+
 				// creating the variable for the parent
 				var options = ["I", "A", "Q", "SPAN", "EM", "STRONG", "B", "CITE"];
 				if (options.indexOf(span.parentNode.tagName) > -1) {
@@ -250,7 +255,7 @@ function metadataViewer (issueN) {
 					createCategoryLi(curCategory, myList);
 					var matchedLi = myList.getElementsByClassName(curCategory)[0];
 				}
-				else{
+				else {
 					for (c=0; c<matchedLi.children.length; c++){
 						if (span.innerText.toLowerCase().includes(matchedLi.children[c].className.toLowerCase()) || matchedLi.children[c].className.toLowerCase().includes(span.innerText.toLowerCase())) { // partial matching
 							instanceFound = true;
