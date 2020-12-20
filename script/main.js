@@ -627,7 +627,7 @@ function findOrigin(){
 }
 
 function showStyleDocu(a) {
-	if (window.innerWidth < 799px){
+	if (window.innerWidth < 799){
 	      if (document.getElementById(a).style.display==='none'){document.getElementById(a).style.display='block';}
 	      else{document.getElementById(a).style.display='none';}
     	}
