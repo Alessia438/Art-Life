@@ -160,11 +160,7 @@ body h1{
     border-bottom-style: dotted;
   }
 
-  blockquote{
-    font-size: 0.8em;
-    border-left: 3px solid red;
-    padding: 1vw; 
-  }
+ 
 
 }
 
@@ -275,19 +271,22 @@ p.q{
   text-transform: lowercase;
 }
 */
-/*blockquote{
-
+blockquote{
+  margin-right: 0mm; 
+  margin-left: 0mm;
   border-left: 3px solid red;
-  font-family: "Ronda Regular";
+  font-size: 0.8em;
+  padding: 1vw; 
+  /*font-family: "Ronda Regular";
   font-style:lowercase;
   font-size: 14pt;
   font-weight: lighter;
   text-align: justify; 
   text-align-last: left;
   line-height: 1.6; 
-  text-transform: lowercase; 
+  text-transform: lowercase; */
 }
-*/
+
 figcaption{
   font-family: "P22 Bayer Universal Regular";
   /*font-size: 13pt;*/
