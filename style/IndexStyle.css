@@ -582,6 +582,18 @@ div#bookmarks {
 	font-size: 1em;
 }
 
+#bookmarks .bodoni{
+	background-image: url(aminta_cover_page.jpg);
+    	color: white;
+}
+#bookmarks .liberty{
+	background-image: url(fiore_odificato.png);
+	background-position-y: center;
+	background-size: 100%;
+	border: crimson;
+	border-style: outset;
+}
+
 .docuFooter {
     text-align: center;
     font-size: small;
