@@ -1008,4 +1008,4 @@ blockquote {
 
 #disclaimer a:visited { color: #2e2e2e; }
 
-#disclaimer {padding-left: 2.5vw; }
+#disclaimer, #disclaimerH1 {padding-left: 2vw; }
