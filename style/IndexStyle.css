@@ -661,11 +661,14 @@ div#bookmarks {
 	
   .bauhaus{
     background-image: url(pattern-1.jpg);
+    color: yellow;
 
   }
 
   .the1980s{
     background-image: url(pattern-2.jpg);
+    background-position-y: bottom;
+    background-size: 70%;
   }
 
 	.stile1sara {
