@@ -598,7 +598,6 @@ div#bookmarks {
 }
 
 @media screen and (max-width: 799px) {
-	#bookmarks{display: none;}
 	#docuContent{
 		align-self: center;
 		padding: 4vw;
@@ -621,6 +620,8 @@ div#bookmarks {
 		border: crimson;
 		border-style: outset;
 	}
+	
+	div#bookmarks{display: none;}
 }
 
 /*fine documentation*/
