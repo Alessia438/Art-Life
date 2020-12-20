@@ -626,6 +626,13 @@ function findOrigin(){
 	}
 }
 
+function showStyleDocu(a) {
+	if (window.innerWidth < 799px){
+	      if (document.getElementById(a).style.display==='none'){document.getElementById(a).style.display='block';}
+	      else{document.getElementById(a).style.display='none';}
+    	}
+}
+
 /*
 //ULTIMA DELLE QUESTIONI DA RISOLVERE: da scrivere dopo la riga 307, per il problema delle doppie classi tipo class = "person artist"
 if (curCategory.includes(" ")) { //se c'è uno spazio in teoria vuol dire che c'è più di una classe
