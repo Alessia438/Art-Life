@@ -594,6 +594,17 @@ div#bookmarks {
 	border-style: outset;
 }
 
+#bookmarks .stile1sara {
+    background-image: url(painting.png);
+    background-position: center;
+    background-size: 160%;
+}
+
+#bookmarks .stile2sara {
+    background-image: url(90spattern2.jpg);
+    color: white;
+}
+
 .docuFooter {
     text-align: center;
     font-size: small;
@@ -634,6 +645,17 @@ div#bookmarks {
 		background-size: 100%;
 		border: crimson;
 		border-style: outset;
+	}
+	
+	.stile1sara {
+	    background-image: url(painting.png);
+	    background-position: center;
+	    background-size: 160%;
+	}	
+	
+	.stile2sara {
+		background-image: url(style/90spattern2.jpg);
+		color: white;
 	}
 	
 	div#bookmarks{display: none;}
