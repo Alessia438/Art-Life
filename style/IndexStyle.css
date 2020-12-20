@@ -597,14 +597,14 @@ div#bookmarks {
 #bookmarks .bauhaus {
     background-image: url(pattern-1.jpg);
     background-position: center;
-    color: #000080;
+    color: #990000;
    
 }
 
 #bookmarks .the1980s {
     background-image: url(pattern-2.jpg);
-    background-position: bottom;
-    background-size: 60%;
+    background-position: top;
+    background-size: 80%;
 }
    
 }
@@ -664,14 +664,14 @@ div#bookmarks {
 	
   .bauhaus{
     background-image: url(pattern-1.jpg);
-    color: #000080;
+    color: #990000;
 
   }
 
   .the1980s{
     background-image: url(pattern-2.jpg);
-    background-position-y: bottom;
-    background-size: 70%;
+    background-position-y: top;
+    background-size: 80%;
   }
 
 	.stile1sara {
