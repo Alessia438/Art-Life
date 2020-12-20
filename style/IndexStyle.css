@@ -552,6 +552,8 @@ SELECTORNAV STICKY PER ISSUE1, ISSUE2, ISSUE3 E ISSUE4 */
 
 #docuContent h1{padding-top: 5vw;}
 
+#bodoniClass, #libertyClass, #bauhausClass, #stile2ariClass, #stile1saraClass, #stile2saraClass {display:block;}
+
 div#bookmarks {
 	display: flex;
 	align-items: center;
@@ -579,7 +581,6 @@ div#bookmarks {
 	text-decoration:none;
 	font-size: 1em;
 }
-div#bookmarks{display: block;}
 
 .docuFooter {
     text-align: center;
@@ -610,7 +611,7 @@ div#bookmarks{display: block;}
 		font-size: 1.4em;
 		margin-bottom: 1em;
 	}
-	#bodoniClass, #libertyClass, #bauhausClass, #stile2ariClass, #stile1saraClass, #stile2saraClass {display:none}
+	#bodoniClass, #libertyClass, #bauhausClass, #stile2ariClass, #stile1saraClass, #stile2saraClass {display:none;}
 	#bodoni, div#bookmarks:nth-child(1) {
 		background-image: url(aminta_cover_page.jpg);
     		color: white;
