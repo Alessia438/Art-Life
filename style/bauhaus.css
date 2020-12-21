@@ -143,30 +143,6 @@ body h1{
   width: 60vmin;
 }
 
-@media only screen and (max-width: 600px) {
-  h1{
-    width: 100%;
-    position: relative;
-    right: 28vw;
-    font-size: 7vw;
-  }
-
-  p{
-    font-size: 0.8em;
-    width:60vw;
-  }
-
-  section{
-    border-bottom-style: dotted;
-  }
-
-  .subtitle{
-    font-size: 0.05em;
-  }
-
-
- 
-}  /*chiusura mediaquery*/
 
 section h1{
   transform: rotate(-30deg);
@@ -242,47 +218,36 @@ p.subtitle{
   padding-right: 200pt; */
 }
 
-/*
-p{
-  font-family: "Ronda Regular";
-  font-size: 14pt;
-  font-weight: lighter;
-  text-align: justify; 
-  margin-right: 20mm; 
-  margin-left: 20mm;
-  line-height: 1.6; 
-  text-align-last: left;
-  text-transform: lowercase;
-} */
-/* p:first-letter{color: #ff0000;} non mi serve più */
-
-/*
-q{
-  font-family: "Ronda Regular";
-  font-size: 14pt;
-  font-weight: lighter;
-  margin-right: 20mm; 
-  margin-left: 20mm;
-  text-transform: lowercase;
+@media only screen and (max-width: 600px) {
+  h1{
+    width: 100%;
+    position: relative;
+    right: 28vw;
+    font-size: 7vw;
   }
-*/
-/*
-p.q{
-  font-family: "Ronda Regular";
-  font-size: 14pt;
-  font-weight: lighter;
-  text-transform: lowercase;
-}
-*/
-/*q{
-  font-family: "Ronda Regular";
-  font-size: 14pt;
-  font-weight: lighter;
-  margin-right: 20mm; 
-  margin-left: 20mm;
-  text-transform: lowercase;
-}
-*/
+
+  p{
+    font-size: 0.8em;
+    width:60vw;
+  }
+
+  section{
+    border-bottom-style: dotted;
+  }
+
+  p.subtitle{
+    position: initial;
+    font-size: 0.55em; 
+  }
+
+  p.byline{
+    font-size: 0.7em;
+    left: 48vw;
+    box-sizing: border-box;
+    width: 50%;
+  }
+}  /*chiusura mediaquery*/
+
 blockquote{
   margin-right: 0mm; 
   margin-left: 0mm;
