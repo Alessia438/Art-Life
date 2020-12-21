@@ -1019,7 +1019,7 @@ blockquote {
 	font-weight: bold;
 }
 
-@media screen and (max-width: 799px) {
+@media screen and (max-width: 550px) {
 	.card {
 		width: 90%;
 		margin-right:5%;
