@@ -242,7 +242,7 @@ p.subtitle{
 
   p.publicationDate{
     font-size: 0.7em;
-    width: 50%;
+    width: 40%;
   }
 
 }  /*chiusura mediaquery*/
@@ -274,12 +274,12 @@ figcaption{
   width: 65%;
 }
 
-#heading img, video{
+#heading img, source{
   position: relative;
   top: 20pt;
 }
 
-img, video{
+img, source{
   width: 60%;
   border: 20pt solid #f9f9eb;
  /*padding-right: 5pt;
