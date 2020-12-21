@@ -147,8 +147,8 @@ body:not(#cover){
     margin-top: 0.7vw; */
 }
 p{
-    letter-spacing: -0.01vw;
-    word-spacing: 0.01vw;
+    /*letter-spacing: -0.01vw;*/
+    /*word-spacing: 0.01vw;*/
     text-indent: 1.5vw;
     line-height: 20px;
     hyphens: none;
@@ -181,6 +181,9 @@ figcaption{
 
 }
 
+h2{
+  font-size: 1.6vw;
+}
 .subtitle{
     
     font-style: italic;
