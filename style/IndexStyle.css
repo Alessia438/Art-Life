@@ -38,7 +38,7 @@ border-right: 32px;
   height:  40px;
   background: url('PROVA.png') left center;
   background-size: cover;
-  animation: play 1.5s steps(10) infinite;
+  animation: play 1.5s steps(6) infinite;
   display: inline-block;
 }
 
