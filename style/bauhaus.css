@@ -160,9 +160,13 @@ body h1{
     border-bottom-style: dotted;
   }
 
- 
+  .subtitle{
+    font-size: 0.05em;
+  }
 
-}
+
+ 
+}  /*chiusura mediaquery*/
 
 section h1{
   transform: rotate(-30deg);
@@ -193,7 +197,7 @@ p{
 p.byline{
   font-style:lowercase;
   position:relative;
-  bottom: 30vw;
+  bottom: 20vw;    /*era 30*/
   left: 55vw;
   transform: rotate(15deg);
 }
@@ -201,7 +205,7 @@ p.byline{
 p.publicationDate{
   font-style:lowercase;
   position:relative;
-  bottom: 30vw;
+  bottom: 20vw;
   left: 55vw;
   transform: rotate(15deg);
   color: blue; 
@@ -210,7 +214,7 @@ p.publicationDate{
 p.publicationTime{
   font-style:lowercase;
   position:relative;
-  bottom: 30vw;
+  bottom: 20vw;
   left: 55vw;
   transform: rotate(15deg);
   color: blue; 
@@ -220,13 +224,21 @@ p.subtitle{
   font-style:lowercase;
   transform: rotate(90deg);
   box-sizing: content-box;  
-  width: 60%;
+  width: 30%;
   height: 60px;  
   border: 0px;
   position: relative;
-  left: 60%;
+  left: 45%;
+  top: 48vw;
+  hyphens: auto;
+  margin-left: 15vw;
+  padding-bottom: 25vw;
+  /*left: 60%;
   top: 50vw;
-  /*padding-bottom: 200pt; per spostarlo a destra
+  hyphens: auto;
+  margin-left: 20vw;
+  padding-bottom: 5vw;
+  padding-bottom: 200pt; per spostarlo a destra
   padding-right: 200pt; */
 }
 
