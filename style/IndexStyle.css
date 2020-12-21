@@ -31,7 +31,20 @@ img{width: 93%;
 border-right: 32px; 
 }
 
+/* PROVA GIF*/
 
+#animation{
+  width: 100px;
+  height:  40px;
+  background: url('PROVA.png') left center;
+  background-size: cover;
+  animation: play 1.5s steps(10) infinite;
+  display: inline-block;
+}
+
+@keyframes play{
+  100% {background-position: -1000px;}
+}
 
 /* INDEX /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
