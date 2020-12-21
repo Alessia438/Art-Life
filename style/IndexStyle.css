@@ -38,7 +38,7 @@ border-right: 32px;
   /*width: 190px;
   height: 240px;
   margin: 2% auto;*/
-  background: url('prova.gif') left center;
+  background: url('4r72xf.gif') left center;
  /* animation: play 0.8s steps(10) infinite;*/
 }
 
@@ -1017,22 +1017,7 @@ blockquote {
 	font-weight: bold;
 }
 
-@media screen and (max-width: 799px) {
-	.card {
-		width: 90%;
-		display:block;
-		margin-right: 5%;
-		margin-left: 5%;
-	}
-	
-	.card img {
-		max-width: 90%;
-		max-height: 50%;
-		align-self: center;
-	}
-	
-	.card .container p{font-size: 0.8em;}
-}
+
 
 
 
