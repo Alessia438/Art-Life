@@ -34,16 +34,16 @@ border-right: 32px;
 /* PROVA GIF*/
 
 .animation{
-  width: 48px;
-  height:  95px;
-  background: url('GIF.gif') left center;
+  width: 100px;
+  height:  707px;
+  background: url('PROVA.png') left center;
   background-size: cover;
   animation: play 1.5s steps(6) infinite;
   display: inline-block;
 }
 
 @keyframes play{
-  100% {background-position: -480px;}
+  100% {background-position: -1000px;}
 }
 
 /* INDEX /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
