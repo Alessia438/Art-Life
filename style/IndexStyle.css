@@ -1019,7 +1019,24 @@ blockquote {
 	font-weight: bold;
 }
 
-
+@media screen and (max-width: 799px) {
+	.card {
+		width: 90%;
+		margin-right:5%;
+		margin-left:5%;
+		margin-top: 1.5em;
+		margin-bottom: 2em;
+		display:block;
+		text-align: -webkit-center;
+	}
+	
+	.card img {
+		max-width: 90%;
+		max-height: 50%;
+		align-self: center;
+	}
+	.card .container p {font-size: 0.8em;}
+}
 
 
 
