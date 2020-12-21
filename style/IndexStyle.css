@@ -607,8 +607,6 @@ div#bookmarks {
     background-repeat: no-repeat;
     background-size: 105%;
 }
-   
-}
 
 #bookmarks .stile1sara {
     background-image: url(painting.png);
@@ -684,7 +682,7 @@ div#bookmarks {
 	}	
 	
 	.stile2sara {
-		background-image: url(style/90spattern2.jpg);
+		background-image: url(90spattern2.jpg);
 		color: white;
 	}
 	
