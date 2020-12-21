@@ -225,9 +225,9 @@ p.subtitle{
     width:60vw;
   }
 
-  section{
+  /*section{
     border-bottom-style: dotted;
-  }
+  }*/
 
   p.subtitle{
     position: initial;
