@@ -34,9 +34,9 @@ border-right: 32px;
 /* PROVA GIF*/
 
 .animation{
-  width: 100px;
-  height:  40px;
-  background: url('PROVA.png') left center;
+  width: 48px;
+  height:  95px;
+  background: url('GIF.gif') left center;
   background-size: cover;
   animation: play 1.5s steps(6) infinite;
   display: inline-block;
