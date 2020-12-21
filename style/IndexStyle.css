@@ -37,8 +37,8 @@ border-right: 32px;
 .animation {
   background: url('art.gif') left center;
   width: 50%;
-  background-size: cover;
- }
+  background-size: cover; 
+}
 
 /*@keyframes play {
   100% { background-position: -1900px; }
@@ -102,7 +102,7 @@ border-right: 32px;
 .header #logo { /* logo sarebbe la classe per il primo elemento a di header */
   font-size: 1.2em;
   font-weight: 600;
-  padding: 35px 20px;  /*era 10px e 15 px */
+  padding: 45px 25px;  /*era 35px e 20 px */
 }
 
 /* menu */
