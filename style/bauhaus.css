@@ -209,15 +209,9 @@ p.subtitle{
   hyphens: auto;
   margin-left: 15vw;
   padding-bottom: 25vw;
-  /*left: 60%;
-  top: 50vw;
-  hyphens: auto;
-  margin-left: 20vw;
-  padding-bottom: 5vw;
-  padding-bottom: 200pt; per spostarlo a destra
-  padding-right: 200pt; */
 }
 
+  /* FOR SMARTPHONE*/  /*CREA PER TABLET*/
 @media only screen and (max-width: 600px) {
   h1{
     width: 100%;
@@ -242,10 +236,15 @@ p.subtitle{
 
   p.byline{
     font-size: 0.7em;
-    left: 48vw;
-    box-sizing: border-box;
+    left: 55vw;
+    width: 30%;
+  }
+
+  p.publicationDate{
+    font-size: 0.7em;
     width: 50%;
   }
+
 }  /*chiusura mediaquery*/
 
 blockquote{
