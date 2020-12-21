@@ -33,7 +33,7 @@ border-right: 32px;
 
 /* PROVA GIF*/
 
-#animation{
+.animation{
   width: 100px;
   height:  40px;
   background: url('PROVA.png') left center;
