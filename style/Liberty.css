@@ -144,7 +144,7 @@ h1 {
 	/*margin-block-start: 1vw;*/
 }
 
-h3{font-family: Bold;}
+h2, h3{font-family: Bold;}
 
 .byline, .publicationDate {
     margin-bottom: 2vw;
