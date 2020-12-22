@@ -406,6 +406,7 @@ SELECTORNAV STICKY PER ISSUE1, ISSUE2, ISSUE3 E ISSUE4 */
   .artTable img{
     width:100%;
     height:225px;
+    object-fit: cover;
   }
 
   .issueTable img{
