@@ -828,6 +828,13 @@ div#bookmarks {
     	width: 90vw;
 	    padding-inline-start: 0px;
 	    padding: 0 2vw 0 2vw;
+      text-align: center;
+   }
+
+   #listIssue > li {
+      display: inline-block;
+      margin: 0.4em;
+      padding: 0.3em;
    }
 }
 
