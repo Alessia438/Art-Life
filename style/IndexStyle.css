@@ -204,8 +204,8 @@ img{
   .topnav {border-bottom: 2px solid;}
 
   .topnav a {
-	display: block;
-	text-align: right;
+  	float: right;
+    clear: right;
   }
 }
 
