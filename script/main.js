@@ -404,7 +404,7 @@ function goToMetadata(curListId, ulClass){
 	e.style.backgroundColor = "#FFDAB9";
 	e.scrollIntoView(true);
 
-	// animazione scomparsa colore background dopo 10 secondi:
+	// animazione scomparsa colore background dopo 3 secondi:
 	var backgroundAnimation = window.parent.document.createElement('style'); // può andare in contrsto con la funzione che cambia lo stile dell'articolo?
     backgroundAnimation.type = 'text/css';
 
@@ -424,10 +424,10 @@ function goToMetadata(curListId, ulClass){
 
 	window.parent.document.getElementsByTagName("head")[0].appendChild(backgroundAnimation);
 
-	e.style.animation = 'background-fade 10s forwards';
-	e.style.WebkitAnimation = 'background-fade 10s forwards';
-    e.style.OAnimation = 'background-fade 10s forwards';
-    e.style.MozAnimation = 'background-fade 10s forwards';
+	e.style.animation = 'background-fade 3s forwards';
+	e.style.WebkitAnimation = 'background-fade 3s forwards';
+    e.style.OAnimation = 'background-fade 3s forwards';
+    e.style.MozAnimation = 'background-fade 3s forwards';
 
     setTimeout(function() {
     	e.style.backgroundColor = 'transparent';
