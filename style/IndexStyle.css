@@ -224,7 +224,7 @@ SELECTORNAV STICKY PER ISSUE1, ISSUE2, ISSUE3 E ISSUE4 */
   margin: 0 auto;
   display: flex;
   justify-content: center; /* for centering 3 blocks in the center */
-  /* justify-content: space-between;  for large space in between */
+  flex-wrap: wrap;
 }
 
 
@@ -411,20 +411,20 @@ SELECTORNAV STICKY PER ISSUE1, ISSUE2, ISSUE3 E ISSUE4 */
 /* @media only screen and (max-width: 700px) */
   @media /* only */ screen and (max-width: 700px){
 
-    .row {
+/*    .row {
       width: 100%;
       margin: 0 auto;
       float: none;
       display: flex;
-    }
+    }*/
        
     .presentation {
-    width: 50%;
+    width: 48%;
     margin: 1%;
     }
 
     .block {
-    width: 50%;
+    width: 48%;
     }
 
     /*.presentation img {
@@ -456,9 +456,9 @@ SELECTORNAV STICKY PER ISSUE1, ISSUE2, ISSUE3 E ISSUE4 */
   @media screen and (max-width: 550px){
 
     .row {
-  	  width: 100%;
+      /* width: 100%;
   	  margin: 0 auto;
-  	  float: none;
+  	  float: none;*/
       display: block;
       overflow: hidden; /*va bene??*/
   	}
