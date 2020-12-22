@@ -63,7 +63,7 @@ img{
 /* HEADER TOPNAV */
 
 .header {
-	background-color: #e6e6e6;
+	background-color: #00180A;
 	box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
 	width: 100%;
 	z-index: 3;  
@@ -75,7 +75,7 @@ img{
 	padding: 0;
 	list-style: none;
 	overflow: hidden;
-	background-color: #e6e6e6;
+	background-color: #00180A;
 	text-align: right;
 }
 
@@ -85,13 +85,13 @@ img{
 	font-size: 17px;
 	text-align: center;
 	text-decoration: none;
-	color: black; /* serve? */ 
+	color: white; /* serve? */ 
 }
 
 
 .header a:hover, .header .menu-btn:hover {
-	background-color: #a6a6a6;
-	color: black; /* serve? */ 
+	background-color: #224733;
+	color: white; /* serve? */ 
 }
   
 .header a.active {
@@ -749,7 +749,7 @@ div#bookmarks {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  background-color: #ffffff;
+  background-color: #0C351F;
   border-bottom: 3px solid;
   /*width: 100%; 
   overflow: hidden;*/
@@ -761,7 +761,7 @@ div#bookmarks {
 
 #Origin, .dropbtn {
   display: inline-block;
-  color: black;
+  color: white;
   text-align: center;
   padding: 10px 12px;
   text-decoration: none;
@@ -769,29 +769,29 @@ div#bookmarks {
 }
 
 #selectorNav > li a:hover, .dropdown:hover .dropbtn {
-  background-color: #a6a6a6;
-  color: black;
+  background-color: #224733;
+  color: white;
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
   /* position: fixed;  con position:fixed si crea margine tra selectorNav e il dropdown-content */ 
-  background-color: #bfbfbf;
+  background-color: #0C351F;
   min-width: 160px;
   box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
 
 .dropdown-content a {
-  color: black;
+  color: white;
   padding: 10px 12px;
   text-decoration: none;
   display: block;
   text-align: left;
 }
 
-.dropdown-content a:hover {background-color: #a6a6a6;}
+.dropdown-content a:hover {background-color: #224733;}
 
 .dropdown:hover .dropdown-content {
   display: block;
@@ -984,7 +984,7 @@ button#sort, button#appearanceSort, button#frequencySort {
 button#sort:hover, button#appearanceSort:hover, button#frequencySort:hover {
   background-color:aquamarine;
   border-color: aquamarine;
-  color: black;	
+  color: white;	
   font-weight:bold;
 }
 
