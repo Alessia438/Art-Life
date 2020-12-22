@@ -201,6 +201,11 @@ border-right: 32px;
 
 @media (max-width: 47em) {
   .topnav {border-bottom: 2px solid;}
+
+  .topnav a {
+    display: block;
+    text-align: right;
+  }
 }
 
 
