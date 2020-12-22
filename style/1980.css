@@ -55,7 +55,7 @@ span[onclick] {cursor:pointer;}
     line-height: 3vw;
     text-indent: 0vw;
     word-spacing: 0.01vw;
-    hyphens: auto;
+    hyphens: none;
 }
 
 #cover p:nth-child(2) {
@@ -130,7 +130,7 @@ body:not(#cover){
     font-family: 'Cheltenham Book Regular';
     font-size: 1.4vw;
     font-weight: normal;
-    color: #1f1e1e;
+   /* color: #1f1e1e; */
     background-color: #fffffa;
     text-align: justify;
     column-count: 3;
@@ -152,7 +152,7 @@ p{
     /*letter-spacing: -0.01vw;*/
     /*word-spacing: 0.01vw;*/
     text-indent: 1.5vw;
-    line-height: 20px;
+    line-height: 1.6vw;
     hyphens: none;
 }
 
@@ -173,8 +173,11 @@ p:not(.publicationDate)::first-letter { voglio la prima lettera grande solo del 
 */
 p a{color: #1f1e1e;}
 
+img:first-child{width: 140%;}
+
 img{
     width: 100%;
+
 }
 
 figcaption{
