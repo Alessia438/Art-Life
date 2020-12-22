@@ -797,7 +797,17 @@ div#bookmarks {
   display: block;
 }
 
+@media screen and (max-width: 550px){
+  #selectorNav { border-top: 3px solid; }
+}
 
+
+
+
+
+
+
+/*FLEX-CONTAINER E I SUOI DIVS //////////////////////////////////////////////////////////*/
 
 /* Medium screens --> #metadata below #content? */
 @media screen and (max-width: 799px) {
