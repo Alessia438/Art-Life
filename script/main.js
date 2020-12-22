@@ -473,7 +473,6 @@ function showLiChildren(myListId, instanceId){
 
 function showUlChildren(myListId, instanceId, event){
 	var e = document.getElementById(myListId).getElementsByClassName(instanceId)[0].children;
-	var art = document.getElementById(myListId);
 	if(e[1].style.display == 'block'){
 		//for (var child of e){
 		for (var i=1; i<e.length; i++){
@@ -484,13 +483,7 @@ function showUlChildren(myListId, instanceId, event){
 		//for (var child of e){
 		for (var i=1; i<e.length; i++){
 			e[i].style.display = 'block';
-			for (var c=1; c<e.length; c++){
-				if (e[i].getAttribute('data-parent').length.innerText === art.e[i]){
-			        e[i].style.backgroundColor =  "#f3f3f3";
-				}
-			}
-
-		}			
+		}		
 		/*for (var b = 0; b < e.length; b++) {
 			if (b === 0) {e[b].style.display = "inline-block";}
 			else {e[b].style.display = 'none';}
