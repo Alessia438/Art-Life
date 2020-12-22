@@ -8,36 +8,37 @@ html {
 }
 
 body {
-  /*display: flex;*/
-  font-family: 'Proza Libre', sans-serif;
-  margin: 0;
-    margin-top: 0px;
-    margin-right: 0px;
-    margin-bottom: 0px;
-    margin-left: 0px;
- /* height:2.5rem; */
+	/*display: flex;*/
+	font-family: 'Proza Libre', sans-serif;
+	margin: 0;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	/* height:2.5rem; */
 }
 
 /* attenzione coi margini: per alcuni elementi si sballa tutto, tipo i div. meglio padding*/
 img, p, h1, h2, h3, h4, h5, h6, hr, br, figcaption {
-  margin: 10px;
+	margin: 10px;
 }
 p.metadataText{
 	margin: 0px;
 	padding-top: 5px;
 }
 
-img{width: 93%;
-border-right: 32px; 
+img{
+	width: 93%;
+	border-right: 32px; 
 }
 
 /* PROVA GIF*/
 
 
 .animation {
-  background: url('art.gif') left center;
-  width: 20%;
-  background-size: cover; 
+	background: url('art.gif') left center;
+	width: 20%;
+	background-size: cover; 
 }
 
 /*@keyframes play {
@@ -62,112 +63,112 @@ border-right: 32px;
 /* HEADER TOPNAV */
 
 .header {
-  background-color: #e6e6e6;
-  box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
-  width: 100%;
-  z-index: 3;  
-  /* position: sticky; /* serve? */ 
+	background-color: #e6e6e6;
+	box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+	width: 100%;
+	z-index: 3;  
+	/* position: sticky; /* serve? */ 
 }
 
 .header div {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  overflow: hidden;
-  background-color: #e6e6e6;
-  text-align: right;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	overflow: hidden;
+	background-color: #e6e6e6;
+	text-align: right;
 }
 
 .header a {
-  display: inline-block; /* prima qua era inline-block, mentre su jsfiddle è display: block */
-  padding: 10px 12px;
-  font-size: 17px;
-  text-align: center;
-  text-decoration: none;
-  color: black; /* serve? */ 
+	display: inline-block; /* prima qua era inline-block, mentre su jsfiddle è display: block */
+	padding: 10px 12px;
+	font-size: 17px;
+	text-align: center;
+	text-decoration: none;
+	color: black; /* serve? */ 
 }
 
 
 .header a:hover, .header .menu-btn:hover {
-  background-color: #a6a6a6;
-  color: black; /* serve? */ 
+	background-color: #a6a6a6;
+	color: black; /* serve? */ 
 }
   
 .header a.active {
-  background-color: #1a1a1a;
-  color: white;
+	background-color: #1a1a1a;
+	color: white;
 }
 
 
 .header #logo { /* logo sarebbe la classe per il primo elemento a di header */
-  font-size: 1.2em;
-  font-weight: 600;
-  padding: 35px 20px;  /*era 10px e 15 px */
+	font-size: 1.2em;
+	font-weight: 600;
+	padding: 35px 20px;  /*era 10px e 15 px */
 }
 
 /* menu */
 
 .header .topnav {
-  clear: both;
-  max-height: 0;
-  transition: max-height .2s ease-out;
+	clear: both;
+	max-height: 0;
+	transition: max-height .2s ease-out;
 }
 
 /* menu icon */
 
 .header .menu-icon {
-  cursor: pointer;
-  display: inline-block;
-  float: right;
-  padding: 28px 20px;
-  position: relative;
-  user-select: none;
+	cursor: pointer;
+	display: inline-block;
+	float: right;
+	padding: 28px 20px;
+	position: relative;
+	user-select: none;
 }
 
 .header .menu-icon .navicon {
-  background: #333;
-  display: block;
-  height: 2px;
-  position: relative;
-  transition: background .2s ease-out;
-  width: 18px;
+	background: #333;
+	display: block;
+	height: 2px;
+	position: relative;
+	transition: background .2s ease-out;
+	width: 18px;
 }
 
 .header .menu-icon .navicon:before,
 .header .menu-icon .navicon:after {
-  background: #333;
-  content: '';
-  display: block;
-  height: 100%;
-  position: absolute;
-  transition: all .2s ease-out;
-  width: 100%;
+	background: #333;
+	content: '';
+	display: block;
+	height: 100%;
+	position: absolute;
+	transition: all .2s ease-out;
+	width: 100%;
 }
 
 .header .menu-icon .navicon:before {
-  top: 5px;
+	top: 5px;
 }
 
 .header .menu-icon .navicon:after {
-  top: -5px;
+	top: -5px;
 }
 
 /* menu btn */
 
 .header .menu-btn {
-  display: none;
+	display: none;
 }
 
 .header .menu-btn:checked ~ .topnav {
-  max-height: 240px;
+	max-height: 240px;
 }
 
 .header .menu-btn:checked ~ .menu-icon .navicon {
-  background: transparent;
+	background: transparent;
 }
 
 .header .menu-btn:checked ~ .menu-icon .navicon:before {
-  transform: rotate(-45deg);
+	transform: rotate(-45deg);
 }
 
 .header .menu-btn:checked ~ .menu-icon .navicon:after {
@@ -203,8 +204,8 @@ border-right: 32px;
   .topnav {border-bottom: 2px solid;}
 
   .topnav a {
-    display: block;
-    text-align: right;
+	display: block;
+	text-align: right;
   }
 }
 
@@ -225,18 +226,18 @@ SELECTORNAV STICKY PER ISSUE1, ISSUE2, ISSUE3 E ISSUE4 */
 
 /* the div class "row" is both for issues and articles */
 .row {
-  width: 100%;
-  margin: 0 auto;
-  justify-content: center; /* for centering 3 blocks in the center */
+	width: 100%;
+	margin: 0 auto;
+	justify-content: center; /* for centering 3 blocks in the center */
 
-  display: flex;
-  display: -webkit-flex;
-  
-  flex-wrap: wrap;
-  -webkit-flex-wrap: wrap;
+	display: flex;
+	display: -webkit-flex;
 
-  flex-direction: row;
-  -webkit-flex-direction: row;
+	flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+
+	flex-direction: row;
+	-webkit-flex-direction: row;
   
 }
 
@@ -246,11 +247,11 @@ SELECTORNAV STICKY PER ISSUE1, ISSUE2, ISSUE3 E ISSUE4 */
 
 /* the div class "issue-block" is only for issues */
 .issue-block {
-  width: 30%;
-  margin: 1%;
-  position: relative;
-  text-align: center;
-  overflow: hidden;
+	width: 30%;
+	margin: 1%;
+	position: relative;
+	text-align: center;
+	overflow: hidden;
 }
 
 /* the div class "t-block" is for the black rectangle of text for issues */
