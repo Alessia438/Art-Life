@@ -222,9 +222,17 @@ SELECTORNAV STICKY PER ISSUE1, ISSUE2, ISSUE3 E ISSUE4 */
 .row {
   width: 100%;
   margin: 0 auto;
-  display: flex;
   justify-content: center; /* for centering 3 blocks in the center */
+
+  display: flex;
+  display: -webkit-flex;
+  
   flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+
+  flex-direction: row;
+  -webkit-flex-direction: row;
+  
 }
 
 
