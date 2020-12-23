@@ -263,6 +263,7 @@ blockquote {
 @media screen and (max-width: 400px){
 	body#cover {
 		background-image: url(flores_def.png);
+		background-color: rgb(254, 255, 237);
 		background-repeat: no-repeat;
 		background-attachment: inherit;
 		height: auto;
@@ -279,7 +280,7 @@ blockquote {
 	#cover p {
 		margin-bottom: 2em;
 		text-align: left;
-		color: rgb(137, 136, 103);
+		color: black;
 		text-transform: lowercase;
 		font-family: 'P22 Vienna Regular';
 		line-height: 1em;
@@ -301,13 +302,15 @@ blockquote {
 	}
 	
 	#cover h1 {
-		color: rgb(203, 125, 106);
 		text-transform: uppercase;
 		font-size: 15vw;
 		margin-left: 0vw;
 		padding-left: 0vw;
 		text-align: left;
 		margin-right: 20vW;
+		color: black;
+		padding-bottom: 8vw;
+
 	}
 	
 	body {column-count: 1;}
