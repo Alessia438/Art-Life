@@ -442,6 +442,7 @@ function goToMetadata(curListId, ulClass){
 }
 //attribuisci effetto di hover da specificare nel css tipo con un background color 
 
+//questa va eliminata perchè quella sotto la sostituisce?
 function showLiChildren(myListId, instanceId){
 	var e = document.getElementById(myListId).getElementsByClassName(instanceId)[0].children;
 	if(e[0].style.display == 'block') {
@@ -493,7 +494,7 @@ function showUlChildren(myListId, instanceId, event){
 		for (var i=1; i<e.length; i++){
 			e[i].style.display = 'block';
 			if (e[i].getAttribute('data-parent').charAt(e[i].getAttribute('data-parent').length-1) == curArt){
-			    e[i].style.backgroundColor = "#f3f3f3";
+			    e[i].style.backgroundColor = "#d8f3e6";   //#f3f3f3
 			}	
 		}
 	}
