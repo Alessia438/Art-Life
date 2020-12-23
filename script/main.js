@@ -477,7 +477,7 @@ function showUlChildren(myListId, instanceId, event){
 	var allArt = document.getElementsByClassName('article');
 	for (var b=0; b<allArt.length; b++){
 		if (allArt[b].style.display == 'block'){
-			var curArt= allArt[b].charAt(allArt[b].length-1);
+			var curArt= b+1;
 		}
 
 	}
