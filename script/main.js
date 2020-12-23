@@ -471,6 +471,39 @@ function showLiChildren(myListId, instanceId){
 	}
 }
 
+/* prova da qui*/
+function showUlChildren(myListId, instanceId, event){
+	var e = document.getElementById(myListId).getElementsByClassName(instanceId)[0].children;
+	var allArt = document.getElementsByClassName('article');
+	for (var b=0; b<allArt.length; b++){
+		if (allArt[b].style.display == 'block'){
+			var curArt= allArt[b].charAt(allArt[b].length-1);
+		}
+
+	}
+	if(e[1].style.display == 'block'){
+		//for (var child of e){
+		for (var i=1; i<e.length; i++){
+			e[i].style.display = 'none';
+		}
+	}
+	else{
+		//sfor (var child of e){
+		for (var i=1; i<e.length; i++){
+			e[i].style.display = 'block';
+			if (e[i].getAttribute('data-parent').charAt(e[i].getAttribute('data-parent').length-1) == curArt){
+			    e[i].style.backgroundColor = "#f3f3f3";
+			}	
+		}
+	}
+	event.stopPropagation();
+	
+}
+
+/* fin qui*/
+
+
+/*
 function showUlChildren(myListId, instanceId, event){
 	var e = document.getElementById(myListId).getElementsByClassName(instanceId)[0].children;
 	if(e[1].style.display == 'block'){
@@ -484,14 +517,15 @@ function showUlChildren(myListId, instanceId, event){
 		for (var i=1; i<e.length; i++){
 			e[i].style.display = 'block';
 		}		
-		/*for (var b = 0; b < e.length; b++) {
+		  for (var b = 0; b < e.length; b++) {
 			if (b === 0) {e[b].style.display = "inline-block";}
 			else {e[b].style.display = 'none';}
-		}
-		*/
+		  }
+		  
 	}
 	event.stopPropagation();
 }
+*/
 
 function parsing(instance, parent, numIstanza){
 	var container = parent.innerText;
