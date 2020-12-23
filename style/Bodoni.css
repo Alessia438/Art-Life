@@ -283,6 +283,17 @@ blockquote {
 
 blockquote.person, .place, .artwork, .work, blockquote:first-letter {text-transform: capitalize;}
 
+@media screen and (max-width: 700px){
+	#cover h1{
+		font-size: 2.5em;
+	}
+	
+	#cover p {
+		font-size: 1.2em;
+	}
+}
+
+
 /*for small and medium screens*/
 @media screen and (max-width: 600px){
 	body {
@@ -299,9 +310,6 @@ blockquote.person, .place, .artwork, .work, blockquote:first-letter {text-transf
 		letter-spacing: 0.07em;
 		word-spacing: 0.25em;
 		font-size: 1.7em;
-		font-size: 2em;
-		letter-spacing: 0.2em;
-		padding-bottom: 0.8em;
 	}
 	
 	p.subtitle {
@@ -364,6 +372,11 @@ blockquote.person, .place, .artwork, .work, blockquote:first-letter {text-transf
 		font-size: 0.95em;
 	}
 	
+	#cover h1{
+		font-size: 2em;
+		letter-spacing: 0.2em;
+		padding-bottom: 0.8em;
+	}
 }
 
 
