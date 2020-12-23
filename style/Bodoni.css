@@ -36,11 +36,26 @@ div#coverText {
 	margin-right: 4vw;
 }
 
+#cover h1{
+	padding-bottom: 1em;
+	font-size: 3.2em;
+	letter-spacing: 0.25em;
+}
+
 #cover p{
 	text-indent: 0em;
 	margin-top: 2vw;
-	margin-bottom: 5vw;
+	margin-bottom: 3vw;
+	font-size: 1.4em;
+	hyphens: auto;
+	text-transform: uppercase;
+	line-height: 1.8em;
+	letter-spacing: 0.07em;
+	word-spacing: 0.15em;
+	font-style: italic;
 }
+
+#cover p:first-of-type:first-letter{font-size: 1.2em;}
 
 /* stile per articoli*/
 
@@ -284,6 +299,9 @@ blockquote.person, .place, .artwork, .work, blockquote:first-letter {text-transf
 		letter-spacing: 0.07em;
 		word-spacing: 0.25em;
 		font-size: 1.7em;
+		font-size: 2em;
+		letter-spacing: 0.2em;
+		padding-bottom: 0.8em;
 	}
 	
 	p.subtitle {
