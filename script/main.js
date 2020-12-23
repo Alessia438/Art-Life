@@ -477,7 +477,8 @@ function showUlChildren(myListId, instanceId, event){
 	var allArt = document.getElementsByClassName('article');
 	for (var b=0; b<allArt.length; b++){
 		if (allArt[b].style.display == 'block'){
-			var curArt= b+1;
+			//var curArt= b+1;
+			var curArt= window.location.href.split('#')[1].replace('article', '')/document.querySelector('[id^="issue"]').id.charAt(document.querySelector('[id^="issue"]').id.length-1);
 		}
 
 	}
