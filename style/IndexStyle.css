@@ -126,7 +126,7 @@ img, video{
 }
 
 .header .menu-icon .navicon {
-	background: #333;
+	background: white;
 	display: block;
 	height: 2px;
 	position: relative;
@@ -136,7 +136,7 @@ img, video{
 
 .header .menu-icon .navicon:before,
 .header .menu-icon .navicon:after {
-	background: #333;
+	background: white;
 	content: '';
 	display: block;
 	height: 100%;
