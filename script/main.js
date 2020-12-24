@@ -19,6 +19,7 @@ function fillTheGaps(){
 					divIFrame.id = 'article'+(n*5+i);
 					var iFrame = document.createElement('iframe');
 					iFrame.src = 'articles/'+curIssue+'_art'+i+'/'+articleInfo[n].articles[i-1].htmlName;
+					if (i===5){iFrame.setAttribute('onload', 'verifyCSS()');}
 					iFrame.name = 'iframe'+(n*5+i);
 					iFrame.id = 'iframe'+(n*5+i);
 					iFrame.setAttribute('frameborder', '0');
