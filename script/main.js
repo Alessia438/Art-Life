@@ -35,12 +35,6 @@ function fillTheGaps(){
 	}
 }
 
-function myFunction() {
-	var x = document.getElementById("myTopnav");
-	if (x.className === "topnav") {x.className += " responsive";} 
-	else {x.className = "topnav";}
-    }
-
 function changeCSS(cssFile) { //aggiungere come parametro d'ingresso il documento corrente
     	for (var i = 0; i < document.getElementsByTagName("iframe").length; i++) {
 		var frameHead = document.getElementsByTagName("iframe")[i].contentWindow.document.head,
@@ -688,35 +682,3 @@ function showStyleDocu(a) {
 	      else{document.getElementById(a).style.display='none';}
     	}
 }
-
-/*
-//ULTIMA DELLE QUESTIONI DA RISOLVERE: da scrivere dopo la riga 307, per il problema delle doppie classi tipo class = "person artist"
-if (curCategory.includes(" ")) { //se c'è uno spazio in teoria vuol dire che c'è più di una classe
-   	var multipleCats = curCategory.split(" "); // si crea un array con le categorie, tipo [person, artist]
-    for (var c = 0; c < multipleCats.length; c++) {
-        if (multipleCats[c] != "") {var curCategory+c = multipleCats[c]} // creiamo diverse variabili?
-    }
-}
-
-
-*/
-
-/*function manageBodoni(iframeN){
-	var elArray = ['h1','subtitle', 'byline', 'img', 'publicationDate', 'publicationTime'];
-	var contentDiv = document.createElement('div');
-	contentDiv.setAttribute('id', 'heading');
-	for (var el of elArray){
-		if (el == 'h1' || el=='img'){
-			var elToMove = document.getElementsByTagName("iframe")[iframeN].contentWindow.document.body.getElementsByTagName(el)[0];
-			contentDiv.appendChild(elToMove);
-		}
-		else{
-			//var found = False;
-			//if (el=='publicationDate'){found = true;}
-			var elToMove = document.getElementsByTagName("iframe")[iframeN].contentWindow.document.body.getElementsByClassName(el);
-			while (elToMove.length>0) {contentDiv.appendChild(elToMove[0]);}
-			//if (found === true){var impresso = document.createElement('p'); impresso.innerHTML = 'Impresso co' tipi bodoniani'; contentDiv.insertBefore(impresso, document.getElementsByTagName(el)[0]);}
-		}
-	}
-	document.getElementsByTagName("iframe")[iframeN].contentWindow.document.body.insertBefore(contentDiv, document.getElementsByTagName("iframe")[iframeN].contentWindow.document.body.children[0])
-}*/
