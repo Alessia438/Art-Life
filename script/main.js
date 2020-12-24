@@ -90,7 +90,7 @@ function changeCSS(cssFile) { //aggiungere come parametro d'ingresso il document
 function verifyCSS(){
 	for (var i = 0; i < document.getElementsByTagName("iframe").length; i++) {
 		var frameHead = document.getElementsByTagName("iframe")[i].contentWindow.document.head,
-    		allLinks = frameHead.getElementsByTagName("link"),
+    		allLinks = frameHead.getElementsByTagName("link");
     		for (var l=0; l<allLinks.length; l++) {
 			if (allLinks[l].rel == "stylesheet") {
 				if (i==0){allLinks[l].href = localStorage.getItem("curCSS").replace('../', '');}
