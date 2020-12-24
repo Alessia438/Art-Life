@@ -114,14 +114,14 @@ figure {
 }
 */
 
-img{
+img, video{
 	width: 30vw;
 	padding-bottom: 2vw;
 	padding-top: 2vw;
 	filter: contrast(150%) grayscale(100%);
 } 
 
-img:first-child {width: 100%;}
+img:first-child, video:first-child {width: 100%;}
 
 
 [id^="SECTION-1-"] {
@@ -226,7 +226,7 @@ blockquote {
 		column-count: 2;
 		column-gap: 4vw;
 	}
-	img {width: 47.5vw;}
+	img, video {width: 47.5vw;}
 }
 
 	  
@@ -314,7 +314,7 @@ blockquote {
 	}
 	
 	body {column-count: 1;}
-	img {width: 95vw;}
+	img, video {width: 95vw;}
 }
 
 
