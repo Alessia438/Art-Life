@@ -579,6 +579,17 @@ SELECTORNAV STICKY PER ISSUE1, ISSUE2, ISSUE3 E ISSUE4 */
 
 /*DOCUMENTATION ///////////////////////////////////////////////////////////////////////////////////////////////////*/
 
+@media (min-width: 800px) {
+    #flex-container-doc {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+}
+
+
 #docuContent {
 	position: relative;
 	height: 38.5em;
@@ -676,22 +687,32 @@ div#bookmarks {
 }
 
 @media screen and (max-width: 799px) {
+  #flex-container-doc {
+      display: flex;
+      flex-direction: column;
+      height: 85vh; /*IMPORTANTE PER TENERE IL FOOTER IN BASSO */
+  }
+
 	#docuContent{
 		align-self: center;
 		padding: 4vw;
 		width: 90%;
+    flex: 1;
 	}
+
 	div#docuContent h1 {
 		text-align: center;
 		padding: 2vw;
 		font-size: 1.4em;
 		margin-bottom: 1em;
 	}
+
 	#bodoniClass, #libertyClass, #bauhausClass, #the1980sClass, #stile1saraClass, #stile2saraClass {display:none;}
 	.bodoni {
 		background-image: url(aminta_cover_page.jpg);
-    		color: white;
+    color: white;
 	}
+
 	.liberty{
 		background-image: url(fiore_odificato.png);
 		background-position-y: center;
@@ -703,7 +724,6 @@ div#bookmarks {
   .bauhaus{
     background-image: url(pattern-1.jpg);
     color: #990000;
-
   }
 
   .the1980s{
@@ -711,7 +731,6 @@ div#bookmarks {
     background-position: center;
     background-repeat:
     background-size: 50%;
-
   }
 
 	.stile1sara {
