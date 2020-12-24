@@ -11,10 +11,10 @@
 		<link href="https://fonts.googleapis.com/css2?family=Proza+Libre&display=swap" rel="stylesheet">
 		<script src="script/info.js"></script>
 		<script src="script/main.js"></script>
-		<link rel="stylesheet" type="text/css" href="style/IndexStyle.css" onload="verifyCSS()">
+		<link rel="stylesheet" type="text/css" href="style/IndexStyle.css">
 	</head>
 	
-	<body onload="metadataViewer('issue1'), findOrigin(), verifyCSS()">
+	<body onload="metadataViewer('issue1'), findOrigin()">
 		
 		<!-- main navigation navbar -->
 		<header class="header">
@@ -71,7 +71,7 @@
 				<div id="issue1">
 					
 					<div id="coverPage1">
-						<iframe src="cover_pages/cover_page1.html" name="coverPage1" frameborder="0" border="0" cellspacing="0"></iframe>
+						<iframe src="cover_pages/cover_page1.html" onload="verifyCSS()" name="coverPage1" frameborder="0" border="0" cellspacing="0"></iframe>
 					</div>
 			    	</div>
 				
