@@ -84,12 +84,12 @@ function changeCSS(cssFile) { //aggiungere come parametro d'ingresso il document
 		if (cssFile.includes('Liberty.css') && i>0){liberty(i);}
 		else if (cssFile.includes('1980.css') && i>0){my1980(i);} 
 	}
-	sessionStorage.setItem("curCSS", cssFile);
+	sessionStorage.setItem("curCSS", cssFile.replace('../', ''));
 }
 
 function verifyCSS(){
 	if (sessionStorage.getItem("curCSS") !== null) {
-		for (var i = 0; i < document.getElementsByTagName("iframe").length; i++) {
+		/*for (var i = 0; i < document.getElementsByTagName("iframe").length; i++) {
 			var frameHead = document.getElementsByTagName("iframe")[i].contentWindow.document.head,
 			allLinks = frameHead.getElementsByTagName("link");
 			for (var l=0; l<allLinks.length; l++) {
@@ -98,7 +98,8 @@ function verifyCSS(){
 					else{allLinks[l].href = sessionStorage.getItem("curCSS");}
 				}
 			}
-		}
+		}*/
+		changeCSS(sessionStorage.getItem("curCSS"));
 	}
 }
 
