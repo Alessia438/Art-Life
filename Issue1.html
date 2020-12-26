@@ -12,14 +12,9 @@
 		<script src="script/info.js"></script>
 		<script src="script/main.js"></script>
 		<link rel="stylesheet" type="text/css" href="style/IndexStyle.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	</head>
 	
 	<body onload="metadataViewer('issue1'), findOrigin(), verifyCSS()">
-		
-		<div id="loading">
-			<img id="loading-image" src="style/art.gif" alt="Loading..." />
-		</div>
 		
 		<!-- main navigation navbar -->
 		<header class="header">
@@ -109,10 +104,5 @@
 			</div>
 
 		</div> <!-- si chiude il div flex-container -->
-		<script>
-			$(window).on('load', function() {
-			$('#loading').hide();
-			});
-		</script>
 	</body>
 </html>
