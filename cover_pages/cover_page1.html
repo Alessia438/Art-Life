@@ -4,8 +4,12 @@
 		<link rel="stylesheet" type="text/css" href="../style/IndexStyle.css">
 		<script src="../script/info.js"></script>
 		<script src="../script/main.js"></script> 
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	</head>
 	<body id="cover">
+		<div id="loading">
+			<img id="loading-image" src="style/art.gif" alt="Loading..." />
+		</div>
 		<div id="coverText">
 			<h1>Art and society</h1>
 			<p onclick="changeArticleCover('article1', 'issue1')">HOW ART AND CULTURE CAN HELP US RETHINK TIME</p>
@@ -14,5 +18,18 @@
 			<p onclick="changeArticleCover('article4', 'issue1')">WELCOME TO AIRSPACE</p>
 			<p onclick="changeArticleCover('article5', 'issue1')">STYLE IS AN ALGORITHM</p>
 		</div>
+		<script>
+			$(window).load(function() {
+			$('#loading').hide();
+			});
+		</script>
 	</body>
 </html>
+
+
+
+
+
+
+
+	
