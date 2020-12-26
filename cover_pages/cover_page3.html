@@ -3,9 +3,13 @@
 	<head>
 		<link rel="stylesheet" type="text/css" href="../style/IndexStyle.css">
 		<script src="../script/info.js"></script>
-		<script src="../script/main.js"></script> 
+		<script src="../script/main.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	</head>
 	<body id="cover">
+		<div id="loading">
+			<img id="loading-image" src="../style/art.gif" alt="Loading..." />
+		</div>
 		<div id="coverText">
 			<h1>Art and Ecology</h1>
 			<p onclick="changeArticleCover('article1', 'issue3')">An artist set out to paint climate change. She ended up on a journey through grief</p>
@@ -14,5 +18,10 @@
 			<p onclick="changeArticleCover('article4', 'issue3')">Fabrics With Powerful Stories to Tell</p>
 			<p onclick="changeArticleCover('article5', 'issue3')">PHOTOS: New 'Washed Ashore' exhibit in Little Rock showcases wildly colorful art made from plastic trash collected at beaches</p>
 		</div>
+		<script>
+			$(window.parent).on('load', function() {
+			$('#loading').hide();
+			});
+		</script>
 	</body>
 </html>
