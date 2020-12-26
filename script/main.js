@@ -216,7 +216,7 @@ function verifyMetaHighlight(n){
 	var listIssueChildren = document.getElementById('listIssue').children;
 	for (var i=0; i<listIssueChildren.length; i++){
 		for (var l=0; l<listIssueChildren[i].children.length; l++){
-			if (listIssueChildren[i].children[l].style.display=='block';){
+			if (listIssueChildren[i].children[l].style.display=='block'){
 				if (n==0){listIssueChildren[i].children[l].style.backgroundColor='transparent';}
 				else{
 					if(n==window.location.href.split('#')[1].replace('article', '')-((document.querySelector('[id^="issue"]').id.charAt(document.querySelector('[id^="issue"]').id.length-1)-1)*5)){
