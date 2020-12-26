@@ -128,18 +128,19 @@ function changeIssue(issueN){
 	for (var i=1; i<document.getElementById(issueN).children.length; i++) {document.getElementById(issueN).children[i].style.display = "none";}
         var originButton = document.getElementById("Origin");
 	if (originButton.hasAttribute("href")) {originButton.removeAttribute("href");}
+	verifyMetaHighlight('0');
 }
 
 function getLinkOrigin(currentArticle, myOrigin) {
 	var myFrame = currentArticle.children[0],
 	elmnt = myFrame.contentWindow.document.head,
 	myMeta = elmnt.getElementsByTagName("meta");
-		for (var l = 0; l < myMeta.length; l++) {
-			if (myMeta[l].name == "DC.identifier" && myMeta[l].scheme == "DCTERMS.URI") {
-				myOrigin.href = myMeta[l].content;
-				myOrigin.target = "_blank";
-			}
+	for (var l = 0; l < myMeta.length; l++) {
+		if (myMeta[l].name == "DC.identifier" && myMeta[l].scheme == "DCTERMS.URI") {
+			myOrigin.href = myMeta[l].content;
+			myOrigin.target = "_blank";
 		}
+	}
 }
 
 function changeArticleCommon(c, articleNum, myOrigin, isCover, strToSplit, issueNum){
@@ -159,12 +160,14 @@ function changeArticle(articleNum, issueNum){
 	var c = document.getElementById(issueNum).children,
 	myOrigin = document.getElementById("Origin");
 	changeArticleCommon(c, articleNum, myOrigin, false, '#', issueNum);
+	verifyMetaHighlight(articleNum.charAt(articleNum.length-1));
 }
 
 function changeArticleCover(articleNum, issueNum){
 	var c = window.parent.document.getElementById(issueNum).children,
 	myOrigin = window.parent.document.getElementById("Origin");
 	changeArticleCommon(c, articleNum, myOrigin, true, 'cover_pages/cover_page'+issueNum.charAt(issueNum.length-1)+'.html', issueNum);
+	verifyMetaHighlight(articleNum.charAt(articleNum.length-1));
 }
 
 function prevArticle() {
@@ -204,6 +207,23 @@ function nextArticle() {
 				window.location.href =  window.location.href.split('#')[0]+'#'+articles[i+1].id;
 				var myOrigin = document.getElementById("Origin");
 				getLinkOrigin(articles[i+1], myOrigin);
+			}
+		}
+	}
+}
+
+function verifyMetaHighlight(n){
+	var listIssueChildren = document.getElementById('listIssue').children;
+	for (var i=0; i<listIssueChildren.length; i++){
+		for (var l=0; l<listIssueChildren[i].children.length; l++){
+			if (listIssueChildren[i].children[l].style.display=='block';){
+				if (n==0){listIssueChildren[i].children[l].style.backgroundColor='transparent';}
+				else{
+					if(n==window.location.href.split('#')[1].replace('article', '')-((document.querySelector('[id^="issue"]').id.charAt(document.querySelector('[id^="issue"]').id.length-1)-1)*5)){
+						listIssueChildren[i].children[l].style.backgroundColor='#d8f3e6';
+					}
+					else{listIssueChildren[i].children[l].style.backgroundColor='transparent';}
+				}
 			}
 		}
 	}
