@@ -214,7 +214,8 @@ function nextArticle() {
 }
 
 function verifyMetaHighlight(n){
-	var listIssueChildren = document.getElementById('listIssue').children;
+	if (document.getElementById('listIssue').children == null){var listIssueChildren = window.parent.document.getElementById('listIssue').children;}
+	else{var listIssueChildren = document.getElementById('listIssue').children;}
 	for (var i=0; i<listIssueChildren.length; i++){
 		for (var l=0; l<listIssueChildren[i].children.length; l++){
 			for (var m=0; m<listIssueChildren[i].children[l].children.length; m++){
