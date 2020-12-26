@@ -216,7 +216,7 @@ function verifyMetaHighlight(n){
 	var listIssueChildren = document.getElementById('listIssue').children;
 	for (var i=0; i<listIssueChildren.length; i++){
 		for (var l=0; l<listIssueChildren[i].children.length; l++){
-			for (var m=0; l<listIssueChildren[i].children[l].children.length; l++){
+			for (var m=0; m<listIssueChildren[i].children[l].children.length; m++){
 				if (listIssueChildren[i].children[l].children[m].style.display=='block'){
 					if (n==0){listIssueChildren[i].children[l].children[m].style.backgroundColor='transparent';}
 					else{
