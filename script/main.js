@@ -474,25 +474,18 @@ function showLiChildren(myListId, instanceId){
 	}
 }
 
-/* prova da qui*/
 function showUlChildren(myListId, instanceId, event){
 	var e = document.getElementById(myListId).getElementsByClassName(instanceId)[0].children;
 	var allArt = document.getElementsByClassName('article');
-	//for (var b=0; b<allArt.length; b++){
-		//if (allArt[b].style.display == 'block'){
-			//var curArt= b+1;
 			var curArt= window.location.href.split('#')[1].replace('article', '')/document.querySelector('[id^="issue"]').id.charAt(document.querySelector('[id^="issue"]').id.length-1);
-		//}
-
-	//}
 	if(e[1].style.display == 'block'){
 		//for (var child of e){
 		for (var i=1; i<e.length; i++){
 			e[i].style.display = 'none';
+			e[i].style.backgroundColor = "transparent";
 		}
 	}
 	else{
-		//sfor (var child of e){
 		for (var i=1; i<e.length; i++){
 			e[i].style.display = 'block';
 			if (e[i].getAttribute('data-parent').charAt(e[i].getAttribute('data-parent').length-1) == curArt){
@@ -504,7 +497,6 @@ function showUlChildren(myListId, instanceId, event){
 	
 }
 
-/* fin qui*/
 
 
 /*
