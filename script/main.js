@@ -128,6 +128,7 @@ function changeIssue(issueN){
 	for (var i=1; i<document.getElementById(issueN).children.length; i++) {document.getElementById(issueN).children[i].style.display = "none";}
         var originButton = document.getElementById("Origin");
 	if (originButton.hasAttribute("href")) {originButton.removeAttribute("href");}
+	verifyMetaHighlight('0');
 }
 
 function getLinkOrigin(currentArticle, myOrigin) {
