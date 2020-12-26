@@ -216,13 +216,15 @@ function verifyMetaHighlight(n){
 	var listIssueChildren = document.getElementById('listIssue').children;
 	for (var i=0; i<listIssueChildren.length; i++){
 		for (var l=0; l<listIssueChildren[i].children.length; l++){
-			if (listIssueChildren[i].children[l].style.display=='block'){
-				if (n==0){listIssueChildren[i].children[l].style.backgroundColor='transparent';}
-				else{
-					if(n==window.location.href.split('#')[1].replace('article', '')-((document.querySelector('[id^="issue"]').id.charAt(document.querySelector('[id^="issue"]').id.length-1)-1)*5)){
-						listIssueChildren[i].children[l].style.backgroundColor='#d8f3e6';
+			for (var m=0; l<listIssueChildren[i].children[l].children.length; l++){
+				if (listIssueChildren[i].children[l].children[m].style.display=='block'){
+					if (n==0){listIssueChildren[i].children[l].children[m].style.backgroundColor='transparent';}
+					else{
+						if(n==window.location.href.split('#')[1].replace('article', '')-((document.querySelector('[id^="issue"]').id.charAt(document.querySelector('[id^="issue"]').id.length-1)-1)*5)){
+							listIssueChildren[i].children[l].children[m].style.backgroundColor='#d8f3e6';
+						}
+						else{listIssueChildren[i].children[l].children[m].style.backgroundColor='transparent';}
 					}
-					else{listIssueChildren[i].children[l].style.backgroundColor='transparent';}
 				}
 			}
 		}
