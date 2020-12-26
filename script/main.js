@@ -217,14 +217,15 @@ function verifyMetaHighlight(n){
 	for (var i=0; i<listIssueChildren.length; i++){
 		for (var l=0; l<listIssueChildren[i].children.length; l++){
 			for (var m=0; m<listIssueChildren[i].children[l].children.length; m++){
-				if (listIssueChildren[i].children[l].children[m].style.display=='block'){
-					if (n==0){listIssueChildren[i].children[l].children[m].style.backgroundColor='transparent';}
-					else{
-						if(n==window.location.href.split('#')[1].replace('article', '')-((document.querySelector('[id^="issue"]').id.charAt(document.querySelector('[id^="issue"]').id.length-1)-1)*5)){
-							listIssueChildren[i].children[l].children[m].style.backgroundColor='#d8f3e6';
+				var curUl= listIssueChildren[i].children[l].children[m];
+				if (curUl.style.display=='block'){
+					//if (n==0){curUl.style.backgroundColor='transparent';}
+					//else{
+						if(n>=1 && n==curUl.getAttribute('data-parent').charAt(curUl.getAttribute('data-parent').length-1)){
+							curUl.style.backgroundColor='#d8f3e6';
 						}
-						else{listIssueChildren[i].children[l].children[m].style.backgroundColor='transparent';}
-					}
+						else{curUl.style.backgroundColor='transparent';}
+					//}
 				}
 			}
 		}
@@ -502,7 +503,6 @@ function showUlChildren(myListId, instanceId, event){
 			//var curArt= window.location.href.split('#')[1].replace('article', '')/document.querySelector('[id^="issue"]').id.charAt(document.querySelector('[id^="issue"]').id.length-1);
 			var curArt= window.location.href.split('#')[1].replace('article', '')-((document.querySelector('[id^="issue"]').id.charAt(document.querySelector('[id^="issue"]').id.length-1)-1)*5)
 	if(e[1].style.display == 'block'){
-		//for (var child of e){
 		for (var i=1; i<e.length; i++){
 			e[i].style.display = 'none';
 			e[i].style.backgroundColor = "transparent";
