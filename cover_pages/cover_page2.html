@@ -4,8 +4,12 @@
 		<link rel="stylesheet" type="text/css" href="../style/IndexStyle.css">
 		<script src="../script/info.js"></script>
 		<script src="../script/main.js"></script> 
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	</head>
 	<body id="cover">
+		<div id="loading">
+			<img id="loading-image" src="../style/art.gif" alt="Loading..." />
+		</div>
 		<div id="coverText">
 			<h1>Art and covid-19</h1>
 			<p onclick="changeArticleCover('article1', 'issue2')">In the Midst of COVID-19, Chinese Galleries Adapt and Persevere</p>
@@ -14,6 +18,11 @@
 			<p onclick="changeArticleCover('article4', 'issue2')">Bye bye, blockbusters: can the art world adapt to Covid-19?</p>
 			<p onclick="changeArticleCover('article5', 'issue2')">Now Virtual and in Video, Museum Websites Shake Off the Dust</p>
 		</div>
+		<script>
+			$(window.parent).on('load', function() {
+			$('#loading').hide();
+			});
+		</script>
   	</body>
 </html>
 
