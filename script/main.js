@@ -188,6 +188,7 @@ function prevArticle() {
 				var x = curIssue.children[i-1]; */
 				var myOrigin = document.getElementById("Origin");
 				getLinkOrigin(articleNow, myOrigin); // se scegliamo di definire la variabile myframe in questa funzione va sostituito articleNow con myFrame come parametro input della funzione getLinkOrigin
+				verifyMetaHighlight(i-1);
 			}
 		}
 	}	
@@ -207,6 +208,7 @@ function nextArticle() {
 				window.location.href =  window.location.href.split('#')[0]+'#'+articles[i+1].id;
 				var myOrigin = document.getElementById("Origin");
 				getLinkOrigin(articles[i+1], myOrigin);
+				verifyMetaHighlight(i+1);
 			}
 		}
 	}
