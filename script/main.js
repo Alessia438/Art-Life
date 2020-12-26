@@ -154,20 +154,20 @@ function changeArticleCommon(c, articleNum, myOrigin, isCover, strToSplit, issue
 		}
 		else {c[i].style.display = "none";}
 	}
+	verifyMetaHighlight(articleNum.charAt(articleNum.length-1));
 }
 
 function changeArticle(articleNum, issueNum){
 	var c = document.getElementById(issueNum).children,
 	myOrigin = document.getElementById("Origin");
 	changeArticleCommon(c, articleNum, myOrigin, false, '#', issueNum);
-	verifyMetaHighlight(articleNum.charAt(articleNum.length-1));
 }
 
 function changeArticleCover(articleNum, issueNum){
 	var c = window.parent.document.getElementById(issueNum).children,
 	myOrigin = window.parent.document.getElementById("Origin");
 	changeArticleCommon(c, articleNum, myOrigin, true, 'cover_pages/cover_page'+issueNum.charAt(issueNum.length-1)+'.html', issueNum);
-	verifyMetaHighlight(articleNum.charAt(articleNum.length-1));
+	//verifyMetaHighlight(articleNum.charAt(articleNum.length-1));
 }
 
 function prevArticle() {
@@ -502,7 +502,6 @@ function showLiChildren(myListId, instanceId){
 function showUlChildren(myListId, instanceId, event){
 	var e = document.getElementById(myListId).getElementsByClassName(instanceId)[0].children;
 	var allArt = document.getElementsByClassName('article');
-			//var curArt= window.location.href.split('#')[1].replace('article', '')/document.querySelector('[id^="issue"]').id.charAt(document.querySelector('[id^="issue"]').id.length-1);
 			var curArt= window.location.href.split('#')[1].replace('article', '')-((document.querySelector('[id^="issue"]').id.charAt(document.querySelector('[id^="issue"]').id.length-1)-1)*5)
 	if(e[1].style.display == 'block'){
 		for (var i=1; i<e.length; i++){
@@ -518,35 +517,8 @@ function showUlChildren(myListId, instanceId, event){
 			}	
 		}
 	}
-	event.stopPropagation();
-	
+	event.stopPropagation();	
 }
-
-
-
-/*
-function showUlChildren(myListId, instanceId, event){
-	var e = document.getElementById(myListId).getElementsByClassName(instanceId)[0].children;
-	if(e[1].style.display == 'block'){
-		//for (var child of e){
-		for (var i=1; i<e.length; i++){
-			e[i].style.display = 'none';
-		}
-	}
-	else{
-		//for (var child of e){
-		for (var i=1; i<e.length; i++){
-			e[i].style.display = 'block';
-		}		
-		  for (var b = 0; b < e.length; b++) {
-			if (b === 0) {e[b].style.display = "inline-block";}
-			else {e[b].style.display = 'none';}
-		  }
-		  
-	}
-	event.stopPropagation();
-}
-*/
 
 function parsing(instance, parent, numIstanza){
 	var container = parent.innerText;
@@ -561,9 +533,6 @@ function parsing(instance, parent, numIstanza){
   	return res[numIstanza];
 }
 
-// evidenziare i metadati nel testo dell'articolo
-// serve anche cambiare articolo se i metadati puntano all'articolo non in block al momento? sì
-// manca la scomparsa dello stile onscroll e onclick su qualunque altro tasto
 function highlight(spanId, iFrameN, event) {
 	//cambiare articolo da mattere in display:block se il metadato cliccato è in un articolo diverso rispetto a quello corrente
 	var curIFrameDiv = document.getElementById(iFrameN).parentNode;
@@ -571,16 +540,12 @@ function highlight(spanId, iFrameN, event) {
 	var originButton = document.getElementById("Origin");	
 	changeArticleCommon(curIssueDivs, curIFrameDiv.classList[0], originButton, false, '#'); //in questo modo supponiamo che né il div target né quello di provenienza sia quello di una cover
 
-	//removeHighligth(iFrameN);
 	var elmnt = document.getElementById(iFrameN).contentWindow.document;
 	var curInstance = elmnt.getElementById(spanId);
 	curInstance.setAttribute("name", "onView");
 	curInstance.style.backgroundColor = "#ffff00";
 	curInstance.scrollIntoView(true);
 	// sostituire curInstance.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"}); ?? In alcuni browser non va
-	//metodi 1. creare nuva variabile in cui salvare spanId e iFrame in cui cercarlo per cancellare lo style 2. modificare i parametri della funzione removeHighlight in ciascun punto (tutti i metadati e gli altri onclick di interesse)
-	//manca anche il cambio articolo se triggerato rispettivo metadato (appare sul titolo e poi si sposta al punto preciso)
-
 
 	// animazione scomparsa colore background dopo 10 secondi:
 	var cssAnimation = elmnt.createElement('style'); // può andare in contrsto con la funzione che cambia lo stile dell'articolo?
@@ -621,12 +586,10 @@ function highlight(spanId, iFrameN, event) {
 
 function sortOccurrences(keyToSearch){
 	var elements = document.getElementById("metadata").children;
-	//for (var i = 1; i < elements.length; i++){   //sostituito 2 con elements.length 
 		sortCategory(document.getElementById("listIssue"), keyToSearch);
 		for (var n = 0; n < document.getElementById("listIssue").children.length; n++){
 			sortCategory(document.getElementById("listIssue").getElementsByClassName(document.getElementById("listIssue").children[n].className)[0], keyToSearch);
 		}
-	//}
 }
 
 function sortByFreq() {
