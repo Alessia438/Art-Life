@@ -19,7 +19,6 @@ function fillTheGaps(){
 					divIFrame.id = 'article'+(n*5+i);
 					var iFrame = document.createElement('iframe');
 					iFrame.src = 'articles/'+curIssue+'_art'+i+'/'+articleInfo[n].articles[i-1].htmlName;
-					//if (i===5){iFrame.setAttribute('onload', 'verifyCSS()');}
 					iFrame.name = 'iframe'+(n*5+i);
 					iFrame.id = 'iframe'+(n*5+i);
 					iFrame.setAttribute('frameborder', '0');
@@ -222,19 +221,15 @@ function verifyMetaHighlight(n){
 			for (var m=0; m<listIssueChildren[i].children[l].children.length; m++){
 				var curUl= listIssueChildren[i].children[l].children[m];
 				if (curUl.style.display=='block'){
-					//if (n==0){curUl.style.backgroundColor='transparent';}
-					//else{
 						if(n>=1 && n==curUl.getAttribute('data-parent').charAt(curUl.getAttribute('data-parent').length-1)){
 							curUl.style.backgroundColor='#d8f3e6';
 						}
 						else{curUl.style.backgroundColor='transparent';}
-					//}
 				}
 			}
 		}
 	}
 }
-
 
 function metadataViewer (issueN) { 
 	var myList = document.getElementById("listIssue");  
@@ -255,10 +250,8 @@ function metadataViewer (issueN) {
 	    	}		    	 
 			// get span tag 
 			var spans = Array.prototype.slice.call(elmnt.getElementsByTagName("span"));
-
 			//first check: if the category already exist
 			for (var span of spans) {
-
 				// special cases
 				if (span.innerText.toLowerCase() === "us") {span.innerText = "United States"}
 				else if (span.innerText.toLowerCase() === "uk") {span.innerText = "United Kingdom"}
@@ -300,7 +293,7 @@ function metadataViewer (issueN) {
 				}
 				createOccurrenceLi(span, spanParent, span.innerText, newUl, n, myFrames, myList);	
 			}
-
+		
 			// get time tag 
 			var times = Array.prototype.slice.call(elmnt.getElementsByTagName("time"));
 			//first check: if the category already exist
@@ -356,8 +349,6 @@ function createInstanceUl(instance, parentLi, myList) {
 	var link = document.createElement('a'); //creiamo un elemento 'a'
 	var normalizedInstance = instance.normalize("NFD").replace(/[\u0300-\u036f]/g, ""); //NFD Unicode Normal Form: scompone i grafemi in una combinazione di grafemi semplici per esempio e piu accento. la Regex invece è un range per eliminare gli accenti, quindi da u ad f.
 	var hrefValue = 'http://en.wikipedia.org/wiki/'+normalizedInstance;  //costruiamo il link    
-	//link.setAttribute('href', hrefValue); //aggiungiamo a "link", figlio di "wikiLi", l'url costruito //da reintegrare se le altre due opzioni non vanno
-	//link.setAttribute('target', '_blank'); //da reintegrare se le altre due opzioni non vanno
 	link.setAttribute('onClick', 'wikiLink("'+hrefValue+'", event)'); //alternativa alla funzione inline, eventListener
 	var wikiText = document.createTextNode("wikipedia");
 	link.appendChild(wikiText);
@@ -468,9 +459,7 @@ function goToMetadata(curListId, ulClass){
 	
      event.stopPropagation();
 }
-//attribuisci effetto di hover da specificare nel css tipo con un background color 
 
-//questa va eliminata perchè quella sotto la sostituisce?
 function showLiChildren(myListId, instanceId){
 	var e = document.getElementById(myListId).getElementsByClassName(instanceId)[0].children;
 	if(e[0].style.display == 'block') {
@@ -558,7 +547,8 @@ function highlight(spanId, iFrameN, event) {
 
 	for (var i in keyFramePrefixes) {
 		keyFrames = '@'+keyFramePrefixes[i]+'keyframes background-fade {'+
-		'80% { background-color: #ffff00; }'+
+		//'80% { background-color: #ffff00; }'+
+		'80% { background-color: #B5D3E7; }'+
 		'100% { background-color: transparent; }'+
 		'}';
 		var rules = elmnt.createTextNode(keyFrames);
