@@ -999,7 +999,10 @@ span[onclick]:hover{background-color:#B5D3E7;}
 	padding-bottom: 0.5em;
 	text-transform: initial;
 	text-align: center;
+	transition: all .1s ease-in-out;
 }
+
+#listIssue > li > ul > li:hover{transform: scale(1.005);}
 
 li ul li{font-size: 15px;}
 
