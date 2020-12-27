@@ -970,32 +970,23 @@ span[onclick]:hover{background-color:#B5D3E7;}
   display: inline-block;
 }
 
-/*
-#listIssue {
-  width: 350px;
-  padding-inline-start: 0px;
-}
-*/
-
 #listIssue>li {
-  font-size: 17px;
-  border: 2px solid black;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  /*padding-left: 5px;*/
-  margin-bottom: 5px;
-  text-align: center;
+	font-size: 17px;
+	border: 2px solid black;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	/*padding-left: 5px;*/
+	margin-bottom: 5px;
+	text-align: center;
 }
 
 #listIssue > li > ul{
-  font-size: 16px;
-  list-style-type: none;
-  border: 1px solid black;
-  /*padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 5px;*/
-  margin-top: 5px;
-  padding-inline-start: 0px;
+	font-size: 16px;
+	list-style-type: none;
+	border: 1px solid black;
+	margin-top: 5px;
+	padding-inline-start: 0px;
+	text-align: right;
 }
 
 #listIssue > li > ul > li {margin-bottom: 3px;}
