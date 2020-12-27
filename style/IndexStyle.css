@@ -994,10 +994,11 @@ span[onclick]:hover{background-color:#B5D3E7;}
 #listIssue > li > ul > li {margin-bottom: 3px;}
 
 #listIssue > li > ul > li{
-    margin-bottom: 1em;
-    border-bottom: 1px solid;
-    padding-bottom: 0.5em;
-    text-transform: initial;
+	margin-bottom: 1em;
+	border-bottom: 1px solid;
+	padding-bottom: 0.5em;
+	text-transform: initial;
+	text-align: center;
 }
 
 li ul li{font-size: 15px;}
@@ -1006,17 +1007,17 @@ button#sort, button#appearanceSort, button#frequencySort {
 	font-size: 12px;
 	letter-spacing: 2px;
 	padding: 1em 1em;
-  border-color: aquamarine;
+	border-color: aquamarine;
 	color: aquamarine;
-  border: 2px solid;
+	border: 2px solid;
 	background: transparent;
 }
 
 button#sort:hover, button#appearanceSort:hover, button#frequencySort:hover {
-  background-color:aquamarine;
-  border-color: aquamarine;
-  color: white;	
-  font-weight:bold;
+	background-color:aquamarine;
+	border-color: aquamarine;
+	color: white;	
+	font-weight:bold;
 }
 
 iframe {
