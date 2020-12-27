@@ -978,6 +978,7 @@ span[onclick]:hover{background-color:#B5D3E7;}
 	/*padding-left: 5px;*/
 	margin-bottom: 5px;
 	text-align: center;
+	text-transform: uppercase;
 }
 
 #listIssue > li > ul{
@@ -987,6 +988,7 @@ span[onclick]:hover{background-color:#B5D3E7;}
 	margin-top: 5px;
 	padding-inline-start: 0px;
 	text-align: right;
+	text-transform: capitalize;
 }
 
 #listIssue > li > ul > li {margin-bottom: 3px;}
@@ -995,6 +997,7 @@ span[onclick]:hover{background-color:#B5D3E7;}
     margin-bottom: 1em;
     border-bottom: 1px solid;
     padding-bottom: 0.5em;
+    text-transform: initial;
 }
 
 li ul li{font-size: 15px;}
