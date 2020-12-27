@@ -490,7 +490,8 @@ function showLiChildren(myListId, instanceId){
 }
 
 function showUlChildren(myListId, instanceId, event){
-	var e = document.getElementById(myListId).getElementsByClassName(instanceId)[0].children;
+	//var e = document.getElementById(myListId).getElementsByClassName(instanceId)[0].children;
+	var e = document.getElementById(myListId).querySelector('[class="'+instanceId+'"]').children;
 	var allArt = document.getElementsByClassName('article');
 			var curArt= window.location.href.split('#')[1].replace('article', '')-((document.querySelector('[id^="issue"]').id.charAt(document.querySelector('[id^="issue"]').id.length-1)-1)*5)
 	if(e[1].style.display == 'block'){
