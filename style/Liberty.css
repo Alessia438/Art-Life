@@ -11,7 +11,7 @@
 [onClick] {cursor:pointer;}
 span[onclick] {cursor:pointer;}
 #cover p[onclick]:hover {text-decoration: underline;}
-[onclick]:not(#cover):hover {background-color: #b38316c4;}
+span[onclick]:hover {background-color: #b38316c4;}
 
 /*Only for cover*/
 
