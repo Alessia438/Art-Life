@@ -207,7 +207,7 @@ function nextArticle() {
 				window.location.href =  window.location.href.split('#')[0]+'#'+articles[i+1].id;
 				var myOrigin = document.getElementById("Origin");
 				getLinkOrigin(articles[i+1], myOrigin);
-				verifyMetaHighlight(i+1);
+				verifyMetaHighlight(i+2);
 			}
 		}
 	}
