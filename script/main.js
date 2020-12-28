@@ -213,6 +213,14 @@ function nextArticle() {
 	}
 }
 
+
+function hidePrevAndNext(n) {
+	if (document.getElementById("coverPage"+ n).style.display = "block") {
+		document.getElementById("prev").style.display = "none";
+		document.getElementById("next").style.display = "none";
+	}
+}
+
 function verifyMetaHighlight(n){
 	if (document.getElementById('listIssue') == null){var listIssueChildren = window.parent.document.getElementById('listIssue').children;}
 	else{var listIssueChildren = document.getElementById('listIssue').children;}
