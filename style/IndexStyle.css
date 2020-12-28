@@ -923,6 +923,8 @@ button#prev, button#next  {
   padding-right: 5px;
   border: 0;
   border-radius: 50%;
+  height: 2vW;
+  width: 2vw;
 }
 
 #prev {
