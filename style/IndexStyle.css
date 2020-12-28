@@ -918,9 +918,9 @@ div#bookmarks {
 
 
 button#prev, button#next  {
-  background: rgba(0,0,0,0.8);
+  /*background: rgba(0,0,0,0.8);
   padding-left: 5px;
-  padding-right: 5px;
+  padding-right: 5px;*/
   border: 0;
   border-radius: 50%;
   height: 4vW;
@@ -928,6 +928,8 @@ button#prev, button#next  {
 }
 
 #prev {
+  background-image: url('arrow-angle-pointing-to-left.svg');
+  background-size: 4vw 4vw;
   top: 55vH;
   z-index: 3;
   position: absolute;
@@ -935,6 +937,8 @@ button#prev, button#next  {
 }
   
 #next {
+  background-image: url('right-arrow-angle.svg');
+  background-size: 4vw 4vw;
   top: 55vH;
   z-index: 3;
   position: absolute;
