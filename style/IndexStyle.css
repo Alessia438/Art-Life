@@ -918,27 +918,27 @@ div#bookmarks {
 
 
 button#prev, button#next  {
-  background: rgba(0,0,0,0.2);
+  background: rgba(0,0,0,0.8);
   padding-left: 5px;
   padding-right: 5px;
   border: 0;
   border-radius: 50%;
-  height: 2vW;
-  width: 2vw;
+  height: 4vW;
+  width: 4vw;
 }
 
 #prev {
-  top: 5vH;
+  top: 55vH;
   z-index: 3;
   position: absolute;
-  left: 1vH;
+  left: 2vw;
 }
   
 #next {
-  top: 5vH;
+  top: 55vH;
   z-index: 3;
   position: absolute;
-  right: 1vH;
+  right: 1vw;
 }
 
 
