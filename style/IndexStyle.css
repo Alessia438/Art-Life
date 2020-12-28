@@ -933,7 +933,7 @@ button#prev, button#next  {
   top: 55vH;
   z-index: 3;
   position: absolute;
-  left: 2vw;
+  left: 1vw;
 }
   
 #next {
@@ -942,7 +942,7 @@ button#prev, button#next  {
   top: 55vH;
   z-index: 3;
   position: absolute;
-  right: 1vw;
+  right: 2vw;
 }
 
 
