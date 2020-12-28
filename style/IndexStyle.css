@@ -918,7 +918,7 @@ div#bookmarks {
 
 
 button#prev, button#next  {
-  background: rgba(0,0,0,0);
+  background-color: rgba(0,0,0,0);
   border: 0;
   border-radius: 50%;
   height: 3vW;
@@ -926,21 +926,18 @@ button#prev, button#next  {
   background-size: 2.5vw 2.5vw;
   background-repeat: no-repeat;
   background-position: center;
+  position: absolute;
+  top: 55vH;
+  z-index: 3;
 }
 
 #prev {
   background-image: url('arrow-angle-pointing-to-left.svg');
-  top: 55vH;
-  z-index: 3;
-  position: absolute;
   left: 1vw;
 }
   
 #next {
-  background-image: url('right-arrow-angle.svg');
-  top: 55vH;
-  z-index: 3;
-  position: absolute;
+  background-image: url('right-arrow-angle.svg'); 
   right: 2vw;
 }
 
