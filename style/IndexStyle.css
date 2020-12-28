@@ -661,12 +661,16 @@ div#bookmarks {
 #bookmarks .nineties {
     background-image: url(90spattern2.jpg);
     background-position: center;
-    background-size: 160%;
+    background-size: 100%;
+    color: white;
+    font-weight: 600;
 }
 
 #bookmarks .minimalFuture {
     background-image: url(painting.png);
-    color: white;
+    background-position: center;
+    background-size: 90%;
+    font-weight: 600;
 }
 
 .docuFooter {
