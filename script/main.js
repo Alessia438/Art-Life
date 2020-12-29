@@ -226,15 +226,20 @@ function verifyMetaHighlight(n){
 	else{var listIssueChildren = document.getElementById('listIssue').children;}
 	for (var i=0; i<listIssueChildren.length; i++){
 		for (var l=0; l<listIssueChildren[i].children.length; l++){
+			var found = false; //1 EERORE?
 			for (var m=0; m<listIssueChildren[i].children[l].children.length; m++){
 				var curUl= listIssueChildren[i].children[l].children[m];
 				if (curUl.style.display=='block'){
 					if(n>=1 && n==curUl.getAttribute('data-parent').charAt(curUl.getAttribute('data-parent').length-1)){
+						found=true;//2 EERORE?
 						curUl.style.backgroundColor='#d8f3e6';
 					}
-					else{curUl.style.backgroundColor='transparent';}
+					//else{curUl.style.backgroundColor='transparent';}
+					else{curUl.style.backgroundColor='white';}
 				}
 			}
+			if (found==true){listIssueChildren[i].children[l].style.backgroundColor='cadetblue';}//3 EERORE?
+			else{listIssueChildren[i].children[l].style.backgroundColor='white';}//4 EERORE?
 		}
 	}
 }
