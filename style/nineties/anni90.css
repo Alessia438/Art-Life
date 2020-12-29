@@ -1,0 +1,140 @@
+@font-face { /* per h1, sottotitolo */
+  font-family: Heartbit;
+  src: url(heartbit.bold.otf);
+  
+}
+
+@font-face { /* per .byline e .publication* */
+  font-family: Shmup;
+  src: url(ShmupInTheZone-8Dng.ttf); 
+}
+
+@font-face { /* per il corpo del testo */
+  font-family: "Portland";
+  src: url(PortlandLdo-L394.ttf); 
+}
+
+@font-face { /* per h2 e h3 */
+  font-family: LifeSavers;
+  src: url(LifeSavers-Bold.ttf); 
+}
+
+
+
+
+
+/* global styling */
+@-ms-viewport {
+  width: device-width;
+}
+
+span {
+	color: #DA0000;
+}
+
+p, h2, h3, h4, h5, h6, img, figcaption {
+	margin: 3vW;
+}
+
+h1 {
+	font-family: Heartbit;	
+	color: #db2cbe;
+	text-shadow: 3px 2px #ffe100, 3px 3px 5px #0d1b70;
+	font-size: 50px;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 400;
+	transform: rotate(7deg);
+	width: 70vW;
+	margin: auto;
+	padding-top: 4vW;
+
+}
+
+body {
+	margin: 0;
+	font-family: Portland;
+	/*background-image: url(90spattern.jpg);
+	background-size: 80vW;
+	background-repeat: repeat;
+	-webkit-backdrop-filter: blur(2px); /* no blur per h1?
+  	backdrop-filter: blur(2px); 
+	background-image: url(green-gradient.jpg);
+	background-size: cover;*/
+}
+
+h2 {
+	font-family: LifeSavers;
+	font-size: 40px;
+	color: #3db839;
+	text-shadow: 1px 1px 1px #22691f;
+}
+
+h3 {
+	font-family: LifeSavers;
+	font-size: 30px;
+	color: #0D1B70;
+	text-shadow: 1px 1px 1px #1f71ff;
+}
+
+img { /* se la prima immagine di tutto l'html è prima di .byline e .publication* allora metterla sotto */
+	/* position: relative;
+	display: block;*/
+	
+}
+
+img:nth-of-type(3n+1) { /* allineata a sinistra, abbastanza grande */
+	float: left;
+	left: 3vW;
+	width: 50%;
+}
+
+img:nth-of-type(3n+2) { /* allineata a destra, abbastanza grande */
+	float: right;
+	width: 50%;
+	border: 10px solid transparent;
+	border-image: url(90spattern2.jpg) 5% round;
+	transform: rotate(5deg); /* animazione? */
+}
+
+img:nth-of-type(3n+3) { /* allineata a sinistra, piccola */
+	float: left;
+	left: 3vW;
+	width: 30%;
+	border: 0.5vW solid;
+  	border-image-slice: 1;
+  	border-image-source: linear-gradient(to left, #DA0000, #FFE100);
+  	border-image-slice: 1;
+  	transform: rotate(-5deg); /* animazione? */
+}
+
+
+p.byline, .publicationDate, .publicationPlace, .publicationTime {
+	margin-bottom: 0;
+	background-color: #ffe100;
+	width: 30%;
+	margin: auto;
+	font-weight: 400;
+	transform: rotate(-7deg);
+	width: max-content;
+	font-family: Shmup;
+	margin-top: 0.5vW;
+	padding: 0.5vW;
+	font-size: 1.5vw;
+}
+
+.byline { 
+	margin-top: 1vW;
+}
+
+.subtitle {
+	text-align: center;
+	font-family: Heartbit;
+	font-size: 40px;
+	text-align: center;
+	font-weight: 400;
+	transform: rotate(7deg);
+	width: 90vW;
+	margin: auto;
+	padding-top: 0.5vW;
+}
