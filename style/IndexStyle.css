@@ -675,7 +675,7 @@ div#bookmarks {
 }
 
 #bookmarks .nineties {
-    background-image: url(90spattern2.jpg);
+    background-image: url(/nineties/90spattern2.jpg);
     background-position: center;
     background-size: 100%;
     color: white;
@@ -683,7 +683,7 @@ div#bookmarks {
 }
 
 #bookmarks .minimalFuture {
-    background-image: url(painting.png);
+    background-image: url(/minimalFuture/painting.png);
     background-position: center;
     background-size: 90%;
     font-weight: 600;
