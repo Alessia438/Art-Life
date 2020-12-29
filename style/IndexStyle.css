@@ -600,7 +600,23 @@ SELECTORNAV STICKY PER ISSUE1, ISSUE2, ISSUE3 E ISSUE4 */
 	overflow: scroll;
 }
 
-#docuContent h1{padding-top: 5vw;}
+#docuContent h1{
+	padding-top: 5vw;
+	text-align: center;
+}
+
+#docuContent h2{
+	padding-top: 4vw;
+    	padding-bottom: 2vw;
+	text-align: center;
+}
+
+#docuContent h3{
+    padding-bottom: 2vw;
+    padding-top: 3vw;
+}
+
+#docuContent p{text-align: justify;}
 
 #bodoniClass, #libertyClass, #bauhausClass, #the1980sClass, #ninetiesClass, #minimalFutureClass {display:block;}
 
