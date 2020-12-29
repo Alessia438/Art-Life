@@ -600,7 +600,23 @@ SELECTORNAV STICKY PER ISSUE1, ISSUE2, ISSUE3 E ISSUE4 */
 	overflow: scroll;
 }
 
-#docuContent h1{padding-top: 5vw;}
+#docuContent h1{
+	padding-top: 5vw;
+	text-align: center;
+}
+
+#docuContent h2{
+	padding-top: 4vw;
+    	padding-bottom: 2vw;
+	text-align: center;
+}
+
+#docuContent h3{
+    padding-bottom: 2vw;
+    padding-top: 3vw;
+}
+
+#docuContent p{text-align: justify;}
 
 #bodoniClass, #libertyClass, #bauhausClass, #the1980sClass, #ninetiesClass, #minimalFutureClass {display:block;}
 
@@ -659,7 +675,7 @@ div#bookmarks {
 }
 
 #bookmarks .nineties {
-    background-image: url(90spattern2.jpg);
+    background-image: url(nineties/90spattern2.jpg);
     background-position: center;
     background-size: 100%;
     color: white;
@@ -667,7 +683,7 @@ div#bookmarks {
 }
 
 #bookmarks .minimalFuture {
-    background-image: url(painting.png);
+    background-image: url(minimalFuture/painting.png);
     background-position: center;
     background-size: 90%;
     font-weight: 600;
@@ -712,7 +728,8 @@ div#bookmarks {
 	}
 
 	#bodoniClass, #libertyClass, #bauhausClass, #the1980sClass, #ninetiesClass, #minimalFutureClass {display:none;}
-	.bodoni {
+	
+  .bodoni {
 		background-image: url(aminta_cover_page.jpg);
     color: white;
 	}
@@ -738,14 +755,18 @@ div#bookmarks {
   }
 
 	.nineties {
-	    background-image: url(90spattern2.jpg);
-	    background-position: center;
-	    background-size: 160%;
+	  background-image: url(nineties/90spattern2.jpg);
+    background-position: center;
+    background-size: 100%;
+    color: white;
+    font-weight: 600;
 	}	
 	
 	.minimalFuture {
-		background-image: url(painting.png);
-		color: white;
+		background-image: url(minimalFuture/painting.png);
+    background-position: center;
+    background-size: 90%;
+    font-weight: 600;
 	}
 	
 	div#bookmarks{display: none;}
@@ -931,7 +952,7 @@ button#prev, button#next  {
   background-repeat: no-repeat;
   background-position: center;
   position: absolute;
-  top: 55vH;
+  top: 50%;
   z-index: 3;
 }
 
@@ -943,6 +964,21 @@ button#prev, button#next  {
 #next {
   background-image: url('right-arrow-angle.svg'); 
   right: 2vw;
+}
+
+@media screen and (max-width: 799px) {
+  button#prev, button#next {
+    position: sticky;
+    top: 60vh;
+    height: 20px;
+    width: 20px;
+    background-size: 18px;
+  }
+
+  #next { left: 100vw; }
+
+  #prev { left: 0; }
+
 }
 
 
