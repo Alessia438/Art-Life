@@ -237,8 +237,8 @@ function verifyMetaHighlight(n){
 					else{curUl.style.backgroundColor='transparent';}
 				}
 			}
-			if(found==true){listIssueChildren[i].children[l].innerText.split('wiki')[0].style.backgroundColor='#d8f3e6';}//3 ERROR?
-			else{listIssueChildren[i].children[l].innerText.split('wiki')[0].style.backgroundColor='transparent';}//4 ERROR?
+			if(found==true){listIssueChildren[i].children[l].innerText.split('wiki')[0].style.color='#d8f3e6';}//3 ERROR?
+			else{listIssueChildren[i].children[l].innerText.split('wiki')[0].style.color='black';}//4 ERROR?
 		}
 	}
 }
