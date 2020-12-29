@@ -931,7 +931,7 @@ button#prev, button#next  {
   background-repeat: no-repeat;
   background-position: center;
   position: absolute;
-  top: 55vH;
+  top: 50%;
   z-index: 3;
 }
 
@@ -943,6 +943,21 @@ button#prev, button#next  {
 #next {
   background-image: url('right-arrow-angle.svg'); 
   right: 2vw;
+}
+
+@media screen and (max-width: 799px) {
+  button#prev, button#next {
+    position: sticky;
+    top: 60vh;
+    height: 20px;
+    width: 20px;
+    background-size: 18px;
+  }
+
+  #next { left: 100vw; }
+
+  #prev { left: 0; }
+
 }
 
 
