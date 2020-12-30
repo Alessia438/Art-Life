@@ -176,8 +176,7 @@ p.byline{
   bottom: 20vw;    /*era 30*/
   left: 55vw;
   transform: rotate(15deg);
-  width: 60%;
-  padding-bottom: 5vw; /*aggiunto per controllare*/
+  /*aggiunto per controllare*/
 }
 
 p.publicationDate{
