@@ -678,7 +678,7 @@ showSlides();
 function showSlides() {
   var i;
   var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("column");
+  var dots = document.getElementsByClassName("slideColumn");
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";  
   }
@@ -700,7 +700,7 @@ function currentSlide(n) {
 function showCurSlide(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
+  var dots = document.getElementsByClassName("slideDemo");
   var captionText = document.getElementById("caption");
   if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
