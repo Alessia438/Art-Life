@@ -28,6 +28,18 @@
   width: device-width;
 }
 
+/* global styling */
+::selection {
+  /*color: white;
+  background: #243D00;*/
+}
+
+[onClick] { cursor: pointer; }
+
+[onclick]:hover {
+	
+}
+
 span {
 	color: #DA0000;
 }
@@ -40,7 +52,7 @@ h1 {
 	font-family: Heartbit;	
 	color: #db2cbe;
 	text-shadow: 3px 2px #ffe100, 3px 3px 5px #0d1b70;
-	font-size: 50px;
+	font-size: 8vw;
 	text-align: center;
 	text-transform: uppercase;
 	font-weight: 400;
@@ -76,6 +88,30 @@ h3 {
 	color: #0D1B70;
 	text-shadow: 1px 1px 1px #1f71ff;
 }
+
+
+section:first-of-type {
+	display: flex;
+	flex-direction: column;
+}
+
+section:first-of-type > figure {
+	order: 99;
+	width: 100%;
+	margin: 0;
+}
+
+section:first-of-type > h1 { order: 1; }
+
+section:first-of-type > .subtitle {order: 2;}
+
+section:first-of-type > .byline {order: 3;}
+
+section:first-of-type > .publicationDate {order: 4;}
+
+section:first-of-type > .publicationTime {order: 5;}
+
+
 
 img { /* se la prima immagine di tutto l'html è prima di .byline e .publication* allora metterla sotto */
 	/* position: relative;
@@ -130,11 +166,11 @@ p.byline, .publicationDate, .publicationPlace, .publicationTime {
 .subtitle {
 	text-align: center;
 	font-family: Heartbit;
-	font-size: 40px;
+	font-size: 3.5vw;
 	text-align: center;
 	font-weight: 400;
-	transform: rotate(7deg);
 	width: 90vW;
 	margin: auto;
 	padding-top: 0.5vW;
+	margin-top: 3vh;
 }
