@@ -673,7 +673,6 @@ function showStyleDocu(a) {
 
 ////////prova per slideshow////////
 var slideIndex = 0;
-showSlides();
 
 function showSlides() {
   var i;
