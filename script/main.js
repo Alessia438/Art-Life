@@ -671,8 +671,8 @@ function showStyleDocu(a) {
 
 
 
-////////prova per slideshow////////
-/*var slideIndex = 0;
+/*///////prova per slideshow///////*/
+var slideIndex = 0;
 
 function showSlides() {
   var i;
@@ -711,7 +711,7 @@ function showCurSlide(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
-*/
+
 
 
 
