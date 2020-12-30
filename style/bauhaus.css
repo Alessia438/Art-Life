@@ -211,7 +211,7 @@ p.subtitle{
   padding-bottom: 25vw;
 }
 
-  /* FOR SMARTPHONE*/  /*CREA PER TABLET*/
+  /* FOR SMARTPHONE*/  
 @media only screen and (max-width: 600px) {
   h1{
     width: 100%;
@@ -224,10 +224,6 @@ p.subtitle{
     font-size: 0.8em;
     width:60vw;
   }
-
-  /*section{
-    border-bottom-style: dotted;
-  }*/
 
   p.subtitle{
     position: initial;
@@ -246,6 +242,26 @@ p.subtitle{
   }
 
 }  /*chiusura mediaquery*/
+
+/*FOR TABLET*/
+
+@media screen and (max-width: 800px){
+p.subtitle{
+    position: initial;
+    font-size: 0.55em; 
+  }
+
+  p.byline{
+    font-size: 0.7em;
+    left: 55vw;
+    width: 30%;
+  }
+
+  p.publicationDate{
+    font-size: 0.7em;
+    width: 40%;
+  }
+}
 
 blockquote{
   margin-right: 0mm; 
