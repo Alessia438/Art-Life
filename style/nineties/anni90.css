@@ -121,7 +121,8 @@ figure {
 	display: flex;
     align-items: center;
 	overflow: hidden;
-	background-color: yellow; /* AGGIUNGERE SFONDO TRASH */
+	background-image: url(notebook.jpg);
+	background-size: cover;
 }
 
 
