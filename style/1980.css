@@ -143,10 +143,10 @@ body:not(#cover){
     word-spacing: 0.01vw;
     widows: 3;
     orphans: 3;
-   /* margin-left: 3vw;
-    margin-right: 1vw;
-    margin-bottom: 0.5vw;
-    margin-top: 0.7vw; */
+    margin-right: 2vw;
+    margin-left: 8vw;
+    margin-top: 6vw;
+    margin-bottom: 4vw;
 }
 p{
     /*letter-spacing: -0.01vw;*/
