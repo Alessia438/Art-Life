@@ -254,25 +254,25 @@ blockquote q, blockquote q span {
 
 blockquote q:before {
 	background-image: url(open-quote.png);
-	background-size: cover;
+	background-size: contain;
     display: inline-block;
-    width: 8vW; 
-    height: 5vW;
+    width: 7vW; 
+    height: 7vh;
     background-repeat: no-repeat;
     content:"";
-    margin-bottom: -1vW;
+    margin-bottom: -0.9vW;
 }
 
 
 blockquote q:after { 
 	background-image: url(close-quote.png);
-	background-size: cover;
+	background-size: contain;
     display: inline-block;
-    width: 8vW; 
-    height: 5vW;
+    width: 7vW; 
+    height: 7vh;
     background-repeat: no-repeat;
     content:"";
-    margin-bottom: -1vW;
+    margin-bottom: -0.9vW;
 }
 
 
