@@ -711,10 +711,25 @@ div#bookmarks {
 
 .Slidecontainer {
   position: relative;
+  margin: auto;
+  max-width: 40vw;
+  max-height: 40vw;
+  overflow: hidden;
+  box-shadow: 1px 1px 4px 1px #093a2d;
 }
+
+.Slidecontainer * { margin-left: 0; margin-right: 0;}
 
 .mySlides {
   display: none;
+  text-align: center;
+  height: 20vw;
+}
+
+.mySlides img {
+  width: 100%;
+  max-height: 100%;
+  object-fit: contain;
 }
 
 .cursor {
@@ -729,6 +744,10 @@ div#bookmarks {
   top: 0;
 }
 
+.slideRow {
+  width: 35vw; 
+  margin: auto;
+}
 
 .slideRow:after {
   content: "";
@@ -766,6 +785,19 @@ div#bookmarks {
   from {opacity: .7} 
   to {opacity: 1}
 }
+
+@media screen and (max-width: 799px) {
+  .Slidecontainer {
+    max-width: 80vw;
+    max-height: 60vw;
+  }
+
+  .mySlides { height: 40vw; }
+
+  .slideRow { width: 35vw; }
+
+}
+
 /*////fine slide show///////*/
 
 
