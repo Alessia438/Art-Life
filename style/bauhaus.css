@@ -176,6 +176,7 @@ p.byline{
   bottom: 20vw;    /*era 30*/
   left: 55vw;
   transform: rotate(15deg);
+  width: 90%; /*aggiunto per controllare*/
 }
 
 p.publicationDate{
@@ -248,7 +249,7 @@ p.subtitle{
 @media screen and (max-width: 800px){
 p.subtitle{
     position: initial;
-    font-size: 0.55em; 
+    font-size: 0.75em; 
   }
 
   p.byline{
