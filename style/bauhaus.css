@@ -176,7 +176,8 @@ p.byline{
   bottom: 20vw;    /*era 30*/
   left: 55vw;
   transform: rotate(15deg);
-   /*aggiunto per controllare*/
+  width: 60%;
+  padding-bottom: 5vw; /*aggiunto per controllare*/
 }
 
 p.publicationDate{
@@ -213,7 +214,7 @@ p.subtitle{
 }
 
   /* FOR SMARTPHONE*/  
-@media only screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
   h1{
     width: 100%;
     position: relative;
@@ -264,13 +265,6 @@ p.subtitle{
   }
 }
 
-
-@media screen and (max-width: 900px){
-  p.byline{
-    font-size: 0.7em;
-    left: 55vw;
-    width: 30%;
-  }
 }
 blockquote{
   margin-right: 0mm; 
