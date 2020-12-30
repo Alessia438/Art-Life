@@ -112,6 +112,13 @@ section:first-of-type > .publicationDate {order: 4;}
 section:first-of-type > .publicationTime {order: 5;}
 
 
+figure {
+	display: flex;
+    align-items: center;
+	overflow: hidden;
+	background-color: yellow; /* AGGIUNGERE SFONDO TRASH */
+}
+
 
 img { /* se la prima immagine di tutto l'html è prima di .byline e .publication* allora metterla sotto */
 	/* position: relative;
