@@ -121,7 +121,7 @@ figure {
 	display: flex;
     align-items: center;
 	overflow: hidden;
-	background-image: url(notebook.jpg);
+	background-image: url(notebook.PNG);
 	background-size: cover;
 }
 
