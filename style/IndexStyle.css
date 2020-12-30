@@ -707,7 +707,7 @@ div#bookmarks {
 }
 
 
-/////inizio slide show/////////
+/*////inizio slide show////////*/
 
 .Slidecontainer {
   position: relative;
@@ -766,7 +766,7 @@ div#bookmarks {
   from {opacity: .7} 
   to {opacity: 1}
 }
-/////fine slide show////////
+/*////fine slide show///////*/
 
 
 
