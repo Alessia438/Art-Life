@@ -176,7 +176,7 @@ p.byline{
   bottom: 20vw;    /*era 30*/
   left: 55vw;
   transform: rotate(15deg);
-  width: 90%; /*aggiunto per controllare*/
+   /*aggiunto per controllare*/
 }
 
 p.publicationDate{
@@ -264,6 +264,14 @@ p.subtitle{
   }
 }
 
+
+@media screen and (max-width: 900px){
+  p.byline{
+    font-size: 0.7em;
+    left: 55vw;
+    width: 30%;
+  }
+}
 blockquote{
   margin-right: 0mm; 
   margin-left: 0mm;
