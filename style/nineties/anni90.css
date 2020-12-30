@@ -230,13 +230,16 @@ p.byline, .publicationDate, .publicationPlace, .publicationTime {
 blockquote {
 	font-family: 'Overpass Mono', monospace;
 	width: 40%;
-	padding: 2vw;
+	padding-bottom: 2vw;
+	padding-top: 3vw;
+	padding-left: 2vw;
+	padding-right: 2vw;
 }
 
 
 blockquote:nth-of-type(even) {
 	background-image: url(paper-clip.png), url(green-gradient.jpg);
-    background-position: center top, center bottom;
+    background-position: 95% 0vw, center bottom;
     background-size: 10%, 100% 90%;
     background-repeat: no-repeat, no-repeat;
 	float: right;
@@ -246,7 +249,7 @@ blockquote:nth-of-type(even) {
 
 blockquote:nth-of-type(odd) {
 	background-image: url(pink-tape.png), url(pink-gradient.jpg);
- 	background-position: center top, center bottom;
+ 	background-position: 50% -1.5vw, center bottom;
   	background-size: 10%, 100% 90%;
   	background-repeat: no-repeat, no-repeat;
 	float: left;
