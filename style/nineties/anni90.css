@@ -101,6 +101,11 @@ section:first-of-type > figure {
 	margin: 0;
 }
 
+section:first-of-type > figure > img {
+	width: 100%;
+	margin: 0;
+}
+
 section:first-of-type > h1 { order: 1; }
 
 section:first-of-type > .subtitle {order: 2;}
