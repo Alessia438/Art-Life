@@ -715,7 +715,7 @@ div#bookmarks {
   max-width: 40vw;
   max-height: 40vw;
   overflow: hidden;
-  box-shadow: 1px 1px 4px 1px #093a2d;
+  box-shadow: 1px 1px 4px 1px rgba(9, 58, 45, 0.5);
 }
 
 .Slidecontainer * { margin-left: 0; margin-right: 0;}
