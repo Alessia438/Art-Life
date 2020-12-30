@@ -706,6 +706,71 @@ div#bookmarks {
     bottom: 0;
 }
 
+
+/////inizio slide show/////////
+
+.Slidecontainer {
+  position: relative;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+.slideRow:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.slideColumn {
+  float: left;
+  width: 16.66%;
+}
+
+.slideDemo {
+  opacity: 0.6;
+}
+
+.active,
+.slideDemo:hover {
+  opacity: 1;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: .8s;
+  animation-name: fade;
+  animation-duration: .8s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .7} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .7} 
+  to {opacity: 1}
+}
+/////fine slide show////////
+
+
+
+
 @media screen and (max-width: 799px) {
   #flex-container-doc {
       display: flex;
