@@ -394,3 +394,14 @@ p.quoteAuthor {
 section, article, div, blockquote {
 	margin-bottom: 3vW;
 }
+
+section:before {
+	background-image: url(matita-verde.png);
+	background-size: contain;
+    display: block;
+    width: 20vW; 
+    height: 20vh;
+    background-repeat: no-repeat;
+    content:"";
+    /*margin-bottom: -0.9vW;*/
+}
