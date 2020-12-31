@@ -111,7 +111,7 @@ section:first-of-type > figure {
 }
 
 section:first-of-type > figure > img {
-	width: 100%;
+	width: 90%;
 	margin: 0;
 }
 
@@ -124,6 +124,10 @@ section:first-of-type > .byline {order: 3;}
 section:first-of-type > .publicationDate {order: 4;}
 
 section:first-of-type > .publicationTime {order: 5;}
+
+section:first-of-type > .publicationPlace {order: 6;}
+
+section:first-of-type > .lastModification {order: 7;}
 
 
 figure {
@@ -144,25 +148,33 @@ figure:first-of-type {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	align-items: center;
 }
 
-figure:first-of-type > img {
-	width: 90%;
-}
 
 figure:first-of-type > figcaption {
 	order: 99;
 	margin-left: 0;
+	margin-right: 0;
 	font-size: 1.3vw;
 	line-height: 1.5;
     color: #0d1b70;
     width: 90%;
+    text-align: center;
 }
 
-figure:nth-of-type(odd) > img {	order: 99; }
+figure:nth-of-type(odd) > img {	
+	order: 99;
+	padding-right: 2vw;
+	padding-top: 3vw;
+}
 
 figure:nth-of-type(odd):not(:first-of-type) > figcaption { margin-left: 5vw; }
 
+figure:nth-of-type(even) > img {
+	padding-left: 2vw;
+	padding-top: 3vw;
+}
 
 img {
 	/* position: relative;
@@ -196,7 +208,7 @@ img:nth-of-type(3n+3) { /* allineata a sinistra, piccola */
 }
 
 
-p.byline, .publicationDate, .publicationPlace, .publicationTime {
+p.byline, .publicationDate, .publicationPlace, .publicationTime, .lastModification {
 	margin-bottom: 0;
 	background-color: #ffe100;
 	width: 30%;
@@ -236,6 +248,8 @@ blockquote {
 	padding-right: 2vw;
 }
 
+.quoteAuthor, blockquote > p { margin: 1vw; }
+
 
 blockquote:nth-of-type(even) {
 	background-image: url(paper-clip.png), url(green-gradient.jpg);
@@ -249,8 +263,8 @@ blockquote:nth-of-type(even) {
 
 blockquote:nth-of-type(odd) {
 	background-image: url(pink-tape.png), url(pink-gradient.jpg);
- 	background-position: 50% -1.5vw, center bottom;
-  	background-size: 10%, 100% 90%;
+ 	background-position: 50% -1.3vw, center bottom;
+  	background-size: 30%, 100% 90%;
   	background-repeat: no-repeat, no-repeat;
 	float: left;
 	transform: rotate(-5deg);
