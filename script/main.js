@@ -717,7 +717,7 @@ function showCurSlide(n, m) {
 	}
 	slides[indexList[m-1]-1].style.display = "block";
 	dots[indexList[m-1]-1].className += " active";
-	curTimeout = setTimeout(showSlides, 2500);
+	curTimeout = setTimeout(showSlides, 4000);
 }
 
 
