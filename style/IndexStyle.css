@@ -725,7 +725,7 @@ div#bookmarks {
 
 .Slidecontainer * { margin-left: 0; margin-right: 0;}
 
-.mySlides {
+div[class^="mySlides"]{
   display: none;
   text-align: center;
   height: 20vw;
@@ -733,7 +733,7 @@ div#bookmarks {
   margin-top: 1vw;
 }
 
-.mySlides img {
+div[class^="mySlides"] img {
   width: 100%;
   max-height: 100%;
   object-fit: contain;
@@ -762,12 +762,12 @@ div#bookmarks {
   clear: both;
 }
 
-.slideColumn {
+div[class^="slideColumn"]{
   float: left;
   width: 16.66%;
 }
 
-.slideDemo {
+img[class^="slideDemo"]{
   opacity: 0.6;
 }
 
