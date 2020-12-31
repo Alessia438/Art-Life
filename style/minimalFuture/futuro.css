@@ -86,7 +86,10 @@ h1 {
 }
 h1::first-letter { font-weight: 600; }
 
-h2 { font-size: 5vH; }
+h2 { 
+	font-size: 5vH;
+	margin top: 2vw;
+}
 
 h3 { 
 	font-size: 4vH;
@@ -102,6 +105,8 @@ section:first-of-type {
 	display: flex;
 	flex-direction: column;
 }
+
+section:first-of-type:before { height: 0; }
 
 section:first-of-type > h1 {order: 1;}
 
@@ -270,7 +275,7 @@ figure:nth-of-type(even) > figcaption, img:nth-of-type(even):not(:first-child) +
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
 }
 
-figure:nth-of-type(even) + *, img:nth-of-type(even):not(:first-child) + figcaption + *  {
+figure:nth-of-type(even) + * /*   , img:nth-of-type(even):not(:first-child) + figcaption + *   */  {
 	margin-top: -11vW;
 }
 
@@ -396,12 +401,15 @@ section, article, div, blockquote {
 }
 
 section:before {
-	background-image: url(matita-verde.png);
-	background-size: contain;
+	margin-left: 25%;
+	margin-bottom: 2vW;
+    margin top: 2vw;
+    background-image: url(matita-verde.png);
+    background-size: cover;
+    background-position: center;
     display: block;
-    width: 20vW; 
-    height: 20vh;
+    height: 10vh;
+    width: 40vw;
     background-repeat: no-repeat;
-    content:"";
-    /*margin-bottom: -0.9vW;*/
+    content: "";    
 }
