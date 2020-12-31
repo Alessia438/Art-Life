@@ -133,7 +133,7 @@ section:first-of-type > .lastModification {order: 7;}
 figure {
 	display: flex;
     align-items: center;
-	background-image: url(notebook.jpg);
+	background-image: url(notebook.png);
 	background-size: cover;
 }
 

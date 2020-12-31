@@ -59,7 +59,7 @@ body{
 	margin-right: 20vW;
 	margin-left: 30vW;
 	margin-top: 20vW;*/
-	margin-bottom: 7vW;
+	margin-bottom: 3vW;
 	/*display: flex;
 	flex-direction: column;*/
 }
@@ -73,7 +73,7 @@ h1, h2, h3, h4, h5, h6, blockquote {
 
 h1 {
 	font-family: 'Playfair Display', serif;
-	font-size: 9vw;
+	font-size: 6vw;
 	font-weight: 200;
 	display: inline-block;
 	margin-left: 30vW;
@@ -171,23 +171,52 @@ figcaption {
 	position: relative;
 }
 
-figcaption:nth-of-type(odd) {
+section:first-of-type > figure {
+	display: flex;
+	flex-direction: column;
+}
+
+section:first-of-type > figure > figcaption {
+    width: 100%;
+    position: static;
+    text-align: justify; 
+    padding-left: 0; 
+    order: 99; 
+    margin-top: 2vw;
+}
+
+section:first-of-type > figure > figcaption:after {
+    content: " ";
+    display: block;
+    border-bottom: 1px solid #545454;
+    margin: 1vW 7vW 1vw 7vW;
+  }
+
+figure:nth-of-type(odd) {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+
+figure:nth-of-type(odd) > img { order: 99; }
+
+figure:nth-of-type(odd) > figcaption {
 	width: 41%;
-	bottom: 25vW;
-	left: 50vW;
 	text-transform: uppercase;
 	text-align: right;
 	padding-left: 1vW;
+	order: 1;
 }
 
-figcaption:nth-of-type(odd):after {
+figure:nth-of-type(odd) > figcaption:after {
     content: " ";
     display: block;
     border-bottom: 2px solid #545454;
     margin: 1vW 1vW 0 5vW;
   }
 
-figcaption:nth-of-type(even) {
+figure:nth-of-type(even) > figcaption {
 	width: 40%;
 	bottom: 20vW;
 	left: 40vW;
@@ -200,13 +229,13 @@ figcaption:nth-of-type(even) {
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
 }
 
-figcaption:nth-of-type(even) + * {
+figure:nth-of-type(even) + * {
 	margin-top: -11vW;
 }
 
-figcaption:nth-of-type(odd) + * {
+/*figure:nth-of-type(odd) + * {
 	margin-top: -4vW;
-}
+}*/
 
 
 section:first-of-type img, video {
