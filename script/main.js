@@ -672,12 +672,13 @@ function showStyleDocu(a) {
 
 
 /*///////prova per slideshow///////*/
-var slideIndex = 0;
+var slideIndex1 = 0;
+var slideIndex2 = 0;
 
-function showSlides() {
+function showSlides(slideIndex, mySlides, slideColumn) {
   var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("slideColumn");
+  var slides = document.getElementsByClassName(mySlides);
+  var dots = document.getElementsByClassName(slideColumn);
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";  
   }
@@ -688,30 +689,30 @@ function showSlides() {
   }
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 2500); // Change image every 2 seconds
+  setTimeout(showSlides, 2500);
+}
+/*
+function currentSlide(n, slideDemo, slideIndex, mySlides) {
+  showCurSlide(slideIndex = n, slideIndex.charAt(slideIndex.length-1), slideDemo, mySlides);
 }
 
-function currentSlide(n) {
-  showCurSlide(slideIndex = n);
-}
 
-
-function showCurSlide(n) {
+function showCurSlide(n, curIndex, slideDemo, mySlides) {
   var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("slideDemo");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
+  var slides = document.getElementsByClassName(mySlides);
+  var dots = document.getElementsByClassName(slideDemo);
+  if (n > slides.length) {'slideIndex'+curIndex = 1}
+  if (n < 1) {slideIndex+curIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";
   }
   for (i = 0; i < dots.length; i++) {
       dots[i].className = dots[i].className.replace(" active", "");
   }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
+  slides['slideIndex'+curIndex-1].style.display = "block";
+  dots['slideIndex'+curIndex-1].className += " active";
 }
-
+*/
 
 
 
