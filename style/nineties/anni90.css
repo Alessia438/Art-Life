@@ -125,9 +125,9 @@ section:first-of-type > .publicationDate {order: 4;}
 
 section:first-of-type > .publicationTime {order: 5;}
 
-section:first-of-type > .publicationPlace {order: 6;}
+section:first-of-type > .lastModification {order: 6;}
 
-section:first-of-type > .lastModification {order: 7;}
+section:first-of-type > .publicationPlace {order: 7;}
 
 
 figure {
