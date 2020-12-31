@@ -229,11 +229,11 @@ function verifyMetaHighlight(n){
 			var found = 0; //1 EERORE?
 			for (var m=0; m<listIssueChildren[i].children[l].children.length; m++){
 				var curUl= listIssueChildren[i].children[l].children[m];
-				if(n>=1 && n==curUl.getAttribute('data-parent').charAt(curUl.getAttribute('data-parent').length-1)){//2 EERORE?
+				if(n>=1 && m>=1 && n==curUl.getAttribute('data-parent').charAt(curUl.getAttribute('data-parent').length-1)){//2 EERORE?
 						found++;
 				}
 				if (curUl.style.display=='block'){
-					if(n>=1 && m>=1 && n==curUl.getAttribute('data-parent').charAt(curUl.getAttribute('data-parent').length-1)){
+					if(n>=1 && n==curUl.getAttribute('data-parent').charAt(curUl.getAttribute('data-parent').length-1)){
 						curUl.style.backgroundColor='#d8f3e6';
 					}
 					else{curUl.style.backgroundColor='white';}
