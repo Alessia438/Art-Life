@@ -176,6 +176,7 @@ p.byline{
   bottom: 20vw;    /*era 30*/
   left: 55vw;
   transform: rotate(15deg);
+  /*aggiunto per controllare*/
 }
 
 p.publicationDate{
@@ -204,15 +205,15 @@ p.subtitle{
   height: 60px;  
   border: 0px;
   position: relative;
-  left: 45%;
-  top: 48vw;
+  left: 10%; /*era 45*/
+  /*top: 48vw;*/
   hyphens: auto;
   margin-left: 15vw;
   padding-bottom: 25vw;
 }
 
-  /* FOR SMARTPHONE*/  /*CREA PER TABLET*/
-@media only screen and (max-width: 600px) {
+  /* FOR SMARTPHONE*/  
+@media screen and (max-width: 600px) {
   h1{
     width: 100%;
     position: relative;
@@ -224,10 +225,6 @@ p.subtitle{
     font-size: 0.8em;
     width:60vw;
   }
-
-  /*section{
-    border-bottom-style: dotted;
-  }*/
 
   p.subtitle{
     position: initial;
@@ -247,11 +244,32 @@ p.subtitle{
 
 }  /*chiusura mediaquery*/
 
+/*FOR TABLET*/
+
+@media screen and (max-width: 800px){
+p.subtitle{
+    position: initial;
+    font-size: 0.75em; 
+  }
+
+  p.byline{
+    font-size: 0.7em;
+    left: 55vw;
+    width: 30%;
+  }
+
+  p.publicationDate{
+    font-size: 0.7em;
+    width: 40%;
+  }
+}
+
+
 blockquote{
   margin-right: 0mm; 
   margin-left: 0mm;
   border-left: 3px solid red;
-  font-size: 12pt;
+  font-size: 13pt;
   padding: 1vw; 
   /*font-family: "Ronda Regular";
   font-style:lowercase;
@@ -279,7 +297,7 @@ figcaption{
   top: 20pt;
 }
 
-img, source{
+img, video{
   width: 60%;
   border: 20pt solid #f9f9eb;
  /*padding-right: 5pt;

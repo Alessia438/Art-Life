@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');*/
+/*@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200&display=swap');
+
+/* global styling */
+@-ms-viewport {
+  width: device-width;
+}
+
+/* unità di misura: vH per i font (altrimenti vengono troppo piccoli su smartphone) e vW per le dimensioni degli elementi blocco ???????????????????????????????? */
+
+
+/* stile per cover page
+
+body#cover {
+  /* background-image: ;
+  height: 100%;
+  font-family: ;
+  font-weight: normal;
+  font-style: normal;
+}
+*/
+
+
+/* global styling */
+::selection {
+  color: white;
+  background: #243D00;
+}
+
+[onClick] {cursor:pointer;}
+
+[onclick]:hover {
+	font-weight: bold 700;
+	animation: shadow 3s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes shadow {
+  100% {text-shadow: 2px 2px 2px #dfdfdf;}
+}
+
+/*span[onclick] {cursor:pointer;}*/
+
+span, time { font-weight: 600; }
+
+* { 
+
+}
+
+
+body{
+	/*background-image: ; pattern ?*/ 
+	font-family: 'Open Sans', sans-serif;
+	/*font-weight: normal;
+	font-style: normal;
+	margin-right: 20vW;
+	margin-left: 30vW;
+	margin-top: 20vW;*/
+	margin-bottom: 7vW;
+	/*display: flex;
+	flex-direction: column;*/
+}
+
+h1, h2, h3, h4, h5, h6, blockquote {
+	margin-top: 5vw;
+	margin-left: 4vW;
+	margin-right: 2vW;
+	font-family: 'Playfair Display', serif;
+}
+
+h1 {
+	font-family: 'Playfair Display', serif;
+	font-size: 9vw;
+	font-weight: 200;
+	display: inline-block;
+	margin-left: 30vW;
+	margin-right: 3vW;
+	background-image: url("painting.png");
+	background-size: contain;
+	background-repeat: no-repeat;	
+  	background-position: 50% 100%;
+  /* line-height: 1.5em;
+	letter-spacing: 0.07em;
+    word-spacing: 0.25em;*/
+}
+h1::first-letter { font-weight: 600; }
+
+h2 { font-size: 5vH; }
+
+h3 { 
+	font-size: 4vH;
+	font-weight: 400;	
+}
+
+h3::first-letter {
+	font-weight: 600;
+}
+
+.byline, .publicationDate {
+
+}
+/*
+#heading img {
+	border-radius: 50%;
+	height: 14em;
+        width: 14em;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+}
+
+p.byline {
+	font-size: 0.7em;
+	line-height: 3rem;
+}
+
+p.byline .person {font-size: 2rem;;}
+
+p.byline .person::before{
+	content: "\a";
+    	white-space: pre;
+}
+p.byline .person::after{
+	content: "\a";
+    	white-space: pre;
+}
+
+p.subtitle {
+	font-size: 1.02em;
+	line-height:2.5em;
+}
+
+p.publicationDate {
+	font-size: 0.7em;
+	margin-bottom:5em;
+}
+
+}*/
+
+
+
+p {
+	line-height: 1.15;
+	/*text-align:justify;
+	letter-spacing: 0.03em;
+	word-spacing: 0.04em;*/
+	-webkit-hyphens: auto;
+	-ms-hyphens: auto;
+	hyphens: auto;
+	margin: 0 4vW 1vW 3vW;
+	font-size: 3vH; 
+}
+
+img{
+	width:50%;
+	margin-top: 4vW;
+	margin-left: 3vW;
+	margin-bottom: 0;
+	display: block;
+	/*float: left;
+	clear: both;*/
+}
+
+img + * { margin-top: 4vw; }
+
+figcaption {
+	font-size: 2vh;	
+	position: relative;
+}
+
+figcaption:nth-of-type(odd) {
+	width: 41%;
+	bottom: 25vW;
+	left: 50vW;
+	text-transform: uppercase;
+	text-align: right;
+	padding-left: 1vW;
+}
+
+figcaption:nth-of-type(odd):after {
+    content: " ";
+    display: block;
+    border-bottom: 2px solid #545454;
+    margin: 1vW 1vW 0 5vW;
+  }
+
+figcaption:nth-of-type(even) {
+	width: 40%;
+	bottom: 20vW;
+	left: 40vW;
+	text-align: justify;
+	z-index: 2;
+	background-color: #9D8485;
+	padding: 3vW;
+	-webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+figcaption:nth-of-type(even) + * {
+	margin-top: -11vW;
+}
+
+figcaption:nth-of-type(odd) + * {
+	margin-top: -4vW;
+}
+
+
+section:first-of-type img, video {
+	width: 100%;
+	margin: 0;
+}
+
+/*@media only screen and (max-width: 480px) {
+	figcaption {
+		position: static;
+		width: 100%;
+		text-align: left;
+		left: 0px;
+
+	}
+
+	img {
+		width: 100%;
+		margin-right: 2vW;
+	}
+}*/
+
+
+blockquote { 
+	font-family: 'Playfair Display', serif;
+	margin-right: 8vW;
+	margin-left: 8vW;
+	padding: 3vW;
+	text-align: center;
+    border-bottom: 1px solid #545454;
+    border-top: 1px solid #545454;
+    font-size: 6vH;
+    color: #7A6667;
+}
+
+blockquote > span {text-transform: uppercase;}
+
+blockquote q, blockquote q span {
+	text-transform: uppercase;
+	color: white;
+	background-color: black;
+	line-height: 1.5;
+	quotes: none;
+}
+
+blockquote q:before {
+	background-image: url(open-quote.png);
+	background-size: contain;
+    display: inline-block;
+    width: 7vW; 
+    height: 7vh;
+    background-repeat: no-repeat;
+    content:"";
+    margin-bottom: -0.9vW;
+}
+
+
+blockquote q:after { 
+	background-image: url(close-quote.png);
+	background-size: contain;
+    display: inline-block;
+    width: 7vW; 
+    height: 7vh;
+    background-repeat: no-repeat;
+    content:"";
+    margin-bottom: -0.9vW;
+}
+
+
+p.quoteAuthor {
+	font-family: 'Martel Sans', sans-serif;
+	margin-top: 1vW;
+	font-size: 2vW;
+	font-weight: 100;
+}
+
+section, article, div, blockquote {
+	margin-bottom: 3vW;
+}

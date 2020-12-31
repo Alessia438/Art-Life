@@ -600,9 +600,25 @@ SELECTORNAV STICKY PER ISSUE1, ISSUE2, ISSUE3 E ISSUE4 */
 	overflow: scroll;
 }
 
-#docuContent h1{padding-top: 5vw;}
+#docuContent h1{
+	padding-top: 5vw;
+	text-align: center;
+}
 
-#bodoniClass, #libertyClass, #bauhausClass, #the1980sClass, #stile1saraClass, #stile2saraClass {display:block;}
+#docuContent h2{
+	padding-top: 4vw;
+    	padding-bottom: 2vw;
+	text-align: center;
+}
+
+#docuContent h3{
+    padding-bottom: 2vw;
+    padding-top: 3vw;
+}
+
+#docuContent p{text-align: justify;}
+
+#bodoniClass, #libertyClass, #bauhausClass, #the1980sClass, #ninetiesClass, #minimalFutureClass {display:block;}
 
 div#bookmarks {
 	display: flex;
@@ -658,15 +674,19 @@ div#bookmarks {
     background-size: 105%;
 }
 
-#bookmarks .stile1sara {
-    background-image: url(painting.png);
+#bookmarks .nineties {
+    background-image: url(nineties/90spattern2.jpg);
     background-position: center;
-    background-size: 160%;
+    background-size: 100%;
+    color: white;
+    font-weight: 600;
 }
 
-#bookmarks .stile2sara {
-    background-image: url(90spattern2.jpg);
-    color: white;
+#bookmarks .minimalFuture {
+    background-image: url(minimalFuture/painting.png);
+    background-position: center;
+    background-size: 90%;
+    font-weight: 600;
 }
 
 .docuFooter {
@@ -685,6 +705,105 @@ div#bookmarks {
     /*position: fixed;*/ /* con position: fixed il footer nasconde parte del testo della pagina */
     bottom: 0;
 }
+
+
+/*////inizio slide show////////*/
+
+.Slidecontainer {
+  position: relative;
+  margin: auto;
+  max-width: 40vw;
+  max-height: 40vw;
+  overflow: hidden;
+  box-shadow: 1px 1px 4px 1px rgba(9, 58, 45, 0.5);
+}
+
+.Slidecontainer * { margin-left: 0; margin-right: 0;}
+
+.mySlides {
+  display: none;
+  text-align: center;
+  height: 20vw;
+  margin-bottom: 0.5vw;
+  margin-top: 1vw;
+}
+
+.mySlides img {
+  width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.numbertext {
+  color: #000000;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.slideRow {
+  width: 35vw; 
+  margin: auto;
+}
+
+.slideRow:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.slideColumn {
+  float: left;
+  width: 16.66%;
+}
+
+.slideDemo {
+  opacity: 0.6;
+}
+
+.active,
+.slideDemo:hover {
+  opacity: 1;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: .8s;
+  animation-name: fade;
+  animation-duration: .8s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .7} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .7} 
+  to {opacity: 1}
+}
+
+@media screen and (max-width: 799px) {
+  .Slidecontainer {
+    max-width: 80vw;
+    max-height: 60vw;
+  }
+
+  .mySlides { height: 40vw; }
+
+  .slideRow { width: 35vw; }
+
+}
+
+/*////fine slide show///////*/
+
+
+
 
 @media screen and (max-width: 799px) {
   #flex-container-doc {
@@ -707,8 +826,9 @@ div#bookmarks {
 		margin-bottom: 1em;
 	}
 
-	#bodoniClass, #libertyClass, #bauhausClass, #the1980sClass, #stile1saraClass, #stile2saraClass {display:none;}
-	.bodoni {
+	#bodoniClass, #libertyClass, #bauhausClass, #the1980sClass, #ninetiesClass, #minimalFutureClass {display:none;}
+	
+  .bodoni {
 		background-image: url(aminta_cover_page.jpg);
     color: white;
 	}
@@ -733,15 +853,19 @@ div#bookmarks {
     background-size: 50%;
   }
 
-	.stile1sara {
-	    background-image: url(painting.png);
-	    background-position: center;
-	    background-size: 160%;
+	.nineties {
+	  background-image: url(nineties/90spattern2.jpg);
+    background-position: center;
+    background-size: 100%;
+    color: white;
+    font-weight: 600;
 	}	
 	
-	.stile2sara {
-		background-image: url(90spattern2.jpg);
-		color: white;
+	.minimalFuture {
+		background-image: url(minimalFuture/painting.png);
+    background-position: center;
+    background-size: 90%;
+    font-weight: 600;
 	}
 	
 	div#bookmarks{display: none;}
@@ -918,25 +1042,42 @@ div#bookmarks {
 
 
 button#prev, button#next  {
-  background: rgba(0,0,0,0.4);
-  padding-left: 5px;
-  padding-right: 5px;
+  background-color: rgba(255,255,255,0.3);
   border: 0;
-  border-radius: 15%;
+  border-radius: 50%;
+  height: 3vW;
+  width: 3vw;
+  background-size: 2.5vw 2.5vw;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 50%;
+  z-index: 3;
 }
 
 #prev {
-  top: 15px;
-  z-index: 1;
-  position: absolute;
-  left: 2px;
+  background-image: url('arrow-angle-pointing-to-left.svg');
+  left: 1vw;
 }
   
 #next {
-  top: 15px;
-  z-index: 1;
-  position: absolute;
-  right: 2px;
+  background-image: url('right-arrow-angle.svg'); 
+  right: 2vw;
+}
+
+@media screen and (max-width: 799px) {
+  button#prev, button#next {
+    position: sticky;
+    top: 60vh;
+    height: 20px;
+    width: 20px;
+    background-size: 18px;
+  }
+
+  #next { left: 100vw; }
+
+  #prev { left: 0; }
+
 }
 
 
@@ -961,6 +1102,7 @@ button#prev, button#next  {
 
 [onClick] {cursor:pointer;}
 span[onclick] {cursor:pointer;}
+span[onclick]:hover{background-color:#B5D3E7;}
 
 #wikiButton {
   border: solid 1px #000000;
@@ -969,41 +1111,39 @@ span[onclick] {cursor:pointer;}
   display: inline-block;
 }
 
-/*
-#listIssue {
-  width: 350px;
-  padding-inline-start: 0px;
-}
-*/
-
 #listIssue>li {
-  font-size: 17px;
-  border: 2px solid black;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  /*padding-left: 5px;*/
-  margin-bottom: 5px;
-  text-align: center;
+	font-size: 17px;
+	border: 2px solid black;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	/*padding-left: 5px;*/
+	margin-bottom: 5px;
+	text-align: center;
+	/*text-transform: uppercase;*/
 }
 
 #listIssue > li > ul{
-  font-size: 16px;
-  list-style-type: none;
-  border: 1px solid black;
-  /*padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 5px;*/
-  margin-top: 5px;
-  padding-inline-start: 0px;
+	font-size: 16px;
+	list-style-type: none;
+	border: 1px solid black;
+	margin-top: 5px;
+	padding-inline-start: 0px;
+	text-align: right;
+	/*text-transform: capitalize;*/
 }
 
 #listIssue > li > ul > li {margin-bottom: 3px;}
 
 #listIssue > li > ul > li{
-    margin-bottom: 1em;
-    border-bottom: 1px solid;
-    padding-bottom: 0.5em;
+	margin-bottom: 1em;
+	border-bottom: 1px solid;
+	padding-bottom: 0.5em;
+	/*text-transform: initial;*/
+	text-align: center;
+	transition: all .1s ease-in-out;
 }
+
+#listIssue > li > ul > li:hover{transform: scale(1.005);}
 
 li ul li{font-size: 15px;}
 
@@ -1011,17 +1151,17 @@ button#sort, button#appearanceSort, button#frequencySort {
 	font-size: 12px;
 	letter-spacing: 2px;
 	padding: 1em 1em;
-  border-color: aquamarine;
+	border-color: aquamarine;
 	color: aquamarine;
-  border: 2px solid;
+	border: 2px solid;
 	background: transparent;
 }
 
 button#sort:hover, button#appearanceSort:hover, button#frequencySort:hover {
-  background-color:aquamarine;
-  border-color: aquamarine;
-  color: white;	
-  font-weight:bold;
+	background-color:aquamarine;
+	border-color: aquamarine;
+	color: white;	
+	font-weight:bold;
 }
 
 iframe {
