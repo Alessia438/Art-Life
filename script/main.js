@@ -233,7 +233,7 @@ function verifyMetaHighlight(n){
 						found++;
 				}
 				if (curUl.style.display=='block'){
-					if(n>=1 && n==curUl.getAttribute('data-parent').charAt(curUl.getAttribute('data-parent').length-1)){
+					if(n>=1 && m>=1 && n==curUl.getAttribute('data-parent').charAt(curUl.getAttribute('data-parent').length-1)){
 						curUl.style.backgroundColor='#d8f3e6';
 					}
 					else{curUl.style.backgroundColor='white';}
