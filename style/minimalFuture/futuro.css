@@ -52,15 +52,14 @@ span, time { font-weight: 600; }
 
 
 body{
-	/*background-image: ; pattern ?*/ 
+	background-color: #F6F4F5;
 	font-family: 'Open Sans', sans-serif;
-	/*font-weight: normal;
-	font-style: normal;
-	margin-right: 20vW;
+	padding: 0vw 4vw 3vw 4vW;
+	/*margin-right: 20vW;
 	margin-left: 30vW;
-	margin-top: 20vW;*/
+	margin-top: 20vW;
 	margin-bottom: 3vW;
-	/*display: flex;
+	display: flex;
 	flex-direction: column;*/
 }
 
@@ -102,35 +101,25 @@ h3::first-letter {
 .byline, .publicationDate {
 
 }
-/*
-#heading img {
-	border-radius: 50%;
-	height: 14em;
-        width: 14em;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-}
+
+
 
 p.byline {
-	font-size: 0.7em;
-	line-height: 3rem;
+	
 }
 
-p.byline .person {font-size: 2rem;;}
+p.byline .person {;}
 
-p.byline .person::before{
-	content: "\a";
-    	white-space: pre;
-}
-p.byline .person::after{
-	content: "\a";
-    	white-space: pre;
-}
 
 p.subtitle {
-	font-size: 1.02em;
-	line-height:2.5em;
+	font-family: 'Martel Sans', sans-serif;
+	font-weight: 600;
+	font-size: 4.5vh;
+	text-align: center;
+}
+
+p.subtitle span {
+	text-shadow: 0px 1px 1px;
 }
 
 p.publicationDate {
@@ -138,14 +127,14 @@ p.publicationDate {
 	margin-bottom:5em;
 }
 
-}*/
+}
 
 
 
 p {
 	line-height: 1.15;
-	/*text-align:justify;
-	letter-spacing: 0.03em;
+	text-align:justify;
+	/*letter-spacing: 0.03em;
 	word-spacing: 0.04em;*/
 	-webkit-hyphens: auto;
 	-ms-hyphens: auto;
