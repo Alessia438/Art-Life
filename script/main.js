@@ -703,7 +703,7 @@ function showSlides() {
 function currentSlide(n, m) {showCurSlide(indexList[m-1]=n, m);}
 
 function showCurSlide(n, m) {
-	clearTimeout(curTimeOut);
+	clearTimeout(curTimeout);
 	var i;
 	var slides = document.getElementsByClassName('mySlides'+m);
 	var dots = document.getElementsByClassName('slideDemo'+m);
