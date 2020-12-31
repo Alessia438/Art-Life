@@ -135,6 +135,25 @@ figcaption {
 	position: relative;
 }
 
+/*@media only screen and (max-width: 480px) {
+	figcaption {
+		position: static;
+		width: 100%;
+		text-align: left;
+		left: 0px;
+
+	}
+
+	img {
+		width: 100%;
+		margin-right: 2vW;
+	}
+}*/
+
+
+
+
+
 
 
 /* SECTIONS /////////////////////////////////////////////////////////*/
@@ -323,21 +342,6 @@ figure:nth-of-type(even) + * /*   , img:nth-of-type(even):not(:first-child) + fi
 
 
 
-/*@media only screen and (max-width: 480px) {
-	figcaption {
-		position: static;
-		width: 100%;
-		text-align: left;
-		left: 0px;
-
-	}
-
-	img {
-		width: 100%;
-		margin-right: 2vW;
-	}
-}*/
-
 
 /* BLOCKQUOTES //////////////////////////////////////////*/
 blockquote { 
@@ -391,4 +395,63 @@ p.quoteAuthor {
 	margin-top: 1vW;
 	font-size: 2vW;
 	font-weight: 100;
+}
+
+
+
+
+
+/* COVER PAGE //////////////////////////////////////*/
+
+#coverText h1:before { 
+    background-color: #9D8485;
+    content: "";
+    width: 60vw;
+    height: 15vw;
+    display: block;
+    margin-bottom: -7vw;
+    margin-left: -5vw;
+} 
+
+#coverText h1 {
+	font-size: 9vw;
+    background-image: none;
+    font-weight: bold;
+    margin-left: 5vw;
+    margin-right: 0;
+}
+
+#coverText h1:after {
+	content: "";
+	background-image: url(cover-image.jpg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 20vw;
+	width: 30vw;
+	display: block;
+	margin-top: -3vw;
+	margin-left: 70%;
+}
+
+#coverText p {
+	margin-top: 3vw;
+	margin-bottom: 3vw;
+}
+
+#coverText p:nth-of-type(1) {
+	width: 30%;
+	margin-bottom: 15vw;
+	margin-left: 20%;
+}
+
+#coverText p:nth-of-type(1):before {
+	content: "";
+	background-image: url(cover-art1.jpg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 15vw;
+	width: 20vw;
+	display: block;
+	margin-bottom: -10vw;
+	margin-left: -20%;
 }
