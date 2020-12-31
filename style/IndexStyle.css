@@ -1139,7 +1139,10 @@ span[onclick]:hover{background-color:#B5D3E7;}
 	/*text-transform: capitalize;*/
 }
 
-#listIssue > li > ul > li {margin-bottom: 3px;}
+#listIssue > li > ul > li {
+	margin-bottom: 3px;
+	background-color: white;
+}
 
 #listIssue > li > ul > li{
 	margin-bottom: 1em;
