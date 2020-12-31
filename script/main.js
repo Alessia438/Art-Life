@@ -673,6 +673,7 @@ function showStyleDocu(a) {
 
 /*///////prova per slideshow///////*/
 var indexList= [0, 0];
+var curTimeout; //= setTimeout(showSlides, 2500);
 
 function showSlides() {
 	for (var n = 0; n<indexList.length; n++){
@@ -690,28 +691,33 @@ function showSlides() {
 		slides[indexList[n]-1].style.display = "block";  
 		dots[indexList[n]-1].className += " active";
 	}
-	setTimeout(showSlides, 2500);
+	curTimeout = setTimeout(showSlides, 2500);
+	// setTime();
 }
 
-function currentSlide(n, m) {
-  showCurSlide(indexList[m-1]=n, m);
-}
+/*function setTime(){
+	clearTimeout(curTimeOut);
+	var curTimeOut = setTimeout(showSlides, 2500);
+}*/
 
+function currentSlide(n, m) {showCurSlide(indexList[m-1]=n, m);}
 
 function showCurSlide(n, m) {
-  var i;
-  var slides = document.getElementsByClassName('mySlides'+m);
-  var dots = document.getElementsByClassName('slideDemo'+m);
-  if (n > slides.length) {indexList[m-1] = 1}
-  if (n < 1) {indexList[m-1] = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[indexList[m-1]-1].style.display = "block";
-  dots[indexList[m-1]-1].className += " active";
+	clearTimeout(curTimeOut);
+	var i;
+	var slides = document.getElementsByClassName('mySlides'+m);
+	var dots = document.getElementsByClassName('slideDemo'+m);
+	if (n > slides.length) {indexList[m-1] = 1}
+	if (n < 1) {indexList[m-1] = slides.length}
+	for (i = 0; i < slides.length; i++) {
+	slides[i].style.display = "none";
+	}
+	for (i = 0; i < dots.length; i++) {
+	dots[i].className = dots[i].className.replace(" active", "");
+	}
+	slides[indexList[m-1]-1].style.display = "block";
+	dots[indexList[m-1]-1].className += " active";
+	curTimeout = setTimeout(showSlides, 2500);
 }
 
 
