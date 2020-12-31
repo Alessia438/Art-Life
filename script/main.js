@@ -166,7 +166,6 @@ function changeArticleCover(articleNum, issueNum){
 	var c = window.parent.document.getElementById(issueNum).children,
 	myOrigin = window.parent.document.getElementById("Origin");
 	changeArticleCommon(c, articleNum, myOrigin, true, 'cover_pages/cover_page'+issueNum.charAt(issueNum.length-1)+'.html', issueNum);
-	//verifyMetaHighlight(articleNum.charAt(articleNum.length-1));
 }
 
 function prevArticle() {
@@ -487,12 +486,6 @@ function showLiChildren(myListId, instanceId){
 		for (var child of e) {
 			child.style.display = 'block';
 			var f = child.children;
-			/*
-			for (var g of f){
-				g.style.display = 'none'; 
-			}
-			*/
-
 			// non mostrare i figli <li> degli <ul> tranne il primo figlio di ogni <ul>, cioè il link a wikipedia
 			for (var g = 0; g < f.length; g++) {
 				if (g === 0) {f[g].style.display = "inline-block";}
@@ -501,17 +494,21 @@ function showLiChildren(myListId, instanceId){
 
 		}
 	}
+	for (var a=0; a<document.getElementsByClassName('article').length; a++){
+		var curArt = document.getElementsByClassName('article')[a];
+		if (curArt.style.display=='block'){var b=curArt.classList[0].charAt(curArt.classList[0].length-1);}
+	}
+	verifyMetaHighlight(b);
 }
 
 function showUlChildren(myListId, instanceId, event){
-	//var e = document.getElementById(myListId).getElementsByClassName(instanceId)[0].children;
 	var e = document.getElementById(myListId).querySelector('[class="'+instanceId+'"]').children;
 	var allArt = document.getElementsByClassName('article');
 			var curArt= window.location.href.split('#')[1].replace('article', '')-((document.querySelector('[id^="issue"]').id.charAt(document.querySelector('[id^="issue"]').id.length-1)-1)*5)
 	if(e[1].style.display == 'block'){
 		for (var i=1; i<e.length; i++){
 			e[i].style.display = 'none';
-			e[i].style.backgroundColor = "transparent";
+			e[i].style.backgroundColor = "white";
 		}
 	}
 	else{
