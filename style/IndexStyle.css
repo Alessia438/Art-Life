@@ -599,6 +599,7 @@ SELECTORNAV STICKY PER ISSUE1, ISSUE2, ISSUE3 E ISSUE4 */
 	order: 1;
 	margin-left: 0.05em;
 	overflow: scroll;
+	padding-bottom:4em;
 }
 
 #docuContent h1{
@@ -1307,6 +1308,7 @@ blockquote {
 
 #disclaimer, #disclaimerH1 {padding-left: 2vw; }
 
+#disclaimer{padding-bottom:4em;}
 
 a.link-to-break {
 	/* These are technically the same, but use both */
