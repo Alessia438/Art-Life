@@ -814,17 +814,17 @@ img[class^="slideDemo"]{
 
 
 @media screen and (max-width: 799px) {
-  #flex-container-doc {
-      display: flex;
-      flex-direction: column;
-      height: 85vh; /*IMPORTANTE PER TENERE IL FOOTER IN BASSO */
-  }
+	#flex-container-doc {
+		display: flex;
+		flex-direction: column;
+		height: 85vh; /*IMPORTANTE PER TENERE IL FOOTER IN BASSO */
+	}
 
 	#docuContent{
 		align-self: center;
 		padding: 4vw;
 		width: 90%;
-    flex: 1;
+		flex: 1;
 	}
 
 	div#docuContent h1 {
@@ -833,12 +833,14 @@ img[class^="slideDemo"]{
 		font-size: 1.4em;
 		margin-bottom: 1em;
 	}
+	
+	#docuContent p {word-break: break-all;}
 
 	#bodoniClass, #libertyClass, #bauhausClass, #the1980sClass, #ninetiesClass, #minimalFutureClass {display:none;}
 	
-  .bodoni {
+	.bodoni {
 		background-image: url(aminta_cover_page.jpg);
-    color: white;
+		color: white;
 	}
 
 	.liberty{
@@ -849,31 +851,31 @@ img[class^="slideDemo"]{
 		border-style: outset;
 	}
 	
-  .bauhaus{
-    background-image: url(pattern-1.jpg);
-    color: #990000;
-  }
+	.bauhaus{
+		background-image: url(pattern-1.jpg);
+		color: #990000;
+	}
 
-  .the1980s{
-    background-image: url(pattern-2copia.jpg);
-    background-position: center;
-    background-repeat:
-    background-size: 50%;
-  }
+	.the1980s{
+		background-image: url(pattern-2copia.jpg);
+		background-position: center;
+		background-repeat:
+		background-size: 50%;
+	}
 
 	.nineties {
-	  background-image: url(nineties/90spattern2.jpg);
-    background-position: center;
-    background-size: 100%;
-    color: white;
-    font-weight: 600;
+		background-image: url(nineties/90spattern2.jpg);
+		background-position: center;
+		background-size: 100%;
+		color: white;
+		font-weight: 600;
 	}	
 	
 	.minimalFuture {
 		background-image: url(minimalFuture/painting.png);
-    background-position: center;
-    background-size: 90%;
-    font-weight: 600;
+		background-position: center;
+		background-size: 90%;
+		font-weight: 600;
 	}
 	
 	div#bookmarks{display: none;}
