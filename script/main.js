@@ -213,7 +213,7 @@ function nextArticle() {
 }
 
 function hidePrevAndNext(n) {
-	if (document.getElementById("coverPage"+ n).style.display = "block") {
+	if (document.getElementById("coverPage"+ n).style.display == "block") {
 		document.getElementById("prev").style.display = "none";
 		document.getElementById("next").style.display = "none";
 	}
