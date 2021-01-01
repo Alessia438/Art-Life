@@ -212,7 +212,6 @@ function nextArticle() {
 	}
 }
 
-
 function hidePrevAndNext(n) {
 	if (document.getElementById("coverPage"+ n).style.display = "block") {
 		document.getElementById("prev").style.display = "none";
@@ -438,12 +437,10 @@ function goToMetadata(curListId, ulClass){
 
 	// animazione scomparsa colore background dopo 3 secondi:
 	var backgroundAnimation = window.parent.document.createElement('style'); // può andare in contrsto con la funzione che cambia lo stile dell'articolo?
-    backgroundAnimation.type = 'text/css';
-
+	backgroundAnimation.type = 'text/css';
 	var keyFramePrefixes = ["-webkit-", "-o-", "-moz-", ""];
 	var keyFrames = [];
 	var textNode = null;
-
 	for (var i in keyFramePrefixes) {
 		keyFrames = '@'+keyFramePrefixes[i]+'keyframes background-fade {'+
 		'80% { background-color: #FFDAB9; }'+
@@ -451,26 +448,25 @@ function goToMetadata(curListId, ulClass){
 		'}';
 		var rules = window.parent.document.createTextNode(keyFrames);
 	}
-
 	backgroundAnimation.appendChild(rules);
-
 	window.parent.document.getElementsByTagName("head")[0].appendChild(backgroundAnimation);
 
 	e.style.animation = 'background-fade 3s forwards';
 	e.style.WebkitAnimation = 'background-fade 3s forwards';
-    e.style.OAnimation = 'background-fade 3s forwards';
-    e.style.MozAnimation = 'background-fade 3s forwards';
+	e.style.OAnimation = 'background-fade 3s forwards';
+	e.style.MozAnimation = 'background-fade 3s forwards';
 
-    setTimeout(function() {
-    	e.style.backgroundColor = 'transparent';
-    	e.style.WebkitAnimationName = '';
-    	e.style.animation = '';
-        e.style.OAnimation = '';
-        e.style.MozAnimation = '';
-        window.parent.document.getElementsByTagName("head")[0].removeChild(backgroundAnimation);
-    	}, 10000); // we have to reset the name of animation otherwise another call to background-fade wont have any effect
-	
-     event.stopPropagation();
+	setTimeout(function() {
+		e.style.backgroundColor = 'transparent';
+		e.style.WebkitAnimationName = '';
+		e.style.animation = '';
+		e.style.OAnimation = '';
+		e.style.MozAnimation = '';
+		window.parent.document.getElementsByTagName("head")[0].removeChild(backgroundAnimation);
+	}, 10000); // we have to reset the name of animation otherwise another call to background-fade wont have any effect
+	var curArt= window.location.href.split('#')[1].replace('article', '')-((document.querySelector('[id^="issue"]').id.charAt(document.querySelector('[id^="issue"]').id.length-1)-1)*5);
+	verifyMetaHighlight(curArt);
+     	event.stopPropagation();
 }
 
 function showLiChildren(myListId, instanceId){
