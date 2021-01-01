@@ -458,7 +458,8 @@ function goToMetadata(curListId, ulClass){
 	e.style.MozAnimation = 'background-fade 3s forwards';
 
 	setTimeout(function() {
-		e.style.backgroundColor = 'transparent';
+		//e.style.backgroundColor = 'transparent';
+		e.style.backgroundColor = 'cadetblue';
 		e.style.WebkitAnimationName = '';
 		e.style.animation = '';
 		e.style.OAnimation = '';
