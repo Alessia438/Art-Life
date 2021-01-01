@@ -464,8 +464,9 @@ function goToMetadata(curListId, ulClass){
 		e.style.MozAnimation = '';
 		window.parent.document.getElementsByTagName("head")[0].removeChild(backgroundAnimation);
 	}, 10000); // we have to reset the name of animation otherwise another call to background-fade wont have any effect
-	var curArt= window.location.href.split('#')[1].replace('article', '')-((document.querySelector('[id^="issue"]').id.charAt(document.querySelector('[id^="issue"]').id.length-1)-1)*5);
-	verifyMetaHighlight(curArt);
+	var parentPage = window.parent.document,
+	    issueId = parentPage.querySelector('[id^="issue"]').id;
+	verifyMetaHighlight(parentPage.location.href.split('#')[1].replace('article', '')-((issueId.charAt(issueId.length-1)-1)*5));
      	event.stopPropagation();
 }
 
