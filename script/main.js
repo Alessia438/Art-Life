@@ -540,10 +540,10 @@ function highlight(spanId, iFrameN, event) {
 
 	var elmnt = document.getElementById(iFrameN).contentWindow.document;
 	var curInstance = elmnt.getElementById(spanId);
-	curInstance.setAttribute("name", "onView");
-	curInstance.style.backgroundColor = "#ffff00";
+	//curInstance.setAttribute("name", "onView");
+	//curInstance.style.backgroundColor = "#ffff00";
 	curInstance.scrollIntoView(true);
-	// sostituire curInstance.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"}); ?? In alcuni browser non va
+	// sostituire curInstance.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"}); // ?? In alcuni browser non va
 
 	// animazione scomparsa colore background dopo 10 secondi:
 	var cssAnimation = elmnt.createElement('style'); // può andare in contrsto con la funzione che cambia lo stile dell'articolo?
