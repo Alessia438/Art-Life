@@ -1205,9 +1205,34 @@ iframe {
 	z-index: 100;
 }
 
+body#cover {
+	background-color: bisque;
+	background-image: url(https://media.istockphoto.com/illustrations/aged-newspaper-background-illustration-id836677210);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-blend-mode: overlay;
+}
 
+#coverText p {
+	padding-bottom: 1.5em;
+	font-size: 1.2em;
+	text-transform: lowercase;
+}
 
+#coverText p:first-letter {text-transform: capitalize;}
 
+#coverText p:hover {text-decoration: underline;}
+
+#coverText h1 {
+    padding-bottom: 2em;
+    padding-top: 1em;
+}
+
+div#coverText {
+    text-align: center;
+    padding-left: 2.5em;
+    padding-right: 2.5em;
+}
 
 
 /* ABOUT ///////////////////////////////////////////////////////////////////////////////////////////////////////////// */
