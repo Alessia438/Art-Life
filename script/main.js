@@ -541,7 +541,7 @@ function highlight(spanId, iFrameN, event) {
 	var elmnt = document.getElementById(iFrameN).contentWindow.document;
 	var curInstance = elmnt.getElementById(spanId);
 	//curInstance.setAttribute("name", "onView");
-	//curInstance.style.backgroundColor = "#ffff00";
+	curInstance.style.backgroundColor = "#ffff00";
 	curInstance.scrollIntoView(true);
 	// sostituire curInstance.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"}); // ?? In alcuni browser non va
 
