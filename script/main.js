@@ -430,7 +430,7 @@ function goToMetadata(curListId, ulClass){
 	var e = window.parent.document.getElementById(curListId).getElementsByClassName(ulClass)[0];
 	e.style.display = 'block';
 	var f = e.children;
-	f[0].style.display = 'inline-block;'
+	f[0].style.display = 'inline-block';
 	for (var g=1; g<f.length; g++){f[g].style.display = 'block';}
 	e.style.backgroundColor = "#FFDAB9";
 	e.scrollIntoView(true);
