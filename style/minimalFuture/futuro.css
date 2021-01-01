@@ -86,7 +86,10 @@ h1 {
 }
 h1::first-letter { font-weight: 600; }
 
-h2 { font-size: 5vH; }
+h2 { 
+	font-size: 5vH;
+	margin top: 2vw;
+}
 
 h3 { 
 	font-size: 4vH;
@@ -97,15 +100,94 @@ h3::first-letter {
 	font-weight: 600;
 }
 
+section, article, div, blockquote {
+	margin-bottom: 3vW;
+}
+
+p {
+	line-height: 1.15;
+	text-align:justify;
+	/*letter-spacing: 0.03em;
+	word-spacing: 0.04em;*/
+	-webkit-hyphens: auto;
+	-ms-hyphens: auto;
+	hyphens: auto;
+	margin: 0 4vW 1vW 3vW;
+	font-size: 3vH; 
+}
+
+
+
+img{
+	width:50%;
+	margin-top: 4vW;
+	margin-left: 3vW;
+	margin-bottom: 0;
+	display: block;
+	/*float: left;
+	clear: both;*/
+}
+
+img + * { margin-top: 4vw; }
+
+figcaption {
+	font-size: 2vh;	
+	position: relative;
+}
+
+/*@media only screen and (max-width: 480px) {
+	figcaption {
+		position: static;
+		width: 100%;
+		text-align: left;
+		left: 0px;
+
+	}
+
+	img {
+		width: 100%;
+		margin-right: 2vW;
+	}
+}*/
+
+
+
+
+
+
+
+/* SECTIONS /////////////////////////////////////////////////////////*/
 
 section:first-of-type {
 	display: flex;
 	flex-direction: column;
 }
 
+section:first-of-type:before { height: 0; }
+
 section:first-of-type > h1 {order: 1;}
 
-section:first-of-type > figure {order: 2;}
+section:first-of-type > figure {
+	order: 2;
+	display: flex;
+	flex-direction: column;
+}
+
+section:first-of-type > figure > figcaption {
+    width: 100%;
+    position: static;
+    text-align: justify; 
+    padding-left: 0; 
+    order: 99; 
+    margin-top: 2vw;
+}
+
+section:first-of-type > figure > figcaption:after {
+    content: " ";
+    display: block;
+    border-bottom: 1px solid #545454;
+    margin: 1vW 7vW 1vw 7vW;
+}
 
 section:first-of-type > .subtitle {order: 3;}
 
@@ -119,14 +201,31 @@ section:first-of-type > .lastModification {order: 7;}
 
 section:first-of-type > .publicationPlace {order: 8;}
 
-
-
 section:first-of-type img, video {
 	width: 100%;
 	margin: 0;
 }
 
 
+
+section:before {
+	margin-left: 25%;
+	margin-bottom: 2vW;
+    margin top: 2vw;
+    background-image: url(matita-verde.png);
+    background-size: cover;
+    background-position: center;
+    display: block;
+    height: 10vh;
+    width: 40vw;
+    background-repeat: no-repeat;
+    content: "";    
+}
+
+
+
+
+/* FIRST SECTION Ps /////////////////////////////7*/
 
 .byline, .publicationDate, .publicationTime, .publicationPlace, .lastModification {
     font-size: 2.5vh;
@@ -160,58 +259,9 @@ p.subtitle span, p.subtitle time  {
 
 
 
-p {
-	line-height: 1.15;
-	text-align:justify;
-	/*letter-spacing: 0.03em;
-	word-spacing: 0.04em;*/
-	-webkit-hyphens: auto;
-	-ms-hyphens: auto;
-	hyphens: auto;
-	margin: 0 4vW 1vW 3vW;
-	font-size: 3vH; 
-}
-
-img{
-	width:50%;
-	margin-top: 4vW;
-	margin-left: 3vW;
-	margin-bottom: 0;
-	display: block;
-	/*float: left;
-	clear: both;*/
-}
-
-img + * { margin-top: 4vw; }
-
-figcaption {
-	font-size: 2vh;	
-	position: relative;
-}
-
-section:first-of-type > figure {
-	display: flex;
-	flex-direction: column;
-}
-
-section:first-of-type > figure > figcaption {
-    width: 100%;
-    position: static;
-    text-align: justify; 
-    padding-left: 0; 
-    order: 99; 
-    margin-top: 2vw;
-}
-
-section:first-of-type > figure > figcaption:after {
-    content: " ";
-    display: block;
-    border-bottom: 1px solid #545454;
-    margin: 1vW 7vW 1vw 7vW;
-  }
 
 
-
+/* ODD FIGURES AND STAND-ALONE IMAGES /////////////////////////////////////////////////////*/
 
 figure:nth-of-type(odd) {
 	display: flex;
@@ -237,6 +287,12 @@ figure:nth-of-type(odd) > figcaption:after {
     margin: 1vW 1vW 0 5vW;
 }
 
+/*figure:nth-of-type(odd) + * {
+	margin-top: -4vW;
+}*/
+
+
+
 img:nth-of-type(odd):not(:first-child) {float:right; max-height: 26vw; object-fit: contain;}
 
 img:nth-of-type(odd):not(:first-child) + figcaption { 
@@ -257,6 +313,12 @@ img:nth-of-type(odd):not(:first-child) + figcaption:after {
 }
 
 
+
+
+
+
+
+/* EVEN FIGURES AND STAND-ALONE IMAGES ////////////////////////////////*/
 figure:nth-of-type(even) > figcaption, img:nth-of-type(even):not(:first-child) + figcaption {
 	width: 40%;
 	bottom: 20vW;
@@ -270,50 +332,7 @@ figure:nth-of-type(even) > figcaption, img:nth-of-type(even):not(:first-child) +
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
 }
 
-figure:nth-of-type(even) + *, img:nth-of-type(even):not(:first-child) + figcaption + *  {
-	margin-top: -11vW;
-}
-
-/*figure:nth-of-type(odd) + * {
-	margin-top: -4vW;
-}*/
-
-
-
-
-
-img:nth-of-type(odd) {
-	float: right;
-}
-
-img:nth-of-type(odd) > figcaption {
-	width: 41%;
-	text-transform: uppercase;
-	text-align: right;
-	padding-left: 1vW;
-}
-
-img:nth-of-type(odd) > figcaption:after {
-    content: " ";
-    display: block;
-    border-bottom: 2px solid #545454;
-    margin: 1vW 1vW 0 5vW;
-  }
-
-img:nth-of-type(even) > figcaption {
-	width: 40%;
-	bottom: 20vW;
-	left: 40vW;
-	text-align: justify;
-	z-index: 2;
-	background-color: #9D8485;
-	padding: 3vW;
-	-webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
-}
-
-img:nth-of-type(even) + * {
+figure:nth-of-type(even) + * /*   , img:nth-of-type(even):not(:first-child) + figcaption + *   */  {
 	margin-top: -11vW;
 }
 
@@ -322,22 +341,9 @@ img:nth-of-type(even) + * {
 
 
 
-/*@media only screen and (max-width: 480px) {
-	figcaption {
-		position: static;
-		width: 100%;
-		text-align: left;
-		left: 0px;
-
-	}
-
-	img {
-		width: 100%;
-		margin-right: 2vW;
-	}
-}*/
 
 
+/* BLOCKQUOTES //////////////////////////////////////////*/
 blockquote { 
 	font-family: 'Playfair Display', serif;
 	margin-right: 8vW;
@@ -391,17 +397,61 @@ p.quoteAuthor {
 	font-weight: 100;
 }
 
-section, article, div, blockquote {
-	margin-bottom: 3vW;
+
+
+
+
+/* COVER PAGE //////////////////////////////////////*/
+
+#coverText h1:before { 
+    background-color: #9D8485;
+    content: "";
+    width: 60vw;
+    height: 15vw;
+    display: block;
+    margin-bottom: -7vw;
+    margin-left: -5vw;
+} 
+
+#coverText h1 {
+	font-size: 9vw;
+    background-image: none;
+    font-weight: bold;
+    margin-left: 5vw;
+    margin-right: 0;
 }
 
-section:before {
-	background-image: url(matita-verde.png);
+#coverText h1:after {
+	content: "";
+	background-image: url(cover-image.jpg);
 	background-size: contain;
-    display: block;
-    width: 20vW; 
-    height: 20vh;
-    background-repeat: no-repeat;
-    content:"";
-    /*margin-bottom: -0.9vW;*/
+	background-repeat: no-repeat;
+	height: 20vw;
+	width: 30vw;
+	display: block;
+	margin-top: -3vw;
+	margin-left: 70%;
+}
+
+#coverText p {
+	margin-top: 3vw;
+	margin-bottom: 3vw;
+}
+
+#coverText p:nth-of-type(1) {
+	width: 30%;
+	margin-bottom: 15vw;
+	margin-left: 20%;
+}
+
+#coverText p:nth-of-type(1):before {
+	content: "";
+	background-image: url(cover-art1.jpg);
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 15vw;
+	width: 20vw;
+	display: block;
+	margin-bottom: -10vw;
+	margin-left: -20%;
 }

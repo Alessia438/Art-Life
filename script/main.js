@@ -166,7 +166,6 @@ function changeArticleCover(articleNum, issueNum){
 	var c = window.parent.document.getElementById(issueNum).children,
 	myOrigin = window.parent.document.getElementById("Origin");
 	changeArticleCommon(c, articleNum, myOrigin, true, 'cover_pages/cover_page'+issueNum.charAt(issueNum.length-1)+'.html', issueNum);
-	//verifyMetaHighlight(articleNum.charAt(articleNum.length-1));
 }
 
 function prevArticle() {
@@ -226,20 +225,21 @@ function verifyMetaHighlight(n){
 	else{var listIssueChildren = document.getElementById('listIssue').children;}
 	for (var i=0; i<listIssueChildren.length; i++){
 		for (var l=0; l<listIssueChildren[i].children.length; l++){
-			//var found = false; //1 EERORE?
+			var found = 0; //1 EERORE?
 			for (var m=0; m<listIssueChildren[i].children[l].children.length; m++){
 				var curUl= listIssueChildren[i].children[l].children[m];
+				if(n>=1 && m>=1 && n==curUl.getAttribute('data-parent').charAt(curUl.getAttribute('data-parent').length-1)){//2 EERORE?
+						found++;
+				}
 				if (curUl.style.display=='block'){
 					if(n>=1 && n==curUl.getAttribute('data-parent').charAt(curUl.getAttribute('data-parent').length-1)){
-						//found=true;//2 EERORE?
 						curUl.style.backgroundColor='#d8f3e6';
 					}
-					//else{curUl.style.backgroundColor='transparent';}
 					else{curUl.style.backgroundColor='white';}
 				}
 			}
-			//if (found==true){listIssueChildren[i].children[l].style.backgroundColor='cadetblue';}//3 EERORE?
-			//else{listIssueChildren[i].children[l].style.backgroundColor='white';}//4 EERORE?
+			if (found>0){listIssueChildren[i].children[l].style.backgroundColor='cadetblue';}//3 EERORE?
+			else{listIssueChildren[i].children[l].style.backgroundColor='white';}//4 EERORE?
 		}
 	}
 }
@@ -486,12 +486,6 @@ function showLiChildren(myListId, instanceId){
 		for (var child of e) {
 			child.style.display = 'block';
 			var f = child.children;
-			/*
-			for (var g of f){
-				g.style.display = 'none'; 
-			}
-			*/
-
 			// non mostrare i figli <li> degli <ul> tranne il primo figlio di ogni <ul>, cioè il link a wikipedia
 			for (var g = 0; g < f.length; g++) {
 				if (g === 0) {f[g].style.display = "inline-block";}
@@ -500,17 +494,18 @@ function showLiChildren(myListId, instanceId){
 
 		}
 	}
+	var curArt= window.location.href.split('#')[1].replace('article', '')-((document.querySelector('[id^="issue"]').id.charAt(document.querySelector('[id^="issue"]').id.length-1)-1)*5);
+	verifyMetaHighlight(curArt);
 }
 
 function showUlChildren(myListId, instanceId, event){
-	//var e = document.getElementById(myListId).getElementsByClassName(instanceId)[0].children;
 	var e = document.getElementById(myListId).querySelector('[class="'+instanceId+'"]').children;
 	var allArt = document.getElementsByClassName('article');
-			var curArt= window.location.href.split('#')[1].replace('article', '')-((document.querySelector('[id^="issue"]').id.charAt(document.querySelector('[id^="issue"]').id.length-1)-1)*5)
+	var curArt= window.location.href.split('#')[1].replace('article', '')-((document.querySelector('[id^="issue"]').id.charAt(document.querySelector('[id^="issue"]').id.length-1)-1)*5);
 	if(e[1].style.display == 'block'){
 		for (var i=1; i<e.length; i++){
 			e[i].style.display = 'none';
-			e[i].style.backgroundColor = "transparent";
+			e[i].style.backgroundColor = "white";
 		}
 	}
 	else{
