@@ -1109,7 +1109,7 @@ button#prev, button#next  {
 
 [onClick] {cursor:pointer;}
 span[onclick] {cursor:pointer;}
-span[onclick]:hover{background-color:#B5D3E7;}
+span[onclick]:hover, time[onclick]:hover{background-color:#B5D3E7;}
 
 #wikiButton {
   border: solid 1px #000000;
