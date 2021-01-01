@@ -103,7 +103,7 @@ img, video{
 .header #logo { /* logo sarebbe la classe per il primo elemento a di header */
 	font-size: 1.2em;
 	font-weight: 600;
-	padding: 35px 20px;  /*era 10px e 15 px */
+	/*padding: 35px 20px;  era 10px e 15 px */
 }
 
 /* menu */
@@ -708,7 +708,7 @@ div#bookmarks {
     margin-right: 0em;
     order: 3;
     width: 100%;
-    /*position: fixed;*/ /* con position: fixed il footer nasconde parte del testo della pagina */
+    position: fixed; /* con position: fixed il footer nasconde parte del testo della pagina */
     bottom: 0;
     z-index: 99;
 }
