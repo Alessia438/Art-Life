@@ -1040,7 +1040,7 @@ img[class^="slideDemo"]{
 	
 	
 #listIssue {
-    width: 22vw;
+    /*width: 22vw;*/
     padding-inline-start: 0px;
     padding: 0 3vw 0 3vw;
 }
