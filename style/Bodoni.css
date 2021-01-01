@@ -113,7 +113,10 @@ p{
     	margin-top: 0em;
 }
 
-p:first-of-type:not(.subtitle):not(.byline):first-letter{font-size: 2em;}
+p:first-of-type:not(.subtitle):not(.byline):first-letter{
+	font-size: 2em;
+	text-transform:uppercase;
+}
 p:first-of-type {
   text-indent: 0vw;
 }
