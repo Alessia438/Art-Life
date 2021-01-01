@@ -445,7 +445,7 @@ function goToMetadata(curListId, ulClass){
 		keyFrames = '@'+keyFramePrefixes[i]+'keyframes background-fade {'+
 		'80% { background-color: #FFDAB9; }'+
 		//'100% { background-color: transparent; }'+
-		'100% { background-color: #d8f3e6; }'+
+		'100% { background-color: cadetblue; }'+
 		'}';
 		var rules = window.parent.document.createTextNode(keyFrames);
 	}
