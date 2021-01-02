@@ -1,3 +1,14 @@
+window.addEventListener('load', 
+  function() {
+	var coverStyle = window.getComputedStyle(document.getElementById("coverPage"+ n)),
+	    displayCover = coverStyle.getPropertyValue('display');
+	if (displayCover == "block") {
+		document.getElementById("prev").style.display = "none";
+		document.getElementById("next").style.display = "none";
+	}
+  }, false);
+
+
 function fillTheGaps(){
 	for (var n=0; n<articleInfo.length; n++){
 		if (articleInfo[n].articles.length>0){
@@ -212,14 +223,7 @@ function nextArticle() {
 	}
 }
 
-function hidePrevAndNext(n) {
-	var coverStyle = window.getComputedStyle(document.getElementById("coverPage"+ n)),
-	    displayCover = coverStyle.getPropertyValue('display');
-	if (displayCover == "block") {
-		document.getElementById("prev").style.display = "none";
-		document.getElementById("next").style.display = "none";
-	}
-}
+
 
 function verifyMetaHighlight(n){
 	if (document.getElementById('listIssue') == null){var listIssueChildren = window.parent.document.getElementById('listIssue').children;}
