@@ -205,7 +205,7 @@ function prevArticle() {
 				var myOrigin = document.getElementById("Origin");
 				getLinkOrigin(articleNow, myOrigin); // se scegliamo di definire la variabile myframe in questa funzione va sostituito articleNow con myFrame come parametro input della funzione getLinkOrigin
 				verifyMetaHighlight(i);
-				if (i === 2) {document.getElementById("prev").style.display = "none";}
+				if (i === 1) {document.getElementById("prev").style.display = "none";}
 			}
 		}
 	}	
@@ -226,7 +226,7 @@ function nextArticle() {
 				var myOrigin = document.getElementById("Origin");
 				getLinkOrigin(articles[i+1], myOrigin);
 				verifyMetaHighlight(i+2);
-				if (i === 4) {document.getElementById("next").style.display = "none";}
+				if (i === 3) {document.getElementById("next").style.display = "none";}
 			}
 		}
 	}
