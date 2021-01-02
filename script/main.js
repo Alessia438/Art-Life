@@ -124,8 +124,8 @@ function my1980(i){
 
 function changeIssue(issueN){
 	document.getElementById(issueN).children[0].style.display = "block";
-	document.getElementById("prev").style.display = "block";
-	document.getElementById("next").style.display = "block";
+	/*document.getElementById("prev").style.display = "block";
+	document.getElementById("next").style.display = "block";*/
 	for (var i=1; i<document.getElementById(issueN).children.length; i++) {document.getElementById(issueN).children[i].style.display = "none";}
         var originButton = document.getElementById("Origin");
 	if (originButton.hasAttribute("href")) {originButton.removeAttribute("href");}
@@ -154,8 +154,12 @@ function changeArticleCommon(c, articleNum, myOrigin, isCover, strToSplit, issue
 				top.window.location.href =  window.location.href.split(strToSplit)[0]+issueNum[0].toUpperCase()+issueNum.slice(1)+'.html#'+c[i].id;}
 			else {
 				window.location.href = window.location.href.split(strToSplit)[0]+'#'+c[i].id;
-				document.getElementById("prev").style.display = 'block';
-				document.getElementById("next").style.display = 'block';
+				if (i === 1) { document.getElementById("next").style.display = 'block'; }
+				else if (i === 5) { document.getElementById("prev").style.display = 'block'; }
+				else {
+					document.getElementById("prev").style.display = 'block';
+					document.getElementById("next").style.display = 'block';
+				}				
 			}	
 		}
 		else {c[i].style.display = "none";}
@@ -219,13 +223,17 @@ function nextArticle() {
 	}
 }
 
-function hidePrevAndNext() {
-	var coverPage = document.querySelector('[id^="coverPage"]');
-	var coverStyle = window.getComputedStyle(coverPage);
-	var displayCover = coverStyle.getPropertyValue('display');
-	if (displayCover == "none") {
-		document.getElementById("prev").style.display = "block";
-		document.getElementById("next").style.display = "block";
+function hidePrevAndNext(issueNumber) {
+	var issueC = document.getElementById(issueNumber).children;
+	for (var d = 1; d < issueC.length; d++) {
+		if (issueC[d].style.display = 'block') {
+			if (d === 1) {document.getElementById("next").style.display = 'block';}
+			else if (d === 5) {document.getElementById("prev").style.display = 'block';}
+			else if (d < 5 && d > 1) {
+				document.getElementById("prev").style.display = 'block';
+				document.getElementById("next").style.display = 'block';
+			}
+		}
 	}
 }
 
