@@ -13,8 +13,7 @@
 		<script src="script/main.js"></script>
 		<script>
 			document.addEventListener('readystatechange', event => {
-			    // When HTML/DOM elements are ready (event.target.readyState === "interactive" or ..addEventListener("DOMContentLoaded"..) is not enough, so when window loaded ( external resources are loaded too- `css`,`src`, etc...) 
-			    if (event.target.readyState === "complete") { hidePrevAndNext(); }
+				if (event.target.readyState === "complete") { hidePrevAndNext(); }
 			});
 		</script>
 		<link rel="stylesheet" type="text/css" href="style/IndexStyle.css">
