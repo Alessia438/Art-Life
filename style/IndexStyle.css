@@ -1040,6 +1040,8 @@ img[class^="slideDemo"]{
     /*border-right: 2px solid;*/
     /*margin-right: 0.05em;*/
   }
+
+  #metadata dropdown-content * { font-size: 0.9em; }
 	
 	
 #listIssue {
