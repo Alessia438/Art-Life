@@ -226,7 +226,7 @@ function nextArticle() {
 function hidePrevAndNext(issueNumber) {
 	var issueC = document.getElementById(issueNumber).children;
 	for (var d = 1; d < issueC.length; d++) {
-		if (issueC[d].style.display = 'block') {
+		if (issueC[d].style.display === 'block') {
 			if (d === 1) {document.getElementById("next").style.display = 'block';}
 			else if (d === 5) {document.getElementById("prev").style.display = 'block';}
 			else if (d < 5 && d > 1) {
