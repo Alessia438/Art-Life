@@ -124,6 +124,8 @@ function my1980(i){
 
 function changeIssue(issueN){
 	document.getElementById(issueN).children[0].style.display = "block";
+	document.getElementById("prev").style.display = "block";
+	document.getElementById("next").style.display = "block";
 	for (var i=1; i<document.getElementById(issueN).children.length; i++) {document.getElementById(issueN).children[i].style.display = "none";}
         var originButton = document.getElementById("Origin");
 	if (originButton.hasAttribute("href")) {originButton.removeAttribute("href");}
@@ -323,17 +325,17 @@ function metadataViewer (issueN) {
 				}
 				else {var timeParent = times[t].parentNode;}
 				var myInstanceFound = false;
-				if (t===0 && n===1) {createCategoryLi("Time", myList);}
+				if (t===0 && n===1) {createCategoryLi("time", myList);}
 				else{
-					for (r=0; r<myList.getElementsByClassName('Time')[0].children.length; r++){  //document.getElementById('Time').children.length
-						if ((times[t].dateTime === myList.getElementsByClassName('Time')[0].children[r].className)) {  // qualcosa qui non funziona, forse, invece di id, class.. (createInstanceUl risulta avere parent null)   //document.getElementById('Time').children[r].className
+					for (r=0; r<myList.getElementsByClassName('time')[0].children.length; r++){  //document.getElementById('Time').children.length
+						if ((times[t].dateTime === myList.getElementsByClassName('time')[0].children[r].className)) {  // qualcosa qui non funziona, forse, invece di id, class.. (createInstanceUl risulta avere parent null)   //document.getElementById('Time').children[r].className
 							myInstanceFound = true;
-							var matchedTimeUl = myList.getElementsByClassName('Time')[0].children[r];  //document.getElementById('Time').children[r];
+							var matchedTimeUl = myList.getElementsByClassName('time')[0].children[r];  //document.getElementById('Time').children[r];
 						}
 					}
 				}
 				if (myInstanceFound === false) {
-					createInstanceUl(times[t].dateTime, myList.getElementsByClassName('Time')[0], myList);  //secondo parametro: document.getElementById('Time')
+					createInstanceUl(times[t].dateTime, myList.getElementsByClassName('time')[0], myList);  //secondo parametro: document.getElementById('Time')
 					var newUl = myList.getElementsByClassName(times[t].dateTime)[0];
 				}
 				else{var newUl = matchedTimeUl;}
