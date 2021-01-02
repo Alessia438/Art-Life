@@ -63,8 +63,8 @@ body{
   font-size: 14pt;
   font-weight: lighter;
   text-align: justify; 
-  margin-right: 20mm; /* vW? secondo Tscihold*/
-  margin-left: 20mm;
+  margin-right: 40mm; /* outer margin secondo Tscihold*/
+  margin-left: 20mm; /*inner margin*/
   line-height: 1.6; /* 21pt;*/
   text-align-last: left;
   text-transform: lowercase;
@@ -73,9 +73,12 @@ body{
   -webkit-hyphens: auto;
   -ms-hyphens: auto;
   hyphens: auto;
- letter-spacing: 0.03em; 
- word-wrap: break-word; /*serve?*/
- orphans: 3;
+  letter-spacing: 0.03em; 
+  word-wrap: break-word; /*serve?*/
+  orphans: 3;    /*serve?*/
+  position: relative;   /* aggiunti per rendere 2:3 proportion*/
+  width: 100%;
+  padding-top: 150%;
 }
 
 
