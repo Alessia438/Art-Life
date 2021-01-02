@@ -71,12 +71,12 @@
 					<div id="coverPage2">
 						<iframe src="cover_pages/cover_page2.html" name="coverPage2" frameborder="0" border="0" cellspacing="0"></iframe>
 					</div>
-		    		</div>
+		    	</div>
 		
-		    	</div> <!-- si chiude il div content -->
-			<script> fillTheGaps(); </script>
+		    </div> <!-- si chiude il div content -->
+			<script> fillTheGaps(), hidePrevAndNext(1);</script>
 
-		    	<div id="metadata">  <!-- div che contiene il metadata viewer -->
+		    <div id="metadata">  <!-- div che contiene il metadata viewer -->
 				
 				<ul id="selectorNav" class="stickynav">    
 					<li class="dropdown"><a class="dropbtn" onclick="showMetaContent()">About metadata</a>
@@ -93,8 +93,8 @@
 						</div>
 					</li>
 				</ul>
-<!--
-			    <div id="changeOrderBtns">
+				
+				<!-- <div id="changeOrderBtns">
 				    	<p class="metadataText" onclick="showMetaContent()">METADATA VIEWER</p>
 				      	<p class="metadataText" id="contentToShow" style="display:none">Here you can find all the metadata of all the articles of the issue. You can jump from a metadata to the correspondent place in the article and vice versa.</p>
 				      	<p class="metadataText">Order your list by:</p>
