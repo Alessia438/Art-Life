@@ -673,7 +673,7 @@ function showStyleDocu(a) {
 
 
 /*///////prova per slideshow///////*/
-var indexList= [0, 0];
+var indexList= [0, 0, 0];
 var curTimeout; //= setTimeout(showSlides, 2500);
 
 function showSlides() {
