@@ -167,6 +167,8 @@ function changeArticle(articleNum, issueNum){
 }
 
 function changeArticleCover(articleNum, issueNum){
+	window.parent.document.getElementById("prev").style.display = "block";
+	window.parent.document.getElementById("next").style.display = "block";
 	var c = window.parent.document.getElementById(issueNum).children,
 	myOrigin = window.parent.document.getElementById("Origin");
 	changeArticleCommon(c, articleNum, myOrigin, true, 'cover_pages/cover_page'+issueNum.charAt(issueNum.length-1)+'.html', issueNum);
