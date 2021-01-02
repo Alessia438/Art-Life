@@ -323,17 +323,17 @@ function metadataViewer (issueN) {
 				}
 				else {var timeParent = times[t].parentNode;}
 				var myInstanceFound = false;
-				if (t===0 && n===1) {createCategoryLi("TIME", myList);}
+				if (t===0 && n===1) {createCategoryLi("Time", myList);}
 				else{
-					for (r=0; r<myList.getElementsByClassName('TIME')[0].children.length; r++){  //document.getElementById('Time').children.length
-						if ((times[t].dateTime === myList.getElementsByClassName('TIME')[0].children[r].className)) {  // qualcosa qui non funziona, forse, invece di id, class.. (createInstanceUl risulta avere parent null)   //document.getElementById('Time').children[r].className
+					for (r=0; r<myList.getElementsByClassName('Time')[0].children.length; r++){  //document.getElementById('Time').children.length
+						if ((times[t].dateTime === myList.getElementsByClassName('Time')[0].children[r].className)) {  // qualcosa qui non funziona, forse, invece di id, class.. (createInstanceUl risulta avere parent null)   //document.getElementById('Time').children[r].className
 							myInstanceFound = true;
-							var matchedTimeUl = myList.getElementsByClassName('TIME')[0].children[r];  //document.getElementById('Time').children[r];
+							var matchedTimeUl = myList.getElementsByClassName('Time')[0].children[r];  //document.getElementById('Time').children[r];
 						}
 					}
 				}
 				if (myInstanceFound === false) {
-					createInstanceUl(times[t].dateTime, myList.getElementsByClassName('TIME')[0], myList);  //secondo parametro: document.getElementById('Time')
+					createInstanceUl(times[t].dateTime, myList.getElementsByClassName('Time')[0], myList);  //secondo parametro: document.getElementById('Time')
 					var newUl = myList.getElementsByClassName(times[t].dateTime)[0];
 				}
 				else{var newUl = matchedTimeUl;}
