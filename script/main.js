@@ -1,14 +1,3 @@
-function hidePrevAndNext() {
-  	var coverPage = document.querySelector('[id^="coverPage"]').id;
-	var coverStyle = window.getComputedStyle(coverPage);
-	var displayCover = coverStyle.getPropertyValue('display');
-	if (displayCover == "block") {
-		document.getElementById("prev").style.display = "none";
-		document.getElementById("next").style.display = "none";
-	}
-}
-
-
 function fillTheGaps(){
 	for (var n=0; n<articleInfo.length; n++){
 		if (articleInfo[n].articles.length>0){
