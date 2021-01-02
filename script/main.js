@@ -1,5 +1,4 @@
-window.addEventListener('load', 
-  function() {
+function hidePrevAndNext() {
   	var coverPage = document.querySelector('[id^="coverPage"]').id;
 	var coverStyle = window.getComputedStyle(coverPage);
 	var displayCover = coverStyle.getPropertyValue('display');
@@ -7,7 +6,7 @@ window.addEventListener('load',
 		document.getElementById("prev").style.display = "none";
 		document.getElementById("next").style.display = "none";
 	}
-  }, false);
+}
 
 
 function fillTheGaps(){
