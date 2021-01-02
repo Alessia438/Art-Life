@@ -214,7 +214,7 @@ function nextArticle() {
 
 function hidePrevAndNext(n) {
 	var coverStyle = window.getComputedStyle(document.getElementById("coverPage"+ n)),
-	    displayCover = style.getPropertyValue('display');
+	    displayCover = coverStyle.getPropertyValue('display');
 	if (displayCover == "block") {
 		document.getElementById("prev").style.display = "none";
 		document.getElementById("next").style.display = "none";
