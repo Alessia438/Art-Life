@@ -214,7 +214,7 @@ function nextArticle() {
 	}
 }
 
-function hidePrevAndNext {
+function hidePrevAndNext() {
 	var coverPage = document.querySelector('[id^="coverPage"]');
 	var coverStyle = window.getComputedStyle(coverPage);
 	var displayCover = coverStyle.getPropertyValue('display');
