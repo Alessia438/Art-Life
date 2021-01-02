@@ -11,7 +11,18 @@
 		<link href="https://fonts.googleapis.com/css2?family=Proza+Libre&display=swap" rel="stylesheet">
 		<script src="script/info.js"></script>
 		<script src="script/main.js"></script>
-		<script>window.addEventListener('load', hidePrevAndNext(), false)</script>
+		<script>
+			document.addEventListener('DOMContentLoaded', function() {
+			   	var coverPage = document.querySelector('[id^="coverPage"]').id;
+				var coverStyle = window.getComputedStyle(coverPage);
+				var displayCover = coverStyle.getPropertyValue('display');
+				if (displayCover == "block") {
+					document.getElementById("prev").style.display = "none";
+					document.getElementById("next").style.display = "none";
+				}
+			}, false);
+
+		</script>
 		<link rel="stylesheet" type="text/css" href="style/IndexStyle.css">
 	</head>
 	
