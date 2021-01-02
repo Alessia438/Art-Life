@@ -473,11 +473,12 @@ p.quoteAuthor {
 #coverText p:nth-of-type(2):before {
 	content: "";
 	background-color: #545454;
-	height: 30vw;
+	height: 10vw;
 	width: 50vw;
     display: block;
     margin-left: -150%;
-    margin-bottom: -30%;	
+    margin-bottom: -20%;
+    margin-top: 18vw;	
 }
 
 
@@ -488,7 +489,7 @@ p.quoteAuthor {
     width: 60vw;
     display: block;
     margin-left: 25%;
-    margin-top: -40%;	
+    margin-top: -20%;	
 }
 
 
@@ -512,6 +513,26 @@ p.quoteAuthor {
 }
 
 
+#coverText p:nth-of-type(4) {
+	position: relative;
+    left: 35%;
+    width: 50%;
+}
+
+
+#coverText p:nth-of-type(4):before {
+	content: "";
+    background-image: url(cover-art4-bis.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 40vw;
+    width: 30vw;
+    display: block;
+    margin-bottom: -40%;
+    margin-left: 50%;
+    margin-top: 6vw;
+}
+
 #coverText p:nth-of-type(5) {
 	margin-top: 16vw;
 	width: 30%;
@@ -523,11 +544,12 @@ p.quoteAuthor {
 #coverText p:nth-of-type(5):before {
 	content: "";
 	background-color: #000000;
-	height: 30vw;
+	height: 10vw;
 	width: 50vw;
     display: block;
     margin-left: -150%;
-    margin-bottom: -30%;	
+    margin-bottom: -20%;
+    margin-top: 18vw;	
 }
 
 
@@ -538,25 +560,5 @@ p.quoteAuthor {
     width: 60vw;
     display: block;
     margin-left: 25%;
-    margin-top: -40%;	
-}
-
-
-#coverText p:nth-of-type(4) {
-	position: relative;
-    left: 40%;
-    width: 50%;
-}
-
-
-#coverText p:nth-of-type(4):before {
-	content: "";
-	background-image: url(cover-art5.jpg);
-	background-size: cover;
-	height: 30vw;
-	width: 40vw;
-	display: block;
-	margin-bottom: -20vw;
-	margin-left: 50%;
-
+    margin-top: -20%;	
 }
