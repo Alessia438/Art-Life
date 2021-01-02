@@ -1,6 +1,6 @@
 window.addEventListener('load', 
   function() {
-	var coverStyle = window.getComputedStyle(document.getElementById("coverPage"+ n)),
+	var coverStyle = window.getComputedStyle(document.querySelector('[id^="coverPage"]').id),
 	    displayCover = coverStyle.getPropertyValue('display');
 	if (displayCover == "block") {
 		document.getElementById("prev").style.display = "none";
