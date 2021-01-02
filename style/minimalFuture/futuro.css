@@ -440,8 +440,8 @@ p.quoteAuthor {
 }
 
 #coverText p:nth-of-type(1) {
-	width: 30%;
-	margin-bottom: 15vw;
+	width: 45%;
+	/*margin-bottom: 15vw;*/
 	margin-left: 30%;
 }
 
@@ -454,5 +454,5 @@ p.quoteAuthor {
 	width: 40vw;
 	display: block;
 	margin-bottom: -20vw;
-	margin-left: -80%;
+	margin-left: -50%;
 }
