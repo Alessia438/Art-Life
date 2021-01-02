@@ -147,6 +147,8 @@ function changeArticleCommon(c, articleNum, myOrigin, isCover, strToSplit, issue
 	for (var i=1; i<c.length; i++){
 		if ("article" + i === articleNum){
 			c[i].style.display = "block";
+			document.getElementById("prev").style.display = "block";
+			document.getElementById("next").style.display = "block";
 			getLinkOrigin(c[i], myOrigin);
 			if (isCover) {top.window.location.href =  window.location.href.split(strToSplit)[0]+issueNum[0].toUpperCase()+issueNum.slice(1)+'.html#'+c[i].id;}
 			else{window.location.href =  window.location.href.split(strToSplit)[0]+'#'+c[i].id;}	
@@ -212,6 +214,15 @@ function nextArticle() {
 	}
 }
 
+function hidePrevAndNext {
+	var coverPage = document.querySelector('[id^="coverPage"]');
+	var coverStyle = window.getComputedStyle(coverPage);
+	var displayCover = coverStyle.getPropertyValue('display');
+	if (displayCover == "none") {
+		document.getElementById("prev").style.display = "block";
+		document.getElementById("next").style.display = "block";
+	}
+}
 
 
 function verifyMetaHighlight(n){
