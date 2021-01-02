@@ -79,8 +79,7 @@ body{
   /*width: calc((100% - 0) * 4 / 13);    2:3 proportions?
   padding-left: calc(5px * 4 / 9);
   padding-right: calc(20px * 4 / 9);*/
-  height: 0%;  /* 2:3 proportions; */
-  padding-bottom: 150%;
+  
 }
 
 
