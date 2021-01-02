@@ -151,7 +151,14 @@ function changeArticleCommon(c, articleNum, myOrigin, isCover, strToSplit, issue
 			c[i].style.display = "block";
 			getLinkOrigin(c[i], myOrigin);
 			if (isCover) {
-				top.window.location.href =  window.location.href.split(strToSplit)[0]+issueNum[0].toUpperCase()+issueNum.slice(1)+'.html#'+c[i].id;}
+				top.window.location.href =  window.location.href.split(strToSplit)[0]+issueNum[0].toUpperCase()+issueNum.slice(1)+'.html#'+c[i].id;
+				if (i === 1) { window.parent.document.getElementById("next").style.display = 'block'; }
+				else if (i === 5) { window.parent.document.getElementById("prev").style.display = 'block'; }
+				else {
+					window.parent.document.getElementById("prev").style.display = 'block';
+					window.parent.document.getElementById("next").style.display = 'block';
+				}
+			}
 			else {
 				window.location.href = window.location.href.split(strToSplit)[0]+'#'+c[i].id;
 				if (i === 1) { document.getElementById("next").style.display = 'block'; }
