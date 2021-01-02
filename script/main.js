@@ -166,7 +166,6 @@ function changeArticleCover(articleNum, issueNum){
 	var c = window.parent.document.getElementById(issueNum).children,
 	myOrigin = window.parent.document.getElementById("Origin");
 	changeArticleCommon(c, articleNum, myOrigin, true, 'cover_pages/cover_page'+issueNum.charAt(issueNum.length-1)+'.html', issueNum);
-	//verifyMetaHighlight(articleNum.charAt(articleNum.length-1));
 }
 
 function prevArticle() {
@@ -213,9 +212,8 @@ function nextArticle() {
 	}
 }
 
-
 function hidePrevAndNext(n) {
-	if (document.getElementById("coverPage"+ n).style.display = "block") {
+	if (document.getElementById("coverPage"+ n).style.display == "block") {
 		document.getElementById("prev").style.display = "none";
 		document.getElementById("next").style.display = "none";
 	}
@@ -226,20 +224,21 @@ function verifyMetaHighlight(n){
 	else{var listIssueChildren = document.getElementById('listIssue').children;}
 	for (var i=0; i<listIssueChildren.length; i++){
 		for (var l=0; l<listIssueChildren[i].children.length; l++){
-			//var found = false; //1 EERORE?
+			var found = 0; //1 EERORE?
 			for (var m=0; m<listIssueChildren[i].children[l].children.length; m++){
 				var curUl= listIssueChildren[i].children[l].children[m];
+				if(n>=1 && m>=1 && n==curUl.getAttribute('data-parent').charAt(curUl.getAttribute('data-parent').length-1)){//2 EERORE?
+						found++;
+				}
 				if (curUl.style.display=='block'){
 					if(n>=1 && n==curUl.getAttribute('data-parent').charAt(curUl.getAttribute('data-parent').length-1)){
-						//found=true;//2 EERORE?
 						curUl.style.backgroundColor='#d8f3e6';
 					}
-					//else{curUl.style.backgroundColor='transparent';}
 					else{curUl.style.backgroundColor='white';}
 				}
 			}
-			//if (found==true){listIssueChildren[i].children[l].style.backgroundColor='cadetblue';}//3 EERORE?
-			//else{listIssueChildren[i].children[l].style.backgroundColor='white';}//4 EERORE?
+			if (found>0){listIssueChildren[i].children[l].style.backgroundColor='cadetblue';}//3 EERORE?
+			else{listIssueChildren[i].children[l].style.backgroundColor='white';}//4 EERORE?
 		}
 	}
 }
@@ -431,46 +430,46 @@ function goToMetadata(curListId, ulClass){
 	var e = window.parent.document.getElementById(curListId).getElementsByClassName(ulClass)[0];
 	e.style.display = 'block';
 	var f = e.children;
-	f[0].style.display = 'inline-block;'
+	f[0].style.display = 'inline-block';
 	for (var g=1; g<f.length; g++){f[g].style.display = 'block';}
 	e.style.backgroundColor = "#FFDAB9";
 	e.scrollIntoView(true);
 
 	// animazione scomparsa colore background dopo 3 secondi:
 	var backgroundAnimation = window.parent.document.createElement('style'); // può andare in contrsto con la funzione che cambia lo stile dell'articolo?
-    backgroundAnimation.type = 'text/css';
-
+	backgroundAnimation.type = 'text/css';
 	var keyFramePrefixes = ["-webkit-", "-o-", "-moz-", ""];
 	var keyFrames = [];
 	var textNode = null;
-
 	for (var i in keyFramePrefixes) {
 		keyFrames = '@'+keyFramePrefixes[i]+'keyframes background-fade {'+
 		'80% { background-color: #FFDAB9; }'+
-		'100% { background-color: transparent; }'+
+		//'100% { background-color: transparent; }'+
+		'100% { background-color: cadetblue; }'+
 		'}';
 		var rules = window.parent.document.createTextNode(keyFrames);
 	}
-
 	backgroundAnimation.appendChild(rules);
-
 	window.parent.document.getElementsByTagName("head")[0].appendChild(backgroundAnimation);
 
 	e.style.animation = 'background-fade 3s forwards';
 	e.style.WebkitAnimation = 'background-fade 3s forwards';
-    e.style.OAnimation = 'background-fade 3s forwards';
-    e.style.MozAnimation = 'background-fade 3s forwards';
+	e.style.OAnimation = 'background-fade 3s forwards';
+	e.style.MozAnimation = 'background-fade 3s forwards';
 
-    setTimeout(function() {
-    	e.style.backgroundColor = 'transparent';
-    	e.style.WebkitAnimationName = '';
-    	e.style.animation = '';
-        e.style.OAnimation = '';
-        e.style.MozAnimation = '';
-        window.parent.document.getElementsByTagName("head")[0].removeChild(backgroundAnimation);
-    	}, 10000); // we have to reset the name of animation otherwise another call to background-fade wont have any effect
-	
-     event.stopPropagation();
+	setTimeout(function() {
+		//e.style.backgroundColor = 'transparent';
+		e.style.backgroundColor = 'cadetblue';
+		e.style.WebkitAnimationName = '';
+		e.style.animation = '';
+		e.style.OAnimation = '';
+		e.style.MozAnimation = '';
+		window.parent.document.getElementsByTagName("head")[0].removeChild(backgroundAnimation);
+	}, 10000); // we have to reset the name of animation otherwise another call to background-fade wont have any effect
+	var parentPage = window.parent.document,
+	    issueId = parentPage.querySelector('[id^="issue"]').id;
+	verifyMetaHighlight(parentPage.location.href.split('#')[1].replace('article', '')-((issueId.charAt(issueId.length-1)-1)*5));
+     	event.stopPropagation();
 }
 
 function showLiChildren(myListId, instanceId){
@@ -486,12 +485,6 @@ function showLiChildren(myListId, instanceId){
 		for (var child of e) {
 			child.style.display = 'block';
 			var f = child.children;
-			/*
-			for (var g of f){
-				g.style.display = 'none'; 
-			}
-			*/
-
 			// non mostrare i figli <li> degli <ul> tranne il primo figlio di ogni <ul>, cioè il link a wikipedia
 			for (var g = 0; g < f.length; g++) {
 				if (g === 0) {f[g].style.display = "inline-block";}
@@ -500,17 +493,18 @@ function showLiChildren(myListId, instanceId){
 
 		}
 	}
+	var curArt= window.location.href.split('#')[1].replace('article', '')-((document.querySelector('[id^="issue"]').id.charAt(document.querySelector('[id^="issue"]').id.length-1)-1)*5);
+	verifyMetaHighlight(curArt);
 }
 
 function showUlChildren(myListId, instanceId, event){
-	//var e = document.getElementById(myListId).getElementsByClassName(instanceId)[0].children;
 	var e = document.getElementById(myListId).querySelector('[class="'+instanceId+'"]').children;
 	var allArt = document.getElementsByClassName('article');
-			var curArt= window.location.href.split('#')[1].replace('article', '')-((document.querySelector('[id^="issue"]').id.charAt(document.querySelector('[id^="issue"]').id.length-1)-1)*5)
+	var curArt= window.location.href.split('#')[1].replace('article', '')-((document.querySelector('[id^="issue"]').id.charAt(document.querySelector('[id^="issue"]').id.length-1)-1)*5);
 	if(e[1].style.display == 'block'){
 		for (var i=1; i<e.length; i++){
 			e[i].style.display = 'none';
-			e[i].style.backgroundColor = "transparent";
+			e[i].style.backgroundColor = "white";
 		}
 	}
 	else{
@@ -546,10 +540,10 @@ function highlight(spanId, iFrameN, event) {
 
 	var elmnt = document.getElementById(iFrameN).contentWindow.document;
 	var curInstance = elmnt.getElementById(spanId);
-	curInstance.setAttribute("name", "onView");
+	//curInstance.setAttribute("name", "onView");
 	curInstance.style.backgroundColor = "#ffff00";
 	curInstance.scrollIntoView(true);
-	// sostituire curInstance.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"}); ?? In alcuni browser non va
+	// sostituire curInstance.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"}); // ?? In alcuni browser non va
 
 	// animazione scomparsa colore background dopo 10 secondi:
 	var cssAnimation = elmnt.createElement('style'); // può andare in contrsto con la funzione che cambia lo stile dell'articolo?
@@ -578,7 +572,8 @@ function highlight(spanId, iFrameN, event) {
     curInstance.style.MozAnimation = 'background-fade 10s forwards';
 
     setTimeout(function() {
-    	curInstance.style.backgroundColor = 'transparent';
+    	//curInstance.style.backgroundColor = 'transparent';
+	curInstance.style.backgroundColor = '';
     	curInstance.style.WebkitAnimationName = '';
     	curInstance.style.animation = '';
         curInstance.style.OAnimation = '';
@@ -672,44 +667,52 @@ function showStyleDocu(a) {
 
 
 /*///////prova per slideshow///////*/
-var slideIndex = 0;
+var indexList= [0, 0];
+var curTimeout; //= setTimeout(showSlides, 2500);
 
 function showSlides() {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("slideColumn");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}    
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 2500); // Change image every 2 seconds
+	for (var n = 0; n<indexList.length; n++){
+		var i;
+		var slides = document.getElementsByClassName('mySlides'+(n+1));
+		var dots = document.getElementsByClassName('slideColumn'+(n+1));
+		for (i = 0; i < slides.length; i++) {
+		slides[i].style.display = "none";  
+		}
+		indexList[n]++;
+		if (indexList[n] > slides.length) {indexList[n] = 1}    
+		for (i = 0; i < dots.length; i++) {
+		dots[i].className = dots[i].className.replace(" active", "");
+		}
+		slides[indexList[n]-1].style.display = "block";  
+		dots[indexList[n]-1].className += " active";
+	}
+	curTimeout = setTimeout(showSlides, 2500);
+	// setTime();
 }
 
-function currentSlide(n) {
-  showCurSlide(slideIndex = n);
-}
+/*function setTime(){
+	clearTimeout(curTimeOut);
+	var curTimeOut = setTimeout(showSlides, 2500);
+}*/
 
+function currentSlide(n, m) {showCurSlide(indexList[m-1]=n, m);}
 
-function showCurSlide(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("slideDemo");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
+function showCurSlide(n, m) {
+	clearTimeout(curTimeout);
+	var i;
+	var slides = document.getElementsByClassName('mySlides'+m);
+	var dots = document.getElementsByClassName('slideDemo'+m);
+	if (n > slides.length) {indexList[m-1] = 1}
+	if (n < 1) {indexList[m-1] = slides.length}
+	for (i = 0; i < slides.length; i++) {
+	slides[i].style.display = "none";
+	}
+	for (i = 0; i < dots.length; i++) {
+	dots[i].className = dots[i].className.replace(" active", "");
+	}
+	slides[indexList[m-1]-1].style.display = "block";
+	dots[indexList[m-1]-1].className += " active";
+	curTimeout = setTimeout(showSlides, 4000);
 }
 
 

@@ -1,3 +1,12 @@
+/* CSS HEX
+--steel-pink: #db2cbe;
+--rosso-corsa: #da0000;
+--golden-yellow: #ffe100;
+--dark-pastel-green: #3db839;
+--midnight-blue: #0d1b70; */
+
+@import url('https://fonts.googleapis.com/css2?family=Overpass+Mono&display=swap');
+
 @font-face { /* per h1, sottotitolo */
   font-family: Heartbit;
   src: url(heartbit.bold.otf);
@@ -44,7 +53,7 @@ span {
 	color: #DA0000;
 }
 
-p, h2, h3, h4, h5, h6, img, figcaption {
+p, h2, h3, h4, h5, h6, img {
 	margin: 3vW;
 }
 
@@ -52,10 +61,9 @@ h1 {
 	font-family: Heartbit;	
 	color: #db2cbe;
 	text-shadow: 3px 2px #ffe100, 3px 3px 5px #0d1b70;
-	font-size: 8vw;
+	font-size: 6vw;
 	text-align: center;
 	text-transform: uppercase;
-	font-weight: 400;
 	transform: rotate(7deg);
 	width: 70vW;
 	margin: auto;
@@ -99,10 +107,11 @@ section:first-of-type > figure {
 	order: 99;
 	width: 100%;
 	margin: 0;
+	background-image: none;
 }
 
 section:first-of-type > figure > img {
-	width: 100%;
+	width: 90%;
 	margin: 0;
 }
 
@@ -116,17 +125,58 @@ section:first-of-type > .publicationDate {order: 4;}
 
 section:first-of-type > .publicationTime {order: 5;}
 
+section:first-of-type > .lastModification {order: 6;}
+
+section:first-of-type > .publicationPlace {order: 7;}
+
 
 figure {
 	display: flex;
     align-items: center;
-	overflow: hidden;
-	background-image: url(notebook.PNG);
+	background-image: url(notebook.png);
 	background-size: cover;
 }
 
+figcaption {
+	font-family: Shmup;
+	margin-right: 3vw;
+	font-size: 1.5vw;
+}
 
-img { /* se la prima immagine di tutto l'html è prima di .byline e .publication* allora metterla sotto */
+figure:first-of-type {
+	background-image: none;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+
+figure:first-of-type > figcaption {
+	order: 99;
+	margin-left: 0;
+	margin-right: 0;
+	font-size: 1.3vw;
+	line-height: 1.5;
+    color: #0d1b70;
+    width: 90%;
+    text-align: center;
+}
+
+figure:nth-of-type(odd) > img {	
+	order: 99;
+	padding-right: 2vw;
+	padding-top: 3vw;
+}
+
+figure:nth-of-type(odd):not(:first-of-type) > figcaption { margin-left: 5vw; }
+
+figure:nth-of-type(even) > img {
+	padding-left: 2vw;
+	padding-top: 3vw;
+}
+
+img {
 	/* position: relative;
 	display: block;*/
 	
@@ -158,7 +208,7 @@ img:nth-of-type(3n+3) { /* allineata a sinistra, piccola */
 }
 
 
-p.byline, .publicationDate, .publicationPlace, .publicationTime {
+p.byline, .publicationDate, .publicationPlace, .publicationTime, .lastModification {
 	margin-bottom: 0;
 	background-color: #ffe100;
 	width: 30%;
@@ -186,4 +236,37 @@ p.byline, .publicationDate, .publicationPlace, .publicationTime {
 	margin: auto;
 	padding-top: 0.5vW;
 	margin-top: 3vh;
+}
+
+
+blockquote {
+	font-family: 'Overpass Mono', monospace;
+	width: 40%;
+	padding-bottom: 2vw;
+	padding-top: 3vw;
+	padding-left: 2vw;
+	padding-right: 2vw;
+}
+
+.quoteAuthor, blockquote > p { margin: 1vw; }
+
+
+blockquote:nth-of-type(even) {
+	background-image: url(paper-clip.png), url(green-gradient.jpg);
+    background-position: 95% 0vw, center bottom;
+    background-size: 10%, 100% 90%;
+    background-repeat: no-repeat, no-repeat;
+	float: right;
+	transform: rotate(5deg);
+	margin: 3vw 5vw 6vw 3vw;
+}
+
+blockquote:nth-of-type(odd) {
+	background-image: url(pink-tape.png), url(pink-gradient.jpg);
+ 	background-position: 50% -1.3vw, center bottom;
+  	background-size: 30%, 100% 90%;
+  	background-repeat: no-repeat, no-repeat;
+	float: left;
+	transform: rotate(-5deg);
+	margin: 3vw 3vw 6vw 4vw;
 }

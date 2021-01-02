@@ -18,17 +18,16 @@
 		
 		<!-- main navigation navbar -->
 		<header class="header">
-			<a id="logo">Art&amp;Life</a> <!-- id="mmm" ? -->
+			<a id="logo">Art&amp;Life</a> 
 			 <input class="menu-btn" type="checkbox" id="menu-btn" />  
   			<label class="menu-icon" for="menu-btn">
     			<span class="navicon"></span>
   			</label>
-			<div class="topnav"> <!-- id="metanav" ? -->
+			<div class="topnav"> 
 		        <a href="index.html">Home</a>
 		        <a href="disclaimer.html">Disclaimer</a>
 		        <a href="documentation.html">Documentation</a>
 		        <a href="about.html">About</a>
-		        <!-- <a class="icon" onclick="myFunction()"></a> --> <!--cosa è? -->
 	    	</div>
 	    </header>
 				
@@ -64,20 +63,18 @@
 					<li><a class="buttonIssue" id="Origin">Source</a></li>
 				</ul>
 				
-				<!-- bottone per articolo precedente -->
 				<button id="prev" onclick="prevArticle()"/></button>
 				<button id="next" onclick="nextArticle()"/></button>
         
 				<div id="issue1">
 					
 					<div id="coverPage1">
-						<!-- <iframe src="cover_pages/cover_page1.html" onload="verifyCSS()" name="coverPage1" frameborder="0" border="0" cellspacing="0"></iframe> -->
 						<iframe src="cover_pages/cover_page1.html" name="coverPage1" frameborder="0" border="0" cellspacing="0"></iframe> 
 					</div>
 			    	</div>
 				
 		    	</div> <!-- si chiude il div content -->
-			<script> fillTheGaps(); </script>
+			<script> fillTheGaps(), hidePrevAndNext(1);</script>
 
 			<div id="metadata">  <!-- div che contiene il metadata viewer -->
 
@@ -99,7 +96,7 @@
 				<ul id="listIssue"></ul>
 			</div> <!-- si chiude il div che contiene il metadata viewer -->		
 
-			<div class="footer"> <!-- text-align: justify; background: rgba(38, 38, 38); color: white; -->
+			<div class="footer">
 			<h5>© Art&amp;Life: Created by Alessia Cioffi, Sara Coppini and Ariele Santello</h5>  
 			</div>
 

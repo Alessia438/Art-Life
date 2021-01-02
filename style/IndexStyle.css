@@ -103,7 +103,7 @@ img, video{
 .header #logo { /* logo sarebbe la classe per il primo elemento a di header */
 	font-size: 1.2em;
 	font-weight: 600;
-	padding: 35px 20px;  /*era 10px e 15 px */
+	/*padding: 35px 20px;  era 10px e 15 px */
 }
 
 /* menu */
@@ -554,6 +554,7 @@ SELECTORNAV STICKY PER ISSUE1, ISSUE2, ISSUE3 E ISSUE4 */
   margin-right: 0em;  
   order: 3;
   width: 100%;
+  z-index: 99;
 
   /* modifiche per tenere sotto il footer 
   position: absolute; 
@@ -598,6 +599,7 @@ SELECTORNAV STICKY PER ISSUE1, ISSUE2, ISSUE3 E ISSUE4 */
 	order: 1;
 	margin-left: 0.05em;
 	overflow: scroll;
+	padding-bottom:4em;
 }
 
 #docuContent h1{
@@ -612,11 +614,16 @@ SELECTORNAV STICKY PER ISSUE1, ISSUE2, ISSUE3 E ISSUE4 */
 }
 
 #docuContent h3{
-    padding-bottom: 2vw;
-    padding-top: 3vw;
+	padding-bottom: 2vw;
+	padding-top: 3vw;
+	margin-left:2em;
 }
 
-#docuContent p{text-align: justify;}
+#docuContent p{
+	text-align: justify;
+	margin-right: 2em;
+	margin-left:2em;
+}
 
 #bodoniClass, #libertyClass, #bauhausClass, #the1980sClass, #ninetiesClass, #minimalFutureClass {display:block;}
 
@@ -702,8 +709,9 @@ div#bookmarks {
     margin-right: 0em;
     order: 3;
     width: 100%;
-    /*position: fixed;*/ /* con position: fixed il footer nasconde parte del testo della pagina */
+    position: fixed; /* con position: fixed il footer nasconde parte del testo della pagina */
     bottom: 0;
+    z-index: 99;
 }
 
 
@@ -715,18 +723,20 @@ div#bookmarks {
   max-width: 40vw;
   max-height: 40vw;
   overflow: hidden;
-  box-shadow: 1px 1px 4px 1px #093a2d;
+  box-shadow: 1px 1px 4px 1px rgba(9, 58, 45, 0.5);
 }
 
 .Slidecontainer * { margin-left: 0; margin-right: 0;}
 
-.mySlides {
+div[class^="mySlides"]{
   display: none;
   text-align: center;
   height: 20vw;
+  margin-bottom: 0.5vw;
+  margin-top: 1vw;
 }
 
-.mySlides img {
+div[class^="mySlides"] img {
   width: 100%;
   max-height: 100%;
   object-fit: contain;
@@ -737,7 +747,7 @@ div#bookmarks {
 }
 
 .numbertext {
-  color: #f2f2f2;
+  color: #000000;
   font-size: 12px;
   padding: 8px 12px;
   position: absolute;
@@ -755,12 +765,12 @@ div#bookmarks {
   clear: both;
 }
 
-.slideColumn {
+div[class^="slideColumn"]{
   float: left;
   width: 16.66%;
 }
 
-.slideDemo {
+img[class^="slideDemo"]{
   opacity: 0.6;
 }
 
@@ -804,17 +814,17 @@ div#bookmarks {
 
 
 @media screen and (max-width: 799px) {
-  #flex-container-doc {
-      display: flex;
-      flex-direction: column;
-      height: 85vh; /*IMPORTANTE PER TENERE IL FOOTER IN BASSO */
-  }
+	#flex-container-doc {
+		display: flex;
+		flex-direction: column;
+		height: 85vh; /*IMPORTANTE PER TENERE IL FOOTER IN BASSO */
+	}
 
 	#docuContent{
 		align-self: center;
 		padding: 4vw;
 		width: 90%;
-    flex: 1;
+		flex: 1;
 	}
 
 	div#docuContent h1 {
@@ -823,12 +833,14 @@ div#bookmarks {
 		font-size: 1.4em;
 		margin-bottom: 1em;
 	}
+	
+	#docuContent p {word-break: break-all;}
 
 	#bodoniClass, #libertyClass, #bauhausClass, #the1980sClass, #ninetiesClass, #minimalFutureClass {display:none;}
 	
-  .bodoni {
+	.bodoni {
 		background-image: url(aminta_cover_page.jpg);
-    color: white;
+		color: white;
 	}
 
 	.liberty{
@@ -839,31 +851,31 @@ div#bookmarks {
 		border-style: outset;
 	}
 	
-  .bauhaus{
-    background-image: url(pattern-1.jpg);
-    color: #990000;
-  }
+	.bauhaus{
+		background-image: url(pattern-1.jpg);
+		color: #990000;
+	}
 
-  .the1980s{
-    background-image: url(pattern-2copia.jpg);
-    background-position: center;
-    background-repeat:
-    background-size: 50%;
-  }
+	.the1980s{
+		background-image: url(pattern-2copia.jpg);
+		background-position: center;
+		background-repeat:
+		background-size: 50%;
+	}
 
 	.nineties {
-	  background-image: url(nineties/90spattern2.jpg);
-    background-position: center;
-    background-size: 100%;
-    color: white;
-    font-weight: 600;
+		background-image: url(nineties/90spattern2.jpg);
+		background-position: center;
+		background-size: 100%;
+		color: white;
+		font-weight: 600;
 	}	
 	
 	.minimalFuture {
 		background-image: url(minimalFuture/painting.png);
-    background-position: center;
-    background-size: 90%;
-    font-weight: 600;
+		background-position: center;
+		background-size: 90%;
+		font-weight: 600;
 	}
 	
 	div#bookmarks{display: none;}
@@ -1010,9 +1022,9 @@ div#bookmarks {
     flex: 3 0px;
     order: 1;
     border-right: 2px solid;
-    border-left: 2px solid;
-    margin-left: 0.05em;
-    border-bottom: 2px solid;
+    /*border-left: 2px solid;*/
+    /*margin-left: 0.05em;*/
+    /*border-bottom: 2px solid;*/
   }
 
   #metadata {
@@ -1024,14 +1036,14 @@ div#bookmarks {
     width: 26%;
     order: 2;
     border-left: 2px solid;
-    border-bottom: 2px solid;
-    border-right: 2px solid;
-    margin-right: 0.05em;
+    /*border-bottom: 2px solid;*/
+    /*border-right: 2px solid;*/
+    /*margin-right: 0.05em;*/
   }
 	
 	
 #listIssue {
-    width: 22vw;
+    /*width: 22vw;*/
     padding-inline-start: 0px;
     padding: 0 3vw 0 3vw;
 }
@@ -1100,7 +1112,7 @@ button#prev, button#next  {
 
 [onClick] {cursor:pointer;}
 span[onclick] {cursor:pointer;}
-span[onclick]:hover{background-color:#B5D3E7;}
+span[onclick]:hover, time[onclick]:hover{background-color:#B5D3E7;}
 
 #wikiButton {
   border: solid 1px #000000;
@@ -1130,7 +1142,10 @@ span[onclick]:hover{background-color:#B5D3E7;}
 	/*text-transform: capitalize;*/
 }
 
-#listIssue > li > ul > li {margin-bottom: 3px;}
+#listIssue > li > ul > li {
+	margin-bottom: 3px;
+	background-color: white;
+}
 
 #listIssue > li > ul > li{
 	margin-bottom: 1em;
@@ -1193,9 +1208,34 @@ iframe {
 	z-index: 100;
 }
 
+body#cover {
+	background-color: bisque;
+	background-image: url(https://media.istockphoto.com/illustrations/aged-newspaper-background-illustration-id836677210);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-blend-mode: overlay;
+}
 
+#coverText p {
+	padding-bottom: 1.5em;
+	font-size: 1.2em;
+	text-transform: lowercase;
+}
 
+#coverText p:first-letter {text-transform: capitalize;}
 
+#coverText p:hover {text-decoration: underline;}
+
+#coverText h1 {
+    padding-bottom: 2em;
+    padding-top: 1em;
+}
+
+div#coverText {
+    text-align: center;
+    padding-left: 2.5em;
+    padding-right: 2.5em;
+}
 
 
 /* ABOUT ///////////////////////////////////////////////////////////////////////////////////////////////////////////// */
@@ -1270,6 +1310,7 @@ blockquote {
 
 #disclaimer, #disclaimerH1 {padding-left: 2vw; }
 
+#disclaimer{padding-bottom:4em;}
 
 a.link-to-break {
 	/* These are technically the same, but use both */
