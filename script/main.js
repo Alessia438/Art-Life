@@ -124,8 +124,8 @@ function my1980(i){
 
 function changeIssue(issueN){
 	document.getElementById(issueN).children[0].style.display = "block";
-	/*document.getElementById("prev").style.display = "block";
-	document.getElementById("next").style.display = "block";*/
+	document.getElementById("prev").style.display = "none";
+	document.getElementById("next").style.display = "none";
 	for (var i=1; i<document.getElementById(issueN).children.length; i++) {document.getElementById(issueN).children[i].style.display = "none";}
         var originButton = document.getElementById("Origin");
 	if (originButton.hasAttribute("href")) {originButton.removeAttribute("href");}
