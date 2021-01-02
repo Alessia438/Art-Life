@@ -13,7 +13,7 @@
 		<script src="script/main.js"></script>
 		<script>
 			document.addEventListener('DOMContentLoaded', function() {
-			   	var coverPage = document.querySelector('[id^="coverPage"]').id;
+			   	var coverPage = document.querySelector('[id^="coverPage"]');
 				var coverStyle = window.getComputedStyle(coverPage);
 				var displayCover = coverStyle.getPropertyValue('display');
 				if (displayCover == "block") {
