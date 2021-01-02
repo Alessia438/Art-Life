@@ -143,8 +143,8 @@ body:not(#cover){
     word-spacing: 0.01vw;
     widows: 3;
     orphans: 3;
-    margin-right: 2vw;
-    margin-left: 8vw;
+    margin-right: 8vw;
+    margin-left: 2vw;
     margin-top: 6vw;
     margin-bottom: 4vw;
 }

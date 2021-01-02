@@ -76,9 +76,7 @@ body{
   letter-spacing: 0.03em; 
   word-wrap: break-word; /*serve?*/
   orphans: 3;    /*serve?*/
-  position: relative;   /* aggiunti per rendere 2:3 proportion*/
-  width: 100%;
-  padding-top: 150%;
+  width: calc((100% - ) * 4 / 13);
 }
 
 
