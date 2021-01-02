@@ -472,7 +472,7 @@ p.quoteAuthor {
 
 #coverText p:nth-of-type(2):before {
 	content: "";
-	background-color: #545454;
+	background-color: #ababab;
 	height: 10vw;
 	width: 50vw;
     display: block;
@@ -484,7 +484,7 @@ p.quoteAuthor {
 
 #coverText p:nth-of-type(2):after {
 	content: "";
-    background-color: #243d00;
+    background-color: #879a6c;
     height: 15vw;
     width: 60vw;
     display: block;
