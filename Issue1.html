@@ -12,16 +12,24 @@
 		<script src="script/info.js"></script>
 		<script src="script/main.js"></script>
 		<script>
-			document.addEventListener('DOMContentLoaded', function() {
-			   	var coverPage = document.querySelector('[id^="coverPage"]');
-				var coverStyle = window.getComputedStyle(coverPage);
-				var displayCover = coverStyle.getPropertyValue('display');
-				if (displayCover == "block") {
-					document.getElementById("prev").style.display = "none";
-					document.getElementById("next").style.display = "none";
-				}
-			}, false);
+			document.addEventListener('readystatechange', event => { 
 
+			    // When HTML/DOM elements are ready:
+			    /* if (event.target.readyState === "interactive") {   //does same as:  ..addEventListener("DOMContentLoaded"..
+			        
+			    } */
+
+			    // When window loaded ( external resources are loaded too- `css`,`src`, etc...) 
+			    if (event.target.readyState === "complete") {
+			        var coverPage = document.querySelector('[id^="coverPage"]');
+					var coverStyle = window.getComputedStyle(coverPage);
+					var displayCover = coverStyle.getPropertyValue('display');
+					if (displayCover == "block") {
+						document.getElementById("prev").style.display = "none";
+						document.getElementById("next").style.display = "none";
+					}
+			    }
+			});
 		</script>
 		<link rel="stylesheet" type="text/css" href="style/IndexStyle.css">
 	</head>
