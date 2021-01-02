@@ -124,8 +124,8 @@ function my1980(i){
 
 function changeIssue(issueN){
 	document.getElementById(issueN).children[0].style.display = "block";
-	document.getElementById("prev").style.display = "block";
-	document.getElementById("next").style.display = "block";
+	/*document.getElementById("prev").style.display = "block";
+	document.getElementById("next").style.display = "block";*/
 	for (var i=1; i<document.getElementById(issueN).children.length; i++) {document.getElementById(issueN).children[i].style.display = "none";}
         var originButton = document.getElementById("Origin");
 	if (originButton.hasAttribute("href")) {originButton.removeAttribute("href");}
@@ -149,11 +149,18 @@ function changeArticleCommon(c, articleNum, myOrigin, isCover, strToSplit, issue
 	for (var i=1; i<c.length; i++){
 		if ("article" + i === articleNum){
 			c[i].style.display = "block";
-			document.getElementById("prev").style.display = "block";
-			document.getElementById("next").style.display = "block";
 			getLinkOrigin(c[i], myOrigin);
-			if (isCover) {top.window.location.href =  window.location.href.split(strToSplit)[0]+issueNum[0].toUpperCase()+issueNum.slice(1)+'.html#'+c[i].id;}
-			else{window.location.href =  window.location.href.split(strToSplit)[0]+'#'+c[i].id;}	
+			if (isCover) {
+				top.window.location.href =  window.location.href.split(strToSplit)[0]+issueNum[0].toUpperCase()+issueNum.slice(1)+'.html#'+c[i].id;}
+			else {
+				window.location.href = window.location.href.split(strToSplit)[0]+'#'+c[i].id;
+				if (i === 1) { document.getElementById("next").style.display = 'block'; }
+				else if (i === 5) { document.getElementById("prev").style.display = 'block'; }
+				else {
+					document.getElementById("prev").style.display = 'block';
+					document.getElementById("next").style.display = 'block';
+				}				
+			}	
 		}
 		else {c[i].style.display = "none";}
 	}
@@ -167,8 +174,6 @@ function changeArticle(articleNum, issueNum){
 }
 
 function changeArticleCover(articleNum, issueNum){
-	window.parent.document.getElementById("prev").style.display = "block";
-	window.parent.document.getElementById("next").style.display = "block";
 	var c = window.parent.document.getElementById(issueNum).children,
 	myOrigin = window.parent.document.getElementById("Origin");
 	changeArticleCommon(c, articleNum, myOrigin, true, 'cover_pages/cover_page'+issueNum.charAt(issueNum.length-1)+'.html', issueNum);
@@ -218,13 +223,17 @@ function nextArticle() {
 	}
 }
 
-function hidePrevAndNext() {
-	var coverPage = document.querySelector('[id^="coverPage"]');
-	var coverStyle = window.getComputedStyle(coverPage);
-	var displayCover = coverStyle.getPropertyValue('display');
-	if (displayCover == "none") {
-		document.getElementById("prev").style.display = "block";
-		document.getElementById("next").style.display = "block";
+function hidePrevAndNext(issueNumber) {
+	var issueC = document.getElementById(issueNumber).children;
+	for (var d = 1; d < issueC.length; d++) {
+		if (issueC[d].style.display = 'block') {
+			if (d === 1) {document.getElementById("next").style.display = 'block';}
+			else if (d === 5) {document.getElementById("prev").style.display = 'block';}
+			else if (d < 5 && d > 1) {
+				document.getElementById("prev").style.display = 'block';
+				document.getElementById("next").style.display = 'block';
+			}
+		}
 	}
 }
 
