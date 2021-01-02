@@ -434,14 +434,15 @@ p.quoteAuthor {
 }
 
 #coverText p {
-	margin-top: 3vw;
-	margin-bottom: 3vw;
+	font-family: 'Playfair Display', serif;
+	/*margin-top: 3vw;
+	margin-bottom: 3vw;*/
 }
 
 #coverText p:nth-of-type(1) {
-	width: 30%;
-	margin-bottom: 15vw;
-	margin-left: 20%;
+	width: 45%;
+	/*margin-bottom: 15vw;*/
+	margin-left: 30%;
 }
 
 #coverText p:nth-of-type(1):before {
@@ -449,9 +450,9 @@ p.quoteAuthor {
 	background-image: url(cover-art1.jpg);
 	background-size: contain;
 	background-repeat: no-repeat;
-	height: 15vw;
-	width: 20vw;
+	height: 30vw;
+	width: 40vw;
 	display: block;
-	margin-bottom: -10vw;
-	margin-left: -20%;
+	margin-bottom: -20vw;
+	margin-left: -50%;
 }
