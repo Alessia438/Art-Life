@@ -1066,7 +1066,7 @@ button#prev, button#next  {
   background-position: center;
   position: absolute;
   top: 50%;
-  z-index: 3;
+  /*z-index: 3;*/
 }
 
 #prev {
