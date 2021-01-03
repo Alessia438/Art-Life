@@ -36,7 +36,7 @@ img, video{
 
 
 .animation {
-	background: url('one.gif') left center;
+	background: url('gif/one.gif') left center;
 	width: 20%;
 	background-size: cover; 
 }
