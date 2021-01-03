@@ -321,33 +321,34 @@ p a{color: black;}
   h1{
     width: 100%;
     position: relative;
-    right: 20vw; /* era 25*/)
+    right: 13vw; /* era 25*/)
     font-size: 3vw; /*era 7*/
   }
 /*
   p{
     font-size: ;
     width:60vw;
-  } */
+  } 
 
   p.subtitle{
     position: initial;
     font-size: 0.55em; 
   }
-
+*/
   p.byline{
-    font-size: 0.7em;
-    left: 50vw;
+   /* font-size: 0.7em;
+    left: 50vw; */
     width: 30%;
   }
-
+/*
   p.publicationDate{
     font-size: 0.7em;
     width: 40%;
   }
+  */
 
   section{ /* come faccio a dirgli solo dopo il primo voglio la riga? */
-    border-bottom: 40px dotted #0066cc;
+    border-bottom: 30px dotted #0066cc;
     bottom: 20pt;
   }
 
@@ -363,26 +364,26 @@ p a{color: black;}
 /*FOR TABLET*/
 
 @media screen and (max-width: 800px){
-
+/*
   p{font-size: 2vw;}
 
   p.subtitle{
     position: initial;
-    font-size: 2vw; /*era 0.75 em*/
+    font-size: 2vw; era 0.75 em
   }
-
+*/
   p.byline{
-    font-size: 1.9vw;
-    left: 50vw;
+  /*  font-size: 1.9vw;
+    left: 50vw; */
     width: 30%;
   }
 
   p.publicationDate{
-    font-size: 1.9vw;
+  /*  font-size: 1.9vw; */
     width: 40%;
   }
 
-  figcaption{font-size: 2vw;}
+ /* figcaption{font-size: 2vw;} */
 
-  blockquote{font-size: 2vw;}
+ /* blockquote{font-size: 2vw;} */
 }
