@@ -34,7 +34,7 @@ body#cover:first-of-type{
    left: 25vw; /* era 60 pt*/
    margin-left: 10vw;
    /*text-decoration: underline;*/
-   width: 65%;
+   width: 60%;
 }
 
 /* stile per articoli*/
@@ -127,12 +127,12 @@ video source{
   bottom: -3vw;
   background-color: #f4e4c8;
 }
-/* FORSE NON SERVE*/
+/* FORSE NON SERVE
 #cover p{
   width: 60vmin;
 }
-
-body h1{  
+*/
+h1{  
   font-family: "Bauhaus 93";
   text-align: left;
   text-transform: uppercase;
