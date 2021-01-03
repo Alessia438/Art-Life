@@ -426,6 +426,10 @@ div#coverText {
 
 
 #coverText p:nth-of-type(4):before {
+    
+}
+
+#coverText p:nth-of-type(4):after {
 	content: "";
     background-image: url(cover-art5.png);
     display: block;
@@ -433,15 +437,7 @@ div#coverText {
     height: 20vw;
     background-size: 80%;
     background-repeat: no-repeat;
-    background-position: top left;
-    
-    
-}
-
-#coverText p:nth-of-type(4):after {
-	content: "";
-    background-color: ;
-    
+    background-position: top left;    
 }
 
 #coverText p:nth-of-type(5) {
@@ -457,14 +453,13 @@ div#coverText {
 
 #coverText p:nth-of-type(5):before {
 	content: "";
-	background-color: #9d8485;		
+    background-image: url(cover-art4.jpg);
+    height: 30vw;
+	width: 30vw;
+    display: block;		
 }
 
 
 #coverText p:nth-of-type(5):after {
-	content: "";
-    background-image: url(cover-art4.jpg);
-    height: 30vw;
-	width: 30vw;
-    display: block;
+	
 }
