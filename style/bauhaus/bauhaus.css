@@ -63,8 +63,8 @@ body{
   font-size: 14pt;
   font-weight: lighter;
   text-align: justify; 
-  margin-left: 20mm; /*inner  margin secondo Tscihold*/
-  margin-right: 40mm; /*outer margin*/
+ /* margin-left: 20mm; inner  margin secondo Tscihold*/
+ /* margin-right: 40mm; outer margin*/
   line-height: 1.6; /* 21pt;*/
   text-align-last: left;
   text-transform: lowercase;
@@ -76,11 +76,12 @@ body{
   letter-spacing: 0.03em; 
   word-wrap: break-word; /*serve?*/
   orphans: 3;    /*serve?*/
-  /*width: calc((100% - 0) * 4 / 13);    2:3 proportions?
-  padding-left: calc(5px * 4 / 9);
-  padding-right: calc(20px * 4 / 9);*/
-  height: 0%;  /* 2:3 proportions; */
-  padding-bottom: 150%;
+  margin-left: 10vw; /*inner  margin secondo Tscihold*/
+  margin-top: 10vw;
+  margin-right: 20vw; /*outer margin*/
+  margin-bottom: 30vw;
+  /*height: 0%;   2:3 proportions; 
+  padding-bottom: 150%; */
 }
 
 
@@ -178,7 +179,7 @@ p.byline{
   font-style:lowercase;
   position:relative;
   bottom: 20vw;    /*era 30*/
-  left: 55vw;
+  left: 50vw;
   transform: rotate(15deg);
   /*aggiunto per controllare*/
 }
@@ -187,7 +188,7 @@ p.publicationDate{
   font-style:lowercase;
   position:relative;
   bottom: 20vw;
-  left: 55vw;
+  left: 50vw;
   transform: rotate(15deg);
   color: blue; 
 }
@@ -196,7 +197,7 @@ p.publicationTime{
   font-style:lowercase;
   position:relative;
   bottom: 20vw;
-  left: 55vw;
+  left: 50vw;
   transform: rotate(15deg);
   color: blue; 
 }
@@ -341,7 +342,7 @@ p a{color: black;}
 
   p.byline{
     font-size: 0.7em;
-    left: 55vw;
+    left: 50vw;
     width: 30%;
   }
 
@@ -374,7 +375,7 @@ p a{color: black;}
 
   p.byline{
     font-size: 1.9vw;
-    left: 55vw;
+    left: 50vw;
     width: 30%;
   }
 
