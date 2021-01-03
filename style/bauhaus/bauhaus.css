@@ -17,11 +17,6 @@
   src: url("bauhaus93.ttf"); 
 }
 
-/*
-h1, .byline{
-  font-family: "Bauhaus 93";
-}
-*/
 
 /* stile per cover page*/
 
@@ -179,7 +174,7 @@ p.byline{
   font-style:lowercase;
   position:relative;
   bottom: 20vw;    /*era 30*/
-  left: 50vw;
+  left: 50vw;     /*era 55*/
   transform: rotate(15deg);
   /*aggiunto per controllare*/
 }
@@ -188,7 +183,7 @@ p.publicationDate{
   font-style:lowercase;
   position:relative;
   bottom: 20vw;
-  left: 50vw;
+  left: 50vw; /*era 55*/
   transform: rotate(15deg);
   color: blue; 
 }
