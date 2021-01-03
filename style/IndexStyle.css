@@ -1193,8 +1193,9 @@ div#aboutMetaContents {
 }
 
 div#curDiv {
-    display: flex;
-    background-color: #0C351F;
+	display: flex;
+	background-color: #0C351F;
+	color: white;
 }
 
 h1#aboutMetaTitle {
