@@ -285,8 +285,8 @@ blockquote:nth-of-type(odd) {
 div#coverText {
 	display: flex;
     flex-direction: column;
-    filter: blur(8px);
-  -webkit-filter: blur(8px);
+    -webkit-backdrop-filter: blur(2px);
+  	backdrop-filter: blur(2px); 
   	background-image: url(pink-gradient.jpg);
 }
 

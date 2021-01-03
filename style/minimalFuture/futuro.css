@@ -503,7 +503,7 @@ p.quoteAuthor {
 
 #coverText p:nth-of-type(3):before {
 	content: "";
-    background-image: url(cover-art3.JPG);
+    background-image: url(cover-art3-bis.jpg);
     height: 20vw;
     width: 100%;
     display: block;
