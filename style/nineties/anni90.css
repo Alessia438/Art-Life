@@ -305,7 +305,11 @@ div#coverText {
 
 #coverText p:nth-of-type(1):after {
 	content: "";
-	background-image: url();
+	background-image: url(cover-art1.png);
+	height: 15vw;
+	width: 30vw;
+    display: block;
+    background-size: contain;
 }
 
 
@@ -316,11 +320,11 @@ div#coverText {
 
 #coverText p:nth-of-type(2):before {
 	content: "";
-	background-color: #879a6c;
-	height: 15vw;
-	width: 50vw;
+	background-image: url(cover-art2.png);
+	height: 30vw;
+	width: 15vw;
     display: block;
-    margin-left: -100%;
+    margin-left: -50%;
     margin-bottom: -30%;
     margin-top: 18vw;	
 }
@@ -337,7 +341,10 @@ div#coverText {
 
 #coverText p:nth-of-type(3):after {
 	content: "";
-	background-image: url();
+	background-image: url(cover-art3.jpg);
+	height: 20vw;
+	width: 40vw;
+    display: block;
 }
 
 
@@ -348,7 +355,10 @@ div#coverText {
 
 #coverText p:nth-of-type(4):before {
 	content: "";
-    background-image: url();
+    background-image: url(cover-art.jpg);
+    height: 30vw;
+	width: 30vw;
+    display: block;
     
 }
 
@@ -371,6 +381,6 @@ div#coverText {
 
 #coverText p:nth-of-type(5):after {
 	content: "";
-    background-color: #7a6667;
+    background-image: url(cover-art5.png);
     	
 }
