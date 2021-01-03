@@ -22,6 +22,25 @@
 
 	<body onload="metadataViewer('issue3'), findOrigin(), verifyCSS()">
 		
+		<div id="metaDiv" style="display:none">
+			<div id="darkBackground">
+			</div>
+			<div id="aboutMetaContents">
+				<div id="curDiv">
+					<h1 id="aboutMetaTitle">About Metadata Viewer</h1>
+					<button class="btn" onclick="closeMetaContent()"><i class="fa fa-close"></i></button>
+
+				</div>
+				<p id="aboutMetaContent">Each article refers to <span class="toColor">people, places, events, concepts,</span> etc. that are related to each other and create a complex <span class="toColor">network of references</span>. In this section you can find all the metadata of all the articles of the current issue. You can:</p>
+				<ul id="aboutMetaUl">
+					<li><span class="toColor">overview</span> the relevant data and metadata and <b>scroll to the relevant part of the article</b>, i.e. where the metadata is located (e.g. metadata location will be temporarily highlighted);</li>
+					<li><span class="toColor">automatically <b>identify</b></span><b> present data for the current article</b>, whose metadata box background is light blue.</li>
+					<li><b><span class="toColor">sort</span> them</b> in many ways (i.e. alphabetically, document order, by frequency)</li>
+					<li>get an idea about some data if you don't know them by reading their wikipedia page, simply by clicking on the <span class="toColor"><b>wikipedia button</b></span>!</li>
+				</ul>
+			</div>
+		</div>
+		
 		<!-- main navigation navbar -->
 		<header class="header">
 			<a id="logo">Art&amp;Life</a> <!-- id="mmm" ? -->
@@ -85,7 +104,7 @@
 				
 				<ul id="selectorNav" class="stickynav">    
 					<li class="dropdown"><a class="dropbtn" onclick="showMetaContent()">About metadata</a>
-						<div class="dropdown-content">	
+						<!-- <div class="dropdown-content">	
 							<a class="buttonIssue" id="contentToShow" style="display: none;">Each article refers to people, places, events, concepts, etc. that are related to each other and create a complex network of references. In this section you can find all the metadata of all the articles of the current issue. You can:
 								<ul>
 									<li>overview the relevant data and metadata and <b>scroll to the relevant part of the article</b>, i.e. where the metadata is located (e.g. metadata location will be temporarily highlighted);</li>
@@ -94,7 +113,7 @@
 									<li>get an idea about some data if you don't know them by reading their wikipedia page, simply by clicking on the <b>wikipedia button</b>!</li>
 								</ul>
 							</a>
-						</div>
+						</div> -->
 					</li>
 
 					<li class="dropdown"><a class="dropbtn">Order by</a>
