@@ -328,6 +328,10 @@ p a{color: black;}
     right: 17vw; /* era 25*/)
     font-size: 3vw; /*era 7*/
   }
+
+  #cover p{
+  width: 50vmin;
+  }
 /*
   p{
     font-size: ;
@@ -339,11 +343,9 @@ p a{color: black;}
     font-size: 0.55em; 
   }
 */
-  p.byline{
-   /* font-size: 0.7em;
-    left: 50vw; */
-    width: 30%;
-  }
+  p.byline{top: -40vw;}
+  p.publicationDate{top: -40vw;}
+  p.publicationTime{top: -40vw;}
 
   .biblioItem, .pubnote{
   border: 2px solid red; 
@@ -372,6 +374,9 @@ p a{color: black;}
 /*FOR TABLET*/
 
 @media screen and (max-width: 800px){
+  p.byline{top: -40vw;}
+  p.publicationDate{top: -40vw;}
+  p.publicationTime{top: -40vw;}
 /*
   p{font-size: 2vw;}
 
@@ -379,18 +384,15 @@ p a{color: black;}
     position: initial;
     font-size: 2vw; era 0.75 em
   }
-*/
+
   p.byline{
-  /*  font-size: 1.9vw;
-    left: 50vw; */
     width: 30%;
   }
 
   p.publicationDate{
-  /*  font-size: 1.9vw; */
     width: 40%;
   }
-
++/
  /* figcaption{font-size: 2vw;} */
 
  /* blockquote{font-size: 2vw;} */
