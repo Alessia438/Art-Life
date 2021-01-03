@@ -16,20 +16,23 @@ span[onclick]:hover, time[onclick]:hover {background-color: #b38316c4;}
 /*Only for cover*/
 
 body#cover {
-  background-image: url('liberty_background.jpg');
-  background-repeat: no-repeat;
-  background-attachment: inherit;
-  /*height: 100%;*/
-  font-family: Normal;
-  font-weight:normal;
-  font-style:normal;
-  /*margin-right: 25vW;
-  margin-left: 32vW;*/
-  margin-top: 20vW;
-  margin-bottom: 30vW;
-  background-size: 100vw;
-  column-count: 1;
-  /*font-size: 2em;*/
+	/*background-image: url('liberty_background.jpg');*/
+	background-image: url(flower1.png);
+	background-color: rgb(218, 200, 171);
+	box-shadow: inset 0 0 5vw 1.9vw rgb(190, 162, 137);
+	background-repeat: no-repeat;
+	background-attachment: inherit;
+	/*height: 100%;*/
+	font-family: Normal;
+	font-weight:normal;
+	font-style:normal;
+	/*margin-right: 25vW;
+	margin-left: 32vW;*/
+	padding-top: 20vW;
+	padding-bottom: 30vW;
+	background-size: 100vw;
+	column-count: 1;
+	/*font-size: 2em;*/
 }
 
 #cover h1 {
