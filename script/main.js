@@ -154,34 +154,10 @@ function changeArticleCommon(c, articleNum, myOrigin, isCover, strToSplit, issue
 			if (isCover) {
 				top.window.location.href =  window.location.href.split(strToSplit)[0]+issueNum[0].toUpperCase()+issueNum.slice(1)+'.html#'+c[i].id;
 				hidePrevAndNextAnc(i, true);
-				/*if (i === 1) {
-					window.parent.document.getElementById("next").style.display = 'block';
-					window.parent.document.getElementById("prev").style.display = 'none';
-				}
-				else if (i === 5) { 
-					window.parent.document.getElementById("prev").style.display = 'block';
-					window.parent.document.getElementById("next").style.display = 'none';
-				}
-				else {
-					window.parent.document.getElementById("prev").style.display = 'block';
-					window.parent.document.getElementById("next").style.display = 'block';
-				}*/
 			}
 			else {
 				window.location.href = window.location.href.split(strToSplit)[0]+'#'+c[i].id;
 				hidePrevAndNextAnc(i, false);
-				/*if (i === 1) { 
-					document.getElementById("next").style.display = 'block';
-					document.getElementById("prev").style.display = 'none';
-				}
-				else if (i === 5) { 
-					document.getElementById("prev").style.display = 'block';
-					document.getElementById("next").style.display = 'none';
-				}
-				else {
-					document.getElementById("prev").style.display = 'block';
-					document.getElementById("next").style.display = 'block';
-				}				*/
 			}	
 		}
 		else {c[i].style.display = "none";}
@@ -220,14 +196,6 @@ function prevArticle() {
 				getLinkOrigin(articleNow, myOrigin); // se scegliamo di definire la variabile myframe in questa funzione va sostituito articleNow con myFrame come parametro input della funzione getLinkOrigin
 				verifyMetaHighlight(i);
 				hidePrevAndNextAnc(i, false);
-				/*if (i === 1) {
-					document.getElementById("next").style.display = "block";
-					document.getElementById("prev").style.display = "none";
-				}
-				else if (i <= 5 && i > 1) {
-					document.getElementById("prev").style.display = "block";
-					document.getElementById("next").style.display = "block";
-				}*/
 			}
 		}
 	}	
@@ -235,12 +203,12 @@ function prevArticle() {
 
 function nextArticle() {
 	var articles = document.getElementsByClassName("article");
-	for (var i = articles.length-2; i >= 0; i--) { //articles length = 5, ma noi non vogliamo considerare l'ultimo quindi mettiamo articles.lenght - 2 (con -1 considera anche l'ultimo perché length - 1 = 5 e articles[5] è l'ultimo articolo)
+	for (var i = articles.length-2; i >= 0; i--) { //articles length = 5, ma noi non vogliamo considerare l'ultimo quindi mettiamo articles.lenght - 2 (con -1 considera anche l'ultimo perché length - 1 = 4 e articles[4] è l'ultimo articolo)
 		var frame = articles[i],
     		style = window.getComputedStyle(frame),
 			displayValue = style.getPropertyValue('display');
 		if (displayValue === 'block') {
-			if (!(frame.classList.contains('article5'))) { //IMPORTANTE: qua ho messo che la classe dell'ultimo articolo è "article5"
+			if (!(frame.classList.contains('article5'))) { //IMPO: la classe dell'ultimo articolo è "article5"
 				frame.style.display='none';
 				articles[i+1].style.display = 'block';
 				window.location.href =  window.location.href.split('#')[0]+'#'+articles[i+1].id;
@@ -248,14 +216,6 @@ function nextArticle() {
 				getLinkOrigin(articles[i+1], myOrigin);
 				verifyMetaHighlight(i+2);
 				hidePrevAndNextAnc(i+2, false);
-				/*if (i === 3) {
-					document.getElementById("next").style.display = "none";
-					document.getElementById("prev").style.display = "block";
-				}
-				else if (i < 3 && i > -1) {
-					document.getElementById("prev").style.display = "block";
-					document.getElementById("next").style.display = "block";
-				}*/
 			}
 		}
 	}
@@ -267,12 +227,6 @@ function hidePrevAndNext(issueNumber) {
 		var curDivStyle = window.getComputedStyle(issueC[d], null).display; //if the element's display is being inherited or being specified by a CSS rule, you'll need to get its computed style. 
 		if (curDivStyle === 'block') {
 			hidePrevAndNextAnc(d, false);
-			/*if (d === 1) {document.getElementById("next").style.display = 'block';}
-			else if (d === 5) {document.getElementById("prev").style.display = 'block';}
-			else if (d < 5 && d > 1) {
-				document.getElementById("prev").style.display = 'block';
-				document.getElementById("next").style.display = 'block';
-			}*/
 		}
 	}
 }

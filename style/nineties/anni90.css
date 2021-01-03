@@ -285,6 +285,9 @@ blockquote:nth-of-type(odd) {
 div#coverText {
 	display: flex;
     flex-direction: column;
+    filter: blur(8px);
+  -webkit-filter: blur(8px);
+  	background-image: url(pink-gradient.jpg);
 }
 
 #coverText h1 {
@@ -292,42 +295,54 @@ div#coverText {
 	transform: none;
     font-size: 12vw;
     font-family: Ageta Chubby Demo;
+    color: #ccf6ff;
 }
 
 
 #coverText p {
 	text-transform: uppercase;
 	font-weight: bold;
+	font-size: 2vw;
 }
 
 
 #coverText p:nth-of-type(1) {
-	order: 1;
+    order: 1;
     text-align: justify;
-    margin-left: 20%;
-    width: 60%;
+    margin-left: 16vw;
+    max-width: 50vw;
     padding: 2vw;
+    z-index: 99;
+    position: absolute;
+    margin-top: 8vw;
+    margin-right: 1vw;
 }
 
 #coverText p:nth-of-type(1):after {
 	content: "";
-	background-image: url(cover-art1.png);
-	height: 20vw;
-    width: 30vw;
-    display: block;
+    background-image: url(cover-art1.png);
+	height: 25vw;
+    width: 35vw;
+    position: absolute;
     background-size: 90%;
     background-position: 50%;
     background-repeat: no-repeat;
-    margin-left: 80%;
-    margin-top: -20%;
+    z-index: -99;
+    margin-top: -10vw;
+    margin-left: -3vw;
 }
 
 #coverText p:nth-of-type(1):before {
-	content: "";	
+	content: "";
     background-color: #ffe100;
-	height: 20vw;
-    width: 30vw;
-    display: block;
+    height: 13vw;
+    width: 50vw;
+    position: absolute;
+    margin-top: -3vw;
+    margin-bottom: -20%;
+    margin-left: -3vw;
+    z-index: -1;
+    padding-right: 5vw;
 }
 
 
