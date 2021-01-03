@@ -536,7 +536,7 @@ p.quoteAuthor {
 
 #coverText p:nth-of-type(5) {
 	margin-top: 16vw;
-	width: 30%;
+	width: 40%;
     margin: auto;
     text-align: center;
 }
@@ -548,7 +548,7 @@ p.quoteAuthor {
 	height: 10vw;
 	width: 50vw;
     display: block;
-    margin-left: -150%;
+    margin-left: -100%;
     margin-bottom: -20%;
     margin-top: 18vw;	
 }
@@ -561,5 +561,5 @@ p.quoteAuthor {
     width: 56vw;
     display: block;
     margin-left: 23%;
-    margin-top: -30%;	
+    margin-top: -40%;	
 }
