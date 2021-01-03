@@ -1,0 +1,211 @@
+@font-face {
+  font-family: "Lato Black";
+  src: url("Lato-Black.ttf");
+}
+@font-face {
+  font-family: "Assistant-Bold";
+  src: url("Assistant-Bold.ttf");
+}
+
+@font-face {
+  font-family: "UniversLTStd-Bold";
+  src: url("UniversLTStd-Bold.otf");
+}
+
+@font-face {
+  font-family: "Cheltenham Book Regular";
+  src: url("Cheltenham Book Regular.otf");
+}
+
+#cover h1 {
+	font-family: "Lato Black";
+	color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-size: 14vmax;
+    letter-spacing: -7px;
+    word-spacing: -4px;
+    text-align: center;
+    height: 200;
+    box-sizing: border-box; 
+    width: 101%;
+}
+
+#cover {
+    background-image: url('cover.png');
+    background-repeat: no-repeat;
+    background-position: 98%, top;
+    background-size: cover;
+    padding-left: 2%;
+    padding-bottom: 2%;
+    overflow-x: hidden;
+    background-position: top center;
+}
+
+[onClick] {cursor:pointer;}
+span[onclick] {cursor:pointer;}
+[onclick]:hover {background-color: #c6aa71;}
+
+#cover p{
+    font-family: "UniversLTStd-Bold";
+    font-size: 3vmax;
+    font-style: bold;
+    max-width: 25vw;
+    padding: 1rem;
+    letter-spacing: -0.5px;
+    line-height: 3vw;
+    text-indent: 0vw;
+    word-spacing: 0.01vw;
+    hyphens: none;
+}
+
+#cover p:nth-child(2) {
+  color: green;
+  border-bottom-style: solid;
+  border-image: 
+    linear-gradient(
+      to right, 
+      #ce8f50, 
+      rgba(0, 0, 0, 0)
+    ) 100% 0%;
+}
+
+#cover p:nth-child(3) {
+color: #ffcc00;
+border-bottom-style: solid;
+border-image: 
+    linear-gradient(
+      to right, 
+      #ce8f50, 
+      rgba(0, 0, 0, 0)
+    ) 100% 0%;
+}
+
+#cover p:nth-child(4) {
+color: red;
+border-bottom-style: solid;
+border-image: 
+    linear-gradient(
+      to right, 
+      #ce8f50, 
+      rgba(0, 0, 0, 0)
+    ) 100% 0%;
+}
+
+#cover p:nth-child(5) {
+color: blue;
+border-bottom-style: solid;
+border-image: 
+    linear-gradient(
+      to right, 
+      #ce8f50, 
+      rgba(0, 0, 0, 0)
+    ) 100% 0%;
+}
+#cover p:nth-child(6) {
+color: white;
+border-bottom-style: solid;
+border-image: 
+    linear-gradient(
+      to right, 
+      #ce8f50, 
+      rgba(0, 0, 0, 0)
+    ) 100% 0%;
+}
+
+section h1{
+    font-family: 'Assistant-Bold';
+    font-size: 5vw;
+    text-align: center;
+    letter-spacing: -1px;
+    border-bottom: 2px solid black;
+    column-span: all; 
+    margin-top: 0;
+}
+
+section h1::after{
+     content: [id^="FIGURE-1-"];  /*come metto l'immagine dopo il titolo?*/
+}
+
+body:not(#cover){
+    font-family: 'Cheltenham Book Regular';
+    font-size: 1.4vw;
+    font-weight: normal;
+   /* color: #1f1e1e; */
+    background-color: #fffffa;
+    text-align: justify;
+    column-count: 3;
+    column-gap: 2vw;
+    column-rule-style: solid;
+    column-rule-width: 0.2vw;
+    border: 0.2vw solid black;
+    padding: 1vw;
+    letter-spacing: 0.02vw;
+    word-spacing: 0.01vw;
+    widows: 3;
+    orphans: 3;
+    margin-right: 8vw;
+    margin-left: 2vw;
+    margin-top: 6vw;
+    margin-bottom: 4vw;
+}
+
+p{
+    /*letter-spacing: -0.01vw;*/
+    /*word-spacing: 0.01vw;*/
+    text-indent: 1.5vw;
+    line-height: 1.6vw;
+    hyphens: none;
+}
+
+p:nth-child(1)::first-letter { /* p:first-of-type:not(.subtitle):not(.byline):first-letter */
+    font-weight: bold;
+    font-size: 3vw;
+    color: #1f1e1e;
+}
+
+
+/*
+p:not(.publicationDate)::first-letter { voglio la prima lettera grande solo del primo p 
+      font-weight: bold;
+      font-size: 3vw;
+      color: #1f1e1e;
+      
+}
+*/
+p a{color: #1f1e1e;}
+
+/* img:first-child{width: 100%;} */
+
+img{
+    width: 100%;
+    filter: sepia(60%) contrast(99%) saturate(110%) brightness(100%) hue-rotate(-9deg);
+}
+
+figure {
+  margin-block-start: initial;
+  margin-block-end: initial;
+  margin-inline-start: initial;
+  margin-inline-end: initial;
+}
+
+}
+
+figcaption{
+    font-family: 'Assistant-Bold';
+    font-size: 1.2vw;
+}
+
+h2{
+  font-size: 1.6vw;
+  font-style: italic;
+}
+.subtitle{
+    
+    font-style: italic;
+    text-align: justify;
+}
+
+.byline, .publicationDate{
+    font-family: 'Assistant-Bold';
+    text-align: right;
+}
