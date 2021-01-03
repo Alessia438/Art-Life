@@ -339,17 +339,19 @@ div#coverText {
 #coverText p:nth-of-type(2):before {
 	content: "";
 	background-image: url(cover-art2.png);
-	height: 30vw;
-	width: 15vw;
+	background-size: cover;
+    height: 35vw;
+    width: 30vw;
     display: block;
-    margin-left: -50%;
-    margin-bottom: -30%;
-    margin-top: 18vw;	
+    background-repeat: no-repeat;
+    background-position: center;	
 }
 
 
 #coverText p:nth-of-type(3) {
 	order: 4;
+    margin-left: 20%;
+    width: 50%;
 }
 
 
@@ -360,9 +362,14 @@ div#coverText {
 #coverText p:nth-of-type(3):after {
 	content: "";
 	background-image: url(cover-art3.jpg);
-	height: 20vw;
-	width: 40vw;
+	height: 30vw;
+    width: 40vw;
     display: block;
+    /* margin-bottom: -30%; */
+    margin-top: -30%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 70%;
 }
 
 
