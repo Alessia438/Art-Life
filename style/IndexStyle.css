@@ -1194,7 +1194,7 @@ div#aboutMetaContents {
 
 div#curDiv {
     display: flex;
-    background-color: cadetblue;
+    background-color: #0C351F;
 }
 
 h1#aboutMetaTitle {
@@ -1234,12 +1234,19 @@ p#aboutMetaContent {
 	padding-left: 1em;
 }
 
-span.toColor {background-color: cadetblue;}
+span.toColor {
+	/*background-color: #0C351F;
+	color:white;*/
+	color: #0C351F;
+	text-decoration: underline;
+}
 
 @media screen and (max-width: 799px) {
 	div#aboutMetaContents {
 		overflow: scroll;
 		height: auto;
+		min-width: 80%;
+		width:auto;
 	}
 	
 	h1#aboutMetaTitle {
