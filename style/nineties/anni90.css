@@ -285,6 +285,9 @@ blockquote:nth-of-type(odd) {
 div#coverText {
 	display: flex;
     flex-direction: column;
+    filter: blur(8px);
+  -webkit-filter: blur(8px);
+  	background-image: url(pink-gradient.jpg);
 }
 
 #coverText h1 {
@@ -292,6 +295,7 @@ div#coverText {
 	transform: none;
     font-size: 12vw;
     font-family: Ageta Chubby Demo;
+    color: #ccf6ff;
 }
 
 
@@ -315,6 +319,8 @@ div#coverText {
 }
 
 #coverText p:nth-of-type(1):after {
+	content: "";
+    background-image: url(cover-art1.png);
 	height: 25vw;
     width: 35vw;
     position: absolute;
