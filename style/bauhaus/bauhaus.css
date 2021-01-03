@@ -352,11 +352,11 @@ p a{color: black;}
   }
 
   /*figcaption{font-size: 1.9vw;}*/
-
+/*
   blockquote{
     margin-right: 10mm;
-    /*font-size: 1.9vw;*/
-  }
+    font-size: 1.9vw;
+  } */
 
 }  /*chiusura mediaquery*/
 
