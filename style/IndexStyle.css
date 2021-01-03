@@ -657,11 +657,11 @@ div#bookmarks {
 }
 
 #bookmarks .bodoni{
-	background-image: url(aminta_cover_page.jpg);
+	background-image: url(bodoni/aminta_cover_page.jpg);
     	color: white;
 }
 #bookmarks .liberty{
-	background-image: url(fiore_odificato.png);
+	background-image: url(liberty/fiore_odificato.png);
 	background-position-y: center;
 	background-size: 100%;
 	border: crimson;
@@ -669,14 +669,14 @@ div#bookmarks {
 }
 
 #bookmarks .bauhaus {
-    background-image: url(pattern-1.jpg);
+    background-image: url(bauhaus/pattern-1.jpg);
     background-position: center;
     color: #000066;
    
 }
 
 #bookmarks .the1980s {
-    background-image: url(pattern-2copia.jpg);
+    background-image: url(1980/pattern-2copia.jpg);
     background-position: top right;
     background-repeat: no-repeat;
     background-size: 105%;
@@ -840,12 +840,12 @@ img[class^="slideDemo"]{
 	#bodoniClass, #libertyClass, #bauhausClass, #the1980sClass, #ninetiesClass, #minimalFutureClass {display:none;}
 	
 	.bodoni {
-		background-image: url(aminta_cover_page.jpg);
+		background-image: url(bodoni/aminta_cover_page.jpg);
 		color: white;
 	}
 
 	.liberty{
-		background-image: url(fiore_odificato.png);
+		background-image: url(liberty/fiore_odificato.png);
 		background-position-y: center;
 		background-size: 100%;
 		border: crimson;
@@ -853,12 +853,12 @@ img[class^="slideDemo"]{
 	}
 	
 	.bauhaus{
-		background-image: url(pattern-1.jpg);
+		background-image: url(bauhaus/pattern-1.jpg);
 		color: #990000;
 	}
 
 	.the1980s{
-		background-image: url(pattern-2copia.jpg);
+		background-image: url(1980/pattern-2copia.jpg);
 		background-position: center;
 		background-repeat:
 		background-size: 50%;
