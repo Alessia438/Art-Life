@@ -23,6 +23,10 @@
 	    	</div>
 	    </header>
 		
+		<div id="loading">
+			<img id="loading-image" src="style/gif/one.gif" alt="Loading..." />
+		</div>
+		
 		<div id="flex-container-doc">
 		    <div id="docuContent">
 				<h1 id="bodoniId" class="bodoni" onclick="showStyleDocu('bodoniClass')">BODONI</h1>
@@ -548,7 +552,11 @@
 			
 		</div> <!-- si chiude flex-container-doc -->
 	  		
- 	
+ 		<script>
+			$(window).on('load', function() {
+			$('#loading').hide();
+			});
+		</script>
 		
 	</body>
 </html>
