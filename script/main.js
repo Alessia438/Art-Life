@@ -680,9 +680,18 @@ function sortCategory(list, searchKey) {
   }
 }
 
-function showMetaContent(){
+/*function showMetaContent(){
 	if (document.getElementById('contentToShow').style.display === 'none'){document.getElementById('contentToShow').style.display = 'block';}
 	else{document.getElementById('contentToShow').style.display = 'none';}
+}*/
+function showMetaContent(){
+	document.getElementById('darkBackground').style.display = 'block';
+	document.getElementById('aboutMetaContents').style.display = 'block';
+}
+
+function closeMetaContent(){
+	document.getElementById('darkBackground').style.display = 'none';
+	document.getElementById('aboutMetaContents').style.display = 'none';
 }
 
 
