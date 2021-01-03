@@ -456,7 +456,8 @@ div#coverText {
     background-image: url(cover-art4.jpg);
     height: 30vw;
 	width: 30vw;
-    display: block;		
+    display: block;
+    background-size: contain;		
 }
 
 
