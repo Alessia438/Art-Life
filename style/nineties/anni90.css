@@ -430,18 +430,18 @@ div#coverText {
 
 
 #coverText p:nth-of-type(4):before {
-    
-}
-
-#coverText p:nth-of-type(4):after {
-	content: "";
+    content: "";
     background-image: url(cover-art5.png);
     display: block;
     width: 30vw;
     height: 20vw;
     background-size: 80%;
     background-repeat: no-repeat;
-    background-position: top left;    
+    background-position: top left;   
+}
+
+#coverText p:nth-of-type(4):after {
+	 
 }
 
 #coverText p:nth-of-type(5) {
