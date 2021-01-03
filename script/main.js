@@ -206,7 +206,14 @@ function prevArticle() {
 				var myOrigin = document.getElementById("Origin");
 				getLinkOrigin(articleNow, myOrigin); // se scegliamo di definire la variabile myframe in questa funzione va sostituito articleNow con myFrame come parametro input della funzione getLinkOrigin
 				verifyMetaHighlight(i);
-				if (i === 1) {document.getElementById("prev").style.display = "none";}
+				if (i === 1) {
+					document.getElementById("next").style.display = "block";
+					document.getElementById("prev").style.display = "none";
+				}
+				else if (i < 3 && i >= -1) {
+					document.getElementById("prev").style.display = "block";
+					document.getElementById("next").style.display = "block";
+				}
 			}
 		}
 	}	
@@ -215,7 +222,7 @@ function prevArticle() {
 function nextArticle() {
 	var articles = document.getElementsByClassName("article");
 
-	for (var i = articles.length-2; i >= 0; i--) { //articles length = 6, ma noi non vogliamo considerare l'ultimo quindi mettiamo articles.lenght - 2 (con -1 considera anche l'ultimo perché length - 1 = 5 e articles[5] è l'ultimo articolo)
+	for (var i = articles.length-2; i >= 0; i--) { //articles length = 5, ma noi non vogliamo considerare l'ultimo quindi mettiamo articles.lenght - 2 (con -1 considera anche l'ultimo perché length - 1 = 5 e articles[5] è l'ultimo articolo)
 		var frame = articles[i],
     		style = window.getComputedStyle(frame),
 			displayValue = style.getPropertyValue('display');
@@ -227,7 +234,14 @@ function nextArticle() {
 				var myOrigin = document.getElementById("Origin");
 				getLinkOrigin(articles[i+1], myOrigin);
 				verifyMetaHighlight(i+2);
-				if (i === 3) {document.getElementById("next").style.display = "none";}
+				if (i === 3) {
+					document.getElementById("next").style.display = "none";
+					document.getElementById("prev").style.display = "block";
+				}
+				else if (i < 3 && i >= -1) {
+					document.getElementById("prev").style.display = "block";
+					document.getElementById("next").style.display = "block";
+				}
 			}
 		}
 	}
