@@ -55,7 +55,7 @@ body{
 
 body{
   font-family: "Ronda Regular";
-  font-size: 14pt;
+  font-size: 2vw; /*era 14pt per thscichold*/
   font-weight: lighter;
   text-align: justify; 
  /* margin-left: 20mm; inner  margin secondo Tscihold*/
@@ -219,7 +219,7 @@ blockquote{
   margin-right: 0mm; 
   margin-left: 0mm;
   border-left: 3px solid red;
-  font-size: 13pt;
+  font-size: 2.1vw; /*era 13pt*/
   padding: 1vw; 
   /*font-family: "Ronda Regular";
   font-style:lowercase;
@@ -235,11 +235,11 @@ figcaption{
   font-family: "P22 Bayer Universal Regular";
   /*font-size: 13pt;*/
   text-align: justify;
-  font-size: 12pt;
+  font-size: 2.05vw;
   font-weight: lighter;
   padding-top: 2%;
   padding-bottom: 2%;
-  width: 65%;
+  width: 70%;
 }
 
 #heading img, source{
@@ -321,14 +321,14 @@ p a{color: black;}
   h1{
     width: 100%;
     position: relative;
-    right: 25vw;
-    font-size: 7vw;
+    right: 20vw; /* era 25*/)
+    font-size: 3vw; /*era 7*/
   }
-
+/*
   p{
-    font-size: 0.8em;
+    font-size: ;
     width:60vw;
-  }
+  } */
 
   p.subtitle{
     position: initial;
@@ -351,9 +351,12 @@ p a{color: black;}
     bottom: 20pt;
   }
 
-  figcaption{font-size: 1.9vw;}
+  /*figcaption{font-size: 1.9vw;}*/
 
-  blockquote{font-size: 1.9vw;}
+  blockquote{
+    margin-right: 10mm;
+    /*font-size: 1.9vw;*/
+  }
 
 }  /*chiusura mediaquery*/
 
