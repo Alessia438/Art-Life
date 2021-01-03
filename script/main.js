@@ -685,15 +685,12 @@ function sortCategory(list, searchKey) {
 	else{document.getElementById('contentToShow').style.display = 'none';}
 }*/
 function showMetaContent(){
-	document.getElementById('darkBackground').style.display = 'block';
-	document.getElementById('aboutMetaContents').style.display = 'block';
+	document.getElementById('metaDiv').style.display = 'block';
 }
 
 function closeMetaContent(){
-	document.getElementById('darkBackground').style.display = 'none';
-	document.getElementById('aboutMetaContents').style.display = 'none';
+	document.getElementById('metaDiv').style.display = 'none';
 }
-
 
 function findOrigin(){
 	if(window.location.href.includes('#article')){
