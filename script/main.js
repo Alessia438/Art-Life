@@ -210,7 +210,7 @@ function prevArticle() {
 					document.getElementById("next").style.display = "block";
 					document.getElementById("prev").style.display = "none";
 				}
-				else if (i < 3 && i >= -1) {
+				else if (i <= 5 && i > 1) {
 					document.getElementById("prev").style.display = "block";
 					document.getElementById("next").style.display = "block";
 				}
@@ -250,7 +250,8 @@ function nextArticle() {
 function hidePrevAndNext(issueNumber) {
 	var issueC = document.getElementById(issueNumber).children;
 	for (var d = 1; d < issueC.length; d++) {
-		if (issueC[d].style.display === 'block') {
+		var curDivStyle = window.getComputedStyle(issueC[d], null).display; //if the element's display is being inherited or being specified by a CSS rule, you'll need to get its computed style. 
+		if (curDivStyle === 'block') {
 			if (d === 1) {document.getElementById("next").style.display = 'block';}
 			else if (d === 5) {document.getElementById("prev").style.display = 'block';}
 			else if (d < 5 && d > 1) {
