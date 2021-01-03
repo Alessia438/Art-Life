@@ -29,8 +29,8 @@
 }
 
 @font-face { /* per h1 COVER */
-  font-family: Grange Shadow;
-  src: url(Grange-Shadow.ttf);
+  font-family: Ageta Chubby Demo;
+  src: url(Ageta-Chubby-Demo.otf);
   
 }
 
@@ -291,7 +291,7 @@ div#coverText {
 	order: 2;
 	transform: none;
     font-size: 12vw;
-    font-family: Grange Shadow;
+    font-family: Ageta Chubby Demo;
 }
 
 

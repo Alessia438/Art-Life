@@ -25,7 +25,7 @@ body#cover {
 }
 	
 div#coverText {
-	background-image: url(../sfondo_bodoni.jpg);
+	background-image: url(sfondo_bodoni.jpg);
 	padding-left: 28vw;
 	padding-right: 18vw;
 	padding-bottom: 30vw;
@@ -69,7 +69,7 @@ body{
 	rgba(255, 255, 240, 0.5), 
 	rgba(255, 255, 240, 0.5)
 	),
-	url('../sfondo_bodoni.jpg');
+	url('sfondo_bodoni.jpg');
 
 	background-color: #fcfcf4;
 	/*background-image: url('../sfondo_bodoni.jpg');*/
