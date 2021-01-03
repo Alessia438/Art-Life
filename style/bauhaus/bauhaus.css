@@ -351,7 +351,7 @@ p a{color: black;}
   }
 
   section{ /* come faccio a dirgli solo dopo il primo voglio la riga? */
-    border-bottom: 40px dotted red;
+    border-bottom: 40px dotted #0066cc;
     bottom: 20pt;
   }
 
