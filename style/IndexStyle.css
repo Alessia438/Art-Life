@@ -1178,7 +1178,7 @@ div#aboutMetaContents {
     border-radius: 2px;
     font-size: 60%;
     background: #fff;
-    min-width: 80%;
+    width: 70em;
     height: 2000px;
     max-height: 80%;
     position: absolute;
@@ -1218,23 +1218,47 @@ button.btn {
 .fa {font-size: 1.5em;}
 
 p#aboutMetaContent {
-    padding-bottom: .7em;
-    padding-left: 3vw;
-    padding-right: 3vw;
-    text-align: justify;
-    font-size: 2em;
+	padding-bottom: .7em;
+	padding-left: 3vw;
+	padding-right: 3vw;
+	text-align: justify;
+	font-size: 2em;
 }
 
 #aboutMetaUl li {
-    list-style-type: none;
-    padding-right: 3em;
-    text-align: justify;
-    padding-bottom: .8em;
-    font-size: 1.8em;
-    padding-left: 1em;
+	list-style-type: none;
+	padding-right: 3em;
+	text-align: justify;
+	padding-bottom: .8em;
+	font-size: 1.8em;
+	padding-left: 1em;
 }
 
 span.toColor {background-color: cadetblue;}
+
+@media screen and (max-width: 799px) {
+	div#aboutMetaContents {
+		overflow: scroll;
+		height: auto;
+	}
+	
+	h1#aboutMetaTitle {
+		padding: .6em;
+		font-size: 2em;
+	}
+	p#aboutMetaContent {
+		padding-bottom: .4em;
+		padding-left: 2vw;
+		padding-right: 2vw;
+		text-align: justify;
+		font-size: 1.6em;
+	}
+	
+	ul#aboutMetaUl {padding-left: 2em;}
+	
+	#aboutMetaUl li {font-size: 1.6em;}
+}
+
 /*/////////////////////////fine about metadata//////////////////////////////////*/
 
 button#sort, button#appearanceSort, button#frequencySort {
