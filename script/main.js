@@ -219,7 +219,7 @@ function prevArticle() {
 				var myOrigin = document.getElementById("Origin");
 				getLinkOrigin(articleNow, myOrigin); // se scegliamo di definire la variabile myframe in questa funzione va sostituito articleNow con myFrame come parametro input della funzione getLinkOrigin
 				verifyMetaHighlight(i);
-				hidePrevAndNextAnc(i+1, false);
+				hidePrevAndNextAnc(i, false);
 				/*if (i === 1) {
 					document.getElementById("next").style.display = "block";
 					document.getElementById("prev").style.display = "none";
