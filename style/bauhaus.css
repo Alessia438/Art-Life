@@ -63,8 +63,8 @@ body{
   font-size: 14pt;
   font-weight: lighter;
   text-align: justify; 
-  margin-right: 40mm; /* outer margin secondo Tscihold*/
-  margin-left: 20mm; /*inner margin*/
+  margin-left: 40mm; /* outer margin secondo Tscihold*/
+  margin-right: 20mm; /*inner margin*/
   line-height: 1.6; /* 21pt;*/
   text-align-last: left;
   text-transform: lowercase;
@@ -125,7 +125,7 @@ video source{
  /* height: 90px;  era 100*/
   border: 0px;
   transform: rotate(-15deg); /*era 30*/
-  width: 60%; /* oppure 60vw,con 60% viene la scritta su due righe, 60 vmin è sbagliato?*/
+  width: 65%; /* oppure 60vw,con 60% viene la scritta su due righe, 60 vmin è sbagliato?*/
   position: relative;
   right: 13vw;
   bottom: -3vw;
@@ -247,24 +247,31 @@ p.subtitle{
     width: 40%;
   }
 
+  body#cover{
+    font-size: 
+  }
+
 }  /*chiusura mediaquery*/
 
 /*FOR TABLET*/
 
 @media screen and (max-width: 800px){
-p.subtitle{
+
+  p{font-size: 2vw;}
+
+  p.subtitle{
     position: initial;
-    font-size: 0.75em; 
+    font-size: 2vw; /*era 0.75 em*/
   }
 
   p.byline{
-    font-size: 0.7em;
+    font-size: 1.9vw;
     left: 55vw;
     width: 30%;
   }
 
   p.publicationDate{
-    font-size: 0.7em;
+    font-size: 1.9vw;
     width: 40%;
   }
 }
