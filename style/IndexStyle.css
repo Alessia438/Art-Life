@@ -36,7 +36,7 @@ img, video{
 
 
 .animation {
-	background: url('art.gif') left center;
+	background: url('one.gif') left center;
 	width: 20%;
 	background-size: cover; 
 }
@@ -103,6 +103,7 @@ img, video{
 .header #logo { /* logo sarebbe la classe per il primo elemento a di header */
 	font-size: 1.2em;
 	font-weight: 600;
+  
 	/*padding: 35px 20px;  era 10px e 15 px */
 }
 
