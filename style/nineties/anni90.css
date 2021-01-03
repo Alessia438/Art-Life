@@ -288,6 +288,8 @@ div#coverText {
     -webkit-backdrop-filter: blur(2px);
   	backdrop-filter: blur(2px); 
   	background-image: url(pink-gradient.jpg);
+  	background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #coverText h1 {
@@ -316,6 +318,8 @@ div#coverText {
 	font-weight: bold;
 	font-size: 2vw;
 }
+
+#coverText p:hover {transform: rotate(720deg);}
 
 
 #coverText p:nth-of-type(1) {
@@ -363,6 +367,9 @@ div#coverText {
     margin-left: 25%;
     transform: rotate(-7deg);
     background-image: url(green-cover-art2.JPG);
+    background-position: center bottom;
+    font-family: Heartbit;
+    font-size: 3vw;
 }
 
 
@@ -387,6 +394,9 @@ div#coverText {
     width: 40%;
     margin-top: 17vw;
     text-align: right;
+    font-family: Shmup;
+    font-size: 2.5vw;
+    color: purple;
 }
 
 
@@ -410,15 +420,21 @@ div#coverText {
 
 #coverText p:nth-of-type(4) {
 	order: 5;
+	font-family: LifeSavers;
+    font-size: 3vw;
 }
 
 
 #coverText p:nth-of-type(4):before {
 	content: "";
-    background-image: url(cover-art.jpg);
-    height: 30vw;
-	width: 30vw;
+    background-image: url(cover-art5.png);
     display: block;
+    width: 30vw;
+    height: 20vw;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: top left;
+    
     
 }
 
@@ -430,6 +446,12 @@ div#coverText {
 
 #coverText p:nth-of-type(5) {
 	order: 6;
+	font-family: Heartbit;
+    font-size: 3vw;
+    width: 40%;
+    position: absolute;
+    right: 0;
+    bottom: 1vw;
 }
 
 
@@ -441,6 +463,8 @@ div#coverText {
 
 #coverText p:nth-of-type(5):after {
 	content: "";
-    background-image: url(cover-art5.png);
-    	
+    background-image: url(cover-art4.jpg);
+    height: 30vw;
+	width: 30vw;
+    display: block;
 }
