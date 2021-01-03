@@ -110,7 +110,7 @@ video source{
   /*font-style: bold;*/
   /* va a capo alla quarta parola
   transform: rotate(-15deg); */
-  padding-top:9vw;
+  padding-top:1vw;
   padding-bottom:0vw;
   padding-left: 1vw;
   padding-right: 1vw;
@@ -126,6 +126,10 @@ video source{
   right: 13vw;
   bottom: -3vw;
   background-color: #f4e4c8;
+}
+/* FORSE NON SERVE*/
+#cover p{
+  width: 60vmin;
 }
 
 body h1{  
@@ -340,6 +344,10 @@ p a{color: black;}
     left: 50vw; */
     width: 30%;
   }
+
+  .biblioItem, .pubnote{
+  border: 2px solid red; 
+}
 /*
   p.publicationDate{
     font-size: 0.7em;
