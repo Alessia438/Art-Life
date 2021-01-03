@@ -28,6 +28,12 @@
   src: url(LifeSavers-Bold.ttf); 
 }
 
+@font-face { /* per h1 COVER */
+  font-family: Grange;
+  src: url(Grange Shadow.ttf);
+  
+}
+
 
 
 
@@ -285,6 +291,7 @@ div#coverText {
 	order: 2;
 	transform: none;
     font-size: 12vw;
+    font-family: Grange;
 }
 
 
