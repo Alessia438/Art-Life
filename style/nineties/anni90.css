@@ -426,6 +426,10 @@ div#coverText {
 	order: 5;
 	font-family: LifeSavers;
     font-size: 3vw;
+    background-image: url(cover-art4-sfondo.jpg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: 20%;
 }
 
 
@@ -437,7 +441,7 @@ div#coverText {
     height: 20vw;
     background-size: 80%;
     background-repeat: no-repeat;
-    background-position: top left;   
+    background-position: top left;
 }
 
 #coverText p:nth-of-type(4):after {
@@ -446,12 +450,12 @@ div#coverText {
 
 #coverText p:nth-of-type(5) {
 	order: 6;
-	font-family: Heartbit;
+    font-family: Heartbit;
     font-size: 3vw;
     width: 40%;
-    position: absolute;
-    right: 0;
     bottom: 1vw;
+    margin-top: -16vw;
+    margin-left: 48vw;
 }
 
 
