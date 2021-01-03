@@ -1080,12 +1080,13 @@ button#prev, button#next  {
 }
 
 @media screen and (max-width: 799px) {
-  button#prev, button#next {
-    position: sticky;
-    top: 60vh;
-    height: 20px;
-    width: 20px;
-    background-size: 18px;
+	button#prev, button#next {
+	position: sticky;
+	top: 60vh;
+	height: 20px;
+	width: 20px;
+	margin-bottom: -20px;
+	background-size: 18px;
   }
 
   #next { left: 100vw; }
