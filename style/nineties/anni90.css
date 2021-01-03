@@ -373,7 +373,7 @@ div#coverText {
     font-family: Heartbit;
     font-size: 3vw;
     background-repeat: no-repeat;
-    background-size: 100% 15%;
+    background-size: 100% 25%;
     width: 40%;
 }
 
@@ -425,20 +425,23 @@ div#coverText {
 
 
 #coverText p:nth-of-type(5) {
-	padding: 2vw;
-    order: 5;
+	order: 5;
     font-family: LifeSavers;
     font-size: 3vw;
     background-image: url(cover-art4-sfondo.jpg);
-    background-position: center bottom;
-    background-repeat: no-repeat;
-    background-size: 100% 25%;
-    width: max-content;
+    background-size: 100% 40%;
+    max-width: 50%;
     z-index: 99;
     color: white;
     position: relative;
-    margin-left: 55%;
+    margin-left: 50%;
     margin-top: -15vw;
+    margin-right: 0;
+    margin-bottom: 5vw;
+    text-align: center;
+    padding: 2vw;
+    background-position: center bottom;
+    background-repeat: no-repeat;
 }
 
 
@@ -446,11 +449,13 @@ div#coverText {
     content: "";
     background-image: url(cover-art5.png);
     display: block;
-    width: 30vw;
+    width: 25vw;
     height: 20vw;
-    background-size: 80%;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: top left;
+    margin-left: 48%;
+    margin-right: 0;
 }
 
 
@@ -458,24 +463,28 @@ div#coverText {
 	order: 6;
     font-family: Heartbit;
     font-size: 3vw;
-    width: 40%;
-    width: max-content;
+    width: 50%;
     background-image: url(green-gradient.jpg);
     background-position: center bottom;
-    background-size: 100% 20%;
+    background-size: 100% 40%;
     background-repeat: no-repeat;
     z-index: 99;
     text-align: center;
     color: blue;
     text-shadow: 1px 1px black, 1px 1px 3px black;
+    margin-top: -32vw;
+    margin-left: 0;
+    margin-bottom: 0;
 }
 
 
 #coverText p:nth-of-type(4):before {
 	content: "";
     background-image: url(cover-art4.jpg);
-    height: 15vw;
-	width: 30vw;
+    background-repeat: no-repeat;
+    height: 20vw;
+    width: 30vw;
     display: block;
-    background-size: contain;		
+    background-size: cover;
+    margin-left: 30%;		
 }
