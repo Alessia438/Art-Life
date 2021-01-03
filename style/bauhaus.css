@@ -63,8 +63,8 @@ body{
   font-size: 14pt;
   font-weight: lighter;
   text-align: justify; 
-  margin-left: 40mm; /* outer margin secondo Tscihold*/
-  margin-right: 20mm; /*inner margin*/
+  margin-left: 20mm; /*inner  margin secondo Tscihold*/
+  margin-right: 40mm; /*outer margin*/
   line-height: 1.6; /* 21pt;*/
   text-align-last: left;
   text-transform: lowercase;
