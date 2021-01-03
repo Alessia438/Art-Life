@@ -133,7 +133,7 @@ section:first-of-type > .publicationPlace {order: 7;}
 figure {
 	display: flex;
     align-items: center;
-	background-image: url(notebook.png);
+	background-image: url(notebook.PNG);
 	background-size: cover;
 }
 
