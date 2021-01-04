@@ -305,6 +305,7 @@ p a{color: black;}
   -webkit-box-ordinal-group: 4;
         -moz-box-ordinal-group: 4;
         box-ordinal-group: 4;
+        margin: 0;
 }
 
 
@@ -312,18 +313,21 @@ p a{color: black;}
   -webkit-box-ordinal-group: 5;
         -moz-box-ordinal-group: 5;
         box-ordinal-group: 5;
+        margin: 0;
 }
 
 .publicationTime {
   -webkit-box-ordinal-group: 6;
         -moz-box-ordinal-group: 6;
         box-ordinal-group: 6;
+        margin: 0;
 }
 
 .lastModification {
   -webkit-box-ordinal-group: 7;
         -moz-box-ordinal-group: 7;
         box-ordinal-group: 7;
+        margin: 0;
 }
 
 .biblioItem{
