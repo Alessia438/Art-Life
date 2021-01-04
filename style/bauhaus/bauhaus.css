@@ -424,6 +424,23 @@ p a{color: black;}
 
 @media screen and (max-width: 800px){
  
+  #cover h1{
+    font-size: 2.5em;
+    position:relative;
+    top: -2vw;
+  }
+  
+  #cover p {
+    font-size: 1.5em;
+    position: relative;
+    top: -5vw;
+  }
+
+    h1{
+    font-size: 2em;
+    position: relative;
+    right: 6vw;
+  }
 /*
   p{font-size: 2vw;}
 

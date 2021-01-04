@@ -34,13 +34,13 @@ img, video{
 
 /* PROVA GIF*/
 
-
+/*
 .animation {
-	
+	background: url('gif/one.gif') left center;
 	width: 20%;
 	background-size: cover; 
 }
-
+*/
 /*@keyframes play {
   100% { background-position: -1900px; }
 }*/
