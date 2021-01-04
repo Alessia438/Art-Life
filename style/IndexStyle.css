@@ -1098,6 +1098,7 @@ button#prev, button#next  {
 div#issue1, div#issue2, div#issue3, div#issue4 {
   /*height: 100%;*/
   flex: 1 1 auto;
+  order: 2;
 }
 
 
