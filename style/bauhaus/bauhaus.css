@@ -82,7 +82,7 @@ body{
 
 
 section{ /* come faccio a dirgli solo dopo il primo voglio la riga? */
-border-bottom: 40px solid red;
+border-bottom: 40px solid #d00606;
 bottom: 20pt;
 }
 /* 
@@ -177,8 +177,8 @@ p{
 p.byline{
   font-style:lowercase;
   position:relative;
-  top:-40vw;    /*era 30*/
-  left: 50vw;     /*era 55*/
+  /*top:-40vw;    era 30*/
+  left: 55vw;     /*era 55*/
   transform: rotate(15deg);
   /*aggiunto per controllare*/
 }
@@ -186,8 +186,8 @@ p.byline{
 p.publicationDate{
   font-style:lowercase;
   position:relative;
-  top:-40vw; 
-  left: 50vw; /*era 55*/
+  /*top:-40vw; */
+  left: 55vw; /*era 55*/
   transform: rotate(15deg);
   color: blue; 
 }
@@ -195,8 +195,17 @@ p.publicationDate{
 p.publicationTime{
   font-style:lowercase;
   position:relative;
-  bottom: 20vw;
-  left: 50vw;
+  /*bottom: 20vw;*/
+  left: 55vw;
+  transform: rotate(15deg);
+  color: blue; 
+}
+
+p.lastModification{
+  font-style:lowercase;
+  position:relative;
+  /*bottom: 20vw;*/
+  left: 55vw;
   transform: rotate(15deg);
   color: blue; 
 }
@@ -343,12 +352,16 @@ p a{color: black;}
     font-size: 0.55em; 
   }
 */
+
+/*
   p.byline{top: -40vw;}
   p.publicationDate{top: -40vw;}
   p.publicationTime{top: -40vw;}
 
+*/
+
   .biblioItem, .pubnote{
-  border: 2px solid red; 
+  border: 2px solid #d00606; 
 }
 /*
   p.publicationDate{
