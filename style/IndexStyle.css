@@ -563,6 +563,7 @@ SELECTORNAV STICKY PER ISSUE1, ISSUE2, ISSUE3 E ISSUE4 */
   order: 3;
   width: 100%;
   z-index: 99;
+  flex: 0 0 auto;
 
   /* modifiche per tenere sotto il footer 
   position: absolute; 
@@ -972,18 +973,51 @@ img[class^="slideDemo"]{
 
 /*FLEX-CONTAINER E I SUOI DIVS //////////////////////////////////////////////////////////*/
 
+#flex-container {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.header {flex: 0 1 auto;}
+
+#content-meta-wrapper {
+    order: 2;
+    display: flex;
+    flex: 1 1 auto;
+}
+
+#content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+
+#metadata {
+  position: relative;
+  overflow-x: auto;
+  overflow-y: auto;  /* prima era overflow: scroll */
+  border-left: 2px solid;
+}
+
+#metadata dropdown-content * { font-size: 0.9em; }
+
+
+
 /* Medium screens*/
 @media screen and (max-width: 799px) {
   #content-meta-wrapper { flex-direction: column; }
-  
-  /* flex-basis 100% for all items
-  #content-meta-wrapper > * {
-    flex: 1 100%;
-  } */
 
-  #metadata { order: 1; }
+  #metadata { 
+    order: 1;
+    flex: 0 1 auto;
+  }
 
-  #content { order: 2; }
+  #content { 
+    order: 2;
+    flex: 1 1 auto;
+  }
 	
    #listIssue {
     	width: 90vw;
@@ -1004,52 +1038,35 @@ img[class^="slideDemo"]{
 /* Large screens */
 @media all and (min-width: 800px) {
 
-  #flex-container {
-    display: flex;/*
-    flex-wrap: wrap;*/
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100vh;
-  }
-
   #content-meta-wrapper {
-    order: 2;
-    flex: 4;
-    display: flex;
     flex-wrap: wrap;
     flex-direction: row;
   }
 
   #content {
-    order: 1;
-    position: relative;
+    order: 1;    
     flex-grow: 3;
     flex-basis: auto;
     width: 73%;
     border-right: 2px solid;
-    display: flex;
-    flex-direction: column;
   }
 
   #metadata {
-    position: relative;
-    overflow-x: auto;
-    overflow-y: auto;  /* prima era overflow: scroll */
     width: 26%;
     order: 2;
-    border-left: 2px solid;
+  }	
+	
+  #listIssue {
+      /*width: 22vw;*/
+      padding-inline-start: 0px;
+      padding: 0 3vw 0 3vw;
   }
 
-  #metadata dropdown-content * { font-size: 0.9em; }
-	
-	
-#listIssue {
-    /*width: 22vw;*/
-    padding-inline-start: 0px;
-    padding: 0 3vw 0 3vw;
 }
 
-}
+
+
+
 
 
 button#prev, button#next  {
