@@ -349,7 +349,7 @@ p a{color: black;}
     width: 50vw;
     position: relative;
     right: 10vw;
-    font-size: 3em; 
+    font-size: 2em; 
   }
 
   #cover p{
@@ -392,7 +392,7 @@ p a{color: black;}
 
   p{font-size: 1.9em;}
 
-  section{font-size: 1.9em;}
+ 
 
   .biblioItem, .pubnote{
   border: 2px solid #d00606; 
