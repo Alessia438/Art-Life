@@ -441,6 +441,13 @@ p a{color: black;}
     position: relative;
     right: 6vw;
   }
+
+    h2, h3{font-size: 2.5em;}
+
+    p{font-size: 1.8em;}
+
+    p.byline, p.publicationDate, p.publicationTime, p.lastModification{font-size:1.4em;}
+}
 /*
   p{font-size: 2vw;}
 
@@ -460,4 +467,3 @@ p a{color: black;}
  /* figcaption{font-size: 2vw;} */
 
  /* blockquote{font-size: 2vw;} */
-}
