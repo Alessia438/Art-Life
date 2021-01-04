@@ -180,7 +180,7 @@ p.byline{
   /*top:-40vw;    era 30*/
   left: 55vw;     /*era 55*/
   transform: rotate(15deg);
-  /*aggiunto per controllare*/
+  text-decoration: underline;
 }
 
 p.publicationDate{
@@ -189,6 +189,7 @@ p.publicationDate{
   /*top:-40vw; */
   left: 55vw; /*era 55*/
   transform: rotate(15deg);
+  text-decoration: underline;
   color: #0066cc; 
 }
 
@@ -198,6 +199,7 @@ p.publicationTime{
   /*bottom: 20vw;*/
   left: 55vw;
   transform: rotate(15deg);
+  text-decoration: underline;
   color: #0066cc; 
 }
 
@@ -207,6 +209,7 @@ p.lastModification{
   top: -5vw;
   left: 54vw;
   transform: rotate(15deg);
+  text-decoration: underline;
   width: 50%;
   color: #0066cc; 
 }
