@@ -376,6 +376,7 @@ p a{color: black;}
   p.byline{
     width: 20vw;
     font-size:1.2em;
+    top: -5vw;
   }
 
   p.publicationDate{
@@ -383,7 +384,7 @@ p a{color: black;}
     width: 20vw;
   }
 
-  p.publicationTime{font-size:1.2em;}
+ /* p.publicationTime{font-size:1.2em;}*/
 
   figcaption, blockquote, .quoteAuthor{font-size:1.5em;}
 
