@@ -206,6 +206,7 @@ p.lastModification{
   position:relative;
   /*bottom: 20vw;*/
   left: 55vw;
+  width: 30%
   transform: rotate(15deg);
   color: #0066cc; 
 }
@@ -317,6 +318,12 @@ p a{color: black;}
   -webkit-box-ordinal-group: 6;
         -moz-box-ordinal-group: 6;
         box-ordinal-group: 6;
+}
+
+.lastModification {
+  -webkit-box-ordinal-group: 7;
+        -moz-box-ordinal-group: 7;
+        box-ordinal-group: 7;
 }
 
 .biblioItem{
