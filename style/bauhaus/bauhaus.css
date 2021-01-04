@@ -374,8 +374,8 @@ p a{color: black;}
   }
 
   p.byline{
-    font-size:1.2em;
     width: 20vw;
+    font-size:1.2em;
   }
 
   p.publicationDate{
