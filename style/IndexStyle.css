@@ -444,20 +444,22 @@ SELECTORNAV STICKY PER ISSUE1, ISSUE2, ISSUE3 E ISSUE4 */
     width: 48%;
     }
 
-    /*.presentation img {
-       position: absolute;
+    .presentation img {
+       /*position: absolute;
        top: 25%;
-       margin-top: 25%;
-    }*/
+       margin-top: 25%;*/
+	width: 70%;
+    }
 
     .presentation-text {
-      transform: translateY(-18%);
+      /*transform: translateY(-18%);*/
+	transform: translateY(-25vw);
     }
 
     .artTable img {  
       padding: 5px;
       max-height: 400px;
-      margin-top: 3em;
+      margin-top: 0em;
       margin-bottom: 0em;
       margin-left: 0em;
       margin-right: 0em;
