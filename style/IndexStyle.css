@@ -1017,7 +1017,6 @@ img[class^="slideDemo"]{
 
   #metadata {
     position: relative;
-    height: 38.5em;
     overflow-x: auto;
     overflow-y: auto;  /* prima era overflow: scroll */
     width: 26%;
