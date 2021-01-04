@@ -377,15 +377,16 @@ p a{color: black;}
     width: : 20vw;
   }
 
-  p.publicationDate{font-size:1.5em;}
+  p.publicationDate{
+    font-size:1.5em;
+    width: : 20vw;
+  }
 
   p.publicationTime{font-size:1.5em;}
 
   blockquote{font-size:1.5em;}
 
   figcaption{font-size: 1.5em;}
-
-  section q{font-size:1.5em;}
 
   h2{font-size: 3em;}
 
