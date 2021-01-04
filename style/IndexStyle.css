@@ -912,6 +912,8 @@ img[class^="slideDemo"]{
   padding: 0;
   background-color: #0C351F;
   border-bottom: 3px solid;
+  flex: 0 1 auto;
+  order: 1;
   /*width: 100%; 
   overflow: hidden;*/
 }
@@ -972,18 +974,15 @@ img[class^="slideDemo"]{
 
 /* Medium screens*/
 @media screen and (max-width: 799px) {
-  #flex-container {
-    display: flex;
-    flex-direction: column;
-  }
+  #content-meta-wrapper { flex-direction: column; }
   
-  /* flex-basis 100% for all items */
-  #flex-container > * {
+  /* flex-basis 100% for all items
+  #content-meta-wrapper > * {
     flex: 1 100%;
-  }
+  } */
 
-  #metadata { order: 2; }
-  #content { order: 3; }
+  #metadata { order: 1; }
+  #content { order: 2; }
 	
    #listIssue {
     	width: 90vw;
@@ -1005,20 +1004,30 @@ img[class^="slideDemo"]{
 @media all and (min-width: 800px) {
 
   #flex-container {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+    display: flex;/*
+    flex-wrap: wrap;*/
+    flex-direction: column;
     justify-content: space-between;
     height: 100vh;
   }
 
-  #content {
+  #content-meta-wrapper {
     order: 2;
+    flex: 4;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  #content {
+    order: 1;
     position: relative;
     flex-grow: 3;
     flex-basis: auto;
     width: 73%;
     border-right: 2px solid;
+    display: flex;
+    flex-direction: column;
   }
 
   #metadata {
@@ -1026,7 +1035,7 @@ img[class^="slideDemo"]{
     overflow-x: auto;
     overflow-y: auto;  /* prima era overflow: scroll */
     width: 26%;
-    order: 3;
+    order: 2;
     border-left: 2px solid;
   }
 
@@ -1085,7 +1094,10 @@ button#prev, button#next  {
 
 
 
-div#issue1, div#issue2, div#issue3, div#issue4 {height: 100%;}
+div#issue1, div#issue2, div#issue3, div#issue4 {
+  /*height: 100%;*/
+  flex: 1 1 auto;
+}
 
 
 
@@ -1103,6 +1115,7 @@ div#issue1, div#issue2, div#issue3, div#issue4 {height: 100%;}
   padding-left: 30px;
   padding-right: 32px; */
   display: none;
+  height: 100%;
 }
 
 
@@ -1281,7 +1294,7 @@ button#sort:hover, button#appearanceSort:hover, button#frequencySort:hover {
 iframe {
 	border-style: none; 
 	width: 100%; 
-	height: 35.85em;
+	height: 100%;
 	display: block;
 }
 

@@ -61,74 +61,79 @@
 		    </div>
 
 
-			<div id="content">
-				
-				<!-- selector vav -->
-				<ul id="selectorNav" class="stickynav">
-					<li class="dropdown"><a class="dropbtn">Issues</a>
-						<div class="dropdown-content" id="DynamicGeneratorPowerButton2000">
-						</div>
-					</li>	
-					<li class="dropdown"><a class="dropbtn">Articles</a>
-						<div class="dropdown-content" id="changeArguments">
-						</div>
-					</li>
+		    <div id="content-meta-wrapper">
 
-					<li class="dropdown"><a class="dropbtn">Themes</a>
-						<div class="dropdown-content">
-							<a onclick="changeCSS('../style/IndexStyle.css')">Default Style</a>
-							<a onclick="changeCSS('../style/bodoni/Bodoni.css')">Bodoni (Neoclassicism)</a>
-							<a onclick="changeCSS('../style/liberty/Liberty.css')">Art Nouveau</a>
-							<a onclick="changeCSS('../style/bauhaus/bauhaus.css')">Bauhaus</a>
-							<a onclick="changeCSS('../style/1980/1980.css')">Early Eighties</a>
-							<a onclick="changeCSS('../style/nineties/anni90.css')">The nineties</a>
-							<a onclick="changeCSS('../style/minimalFuture/futuro.css')">Minimalistic Future (2021-2025)</a>
+				<div id="content">
+					
+					<!-- selector vav -->
+					<ul id="selectorNav" class="stickynav">
+						<li class="dropdown"><a class="dropbtn">Issues</a>
+							<div class="dropdown-content" id="DynamicGeneratorPowerButton2000">
+							</div>
+						</li>	
+						<li class="dropdown"><a class="dropbtn">Articles</a>
+							<div class="dropdown-content" id="changeArguments">
+							</div>
+						</li>
+
+						<li class="dropdown"><a class="dropbtn">Themes</a>
+							<div class="dropdown-content">
+								<a onclick="changeCSS('../style/IndexStyle.css')">Default Style</a>
+								<a onclick="changeCSS('../style/bodoni/Bodoni.css')">Bodoni (Neoclassicism)</a>
+								<a onclick="changeCSS('../style/liberty/Liberty.css')">Art Nouveau</a>
+								<a onclick="changeCSS('../style/bauhaus/bauhaus.css')">Bauhaus</a>
+								<a onclick="changeCSS('../style/1980/1980.css')">Early Eighties</a>
+								<a onclick="changeCSS('../style/nineties/anni90.css')">The nineties</a>
+								<a onclick="changeCSS('../style/minimalFuture/futuro.css')">Minimalistic Future (2021-2025)</a>
+							</div>
+						</li>
+						<li><a class="buttonIssue" id="Origin">Source</a></li>
+					</ul>
+					
+					<!-- bottone per articolo precedente -->
+					<button id="prev" onclick="prevArticle()"/></button>
+					<button id="next" onclick="nextArticle()"/></button>
+	        
+					<div id="issue4">
+						<div id="coverPage4">
+							<iframe src="cover_pages/cover_page4.html" name="coverPage4" frameborder="0" border="0" cellspacing="0"></iframe>
 						</div>
-					</li>
-					<li><a class="buttonIssue" id="Origin">Source</a></li>
-				</ul>
-				
-				<!-- bottone per articolo precedente -->
-				<button id="prev" onclick="prevArticle()"/></button>
-				<button id="next" onclick="nextArticle()"/></button>
-        
-				<div id="issue4">
-					<div id="coverPage4">
-						<iframe src="cover_pages/cover_page4.html" name="coverPage4" frameborder="0" border="0" cellspacing="0"></iframe>
 					</div>
-				</div>
-				
-		    </div> <!-- si chiude il div content -->
-			<script> fillTheGaps();</script>
+					
+			    </div> <!-- si chiude il div content -->
+				<script> fillTheGaps();</script>
 
-			<div id="metadata">  <!-- div che contiene il metadata viewer -->
+				<div id="metadata">  <!-- div che contiene il metadata viewer -->
 
-				<ul id="selectorNav" class="stickynav">    
-					<li class="dropdown"><a class="dropbtn" onclick="showMetaContent()">About metadata</a>
-						<!-- <div class="dropdown-content">	
-							<a class="buttonIssue" id="contentToShow" style="display: none;">Each article refers to people, places, events, concepts, etc. that are related to each other and create a complex network of references. In this section you can find all the metadata of all the articles of the current issue. You can:
-								<ul>
-									<li>overview the relevant data and metadata and <b>scroll to the relevant part of the article</b>, i.e. where the metadata is located (e.g. metadata location will be temporarily highlighted);</li>
-									<li>automatically <b>identify present data for the current article</b>, whose metadata box background is light blue.</li>
-									<li><b>sort them</b> in many ways (i.e. alphabetically, document order, by frequency)</li>
-									<li>get an idea about some data if you don't know them by reading their wikipedia page, simply by clicking on the <b>wikipedia button</b>!</li>
-								</ul>
-							</a>
-						</div> -->
-					</li>
+					<ul id="selectorNav" class="stickynav">    
+						<li class="dropdown"><a class="dropbtn" onclick="showMetaContent()">About metadata</a>
+							<!-- <div class="dropdown-content">	
+								<a class="buttonIssue" id="contentToShow" style="display: none;">Each article refers to people, places, events, concepts, etc. that are related to each other and create a complex network of references. In this section you can find all the metadata of all the articles of the current issue. You can:
+									<ul>
+										<li>overview the relevant data and metadata and <b>scroll to the relevant part of the article</b>, i.e. where the metadata is located (e.g. metadata location will be temporarily highlighted);</li>
+										<li>automatically <b>identify present data for the current article</b>, whose metadata box background is light blue.</li>
+										<li><b>sort them</b> in many ways (i.e. alphabetically, document order, by frequency)</li>
+										<li>get an idea about some data if you don't know them by reading their wikipedia page, simply by clicking on the <b>wikipedia button</b>!</li>
+									</ul>
+								</a>
+							</div> -->
+						</li>
 
-					<li class="dropdown"><a class="dropbtn">Order by</a>
-						<div class="dropdown-content">
-						    <a class="buttonIssue" id="sort" onclick="sortOccurrences('class')">Alphabet</a>
-						    <a class="buttonIssue" id="appearanceSort" onclick="sortOccurrences('data-position')">Appearence</a>
-						    <a class="buttonIssue" id="frequencySort" onclick="sortByFreq()">Frequency</a>
-						</div>
-					</li>
-				</ul>
+						<li class="dropdown"><a class="dropbtn">Order by</a>
+							<div class="dropdown-content">
+							    <a class="buttonIssue" id="sort" onclick="sortOccurrences('class')">Alphabet</a>
+							    <a class="buttonIssue" id="appearanceSort" onclick="sortOccurrences('data-position')">Appearence</a>
+							    <a class="buttonIssue" id="frequencySort" onclick="sortByFreq()">Frequency</a>
+							</div>
+						</li>
+					</ul>
 
-				    <ul id="listIssue"></ul>
+					    <ul id="listIssue"></ul>
 
-			</div> <!-- si chiude il div che contiene il metadata viewer -->
+				</div> <!-- si chiude il div che contiene il metadata viewer -->
+
+			</div> <!-- si chiude il div content-meta-wrapper -->
+
 
 			<div class="footer"> 
 	    		<h5>© Art&amp;Life: Created by Alessia Cioffi, Sara Coppini and Ariele Santello</h5>  
