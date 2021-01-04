@@ -346,16 +346,17 @@ p a{color: black;}
   /* FOR SMARTPHONE*/  
 @media screen and (max-width: 600px) {
   h1{
-    width: 30vw;
-   /* position: relative;
-    right: 1vw; 
-    font-size: 3vw; */
+    width: 50vw;
+    position: relative;
+    right: 10vw;
+    font-size: 3em; 
   }
 
   #cover p{
   width: 50vmin;
   }
 
+/*  POTREBBE SERVIRE PER 1980
   body{
     margin-right: 0vw;
     margin-left: 0vw;
@@ -364,21 +365,31 @@ p a{color: black;}
     padding-right: 2vw;
     padding-bottom: 3vw;
   }
+*/
 
-/*
   p.subtitle{
-    position: initial;
-    font-size: 0.55em; 
+    width: 40vw;
+    font-size: 1.5em; 
   }
-*/
 
+  p.byline{
+    font-size:1.5em;
+    width: : 20vw;
+  }
 
-  p.byline{width: : 20vw;}
-/*
-  p.publicationDate{top: -40vw;}
-  p.publicationTime{top: -40vw;}
+  p.publicationDate{font-size:1.5em;}
 
-*/
+  p.publicationTime{font-size:1.5em;}
+
+  blockquote{font-size:1.5em;}
+
+  figcaption{font-size: 1.5em;}
+
+  section q{font-size:1.5em;}
+
+  h2{font-size: 3em;}
+
+  p{font-size: 1.9em;}
 
   .biblioItem, .pubnote{
   border: 2px solid #d00606; 
