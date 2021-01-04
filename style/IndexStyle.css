@@ -1120,7 +1120,10 @@ div#issue1, div#issue2, div#issue3, div#issue4 {
 
 
 
-#coverPage1, #coverPage2, #coverPage3 { display: none; } 
+#coverPage1, #coverPage2, #coverPage3 { 
+  display: none;
+  height: 100%;
+} 
 
 #coverPage1:target, #coverPage2:target, #coverPage3:target { display: block; }
 
