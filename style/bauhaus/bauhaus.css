@@ -382,6 +382,7 @@ p a{color: black;}
   p.publicationDate{
     font-size:1.2em;
     width: 20vw;
+    top: -5vw;
   }
 
  p.publicationTime, p.lastModification{font-size:1.2em;}
