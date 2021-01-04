@@ -384,7 +384,8 @@ p a{color: black;}
     width: 20vw;
   }
 
- p.publicationTime{font-size:1.2em;}
+ p.publicationTime, p.lastModification{font-size:1.2em;}
+
 
   figcaption, blockquote, .quoteAuthor{font-size:1.5em;}
 
