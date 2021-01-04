@@ -536,6 +536,13 @@ SELECTORNAV STICKY PER ISSUE1, ISSUE2, ISSUE3 E ISSUE4 */
 
 }
 
+/*REALLY LARGE CREENS*/
+@media screen and (min-width: 1500px) {
+	.block {margin: 1.5%;}
+	.row{width: 85%;}
+	.presentation-text{transform: translateY(-9vw);}
+}
+
 
 .footer {
   text-align: justify;
