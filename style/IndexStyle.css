@@ -67,7 +67,7 @@ img, video{
 	box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
 	width: 100%;
 	z-index: 3;  
-	/* position: sticky; /* serve? */ 
+	order: 1;
 }
 
 .header div {
@@ -964,20 +964,20 @@ img[class^="slideDemo"]{
 
 /*FLEX-CONTAINER E I SUOI DIVS //////////////////////////////////////////////////////////*/
 
-/* Medium screens --> #metadata below #content? */
+/* Medium screens*/
 @media screen and (max-width: 799px) {
   #flex-container {
     display: flex;
     flex-direction: column;
   }
   
-  /* We tell all items to be 100% width, via flex-basis */
+  /* flex-basis 100% for all items */
   #flex-container > * {
     flex: 1 100%;
   }
 
-  #metadata { order: 1; }
-  #content { order: 2; }
+  #metadata { order: 2; }
+  #content { order: 3; }
 	
    #listIssue {
     	width: 90vw;
@@ -993,15 +993,6 @@ img[class^="slideDemo"]{
    }
 }
 
-/* Medium screens
-@media all and (min-width: 600px) {
-  /* We tell both sidebars to share a row
-  .aside { flex: 1 auto; }
-}
-*/
-
-
-/* Smartphones? */
 
 
 /* Large screens */
@@ -1012,21 +1003,16 @@ img[class^="slideDemo"]{
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
-    width: 100%;
+    height: 100vh;
   }
 
   #content {
+    order: 2;
     position: relative;
-    height: 38.5em;
-    /* padding-left: 15px;  per farci stare il bottone prevArticle */
-    /* flex: 0 0 70%; */
+    flex-grow: 3;
+    flex-basis: auto;
     width: 73%;
-    flex: 3 0px;
-    order: 1;
     border-right: 2px solid;
-    /*border-left: 2px solid;*/
-    /*margin-left: 0.05em;*/
-    /*border-bottom: 2px solid;*/
   }
 
   #metadata {
@@ -1034,13 +1020,9 @@ img[class^="slideDemo"]{
     height: 38.5em;
     overflow-x: auto;
     overflow-y: auto;  /* prima era overflow: scroll */
-    /* flex: 0 0 28%; */
     width: 26%;
-    order: 2;
+    order: 3;
     border-left: 2px solid;
-    /*border-bottom: 2px solid;*/
-    /*border-right: 2px solid;*/
-    /*margin-right: 0.05em;*/
   }
 
   #metadata dropdown-content * { font-size: 0.9em; }
@@ -1095,6 +1077,10 @@ button#prev, button#next  {
   #prev { left: 0; }
 
 }
+
+
+
+div#issue1, div#issue2, div#issue3, div#issue4 {height: 100%;}
 
 
 
