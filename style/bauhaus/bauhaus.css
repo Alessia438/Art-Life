@@ -349,7 +349,7 @@ p a{color: black;}
     width: 50vw;
     position: relative;
     right: 10vw;
-    font-size: 2em; 
+    font-size: 3em; 
   }
 
   #cover p{
@@ -373,16 +373,16 @@ p a{color: black;}
   }
 
   p.byline{
-    font-size:1.3em;
+    font-size:1.2em;
     width: : 20vw;
   }
 
   p.publicationDate{
-    font-size:1.3em;
+    font-size:1.2em;
     width: : 20vw;
   }
 
-  p.publicationTime{font-size:1.3em;}
+  p.publicationTime{font-size:1.2em;}
 
   blockquote{font-size:1.5em;}
 
@@ -391,8 +391,6 @@ p a{color: black;}
   h2{font-size: 3em;}
 
   p{font-size: 1.9em;}
-
- 
 
   .biblioItem, .pubnote{
   border: 2px solid #d00606; 
