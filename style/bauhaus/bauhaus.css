@@ -444,7 +444,9 @@ p a{color: black;}
 
     h2, h3{font-size: 2.5em;}
 
-    p{font-size: 1.8em;}
+    p.subtitle{font-size: 1.4em;}
+
+    p{font-size: 1.5em;}
 
     p.byline, p.publicationDate, p.publicationTime, p.lastModification{font-size:1.4em;}
 }
