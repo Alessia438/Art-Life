@@ -189,7 +189,7 @@ p.publicationDate{
   /*top:-40vw; */
   left: 55vw; /*era 55*/
   transform: rotate(15deg);
-  color: blue; 
+  color: #0066cc; 
 }
 
 p.publicationTime{
@@ -198,7 +198,7 @@ p.publicationTime{
   /*bottom: 20vw;*/
   left: 55vw;
   transform: rotate(15deg);
-  color: blue; 
+  color: #0066cc; 
 }
 
 p.lastModification{
@@ -207,7 +207,7 @@ p.lastModification{
   /*bottom: 20vw;*/
   left: 55vw;
   transform: rotate(15deg);
-  color: blue; 
+  color: #0066cc; 
 }
 
 p.subtitle{
@@ -320,12 +320,12 @@ p a{color: black;}
 }
 
 .biblioItem{
-  border: 2px solid blue; 
+  border: 2px solid #0066cc; 
   padding: 1vw;
 }
 
 .pubnote{
-  border: 2px solid blue;
+  border: 2px solid #0066cc;
   padding: 1vw;
 }
 
