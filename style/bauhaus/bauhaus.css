@@ -444,11 +444,19 @@ p a{color: black;}
 
     h2, h3{font-size: 2.5em;}
 
-    p.subtitle{font-size: 1.4em;}
+    p.subtitle{
+      font-size: 1.4em;
+      width: 25vw;}
 
     p{font-size: 1.5em;}
 
-    p.byline, p.publicationDate, p.publicationTime, p.lastModification{font-size:1.4em;}
+    p.byline, p.publicationDate, p.publicationTime{font-size:1.4em;}
+    p.lastModification{
+      font-size:1.4em;
+      width: 20vw;
+    }
+
+    figcaption{font-size: 1.3em;}
 }
 /*
   p{font-size: 2vw;}
