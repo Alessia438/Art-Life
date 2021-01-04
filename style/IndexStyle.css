@@ -543,6 +543,10 @@ SELECTORNAV STICKY PER ISSUE1, ISSUE2, ISSUE3 E ISSUE4 */
 	.block {margin: 1.5%;}
 	.row{width: 85%;}
 	.presentation-text{transform: translateY(-9vw);}
+	h1, h2 {
+		padding-left: 10%;
+		padding-top: 2em;
+	}
 }
 
 
