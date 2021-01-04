@@ -370,6 +370,7 @@ p a{color: black;}
   p.subtitle{
     width: 40vw;
     font-size: 1.5em; 
+    top: -10vw;
   }
 
   p.byline{
@@ -384,16 +385,14 @@ p a{color: black;}
 
   p.publicationTime{font-size:1.2em;}
 
-  blockquote{font-size:1.5em;}
-
-  figcaption{font-size: 1.5em;}
+  figcaption, blockquote, .quoteAuthor{font-size:1.5em;}
 
   h2{font-size: 2.5em;}
 
   h3{font-size: 2em;}
 
   p{font-size: 1.9em;}
-
+/*METTERE Q IN 1.5 EM?*/
   .biblioItem, .pubnote{
   border: 2px solid #d00606; 
 }
