@@ -982,6 +982,7 @@ img[class^="slideDemo"]{
   } */
 
   #metadata { order: 1; }
+
   #content { order: 2; }
 	
    #listIssue {
@@ -1016,7 +1017,7 @@ img[class^="slideDemo"]{
     flex: 4;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
+    flex-direction: row;
   }
 
   #content {
