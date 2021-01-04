@@ -204,10 +204,10 @@ p.publicationTime{
 p.lastModification{
   font-style:lowercase;
   position:relative;
-  /*bottom: 20vw;*/
-  left: 55vw;
-  width: 30%
+  top: -5vw;
+  left: 54vw;
   transform: rotate(15deg);
+  width: 50%
   color: #0066cc; 
 }
 
