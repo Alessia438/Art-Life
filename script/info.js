@@ -76,7 +76,7 @@ var articleInfo = [
 				 'htmlName': 'art2-nytimes1.html'
 			},
 			 {
-				'articleName': 'ENVIRONMENTAL ART: PROPOSALS FOR A FUTURE WORLD',
+				'articleName': 'Environmental Art: Proposals for a Future World',
 				'articleFile': 'Issue3.html#article3',
 				 'htmlName': 'art3-aia.html'
 			},
@@ -86,7 +86,7 @@ var articleInfo = [
 				 'htmlName': 'art4-nytimes2.html'
 			},
 			 {
-				'articleName': 'PHOTOS: New "Washed Ashore" exhibit in Little Rock showcases wildly colorful art made from plastic trash collected at beaches',
+				'articleName': 'Photos: New "Washed Ashore" exhibit in Little Rock showcases wildly colorful art made from plastic trash collected at beaches',
 				'articleFile': 'Issue3.html#article5',
 				 'htmlName': 'art5-arkansas.html'
 			}
