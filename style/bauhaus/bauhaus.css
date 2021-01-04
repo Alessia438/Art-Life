@@ -346,29 +346,35 @@ p a{color: black;}
   /* FOR SMARTPHONE*/  
 @media screen and (max-width: 600px) {
   h1{
-    width: 100%;
-    position: relative;
-    right: 17vw; /* era 25*/)
-    font-size: 3vw; /*era 7*/
+    width: 30vw;
+   /* position: relative;
+    right: 1vw; 
+    font-size: 3vw; */
   }
 
   #cover p{
   width: 50vmin;
   }
-/*
-  p{
-    font-size: ;
-    width:60vw;
-  } 
 
+  body{
+    margin-right: 0vw;
+    margin-left: 0vw;
+    padding-left: 1vw;
+    padding-top: 1vw;
+    padding-right: 2vw;
+    padding-bottom: 3vw;
+  }
+
+/*
   p.subtitle{
     position: initial;
     font-size: 0.55em; 
   }
 */
 
+
+  p.byline{width: : 20vw;}
 /*
-  p.byline{top: -40vw;}
   p.publicationDate{top: -40vw;}
   p.publicationTime{top: -40vw;}
 
