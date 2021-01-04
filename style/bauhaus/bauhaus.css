@@ -123,7 +123,7 @@ video source{
   transform: rotate(-15deg); /*era 30*/
   width: 65%; /* oppure 60vw,con 60% viene la scritta su due righe, 60 vmin è sbagliato?*/
   position: relative;
-  right: 13vw;
+  right: 12vw;
   bottom: -3vw;
   background-color: #f4e4c8;
 }
