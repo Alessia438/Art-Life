@@ -360,10 +360,11 @@ SELECTORNAV STICKY PER ISSUE1, ISSUE2, ISSUE3 E ISSUE4 */
 	.presentation-text {
 		/*transform: translateY(-25%);*/
 		transform: translateY(-20vw);
-	}
-	.presentation-text {
 		margin-right: 0;
 		margin-left: 3.5%;
+	}
+	.presentation img {
+		width: 80%;
 	}
 }
 
