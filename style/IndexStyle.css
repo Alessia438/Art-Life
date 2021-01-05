@@ -650,9 +650,32 @@ SELECTORNAV STICKY PER ISSUE1, ISSUE2, ISSUE3 E ISSUE4 */
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*DOCUMENTATION ///////////////////////////////////////////////////////////////////////////////////////////////////*/
 
 @media (min-width: 800px) {
+
+    div#docu-content-meta-wrapper {
+		order: 2;
+		/* display: flex; */
+		flex: 1 1 auto;
+	}
+
     #flex-container-doc {
         display: flex;
         flex-wrap: wrap;
@@ -664,14 +687,15 @@ SELECTORNAV STICKY PER ISSUE1, ISSUE2, ISSUE3 E ISSUE4 */
 
 
 #docuContent {
-	position: relative;
-	height: 38.5em;
-	width: 73%;
+	position: sticky;
+	/* height: 38.5em; */
+	/* width: 73%; */
 	flex: 3 0px;
-	order: 1;
+	/* order: 1; */
 	margin-left: 0.05em;
 	overflow: scroll;
 	padding-bottom:4em;
+	border-right: 2px solid;
 }
 
 #docuContent h1{
@@ -705,11 +729,16 @@ div#bookmarks {
 	justify-content: center;
 	flex-direction: column;
 	position: relative;
-	overflow: scroll;
+	/* overflow: scroll; */
 	width: 20%;
-	order: 2;
-	border-left: 2px solid;
+	/* order: 2; */
+	/* border-left: 2px solid; */
 	margin-right: 0.05em;
+	position: sticky;
+	position: -webkit-sticky;
+	top: 120px;
+	float: right;
+	/* vertical-align: middle; */
 }
 
 #bookmarks a {
@@ -785,6 +814,7 @@ div#bookmarks {
     /* bottom: 0; */
     z-index: 99;
     flex: 0 1 auto;
+    /* position: fixed; */
 }
 
 
@@ -887,6 +917,13 @@ img[class^="slideDemo"]{
 
 
 @media screen and (max-width: 799px) {
+	
+    div#docu-content-meta-wrapper {
+		order: 2;
+		 display: flex; 
+		flex: 1 1 auto;
+	}
+
 	#flex-container-doc {
 		display: flex;
 		flex-direction: column;
@@ -898,6 +935,7 @@ img[class^="slideDemo"]{
 		padding: 4vw;
 		width: 90%;
 		flex: 1;
+		border-right: none;
 	}
 
 	div#docuContent h1 {
@@ -955,6 +993,19 @@ img[class^="slideDemo"]{
 }
 
 /*fine documentation*/
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
