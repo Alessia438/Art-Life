@@ -139,7 +139,7 @@ section:first-of-type > .publicationPlace {order: 7;}
 figure {
 	display: flex;
     align-items: center;
-	background-image: url(notebook.PNG);
+	background-image: url(paper.jpg);
 	background-size: cover;
 }
 
@@ -287,7 +287,7 @@ div#coverText {
     flex-direction: column;
     -webkit-backdrop-filter: blur(2px);
   	backdrop-filter: blur(2px); 
-  	background-image: url(pink-gradient.jpg);
+  	background-image: url(https://wallpaperaccess.com/full/2695255.jpg);
   	background-repeat: no-repeat;
     background-size: cover;
 }
@@ -346,7 +346,7 @@ div#coverText {
     background-repeat: no-repeat;
     z-index: -99;
     margin-top: -13vw;
-    right: -60%;
+    right: -59%;
 }
 
 #coverText p:nth-of-type(1):before {
@@ -360,6 +360,7 @@ div#coverText {
     margin-left: -3vw;
     z-index: -1;
     padding-right: 5vw;
+    border: 4px ridge fuchsia;
 }
 
 
@@ -479,6 +480,7 @@ div#coverText {
     padding-left: 17vw;
     padding-right: 1vw;
     padding-top: 5vw;
+    border: 3px dotted yellow;
 }
 
 
