@@ -298,6 +298,7 @@ SELECTORNAV STICKY PER ISSUE1, ISSUE2, ISSUE3 E ISSUE4 */
   overflow: hidden;
 }
 
+/* PEZZO ORIGINALE PER EFFETTO HOVER SU IMMAGINI IN INDEX
 .block:hover .artTable img {
   -webkit-transform: scale(1.2);
   transform: scale(1.2);
@@ -309,12 +310,12 @@ SELECTORNAV STICKY PER ISSUE1, ISSUE2, ISSUE3 E ISSUE4 */
   transition: all 0.7s ease;
 }
 
-/* styling for the hover effect of the hr enlargement */
+
 .block hr {
   border: 0;
   border-top: 2px solid black;
   width: 0;
-  position: absolute; /* è ciò che fa partire l'animazione dal centro */        
+  position: absolute;      
   margin: 0;
   transition: width 1s ease-out;
   -webkit-transition: width 1s ease-out;
@@ -333,6 +334,46 @@ SELECTORNAV STICKY PER ISSUE1, ISSUE2, ISSUE3 E ISSUE4 */
     0% {width: 0;}
     100% {width: 70%; right: 30%; left: 15%;}
 }
+*/
+
+
+/*///////////PEZZO NUOVO DA QUI//////////*/
+@media only screen and (min-width: 551px){
+
+	.block:hover .artTable img {
+	  -webkit-transform: scale(1.2);
+	  transform: scale(1.2);
+	}
+
+	.block:hover hr {
+	  animation: double 2s .2s ease-out;
+	  -webkit-animation: double 2s .2s ease-out;
+	  visibility: visible;
+	}
+
+	@keyframes double {
+		0% {width: 0;}
+		100% {width: 70%; right: 30%; left: 15%;}
+	}
+	.block hr {
+		position: absolute;  /* è ciò che fa partire l'animazione dal centro */
+		margin: 0; 
+		transition: width 1s ease-out; 
+		-webkit-transition: width 1s ease-out; 
+		left: 50%; 
+		right: 50%; 
+        visibility: hidden;
+        margin-left: 0;
+	}
+	.block .artTable img {
+  width: 100%;
+   -webkit-transition: all 0.7s ease; 
+   transition: all 0.7s ease; 
+}
+}
+
+/*///////////A QUI//////////*/
+
 
 
 /* the div class "presentation" is only for the articles */
@@ -539,6 +580,22 @@ SELECTORNAV STICKY PER ISSUE1, ISSUE2, ISSUE3 E ISSUE4 */
 		margin-left: 0em;
 		margin-right: 0em;
       }
+	  
+	  
+	  
+/*///////////PEZZO NUOVO DA QUI//////////*/
+	.block .artTable img {width: 100%;}
+
+	/* styling for the hover effect of the hr enlargement */
+	.block hr {
+	  border: 0;
+	  border-top: 2px solid black;
+	  width: 60%; 
+	   visibility: visible; 
+	   margin-left: 20%; 
+	   margin-right: 20%; 
+	}
+/*///////////A QUI//////////*/
 
     .footer {font-size: small;}
 
