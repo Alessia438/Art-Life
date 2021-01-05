@@ -652,7 +652,7 @@ SELECTORNAV STICKY PER ISSUE1, ISSUE2, ISSUE3 E ISSUE4 */
 
 /*DOCUMENTATION ///////////////////////////////////////////////////////////////////////////////////////////////////*/
 
-@media (min-width: 800px) {
+/*@media (min-width: 800px) {
     #flex-container-doc {
         display: flex;
         flex-wrap: wrap;
@@ -660,7 +660,7 @@ SELECTORNAV STICKY PER ISSUE1, ISSUE2, ISSUE3 E ISSUE4 */
         justify-content: space-between;
         width: 100%;
     }
-}
+}*/
 
 
 #docuContent {
