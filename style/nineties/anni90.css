@@ -428,7 +428,7 @@ div#coverText {
 	order: 5;
     font-family: LifeSavers;
     font-size: 3vw;
-    background-image: url(cover-art5bis.png);
+    background-image: url(cover-art4-sfondo.jpg);
     background-size: 100% 40%;
     max-width: 50%;
     z-index: 99;
@@ -480,7 +480,7 @@ div#coverText {
 
 #coverText p:nth-of-type(4):before {
 	content: "";
-    background-image: url(cover-art4.jpg);
+    background-image: url(cover-art5bis.png);
     background-repeat: no-repeat;
     height: 20vw;
     width: 30vw;
