@@ -179,6 +179,8 @@ p.byline{
   position:relative;
   /*top:-40vw;    era 30*/
   left: 55vw;     /*era 55*/
+  top: -5vw;
+  width: 20vw;
   transform: rotate(15deg);
   text-decoration: underline;
 }
@@ -257,6 +259,9 @@ figcaption{
   padding-top: 2%;
   padding-bottom: 2%;
   width: 70%;
+  border-left: 3px solid white;
+  border-bottom: 3px solid white;
+  padding: 1vw;
 }
 
 #heading img, source{
@@ -266,8 +271,8 @@ figcaption{
 
 img, video{
   width: 60%;
-  border: 20pt solid #f9f9eb;
- /*padding-right: 5pt;
+ /* border: 20pt solid #f9f9eb;
+ padding-right: 5pt;
   padding-left: 0pt;
   padding-top: 2%;*/
   filter:saturate(0%) sepia(100%) contrast(80%) saturate(100%); 
@@ -453,10 +458,10 @@ p a{color: black;}
 
     p{font-size: 1.5em;}
 
-    p.byline, p.publicationDate, p.publicationTime{font-size:1.4em;}
+    p.byline, p.publicationDate, p.publicationTime{font-size:1.3em;}
 
     p.lastModification{
-      font-size:1.4em;
+      font-size:1.3em;
       width: 20vw;
     }
 
