@@ -581,9 +581,6 @@ SELECTORNAV STICKY PER ISSUE1, ISSUE2, ISSUE3 E ISSUE4 */
 		margin-right: 0em;
       }
 	  
-	  
-	  
-/*///////////PEZZO NUOVO DA QUI//////////*/
 	.block .artTable img {width: 100%;}
 
 	/* styling for the hover effect of the hr enlargement */
@@ -595,11 +592,8 @@ SELECTORNAV STICKY PER ISSUE1, ISSUE2, ISSUE3 E ISSUE4 */
 	   margin-left: 20%; 
 	   margin-right: 20%; 
 	}
-/*///////////A QUI//////////*/
 
     .footer {font-size: small;}
-
-
 }
 
 @media screen and (max-width: 330px){
@@ -651,25 +645,16 @@ SELECTORNAV STICKY PER ISSUE1, ISSUE2, ISSUE3 E ISSUE4 */
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*DOCUMENTATION ///////////////////////////////////////////////////////////////////////////////////////////////////*/
 
 @media (min-width: 800px) {
 
+	#docu-flex-container {
+		display: flex;
+		height: 100%;
+		flex-direction: column;
+	}
+	
     #docu-content-meta-wrapper {
 		order: 2;
 		/* display: flex; */
@@ -917,6 +902,12 @@ img[class^="slideDemo"]{
 
 
 @media screen and (max-width: 799px) {
+	
+	#docu-flex-container {
+		display: flex;
+		height: 100vh;
+		flex-direction: column;
+	}
 	
     #docu-content-meta-wrapper {
 		order: 2;
