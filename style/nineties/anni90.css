@@ -326,8 +326,8 @@ div#coverText {
 #coverText p:nth-of-type(1) {
     order: 1;
     text-align: center;
-    margin-left: 16vw;
-    max-width: 50vw;
+    margin-left: 20vw;
+    max-width: 45vw;
     padding: 2vw;
     z-index: 99;
     position: absolute;
@@ -339,21 +339,21 @@ div#coverText {
 	content: "";
     background-image: url(cover-art1.png);
     height: 25vw;
-    width: 35vw;
+    width: 33vw;
     position: absolute;
     background-size: 90%;
     background-position: 50%;
     background-repeat: no-repeat;
     z-index: -99;
-    margin-top: -10vw;
-    right: -51%;
+    margin-top: -13vw;
+    right: -60%;
 }
 
 #coverText p:nth-of-type(1):before {
 	content: "";
     background-color: #ffe100;
     height: 13vw;
-    width: 50vw;
+    width: 45vw;
     position: absolute;
     margin-top: -3vw;
     margin-bottom: -20%;
@@ -428,7 +428,7 @@ div#coverText {
 	order: 5;
     font-family: LifeSavers;
     font-size: 3vw;
-    background-image: url(cover-art4-sfondo.jpg);
+    background-image: url(cover-art5bis.png);
     background-size: 100% 40%;
     max-width: 50%;
     z-index: 99;
