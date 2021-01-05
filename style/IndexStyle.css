@@ -495,25 +495,24 @@ SELECTORNAV STICKY PER ISSUE1, ISSUE2, ISSUE3 E ISSUE4 */
   	.block h4{display: none;}
 
   	.presentation {
-    	width: 100%;
-    	position: center;
-    	text-align: center;
-    	display: block;
+		width: 100%;
+		position: center;
+		text-align: center;
+		display: block;
   	}
 
   	.presentation-text {
-    	vertical-align: middle;
-    	text-align: justify;
-    	transform: translateY(-100%);
-      margin-left: 1%;
+		vertical-align: middle;
+		text-align: justify;
+		/*transform: translateY(-100%);*/
+		transform: translateY(-60vw);
+		margin-left: 1%;
+		font-size: .9em;
   	}
 
   	.presentation-text h3{
   		text-align: center;
   	}
-
-  	.land{
-    }
 
     .land img {
 		object-fit: cover;
@@ -544,6 +543,15 @@ SELECTORNAV STICKY PER ISSUE1, ISSUE2, ISSUE3 E ISSUE4 */
     .footer {font-size: small;}
 
 
+}
+
+@media screen and (max-width: 330px){
+	.presentation-text {
+		text-align: center;
+		transform: translateY(-50vw);
+		position: sticky;
+	}
+	img#firstImage {margin-top: 0;}
 }
 
 .footer {
