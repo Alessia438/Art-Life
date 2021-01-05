@@ -670,7 +670,7 @@ SELECTORNAV STICKY PER ISSUE1, ISSUE2, ISSUE3 E ISSUE4 */
 
 @media (min-width: 800px) {
 
-    div#docu-content-meta-wrapper {
+    #docu-content-meta-wrapper {
 		order: 2;
 		/* display: flex; */
 		flex: 1 1 auto;
@@ -918,7 +918,7 @@ img[class^="slideDemo"]{
 
 @media screen and (max-width: 799px) {
 	
-    div#docu-content-meta-wrapper {
+    #docu-content-meta-wrapper {
 		order: 2;
 		 display: flex; 
 		flex: 1 1 auto;
