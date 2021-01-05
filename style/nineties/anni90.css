@@ -460,23 +460,24 @@ div#coverText {
 
 
 #coverText p:nth-of-type(4) {
-	order: 6;
+    order: 6;
     font-family: Heartbit;
     font-size: 3vw;
-    width: 50%;
+    width: 39%;
     height: 15vw;
     background-image: url(cover-art5bis.png);
-    /* background-position: 0% 1%; */
-    background-size: 105%;
+    background-position: -4vw 50%;
+    background-size: 106%;
     background-repeat: no-repeat;
     z-index: 99;
     text-align: center;
     color: blue;
     text-shadow: 1px 1px black, 1px 1px 3px black;
     margin-top: -19vw;
-    margin-left: 0;
+    margin-left: 0px;
     margin-bottom: 0;
-    padding-left: 10vw;
+    padding-left: 17vw;
+    padding-right: 1vw;
     padding-top: 5vw;
 }
 
