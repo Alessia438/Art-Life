@@ -507,6 +507,7 @@ SELECTORNAV STICKY PER ISSUE1, ISSUE2, ISSUE3 E ISSUE4 */
 		/*transform: translateY(-100%);*/
 		transform: translateY(-60vw);
 		margin-left: 1%;
+		font-size: .9em;
   	}
 
   	.presentation-text h3{
@@ -544,7 +545,7 @@ SELECTORNAV STICKY PER ISSUE1, ISSUE2, ISSUE3 E ISSUE4 */
 
 }
 
-@media screen and (max-width: 300px){
+@media screen and (max-width: 330px){
 	.presentation-text {
 		text-align: center;
 		transform: translateY(-50vw);
