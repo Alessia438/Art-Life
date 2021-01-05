@@ -209,3 +209,14 @@ h2{
     font-family: 'Assistant-Bold';
     text-align: right;
 }
+
+@media screen and (max-width: 600px){
+    body{
+    margin-right: 0vw;
+    margin-left: 0vw;
+    padding-left: 1vw;
+    padding-top: 1vw;
+    padding-right: 2vw;
+    padding-bottom: 3vw;
+  }
+  }

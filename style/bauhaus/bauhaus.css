@@ -345,6 +345,8 @@ p a{color: black;}
 
   /* FOR SMARTPHONE*/  
 @media screen and (max-width: 600px) {
+
+
   h1{
     width: 50vw;
     position: relative;
@@ -446,11 +448,13 @@ p a{color: black;}
 
     p.subtitle{
       font-size: 1.4em;
-      width: 25vw;}
+      width: 25vw;
+    }
 
     p{font-size: 1.5em;}
 
     p.byline, p.publicationDate, p.publicationTime{font-size:1.4em;}
+
     p.lastModification{
       font-size:1.4em;
       width: 20vw;
