@@ -176,7 +176,7 @@ p a{color: #1f1e1e;}
 
 /* img:first-child{width: 100%;} */
 
-img{
+img, video{
     width: 100%;
     filter: sepia(60%) contrast(99%) saturate(110%) brightness(100%) hue-rotate(-9deg);
 }
