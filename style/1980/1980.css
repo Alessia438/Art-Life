@@ -210,8 +210,16 @@ h2{
     text-align: right;
 }
 
+@media screen and (max-width: 600px){
+    body:not(#cover){
+      column-count: 2;
+  }
+  }
+
+
 @media screen and (max-width: 400px){
-    body{
-   column-count: 1;
+    body:not(#cover){
+      column-count: 1;
+
   }
   }
