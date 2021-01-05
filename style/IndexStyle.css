@@ -781,9 +781,10 @@ div#bookmarks {
     margin-right: 0em;
     order: 3;
     width: 100%;
-    position: fixed; /* con position: fixed il footer nasconde parte del testo della pagina */
-    bottom: 0;
+    /* position: fixed; /* con position: fixed il footer nasconde parte del testo della pagina */
+    /* bottom: 0; */
     z-index: 99;
+    flex: 0 1 auto;
 }
 
 
