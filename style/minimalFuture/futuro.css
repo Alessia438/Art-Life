@@ -32,7 +32,7 @@ body#cover {
 
 [onClick] {cursor:pointer;}
 
-[onclick]:hover {      /* !!!!!!!!!!NON VA */
+[onclick]:hover {      /* VA MA E' MORTALMENTE LENTO */
 	font-weight: bold 700;
 	animation: shadow 3s;
 	animation-fill-mode: forwards;
@@ -89,11 +89,32 @@ h1::first-letter { font-weight: 600; }
 h2 { 
 	font-size: 5vH;
 	margin top: 2vw;
+	margin-left: 3vw;
+}
+
+h2::before {
+    background-color: #545454;
+    display: inline-block;
+    content: "";
+    height: 2vw;
+    width: 7vw;
+    margin-left: -8vw;
+    margin-right: 1vw;
 }
 
 h3 { 
 	font-size: 4vH;
 	font-weight: 400;	
+}
+
+h3::before {
+    background-color: #8f8f8f;
+    display: inline-block;
+    content: "";
+    height: 2vw;
+    width: 7vw;
+    margin-left: -8vw;
+    margin-right: 1vw;
 }
 
 h3::first-letter {
@@ -151,7 +172,13 @@ figcaption {
 }*/
 
 
-
+body > p:last-child:after {
+	content: "bottoni sociali";
+	background-color: fuchsia;
+	font-size: 10vw;
+	width: %;
+	display: block;
+}
 
 
 
@@ -208,7 +235,7 @@ section:first-of-type img, video {
 
 
 
-section:before {
+/*section:before {
 	margin-left: 25%;
 	margin-bottom: 2vW;
     margin top: 2vw;
@@ -221,7 +248,7 @@ section:before {
     background-repeat: no-repeat;
     content: "";    
 }
-
+*/
 
 
 
@@ -367,7 +394,7 @@ blockquote q, blockquote q span {
 }
 
 blockquote q:before {
-	background-image: url(open-quote.png);
+	background-image: url(open-quote-removebg.png);
 	background-size: contain;
     display: inline-block;
     width: 7vW; 
@@ -379,7 +406,7 @@ blockquote q:before {
 
 
 blockquote q:after { 
-	background-image: url(close-quote.png);
+	background-image: url(close-quote-removebg.png);
 	background-size: contain;
     display: inline-block;
     width: 7vW; 
