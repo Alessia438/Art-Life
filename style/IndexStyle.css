@@ -1104,7 +1104,6 @@ img[class^="slideDemo"]{
   position: relative;
   overflow-x: auto;
   overflow-y: auto;  /* prima era overflow: scroll */
-  border-left: 2px solid;
 }
 
 #metadata dropdown-content * { font-size: 0.9em; }
@@ -1163,6 +1162,8 @@ img[class^="slideDemo"]{
   #metadata {
     width: 26%;
     order: 2;
+    height: 100vh;
+    border-left: 2px solid;
   }	
 	
   #listIssue {
