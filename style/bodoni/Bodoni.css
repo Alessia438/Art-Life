@@ -26,6 +26,7 @@ body#cover {
 	
 div#coverText {
 	background-image: url(sfondo_bodoni.jpg);
+	background-size: contain;
 	padding-left: 28vw;
 	padding-right: 18vw;
 	padding-bottom: 30vw;
@@ -37,22 +38,22 @@ div#coverText {
 }
 
 #cover h1{
-	padding-bottom: 1em;
 	font-size: 3.2em;
 	letter-spacing: 0.25em;
+	padding-bottom: 1em;
 }
 
 #cover p{
+	font-size: 1.4em;
+	font-style: italic;
 	text-indent: 0em;
 	margin-top: 2vw;
 	margin-bottom: 5vw;
-	font-size: 1.4em;
 	hyphens: auto;
 	text-transform: uppercase;
 	line-height: 1.6em;
 	letter-spacing: 0.07em;
 	word-spacing: 0.15em;
-	font-style: italic;
 }
 
 #cover p:first-of-type:first-letter{font-size: 1.2em;}
@@ -70,9 +71,7 @@ body{
 	rgba(255, 255, 240, 0.5)
 	),
 	url('sfondo_bodoni.jpg');
-
 	background-color: #fcfcf4;
-	/*background-image: url('../sfondo_bodoni.jpg');*/
 	color: #44413c; /*black ink*/
 	font-family: 'Bodoni Six ITC';
 	font-weight:normal;
@@ -81,6 +80,7 @@ body{
 	padding-left: 30vW;
 	padding-top: 20vW;
 	padding-bottom: 30vW;
+	background-size: contain;
 }
 
 
@@ -284,7 +284,7 @@ blockquote {
 	hyphens: none;
 }
 
-blockquote.person, .place, .artwork, .work, blockquote:first-letter {text-transform: capitalize;}
+blockquote.person, blockquote.place, blockquote.artwork, blockquote.work, blockquote:first-letter {text-transform: capitalize;}
 
 @media screen and (max-width: 800px){
 	#cover h1{
