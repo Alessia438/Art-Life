@@ -21,7 +21,7 @@
 	font-family: "Lato Black";
 	color: white;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-    font-size: 14vmax;
+    font-size: 14vw;
     letter-spacing: -7px;
     word-spacing: -4px;
     text-align: center;
@@ -34,7 +34,7 @@
     background-image: url('cover.png');
     background-repeat: no-repeat;
     background-position: 98%, top;
-    background-size: cover;
+    background-size: 140vw;
     padding-left: 2%;
     padding-bottom: 2%;
     overflow-x: hidden;
@@ -47,12 +47,12 @@ span[onclick] {cursor:pointer;}
 
 #cover p{
     font-family: "UniversLTStd-Bold";
-    font-size: 3vmax;
+    font-size: 4vw;
     font-style: bold;
     max-width: 25vw;
     padding: 1rem;
     letter-spacing: -0.5px;
-    line-height: 3vw;
+    line-height: 4vw;
     text-indent: 0vw;
     word-spacing: 0.01vw;
     hyphens: none;
