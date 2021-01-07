@@ -194,10 +194,15 @@ figure {
   margin-inline-end: initial;
 }
 
+/*
+figcaption#FIGCAPTION-1-1 {
+    font-size: 1.8vw;
+}
+*/
 
 figcaption{
     font-family: 'Assistant-Bold';
-    font-size: 1.8vw;
+    font-size: 1.5vw;
 }
 
 h2{
@@ -213,7 +218,7 @@ h2{
     column-span: all;
 }
 
-.publicationDate{column-span: all;}
+.publicationDate, .publicationTime, .lastModification {column-span: all;}
 
 .byline, .publicationDate, .publicationTime, .lastModification{
     font-family: 'Assistant-Bold';
