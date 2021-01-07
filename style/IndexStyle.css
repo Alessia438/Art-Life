@@ -740,6 +740,13 @@ div#bookmarks {
     font-weight: 600;
 }
 
+a#docuhighlight:hover{background-color: cadetblue;}
+
+a#docuhighlight {
+	color: black;
+	text-decoration: none;
+}
+
 .docuFooter {
     text-align: center;
     font-size: small;
