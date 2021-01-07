@@ -1028,9 +1028,9 @@ img[class^="slideDemo"]{
 @media screen and (max-width: 550px){
   #selectorNav { border-top: 3px solid; }
 
-  #selectorNav > li a:active, .dropdown:active .dropdown-content {
+ /* #selectorNav > li a:active, .dropdown:active .dropdown-content {
   display:none;
-} 
+} */
 }
 
 
