@@ -114,12 +114,13 @@ border-image:
 
 section h1{
     font-family: 'Assistant-Bold';
-    font-size: 5vw;
+    font-size: 4em;  /*era 5vw*/
     text-align: center;
     letter-spacing: -1px;
     border-bottom: 2px solid black;
     column-span: all; 
     margin-top: 0;
+    letter-spacing: -0.06em;
 }
 
 [id^="FIGURE-1-"] {
@@ -130,7 +131,7 @@ section h1{
 
 body:not(#cover){
     font-family: 'Cheltenham Book Regular';
-    font-size: 1.4vw;
+    /*font-size: 0.9em; 1.4vw */
     font-weight: normal;
    /* color: #1f1e1e; */
     background-color: #fffffa;
@@ -154,6 +155,7 @@ body:not(#cover){
 p{
     /*letter-spacing: -0.01vw;*/
     /*word-spacing: 0.01vw;*/
+    font-size:0.9em;
     text-indent: 1.5vw;
     line-height: 1.6vw;
     hyphens: none;
@@ -198,14 +200,19 @@ figcaption{
 }
 
 h2{
-  font-size: 1.6vw;
+  font-size: 1.01em;       /*1.6vw;*/
   font-style: italic;
 }
+
 .subtitle{
-    
+    font-size: 1.01em;  
     font-style: italic;
+    color: #1f1e1e;
     text-align: justify;
+    column-span: all;
 }
+
+.publicationDate{column-span: all;}
 
 .byline, .publicationDate{
     font-family: 'Assistant-Bold';
@@ -213,7 +220,9 @@ h2{
 }
 
 @media screen and (max-width: 800px){
-
+   body:not(#cover){
+      column-count: 2;
+    }
     #cover {background-size: 190vw;}
 
     #cover h1{
@@ -225,6 +234,7 @@ h2{
 
     #cover p{line-height: 5vw;} 
 
+    section h1{font-size: 2em;}
   } 
 
 @media screen and (max-width: 600px){
@@ -240,6 +250,10 @@ h2{
     }
 
     #cover p{line-height: 6vw;}
+
+    section h1{font-size: 1.5em;}
+
+    p{line-height: 1em;}
 
   } /*chiusura mediaquery*/
 
@@ -257,5 +271,9 @@ h2{
       padding: 0rem;
       font-size: 0.6em;
       line-height: 6vw;
-       word-spacing: 0.1vw; /*serve?*/
+       word-spacing: 0.1vw;
+    } /*serve?*/
+
+    section h1{font-size: 2em;}  
+
   } /*chiusura mediaquery*/

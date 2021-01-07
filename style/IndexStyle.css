@@ -1035,8 +1035,11 @@ img[class^="slideDemo"]{
 .dropdown:hover .dropdown-content:active {
   display: none;
 }
+
+[onClick] {cursor:pointer;}
 */
 }
+
 
 
 
