@@ -1030,7 +1030,12 @@ img[class^="slideDemo"]{
 
  /* #selectorNav > li a:active, .dropdown:active .dropdown-content {
   display:none;
-} */
+} 
+
+.dropdown:hover .dropdown-content:active {
+  display: none;
+}
+*/
 }
 
 
