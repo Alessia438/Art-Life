@@ -194,7 +194,7 @@ p.subtitle {
 	margin-top: 4vw;
 }
 
-p.publicationDate, p.publicationTime {
+p.publicationDate, p.publicationTime, p.lastModification {
 	font-size: 0.7em;
 	/*margin-bottom:5em;*/
 }
