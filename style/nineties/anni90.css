@@ -128,18 +128,22 @@ section:first-of-type > figure {
 section:first-of-type > figure > img {
 	width: 90%;
 	margin: 0;
+    border: 0;
 }
 
-/*section:first-of-type > figure > figcaption {
-    order: 99;
+section:first-of-type > figure > figcaption {
+    transform: none;
+    margin: 0;
+    /*  order: 99;
     margin-left: 0;
     margin-right: 0;
     font-size: 1.3vw;
     line-height: 1.5;
     color: #0d1b70;
     width: 90%;
-    text-align: center;
-}*/
+    text-align: center;   */
+}
+
 
 section:first-of-type > h1 { order: 1; }
 
@@ -186,13 +190,14 @@ figure:nth-of-type(odd) { /* figure dispari: sfondo paper e figcaption inclinata
 
 figure:nth-of-type(odd) > img {	
 	order: 99;
-    
+    border: none;
 }
 
-figure:nth-of-type(odd):not(:first-of-type) > figcaption {
-    margin-left: 5vw;
-    margin-right: 3vw;
+figure:nth-of-type(odd) > figcaption {
     transform: rotate(-10deg);
+    padding: 0;
+    margin: 0;
+    margin-left: 2em;
 }
 
 
@@ -200,14 +205,31 @@ figure:nth-of-type(odd):not(:first-of-type) > figcaption {
 
 figure:nth-of-type(even) { /* figure pari: sfondo gradiente e immagine inclinata*/
     background: linear-gradient(to right, #0d1b70, #15dbed);
+    border: 3px dashed #3a4aad;
 }
 
 figure:nth-of-type(even) > img {
-    border: 5px ridge white;
-    transform: rotate(5deg);   
+    border: none;
+    transform: rotate(5deg);
+
 }
 
 figure:nth-of-type(even) > figcaption {
+    flex-shrink: 10;
+    flex-basis: 0;
+    flex-grow: 1;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    -ms-word-break: break-all;
+    word-break: break-all;
+    word-break: break-word;
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+    margin-right: 0.5em;
+    margin-top: 0;
+    display: unset;
 }
 
 
