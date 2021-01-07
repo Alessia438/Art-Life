@@ -110,7 +110,7 @@ h2 {
     font-size: 40px;
     color: #3db839;
     text-shadow: 1px 1px 2px #22691f;
-    width: 40%;
+    width: 50%;
     margin-bottom: 0.5em;
     margin-top: 1em;
 }
@@ -458,14 +458,14 @@ blockquote:nth-of-type(odd) {
 
 
 p:nth-of-type(9n+4):not(.byline):not(.publicationDate):not(.publicationPlace):not(.publicationTime):not(.lastModification) {
-    width: 60%;
+    /*width: 60%;*/
     text-align: justify;
     background: linear-gradient(90deg, #3db839 40%, transparent);
     padding: 0.5em;
 }
 
 p:nth-of-type(9n+7) {
-    width: 60%;
+    /*width: 60%;*/
     text-align: right;
     padding: 0.5em;
     display: block;
