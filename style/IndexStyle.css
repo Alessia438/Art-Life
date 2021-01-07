@@ -1581,6 +1581,23 @@ blockquote {
 
 */
 
+#about-content-meta-wrapper {
+	order: 2;
+	display: flex;
+	flex: 1 1 auto;
+	flex-direction: row;
+	width: 100%;
+	width: 100%;
+	margin: 0 auto;
+	justify-content: center;
+	display: flex;
+	display: -webkit-flex;
+	flex-wrap: wrap;
+	-webkit-flex-wrap: wrap;
+	flex-direction: row;
+	-webkit-flex-direction: row;
+}
+
 .card {
 	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 	transition: 0.3s;
@@ -1596,6 +1613,7 @@ blockquote {
 	max-height: 100%;
 	display: block;
 	margin: 0px;
+	object-fit: contain;
 }
 
 .card:hover {box-shadow: 0 16px 21px 0 rgba(0,0,0,0.5);}
@@ -1608,6 +1626,9 @@ blockquote {
 	font-weight: bold;
 }
 
+span#contacts {
+	word-break: break-all;
+}
 
 @media screen and (max-width: 800px) {
 	.card {
@@ -1629,7 +1650,7 @@ blockquote {
 	
 	.card img {
 		max-width: 90%;
-		max-height: 50%;
+		/*max-height: 50%;*/
 		align-self: center;
 	}
 	.card .container p {font-size: 0.8em;}
