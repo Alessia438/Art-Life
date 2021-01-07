@@ -65,7 +65,7 @@ span {
 }
 
 p, h2, h3, h4, h5, h6, img {
-	margin: 3vW;
+	margin: 4vW;
 }
 
 h1 {
@@ -119,12 +119,27 @@ section:first-of-type > figure {
 	width: 100%;
 	margin: 0;
 	background-image: none;
+    /*  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;*/
 }
 
 section:first-of-type > figure > img {
 	width: 90%;
 	margin: 0;
 }
+
+/*section:first-of-type > figure > figcaption {
+    order: 99;
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 1.3vw;
+    line-height: 1.5;
+    color: #0d1b70;
+    width: 90%;
+    text-align: center;
+}*/
 
 section:first-of-type > h1 { order: 1; }
 
@@ -148,37 +163,20 @@ figure {
     margin: auto;
     max-width: 50em;
     max-height: 23em;
+    margin-top: 2em;
+    margin-bottom: 2em;
 }
 
 figure > img {
     max-height: 20em;
 }
 
-figcaption {
+/*figcaption {
 	font-family: Pickle Juice;
 	margin-right: 3vw;
 	font-size: 1.5vw;
-}
-
-/*figure:first-of-type {
-	background-image: none;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-}
-
-
-figure:first-of-type > figcaption {
-	order: 99;
-	margin-left: 0;
-	margin-right: 0;
-	font-size: 1.3vw;
-	line-height: 1.5;
-    color: #0d1b70;
-    width: 90%;
-    text-align: center;
 }*/
+
 
 
 figure:nth-of-type(odd) {
@@ -188,12 +186,15 @@ figure:nth-of-type(odd) {
 
 figure:nth-of-type(odd) > img {	
 	order: 99;
-	padding-right: 2vw;
-	padding-top: 3vw;
-    margin-top: 0;
+    border: 5px ridge white;
 }
 
-figure:nth-of-type(odd):not(:first-of-type) > figcaption { margin-left: 5vw; }
+figure:nth-of-type(odd):not(:first-of-type) > figcaption {
+    margin-left: 5vw;
+    font-family: Pickle Juice;
+    margin-right: 3vw;
+    font-size: 1.5vw;
+}
 
 
 
@@ -202,11 +203,11 @@ figure:nth-of-type(even) {
     background: linear-gradient(to right, #0d1b70, #15dbed);
 }
 
-figure:nth-of-type(even) > img {
-	padding-left: 2vw;
-	padding-top: 3vw;
-    max-height: 20em;
-    margin-top: 0;
+figure:nth-of-type(even) > figcaption {
+    transform: rotate(-10deg);
+    font-family: Pickle Juice;
+    margin-right: 3vw;
+    font-size: 1.5vw;
 }
 
 img {
@@ -219,7 +220,25 @@ img:nth-of-type(3n+1) { /* allineata a sinistra, abbastanza grande */
 	float: left;
 	left: 3vW;
 	width: 50%;
+    border: 3px dashed fuchsia;
 }
+
+img:nth-of-type(3n+1) + figcaption { /* figcaption a destra, piccola */
+    font-size: 1.3em;
+    display: inline-block;
+    width: 30%;
+    margin-top: 4vw;
+}
+
+img:nth-of-type(3n+1) + figcaption:before {
+    content: url(blue-arrow.png);
+    height: 3em;
+    width: 3em;
+    float: left;
+    padding-right: 0.5em;
+    padding-bottom: 0.5em;
+}
+
 
 img:nth-of-type(3n+2) { /* allineata a destra, abbastanza grande */
 	float: right;
@@ -228,6 +247,15 @@ img:nth-of-type(3n+2) { /* allineata a destra, abbastanza grande */
 	border-image: url(90spattern2.jpg) 5% round;
 	transform: rotate(5deg); /* animazione? */
 }
+
+img:nth-of-type(3n+2) + figcaption {
+    background: linear-gradient(to bottom, #3db839, #ffe100);
+    padding: 1em;
+    width: 40%;
+    margin-top: 7vw;
+    margin-left: 8em;
+}
+
 
 img:nth-of-type(3n+3) { /* allineata a sinistra, piccola */
 	float: left;
@@ -239,6 +267,24 @@ img:nth-of-type(3n+3) { /* allineata a sinistra, piccola */
   	border-image-slice: 1;
   	transform: rotate(-5deg); /* animazione? */
 }
+
+img:nth-of-type(3n+3) + figcaption:before {
+    content: url(red-triangle.png);
+    height: 3em;
+    width: 3em;
+    float: left;
+    padding-right: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+img:nth-of-type(3n+3) + figcaption { /* figcaption a destra, grande */
+    font-size: 1.3em;
+    display: inline-block;
+    width: 50%;
+    margin-top: 4vw;
+}
+
+
 
 
 p.byline, .publicationDate, .publicationPlace, .publicationTime, .lastModification {
