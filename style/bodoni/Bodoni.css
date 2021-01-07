@@ -340,8 +340,8 @@ blockquote.person, blockquote.place, blockquote.artwork, blockquote.work, blockq
 	
 	[id^="FIGURE-1-"] img, [id^="FIGURE-1-"] video{
 		margin-block-start: 1em;
-		margin-inline-start: 16vw;
-		margin-inline-end: 16vw;
+		/*margin-inline-start: 16vw;
+		margin-inline-end: 16vw;*/
 		height: 10em;
 		width: 10em;
 	}
@@ -391,8 +391,24 @@ blockquote.person, blockquote.place, blockquote.artwork, blockquote.work, blockq
 	}
 }
 
+/*for small small screens*/
+@media screen and (max-width: 300px){
+	[id^="FIGURE-1-"] img, [id^="FIGURE-1-"] video{
+		height: 6em;
+		width: 6em;
+	}
+	
+	h1 {font-size: 1.4em;}
+	
+	p {
+		font-size: .85em;
+		text-align: left;
+	}
+	
+	p.subtitle {
+		font-size: 0.7em;
+		letter-spacing: .1em;
+	}
+}
 
-
-https://museobodoniano.it/tipi/itc-bodoni/ (per cornicetta bodoni)
-http://bibliotecabodoni.net/it/libro/manuale-tipografico-2 (idem)
 
