@@ -352,6 +352,7 @@ SELECTORNAV STICKY PER ISSUE1, ISSUE2, ISSUE3 E ISSUE4 */
 	border-radius: 50%; 
 	width: 50%;
 	margin-top: 5%;
+	max-width: 400px;
 }
 
 @media /* only */ screen and (max-width: 820px){
