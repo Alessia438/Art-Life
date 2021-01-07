@@ -26,8 +26,8 @@
     word-spacing: -4px;
     text-align: center;
     height: 205;
-    box-sizing: border-box; 
-    width: 101%;
+    /*box-sizing: border-box; 
+    width: 101%; */
 }
 
 #cover {
