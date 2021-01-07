@@ -1023,10 +1023,15 @@ img[class^="slideDemo"]{
 .dropdown:hover .dropdown-content {
   display: block;
 }
-
+/*HIDE SELECTOR NAV SE CLICCATO ////////////////////////////////////////////////////// */
 @media screen and (max-width: 550px){
   #selectorNav { border-top: 3px solid; }
+
+  #selectorNav > li a:active, .dropdown:active .dropdown-content {
+  display:none;
+} 
 }
+
 
 
 
