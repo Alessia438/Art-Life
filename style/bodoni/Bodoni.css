@@ -83,7 +83,6 @@ body{
 	background-size: contain;
 }
 
-
 h1, .byline {font-family: "Bodoni Seventytwo ITC";}
 
 h1 {
@@ -118,8 +117,9 @@ p:first-of-type:not(.subtitle):not(.byline):first-letter{
 	font-size: 2em;
 	text-transform:uppercase;
 }
+
 p:first-of-type {
-  text-indent: 0vw;
+	text-indent: 0vw;
 }
 
 p.pubnote {
@@ -138,8 +138,6 @@ p.pubnote {
 	margin-top: 3vw;
 	font-size: 0.9em;
 }
-
-/*p.pubnote:first-letter{font-size: 2em;}*/
 
 p.byline, p.subtitle, p.publicationDate, img, h1 {
 	text-align: center;
@@ -184,6 +182,7 @@ p.byline .person::before{
 	content: "\a";
     	white-space: pre;
 }
+
 p.byline .person::after{
 	content: "\a";
     	white-space: pre;
@@ -301,13 +300,9 @@ blockquote {
 blockquote.person, blockquote.place, blockquote.artwork, blockquote.work, blockquote:first-letter {text-transform: capitalize;}
 
 @media screen and (max-width: 800px){
-	#cover h1{
-		font-size: 2.5em;
-	}
+	#cover h1{font-size: 2.5em;}
 	
-	#cover p {
-		font-size: 1.2em;
-	}
+	#cover p {font-size: 1.2em;}
 }
 
 
