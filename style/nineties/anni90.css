@@ -146,10 +146,12 @@ figure {
     align-items: center;
     justify-content: center;
     margin: auto;
-	background-image: url(paper.jpg);
-	background-size: cover;
     max-width: 50em;
     max-height: 23em;
+}
+
+figure > img {
+    max-height: 20em;
 }
 
 figcaption {
@@ -158,7 +160,7 @@ figcaption {
 	font-size: 1.5vw;
 }
 
-figure:first-of-type {
+/*figure:first-of-type {
 	background-image: none;
 	display: flex;
 	flex-direction: column;
@@ -176,17 +178,29 @@ figure:first-of-type > figcaption {
     color: #0d1b70;
     width: 90%;
     text-align: center;
+}*/
+
+
+figure:nth-of-type(odd) {
+    background-image: url(paper.jpg);
+    background-size: cover;
 }
 
 figure:nth-of-type(odd) > img {	
 	order: 99;
 	padding-right: 2vw;
 	padding-top: 3vw;
-    max-height: 20em;
     margin-top: 0;
 }
 
 figure:nth-of-type(odd):not(:first-of-type) > figcaption { margin-left: 5vw; }
+
+
+
+
+figure:nth-of-type(even) {
+    background: linear-gradient(to right, #0d1b70, #15dbed);
+}
 
 figure:nth-of-type(even) > img {
 	padding-left: 2vw;
