@@ -124,7 +124,7 @@ video source{
   width: 60vw; /* oppure 60vw,con 60% viene la scritta su due righe, 60 vmin è sbagliato?*/
   position: relative;
   right: 12vw;
-  bottom: -3vw;
+  
   background-color: #f4e4c8;
 }
 /* FORSE NON SERVE
