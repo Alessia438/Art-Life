@@ -155,9 +155,13 @@ img, video {
 	padding-top:1.5em;
 	padding-bottom:1.5em;
 	filter: grayscale(100%) brightness(70%) sepia(70%) contrast(100%);
+	max-width: 800px;
 }
 
-img+figcaption {margin-bottom: 3em;}
+img+figcaption {
+	margin-bottom: 3em;
+	text-align: center;
+}
 
 .publicationTime, .lastModification {
 	text-align: center;
@@ -230,6 +234,8 @@ section:nth-child(2) {
         -moz-box-ordinal-group: 3;
         box-ordinal-group: 3;
 }
+
+figure {margin: 0;}
 
 [id^="FIGURE-1-"] img, [id^="FIGURE-1-"] video{
 	border-radius: 50%;
@@ -335,8 +341,6 @@ blockquote.person, blockquote.place, blockquote.artwork, blockquote.work, blockq
 	}
 	
 	p.byline .person {font-size: 1.3em;}
-	
-	figure {margin: 0vw;}
 	
 	[id^="FIGURE-1-"] img, [id^="FIGURE-1-"] video{
 		margin-block-start: 1em;
