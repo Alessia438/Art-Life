@@ -179,7 +179,7 @@ body > p:last-child:after {
     height: 4em;
     display: block;
     background-size: 100%;
-    background-position: center center;
+    background-position: -1em center;
     background-repeat: no-repeat;
 }
 

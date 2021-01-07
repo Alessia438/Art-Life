@@ -50,6 +50,14 @@ function changeCSS(cssFile) { //aggiungere come parametro d'ingresso il document
 					oldImg.id = oldImg.id.split(' ')[1];
 					oldImg.style.display = 'block';
 				}
+				if (allLinks[l].href.includes('futuro.css') && i>0) {
+					var imgs = frameBody.getElementsByTagName('img');
+					for (var img of imgs) {
+							if (img.nextElementSibling == null || img.nextElementSibling.tagName !== "FIGCAPTION") {
+					    	    img.style.width = "100%";
+					        }
+					}
+				}
 				if (allLinks[l].href.includes('1980.css') || allLinks[l].href.includes('Liberty.css') && i>0){ 
 					var allBylines = frameBody.getElementsByClassName('byline');
 					for (var el= 0; el<allBylines.length; el++){
