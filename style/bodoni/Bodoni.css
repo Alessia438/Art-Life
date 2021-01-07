@@ -409,6 +409,7 @@ blockquote.person, blockquote.place, blockquote.artwork, blockquote.work, blockq
 		font-size: 0.7em;
 		letter-spacing: .1em;
 	}
+	section+p {margin-top: 10em;}
 }
 
 
