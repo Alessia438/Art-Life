@@ -61,8 +61,29 @@
 }
 
 span {
-	color: #DA0000;
+    color: #DA0000;
     font-size: 1.1em;
+}
+
+span:hover {
+    transform: scale(1);
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.95);
+        font-size: 1.1em;
+    }
+    50% {
+        transform: scale(1);
+        font-size: 1.2em;
+        font-weight: bold;
+    }
+    100% {
+        transform: scale(0.95);
+        font-size: 1.1em;
+    }
 }
 
 p, h2, h3, h4, h5, h6 {
@@ -142,7 +163,7 @@ h3 {
 section:first-of-type {
 	display: flex;
 	flex-direction: column;
-    background-image: url(https://i.pinimg.com/originals/93/31/e0/9331e05….gif);
+    background-image: url(section-bg.gif);
     background-size: 120%;
     background-position: 50% -10em;
 }
@@ -468,9 +489,9 @@ p:nth-of-type(9n+7) {
     /*width: 60%;*/
     text-align: right;
     padding: 0.5em;
-    display: block;
+    /*display: block;
     margin-right: 2em;
-    margin-left: auto;
+    margin-left: auto;*/
     box-shadow: 3px 3px 10px magenta;
 }
 
