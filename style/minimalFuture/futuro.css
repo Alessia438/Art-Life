@@ -173,11 +173,14 @@ figcaption {
 
 
 body > p:last-child:after {
-	content: "bottoni sociali";
-	background-color: fuchsia;
-	font-size: 10vw;
-	width: %;
-	display: block;
+	content: "";
+    background-image: url(social_icons.png);
+    width: 30em;
+    height: 4em;
+    display: block;
+    background-size: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 
 

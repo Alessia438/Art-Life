@@ -62,10 +62,15 @@
 
 span {
 	color: #DA0000;
+    font-size: 1.1em;
 }
 
 p, h2, h3, h4, h5, h6 {
     margin: 0.5em 2em 0 2em;
+}
+
+p {
+    font-size: 1em;
 }
 
 img {
@@ -137,6 +142,9 @@ h3 {
 section:first-of-type {
 	display: flex;
 	flex-direction: column;
+    background-image: url(https://i.pinimg.com/originals/93/31/e0/9331e05….gif);
+    background-size: 120%;
+    background-position: 50% -10em;
 }
 
 section:first-of-type > figure {
@@ -188,6 +196,14 @@ section:first-of-type > p {order: 99;}
 
 
 
+
+
+/*section:nth-of-type(3n+3) {
+    border: px solid;
+    box-shadow: 2px 2px 3px lightgrey, -2px -2px 3px lightgrey;
+    margin: 1em;
+    border-radius: 10px;
+}*/
 
 
 
