@@ -1113,9 +1113,17 @@ img[class^="slideDemo"]{
 	#listIssue {
 		margin-top: 0px;
 		margin-bottom: 0px;
+		width: 90vw;
+	    padding-inline-start: 0px;
+	    padding: 0 2vw 0 2vw;
+	    text-align: center;
+	    margin: auto;
+	    max-height: 20vh;
+	    overflow: auto;
 	}
 
 	#listIssue > li {
+		display: inline-block;
 		font-size: 15px;
 		margin: 0.2em;
         padding: 0.3em;
@@ -1142,7 +1150,10 @@ img[class^="slideDemo"]{
         height: 70vh;
     }
 	
-    #listIssue {
+}
+
+@media screen and (max-width: 799px) and (min-width: 400px) {
+	#listIssue {
 	    width: 90vw;
 		padding-inline-start: 0px;
 		padding: 0 2vw 0 2vw;
@@ -1160,8 +1171,6 @@ img[class^="slideDemo"]{
       padding: 0.3em;
    }
 }
-
-
 
 /* Large screens */
 @media all and (min-width: 800px) {
