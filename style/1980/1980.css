@@ -17,17 +17,18 @@
   src: url("Cheltenham Book Regular.otf");
 }
 
-#cover h1 { /* METTI UPPERCASE!!!!!!////////*
+#cover h1 { 
 	font-family: "Lato Black";
 	color: white;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-    font-size: 9em;  /*era 14vw*/
-    letter-spacing: -7px;
-    word-spacing: -4px;
-    text-align: center; 
-    height: 205;
-    /*box-sizing: border-box; 
-    width: 101%; */
+  text-transform: capitalize;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  font-size: 9em;  /*era 14vw*/
+  letter-spacing: -7px;
+  word-spacing: -4px;
+  text-align: center; 
+  height: 205;
+  /*box-sizing: border-box; 
+  width: 101%; */
 }
 
 #cover {

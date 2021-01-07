@@ -55,7 +55,7 @@ body{
 
 body{
   font-family: "Ronda Regular";
-  font-size: 2vw; /*era 14pt per thscichold*/
+  font-size: 2vw; /*era 14pt per thscichold deve essere o piu piccolo o essere piu grande H1 per essere 180% //////*/
   font-weight: lighter;
   text-align: justify; 
  /* margin-left: 20mm; inner  margin secondo Tscihold*/
@@ -144,7 +144,7 @@ h1{
   box-sizing: content-box;
   transform: rotate(-30deg); 
   border: 0px;
-  width: 60vmin;
+  width: 60vmin; /*CAMBIA////////////////////////////////// 6% del lato piccolo*/
 }
 
 
