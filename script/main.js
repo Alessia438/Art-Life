@@ -24,7 +24,6 @@ function fillTheGaps(){
 					iFrame.setAttribute('frameborder', '0');
 					iFrame.setAttribute('border', '0');
 					iFrame.setAttribute('cellspacing', '0');
-					/*iFrame.setAttribute('onload', 'hidePrevAndNext("'+curIssue+'")');*/
 					divIFrame.appendChild(iFrame);
 					document.getElementById(curIssue).appendChild(divIFrame);
 				}
