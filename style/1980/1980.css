@@ -122,8 +122,10 @@ section h1{
     margin-top: 0;
 }
 
-section h1::after{
-     content: [id^="FIGURE-1-"];  /*come metto l'immagine dopo il titolo?*/
+[id^="FIGURE-1-"] {
+  column-span:all;
+  margin-top: -3vw;
+  margin-bottom: 2vw;
 }
 
 body:not(#cover){
