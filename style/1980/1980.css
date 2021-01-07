@@ -192,7 +192,6 @@ figure {
   margin-inline-end: initial;
 }
 
-}
 
 figcaption{
     font-family: 'Assistant-Bold';
@@ -235,6 +234,10 @@ h2{
     #cover p{line-height: 5vw;} 
 
     section h1{font-size: 2em;}
+
+    p{line-height: 1em;}
+
+    figcaption{line-height: 1em;}
   } 
 
 @media screen and (max-width: 600px){
