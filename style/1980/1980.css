@@ -217,6 +217,8 @@ h2{
     #cover h1{
       font-size: 5em;
       height: 150;
+      letter-spacing: -1px;
+      word-spacing: -1px;
     } 
 
     #cover p{line-height: 5vw;} 
@@ -245,11 +247,7 @@ h2{
       column-count: 1;
     }
 
-    #cover h1{
-      font-size: 2em;
-      letter-spacing: -1px;
-      word-spacing: -1px;
-    }
+    #cover h1{font-size: 2em;}
 
     #cover {background-size: 330vw;}
 
