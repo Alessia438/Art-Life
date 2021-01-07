@@ -21,11 +21,11 @@
 	font-family: "Lato Black";
 	color: white;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-    font-size: 14vw;
+    font-size: 9em;  /*era 14vw*/
     letter-spacing: -7px;
     word-spacing: -4px;
     text-align: center;
-    height: 200;
+    height: 205;
     box-sizing: border-box; 
     width: 101%;
 }
@@ -47,7 +47,7 @@ span[onclick] {cursor:pointer;}
 
 #cover p{
     font-family: "UniversLTStd-Bold";
-    font-size: 4vw;
+    font-size: 2em;
     font-style: bold;
     max-width: 25vw;
     padding: 1rem;
@@ -210,16 +210,52 @@ h2{
     text-align: right;
 }
 
+@media screen and (max-width: 800px){
+
+    #cover {background-size: 190vw;}
+
+    #cover h1{
+      font-size: 5em;
+      height: 150;
+    } 
+
+    #cover p{line-height: 5vw;} 
+
+  } 
+
 @media screen and (max-width: 600px){
     body:not(#cover){
       column-count: 2;
-  }
-  }
+    }
+
+    #cover {background-size: 250vw;}
+
+    #cover h1{
+      font-size: 4em;
+      height: 100;
+    }
+
+    #cover p{line-height: 6vw;}
+
+  } /*chiusura mediaquery*/
 
 
 @media screen and (max-width: 400px){
     body:not(#cover){
       column-count: 1;
+    }
 
-  }
-  }
+    #cover h1{
+      font-size: 2em;
+      letter-spacing: -1px;
+      word-spacing: -1px;
+    }
+
+    #cover {background-size: 330vw;}
+
+    #cover p{
+      padding: 0rem;
+      font-size: 0.6em;
+      line-height: 6vw;
+       word-spacing: 0.1vw; /*serve?*/
+  } /*chiusura mediaquery*/
