@@ -224,7 +224,7 @@ img:nth-of-type(3n+1) { /* allineata a sinistra, abbastanza grande */
 	float: left;
 	left: 3vW;
 	width: 50%;
-    border: 3px dashed fuchsia;
+    border: 3px dashed #3a4aad;
 }
 
 img:nth-of-type(3n+1) + figcaption { /* figcaption a destra, piccola */
@@ -276,12 +276,14 @@ img:nth-of-type(3n+3) { /* allineata a sinistra, piccola */
 }
 
 img:nth-of-type(3n+3) + figcaption:before {
-    content: url(red-triangle.png);
-    height: 3em;
-    width: 3em;
+    content: "";
+    background-image: url(red-triangle.png);
+    background-position: center;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    height: 2em;
+    width: 2em;
     float: left;
-    padding-right: 0.5em;
-    padding-bottom: 0.5em;
 }
 
 img:nth-of-type(3n+3) + figcaption { /* figcaption a destra, grande */
