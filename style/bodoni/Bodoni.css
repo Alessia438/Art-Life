@@ -155,9 +155,13 @@ img, video {
 	padding-top:1.5em;
 	padding-bottom:1.5em;
 	filter: grayscale(100%) brightness(70%) sepia(70%) contrast(100%);
+	max-width: 800px;
 }
 
-img+figcaption {margin-bottom: 3em;}
+img+figcaption {
+	margin-bottom: 3em;
+	text-align: center;
+}
 
 .publicationTime, .lastModification {
 	text-align: center;
@@ -190,9 +194,9 @@ p.subtitle {
 	margin-top: 4vw;
 }
 
-p.publicationDate {
+p.publicationDate, p.publicationTime, p.lastModification {
 	font-size: 0.7em;
-	margin-bottom:5em;
+	/*margin-bottom:5em;*/
 }
 
 figcaption {margin-bottom:2em;}
@@ -231,13 +235,18 @@ section:nth-child(2) {
         box-ordinal-group: 3;
 }
 
-[id^="FIGURE-1-"] img{
+figure {margin: 0;}
+
+[id^="FIGURE-1-"] img, [id^="FIGURE-1-"] video{
 	border-radius: 50%;
-	height: 30vw;
-    	width: 30vw;
+	/*height: 30vw;
+    	width: 30vw;*/
+	width: 15em;
+	height: 15em;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
+	object-fit: cover;
 }
 
 [id^="FIGURE-1-"]{
@@ -333,12 +342,12 @@ blockquote.person, blockquote.place, blockquote.artwork, blockquote.work, blockq
 	
 	p.byline .person {font-size: 1.3em;}
 	
-	figure {margin: 0vw;}
-	
-	[id^="FIGURE-1-"] img {
+	[id^="FIGURE-1-"] img, [id^="FIGURE-1-"] video{
 		margin-block-start: 1em;
-		margin-inline-start: 16vw;
-		margin-inline-end: 16vw;
+		/*margin-inline-start: 16vw;
+		margin-inline-end: 16vw;*/
+		height: 10em;
+		width: 10em;
 	}
 	
 	figcaption {
@@ -386,8 +395,33 @@ blockquote.person, blockquote.place, blockquote.artwork, blockquote.work, blockq
 	}
 }
 
+/*for small small screens*/
+@media screen and (max-width: 300px){
+	[id^="FIGURE-1-"] img, [id^="FIGURE-1-"] video{
+		height: 6em;
+		width: 6em;
+	}
+	
+	h1 {font-size: 1.4em;}
+	
+	p {
+		font-size: .85em;
+		text-align: left;
+	}
+	
+	p.subtitle {
+		font-size: 0.7em;
+		letter-spacing: .1em;
+	}
+	
+	p.byline .person {
+		line-height: 1.4em;
+		word-break: break-all;
+	}
+	
+	section+p {margin-top: 10em;}
+	
+	section:nth-child(2) {margin-top: 10em;}
+}
 
-
-https://museobodoniano.it/tipi/itc-bodoni/ (per cornicetta bodoni)
-http://bibliotecabodoni.net/it/libro/manuale-tipografico-2 (idem)
 
