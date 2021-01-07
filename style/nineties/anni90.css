@@ -171,43 +171,43 @@ figure > img {
     max-height: 20em;
 }
 
-/*figcaption {
+figcaption {
 	font-family: Pickle Juice;
-	margin-right: 3vw;
-	font-size: 1.5vw;
-}*/
+	font-size: 1.2em;
+}
 
 
 
-figure:nth-of-type(odd) {
+
+figure:nth-of-type(odd) { /* figure dispari: sfondo paper e figcaption inclinata */
     background-image: url(paper.jpg);
     background-size: cover;
 }
 
 figure:nth-of-type(odd) > img {	
 	order: 99;
-    border: 5px ridge white;
+    
 }
 
 figure:nth-of-type(odd):not(:first-of-type) > figcaption {
     margin-left: 5vw;
-    font-family: Pickle Juice;
     margin-right: 3vw;
-    font-size: 1.5vw;
+    transform: rotate(-10deg);
 }
 
 
 
 
-figure:nth-of-type(even) {
+figure:nth-of-type(even) { /* figure pari: sfondo gradiente e immagine inclinata*/
     background: linear-gradient(to right, #0d1b70, #15dbed);
 }
 
+figure:nth-of-type(even) > img {
+    border: 5px ridge white;
+    transform: rotate(5deg);   
+}
+
 figure:nth-of-type(even) > figcaption {
-    transform: rotate(-10deg);
-    font-family: Pickle Juice;
-    margin-right: 3vw;
-    font-size: 1.5vw;
 }
 
 img {
@@ -253,7 +253,8 @@ img:nth-of-type(3n+2) + figcaption {
     padding: 1em;
     width: 40%;
     margin-top: 7vw;
-    margin-left: 8em;
+    margin-left: 7em;
+    text-align: right;
 }
 
 
