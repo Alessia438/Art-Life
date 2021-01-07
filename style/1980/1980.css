@@ -34,8 +34,9 @@
 #cover {
     background-image: url('cover.png');
     background-repeat: no-repeat;
+    background-size: cover;
     background-position: 98%, top;
-    background-size: 140vw;
+   /* background-size: 140vw; */
     padding-left: 2%;
     padding-bottom: 2%;
     overflow-x: hidden;
@@ -223,7 +224,7 @@ h2{
    body:not(#cover){
       column-count: 2;
     }
-    #cover {background-size: 190vw;}
+   /* #cover {background-size: 190vw;} */
 
     #cover h1{
       font-size: 5em;
@@ -246,7 +247,7 @@ h2{
       column-count: 2;
     }
 
-    #cover {background-size: 250vw;}
+   /* #cover {background-size: 250vw;} */
 
     #cover h1{
       font-size: 4em;
@@ -269,7 +270,7 @@ h2{
 
     #cover h1{font-size: 2em;}
 
-    #cover {background-size: 330vw;}
+  /*  #cover {background-size: 330vw;} */
 
     #cover p{
       padding: 0rem;
