@@ -210,6 +210,10 @@ figure:nth-of-type(even) > img {
 figure:nth-of-type(even) > figcaption {
 }
 
+
+
+
+
 img {
 	/* position: relative;
 	display: block;*/
@@ -224,19 +228,21 @@ img:nth-of-type(3n+1) { /* allineata a sinistra, abbastanza grande */
 }
 
 img:nth-of-type(3n+1) + figcaption { /* figcaption a destra, piccola */
-    font-size: 1.3em;
     display: inline-block;
     width: 30%;
     margin-top: 4vw;
+    padding-left: 1.5em;
 }
 
 img:nth-of-type(3n+1) + figcaption:before {
-    content: url(blue-arrow.png);
-    height: 3em;
-    width: 3em;
+    content: "";
+    margin-left: -5em;
+    background-image: url(blue-arrow.png);
+    background-position: center;
+    background-size: 110%;
+    height: 2.5em;
+    width: 5em;
     float: left;
-    padding-right: 0.5em;
-    padding-bottom: 0.5em;
 }
 
 
