@@ -209,6 +209,10 @@ figcaption {margin-bottom:2em;}
 
 section+p {margin-top: 20em;}
 
+section:nth-child(2) {
+    margin-top: 20em;
+}
+
 [id^="H1-1-"]{
 	-webkit-box-ordinal-group: 1;
         -moz-box-ordinal-group: 1;
