@@ -1109,30 +1109,50 @@ img[class^="slideDemo"]{
 #metadata dropdown-content * { font-size: 0.9em; }
 
 
+@media screen and (max-width: 399px) {
+	#listIssue {
+		margin-top: 0px;
+		margin-bottom: 0px;
+	}
+
+	#listIssue > li {
+		font-size: 15px;
+		margin: 0.2em;
+        padding: 0.3em;
+	}
+
+}
 
 /* Medium screens*/
 @media screen and (max-width: 799px) {
   #content-meta-wrapper { flex-direction: column; }
 
-  #metadata { 
-    order: 1;
-    flex: 0 1 auto;
-  }
+    #metadata { 
+	    order: 1;
+	    /*flex: 0 1 auto;*/
+	    max-height: 30vh;
+	    overflow: hidden;
+    }
 
-  #content { 
-    order: 2;
-    flex: 1 1 auto;
-  }
+    #content { 
+	    order: 2;
+	    /*flex: 1 1 auto;*/
+	    margin-top: 1vw;
+        flex-grow: 2;
+        height: 70vh;
+    }
 	
-   #listIssue {
-    	width: 90vw;
-	    padding-inline-start: 0px;
-	    padding: 0 2vw 0 2vw;
-      text-align: center;
-      margin: auto;
-      margin-top: 1em;
-      margin-bottom: 1em;
-   }
+    #listIssue {
+	    width: 90vw;
+		padding-inline-start: 0px;
+		padding: 0 2vw 0 2vw;
+	    text-align: center;
+	    margin: auto;
+	    margin-top: 1em;
+	    margin-bottom: 1em;
+	    max-height: 20vh;
+        overflow: auto;
+    }
 
    #listIssue > li {
       display: inline-block;
