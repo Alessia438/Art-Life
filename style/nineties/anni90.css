@@ -64,8 +64,12 @@ span {
 	color: #DA0000;
 }
 
-p, h2, h3, h4, h5, h6, img {
+p, h2, h3, h4, h5, h6 {
     margin: 0.5em 2em 0 2em;
+}
+
+img {
+    margin: 2em;
 }
 
 h1 {
@@ -94,18 +98,39 @@ body {
 	background-size: cover;*/
 }
 
+
 h2 {
-	font-family: LifeSavers;
-	font-size: 40px;
-	color: #3db839;
-	text-shadow: 1px 1px 1px #22691f;
+    text-align-last: right;
+    font-family: LifeSavers;
+    font-size: 40px;
+    color: #3db839;
+    text-shadow: 1px 1px 2px #22691f;
+    width: 40%;
+    margin-bottom: 0.5em;
+    margin-top: 1em;
 }
+
+h2::first-line {
+    text-decoration: underline;
+    text-decoration-color: purple;
+    line-height: 0.5;
+    color: darkgreen;
+}
+
 
 h3 {
 	font-family: LifeSavers;
-	font-size: 30px;
-	color: #0D1B70;
-	text-shadow: 1px 1px 1px #1f71ff;
+    font-size: 30px;
+    color: #0D1B70;
+    text-shadow: 1px 1px 1px #0d1b70;
+    width: max-content;
+    background-image: url(../../imgs/yellow-for-home.jpg);
+    background-size: 100% 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-right: 1em;
+    margin-left: auto;
+    text-align: right;
 }
 
 
@@ -115,9 +140,9 @@ section:first-of-type {
 }
 
 section:first-of-type > figure {
-	order: 99;
+	order: 8;
 	width: 100%;
-	margin: 0;
+	margin: auto;
 	background-image: none;
     /*  display: flex;
     flex-direction: column;
@@ -159,6 +184,29 @@ section:first-of-type > .lastModification {order: 6;}
 
 section:first-of-type > .publicationPlace {order: 7;}
 
+section:first-of-type > p {order: 99;}
+
+
+
+
+
+
+
+
+
+
+
+
+video {
+    max-width: 80%;
+    margin: auto;
+}
+
+
+
+
+
+
 
 figure {
 	display: flex;
@@ -173,6 +221,7 @@ figure {
 
 figure > img {
     max-height: 20em;
+    object-fit: contain;
 }
 
 figcaption {
@@ -383,14 +432,14 @@ blockquote:nth-of-type(odd) {
 
 
 
-p:nth-of-type(10n+4) {
+p:nth-of-type(9n+4):not(.byline):not(.publicationDate):not(.publicationPlace):not(.publicationTime):not(.lastModification) {
     width: 60%;
     text-align: justify;
     background: linear-gradient(90deg, #3db839 40%, transparent);
     padding: 0.5em;
 }
 
-p:nth-of-type(10n+7) {
+p:nth-of-type(9n+7) {
     width: 60%;
     text-align: right;
     padding: 0.5em;
@@ -400,10 +449,11 @@ p:nth-of-type(10n+7) {
     box-shadow: 3px 3px 10px magenta;
 }
 
-p:nth-of-type(10n+10) {
+p:nth-of-type(9n+9) {
     color: #0d1b70;
     border: 1px solid #0d1b70;
     padding: 0.5em;
+    border-radius: 25px;
 }
 
 
