@@ -17,14 +17,14 @@
   src: url("Cheltenham Book Regular.otf");
 }
 
-#cover h1 {
+#cover h1 { /* METTI UPPERCASE!!!!!!////////*
 	font-family: "Lato Black";
 	color: white;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     font-size: 9em;  /*era 14vw*/
     letter-spacing: -7px;
     word-spacing: -4px;
-    text-align: center;
+    text-align: center; 
     height: 205;
     /*box-sizing: border-box; 
     width: 101%; */
