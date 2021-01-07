@@ -636,7 +636,7 @@ SELECTORNAV STICKY PER ISSUE1, ISSUE2, ISSUE3 E ISSUE4 */
 	flex: 3 0px;
 	/* order: 1; */
 	margin-left: 0.05em;
-	overflow: scroll;
+	overflow: auto;
 	padding-bottom:4em;
 	border-right: 2px solid;
 }
