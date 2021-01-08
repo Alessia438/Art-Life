@@ -144,6 +144,8 @@ h1{
   box-sizing: content-box;
   transform: rotate(-30deg); 
   border: 0px;
+  position: relative;
+  left: -10vw;
  /* width: 60vmin; */
 }
 
@@ -348,15 +350,54 @@ p a{color: black;}
   padding: 1vw;
 }
 
+@media screen and (max-width: 800px){
+ 
+  #cover h1{
+    /*font-size: 2.5em;*/
+    position:relative;
+    top: -2vw;
+  }
+  
+  #cover p {
+    font-size: 1.5em;
+    position: relative;
+    top: -5vw;
+  }
+
+    h1{
+    font-size: 4.2em;   /*era 2 em*/
+    position: relative;
+    right: 6vw;
+  }
+
+    h2, h3{font-size: 2.5em;}
+
+    p.subtitle{
+      font-size: 1.4em;
+      width: 25vw;
+    }
+
+    p{font-size: 1.5em;}
+
+    p.byline, p.publicationDate, p.publicationTime{font-size:1.3em;}
+
+    p.lastModification{
+      font-size:1.3em;
+      width: 20vw;
+    }
+
+    figcaption{font-size: 1.3em;}
+}
+
+
   /* FOR SMARTPHONE*/  
 @media screen and (max-width: 600px) {
-
 
   h1{
     width: 50vw;
     position: relative;
     right: 04vw;
-    font-size: 3em; 
+    font-size: 3.42em; /*era 3em ma deve essere 180%*/
   }
 
   #cover p{
@@ -429,44 +470,7 @@ p a{color: black;}
 
 /*FOR TABLET*/
 
-@media screen and (max-width: 800px){
- 
-  #cover h1{
-    /*font-size: 2.5em;*/
-    position:relative;
-    top: -2vw;
-  }
-  
-  #cover p {
-    font-size: 1.5em;
-    position: relative;
-    top: -5vw;
-  }
 
-    h1{
-    font-size: 2em;
-    position: relative;
-    right: 6vw;
-  }
-
-    h2, h3{font-size: 2.5em;}
-
-    p.subtitle{
-      font-size: 1.4em;
-      width: 25vw;
-    }
-
-    p{font-size: 1.5em;}
-
-    p.byline, p.publicationDate, p.publicationTime{font-size:1.3em;}
-
-    p.lastModification{
-      font-size:1.3em;
-      width: 20vw;
-    }
-
-    figcaption{font-size: 1.3em;}
-}
 /*
   p{font-size: 2vw;}
 
