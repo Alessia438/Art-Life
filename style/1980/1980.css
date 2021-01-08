@@ -114,6 +114,12 @@ border-image:
     ) 100% 0%;
 }
 
+#cover p:first-of-type::first-letter{
+font-weight: normal;
+    font-size: 1em;
+    color: green;
+  }
+
 section h1{
     font-family: 'HelveticaNeueBd';
     font-size: 3em;  /*era 5vw*/
