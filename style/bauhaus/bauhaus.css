@@ -37,6 +37,10 @@ body#cover:first-of-type{
    width: 60%;
 }
 
+#cover p::first-letter{
+  color: #ff0000;;
+}
+
 /* stile per articoli*/
 
 [onClick] {cursor:pointer;}

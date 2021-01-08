@@ -163,7 +163,7 @@ p{
     hyphens: none;
 }
 
-p:nth-child(1)::first-letter { /* p:first-of-type:not(.subtitle):not(.byline):first-letter */
+p:first-of-type/*nth-child(1)*/::first-letter { /* p:first-of-type:not(.subtitle):not(.byline):first-letter */
     font-weight: bold;
     font-size: 2em;  /*era 3 vw*/
     color: #1f1e1e;
