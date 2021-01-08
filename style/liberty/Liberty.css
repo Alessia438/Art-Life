@@ -253,12 +253,13 @@ body:not(#cover){
 }
 
 figure {
+	break-inside: avoid;
 	margin-block-start: 0vw;
 	margin-block-end: 0vw;
 	margin-inline-start: 0vw;
 	margin-inline-end: 0vw;
 	text-align: center;
-	break-inside: avoid;
+	text-align: -webkit-center;
 }
 
 img, video{
@@ -366,8 +367,8 @@ p{
 }
 
 a:visited {
-    color: black;
-    text-decoration: none;
+	color: black;
+	text-decoration: none;
 }
 
 blockquote {
