@@ -106,7 +106,7 @@ video source{
   font-family: "Bauhaus 93";
   text-align: left;
   text-transform: uppercase;
-  font-size: 4vw;  /* boh o large*/
+  font-size: 5.6vw;  /* era 4, ma siccome p è 2vw, il 180% di 2 è 5.6*/
   /*font-style: bold;*/
   /* va a capo alla quarta parola
   transform: rotate(-15deg); */
@@ -124,7 +124,7 @@ video source{
   width: 60vw; /* oppure 60vw,con 60% viene la scritta su due righe, 60 vmin è sbagliato?*/
   position: relative;
   right: 12vw;
-  
+  top: -1vw;
   background-color: #f4e4c8;
 }
 /* FORSE NON SERVE
@@ -144,7 +144,7 @@ h1{
   box-sizing: content-box;
   transform: rotate(-30deg); 
   border: 0px;
-  width: 60vmin; /*CAMBIA////////////////////////////////// 6% del lato piccolo*/
+ /* width: 60vmin; */
 }
 
 
@@ -432,7 +432,7 @@ p a{color: black;}
 @media screen and (max-width: 800px){
  
   #cover h1{
-    font-size: 2.5em;
+    /*font-size: 2.5em;*/
     position:relative;
     top: -2vw;
   }
