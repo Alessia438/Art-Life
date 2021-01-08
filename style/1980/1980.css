@@ -169,6 +169,9 @@ p{
     line-height: 1.6vw;
     hyphens: none;
 }
+
+blockquote{line-height: 1.6vw;}
+
 /*nth-child(1)*/
 p:first-of-type:not(.byline):not(.subtitle):first-letter { /* p:first-of-type:not(.subtitle):not(.byline):first-letter */
     font-weight: bold;
