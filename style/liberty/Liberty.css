@@ -99,7 +99,7 @@ span[onclick]:hover, time[onclick]:hover {background-color: #b38316c4;}
 	}
 	
 	body#cover{
-		background-size: 12em;
+		background-size: 14em;
 		margin-bottom: 30vW; 
 	}
 	#cover p:nth-child(5), #cover p:nth-child(6) {padding-right: 15vw;}
