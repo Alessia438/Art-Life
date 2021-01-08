@@ -668,6 +668,21 @@ SELECTORNAV STICKY PER ISSUE1, ISSUE2, ISSUE3 E ISSUE4 */
 
 #bodoniClass, #libertyClass, #bauhausClass, #the1980sClass, #ninetiesClass, #minimalFutureClass {display:block;}
 
+
+@media only screen and (max-width: 799px) {
+	#ninetiesClass img {
+		width: 70%;
+		margin: 0 1em 0 15%;
+	}
+}
+
+@media only screen and (min-width: 800px) {
+	#ninetiesClass img {
+		width: 40%;
+        margin: 0em 1em 0em 30%;
+	}
+}
+
 div#bookmarks {
 	display: flex;
 	align-items: center;
