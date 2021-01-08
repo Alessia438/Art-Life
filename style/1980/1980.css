@@ -26,8 +26,9 @@
 #cover h1 { 
 	font-family: "Lato Black";
 	color: white;
+  -webkit-text-stroke: 0.03em #ca870d;   /*#4c4c4c;    #ecb859*/
   text-transform: capitalize;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  /*text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;*/
   font-size: 9em;  /*era 14vw*/
   letter-spacing: -7px;
   word-spacing: -4px;
@@ -286,7 +287,6 @@ h2, h3{
 
     #cover h1{
       font-size: 6em;
-      -webkit-text-stroke: 0.03em #ca870d ;   /*#4c4c4c;    #ecb859*/
       height: 150;
       letter-spacing: -1px;
       word-spacing: -1px;
