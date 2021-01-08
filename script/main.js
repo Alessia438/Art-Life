@@ -34,6 +34,17 @@ function fillTheGaps(){
 	}
 }
 
+function fillCover(){
+	if (articleInfo[3].articles.length>0){
+		for (var i=0; i<=articleInfo[3].articles.length;i++){
+			var para= document.createElement('p');
+			para.setAttribute('onclick', 'changeArticleCover("article1", "issue4")');
+			para.innerHTML = articleInfo[3].articles[i].articleName;
+			document.getElementById(coverText).appendChild(para);
+		}
+	}
+}
+
 function changeCSS(cssFile) { //aggiungere come parametro d'ingresso il documento corrente
     	for (var i = 0; i < document.getElementsByTagName("iframe").length; i++) {
 		var frameHead = document.getElementsByTagName("iframe")[i].contentWindow.document.head,
