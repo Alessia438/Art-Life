@@ -245,10 +245,11 @@ body:not(#cover){
 }
 
 [id^="FIGURE-1-"] {
-    column-span: all;
-    padding-bottom: 3vw;
-    margin:0vw;
+	column-span: all;
+	padding-bottom: 3vw;
+	margin:0vw;
 	width: 100%;
+	text-align: -webkit-center;
 }
 
 figure {
@@ -272,16 +273,17 @@ img, video{
 img:first-child, video:first-child {width: 100%;}
 
 img[id^="IMG-1-"] {
-    /* max-width: 100%; */
-    max-width: 1200px;
+	max-height: 1000px;
+	max-width: 1000px;
+	object-fit: contain;
 }
 
 [id^="SECTION-1-"] {
-	padding-top: 0vw;
-	margin-top: 0vw;
 	display: -webkit-box;
 	display: -moz-box;
 	display: box;
+	margin-top: 0vw;
+	padding-top: 0vw;
 	-webkit-box-orient: vertical;
 	-moz-box-orient: vertical;
 	box-orient: vertical;
@@ -330,9 +332,9 @@ h2, h3{font-family: Bold;}
 	    }
 
 figcaption{
-	font-family: Bold;
+	font-family: 'Normal';
 	padding-bottom: 5vw;
-	font-size: 0.9em;
+	font-size: .85em;
 	word-spacing: 0.05em;
 	text-align: left;
 	padding-left: .5em;
@@ -340,10 +342,13 @@ figcaption{
 }
 
 figure[id^="FIGURE-1-"] figcaption {
-    text-align: end;
-    margin-right: .5em;
-    margin-left: 0;
-    padding-left: 0;
+	text-align: end;
+	margin-right: .5em;
+	margin-left: 0;
+	padding-left: 0;
+	font-family: Bold;
+	font-size: 0.9em;
+	max-width: 1000px;
 }
 
 p{
