@@ -222,6 +222,8 @@ h2, h3{
 
 .publicationDate, .publicationTime, .lastModification {column-span: all;}
 
+.byline::before{content: "icon.png";}
+
 .byline, .publicationDate, .publicationTime, .lastModification{
     font-family: 'Assistant-Bold';
     text-align: right;
