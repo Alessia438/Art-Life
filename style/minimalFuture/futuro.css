@@ -1,6 +1,11 @@
 /* FONTS */
+/* sans-serif for the body */
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&display=swap');
+
+/* serif for titles */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+/* sans-serif for subtitle and quoteAuthor */
 @import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200&display=swap');
 
 
@@ -96,7 +101,7 @@ h2 {
 }
 
 h2::before {
-    background-color: var(--grey);
+    background-color: var(--black-coffee);
     display: inline-block;
     content: "";
     height: 2vw;
@@ -111,7 +116,7 @@ h3 {
 }
 
 h3::before {
-    background-color: #8f8f8f; /* light grey */
+    background-color: var(--deep-taupe);
     display: inline-block;
     content: "";
     height: 2vw;
@@ -239,6 +244,14 @@ section:first-of-type img, video {
 	margin: 0;
 }
 
+section:first-of-type > p:not(.subtitle):not(.byline):not(.publicationDate):not(.publicationPlace):not(.lastModification):not(.publicationTime) {
+	order: 99;
+	width: 60%;
+	text-align: center;
+	margin: auto;
+	/* color: var(--black-coffee); */
+}
+
 
 
 /*section:before {
@@ -261,6 +274,9 @@ section:not(:first-of-type) > p:first-of-type:first-letter {
 	color: var(--black-coffee);
 	font-weight: bold;
 	font-family: 'Playfair Display', serif; 
+	float: left;
+	line-height: 1;
+	margin-top: -0.2em;
 }
 
 
@@ -304,6 +320,13 @@ p.subtitle {
 
 p.subtitle span, p.subtitle time  {
 	text-shadow: 0px 1px 1px;
+}
+
+
+p.pubnote {
+	font-variant: small-caps;
+	color: var(--black-coffee);
+	font-style: italic;
 }
 
 
