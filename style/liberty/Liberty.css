@@ -12,8 +12,12 @@
 span[onclick] {cursor:pointer;}
 #cover p[onclick]:hover {text-decoration: underline;}
 span[onclick]:hover, time[onclick]:hover {background-color: #b38316c4;}
-@media screen and (max-width: 330px){
-	span[onclick]{background-color: #b38316c4;}
+@media screen and (max-width: 350px){
+	span[onclick]{
+		/*background-color: #b38316c4;*/
+		color: #602d06;
+	}
+	span[onclick]:hover, time[onclick]:hover {background-color: transparent;}
 }
 
 
@@ -293,10 +297,10 @@ img[id^="IMG-1-"] {
 h1 {
 	font-family: "P22 Vienna Regular";
 	font-weight: bold;
-	/*font-size: 4vw;*/
 	text-align: center;
-	/* font-size: 2em; */
+	font-size: 1.5em;
 	/*margin-block-start: 1vw;*/
+	hyphens: none;
 }
 
 h2, h3{font-family: Bold;}
