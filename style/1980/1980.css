@@ -3,8 +3,8 @@
   src: url("Lato-Black.ttf");
 }
 @font-face {
-  font-family: "Assistant-Bold";
-  src: url("Assistant-Bold.ttf");
+  font-family: "HelveticaNeueBd";
+  src: url("HelveticaNeueBd.ttf");
 }
 
 @font-face {
@@ -115,7 +115,7 @@ border-image:
 }
 
 section h1{
-    font-family: 'Assistant-Bold';
+    font-family: 'HelveticaNeueBd';
     font-size: 3em;  /*era 5vw*/
     text-align: center;
     letter-spacing: -1px;
@@ -202,7 +202,7 @@ figcaption#FIGCAPTION-1-1 {
 */
 
 figcaption{
-    font-family: 'Assistant-Bold';
+    font-family: 'HelveticaNeueBd';
     font-size: 1.5vw;
 }
 
@@ -225,7 +225,7 @@ h2, h3{
 .byline::before{content: "icon.png";}
 
 .byline, .publicationDate, .publicationTime, .lastModification{
-    font-family: 'Assistant-Bold';
+    font-family: 'HelveticaNeueBd';
     text-align: right;
 }
 
