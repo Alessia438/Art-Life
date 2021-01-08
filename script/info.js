@@ -96,11 +96,11 @@ var articleInfo = [
 		'issueName': 'Issue 4',
 		'issueFile': 'Issue4.html#coverPage4',
 		 'articles': [
-			/* {
+			 {
 				'articleName': 'How This Con Man’s Wild Testimony Sent Dozens to Jail, and 4 to Death Row',
 				'articleFile': 'Issue4.html#article1',	
 				'htmlName': 'NYTimes.html'
-			}*/
+			}
 		 ]
 	}
 ]
