@@ -242,11 +242,11 @@ video {
 
 figure {
 	display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     margin: auto;
     max-width: 50em;
-    max-height: 23em;
     margin-top: 2em;
     margin-bottom: 2em;
 }
@@ -267,6 +267,9 @@ figcaption {
 figure:nth-of-type(odd) { /* figure dispari: sfondo paper e figcaption inclinata */
     background-image: url(paper.jpg);
     background-size: cover;
+    width: 40%;
+    float: right;
+    margin: 1em;
 }
 
 figure:nth-of-type(odd) > img {	
@@ -277,9 +280,10 @@ figure:nth-of-type(odd) > img {
 figure:nth-of-type(odd) > figcaption {
     transform: rotate(-10deg);
     padding: 0;
-    margin: 0;
+    margin-bottom: 0;
+    margin-right: 0;
     margin-left: 2em;
-    margin-top: 0;
+    margin-top: 2em;
 }
 
 figure:nth-of-type(odd) > figcaption:before {
@@ -293,12 +297,16 @@ figure:nth-of-type(odd) > figcaption:before {
 figure:nth-of-type(even) { /* figure pari: sfondo gradiente e immagine inclinata*/
     background: linear-gradient(to right, #0d1b70, #15dbed);
     border: 3px dashed #3a4aad;
+    width: 40%;
+    float: left;
+    margin: 1em;
 }
 
 figure:nth-of-type(even) > img {
     border: none;
     transform: rotate(5deg);
-
+    margin: 1em;
+    width: 70%;
 }
 
 figure:nth-of-type(even) > figcaption {
@@ -315,7 +323,7 @@ figure:nth-of-type(even) > figcaption {
     -webkit-hyphens: auto;
     hyphens: auto;
     margin-right: 0.5em;
-    margin-top: 0;
+    margin-top: 0 !important; 
     display: unset;
 }
 
@@ -340,9 +348,9 @@ img:nth-of-type(3n+1) { /* allineata a sinistra, abbastanza grande */
 
 img:nth-of-type(3n+1) + figcaption { /* figcaption a destra, piccola */
     display: inline-block;
-    width: 30%;
-    margin-top: 4vw;
+    width: 70%;
     padding-left: 1.5em;
+    z-index: 1;
 }
 
 img:nth-of-type(3n+1) + figcaption:before {
