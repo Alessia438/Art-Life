@@ -258,7 +258,19 @@ h2, h3{
     text-align: right;
 }
 
+@media screen and (max-width: 1000px){
+
+  #cover h1{font-size: 8em;}
+}    
+
 @media screen and (max-width: 900px){
+
+  #cover h1 {
+    font-size: 4.5em;
+    height: 150;
+    letter-spacing: -1px;
+    word-spacing: -1px
+  }
 
   p{line-height: 1.0em;}
 }
