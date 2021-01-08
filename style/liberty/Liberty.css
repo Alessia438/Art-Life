@@ -338,6 +338,13 @@ figcaption{
 	margin-top: -.5em;
 }
 
+figure[id^="FIGURE-1-"] figcaption {
+    text-align: end;
+    margin-right: .5em;
+    margin-left: 0;
+    padding-left: 0;
+}
+
 p{
 	line-height: 20px;
   	text-align:justify;
