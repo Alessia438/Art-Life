@@ -275,8 +275,7 @@ section:not(:first-of-type) > p:first-of-type:first-letter {
 	font-weight: bold;
 	font-family: 'Playfair Display', serif; 
 	float: left;
-	line-height: 1;
-	margin-top: -0.2em;
+	line-height: 0.5;
 }
 
 

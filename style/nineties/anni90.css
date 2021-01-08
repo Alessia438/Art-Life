@@ -54,7 +54,7 @@
   background: #243D00;*/
 }
 
-[onClick] { cursor: url(glitter-cursor.png), pointer; }
+[onClick] { cursor: url(glitter-pointer.png), pointer; }
 
 [onclick]:hover {
 	
@@ -65,7 +65,7 @@ span {
     font-size: 1.1em;
 }
 
-span:hover {
+span:hover, time:hover {
     transform: scale(1);
     animation: pulse 1s infinite;
 }
@@ -115,7 +115,7 @@ h1 {
 body {
 	margin: 0;
 	font-family: Portland;
-	cursor: url(glitter-pointer.png), auto;
+	cursor: url(glitter-cursor.png), auto;
 }
 
 
@@ -569,7 +569,27 @@ div#coverText {
 	font-size: 2vw;
 }
 
-/*#coverText p:hover {transform: rotate(720deg);}*/
+/*#coverText p {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2vw;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+
+#coverText p:hover, #coverText p:focus {
+  -webkit-transform: scale(1.1) rotate(-4deg);
+  transform: scale(1.1) rotate(-4deg);
+}
+
+#coverText p:after:hover, #coverText p:before:hover {
+    -webkit-transform: unset;
+  transform: unset;
+}*/
 
 
 #coverText p:nth-of-type(1) {
