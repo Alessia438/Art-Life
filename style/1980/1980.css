@@ -134,6 +134,7 @@ section h1{
     column-span: all; 
     margin-top: 0;
     letter-spacing: -0.06em;
+    background-color: #a6ff4d;
 }
 
 [id^="FIGURE-1-"] {
