@@ -115,7 +115,7 @@ h1 {
 body {
 	margin: 0;
 	font-family: Portland;
-	cursor: url(glitter-cursor.png), auto;
+	cursor: url(glitter-auto.png), auto;
 }
 
 
@@ -274,7 +274,7 @@ figure:nth-of-type(odd) { /* figure dispari: sfondo paper e figcaption inclinata
 
 figure:nth-of-type(odd) > img {	
 	order: 99;
-    border: none;
+    width: 80%;
 }
 
 figure:nth-of-type(odd) > figcaption {
@@ -310,9 +310,6 @@ figure:nth-of-type(even) > img {
 }
 
 figure:nth-of-type(even) > figcaption {
-    flex-shrink: 10;
-    flex-basis: 0;
-    flex-grow: 1;
     overflow-wrap: break-word;
     word-wrap: break-word;
     -ms-word-break: break-all;
@@ -322,12 +319,10 @@ figure:nth-of-type(even) > figcaption {
     -moz-hyphens: auto;
     -webkit-hyphens: auto;
     hyphens: auto;
-    margin-right: 0.5em;
     margin-top: 0 !important; 
     display: unset;
+    width: 70%;
 }
-
-figure:nth-of-type(even) > figcaption:before {content: none;} 
 
 
 
@@ -339,21 +334,25 @@ img {
 	
 }
 
-img:nth-of-type(3n+1) { /* allineata a sinistra, abbastanza grande */
+img:nth-of-type(3n+1):not(figure>img) { /* allineata a sinistra, bordo blu */
 	float: left;
 	left: 3vW;
 	width: 50%;
     border: 3px dashed #3a4aad;
+    margin-bottom: 0.3em;
 }
 
-img:nth-of-type(3n+1) + figcaption { /* figcaption a destra, piccola */
+img:nth-of-type(3n+1):not(figure:nth-of-type(odd)>img):not(figure:nth-of-type(even)>img) + figcaption { /* figcaption sotto, sfondo gradiente */
     display: inline-block;
-    width: 70%;
+    max-width: 40%;
+    width: max-content;
     padding-left: 1.5em;
-    z-index: 1;
+    float: left;
+    margin: -1em 1em 1em 3em;
+    padding-top: 0.5em;
 }
 
-img:nth-of-type(3n+1) + figcaption:before {
+img:nth-of-type(3n+1):not(figure:nth-of-type(odd)>img) + figcaption:before {
     content: "";
     margin-left: -5em;
     background-image: url(blue-arrow.png);
@@ -407,9 +406,12 @@ img:nth-of-type(3n+3) + figcaption:before {
 
 img:nth-of-type(3n+3) + figcaption { /* figcaption a destra, grande */
     font-size: 1.3em;
-    display: inline-block;
-    width: 50%;
-    margin-top: 4vw;
+    padding: 1em;
+    max-width: 35%;
+    width: max-content;
+    margin: 1em 1em 1em -2em;
+    float: left;
+    background: repeating-radial-gradient(#ffdf00, transparent 100px);
 }
 
 
