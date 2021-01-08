@@ -571,27 +571,19 @@ div#coverText {
 	font-size: 2vw;
 }
 
-/*#coverText p {
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 2vw;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -webkit-transition-property: transform;
-  transition-property: transform;
+#coverText p:hover {
+    text-shadow: 2px 2px 2px #ff9e9e, -2px -2px 4px fuchsia;
+    animation: shadows 0.6s infinite;
 }
 
-#coverText p:hover, #coverText p:focus {
-  -webkit-transform: scale(1.1) rotate(-4deg);
-  transform: scale(1.1) rotate(-4deg);
-}
 
-#coverText p:after:hover, #coverText p:before:hover {
-    -webkit-transform: unset;
-  transform: unset;
-}*/
+@keyframes shadows {
+    0% { text-shadow: 2px 2px 2px #ff9e9e, -2px -2px 2px fuchsia; }
+    25% { text-shadow: 2px -2px 2px #ff9e9e, -2px 2px 2px fuchsia;    }
+    50% { text-shadow: -2px -2px 2px #ff9e9e, 2px 2px 2px fuchsia; }
+    75% { text-shadow: -2px 2px 2px #ff9e9e, 2px -2px 2px fuchsia; }
+    100% { text-shadow: 2px 2px 2px #ff9e9e, -2px -2px 2px fuchsia; }
+}
 
 
 #coverText p:nth-of-type(1) {
