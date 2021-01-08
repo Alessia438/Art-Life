@@ -269,7 +269,7 @@ h2, h3{
 @media screen and (max-width: 900px){
 
   #cover h1 {
-    font-size: 4.5em;
+    font-size: 4.9em;
     height: 150;
     letter-spacing: -1px;
     word-spacing: -1px
@@ -283,15 +283,15 @@ h2, h3{
    body:not(#cover){
       column-count: 2;
     }
-   /* #cover {background-size: 190vw;} */
+/*  #cover {background-size: 190vw;} 
 
     #cover h1{
-      font-size: 6em;
+      font-size: 5.5em;
       height: 150;
       letter-spacing: -1px;
       word-spacing: -1px;
     } 
-
+*/
     #cover p{line-height: 5vw;} 
 
     section h1{font-size: 2em;}
@@ -301,7 +301,7 @@ h2, h3{
     figcaption{line-height: 1em;}
 
     blockquote{line-height: 0.85em;}
-  } 
+} 
 
 @media screen and (max-width: 600px){
     body:not(#cover){
@@ -311,7 +311,7 @@ h2, h3{
    /* #cover {background-size: 250vw;} */
 
     #cover h1{
-      font-size: 4em;
+      font-size: 4.5em;
       height: 100;
     }
 
@@ -323,7 +323,7 @@ h2, h3{
 
     blockquote{line-height: 0.9em;}
 
-  } /*chiusura mediaquery*/
+} /*chiusura mediaquery*/
 
 
 @media screen and (max-width: 400px){
@@ -331,7 +331,7 @@ h2, h3{
       column-count: 1;
     }
 
-    #cover h1{font-size: 3em;}
+    #cover h1{font-size: 2.5em;}
 
   /*  #cover {background-size: 330vw;} */
 
