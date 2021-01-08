@@ -54,7 +54,7 @@
   background: #243D00;*/
 }
 
-[onClick] { cursor: pointer; }
+[onClick] { cursor: url(glitter-cursor.png), pointer; }
 
 [onclick]:hover {
 	
@@ -115,13 +115,7 @@ h1 {
 body {
 	margin: 0;
 	font-family: Portland;
-	/*background-image: url(90spattern.jpg);
-	background-size: 80vW;
-	background-repeat: repeat;
-	-webkit-backdrop-filter: blur(2px); /* no blur per h1?
-  	backdrop-filter: blur(2px); 
-	background-image: url(green-gradient.jpg);
-	background-size: cover;*/
+	cursor: url(glitter-pointer.png), auto;
 }
 
 
