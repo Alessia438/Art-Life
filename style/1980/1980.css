@@ -264,7 +264,7 @@ h2, h3{
 }
 
 @media screen and (max-width: 800px){
-  
+
    body:not(#cover){
       column-count: 2;
     }
@@ -316,7 +316,7 @@ h2, h3{
       column-count: 1;
     }
 
-    #cover h1{font-size: 2em;}
+    #cover h1{font-size: 3em;}
 
   /*  #cover {background-size: 330vw;} */
 
