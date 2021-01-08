@@ -286,7 +286,7 @@ h2, h3{
 
     #cover h1{
       font-size: 6em;
-      -webkit-text-stroke: 0.03em #4c4c4c;
+      -webkit-text-stroke: 0.03em #ca870d ;   /*#4c4c4c;    #ecb859*/
       height: 150;
       letter-spacing: -1px;
       word-spacing: -1px;
