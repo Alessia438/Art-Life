@@ -167,15 +167,21 @@ body:not(#cover){
 }
 
 p{
-    /*letter-spacing: -0.01vw;*/
-    /*word-spacing: 0.01vw;*/
     font-size:0.9em;
     text-indent: 1.5vw;
     line-height: 1.6vw;
-    hyphens: none;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
 }
 
-blockquote{line-height: 1.6vw;}
+blockquote{
+  line-height: 1.6vw;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+  font-style: italic;
+}
 
 /*nth-child(1)*/
 p:first-of-type:not(.byline):not(.subtitle):first-letter { /* p:first-of-type:not(.subtitle):not(.byline):first-letter */
@@ -217,7 +223,7 @@ figcaption#FIGCAPTION-1-1 {
 
 figcaption{
     font-family: 'HelveticaNeueBd';
-    font-size: 1.5vw;
+    font-size: 0.9em;  /*era 1.5vw*/
 }
 
 h2, h3{
@@ -272,6 +278,8 @@ h2, h3{
     p{line-height: 1em;}
 
     figcaption{line-height: 1em;}
+
+    blockquote{line-height: 0.85em;}
   } 
 
 @media screen and (max-width: 600px){
@@ -291,6 +299,8 @@ h2, h3{
     section h1{font-size: 1.5em;}
 
     p{line-height: 1em;}
+
+    blockquote{line-height: 0.9em;}
 
   } /*chiusura mediaquery*/
 
@@ -312,5 +322,7 @@ h2, h3{
     } /*serve?*/
 
     section h1{font-size: 2em;}  
+
+    blockquote{line-height: 0.9em;}
 
   } /*chiusura mediaquery*/
