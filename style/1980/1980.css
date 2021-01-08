@@ -3,6 +3,11 @@
   src: url("Lato-Black.ttf");
 }
 @font-face {
+  font-family: "Assistant-Bold";
+  src: url("Assistant-Bold.ttf");
+}
+
+@font-face {
   font-family: "HelveticaNeueBd";
   src: url("HelveticaNeueBd.ttf");
 }
@@ -121,7 +126,7 @@ font-weight: normal;
   }
 
 section h1{
-    font-family: 'HelveticaNeueBd';
+    font-family: 'Lato Black';
     font-size: 3em;  /*era 5vw*/
     text-align: center;
     letter-spacing: -1px;
