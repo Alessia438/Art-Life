@@ -40,7 +40,7 @@ function fillCover(){
 			var para= document.createElement('p');
 			para.setAttribute('onclick', 'changeArticleCover("article1", "issue4")');
 			para.innerHTML = articleInfo[3].articles[i].articleName;
-			document.getElementById(coverText).appendChild(para);
+			document.getElementById('coverText').appendChild(para);
 		}
 	}
 }
