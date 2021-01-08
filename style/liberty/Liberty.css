@@ -257,6 +257,7 @@ figure {
 	margin-inline-start: 0vw;
 	margin-inline-end: 0vw;
 	text-align: center;
+	break-inside: avoid;
 }
 
 img, video{
