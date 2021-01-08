@@ -8,6 +8,11 @@
 }
 
 @font-face {
+  font-family: "HelveticaNeueBd";
+  src: url("HelveticaNeueBd.ttf");
+}
+
+@font-face {
   font-family: "UniversLTStd-Bold";
   src: url("UniversLTStd-Bold.otf");
 }
@@ -114,9 +119,15 @@ border-image:
     ) 100% 0%;
 }
 
+#cover p:first-of-type::first-letter{
+font-weight: normal;
+    font-size: 1em;
+    color: green;
+  }
+
 section h1{
-    font-family: 'Assistant-Bold';
-    font-size: 4em;  /*era 5vw*/
+    font-family: 'Lato Black';
+    font-size: 3em;  /*era 5vw*/
     text-align: center;
     letter-spacing: -1px;
     border-bottom: 2px solid black;
@@ -128,6 +139,7 @@ section h1{
 [id^="FIGURE-1-"] {
   column-span:all;
   margin-top: -3vw;
+  padding-top: 2vw;
   margin-bottom: 2vw;
 }
 
@@ -163,7 +175,10 @@ p{
     hyphens: none;
 }
 
-p:first-of-type/*nth-child(1)*/::first-letter { /* p:first-of-type:not(.subtitle):not(.byline):first-letter */
+blockquote{line-height: 1.6vw;}
+
+/*nth-child(1)*/
+p:first-of-type:not(.byline):not(.subtitle):first-letter { /* p:first-of-type:not(.subtitle):not(.byline):first-letter */
     font-weight: bold;
     font-size: 2em;  /*era 3 vw*/
     color: #1f1e1e;
@@ -201,13 +216,14 @@ figcaption#FIGCAPTION-1-1 {
 */
 
 figcaption{
-    font-family: 'Assistant-Bold';
+    font-family: 'HelveticaNeueBd';
     font-size: 1.5vw;
 }
 
-h2{
+h2, h3{
   font-size: 1.01em;       /*1.6vw;*/
   font-style: italic;
+  text-align: left;
 }
 
 .subtitle{
@@ -220,8 +236,13 @@ h2{
 
 .publicationDate, .publicationTime, .lastModification {column-span: all;}
 
+.byline::before{
+  content: "";
+  background-image: url("icon.png");
+  background.size:  }
+
 .byline, .publicationDate, .publicationTime, .lastModification{
-    font-family: 'Assistant-Bold';
+    font-family: 'HelveticaNeueBd';
     text-align: right;
 }
 
