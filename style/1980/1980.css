@@ -236,7 +236,10 @@ h2, h3{
 
 .publicationDate, .publicationTime, .lastModification {column-span: all;}
 
-.byline::before{background-image: url("icon.png");}
+.byline::before{
+  content: "";
+  background-image: url("icon.png");
+  background.size:  }
 
 .byline, .publicationDate, .publicationTime, .lastModification{
     font-family: 'HelveticaNeueBd';
