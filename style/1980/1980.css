@@ -128,6 +128,7 @@ section h1{
 [id^="FIGURE-1-"] {
   column-span:all;
   margin-top: -3vw;
+  padding-top: 2vw;
   margin-bottom: 2vw;
 }
 
@@ -162,8 +163,8 @@ p{
     line-height: 1.6vw;
     hyphens: none;
 }
-
-p:first-of-type/*nth-child(1)*/::first-letter { /* p:first-of-type:not(.subtitle):not(.byline):first-letter */
+/*nth-child(1)*/
+p:first-of-type:not(.byline):not(.subtitle):first-letter { /* p:first-of-type:not(.subtitle):not(.byline):first-letter */
     font-weight: bold;
     font-size: 2em;  /*era 3 vw*/
     color: #1f1e1e;
@@ -205,9 +206,10 @@ figcaption{
     font-size: 1.5vw;
 }
 
-h2{
+h2, h3{
   font-size: 1.01em;       /*1.6vw;*/
   font-style: italic;
+  text-align: left;
 }
 
 .subtitle{
