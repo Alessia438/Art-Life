@@ -2,11 +2,12 @@
   font-family: "Lato Black";
   src: url("Lato-Black.ttf");
 }
+/*
 @font-face {
   font-family: "Assistant-Bold";
   src: url("Assistant-Bold.ttf");
 }
-
+*/
 @font-face {
   font-family: "HelveticaNeueBd";
   src: url("HelveticaNeueBd.ttf");
@@ -284,7 +285,8 @@ h2, h3{
    /* #cover {background-size: 190vw;} */
 
     #cover h1{
-      font-size: 5em;
+      font-size: 6em;
+      -webkit-text-stroke: 0.03em #4c4c4c;
       height: 150;
       letter-spacing: -1px;
       word-spacing: -1px;
