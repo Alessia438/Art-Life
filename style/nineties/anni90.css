@@ -800,6 +800,11 @@ div#coverText {
 
     #coverText p { font-size: 16px; }
 
+    #coverText p:nth-of-type(2) {
+        background-size: 100% 50%;
+        width: 75%;
+    }
+
 
 }
 
@@ -819,6 +824,11 @@ div#coverText {
     #coverText h1 { font-size: 70px; }
 
     #coverText p { font-size: 14px; }
+
+    #coverText p:nth-of-type(2) {
+        background-size: 100% 50%;
+        width: 75%;
+    }
 
 
 
