@@ -45,6 +45,46 @@ function fillCover(){
 	}
 }
 
+function fillIndex(){
+	if (articleInfo[3].articles.length>0){
+		var hr= document.createElement('hr'),
+		    br = document.createElement('br');
+		hr.id="new";
+		document.body.insertBefore(hr, document.getElementsByClassName('footer')[0]);
+		var head= document.createElement('h2');
+		head.innerHTML='ISSUE N°4';
+		document.body.insertBefore(head, document.getElementsByClassName('footer')[0]);
+		document.body.insertBefore(br, document.getElementsByClassName('footer')[0]);
+		var row = document.createElement('div');
+		row.className='row';
+		for (var i=0; i<articleInfo[3].articles.length;i++){
+			var block = document.createElement('div');
+			block.className='block';
+				var a = document.createElement('a');
+				a.href = articleInfo[3].articles[i].articleFile;
+					var land = document.createElement('div');
+					land.className='land artTable';
+						var pic = document.createElement('img');
+						pic.id='firstImage';
+						pic.src='articles/issue4_art'+(i+1)+'/'+articleInfo[3].articles[i].imgName;
+					land.appendChild(pic);
+				a.appendChild(land);
+					var head= document.createElement('h3');
+					head.innerHTML=articleInfo[3].articles[i].articleName;
+				a.appendChild(head);
+					var Hr= document.createElement('hr');
+				a.appendChild(Hr);
+					var p= document.createElement('p');
+					p.innerHTML=articleInfo[3].articles[i].authorName;
+				a.appendChild(p);
+			block.appendChild(a);
+			row.appendChild(block);
+		}
+		document.body.insertBefore(row, document.getElementsByClassName('footer')[0]);
+		document.body.insertBefore(br, document.getElementsByClassName('footer')[0]);
+	}
+}
+
 function changeCSS(cssFile) { //aggiungere come parametro d'ingresso il documento corrente
     	for (var i = 0; i < document.getElementsByTagName("iframe").length; i++) {
 		var frameHead = document.getElementsByTagName("iframe")[i].contentWindow.document.head,
