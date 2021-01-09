@@ -79,7 +79,7 @@ h1, h2, h3, h4, h5, h6, blockquote {
 }
 
 h1 {
-	font-size: 6vw;
+	font-size: 4.5em;
 	font-weight: 200;
 	display: inline-block;
 	margin-left: 30vW;
@@ -95,7 +95,7 @@ h1 {
 h1::first-letter { font-weight: 600; }
 
 h2 { 
-	font-size: 5vH;
+	font-size: 2em;
 	margin top: 2vw;
 	margin-left: 3vw;
 }
@@ -111,7 +111,7 @@ h2::before {
 }
 
 h3 { 
-	font-size: 4vH;
+	font-size: 1.5em;
 	font-weight: 400;	
 }
 
@@ -160,7 +160,7 @@ img{
 img + * { margin-top: 4vw; }
 
 figcaption {
-	font-size: 2vh;	
+	font-size: 0.7em;	
 	position: relative;
 }
 
@@ -293,7 +293,7 @@ section:not(:first-of-type) > p:first-of-type:first-letter {
 p.publicationDate { padding: 0.5vw 0 0.5vw 0.5vw; }
 
 p.byline {
-	font-size: 2.5vh;
+	font-size: 0.9em;
 	padding: 0.5vw 0 0.5vw 0.5vw;
     border-bottom: 1px solid;
     margin: 0 2vw 2vw 2vw;
@@ -313,7 +313,7 @@ p.byline::before {
 p.subtitle {
 	font-family: 'Martel Sans', sans-serif;
 	font-weight: 600;
-	font-size: 4.5vh;
+	font-size: 2em;
 	text-align: center;
 }
 
@@ -425,7 +425,7 @@ blockquote {
 	text-align: center;
     border-bottom: 1px solid var(--grey);
     border-top: 1px solid var(--grey);
-    font-size: 6vH;
+    font-size: 1.5em;
     color: var(--deep-taupe);
 }
 
@@ -443,8 +443,8 @@ blockquote q:before {
 	background-image: url(open-quote-removebg.png);
 	background-size: contain;
     display: inline-block;
-    width: 7vW; 
-    height: 7vh;
+    width: 2em; 
+    height: 1.5em;
     background-repeat: no-repeat;
     content:"";
     margin-bottom: -0.9vW;
@@ -455,8 +455,8 @@ blockquote q:after {
 	background-image: url(close-quote-removebg.png);
 	background-size: contain;
     display: inline-block;
-    width: 7vW; 
-    height: 7vh;
+    width: 2em; 
+    height: 1.5em;
     background-repeat: no-repeat;
     content:"";
     margin-bottom: -0.9vW;
@@ -466,7 +466,6 @@ blockquote q:after {
 p.quoteAuthor {
 	font-family: 'Martel Sans', sans-serif;
 	margin-top: 1vW;
-	font-size: 2vW;
 	font-weight: 100;
 	text-align: center;
 }
@@ -512,7 +511,7 @@ p.quoteAuthor {
 } 
 
 #coverText h1 {
-	font-size: 9vw;
+	font-size: 5.5em;
     background-image: none;
     font-weight: bold;
     margin-left: 5vw;
@@ -533,10 +532,8 @@ p.quoteAuthor {
 
 #coverText p {
 	font-family: 'Playfair Display', serif;
-	font-size: 4vw;
+	font-size: 2.5em;
     font-weight: bold;
-	/*margin-top: 3vw;
-	margin-bottom: 3vw;*/
 }
 
 #coverText p:nth-of-type(1) {
