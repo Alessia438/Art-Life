@@ -139,7 +139,7 @@ section h1{
     background-color: #a6ff4d;
 }
 
-[id^="FIGURE-1-"] {
+section:first-of-type [id^="FIGURE-1-"] {
   column-span:all;
   margin-top: -3vw;
   padding-top: 2vw;
@@ -187,12 +187,16 @@ blockquote{
 }
 
 /*nth-child(1)*/
-p:first-of-type:not(.byline):not(.subtitle):first-letter { /* p:first-of-type:not(.subtitle):not(.byline):first-letter */
+p:first-of-type:not(.byline):not(.subtitle):not(.publicationDate):first-letter { /* p:first-of-type:not(.subtitle):not(.byline):first-letter */
     font-weight: bold;
     font-size: 2em;  /*era 3 vw*/
     color: #1f1e1e;
 }
 
+[id^="SECTION-1-"] p:not(.subtitle){
+  column-span:all;
+  text-align:right;
+} 
 
 /*
 p:not(.publicationDate)::first-letter { voglio la prima lettera grande solo del primo p 
@@ -227,6 +231,7 @@ figcaption#FIGCAPTION-1-1 {
 figcaption{
     font-family: 'HelveticaNeueBd';
     font-size: 0.9em;  /*era 1.5vw*/
+    padding-bottom: 1vw;
 }
 
 h2, h3{
