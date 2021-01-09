@@ -703,19 +703,19 @@ p.quoteAuthor {
 /* smartphones */
 @media (max-width: 480px) {
 
-	h1 { font-size: 2em; }
+	h1 { font-size: 2.2em; }
 
 	h2, { font-size: 1.3em; }
 
-	h3, blockquote, .subtitle { font-size: 1em; }
+	h3, blockquote, .subtitle { font-size: 1.2em; }
 
-	#coverText h1 { font-size: 3em; }
+	#coverText h1 { font-size: 3.2em; }
 
-	#coverText p { font-size: 1.2em; }
+	#coverText p { font-size: 1.4em; }
 
 	p { font-size: 1em; }
 
-	figcaption { font-size: 1em; }
+	figcaption { font-size: .9em; }
 
 	section:not(:first-of-type) > p:first-of-type:first-letter { font-size: 3.5em; }
 
