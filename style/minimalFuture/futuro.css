@@ -314,7 +314,7 @@ p.byline::before {
 p.subtitle {
 	font-family: 'Martel Sans', sans-serif;
 	font-weight: 600;
-	font-size: 2em;
+	font-size: 1.5em;
 	text-align: center;
 }
 
@@ -406,11 +406,8 @@ figure:nth-of-type(even) > figcaption, img:nth-of-type(even):not(:first-child) +
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
 }
 
-figure:nth-of-type(even) + * /*   , img:nth-of-type(even):not(:first-child) + figcaption + *   */  {
-	margin-top: -11vW;
-}
 
-
+figure:nth-of-type(even) + *, img:nth-of-type(even):not(:first-child) + figcaption + * {margin-top: -9em}
 
 
 
@@ -690,9 +687,9 @@ p.quoteAuthor {
 
 	h1 { font-size: 3em; }
 
-	h2, .subtitle { font-size: 1.8em; }
+	h2 { font-size: 1.8em; }
 
-	h3, blockquote { font-size: 1.2em; }
+	h3, blockquote, .subtitle { font-size: 1.2em; }
 
 	#coverText h1 { font-size: 4em; }
 
@@ -708,9 +705,9 @@ p.quoteAuthor {
 
 	h1 { font-size: 2em; }
 
-	h2, .subtitle { font-size: 1.3em; }
+	h2, { font-size: 1.3em; }
 
-	h3, blockquote { font-size: 1em; }
+	h3, blockquote, .subtitle { font-size: 1em; }
 
 	#coverText h1 { font-size: 3em; }
 

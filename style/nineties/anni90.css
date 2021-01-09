@@ -786,17 +786,15 @@ div#coverText {
 /* tablets */
 @media screen (min-width: 481px) and (max-width: 768px) {
 
-    h1 { font-size: 3em; }
+    h1 { font-size: 46px; }
 
-    h2 { font-size: 1.2em; }
+    h2 { font-size: 32px; }
 
-    h3, .subtitle { font-size: 1.2em; }
+    h3, .subtitle { font-size: 28px; }
 
-    p, blockquote { font-size: 1.8em; }
+    p, blockquote { font-size: 14px; }
 
-    span { font-size: 1.2em; }
-
-    .byline { font-size: 1.2em; }
+    figcaption, .byline {font-size: 16px; }
 
     #coverText h1 { font-size: 4em; }
 
@@ -810,17 +808,13 @@ div#coverText {
 /* smartphones */
 @media screen (max-width: 480px) {
 
-    h1 { font-size: 3em; }
+    h1 { font-size: 34px; }
 
-    h2 { font-size: 1.2em; }
+    h2 { font-size: 28px; }
 
-    h3, .subtitle { font-size: 1.2em; }
+    h3, .subtitle { font-size: 20px; }
 
-    p, blockquote { font-size: 1.8em; }
-
-    span { font-size: 1.2em; }
-
-    .byline { font-size: 1.2em; }
+    p, blockquote, figcaption, .byline { font-size: 12px; }
 
     #coverText h1 { font-size: 4em; }
 
