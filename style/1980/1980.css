@@ -241,6 +241,7 @@ h2, h3{
     color: #1f1e1e;
     text-align: justify;
     column-span: all;
+    text-indent: 0vw;
 }
 
 .publicationDate, .publicationTime, .lastModification {column-span: all;}
