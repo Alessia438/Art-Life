@@ -552,7 +552,7 @@ function highlight(spanId, iFrameN, event) {
 	//curInstance.scrollIntoView(true);
 	//curInstance.parentNode.scrollTop = curInstance.offsetTop;
 	curInstance.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"}); // ?? In alcuni browser non va
-
+	event.stopPropagation();
 	// animazione scomparsa colore background dopo 10 secondi:
 	var cssAnimation = elmnt.createElement('style'); // può andare in contrsto con la funzione che cambia lo stile dell'articolo?
     cssAnimation.type = 'text/css';
@@ -571,7 +571,6 @@ function highlight(spanId, iFrameN, event) {
 	}
 
 	cssAnimation.appendChild(rules);
-
 	elmnt.getElementsByTagName("head")[0].appendChild(cssAnimation);
 
 	curInstance.style.animation = 'background-fade 10s forwards';
