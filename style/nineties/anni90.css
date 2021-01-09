@@ -87,22 +87,22 @@ span:hover, time:hover {
 }
 
 p, h2, h3, h4, h5, h6 {
-    margin: 0.5em 2em 0 2em;
+    margin: 0.5em 1em 0 1em;
 }
 
 p {
-    font-size: 1em;
+    font-size: 16px;
 }
 
 img {
-    margin: 2em;
+    margin: 1em;
 }
 
 h1 {
 	font-family: Heartbit;	
 	color: #db2cbe;
 	text-shadow: 3px 2px #ffe100, 3px 3px 5px #0d1b70;
-	font-size: 6vw;
+	font-size: 58px;
 	text-align: center;
 	text-transform: uppercase;
 	transform: rotate(7deg);
@@ -140,7 +140,7 @@ h2::first-line {
 
 h3 {
 	font-family: LifeSavers;
-    font-size: 30px;
+    font-size: 35px;
     color: #0D1B70;
     text-shadow: 1px 1px 1px #0d1b70;
     width: max-content;
@@ -252,13 +252,13 @@ figure {
 }
 
 figure > img {
-    max-height: 20em;
+    max-height: 15em;
     object-fit: contain;
 }
 
 figcaption {
 	font-family: Pickle Juice;
-	font-size: 1.2em;
+	font-size: 18px;
 }
 
 
@@ -274,15 +274,15 @@ figure:nth-of-type(odd) { /* figure dispari: sfondo paper e figcaption inclinata
 
 figure:nth-of-type(odd) > img {	
 	order: 99;
-    width: 80%;
+    width: 100%;
 }
 
 figure:nth-of-type(odd) > figcaption {
     transform: rotate(-10deg);
     padding: 0;
-    margin-bottom: 0;
+    margin-bottom: 1em;
     margin-right: 0;
-    margin-left: 2em;
+    margin-left: 1em;
     margin-top: 2em;
 }
 
@@ -321,7 +321,7 @@ figure:nth-of-type(even) > figcaption {
     hyphens: auto;
     margin-top: 0 !important; 
     display: unset;
-    width: 70%;
+    width: 90%;
 }
 
 
@@ -428,7 +428,7 @@ p.byline, .publicationDate, .publicationPlace, .publicationTime, .lastModificati
 	font-family: Shmup;
 	margin-top: 0.5vW;
 	padding: 0.5vW;
-	font-size: 1.5vw;
+    font-size: 18px;
 }
 
 .byline { 
@@ -455,6 +455,7 @@ blockquote {
 	padding-top: 3vw;
 	padding-left: 2vw;
 	padding-right: 2vw;
+    font-size: 16px;
 }
 
 .quoteAuthor, blockquote > p { margin: 1vw; }
@@ -467,7 +468,7 @@ blockquote:nth-of-type(even) {
     background-repeat: no-repeat, no-repeat;
 	float: right;
 	transform: rotate(5deg);
-	margin: 3vw 5vw 6vw 3vw;
+	margin: 1vw 1vw 2vw 2vw;
 }
 
 blockquote:nth-of-type(odd) {
@@ -477,7 +478,7 @@ blockquote:nth-of-type(odd) {
   	background-repeat: no-repeat, no-repeat;
 	float: left;
 	transform: rotate(-5deg);
-	margin: 3vw 3vw 6vw 4vw;
+	margin: 1vw 1vw 3vw 1vw;
 }
 
 
@@ -487,6 +488,7 @@ p:nth-of-type(9n+4):not(.byline):not(.publicationDate):not(.publicationPlace):no
     text-align: justify;
     background: linear-gradient(90deg, #3db839 40%, transparent);
     padding: 0.5em;
+
 }
 
 p:nth-of-type(9n+7) {
@@ -546,7 +548,7 @@ div#coverText {
 #coverText h1 {
 	order: 2;
 	transform: none;
-    font-size: 15vw;
+    font-size: 150px;
     font-family: Ageta Chubby Demo;
     color: #ccf6ff;
     text-shadow: 1vw 1px #0d1b70;
@@ -568,7 +570,7 @@ div#coverText {
 #coverText p {
 	text-transform: uppercase;
 	font-weight: bold;
-	font-size: 2vw;
+	font-size: 19px;
 }
 
 #coverText p:hover {
