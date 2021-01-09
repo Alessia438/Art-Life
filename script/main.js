@@ -551,8 +551,16 @@ function highlight(spanId, iFrameN, event) {
 	curInstance.style.backgroundColor = "#ffff00";
 	//curInstance.scrollIntoView(true);
 	//curInstance.parentNode.scrollTop = curInstance.offsetTop;
-	curInstance.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"}); // ?? In alcuni browser non va
-	event.stopPropagation();
+	//curInstance.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"}); // ?? In alcuni browser non va
+	//event.stopPropagation();
+	const elementRect = curInstance.getBoundingClientRect();
+	const absoluteElementTop = elementRect.top + window.pageYOffset;
+	const middle = absoluteElementTop - (window.innerHeight / 2);
+	window.scrollTo(0, middle);
+
+
+
+
 	// animazione scomparsa colore background dopo 10 secondi:
 	var cssAnimation = elmnt.createElement('style'); // può andare in contrsto con la funzione che cambia lo stile dell'articolo?
     cssAnimation.type = 'text/css';
