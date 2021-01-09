@@ -1254,17 +1254,16 @@ div#issue1, div#issue2, div#issue3, div#issue4 {
 
 
 
-#coverPage1, #coverPage2, #coverPage3 { 
+#coverPage1, #coverPage2, #coverPage3, #coverPage4 { 
   display: none;
   height: 100%;
 } 
 
-#coverPage4 { height: 100%; }
 
-#coverPage1:target, #coverPage2:target, #coverPage3:target { display: block; }
+#coverPage1:target, #coverPage2:target, #coverPage3:target, #coverPage4:target { display: block; }
 
 
-#article1:target, #article2:target, #article3:target, #article4:target, #article5:target, #article6:target, #article7:target, #article8:target, #article9:target, #article10:target, #article11:target, #article12:target, #article13:target, #article14:target, #article15:target { display: block; }
+#article1:target, #article2:target, #article3:target, #article4:target, #article5:target, #article6:target, #article7:target, #article8:target, #article9:target, #article10:target, #article11:target, #article12:target, #article13:target, #article14:target, #article15:target, #article16:target { display: block; }
 
 
 
