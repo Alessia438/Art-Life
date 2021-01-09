@@ -630,13 +630,9 @@ SELECTORNAV STICKY PER ISSUE1, ISSUE2, ISSUE3 E ISSUE4 */
     }
 }
 
-
 #docuContent {
 	position: sticky;
-	/* height: 38.5em; */
-	/* width: 73%; */
 	flex: 3 0px;
-	/* order: 1; */
 	margin-left: 0.05em;
 	overflow: auto;
 	padding-bottom:4em;
@@ -670,7 +666,7 @@ SELECTORNAV STICKY PER ISSUE1, ISSUE2, ISSUE3 E ISSUE4 */
 
 
 @media only screen and (max-width: 799px) {
-	#ninetiesClass img {
+	#ninetiesClass img, #libertyimg {
 		width: 70%;
 		margin: 0 1em 0 15%;
 	}
@@ -680,6 +676,10 @@ SELECTORNAV STICKY PER ISSUE1, ISSUE2, ISSUE3 E ISSUE4 */
 	#ninetiesClass img {
 		width: 40%;
         margin: 0em 1em 0em 30%;
+	}
+	#libertyimg {
+	    width: 40%;
+	    margin: 2em 1em 0em 30%;
 	}
 }
 
