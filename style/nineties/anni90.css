@@ -61,11 +61,14 @@
     hyphens: auto;
 }
 
-/* global styling */
 ::selection {
-  /*color: white;
-  background: #243D00;*/
+    color: #ffffff;
+    background-color: #db2cbe;
 }
+
+span::selection { color: green; }
+
+time::selection { color: gold; }
 
 [onClick] { cursor: url(glitter-pointer.png), pointer; }
 
