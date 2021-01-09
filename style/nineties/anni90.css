@@ -48,6 +48,19 @@
   width: device-width;
 }
 
+* {
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    -ms-word-break: break-all;
+    word-break: break-all;
+    word-break: break-word;
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+}
+
 /* global styling */
 ::selection {
   /*color: white;
@@ -279,17 +292,12 @@ figure:nth-of-type(odd) > img {
 
 figure:nth-of-type(odd) > figcaption {
     transform: rotate(-10deg);
-    padding: 0;
-    margin-bottom: 1em;
-    margin-right: 0;
-    margin-left: 1em;
-    margin-top: 2em;
+    margin: 2em 0em 1em 1em !important;
+    padding: 0 !important;
+    max-width: 90% !important;
 }
 
-figure:nth-of-type(odd) > figcaption:before {
-    margin-left: 6em;
-    margin-right: -1em;
-}
+figure:nth-of-type(odd) > figcaption:before { height: 0 !important; }
 
 
 
@@ -310,18 +318,9 @@ figure:nth-of-type(even) > img {
 }
 
 figure:nth-of-type(even) > figcaption {
-    overflow-wrap: break-word;
-    word-wrap: break-word;
-    -ms-word-break: break-all;
-    word-break: break-all;
-    word-break: break-word;
-    -ms-hyphens: auto;
-    -moz-hyphens: auto;
-    -webkit-hyphens: auto;
-    hyphens: auto;
     margin-top: 0 !important; 
     display: unset;
-    width: 90%;
+    max-width: 70% !important;
 }
 
 
@@ -410,7 +409,7 @@ img:nth-of-type(3n+3) + figcaption { /* figcaption a destra, grande */
     width: max-content;
     margin: 1em 1em 1em -2em;
     float: left;
-    background: repeating-radial-gradient(#ffdf00, transparent 100px);
+    background: conic-gradient(#ff9700, #ffdf00, #ff9700, #ff9700, #ffdf00, #ff9700, #ff9700, #ffdf00, #ff9700, #ff9700, #ffdf00, #ff9700, #ff9700, #ffdf00, #ff9700, #ff9700, #ffdf00, #ff9700, #ff9700, #ffdf00, #ff9700, #ff9700, #ffdf00, #ff9700, #ff9700, #ffdf00, #ff9700);
 }
 
 
@@ -419,11 +418,11 @@ img:nth-of-type(3n+3) + figcaption { /* figcaption a destra, grande */
 p.byline, .publicationDate, .publicationPlace, .publicationTime, .lastModification {
 	margin-bottom: 0;
 	background-color: #ffe100;
-	width: 30%;
 	margin: auto;
 	font-weight: 400;
 	transform: rotate(-7deg);
 	width: max-content;
+    max-width: 95%;
 	font-family: Shmup;
 	margin-top: 0.5vW;
 	padding: 0.5vW;
@@ -451,6 +450,7 @@ blockquote {
 	font-family: 'Overpass Mono', monospace;
 	width: 40%;
     font-size: 16px;
+    padding: 1em;
 }
 
 .quoteAuthor, blockquote > p { margin: 1vw; }
@@ -847,9 +847,9 @@ div#coverText {
         width: 90%;
     }
 
-    h3, .subtitle { font-size: 20px; }
+    h3, p.subtitle { font-size: 20px !important; }
 
-    p, blockquote, figcaption, .byline { font-size: 12px; }
+    p, blockquote, figcaption, p.byline { font-size: 12px !important; }
 
     blockquote {
         width: 80%;
@@ -873,9 +873,20 @@ div#coverText {
     figure:nth-of-type(odd), figure:nth-of-type(even) {
         width: 90%;
         max-height: 50vh;
+        margin: 0.5em;
     }
 
     figure:nth-of-type(odd) > figcaption { margin: 1em; }
+
+    img:nth-of-type(3n+2) + figcaption {
+        width: 90%;
+        margin: 1em;
+    }
+
+    img:nth-of-type(3n+3) + figcaption {
+        max-width: 80%;
+        margin: -1.5em 0.5em 0.5em 0.5;
+    }
 
     #coverText h1 { font-size: 70px; }
 
