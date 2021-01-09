@@ -66,7 +66,7 @@ function fillIndex(){
 					land.className='land artTable';
 						var pic = document.createElement('img');
 						pic.id='firstImage';
-						pic.src='articles/issue4_art'+i+'/'+articleInfo[3].articles[i].imgName;
+						pic.src='articles/issue4_art'+(i+1)+'/'+articleInfo[3].articles[i].imgName;
 					land.appendChild(pic);
 				a.appendChild(land);
 					var head= document.createElement('h3');
