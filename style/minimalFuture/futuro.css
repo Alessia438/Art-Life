@@ -685,6 +685,12 @@ p.quoteAuthor {
 /* tablets */
 @media (min-width: 481px) and (max-width: 768px) {
 
+	[onClick]:hover, p[onClick]:hover {
+        animation-fill-mode: none;
+        animation: none;
+        font-weight: unset;
+    }
+
 	h1 { font-size: 3em; }
 
 	h2 { font-size: 1.8em; }
@@ -702,6 +708,13 @@ p.quoteAuthor {
 
 /* smartphones */
 @media (max-width: 480px) {
+
+	[onClick]:hover, p[onClick]:hover {
+        animation-fill-mode: none;
+        animation: none;
+        font-weight: unset;
+    }
+
 
 	h1 { font-size: 2.2em; }
 

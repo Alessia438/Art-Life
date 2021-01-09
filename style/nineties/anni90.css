@@ -69,13 +69,15 @@
 
 [onClick] { cursor: url(glitter-pointer.png), pointer; }
 
-[onclick]:hover {
-	
-}
 
 span {
     color: #DA0000;
     font-size: 1.2em;
+}
+
+time {
+    color: #0d1b70;
+    font-size: 1.2em
 }
 
 span:hover, time:hover {
@@ -113,8 +115,8 @@ img {
 
 h1 {
 	font-family: Heartbit;	
-	color: #db2cbe;
-	text-shadow: 3px 2px #ffe100, 3px 3px 5px #0d1b70;
+	color: rgb(47, 199, 178);
+    text-shadow: rgb(13, 27, 112) 3px 2px, rgb(13, 112, 34) 3px 3px 5px;
 	font-size: 58px;
 	text-align: center;
 	text-transform: uppercase;
@@ -192,6 +194,7 @@ section:first-of-type > figure > img {
     width: unset !important; 
     float: unset;
     max-height: 18em;
+    border-image: url(90spattern2.jpg) 5% round;
 }
 
 section:first-of-type > figure > figcaption {
@@ -203,7 +206,7 @@ section:first-of-type > figure > figcaption {
     margin-right: -4em !important;
     z-index: 99;
     font-size: 1.5em;
-
+    text-shadow: 2px 2px 5px white;
 }
 
 section:first-of-type > figure > figcaption:before { content: none; }
@@ -369,7 +372,7 @@ img:nth-of-type(3n+2) { /* allineata a destra, abbastanza grande */
 	width: 50%;
 	border: 10px solid transparent;
 	border-image: url(90spattern2.jpg) 5% round;
-	transform: rotate(5deg); /* animazione? */
+	transform: rotate(5deg); 
 }
 
 img:nth-of-type(3n+2) + figcaption {
@@ -783,6 +786,16 @@ div#coverText {
 /* tablets */
 @media (min-width: 481px) and (max-width: 768px) {
 
+    span:hover, time:hover {
+        transform: none;
+        animation: none;
+    }
+
+    #coverText p:hover {
+        text-shadow: none;
+        animation: none;
+    }
+
     h1 { font-size: 46px; }
 
     h2 { 
@@ -838,6 +851,16 @@ div#coverText {
 
 /* smartphones */
 @media (max-width: 480px) {
+
+    span:hover, time:hover {
+        transform: none;
+        animation: none;
+    }
+
+    #coverText p:hover {
+        text-shadow: none;
+        animation: none;
+    }
 
     section:first-of-type > figure {
         flex-wrap: wrap-reverse;
