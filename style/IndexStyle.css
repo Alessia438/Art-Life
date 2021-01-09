@@ -1097,8 +1097,8 @@ img[class^="slideDemo"]{
 
 #metadata {
   position: relative;
-  overflow-x: auto;
-  overflow-y: auto;  /* prima era overflow: scroll */
+  /* overflow-x: auto;
+  overflow-y: auto;  settare overflow impedisce alla navbar del metadata di rimanere sticky */
 }
 
 #metadata dropdown-content * { font-size: 0.9em; }
@@ -1194,8 +1194,19 @@ img[class^="slideDemo"]{
       /*width: 22vw;*/
       padding-inline-start: 0px;
       padding: 0 3vw 0 3vw;
+      overflow: auto;
   }
 
+}
+
+
+/* tall screens and medium-tall screens */
+@media all and (min-height: 450px) and (max-height: 1050px) {
+	#listIssue {height: 90%;}
+}
+
+@media all and (min-height: 1051px) {
+	#listIssue {height: 100%;}
 }
 
 
