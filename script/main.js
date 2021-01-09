@@ -552,11 +552,12 @@ function highlight(spanId, iFrameN, event) {
 	//curInstance.scrollIntoView(true);
 	//curInstance.parentNode.scrollTop = curInstance.offsetTop;
 	//curInstance.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"}); // ?? In alcuni browser non va
-	//event.stopPropagation();
+	
 	const elementRect = curInstance.getBoundingClientRect();
 	const absoluteElementTop = elementRect.top + window.pageYOffset;
 	const middle = absoluteElementTop - (window.innerHeight / 2);
 	window.scrollTo(0, middle);
+	event.stopPropagation();
 
 
 
