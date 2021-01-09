@@ -62,7 +62,7 @@
 
 span {
     color: #DA0000;
-    font-size: 1.1em;
+    font-size: 17px;
 }
 
 span:hover, time:hover {
@@ -73,16 +73,16 @@ span:hover, time:hover {
 @keyframes pulse {
     0% {
         transform: scale(0.95);
-        font-size: 1.1em;
+        font-size: 17px;
     }
     50% {
         transform: scale(1);
-        font-size: 1.2em;
+        font-size: 18px;
         font-weight: bold;
     }
     100% {
         transform: scale(0.95);
-        font-size: 1.1em;
+        font-size: 17px;
     }
 }
 
@@ -405,7 +405,6 @@ img:nth-of-type(3n+3) + figcaption:before {
 }
 
 img:nth-of-type(3n+3) + figcaption { /* figcaption a destra, grande */
-    font-size: 1.3em;
     padding: 1em;
     max-width: 35%;
     width: max-content;
@@ -438,7 +437,7 @@ p.byline, .publicationDate, .publicationPlace, .publicationTime, .lastModificati
 .subtitle {
 	text-align: center;
 	font-family: Heartbit;
-	font-size: 3.5vw;
+	font-size: 35px;
 	text-align: center;
 	font-weight: 400;
 	width: 90vW;
