@@ -92,6 +92,7 @@ h1 {
 	letter-spacing: 0.07em;
     word-spacing: 0.25em;*/
 }
+
 h1::first-letter { font-weight: 600; }
 
 h2 { 
@@ -661,3 +662,69 @@ p.quoteAuthor {
     right: 0;
     z-index: -99;	
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ///////////////// MEDIA QUERIES ////////////////////////////////////////////////////////////////////////*/
+
+
+/* tablets */
+@media screen (min-width: 481px) and (max-width: 768px) {
+
+	h1 { font-size: 3em; }
+
+	h2, .subtitle { font-size: 1.8em; }
+
+	h3, blockquote { font-size: 1.2em; }
+
+	#coverText h1 { font-size: 4em; }
+
+	#coverText p { font-size: 2em; }
+
+
+}
+
+
+
+/* smartphones */
+@media screen (max-width: 480px) {
+
+	h1 { font-size: 2em; }
+
+	h2, .subtitle { font-size: 1.3em; }
+
+	h3, blockquote { font-size: 1em; }
+
+	#coverText h1 { font-size: 3em; }
+
+	#coverText p { font-size: 1.2em; }
+
+	p { font-size: 1em; }
+
+	figcaption { font-size: 1em; }
+
+	section:not(:first-of-type) > p:first-of-type:first-letter { font-size: 3.5em; }
+
+	.byline { font-size: 1.2em; }
+
+
+
+}
+
