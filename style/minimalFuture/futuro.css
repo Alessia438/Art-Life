@@ -686,7 +686,7 @@ p.quoteAuthor {
 
 
 /* tablets */
-@media screen (min-width: 481px) and (max-width: 768px) {
+@media (min-width: 481px) and (max-width: 768px) {
 
 	h1 { font-size: 3em; }
 
@@ -704,7 +704,7 @@ p.quoteAuthor {
 
 
 /* smartphones */
-@media screen (max-width: 480px) {
+@media (max-width: 480px) {
 
 	h1 { font-size: 2em; }
 
