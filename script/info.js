@@ -98,7 +98,7 @@ var articleInfo = [
 		 'articles': [
 			 {
 				'articleName': 'How This Con Man’s Wild Testimony Sent Dozens to Jail, and 4 to Death Row',
-				'articleFile': 'Issue4.html#article1',
+				'articleFile': 'Issue4.html#article16',
 				'authorName': 'Miao miao',
 				'imgName': 'img01.jpg',
 				'htmlName': 'NYTimes.html'
