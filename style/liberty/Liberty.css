@@ -179,6 +179,7 @@ span[onclick]:hover, time[onclick]:hover {background-color: #b38316c4;}
 
 }
 
+
 /*LARGE SCREENS*/
 
 @media screen and (min-width: 900px){
@@ -198,7 +199,6 @@ span[onclick]:hover, time[onclick]:hover {background-color: #b38316c4;}
 		margin-block-start: 8vw;
 		margin-block-end: 6vw;
 	}
-
 }
 
 @media screen and (min-width: 1200px) {
@@ -221,12 +221,8 @@ span[onclick]:hover, time[onclick]:hover {background-color: #b38316c4;}
 
 
 
-
-
-
-
-
 /*/////////ARTICLES/////////*/
+
 body{
 	background-color: #fcfcf4;
 	column-count: 3;
@@ -280,7 +276,7 @@ img:first-child, video:first-child {width: 100%;}
 img[id^="IMG-1-"] {
 	max-height: 1000px;
 	max-width: 1000px;
-	object-fit: contain;
+	object-fit: cover;
 }
 
 [id^="SECTION-1-"] {
@@ -389,9 +385,8 @@ p.pubnote {
 	text-align: end;
 }
 
-
-
 /* TABLET */
+
 @media screen and (max-width: 600px){
 	body {
 		column-count: 2;
@@ -399,8 +394,6 @@ p.pubnote {
 	}
 	img, video {width: 47.5vw;}
 }
-
-
 
 /* SMARTPHONE */
 
