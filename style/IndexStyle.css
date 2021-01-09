@@ -1259,6 +1259,8 @@ div#issue1, div#issue2, div#issue3, div#issue4 {
   height: 100%;
 } 
 
+#coverPage4 { height: 100%; }
+
 #coverPage1:target, #coverPage2:target, #coverPage3:target { display: block; }
 
 
