@@ -635,7 +635,7 @@ div#coverText {
     background-image: url(green-cover-art2.JPG);
     background-position: center bottom;
     font-family: Heartbit;
-    font-size: 30px;
+    font-size: 1.9em;
     background-repeat: no-repeat;
     background-size: 100% 25%;
     width: 40%;
@@ -664,7 +664,7 @@ div#coverText {
     margin-top: -20vw;
     text-align: right;
     font-family: Shmup;
-    font-size: 26px;
+    font-size: 1.6em;
     color: purple;
 }
 
@@ -726,7 +726,7 @@ div#coverText {
 #coverText p:nth-of-type(4) {
     order: 6;
     font-family: Heartbit;
-    font-size: 33px;
+    font-size: 2em;
     width: 38%;
     height: 12vw;
     background-image: url(cover-art5bis.png);
@@ -796,9 +796,9 @@ div#coverText {
 
     figcaption, .byline {font-size: 16px; }
 
-    #coverText h1 { font-size: 4em; }
+    #coverText h1 { font-size: 80px; }
 
-    #coverText p { font-size: 2em; }
+    #coverText p { font-size: 16px; }
 
 
 }
@@ -816,9 +816,9 @@ div#coverText {
 
     p, blockquote, figcaption, .byline { font-size: 12px; }
 
-    #coverText h1 { font-size: 4em; }
+    #coverText h1 { font-size: 70px; }
 
-    #coverText p { font-size: 2em; }
+    #coverText p { font-size: 14px; }
 
 
 
