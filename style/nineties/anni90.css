@@ -450,10 +450,6 @@ p.byline, .publicationDate, .publicationPlace, .publicationTime, .lastModificati
 blockquote {
 	font-family: 'Overpass Mono', monospace;
 	width: 40%;
-	padding-bottom: 2vw;
-	padding-top: 3vw;
-	padding-left: 2vw;
-	padding-right: 2vw;
     font-size: 16px;
 }
 
@@ -788,7 +784,8 @@ div#coverText {
 
     h1 { font-size: 46px; }
 
-    h2 { font-size: 32px; }
+    h2 { 
+        font-size: 32px; }
 
     h3, .subtitle { font-size: 28px; }
 
@@ -843,11 +840,42 @@ div#coverText {
 
     h1 { font-size: 34px; }
 
-    h2 { font-size: 28px; }
+    h2 { 
+        font-size: 28px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+    }
 
     h3, .subtitle { font-size: 20px; }
 
     p, blockquote, figcaption, .byline { font-size: 12px; }
+
+    blockquote {
+        width: 80%;
+        text-align: center;
+    }
+
+    blockquote:nth-of-type(odd) {margin: 1em 1em 1em 2em !important;}
+
+    blockquote:nth-of-type(odd) {margin: 1em 2em 1em 1em !important;}
+
+    figure {
+        flex-direction: row;
+        max-width: 90%;
+    }
+
+    figure > img {
+        max-height: 40vh !important;
+        width: unset !important;
+    }
+
+    figure:nth-of-type(odd), figure:nth-of-type(even) {
+        width: 90%;
+        max-height: 50vh;
+    }
+
+    figure:nth-of-type(odd) > figcaption { margin: 1em; }
 
     #coverText h1 { font-size: 70px; }
 
