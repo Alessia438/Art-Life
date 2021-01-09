@@ -72,7 +72,7 @@ span[onclick]:hover, time[onclick]:hover {background-color: #b38316c4;}
 	}
 	
 	#cover p:nth-child(6) {
-		padding-left: 2vw;
+		padding-left: 8vw;
 		margin-right: 25vW;
 		text-shadow: 0.07em 0.07em white;
 	}
@@ -132,7 +132,7 @@ span[onclick]:hover, time[onclick]:hover {background-color: #b38316c4;}
 		font-weight:normal;
 		font-style:normal;
 		margin-bottom:0;
-		padding-top: 30vW;
+		padding-top: 40vw;
 		padding-bottom: 40vW;
 		background-size: 600px;
 	}
@@ -160,7 +160,7 @@ span[onclick]:hover, time[onclick]:hover {background-color: #b38316c4;}
 		margin-bottom: 2.5vw;
 		margin-right: 25vw;
 		padding-bottom:0;
-		margin-left: 25vw;
+		margin-left: 20vw;
 		text-align: left;
 		text-indent: 0vw;
 		text-shadow: none;
@@ -190,7 +190,7 @@ span[onclick]:hover, time[onclick]:hover {background-color: #b38316c4;}
 		background-size: 800px;
 	}
 	#cover h1{font-size: 3.5em;}
-	#cover p{font-size: 1.5em;}
+	#cover p{font-size: 1.em;}
 }
 
 /*LARGE SCREENS*/
@@ -198,12 +198,13 @@ span[onclick]:hover, time[onclick]:hover {background-color: #b38316c4;}
 @media screen and (min-width: 900px){
 
 	#cover p{
-		font-size: 2em;
+		font-size: 1.8em;
 		margin-right: 28vw;
+		padding-left: 5vw;
 	}
 
 	#cover p:nth-child(6) {
-		/* padding-left: 30vw; */
+		padding-left: 8vw;
 		margin-right: 25vw;
 	}
 
@@ -227,7 +228,10 @@ span[onclick]:hover, time[onclick]:hover {background-color: #b38316c4;}
 	#cover p{
 		font-size: 2em;
 		margin-bottom: 2vw;
-		text-align: center;
+		margin-right: 30vw;
+		margin-left: 30vw;
+		padding: 0;
+		/* text-align: center; */
 	}
 	#cover h1{font-size: 6em;}
 	body#cover{
@@ -237,29 +241,41 @@ span[onclick]:hover, time[onclick]:hover {background-color: #b38316c4;}
 
 @media screen and (min-width: 1500px) {
 
-	#cover p {
-		 font-size: 2em;
-		 margin-bottom: 1vw; 
-		 text-align: center;
-		 margin-left: 30vw;
-		 margin-right: 30vw;
-     	}
-	#cover h1{font-size: 3em;margin-bottom: 1vw;}
-
-	body#cover{
-		background-size: 1500px;
-		padding-top: 35vW;
+	#cover p{
+		 font-size: 2.5em;
+		 line-height: 3vw;
+		 margin-bottom: 2vw;
+		 margin-left: 27vw;
+		 margin-right: 27vw;
+		 }
+	#cover h1{
+		font-size: 4em;
+		margin-bottom: 3vw;
 	}
-	
-	#cover p:nth-child(6) {
-		padding-left: 0vw;
-		margin-right: 25vw;
 
-    	}
+	#cover p:nth-child(6){
+		padding-left: 0vw;
+		margin-left: 30vw;
+		margin-right: 30vw;
+	}
 }
 
 
-
+@media screen and (min-width: 1650px){
+#cover p {
+    margin-left: 38vw;
+    margin-right: 38vw;
+    line-height:2.5vw;
+    margin-bottom: 1vw;
+}
+#cover p:nth-child(6){
+		margin-left: 38vw;
+		margin-right: 35vw;
+	}
+#cover h1{
+    margin-top: 8vw;
+}
+}
 
 /*/////////ARTICLES/////////*/
 
@@ -445,6 +461,457 @@ p.pubnote {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*@font-face { font-family: "P22 Vienna Regular"; src: url("P22 Vienna Regular Regular.ttf"); }
+@font-face { font-family: "P22 Vienna Regular"; src: url("p22_vienna_regular.ttf"); }
+@font-face { font-family: Normal; src: url("Auriol.otf"); }
+@font-face { font-family: Bold; src: url("Auriol-Bold.otf"); }
+
+
+//////////GLOBAL STYLING/////////////
+@-ms-viewport {width: device-width;}
+
+/* PC 
+[onClick] {cursor:pointer;}
+span[onclick] {cursor:pointer;}
+#cover p[onclick]:hover {text-decoration: underline;}
+span[onclick]:hover, time[onclick]:hover {background-color: #b38316c4;}
+@media screen and (max-width: 350px){
+	span[onclick]{
+		/*background-color: #b38316c4;
+		color: #602d06;
+	}
+	span[onclick]:hover, time[onclick]:hover {background-color: transparent;}
+}
+
+
+/////////COVER/////////
+
+/*COVER MEDIA QUERIES*/
+/*SMALL SCREENS: FLOWERS
+   
+    body#cover{
+		background-image: url(flores_def.png);
+		background-color: rgb(254, 255, 237);
+		background-repeat: no-repeat;
+		background-attachment: inherit;
+		background-size: contain;
+		height: auto;
+		margin-left: 0vW; 
+		margin-top: 0vW;
+		margin-bottom: 30vW; 
+		background-size: 50vw;
+		column-count: 1;
+		background-position: right bottom;
+		font-family: P22 Vienna Regular;
+		hyphens: none;
+		padding-top: 10vw;
+		background-size: 9em;
+	}
+	
+	#cover p{
+		padding-bottom: 1em;
+		margin-bottom:0;
+		text-align: left;
+		color: black;
+		text-transform: lowercase;
+		font-family: 'P22 Vienna Regular';
+		line-height: 1.3em;
+		letter-spacing: 0.04em;
+		word-spacing: 0.1em;
+		font-size: 1em;
+		-webkit-hyphenate-character: auto;
+		hyphens: auto;
+		padding-left: 2vw;
+		text-indent: 0vw;
+		text-shadow: 0.05em 0.05em white;
+		margin-right: 10vW;
+		text-decoration: underline;
+	}
+	
+	#cover p:nth-child(6) {
+		padding-left: 2vw;
+		margin-right: 25vW;
+		text-shadow: 0.07em 0.07em white;
+	}
+	
+	#cover h1{
+		text-transform: uppercase;
+		text-align: left;
+		margin-right: 20vW;
+		color: black;
+		padding-bottom: 8vw;
+		margin-left: .4em;
+		font-size: 2em;
+		hyphens:none;
+		-webkit-hyphenate-character: none;
+	}
+
+
+/*SMALL/MEDIUM SCREENS: FLOWERS
+
+@media screen and (min-width: 351px){
+
+	#cover h1{
+		font-size: 3.1em;
+		line-height: 1.1em;
+		margin-right:10vw;
+		margin-left: .2em;
+	}
+
+	#cover p{
+		margin-right: 15vW;
+		font-size:1.2em;
+		text-decoration: none;
+		padding-bottom:1.5em;
+	}
+	
+	body#cover{
+		background-size: 14em;
+		margin-bottom: 30vW; 
+	}
+	#cover p:nth-child(5), #cover p:nth-child(6) {padding-right: 15vw;}
+}
+
+
+/*MEDIUM/LARGE SCREENS: CORNICE
+
+@media screen and (min-width: 551px){
+
+	body#cover{
+		background-image: url(flower1.png);
+		background-color: rgb(218, 200, 171);
+		box-shadow: inset 0 0 5vw 1.9vw rgb(190, 162, 137);
+		background-repeat: no-repeat;
+		background-attachment: inherit;
+		background-position: top left;
+		column-count: 1;
+		font-family: Normal;
+		font-weight:normal;
+		font-style:normal;
+		margin-bottom:0;
+		padding-top: 20vW;
+		padding-bottom: 30vW;
+		background-size: 100vw;
+	}
+
+	#cover h1{
+		color: rgb(203, 125, 106);
+		font-family: 'P22 Vienna Regular';
+		font-size: 3em;
+		hyphens: none;
+		margin-block-start: 6vw;
+		margin-block-end: 4vw;
+		margin-left: 25vw;
+		margin-right: 25vW;
+		padding-bottom:0;
+		text-align:center;
+		text-transform: uppercase;
+	}
+
+	#cover p{
+		color: rgb(137, 136, 103);
+		font-family: Normal;
+		font-size: 1.2em;
+		letter-spacing: 0.04em;
+		line-height: 4vw;
+		margin-bottom: 2.5vw;
+		margin-right: 25vw;
+		padding-bottom:0;
+		padding-left: 24vw;
+		text-align: left;
+		text-indent: 0vw;
+		text-shadow: none;
+		text-transform: lowercase;
+		-webkit-hyphenate-character: auto;
+		hyphens: auto;
+		word-spacing: 0.1em;
+	}
+
+	#cover p:nth-child(3) {padding-right: 1vw;}
+
+    #cover p:nth-child(5), #cover p:nth-child(6) {
+    	padding-right:0;
+	}
+    
+	#cover p:nth-child(6) {
+		padding-left: 9em;
+		margin-right: 20vw;
+	}
+
+	#cover p::first-letter {text-transform: capitalize;}
+
+}
+
+
+/*LARGE SCREENS
+
+@media screen and (min-width: 900px){
+
+	#cover p{
+		font-size: 1.5em;
+		margin-right: 28vw;
+	}
+
+	#cover p:nth-child(6) {
+		padding-left: 30vw;
+		margin-right: 25vw;
+	}
+
+	#cover h1{
+		font-size: 4em;
+		margin-block-start: 8vw;
+		margin-block-end: 6vw;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+
+	#cover p{
+		font-size: 2em;
+		margin-bottom:4vw;
+	}
+	#cover h1{font-size: 6em;}
+
+}
+
+@media screen and (min-width: 1500px) {
+
+	#cover p {font-size: 2em;}
+	#cover h1{font-size: 3em;}
+
+}
+
+
+
+
+/*ARTICLES
+
+body{
+	background-color: #fcfcf4;
+	column-count: 3;
+	-webkit-hyphens: auto;
+	-ms-hyphens: auto;
+	hyphens: auto;
+	column-gap: 2vw;
+	padding-right: 1.5vw;
+	padding-left: 3.75vw;
+	margin: 0vw;
+}
+
+body:not(#cover){
+	background-image: linear-gradient(rgba(255, 255, 240, 0.5), rgba(255, 255, 240, 0.5) ),url(https://www.onlygfx.com/wp-content/uploads/2015/10/old-paper-texture-1-695x1024.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	-webkit-box-shadow: 0 0 5vw 1.7vw rgb(214, 171, 130);
+	box-shadow: inset 0 0 5vw 1.7vw rgb(214, 171, 130);
+	padding-bottom: 3vw;
+}
+
+[id^="FIGURE-1-"] {
+	column-span: all;
+	padding-bottom: 3vw;
+	margin:0vw;
+	width: 100%;
+	text-align: -webkit-center;
+}
+
+figure {
+	break-inside: avoid;
+	margin-block-start: 0vw;
+	margin-block-end: 0vw;
+	margin-inline-start: 0vw;
+	margin-inline-end: 0vw;
+	text-align: center;
+	text-align: -webkit-center;
+}
+
+img, video{
+	width: 30vw;
+	padding-bottom: 2vw;
+	padding-top: 2vw;
+	filter: contrast(150%) grayscale(100%);
+	max-width: 500px;
+    	max-height: 50%;
+} 
+
+img:first-child, video:first-child {width: 100%;}
+
+img[id^="IMG-1-"] {
+	max-height: 1000px;
+	max-width: 1000px;
+	object-fit: cover;
+}
+
+[id^="SECTION-1-"] {
+	display: -webkit-box;
+	display: -moz-box;
+	display: box;
+	margin-top: 0vw;
+	padding-top: 0vw;
+	-webkit-box-orient: vertical;
+	-moz-box-orient: vertical;
+	box-orient: vertical;
+}
+
+h1 {
+	font-family: "P22 Vienna Regular";
+	font-weight: bold;
+	text-align: center;
+	font-size: 1.5em;
+	/*margin-block-start: 1vw;
+	hyphens: none;
+}
+
+h2, h3{font-family: Bold;}
+
+.byline, .publicationDate {
+	margin-bottom: 2vw;
+	font-family: Normal;
+	text-indent: 0vw;
+	text-align: right;
+	font-size: 0.85em;
+}
+
+.byline{
+	margin-right: 7;
+	margin-top: .3em;
+}
+
+.publicationDate {margin-top: 2vw;}
+
+.publicationTime {
+	margin-bottom: 3vw;
+	margin-top: -1.5vw;
+	font-family: Normal;
+	text-indent: 0vw;
+	text-align: right;
+	font-size: 0.85em;
+}
+
+.subtitle {
+	text-indent:0vw;
+	font-family: Bold;
+	font-size: 1em;
+	padding-bottom: 2.5vw;
+	    }
+
+figcaption{
+	font-family: 'Normal';
+	padding-bottom: 5vw;
+	font-size: .85em;
+	word-spacing: 0.05em;
+	text-align: left;
+	padding-left: .5em;
+	margin-top: -.5em;
+}
+
+figure[id^="FIGURE-1-"] figcaption {
+	text-align: end;
+	margin-right: .5em;
+	margin-left: 0;
+	padding-left: 0;
+	font-family: Bold;
+	font-size: 0.9em;
+	max-width: 1000px;
+}
+
+p{
+	line-height: 20px;
+  	text-align:justify;
+	font-family: Normal;
+	font-weight:normal;
+	font-style:normal;
+	margin-bottom: 0vw;
+        margin-top: 0vw;
+        text-indent: 2vw;
+	font-size: 1em;
+	letter-spacing: 0.02vw;
+	word-spacing: 0.01vw;
+}
+
+a:visited {
+	color: black;
+	text-decoration: none;
+}
+
+blockquote {
+	font-family: Bold;
+	margin-inline-start: 2vw;
+	margin-inline-end: 2vw;
+	text-align: justify;
+}
+
+p.pubnote {
+	font-size: .9em;
+	font-style: italic;
+	hyphens: none;
+	text-align: end;
+}
+
+/* TABLET 
+
+@media screen and (max-width: 600px){
+	body {
+		column-count: 2;
+		column-gap: 4vw;
+	}
+	img, video {width: 47.5vw;}
+}
+
+/* SMARTPHONE 
+
+@media screen and (max-width: 400px){
+	
+	body {column-count: 1;}
+	img, video {width: 95vw;}
+
+}
+*/
 
 
 
