@@ -801,9 +801,37 @@ div#coverText {
     #coverText p { font-size: 16px; }
 
     #coverText p:nth-of-type(2) {
-        background-size: 100% 50%;
+        background-size: 100% 60%;
         width: 75%;
     }
+
+    #coverText p:nth-of-type(3) {
+        margin-top: 25%;
+        width: 80%;
+        margin-left: 0;
+        margin-bottom: 0;
+    }
+
+    #coverText p:nth-of-type(3):after {
+        margin-top: -30%;
+    }
+
+    #coverText p:nth-of-type(4) {
+        order: 5;
+        width: 70%;
+        margin: auto;
+    }
+
+    #coverText p:nth-of-type(5) {
+        width: 80%;
+        order: 6;
+        margin: auto;
+    }
+
+    #coverText p:nth-of-type(5):before {
+        margin-left: 70%;
+    }
+    
 
 
 }
@@ -826,11 +854,44 @@ div#coverText {
     #coverText p { font-size: 14px; }
 
     #coverText p:nth-of-type(2) {
-        background-size: 100% 50%;
+        background-size: 100% 80%;
         width: 75%;
     }
 
+    #coverText p:nth-of-type(3) {
+        margin-top: 10%;
+        width: 80%;
+        margin-left: 0;
+        margin-bottom: 0;
+    }
+
+    #coverText p:nth-of-type(3):after {
+        margin-top: -30%;
+        height: 45vw;
+        width: 60vw;
+        margin: auto;
+        margin-top: -10%;
+    }
 
 
+    #coverText p:nth-of-type(4) {
+        order: 5;
+        width: 70%;
+        margin: auto;
+        height: unset;
+        background-position: 70%;
+        background-size: 300%;
+        padding: unset;
+    }
+
+    #coverText p:nth-of-type(5) {
+        width: 80%;
+        order: 6;
+        margin: auto;
+    }
+
+    #coverText p:nth-of-type(5):before {
+        margin-left: 60%;
+    }
 }
 
