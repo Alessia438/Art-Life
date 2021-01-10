@@ -22,18 +22,14 @@
 
 body#cover{
   background: url('croce.png') left top no-repeat, url('sfondo_beige.jpg') right top repeat;
-  background-size: 55%, 100%;  /*era 50. 100*/ 
- /* box-sizing: content-box;  
-  width: 60%; 
-  height: 60%;
-  border: 0px;*/
+  background-size: 55%, 100%; 
 }
+
 body#cover:first-of-type{
    transform: rotate(15deg);
    position: relative;
-   left: 25vw; /* era 60 pt*/
+   left: 25vw; 
    margin-left: 10vw;
-   /*text-decoration: underline;*/
    width: 60%;
 }
 
@@ -47,23 +43,16 @@ body#cover:first-of-type{
 span[onclick] {cursor:pointer;}
 [onclick]:hover {color: #ff0000;}
 
-/* stile del titolo con righe colorate e immagini quadrato, cerchio, triangolo*/
 body{
   background: url('bau-esclama.png') right top no-repeat, url('sfondo_beige.jpg') right top repeat; 
-  /*background-repeat: no-repeat, no-repeat;
-  background-attachment: fixed, fixed;
-  background-position: initial, right top;*/
-  background-size: 40%, 100%;
-  
+  background-size: 40%, 100%;  
 }
 
 body{
   font-family: "Ronda Regular";
-  font-size: 2vw; /*era 14pt per thscichold deve essere o piu piccolo o essere piu grande H1 per essere 180% //////*/
+  font-size: 2vw; /* per thscichold H1 deve essere 180% */
   font-weight: lighter;
   text-align: justify; 
- /* margin-left: 20mm; inner  margin secondo Tscihold*/
- /* margin-right: 40mm; outer margin*/
   line-height: 1.6; /* 21pt;*/
   text-align-last: left;
   text-transform: lowercase;
@@ -73,9 +62,9 @@ body{
   -ms-hyphens: auto;
   hyphens: auto;
   letter-spacing: 0.03em; 
-  word-wrap: break-word; /*serve?*/
-  orphans: 3;    /*serve?*/
-  margin-left: 10vw; /*inner  margin secondo Tscihold*/
+  word-wrap: break-word; 
+  orphans: 3;    
+  margin-left: 10vw; /*inner  margin secondo Tscichold*/
   margin-top: 10vw;
   margin-right: 20vw; /*outer margin*/
   margin-bottom: 30vw;
@@ -85,64 +74,39 @@ body{
 
 
 
-section{ /* come faccio a dirgli solo dopo il primo voglio la riga? */
+section{ 
 border-bottom: 40px solid #d00606;
 bottom: 20pt;
 }
-/* 
-section img{
-  position: relative;
-  top: 30pt; era px
-}
 
-#heading img {
-  position: relative;
-  top: 30px;
-}
-
-video source{
-  width: 30%;
-  padding-top:2.5em;
-  padding-bottom:3.5em;
-}
-*/
-#cover h1{  /*era solo h1*/
+#cover h1{  
   font-family: "Bauhaus 93";
   text-align: left;
   text-transform: uppercase;
-  font-size: 3.6vw;  /* era 4, ma siccome p è 2vw, il 180% di 2 è 3.6*/
-  /*font-style: bold;*/
-  /* va a capo alla quarta parola
-  transform: rotate(-15deg); */
+  font-size: 3.6vw;  /* siccome p è 2vw, il 180% di 2 è 3.6*/
   padding-top:1vw;
   padding-bottom:0vw;
   padding-left: 1vw;
   padding-right: 1vw;
-  margin-bottom: 14vw; /* oppure 17*/
+  margin-bottom: 14vw; 
   color: #141514;
   box-sizing: content-box;  
- /* width: 60%; era 30*/
- /* height: 90px;  era 100*/
   border: 0px;
-  transform: rotate(-15deg); /*era 30*/
-  width: 60vw; /* oppure 60vw,con 60% viene la scritta su due righe, 60 vmin è sbagliato?*/
+  transform: rotate(-15deg); 
+  width: 60vw; 
   position: relative;
   right: 12vw;
   top: -1vw;
   background-color: #f4e4c8;
 }
-/* FORSE NON SERVE
-#cover p{
-  width: 60vmin;
-}
-*/
+
 h1{  
   font-family: "Bauhaus 93";
   text-align: left;
   text-transform: uppercase;
-  font-size: 3.6vw;  /* boh o large*/
-  padding-top: 10vw; /*era 4.5 em*/
-  padding-bottom: 10vw; /*era 4.5 em*/
+  font-size: 3.6vw;  
+  padding-top: 10vw; 
+  padding-bottom: 10vw; 
   padding-left: 2.5em;
   color: #141514;
   box-sizing: content-box;
@@ -150,7 +114,6 @@ h1{
   border: 0px;
   position: relative;
   left: -10vw;
- /* width: 60vmin; */
 }
 
 
@@ -163,12 +126,12 @@ section h1{
 
 h2{
   font-family: "Bauhaus 93";
-  font-size: 150%;
+  font-size: 170%;
 }
 
 h3{
   font-family: "Bauhaus 93";
-  font-size: 170%;
+  font-size: 150%;
 }
 
 p{
@@ -183,8 +146,7 @@ p{
 p.byline{
   font-style:lowercase;
   position:relative;
-  /*top:-40vw;    era 30*/
-  left: 55vw;     /*era 55*/
+  left: 55vw;    
   top: -6vw;
   width: 20vw;
   transform: rotate(15deg);
@@ -194,8 +156,7 @@ p.byline{
 p.publicationDate{
   font-style:lowercase;
   position:relative;
-  /*top:-40vw; */
-  left: 55vw; /*era 55*/
+  left: 55vw; 
   transform: rotate(15deg);
   text-decoration: underline;
   color: #0066cc; 
@@ -204,7 +165,6 @@ p.publicationDate{
 p.publicationTime{
   font-style:lowercase;
   position:relative;
-  /*bottom: 20vw;*/
   left: 55vw;
   transform: rotate(15deg);
   text-decoration: underline;
@@ -230,35 +190,22 @@ p.subtitle{
   height: 60px;  
   border: 0px;
   position: relative;
-  left: 10%; /*era 45*/
-  /*top: 48vw;*/
+  left: 10%;
   hyphens: auto;
   margin-left: 15vw;
   padding-bottom: 25vw;
 }
 
-
-
-
 blockquote{
   margin-right: 0mm; 
   margin-left: 0mm;
   border-left: 3px solid red;
-  font-size: 2.1vw; /*era 13pt*/
+  font-size: 2.1vw; 
   padding: 1vw; 
-  /*font-family: "Ronda Regular";
-  font-style:lowercase;
-  font-size: 14pt;
-  font-weight: lighter;
-  text-align: justify; 
-  text-align-last: left;
-  line-height: 1.6; 
-  text-transform: lowercase; */
 }
 
 figcaption{
   font-family: "P22 Bayer Universal Regular";
-  /*font-size: 13pt;*/
   text-align: justify;
   font-size: 2.05vw;
   font-weight: lighter;
