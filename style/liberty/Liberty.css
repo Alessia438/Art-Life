@@ -316,8 +316,8 @@ span[onclick]:hover, time[onclick]:hover {background-color: #b38316c4;}
 	
 	div#coverText{
 		background-size: 1400px;
-		padding-top: 50vw;
-		padding-bottom: 50vw;
+		padding-top: 20vw;
+		padding-bottom: 20vw;
 	}
 	
 	#cover p:nth-child(5){
