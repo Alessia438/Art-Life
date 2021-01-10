@@ -54,7 +54,7 @@ function fillIndex(){
 			var portrait = document.createElement('div');
 			portrait.className='cutPortrait issueTable';
 				var pic = document.createElement('img');
-				pic.src='articles/issue4_art'+(i+1)+'/'+articleInfo[3].articles[i].imgName;
+				pic.src='articles/issue4_art1/'+articleInfo[3].articles[0].imgName;
 			portrait.appendChild(pic);
 			var a = document.createElement('a');
 			a.href = 'Issue4.html#coverPage4';
