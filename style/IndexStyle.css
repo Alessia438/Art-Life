@@ -1144,6 +1144,8 @@ img[class^="slideDemo"]{
         flex-grow: 2;
         height: 70vh;
     }
+
+    iframe {height: 100%;}
 	
 }
 
@@ -1196,6 +1198,8 @@ img[class^="slideDemo"]{
       padding: 0 3vw 0 3vw;
       overflow: auto;
   }
+
+  iframe {height: 100vh;}
 
 }
 
