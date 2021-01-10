@@ -214,7 +214,6 @@ figcaption{
   width: 70%;
   border-top: 3px solid white;
   border-bottom: 3px solid white;
-  padding: 1vw;
 }
 
 #heading img, source{
@@ -297,7 +296,7 @@ p a{color: black;}
   border: 2px solid #0066cc;
   padding: 1vw;
 }
-
+/*
 @media screen and (max-width: 800px){
 
   body{font-size: 0.9em;}
@@ -313,21 +312,21 @@ p a{color: black;}
     position: relative;
     top: -5vw;
   }
-    h1{font-size: 1.62em;} /*180% di 0.9*/
+    h1{font-size: 1.62em;} 
 
-    h2, h3{font-size: 1.53em;} /*150% di 0.8*/
+    h2, h3{font-size: 1.53em;} 
 
     p.subtitle{
       font-size: 1.53em;  
       width: 25vw;
     }
-
+*/
    /* p{font-size: 0.9em;}  era 1.5*/
 
-    p.byline, p.publicationDate, p.publicationTime{font-size:1.53em;}
+   /* p.byline, p.publicationDate, p.publicationTime{font-size:1.53em;}*/
 
     p.lastModification{
-      font-size:1.53em;
+      /*font-size:1.53em;*/
       width: 20vw;
     }
 
@@ -338,7 +337,7 @@ p a{color: black;}
   /* FOR SMARTPHONE*/  
 @media screen and (max-width: 600px) {
 
-  body{font-size: 0.6em;}
+  /*body{font-size: 0.6em;}
 
   #cover p{
   width: 50vmin;
@@ -346,7 +345,7 @@ p a{color: black;}
 
   p.subtitle{
     width: 40vw;
-    font-size: 1.08em; /*180% di 0.6*/ 
+    font-size: 1.08em; 
     top: -10vw;
   }
 
@@ -367,9 +366,11 @@ p a{color: black;}
 
   figcaption, blockquote, .quoteAuthor{font-size:0.8em;}
 
-  h2{font-size: 0.9em;} /*150% di 0.6*/ 
+  h2{font-size: 0.9em;}  
 
   h3{font-size: 0.8em;}
+*/
+
 
   /*p{font-size: 0.9em;} */
 
@@ -390,19 +391,19 @@ p a{color: black;}
   width: 40vmin;
   }
 
-  body{font-size: 0.4em;}
+  body{font-size: 0.8em;}
 }
 
 @media screen and (max-width: 300px) {
  
-  body{font-size: 0.3em;}
+  body{font-size: 0.6em;}
 
   figcaption{width:30vmin;}
 }
 
 @media screen and (max-width: 200px) {
  
-  body{font-size: 0.2em;}
+  body{font-size: 0.3em;}
 
   figcaption{
     width:40vmin;
