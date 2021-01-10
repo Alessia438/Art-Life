@@ -555,7 +555,7 @@ function highlight(spanId, iFrameN, event) {
 	curInstance.style.backgroundColor = "#ffff00";
 	//curInstance.scrollIntoView(true);
 	//curInstance.parentNode.scrollTop = curInstance.offsetTop;
-	//curInstance.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"}); // ?? In alcuni browser non va
+	curInstance.scrollIntoView({behavior: "smooth", block: "center"}); // ?? In alcuni browser non va
 	
 	//const elementRect = curInstance.getBoundingClientRect();
 	//const absoluteElementTop = elementRect.top + window.pageYOffset;
@@ -564,8 +564,8 @@ function highlight(spanId, iFrameN, event) {
 	//event.stopPropagation();
 
 	//var top = curInstance.documentOffsetTop() - ( window.innerHeight / 2 );
-	var top= curInstance.offsetTop-( curInstance.offsetTop-(window.innerHeight / 2 ));
-	curInstance.scrollTo( 0, top );
+	//var top= curInstance.offsetTop-( curInstance.offsetTop-(window.innerHeight / 2 ));
+	//curInstance.scrollTo( 0, top );
 
 
 	// animazione scomparsa colore background dopo 10 secondi:
