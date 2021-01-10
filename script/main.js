@@ -539,9 +539,9 @@ function parsing(instance, parent, numIstanza){
   	return res[numIstanza];
 }
 
-Element.prototype.documentOffsetTop = function () {
+/* Element.prototype.documentOffsetTop = function () {
 	    return this.offsetTop + ( this.offsetParent ? this.offsetParent.documentOffsetTop() : 0 );
-	};
+	}; */
 
 function highlight(spanId, iFrameN, event) {
 	//cambiare articolo da mattere in display:block se il metadato cliccato è in un articolo diverso rispetto a quello corrente
@@ -562,7 +562,7 @@ function highlight(spanId, iFrameN, event) {
 	//const middle = absoluteElementTop - (window.innerHeight / 2);
 	//window.scrollTo(0, middle);
 	//event.stopPropagation();
-	
+
 	//var top = curInstance.documentOffsetTop() - ( window.innerHeight / 2 );
 	//window.scrollTo( 0, top );
 
