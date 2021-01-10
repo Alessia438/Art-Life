@@ -1,9 +1,18 @@
-/* CSS HEX
---steel-pink: #db2cbe;
---rosso-corsa: #da0000;
---golden-yellow: #ffe100;
---dark-pastel-green: #3db839;
---midnight-blue: #0d1b70; */
+/* CSS HEX */
+
+:root {
+    --pink: #FF9E9E;
+    --steel-pink: #db2cbe;
+    --rosso-corsa: #da0000;
+    --golden-yellow: #ffe100;
+    --dark-pastel-green: #3db839;
+    --dark-green: #0D701E;
+    --midnight-blue: #0d1b70;
+    --violet-blue: #3A4AAD;
+    --orange: #FD9309;
+    --light-blue: #9FF0FB;
+}
+
 
 @import url('https://fonts.googleapis.com/css2?family=Overpass+Mono&display=swap');
 
@@ -63,7 +72,7 @@
 
 ::selection {
     color: #ffffff;
-    background-color: #db2cbe;
+    background-color: var(--steel-pink);
 }
 
 span::selection { color: green; }
@@ -74,12 +83,12 @@ time::selection { color: gold; }
 
 
 span {
-    color: #DA0000;
+    color: var(--rosso-corsa);
     font-size: 1.2em;
 }
 
 time {
-    color: #0d1b70;
+    color: var(--midnight-blue);
     font-size: 1.2em
 }
 
@@ -118,8 +127,8 @@ img {
 
 h1 {
 	font-family: Heartbit;	
-	color: #0d1b70;
-    text-shadow: 3px 2px #15dbed, 3px 3px 5px #0d701e;
+	color: var(--midnight-blue);
+    text-shadow: 3px 2px var(--light-blue), 3px 3px 5px var(--dark-green);
     font-size: 58px;
 	text-align: center;
 	text-transform: uppercase;
@@ -141,8 +150,8 @@ h2 {
     text-align-last: right;
     font-family: LifeSavers;
     font-size: 40px;
-    color: #3db839;
-    text-shadow: 1px 1px 2px #22691f;
+    color: var(--dark-pastel-green);
+    text-shadow: 1px 1px 2px var(--dark-green);
     width: 50%;
     margin-bottom: 0.5em;
     margin-top: 1em;
@@ -159,8 +168,8 @@ h2::first-line {
 h3 {
 	font-family: LifeSavers;
     font-size: 35px;
-    color: #0D1B70;
-    text-shadow: 1px 1px 1px #0d1b70;
+    color: var(--midnight-blue);
+    text-shadow: 1px 1px 1px var(--midnight-blue);
     width: max-content;
     background-image: url(../../imgs/yellow-for-home.jpg);
     background-size: 100% 50%;
@@ -310,8 +319,8 @@ figure:nth-of-type(odd) > figcaption:before { height: 0 !important; }
 
 
 figure:nth-of-type(even) { /* figure pari: sfondo gradiente e immagine inclinata*/
-    background: linear-gradient(to right, #0d1b70, #15dbed);
-    border: 3px dashed #3a4aad;
+    background: linear-gradient(to right, var(--midnight-blue), var(--light-blue));
+    border: 3px dashed var(--violet-blue);
     width: 40%;
     float: left;
     margin: 1em;
@@ -344,7 +353,7 @@ img:nth-of-type(3n+1):not(figure>img) { /* allineata a sinistra, bordo blu */
 	float: left;
 	left: 3vW;
 	width: 50%;
-    border: 3px dashed #3a4aad;
+    border: 3px dashed var(--violet-blue);
     margin-bottom: 0.3em;
 }
 
@@ -379,7 +388,7 @@ img:nth-of-type(3n+2) { /* allineata a destra, abbastanza grande */
 }
 
 img:nth-of-type(3n+2) + figcaption {
-    background: linear-gradient(to bottom, #3db839, #ffe100);
+    background: linear-gradient(to bottom, var(--dark-pastel-green), var(--golden-yellow));
     padding: 1em;
     width: 40%;
     margin-top: 7vw;
@@ -394,7 +403,7 @@ img:nth-of-type(3n+3) { /* allineata a sinistra, piccola */
 	width: 30%;
 	border: 0.5vW solid;
   	border-image-slice: 1;
-  	border-image-source: linear-gradient(to left, #DA0000, #FFE100);
+  	border-image-source: linear-gradient(to left, var(--rosso-corsa), var(--golden-yellow));
   	border-image-slice: 1;
   	transform: rotate(-5deg); /* animazione? */
 }
@@ -416,7 +425,7 @@ img:nth-of-type(3n+3) + figcaption { /* figcaption a destra, grande */
     width: max-content;
     margin: 1em 1em 1em -2em;
     float: left;
-    background: conic-gradient(#ff9700, #ffdf00, #ff9700, #ff9700, #ffdf00, #ff9700, #ff9700, #ffdf00, #ff9700, #ff9700, #ffdf00, #ff9700, #ff9700, #ffdf00, #ff9700, #ff9700, #ffdf00, #ff9700, #ff9700, #ffdf00, #ff9700, #ff9700, #ffdf00, #ff9700, #ff9700, #ffdf00, #ff9700);
+    background: conic-gradient(var(--orange), var(--golden-yellow), var(--orange), var(--orange), var(--golden-yellow), var(--orange), var(--orange), var(--golden-yellow), var(--orange), var(--orange), var(--golden-yellow), var(--orange), var(--orange), var(--golden-yellow), var(--orange), var(--orange), var(--golden-yellow), var(--orange), var(--orange), var(--golden-yellow), var(--orange), var(--orange), var(--golden-yellow), var(--orange), var(--orange), var(--golden-yellow), var(--orange));
 }
 
 
@@ -424,7 +433,7 @@ img:nth-of-type(3n+3) + figcaption { /* figcaption a destra, grande */
 
 p.byline, .publicationDate, .publicationPlace, .publicationTime, .lastModification {
 	margin-bottom: 0;
-	background-color: #ffe100;
+	background-color: var(--golden-yellow);
 	margin: auto;
 	font-weight: 400;
 	transform: rotate(-7deg);
@@ -488,7 +497,7 @@ blockquote:nth-of-type(odd) {
 p:nth-of-type(9n+4):not(.byline):not(.publicationDate):not(.publicationPlace):not(.publicationTime):not(.lastModification) {
     /*width: 60%;*/
     text-align: justify;
-    background: linear-gradient(90deg, #3db839 40%, transparent);
+    background: linear-gradient(90deg, var(--dark-pastel-green) 40%, transparent);
     padding: 0.5em;
 
 }
@@ -504,8 +513,8 @@ p:nth-of-type(9n+7) {
 }
 
 p:nth-of-type(9n+9) {
-    color: #0d1b70;
-    border: 1px solid #0d1b70;
+    color: var(--midnight-blue);
+    border: 1px solid var(--midnight-blue);
     padding: 0.5em;
     border-radius: 25px;
 }
@@ -552,8 +561,8 @@ div#coverText {
 	transform: none;
     font-size: 150px;
     font-family: Ageta Chubby Demo;
-    color: #ccf6ff;
-    text-shadow: 1vw 1px #0d1b70;
+    color: var(--light-blue);
+    text-shadow: 1vw 1px var(--midnight-blue);
     margin-top: 18vw;
     margin-left: 1vw;
     line-height: 0.8;
@@ -576,17 +585,17 @@ div#coverText {
 }
 
 #coverText p:hover {
-    text-shadow: 2px 2px 2px #ff9e9e, -2px -2px 4px fuchsia;
+    text-shadow: 2px 2px 2px var(--pink), -2px -2px 4px var(--steel-pink);
     animation: shadows 0.6s infinite;
 }
 
 
 @keyframes shadows {
-    0% { text-shadow: 2px 2px 2px #ff9e9e, -2px -2px 2px fuchsia; }
-    25% { text-shadow: 2px -2px 2px #ff9e9e, -2px 2px 2px fuchsia;    }
-    50% { text-shadow: -2px -2px 2px #ff9e9e, 2px 2px 2px fuchsia; }
-    75% { text-shadow: -2px 2px 2px #ff9e9e, 2px -2px 2px fuchsia; }
-    100% { text-shadow: 2px 2px 2px #ff9e9e, -2px -2px 2px fuchsia; }
+    0% { text-shadow: 2px 2px 2px var(--pink), -2px -2px 2px var(--steel-pink); }
+    25% { text-shadow: 2px -2px 2px var(--pink), -2px 2px 2px var(--steel-pink);    }
+    50% { text-shadow: -2px -2px 2px var(--pink), 2px 2px 2px var(--steel-pink); }
+    75% { text-shadow: -2px 2px 2px var(--pink), 2px -2px 2px var(--steel-pink); }
+    100% { text-shadow: 2px 2px 2px var(--pink), -2px -2px 2px var(--steel-pink); }
 }
 
 
@@ -618,7 +627,7 @@ div#coverText {
 
 #coverText p:nth-of-type(1):before {
 	content: "";
-    background-color: #ffe100;
+    background-color: var(--golden-yellow);
     height: 12vw;
     width: 44vw;
     position: absolute;
@@ -626,7 +635,7 @@ div#coverText {
     margin-bottom: -20%;
     margin-left: -3vw;
     z-index: -1;
-    border: 4px ridge fuchsia;
+    border: 4px ridge var(--steel-pink);
 }
 
 
@@ -737,7 +746,7 @@ div#coverText {
     background-repeat: no-repeat;
     z-index: 99;
     text-align: center;
-    color: blue;
+    color: var(--midnight-blue);
     text-shadow: 1px 1px black, 1px 1px 3px black;
     margin-top: 3.5em;
     margin-left: 0.2em;
@@ -745,7 +754,7 @@ div#coverText {
     padding-left: 3em;
     padding-right: 0.5em;
     padding-top: 0.5em;
-    border: 3px dotted yellow;
+    border: 3px dotted var(--golden-yellow);
 }
 
 
