@@ -77,12 +77,6 @@ body{
 	background-color: var(--avory);
 	font-family: 'Open Sans', sans-serif;
 	padding: 0vw 4vw 3vw 4vW;
-	/*margin-right: 20vW;
-	margin-left: 30vW;
-	margin-top: 20vW;
-	margin-bottom: 3vW;
-	display: flex;
-	flex-direction: column;*/
 }
 
 h1, h2, h3, h4, h5, h6, blockquote {
@@ -96,15 +90,13 @@ h1 {
 	font-size: 4.5em;
 	font-weight: 200;
 	display: inline-block;
+	margin: 1em 0.8em 0.5em 4em;
 	margin-left: 30vW;
 	margin-right: 3vW;
 	background-image: url("painting.png");
 	background-size: contain;
 	background-repeat: no-repeat;	
   	background-position: 50% 100%;
-  /* line-height: 1.5em;
-	letter-spacing: 0.07em;
-    word-spacing: 0.25em;*/
 }
 
 h1::first-letter { font-weight: 600; }
@@ -157,7 +149,7 @@ p {
 	-ms-hyphens: auto;
 	hyphens: auto;
 	margin: 0 4vW 1vW 3vW;
-	font-size: 0.85em; 
+	font-size: 0.95em; 
 }
 
 
@@ -214,6 +206,7 @@ body > p:last-child:after {
 section:first-of-type {
 	display: flex;
 	flex-direction: column;
+	margin-bottom: 3em;
 }
 
 section:first-of-type:before { height: 0; }
@@ -221,7 +214,7 @@ section:first-of-type:before { height: 0; }
 section:first-of-type > h1 {order: 1;}
 
 section:first-of-type > figure {
-	order: 2;
+	order: 99;
 	display: flex;
 	flex-direction: column;
 }
@@ -242,17 +235,17 @@ section:first-of-type > figure > figcaption:after {
     margin: 1vW 7vW 1vw 7vW;
 }
 
-section:first-of-type > .subtitle {order: 3;}
+section:first-of-type > .subtitle {order: 2;}
 
-section:first-of-type > .byline {order: 4;}
+section:first-of-type > .byline {order: 2;}
 
-section:first-of-type > .publicationDate {order: 5;}
+section:first-of-type > .publicationDate {order: 4;}
 
-section:first-of-type > .publicationTime {order: 6;}
+section:first-of-type > .publicationTime {order: 5;}
 
-section:first-of-type > .lastModification {order: 7;}
+section:first-of-type > .lastModification {order: 6;}
 
-section:first-of-type > .publicationPlace {order: 8;}
+section:first-of-type > .publicationPlace {order: 7;}
 
 section:first-of-type img, video {
 	width: 100%;
@@ -264,7 +257,7 @@ section:first-of-type > p:not(.subtitle):not(.byline):not(.publicationDate):not(
 	width: 60%;
 	text-align: center;
 	margin: auto;
-	/* color: var(--black-coffee); */
+	font-size: 1.1em;
 }
 
 
@@ -298,9 +291,10 @@ section:not(:first-of-type) > p:first-of-type:first-letter {
 /* FIRST SECTION Ps /////////////////////////////7*/
 
 .publicationDate, .publicationTime, .publicationPlace, .lastModification {    
-    margin: 0 2vw 0 2vw;
+    margin: auto;
     background-color: rgba(36, 61, 0, 0.2);
     border-left: 0.8vw solid var(--army-green);
+    max-width: 30%;
 }
 
 .publicationTime, .lastModification, p.publicationPlace { padding: 0 0 0.5vw 0.5vw; } 
@@ -311,8 +305,11 @@ p.byline {
 	font-size: 0.9em;
 	padding: 0.5vw 0 0.5vw 0.5vw;
     border-bottom: 1px solid;
-    margin: 0 2vw 2vw 2vw;
+    margin: auto;
+    margin-bottom: 1em;
     width: max-content;
+    text-align: center;
+    max-width: 30%;
 }
 
 
@@ -437,7 +434,7 @@ blockquote {
 	text-align: center;
     border-bottom: 1px solid var(--grey);
     border-top: 1px solid var(--grey);
-    font-size: 1.5em;
+    font-size: 1.8em;
     color: var(--deep-taupe);
 }
 
@@ -729,16 +726,45 @@ p.quoteAuthor {
         font-weight: unset;
     }
 
+    section:first-of-type {
+    	margin-bottom: 2em;
+    }
 
-	h1 { font-size: 2.2em; }
+
+	h1 { 
+		font-size: 2.2em;
+		margin: 0.5em;
+	}
 
 	h2, { font-size: 1.3em; }
 
 	h3, blockquote, .subtitle { font-size: 1.2em; }
 
-	#coverText h1 { font-size: 3.2em; }
+	#coverText h1 { 
+		font-size: 3.2em;
+		margin-left: 0;
+	}
 
-	#coverText p { font-size: 1.4em; }
+	#coverText h1:after { 
+		height: 2em;
+		width: 4em;
+		margin-top: -0.5em;
+		margin-left: 50%;
+	}
+
+	#coverText p { 
+		font-size: 1.4em;
+		width: 60%;
+	}
+
+	#coverText p:nth-of-type(2):before { margin-left: -45%; }
+
+	#coverText p:nth-of-type(4) {
+		left: 10%;
+    	width: 60%;
+	}
+
+	#coverText p:nth-of-type(5):before { margin-left: -45%; }
 
 	p { font-size: 1em; }
 

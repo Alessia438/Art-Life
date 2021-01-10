@@ -118,9 +118,9 @@ img {
 
 h1 {
 	font-family: Heartbit;	
-	color: rgb(47, 199, 178);
-    text-shadow: rgb(13, 27, 112) 3px 2px, rgb(13, 112, 34) 3px 3px 5px;
-	font-size: 58px;
+	color: #0d1b70;
+    text-shadow: 3px 2px #15dbed, 3px 3px 5px #0d701e;
+    font-size: 58px;
 	text-align: center;
 	text-transform: uppercase;
 	transform: rotate(7deg);
@@ -175,7 +175,7 @@ h3 {
 section:first-of-type {
 	display: flex;
 	flex-direction: column;
-    background-image: url(section-bg.gif);
+    background-image: url(section-bg2.jpg);
     background-size: 120%;
     background-position: 50% -10em;
 }
@@ -692,21 +692,20 @@ div#coverText {
 
 
 #coverText p:nth-of-type(5) {
-    order: 5;
+    order: 6;
     font-family: LifeSavers;
-    /* font-size: 3vw; */
     background-image: url(cover-art4-sfondo.jpg);
     background-size: 100% 40%;
     max-width: 40%;
     z-index: 99;
     color: white;
     position: relative;
-    margin-left: 56%;
-    margin-top: -15vw;
+    margin-left: 29em;
+    margin-top: -14em;
     margin-right: 0;
-    margin-bottom: 5vw;
+    margin-bottom: 1em;
     text-align: center;
-    padding: 2vw;
+    padding: 1em;
     background-position: center bottom;
     background-repeat: no-repeat;
 }
@@ -727,25 +726,25 @@ div#coverText {
 
 
 #coverText p:nth-of-type(4) {
-    order: 6;
+    order: 5;
     font-family: Heartbit;
     font-size: 2em;
-    width: 38%;
-    height: 12vw;
+    width: 12em;
+    height: 4em;
     background-image: url(cover-art5bis.png);
     background-position: -3vw 20%;
-    background-size: 106%;
+    background-size: 110%;
     background-repeat: no-repeat;
     z-index: 99;
     text-align: center;
     color: blue;
     text-shadow: 1px 1px black, 1px 1px 3px black;
-    margin-top: -19vw;
-    margin-left: 0px;
+    margin-top: 3.5em;
+    margin-left: 0.2em;
     margin-bottom: 0;
-    padding-left: 17vw;
-    padding-right: 1vw;
-    padding-top: 2vw;
+    padding-left: 3em;
+    padding-right: 0.5em;
+    padding-top: 0.5em;
     border: 3px dotted yellow;
 }
 
@@ -810,29 +809,57 @@ div#coverText {
 
     figcaption, .byline {font-size: 16px; }
 
-    #coverText h1 { font-size: 80px; }
+    #coverText h1 { 
+        font-size: 80px;
+        margin-top: 1.6em;
+    }
 
     #coverText p { font-size: 16px; }
 
+    #coverText p:nth-of-type(1) {
+        margin-left: 8em;
+        max-width: 45%;
+        padding: 1em;
+        z-index: 99;
+        margin-top: 2em;
+        margin-right: 0;
+    }
+
+    #coverText p:nth-of-type(1):before {
+        height: 6em;
+        width: 14em;
+    }
+
     #coverText p:nth-of-type(2) {
-        background-size: 100% 60%;
-        width: 75%;
+        background-size: 100% 2em;
+        max-width: 15em;
+        font-size: 1.5em;
+        margin-left: 5em;
+        width: max-content;
+    }
+
+    #coverText p:nth-of-type(2):before {
+        height: 6em;
+        width: 6em;
+        margin-bottom: -3em;
+        margin-left: -5em;
     }
 
     #coverText p:nth-of-type(3) {
-        margin-top: 25%;
-        width: 80%;
-        margin-left: 0;
-        margin-bottom: 0;
+        margin-top: 20%;
+        width: 70%;
+        margin-left: 0.5em;
+        margin-bottom: 0.5em;
     }
 
     #coverText p:nth-of-type(3):after {
         margin-top: -30%;
+        margin-left: 78%;
     }
 
     #coverText p:nth-of-type(4) {
         order: 5;
-        width: 70%;
+        width: 80%;
         margin: auto;
     }
 
@@ -920,19 +947,42 @@ div#coverText {
         margin: -1.5em 0.5em 0.5em 0.5;
     }
 
-    #coverText h1 { font-size: 70px; }
-
-    #coverText p { font-size: 14px; }
-
-    #coverText p:nth-of-type(2) {
-        background-size: 100% 80%;
-        width: 75%;
+    #coverText h1 { 
+        font-size: 70px;
+        margin: 1.5em 0 -0.2em 0em;
+        width: 95%;
     }
 
+    #coverText p { font-size: 14px !important; }
+
+    #coverText p:nth-of-type(1) {
+        margin-left: 6em;
+        max-width: 15em;
+        padding: 0.5em;
+        z-index: 99;
+        margin-top: 8vw;
+        right: 30vw;
+    }
+
+    #coverText p:nth-of-type(2) {
+        background-size: 100% 3em;
+        width: max-content;
+        max-width: 70%;
+        z-index: 99;
+        margin-left: 9em;
+    }
+
+    #coverText p:nth-of-type(2):before {
+        margin-left: -9em;
+        height: 12em;
+        width: 12em;
+    }
+
+
     #coverText p:nth-of-type(3) {
-        margin-top: 10%;
+        margin-top: 5em;
         width: 80%;
-        margin-left: 0;
+        margin: auto;
         margin-bottom: 0;
     }
 
@@ -947,22 +997,37 @@ div#coverText {
 
     #coverText p:nth-of-type(4) {
         order: 5;
-        width: 70%;
+        width: max-content;
+        max-width: 70%;
         margin: auto;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
         height: unset;
         background-position: 70%;
         background-size: 300%;
-        padding: unset;
+        padding: 1em;
     }
 
     #coverText p:nth-of-type(5) {
         width: 80%;
         order: 6;
         margin: auto;
+        margin-bottom: 3em;
     }
 
     #coverText p:nth-of-type(5):before {
         margin-left: 60%;
     }
+}
+
+
+
+@media (max-width: 409px) {
+    #coverText p:nth-of-type(1) {
+        max-width: unset !important;
+        width: 12em !important;
+    }
+
+     #coverText p:nth-of-type(1):after {right: -8em !important;}
 }
 
