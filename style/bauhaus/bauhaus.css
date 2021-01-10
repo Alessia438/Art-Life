@@ -297,82 +297,11 @@ p a{color: black;}
   padding: 1vw;
 }
 
-/*
-@media screen and (max-width: 800px){
 
-  body{font-size: 0.9em;}
- 
-  #cover h1{
-    font-size: 1.8em;
-    position:relative;
-    top: -2vw;
-  }
-  
-  #cover p {
-    font-size: 1em;
-    position: relative;
-    top: -5vw;
-  }
-    h1{font-size: 1.62em;} 
-
-    h2, h3{font-size: 1.53em;} 
-
-    p.subtitle{
-      font-size: 1.53em;  
-      width: 25vw;
-    }
-*/
-   /* p{font-size: 0.9em;}  era 1.5*/
-
-   /* p.byline, p.publicationDate, p.publicationTime{font-size:1.53em;}*/
-/*
-    p.lastModification{
-      width: 20vw;
-    }
-
-    figcaption{font-size: 0.8em;}
-}
-*/
 
   /* FOR SMARTPHONE*/  
 @media screen and (max-width: 600px) {
 
-  /*body{font-size: 0.6em;}
-
-  #cover p{
-  width: 50vmin;
-  }
-
-  p.subtitle{
-    width: 40vw;
-    font-size: 1.08em; 
-    top: -10vw;
-  }
-
-  p.byline{
-    width: 20vw;
-    font-size:1.06em;
-    top: -5vw;
-  }
-
-  p.publicationDate{
-    font-size:1.06em;
-    width: 20vw;
-    top: -5vw;
-  }
-
- p.publicationTime, p.lastModification{font-size:1.06em;}
-
-
-  figcaption, blockquote, .quoteAuthor{font-size:0.8em;}
-
-  h2{font-size: 0.9em;}  
-
-  h3{font-size: 0.8em;}
-*/
-
-
-  /*p{font-size: 0.9em;} */
 
   .biblioItem, .pubnote{
   border: 2px solid #d00606; 

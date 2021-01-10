@@ -193,6 +193,7 @@ p a{color: #1f1e1e;}
 img, video{
     width: 100%;
     filter: sepia(60%) contrast(99%) saturate(110%) brightness(100%) hue-rotate(-9deg);
+    max-width: 1000px;
 }
 
 figure {
