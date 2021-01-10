@@ -562,10 +562,9 @@ function highlight(spanId, iFrameN, event) {
 	//const middle = absoluteElementTop - (window.innerHeight / 2);
 	//window.scrollTo(0, middle);
 	//event.stopPropagation();
-
-
-	var top = curInstance.documentOffsetTop() - ( window.innerHeight / 2 );
-	window.scrollTo( 0, top );
+	
+	//var top = curInstance.documentOffsetTop() - ( window.innerHeight / 2 );
+	//window.scrollTo( 0, top );
 
 
 
