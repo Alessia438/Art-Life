@@ -37,7 +37,7 @@ body#cover:first-of-type{
   color: #ff0000;;
 }
 
-#cover p{font-size: 1.5em;}
+#cover p{font-size: 1em;}
 
 /* stile per articoli*/
 
@@ -52,7 +52,7 @@ body{
 
 body{
   font-family: "Ronda Regular";
-  font-size: 1.5em; /* per thscichold H1 deve essere 180% quindi 1.62 */
+  font-size: 1em; /* per thscichold H1 deve essere 180% quindi 1.8 */
   font-weight: lighter;
   text-align: justify; 
   line-height: 1.6; /* 21pt;*/
@@ -83,7 +83,7 @@ bottom: 20pt;
   font-family: "Bauhaus 93";
   text-align: left;
   text-transform: uppercase;
-  font-size: 2.7em;  /* siccome p è 1.5, il 180%  è 2.7*/
+  font-size: 1.8em;  /*  180%  di 1 */
   padding-top:1vw;
   padding-bottom:0vw;
   padding-left: 1vw;
@@ -104,7 +104,7 @@ h1{
   font-family: "Bauhaus 93";
   text-align: left;
   text-transform: uppercase;
-  font-size: 2.7em;  
+  font-size: 1.8em;  
   padding-top: 10vw; 
   padding-bottom: 10vw; 
   padding-left: 2.5em;
@@ -126,12 +126,12 @@ section h1{
 
 h2{
   font-family: "Bauhaus 93";
-  font-size: 2.55em; /*170% di 1.5*/
+  font-size: 1.7em; /*170% di 1*/
 }
 
 h3{
   font-family: "Bauhaus 93";
-  font-size: 1.50em;
+  font-size: 1.50em;   /*150% di 1*/
 }
 
 p{
@@ -200,14 +200,14 @@ blockquote{
   margin-right: 0mm; 
   margin-left: 0mm;
   border-left: 3px solid red;
-  font-size: 2.1vw; 
+  font-size: 0.9em; 
   padding: 1vw; 
 }
 
 figcaption{
   font-family: "P22 Bayer Universal Regular";
   text-align: justify;
-  font-size: 2.05vw;
+  font-size: 0.9em;
   font-weight: lighter;
   padding-top: 2%;
   padding-bottom: 2%;
@@ -300,38 +300,38 @@ p a{color: black;}
 
 @media screen and (max-width: 800px){
 
-  body{font-size: 0.8em;}
+  body{font-size: 0.9em;}
  
   #cover h1{
-    font-size: 2.7em;
+    font-size: 1.8em;
     position:relative;
     top: -2vw;
   }
   
   #cover p {
-    font-size: 1.5em;
+    font-size: 1em;
     position: relative;
     top: -5vw;
   }
-    h1{font-size: 1.44em;} /*180% di 0.8*/
+    h1{font-size: 1.62em;} /*180% di 0.9*/
 
-    h2, h3{font-size: 1.2em;} /*150% di 0.8*/
+    h2, h3{font-size: 1.53em;} /*150% di 0.8*/
 
     p.subtitle{
-      font-size: 1.2em;  
+      font-size: 1.53em;  
       width: 25vw;
     }
 
    /* p{font-size: 0.9em;}  era 1.5*/
 
-    p.byline, p.publicationDate, p.publicationTime{font-size:1.2em;}
+    p.byline, p.publicationDate, p.publicationTime{font-size:1.53em;}
 
     p.lastModification{
-      font-size:1.2em;
+      font-size:1.53em;
       width: 20vw;
     }
 
-    figcaption{font-size: 0.7em;}
+    figcaption{font-size: 0.8em;}
 }
 
 
