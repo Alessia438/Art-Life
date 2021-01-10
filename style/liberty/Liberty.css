@@ -388,16 +388,13 @@ img, video{
 	padding-bottom: 2vw;
 	padding-top: 2vw;
 	filter: contrast(150%) grayscale(100%);
-	max-width: 500px;
-    	max-height: 50%;
-} 
-
-img:first-child, video:first-child {
+	/*max-width: 500px;
+    	max-height: 50%;*/
 	width: 100%;
 	max-height: 250px;
 	object-fit: cover;
 	padding-bottom: 1em;
-}
+} 
 
 img[id^="IMG-1-"] {
 	max-height: 1000px;
@@ -513,17 +510,16 @@ p.pubnote {
 
 /* TABLET */
 
-@media screen and (max-width: 700px){
+@media screen and (max-width: 600px){
 	body {
 		column-count: 2;
 		column-gap: 4vw;
 	}
-	img, video {width: 47.5vw;}
-	img:first-child, video:first-child {
+	img, video {
 		width: 100%;
 		max-height: 200px;
 		object-fit: cover;
-    	}
+	}
 	img[id^="IMG-1-"] {
 		max-height: 1000px;
 		max-width: 1000px;
