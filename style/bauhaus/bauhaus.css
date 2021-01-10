@@ -50,7 +50,7 @@ body{
 
 body{
   font-family: "Ronda Regular";
-  font-size: 2vw; /* per thscichold H1 deve essere 180% */
+  font-size: 0.9em; /* per thscichold H1 deve essere 180% */
   font-weight: lighter;
   text-align: justify; 
   line-height: 1.6; /* 21pt;*/
@@ -104,7 +104,7 @@ h1{
   font-family: "Bauhaus 93";
   text-align: left;
   text-transform: uppercase;
-  font-size: 3.6vw;  
+  font-size: 1.62em;  
   padding-top: 10vw; 
   padding-bottom: 10vw; 
   padding-left: 2.5em;
@@ -225,6 +225,8 @@ figcaption{
 img, video{
   width: 60%;
   filter:saturate(0%) sepia(100%) contrast(80%) saturate(100%); 
+  max-width: 700px;
+  min-width: 50px;
 }
 
 p a{color: black;}
@@ -297,6 +299,8 @@ p a{color: black;}
 }
 
 @media screen and (max-width: 800px){
+
+  body{font-size: 0.8em;}
  
   #cover h1{
     font-size: 2.7em;
@@ -332,6 +336,8 @@ p a{color: black;}
 
   /* FOR SMARTPHONE*/  
 @media screen and (max-width: 600px) {
+
+  body{font-size: 0.6em;}
 
   #cover p{
   width: 50vmin;
@@ -377,8 +383,34 @@ p a{color: black;}
 
 }  /*chiusura mediaquery*/
 
+
 @media screen and (max-width: 400px) {
   #cover p{
   width: 40vmin;
+  }
+
+  body{font-size: 0.4em;}
+}
+
+@media screen and (max-width: 300px) {
+ 
+  body{font-size: 0.3em;}
+
+  figcaption{width:30vmin;}
+}
+
+@media screen and (max-width: 200px) {
+ 
+  body{font-size: 0.2em;}
+
+  figcaption{
+    width:40vmin;
+    position:relative;
+    right: 20vw;
+  }
+
+  img{
+    position:relative;
+    right:20vw;
   }
 }
