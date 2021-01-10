@@ -1201,7 +1201,7 @@ img[class^="slideDemo"]{
   #metadata {
     width: 26%;
     order: 2;
-    height: 100vh;
+    /*height: 100vh;*/
     border-left: 2px solid;
   }	
 	
@@ -1210,6 +1210,7 @@ img[class^="slideDemo"]{
       padding-inline-start: 0px;
       padding: 0 3vw 0 3vw;
       overflow: auto;
+      height: 100vh;
   }
 
   iframe {height: 100vh;}
@@ -1217,7 +1218,7 @@ img[class^="slideDemo"]{
 }
 
 
-/* tall screens and medium-tall screens */
+/* tall screens and medium-tall screens
 @media all and (min-height: 450px) and (max-height: 1050px) {
 	#listIssue {max-height: 95%; min-height: 95%;}
 }
@@ -1225,7 +1226,7 @@ img[class^="slideDemo"]{
 @media all and (min-height: 1051px) {
 	#listIssue {max-height: 100%; min-height: 100%;}
 }
-
+*/
 
 
 
