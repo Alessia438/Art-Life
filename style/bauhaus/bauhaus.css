@@ -37,7 +37,28 @@ body#cover:first-of-type{
   color: #ff0000;;
 }
 
-#cover p{font-size: 1em;}
+#cover p{font-size: 1.5em;}
+
+#cover h1{  
+  font-family: "Bauhaus 93";
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 2.7em;  /*  180%  di 1.5 */
+  padding-top:1vw;
+  padding-bottom:0vw;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  margin-bottom: 14vw; 
+  color: #141514;
+  box-sizing: content-box;  
+  border: 0px;
+  transform: rotate(-15deg); 
+  width: 60vw; 
+  position: relative;
+  right: 12vw;
+  top: -1vw;
+  background-color: #f4e4c8;
+}
 
 /* stile per articoli*/
 
@@ -77,27 +98,6 @@ body{
 section{ 
 border-bottom: 40px solid #d00606;
 bottom: 20pt;
-}
-
-#cover h1{  
-  font-family: "Bauhaus 93";
-  text-align: left;
-  text-transform: uppercase;
-  font-size: 1.8em;  /*  180%  di 1 */
-  padding-top:1vw;
-  padding-bottom:0vw;
-  padding-left: 1vw;
-  padding-right: 1vw;
-  margin-bottom: 14vw; 
-  color: #141514;
-  box-sizing: content-box;  
-  border: 0px;
-  transform: rotate(-15deg); 
-  width: 60vw; 
-  position: relative;
-  right: 12vw;
-  top: -1vw;
-  background-color: #f4e4c8;
 }
 
 h1{  
