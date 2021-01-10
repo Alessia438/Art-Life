@@ -190,11 +190,11 @@ figcaption {
 body > p:last-child:after {
 	content: "";
     background-image: url(social_icons.png);
-    width: 30em;
-    height: 4em;
+    width: 25em;
+    height: 3em;
     display: block;
     background-size: 100%;
-    background-position: -1em center;
+    background-position: -0.5em center;
     background-repeat: no-repeat;
 }
 
@@ -743,38 +743,64 @@ p.quoteAuthor {
 
     /*section:first-of-type > figure {margin: 0.5em 0 0.5em 0;}*/
 
+    img:nth-of-type(odd):not(:first-child), img:nth-of-type(even) {
+	    width: 100%;
+	    margin: 0.5em 0 0.5em 0;
+	    max-height: none;
+	}
+
     figure {
 	    flex-direction: column;
 	    margin: 0.5em 0 0.5em 0;
 	}
 
-	figure:nth-of-type(odd) > figcaption, figure:nth-of-type(even) > figcaption {
+	/* ODD /////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+	figure:nth-of-type(odd) > figcaption, img:nth-of-type(odd):not(:first-child) + figcaption {
 		order: 99;
 		width: 90%;
 		margin: auto;
 		text-align: center;
+		margin-bottom: 1.5em;
 		padding: 0;
+		display: block; /* CONTROLLA CHE VADA BENE PER LE FIGURESS ///////////////////////////////////////////////////////////////////////////////////////*/
 	}
 
-	figure:nth-of-type(odd) > figcaption:after {margin: 1vW 1vW 1vw 1vw;}
+	figure:nth-of-type(odd) > figcaption:after, img:nth-of-type(odd):not(:first-child) + figcaption:after {margin: 1vW 1vW 1vw 1vw;}
 
-	figure:nth-of-type(even) > figcaption {
+	
+	/* EVEN /////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+	figure:nth-of-type(even) > figcaption, img:nth-of-type(even) + figcaption {
 		bottom: 2em;
 	    left: unset;
+	    margin: auto;
+	    width: 90%;
+	    order: 99;
+	    text-align: center;
+	    padding: 0;
 	}
 
-	figure:nth-of-type(even) + *, img:nth-of-type(even):not(:first-child) + figcaption + * {
+	figure:nth-of-type(even) + *, img:nth-of-type(even) + figcaption + * {
 	    margin-top: -1em;
 	}
+
+
+
 
 	h1 { 
 		font-size: 2.2em;
 		margin: 0.5em;
 	}
 
-	h2, { font-size: 1.3em; }
+	h2 { font-size: 1.3em; }
+
+	h2:before {margin-left: -9vw}
 
 	h3, blockquote, .subtitle { font-size: 1.2em; }
+
+	h3:before {margin-left: -10vw}
+
 
 	#coverText h1 { 
 		font-size: 3.2em;
@@ -804,7 +830,7 @@ p.quoteAuthor {
 
 
 	body > p:last-child:after {
-	    width: 20em;
+	    width: 15em;
 	    height: 3em;
 	}
 
