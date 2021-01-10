@@ -891,6 +891,20 @@ div#coverText {
 }
 
 
+@media (max-width: 555px) {
+    #coverText h1 {
+        margin-top: 2em;
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 526px) {
+    #coverText h1 { font-size: 70px !important;}
+}
+
+
+
+
 
 /* smartphones */
 @media (max-width: 480px) {
@@ -996,6 +1010,7 @@ div#coverText {
         width: 100%;
         margin-left: -1.5em !important;
         height: 100%;
+        margin-top: -0.5em;
     }
 
     #coverText p:nth-of-type(2) {
@@ -1014,7 +1029,7 @@ div#coverText {
 
 
     #coverText p:nth-of-type(3) {
-        padding-top: 0.5em;
+        padding-top: 4.5em;
         width: 80%;
         margin: auto;
         margin-bottom: 0;
@@ -1079,15 +1094,17 @@ div#coverText {
 }
 
 
-@media (max-width: 555px) {
-    #coverText h1 {
-        margin-top: 2em;
-        max-width: 90%;
-    }
-}
+
 
 @media (max-width: 355px) {
     #coverText p:nth-of-type(5) {
         background-size: 100% 85%;
     }
+
+    #coverText h1 {font-size: 60px !important;}
+}
+
+
+@media (max-width: 300px) {
+    #coverText h1 { font-size: 50px !important; padding-top: 1.5em !important;}
 }
