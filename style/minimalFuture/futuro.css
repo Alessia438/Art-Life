@@ -864,3 +864,6 @@ p.quoteAuthor {
 
 }
 
+@media (max-width: 1043px) {
+	#coverText p:nth-of-type(1) {margin-top: -15% !important;}
+}

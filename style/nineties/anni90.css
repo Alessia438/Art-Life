@@ -310,8 +310,6 @@ figure:nth-of-type(odd) > img {
 figure:nth-of-type(odd) > figcaption {
     transform: rotate(-10deg);
     margin: 2em 0em 1em 1em !important;
-    padding: 0 !important;
-    max-width: 90% !important;
 }
 
 figure:nth-of-type(odd) > figcaption:before { height: 0 !important; }
@@ -334,23 +332,16 @@ figure:nth-of-type(even) > img {
     width: 70%;
 }
 
-figure:nth-of-type(even) > figcaption {
-    margin-top: 0 !important; 
-    display: unset;
-    max-width: 70% !important;
-}
+figure:nth-of-type(even) > figcaption { max-width: 70% !important; }
 
 
 
 
 
-img {
-	/* position: relative;
-	display: block;*/
-	
-}
 
-img:nth-of-type(3n+1) { /* allineata a sinistra, bordo blu */
+
+
+img:nth-of-type(3n+1):not(:first-child) { /* allineata a sinistra, bordo blu */
 	float: left;
 	left: 3vW;
 	width: 50%;
@@ -358,7 +349,7 @@ img:nth-of-type(3n+1) { /* allineata a sinistra, bordo blu */
     margin-bottom: 0.3em;
 }
 
-img:nth-of-type(3n+1) + figcaption { /* figcaption sotto, sfondo gradiente */
+img:nth-of-type(3n+1):not(:first-child) + figcaption { /* figcaption sotto, sfondo gradiente */
     display: inline-block;
     max-width: 40%;
     width: max-content;
@@ -369,7 +360,7 @@ img:nth-of-type(3n+1) + figcaption { /* figcaption sotto, sfondo gradiente */
     background: linear-gradient(var(--midnight-blue), var(--light-blue));
 }
 
-img:nth-of-type(3n+1) + figcaption:before {
+img:nth-of-type(3n+1):not(:first-child) + figcaption:before {
     content: "";
     margin-left: -5em;
     background-image: url(blue-arrow.png);
@@ -741,8 +732,8 @@ div#coverText {
     order: 5;
     font-family: Heartbit;
     font-size: 2em;
-    width: 12em;
-    height: 4em;
+    width: 50%;
+    height: 100%;
     background-image: url(cover-art5bis.png);
     background-position: -3vw 20%;
     background-size: 110%;
@@ -922,13 +913,19 @@ div#coverText {
     section:first-of-type > figure {
         flex-wrap: wrap-reverse;
         align-items: flex-end;
-        margin-top: 2em !important;
     }
 
     section:first-of-type > figure > figcaption {
-        margin: -0.5em 0em 1em 0em !important;
+        margin: -1.5em 0em 1em 0em !important;
         max-width: 80% !important;
         font-size: 1.2em !important;
+        background-color: rgba(255, 255, 255, 0.7);
+    }
+
+    section:first-of-type > figure > img {
+        max-height: unset !important;
+        width: 100%;
+        margin-top: -1em;
     }
 
     h1 { 
