@@ -389,7 +389,7 @@ p a{color: black;}
   width: 40vmin;
   }
 
-  body{font-size: 0.4em;}
+  body{font-size: 0.8em;}
 }
 
 @media screen and (max-width: 300px) {
