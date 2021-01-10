@@ -12,6 +12,7 @@
 span[onclick] {cursor:pointer;}
 #cover p[onclick]:hover {text-decoration: underline;}
 span[onclick]:hover, time[onclick]:hover {background-color: #b38316c4;}
+
 @media screen and (max-width: 350px){
 	span[onclick]{
 		/*background-color: #b38316c4;*/
@@ -125,9 +126,10 @@ span[onclick]:hover, time[onclick]:hover {background-color: #b38316c4;}
 		background-image: url(../liberty/flower1.png);
 		background-attachment: inherit;
 		background-position: center;
+		background-repeat: no-repeat;
 		background-size: 700px;
-		padding-top: 50vw;
-		padding-bottom: 50vw;
+    		padding-bottom: 20vw;
+		padding-top: 20vw;
 	}
 
 	body#cover{
@@ -178,10 +180,10 @@ span[onclick]:hover, time[onclick]:hover {background-color: #b38316c4;}
 
 	#cover p:nth-child(3) {padding-right: 1vw;}
 
-    #cover p:nth-child(5), #cover p:nth-child(6) {
-    	padding-right:0;
-    	padding-left: 6vw;
- }
+	#cover p:nth-child(5), #cover p:nth-child(6) {
+		padding-right:0;
+		padding-left: 6vw;
+	}
     
 	#cover p:nth-child(6) {
 		padding-left: 9em;
@@ -195,16 +197,16 @@ span[onclick]:hover, time[onclick]:hover {background-color: #b38316c4;}
 }
 
 @media screen and (min-width: 700px){
-	body#cover{
-		/* background-size: 800px; */
-	}
+	
 	#cover h1{font-size: 3.5em;}
+	
 	#cover p{font-size: 1.4em;margin-right: 22vw;margin-left: 20vw;}
+	
 	div#coverText{
-    background-size: 800px;
-    padding-top: 50vw;
-    padding-bottom: 50vw;
-}
+		background-size: 800px;
+		padding-top: 20vw;
+		padding-bottom: 30vw;
+	}
 }
 
 /*LARGE SCREENS*/
@@ -227,19 +229,15 @@ span[onclick]:hover, time[onclick]:hover {background-color: #b38316c4;}
 		margin-block-start: 10vw;
 		/* margin-block-end: 6vw; */
 	}
-	body#cover{
-		background-size: 1000px;
+	
+	#cover h1{/* padding-top:4vw; */}
+		div#coverText{
+		background-size: 950px;
+		padding-top: 20vw;
+		padding-bottom: 30vw;
 	}
-}
-
-
-@media screen and (min-width: 900px){
-    #cover h1{/* padding-top:4vw; */}
-    div#coverText{
-    background-size: 950px;
-    padding-top: 50vw;
-    padding-bottom: 50vw;
-}
+	
+	body#cover{background-size: 1000px;}
 }
 
 @media screen and (min-width: 1200px) {
@@ -250,22 +248,25 @@ span[onclick]:hover, time[onclick]:hover {background-color: #b38316c4;}
 		margin-right: 28vw;
 		margin-left: 28vw;
 		padding: 0;
-		/* text-align: center; */
 		line-height: 1.5em;
 	}
+	
 	#cover h1{
 		font-size: 6em;
 		margin-block-start: 10vw;
+		padding-left: 2vw;
+		padding-right: 2vw;
 	}
-	body#cover{
-		background-size: 1300px;
-	}
+	
+	body#cover{background-size: 1300px;}
+	
 	div#coverText{
-    background-size: 1100px;
-    padding-top: 50vw;
-    padding-bottom: 50vw;
-}
-    #cover p:nth-child(6) {
+		background-size: 1100px;
+		padding-top: 10vw;
+		padding-bottom: 20vw;
+	}
+	
+	#cover p:nth-child(6) {
 		padding-left: 8vw;
 		margin-right: 22vw;
 	}
@@ -299,43 +300,48 @@ span[onclick]:hover, time[onclick]:hover {background-color: #b38316c4;}
 
 
 @media screen and (min-width: 1650px){
-#cover p {
-    margin-left: 33vw;
-    margin-right: 33vw;
-    line-height: 2.5vw;
-    margin-bottom: 3vw;
-}
-#cover p:nth-child(6){
+	body#cover{padding-top: 1vw;}
+	#cover p {
+		margin-left: 33vw;
+		margin-right: 33vw;
+		line-height: 2.5vw;
+		margin-bottom: 3vw;
+	}
+	
+	#cover p:nth-child(6){
 		margin-left: 38vw;
 		margin-right: 35vw;
-		    padding-left: 2vw;
+		padding-left: 2vw;
 	}
-#cover h1{
-    margin-top: 8vw;
-}
-div#coverText{
-    background-size: 1400px;
-    padding-top: 50vw;
-    padding-bottom: 50vw;
-}
-#cover p:nth-child(5){
-    padding-right: 0;
-    padding-left: 0;
-}
-#cover p:nth-child(6) {
-    padding-right: 0;
-    padding-left: 0;
-}
+	
+	#cover h1{margin-top: 8vw;}
+	
+	div#coverText{
+		background-size: 1400px;
+		padding-top: 50vw;
+		padding-bottom: 50vw;
+	}
+	
+	#cover p:nth-child(5){
+		padding-right: 0;
+		padding-left: 0;
+	}
+	
+	#cover p:nth-child(6) {
+		padding-right: 0;
+		padding-left: 0;
+	}
 }
 
 @media screen and (min-width: 2000px){
 
-#cover p {
-    margin-left: 38vw;
-    margin-right: 38vw;
-    line-height: 1.5vw;
-    margin-bottom: 1vw;
-}
+	#cover p {
+		margin-left: 38vw;
+		margin-right: 38vw;
+		line-height: 1.5vw;
+		margin-bottom: 1vw;
+	}
+	
 }
 
 /*/////////ARTICLES/////////*/
