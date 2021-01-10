@@ -224,10 +224,6 @@ figcaption{
 
 img, video{
   width: 60%;
- /* border: 20pt solid #f9f9eb;
- padding-right: 5pt;
-  padding-left: 0pt;
-  padding-top: 2%;*/
   filter:saturate(0%) sepia(100%) contrast(80%) saturate(100%); 
 }
 
@@ -238,7 +234,6 @@ p a{color: black;}
         display: -webkit-box;
         display: -moz-box;
         display: box;
-        
         -webkit-box-orient: vertical;
         -moz-box-orient: vertical;
         box-orient: vertical;
@@ -315,13 +310,6 @@ p a{color: black;}
     top: -5vw;
   }
 
-/*
-    h1{
-    font-size: 4.2em;   era 2 em
-    position: relative;
-    right: 6vw;
-  }
-*/
     h2, h3{font-size: 2.5em;}
 
     p.subtitle{
@@ -344,28 +332,10 @@ p a{color: black;}
 
   /* FOR SMARTPHONE*/  
 @media screen and (max-width: 600px) {
-/*
-  h1{
-    width: 50vw;
-    position: relative;
-    right: 04vw;
-    font-size: 3.42em; era 3em ma deve essere 180%
-  }
-*/
+
   #cover p{
   width: 50vmin;
   }
-
-/*  POTREBBE SERVIRE PER 1980
-  body{
-    margin-right: 0vw;
-    margin-left: 0vw;
-    padding-left: 1vw;
-    padding-top: 1vw;
-    padding-right: 2vw;
-    padding-bottom: 3vw;
-  }
-*/
 
   p.subtitle{
     width: 40vw;
@@ -395,28 +365,15 @@ p a{color: black;}
   h3{font-size: 2em;}
 
   p{font-size: 1.9em;}
-/*METTERE Q IN 1.5 EM?*/
+
   .biblioItem, .pubnote{
   border: 2px solid #d00606; 
 }
-/*
-  p.publicationDate{
-    font-size: 0.7em;
-    width: 40%;
-  }
-  */
 
-  section{ /* come faccio a dirgli solo dopo il primo voglio la riga? */
+  section{ 
     border-bottom: 30px dotted #0066cc;
     bottom: 20pt;
   }
-
-  /*figcaption{font-size: 1.9vw;}*/
-/*
-  blockquote{
-    margin-right: 10mm;
-    font-size: 1.9vw;
-  } */
 
 }  /*chiusura mediaquery*/
 
