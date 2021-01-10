@@ -553,7 +553,7 @@ function highlight(spanId, iFrameN, event) {
 	var elmnt = document.getElementById(iFrameN).contentWindow.document;
 	var curInstance = elmnt.getElementById(spanId);
 	curInstance.style.backgroundColor = "#ffff00";
-	curInstance.scrollIntoView(true);
+	//curInstance.scrollIntoView(true);
 	//curInstance.parentNode.scrollTop = curInstance.offsetTop;
 	//curInstance.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"}); // ?? In alcuni browser non va
 	
@@ -564,8 +564,8 @@ function highlight(spanId, iFrameN, event) {
 	//event.stopPropagation();
 
 	//var top = curInstance.documentOffsetTop() - ( window.innerHeight / 2 );
-	//window.scrollTo( 0, top );
-
+	var top= curInstance.offsetTop-( curInstance.offsetTop-(window.innerHeight / 2 ));
+	document.getElementById(iFrameN).contentWindow.documentdow.body.scrollTo( 0, top );
 
 
 	// animazione scomparsa colore background dopo 10 secondi:
