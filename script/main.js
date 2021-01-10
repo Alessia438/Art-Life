@@ -565,7 +565,7 @@ function highlight(spanId, iFrameN, event) {
 
 	//var top = curInstance.documentOffsetTop() - ( window.innerHeight / 2 );
 	var top= curInstance.offsetTop-( curInstance.offsetTop-(window.innerHeight / 2 ));
-	document.getElementById(iFrameN).contentWindow.documentdow.body.scrollTo( 0, top );
+	document.getElementById(iFrameN).contentWindow.document.body.scrollTo( 0, top );
 
 
 	// animazione scomparsa colore background dopo 10 secondi:
