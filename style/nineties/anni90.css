@@ -904,9 +904,19 @@ div#coverText {
     section:first-of-type > figure {
         flex-wrap: wrap-reverse;
         align-items: flex-end;
+        margin-top: 2em !important;
     }
 
-    h1 { font-size: 34px; }
+    section:first-of-type > figure > figcaption {
+        margin: -0.5em 0em 1em 0em !important;
+        max-width: 80% !important;
+        font-size: 1.2 !important;
+    }
+
+    h1 { 
+        font-size: 40px;
+        width: 95%;
+    }
 
     h2 { 
         font-size: 28px;
@@ -917,21 +927,23 @@ div#coverText {
 
     h3, p.subtitle { font-size: 20px !important; }
 
-    p, blockquote, figcaption, p.byline { font-size: 12px !important; }
+    p, blockquote, figcaption, p.byline { font-size: 15px !important; }
 
     blockquote {
-        width: 80%;
+        width: 90%;
         text-align: center;
     }
 
-    blockquote:nth-of-type(odd) {margin: 1em 1em 1em 2em !important;}
+    blockquote:nth-of-type(odd) {margin: 1em 0.5em 1em 1em !important;}
 
-    blockquote:nth-of-type(odd) {margin: 1em 2em 1em 1em !important;}
+    blockquote:nth-of-type(even) {margin: 1em 1em 1em 0.5em !important;}
 
     figure {
         flex-direction: row;
         max-width: 90%;
     }
+
+    /* figure > figcaption {margin: 2em !important;} */
 
     figure > img {
         max-height: 40vh !important;
@@ -940,8 +952,9 @@ div#coverText {
 
     figure:nth-of-type(odd), figure:nth-of-type(even) {
         width: 90%;
-        max-height: 50vh;
+        /*max-height: 50vh;*/ 
         margin: 0.5em;
+        flex-direction: column;
     }
 
     figure:nth-of-type(odd) > figcaption { margin: 1em; }
