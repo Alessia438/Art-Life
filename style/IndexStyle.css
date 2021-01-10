@@ -666,16 +666,16 @@ SELECTORNAV STICKY PER ISSUE1, ISSUE2, ISSUE3 E ISSUE4 */
 
 
 @media only screen and (max-width: 799px) {
-	#ninetiesClass img, #libertyImg, #bauhausImg {
+	#futureImg, #ninetiesImg, #libertyImg, #bauhausImg {
 		width: 70%;
 		margin: 0 1em 0 15%;
 	}
 }
 
 @media only screen and (min-width: 800px) {
-	#ninetiesClass img {
+	#futureImg, #ninetiesImg {
 		width: 40%;
-        margin: 0em 1em 0em 30%;
+        margin: 1em 1em 0em 30%;
 	}
 	#libertyImg, #bauhausImg {
 	    width: 40%;
