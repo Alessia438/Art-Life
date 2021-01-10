@@ -47,6 +47,28 @@ function fillCover(){
 
 function fillIndex(){
 	if (articleInfo[3].articles.length>0){
+		
+		//RIEMPIMENTO ISSUE
+		var issue = document.createElement('div');
+		issue.className='issue-block';
+			var portrait = document.createElement('div');
+			portrait.className='cutPortrait issueTable';
+				var pic = document.createElement('img');
+				pic.src='articles/issue4_art'+(i+1)+'/'+articleInfo[3].articles[i].imgName;
+			portrait.appendChild(pic);
+			var a = document.createElement('a');
+			a.href = 'Issue4.html#coverPage4';
+				var tBlock = document.createElement('div');
+				tBlock.className='t-block';
+					var head= document.createElement('h3');
+					head.innerHTML='ISSUE N°4';
+				tBlock.appendChild(head);
+			a.appendChild(tBlock);
+		issue.appendChild(portrait);
+		issue.appendChild(a);
+		document.getElementsByClassName('row')[0].appendChild(issue);
+		
+		//RIEMPIMENTO ARTICOLI
 		var hr= document.createElement('hr'),
 		    br = document.createElement('br');
 		hr.id="new";
@@ -60,23 +82,23 @@ function fillIndex(){
 		for (var i=0; i<articleInfo[3].articles.length;i++){
 			var block = document.createElement('div');
 			block.className='block';
-				var a = document.createElement('a');
-				a.href = articleInfo[3].articles[i].articleFile;
-					var land = document.createElement('div');
-					land.className='land artTable';
-						var pic = document.createElement('img');
-						pic.id='firstImage';
-						pic.src='articles/issue4_art'+(i+1)+'/'+articleInfo[3].articles[i].imgName;
-					land.appendChild(pic);
-				a.appendChild(land);
-					var head= document.createElement('h3');
-					head.innerHTML=articleInfo[3].articles[i].articleName;
-				a.appendChild(head);
-					var Hr= document.createElement('hr');
-				a.appendChild(Hr);
-					var p= document.createElement('p');
-					p.innerHTML=articleInfo[3].articles[i].authorName;
-				a.appendChild(p);
+			var a = document.createElement('a');
+			a.href = articleInfo[3].articles[i].articleFile;
+			var land = document.createElement('div');
+			land.className='land artTable';
+			var pic = document.createElement('img');
+			pic.id='firstImage';
+			pic.src='articles/issue4_art'+(i+1)+'/'+articleInfo[3].articles[i].imgName;
+			land.appendChild(pic);
+			a.appendChild(land);
+			var head= document.createElement('h3');
+			head.innerHTML=articleInfo[3].articles[i].articleName;
+			a.appendChild(head);
+			var Hr= document.createElement('hr');
+			a.appendChild(Hr);
+			var p= document.createElement('p');
+			p.innerHTML=articleInfo[3].articles[i].authorName;
+			a.appendChild(p);
 			block.appendChild(a);
 			row.appendChild(block);
 		}
