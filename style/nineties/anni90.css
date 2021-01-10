@@ -349,7 +349,7 @@ img {
 	
 }
 
-img:nth-of-type(3n+1):not(figure>img) { /* allineata a sinistra, bordo blu */
+img:nth-of-type(3n+1) { /* allineata a sinistra, bordo blu */
 	float: left;
 	left: 3vW;
 	width: 50%;
@@ -357,7 +357,7 @@ img:nth-of-type(3n+1):not(figure>img) { /* allineata a sinistra, bordo blu */
     margin-bottom: 0.3em;
 }
 
-img:nth-of-type(3n+1):not(figure:nth-of-type(odd)>img):not(figure:nth-of-type(even)>img) + figcaption { /* figcaption sotto, sfondo gradiente */
+img:nth-of-type(3n+1) + figcaption { /* figcaption sotto, sfondo gradiente */
     display: inline-block;
     max-width: 40%;
     width: max-content;
@@ -365,9 +365,10 @@ img:nth-of-type(3n+1):not(figure:nth-of-type(odd)>img):not(figure:nth-of-type(ev
     float: left;
     margin: -1em 1em 1em 3em;
     padding-top: 0.5em;
+    background: linear-gradient(var(--midnight-blue), var(--light-blue));
 }
 
-img:nth-of-type(3n+1):not(figure:nth-of-type(odd)>img) + figcaption:before {
+img:nth-of-type(3n+1) + figcaption:before {
     content: "";
     margin-left: -5em;
     background-image: url(blue-arrow.png);
@@ -910,7 +911,7 @@ div#coverText {
     section:first-of-type > figure > figcaption {
         margin: -0.5em 0em 1em 0em !important;
         max-width: 80% !important;
-        font-size: 1.2 !important;
+        font-size: 1.2em !important;
     }
 
     h1 { 

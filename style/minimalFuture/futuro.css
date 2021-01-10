@@ -730,6 +730,42 @@ p.quoteAuthor {
     	margin-bottom: 2em;
     }
 
+    p { font-size: 1em; }
+
+	figcaption { font-size: .9em; }
+
+	section:not(:first-of-type) > p:first-of-type:first-letter { font-size: 3.5em; }
+
+
+    p.byline {max-width: 90%; font-size: 1.2em; }
+
+    p.publicationDate, p.publicationPlace, p.subtitle, p.publicationTime, p.lastModification {width: 90%; max-width: 90%;}
+
+    /*section:first-of-type > figure {margin: 0.5em 0 0.5em 0;}*/
+
+    figure {
+	    flex-direction: column;
+	    margin: 0.5em 0 0.5em 0;
+	}
+
+	figure:nth-of-type(odd) > figcaption, figure:nth-of-type(even) > figcaption {
+		order: 99;
+		width: 90%;
+		margin: auto;
+		text-align: center;
+		padding: 0;
+	}
+
+	figure:nth-of-type(odd) > figcaption:after {margin: 1vW 1vW 1vw 1vw;}
+
+	figure:nth-of-type(even) > figcaption {
+		bottom: 2em;
+	    left: unset;
+	}
+
+	figure:nth-of-type(even) + *, img:nth-of-type(even):not(:first-child) + figcaption + * {
+	    margin-top: -1em;
+	}
 
 	h1 { 
 		font-size: 2.2em;
@@ -766,13 +802,11 @@ p.quoteAuthor {
 
 	#coverText p:nth-of-type(5):before { margin-left: -45%; }
 
-	p { font-size: 1em; }
 
-	figcaption { font-size: .9em; }
-
-	section:not(:first-of-type) > p:first-of-type:first-letter { font-size: 3.5em; }
-
-	.byline { font-size: 1.2em; }
+	body > p:last-child:after {
+	    width: 20em;
+	    height: 3em;
+	}
 
 
 
