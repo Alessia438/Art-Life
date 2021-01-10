@@ -52,7 +52,7 @@ body{
 
 body{
   font-family: "Ronda Regular";
-  font-size: 0.9em; /* per thscichold H1 deve essere 180% quindi 1.62 */
+  font-size: 1.5em; /* per thscichold H1 deve essere 180% quindi 1.62 */
   font-weight: lighter;
   text-align: justify; 
   line-height: 1.6; /* 21pt;*/
@@ -104,7 +104,7 @@ h1{
   font-family: "Bauhaus 93";
   text-align: left;
   text-transform: uppercase;
-  font-size: 1.62em;  
+  font-size: 2.7em;  
   padding-top: 10vw; 
   padding-bottom: 10vw; 
   padding-left: 2.5em;
@@ -126,12 +126,12 @@ section h1{
 
 h2{
   font-family: "Bauhaus 93";
-  font-size: 170%;
+  font-size: 2.55em; /*170% di 1.5*/
 }
 
 h3{
   font-family: "Bauhaus 93";
-  font-size: 150%;
+  font-size: 1.50em;
 }
 
 p{
@@ -324,10 +324,10 @@ p a{color: black;}
 
    /* p{font-size: 0.9em;}  era 1.5*/
 
-    p.byline, p.publicationDate, p.publicationTime{font-size:1.35em;}
+    p.byline, p.publicationDate, p.publicationTime{font-size:1.2em;}
 
     p.lastModification{
-      font-size:1.35em;
+      font-size:1.2em;
       width: 20vw;
     }
 
