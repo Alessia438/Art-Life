@@ -300,6 +300,7 @@ span[onclick]:hover, time[onclick]:hover {background-color: #b38316c4;}
 
 
 @media screen and (min-width: 1650px){
+	body#cover{padding-top: 1vw;}
 	#cover p {
 		margin-left: 33vw;
 		margin-right: 33vw;
