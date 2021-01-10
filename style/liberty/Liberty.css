@@ -359,6 +359,7 @@ body:not(#cover){
 	-webkit-box-shadow: 0 0 5vw 1.7vw rgb(214, 171, 130);
 	box-shadow: inset 0 0 5vw 1.7vw rgb(214, 171, 130);
 	padding-bottom: 3vw;
+	padding-top:1.5vw;
 }
 
 [id^="FIGURE-1-"] {
