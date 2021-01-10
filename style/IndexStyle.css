@@ -1211,6 +1211,7 @@ img[class^="slideDemo"]{
       padding: 0 3vw 0 3vw;
       overflow: auto;
       height: 100vh;
+      margin-block-end: 0;
   }
 
   iframe {height: 100vh;}
