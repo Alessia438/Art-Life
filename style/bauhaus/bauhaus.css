@@ -296,6 +296,7 @@ p a{color: black;}
   border: 2px solid #0066cc;
   padding: 1vw;
 }
+
 /*
 @media screen and (max-width: 800px){
 
@@ -324,15 +325,14 @@ p a{color: black;}
    /* p{font-size: 0.9em;}  era 1.5*/
 
    /* p.byline, p.publicationDate, p.publicationTime{font-size:1.53em;}*/
-
+/*
     p.lastModification{
-      /*font-size:1.53em;*/
       width: 20vw;
     }
 
     figcaption{font-size: 0.8em;}
 }
-
+*/
 
   /* FOR SMARTPHONE*/  
 @media screen and (max-width: 600px) {
@@ -391,12 +391,12 @@ p a{color: black;}
   width: 40vmin;
   }
 
-  body{font-size: 0.8em;}
+  body{font-size: 0.7em;}
 }
 
 @media screen and (max-width: 300px) {
  
-  body{font-size: 0.6em;}
+  body{font-size: 0.5em;}
 
   figcaption{width:30vmin;}
 }
