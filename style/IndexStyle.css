@@ -553,7 +553,7 @@ SELECTORNAV STICKY PER ISSUE1, ISSUE2, ISSUE3 E ISSUE4 */
 
     .footer {font-size: small;}
 
-    iframe {padding-top: unset;}
+    iframe {padding-top: 0 !important;}
 }
 
 @media screen and (max-width: 330px){
