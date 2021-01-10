@@ -37,6 +37,8 @@ body#cover:first-of-type{
   color: #ff0000;;
 }
 
+#cover p{font-size: 1.5em;}
+
 /* stile per articoli*/
 
 [onClick] {cursor:pointer;}
@@ -50,7 +52,7 @@ body{
 
 body{
   font-family: "Ronda Regular";
-  font-size: 0.9em; /* per thscichold H1 deve essere 180% */
+  font-size: 1.5em; /* per thscichold H1 deve essere 180% quindi 1.62 */
   font-weight: lighter;
   text-align: justify; 
   line-height: 1.6; /* 21pt;*/
@@ -72,8 +74,6 @@ body{
   padding-bottom: 150%; */
 }
 
-
-
 section{ 
 border-bottom: 40px solid #d00606;
 bottom: 20pt;
@@ -83,7 +83,7 @@ bottom: 20pt;
   font-family: "Bauhaus 93";
   text-align: left;
   text-transform: uppercase;
-  font-size: 3.6vw;  /* siccome p è 2vw, il 180% di 2 è 3.6*/
+  font-size: 2.7em;  /* siccome p è 1.5, il 180%  è 2.7*/
   padding-top:1vw;
   padding-bottom:0vw;
   padding-left: 1vw;
@@ -104,7 +104,7 @@ h1{
   font-family: "Bauhaus 93";
   text-align: left;
   text-transform: uppercase;
-  font-size: 1.62em;  
+  font-size: 2.7em;  
   padding-top: 10vw; 
   padding-bottom: 10vw; 
   padding-left: 2.5em;
@@ -126,12 +126,12 @@ section h1{
 
 h2{
   font-family: "Bauhaus 93";
-  font-size: 170%;
+  font-size: 2.55em; /*170% di 1.5*/
 }
 
 h3{
   font-family: "Bauhaus 93";
-  font-size: 150%;
+  font-size: 1.50em;
 }
 
 p{
@@ -313,24 +313,25 @@ p a{color: black;}
     position: relative;
     top: -5vw;
   }
+    h1{font-size: 1.44em;} /*180% di 0.8*/
 
-    h2, h3{font-size: 2.5em;}
+    h2, h3{font-size: 1.2em;} /*150% di 0.8*/
 
     p.subtitle{
-      font-size: 1.4em;
+      font-size: 1.2em;  
       width: 25vw;
     }
 
-    p{font-size: 1.5em;}
+   /* p{font-size: 0.9em;}  era 1.5*/
 
-    p.byline, p.publicationDate, p.publicationTime{font-size:1.3em;}
+    p.byline, p.publicationDate, p.publicationTime{font-size:1.2em;}
 
     p.lastModification{
-      font-size:1.3em;
+      font-size:1.2em;
       width: 20vw;
     }
 
-    figcaption{font-size: 1.3em;}
+    figcaption{font-size: 0.7em;}
 }
 
 
@@ -345,32 +346,32 @@ p a{color: black;}
 
   p.subtitle{
     width: 40vw;
-    font-size: 1.5em; 
+    font-size: 1.08em; /*180% di 0.6*/ 
     top: -10vw;
   }
 
   p.byline{
     width: 20vw;
-    font-size:1.2em;
+    font-size:1.06em;
     top: -5vw;
   }
 
   p.publicationDate{
-    font-size:1.2em;
+    font-size:1.06em;
     width: 20vw;
     top: -5vw;
   }
 
- p.publicationTime, p.lastModification{font-size:1.2em;}
+ p.publicationTime, p.lastModification{font-size:1.06em;}
 
 
-  figcaption, blockquote, .quoteAuthor{font-size:1.5em;}
+  figcaption, blockquote, .quoteAuthor{font-size:0.8em;}
 
-  h2{font-size: 2.5em;}
+  h2{font-size: 0.9em;} /*150% di 0.6*/ 
 
-  h3{font-size: 2em;}
+  h3{font-size: 0.8em;}
 
-  p{font-size: 1.9em;}
+  /*p{font-size: 0.9em;} */
 
   .biblioItem, .pubnote{
   border: 2px solid #d00606; 
