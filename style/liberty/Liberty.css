@@ -125,9 +125,9 @@ span[onclick]:hover, time[onclick]:hover {background-color: #b38316c4;}
 		background-attachment: inherit;
 		background-position: center;
 		background-repeat: no-repeat;
-		background-size: 700px;
-    		padding-bottom: 30vw;
-		padding-top: 30vw;
+		background-size: 600px;
+    		padding-bottom: 25vw;
+		padding-top: 25vw;
 	}
 
 	body#cover{
@@ -139,6 +139,7 @@ span[onclick]:hover, time[onclick]:hover {background-color: #b38316c4;}
 		font-weight:normal;
 		font-style:normal;
 		margin-bottom:0;
+		padding: 2vw;
 	}
 
 	#cover h1{
