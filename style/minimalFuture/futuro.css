@@ -27,7 +27,7 @@
 
 * {
     box-sizing: border-box;
-    overflow-wrap: break-word;
+    /*overflow-wrap: break-word;
     word-wrap: break-word;
     -ms-word-break: break-all;
     word-break: break-all;
@@ -35,7 +35,7 @@
     -ms-hyphens: auto;
     -moz-hyphens: auto;
     -webkit-hyphens: auto;
-    hyphens: auto;
+    hyphens: auto;*/
 }
 
 
@@ -711,11 +711,13 @@ p.quoteAuthor {
 
 	#coverText h1 {font-size: 4em;/* width: 100%; */}
 
-	#coverText h1:after {width: 70%; margin-left: 3em; height: 90%;}
+	#coverText h1:before { margin-left:-20%; }
+
+	#coverText h1:after {width: 70%; margin-left: 3em; height: 45%;}
 
 	#coverText p { font-size: 2em; width: 60% !important; }
 
-	#coverText p:nth-of-type(5):before {height: 3em; margin-bottom: -40%;}
+	#coverText p:nth-of-type(1) {padding-top: 3em;}
 
 	#coverText p:nth-of-type(2):before {margin-left: -6em; width: 12em;}
 
@@ -725,7 +727,11 @@ p.quoteAuthor {
 
 	#coverText p:nth-of-type(5) {margin-top: 3em;}
 
-	#coverText p:nth-of-type(5):before {margin-left: -6em}	
+	#coverText p:nth-of-type(5):before {
+		height: 3em;
+		margin-bottom: -40%;
+		margin-left: -6em;
+	}
 
 
 }
@@ -759,7 +765,7 @@ p.quoteAuthor {
 
     /*section:first-of-type > figure {margin: 0.5em 0 0.5em 0;}*/
 
-    img:nth-of-type(odd):not(:first-child), img:nth-of-type(even) {
+    figure > img, img:nth-of-type(odd):not(:first-child), img:nth-of-type(even) {
 	    width: 100%;
 	    margin: 0.5em 0 0.5em 0;
 	    max-height: none;
@@ -836,12 +842,14 @@ p.quoteAuthor {
 
 	#coverText p { 
 		font-size: 1.4em;
-		width: 60%;
+		width: 60% !important;
 	}
 
-	#coverText p:nth-of-type(2) {margin-top: 2em;}
+	#coverText p:nth-of-type(1) {padding-top: 4em;}
 
-	#coverText p:nth-of-type(2):before { margin-left: -35%; width: 55vw; }
+	#coverText p:nth-of-type(2) {margin-top: 3em;}
+
+	#coverText p:nth-of-type(2):before { margin-left: -55%; width: 55vw; }
 
 	#coverText p:nth-of-type(3) {margin-top: 15vw;}
 
@@ -852,7 +860,7 @@ p.quoteAuthor {
     	width: 60%;
 	}
 
-	#coverText p:nth-of-type(5):before { margin-left: -45%; }
+	#coverText p:nth-of-type(5):before { margin-left: -55%; }
 
 
 	body:after {

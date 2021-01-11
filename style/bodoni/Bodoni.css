@@ -99,6 +99,11 @@ h2, h3 {
 	margin-top: 6em;
 }
 
+h3 {
+	word-spacing: .3em;
+	letter-spacing: .1em;
+}
+
 p{
 	line-height: 1.5em;
 	letter-spacing: 0.03em;
@@ -113,7 +118,7 @@ p{
 	font-size:1em;
 }
 
-p:first-of-type:not(.subtitle):not(.byline):first-letter{
+p:first-of-type:not(.subtitle):not(.byline):not(.biblioItem):first-letter{
 	font-size: 2em;
 	text-transform:uppercase;
 }
@@ -197,6 +202,12 @@ p.subtitle {
 p.publicationDate, p.publicationTime, p.lastModification {
 	font-size: 0.7em;
 	/*margin-bottom:5em;*/
+}
+
+p.biblioItem {
+    font-style: italic;
+    font-size: .9em;
+    text-indent: initial;
 }
 
 figcaption {margin-bottom:2em;}
@@ -324,6 +335,11 @@ blockquote.person, blockquote.place, blockquote.artwork, blockquote.work, blockq
 		font-size: 1.7em;
 	}
 	
+	h3 {
+		word-spacing: .2em;
+		letter-spacing: inherit;
+	}
+	
 	p{font-size: .8em;}
 	
 	p.subtitle {
@@ -401,6 +417,11 @@ blockquote.person, blockquote.place, blockquote.artwork, blockquote.work, blockq
 	}
 	
 	h1 {font-size: 1.4em;}
+	
+	h3 {
+		font-size: 1em;
+		line-height: 1.5em;
+	}
 	
 	p {
 		font-size: .85em;
