@@ -441,7 +441,8 @@ function goToMetadata(curListId, ulClass){
 	f[0].style.display = 'inline-block';
 	for (var g=1; g<f.length; g++){f[g].style.display = 'block';}
 	e.style.backgroundColor = "#FFDAB9";
-	e.scrollIntoView(true);
+	//e.scrollIntoView(true);
+	e.scrollIntoView({behavior: "smooth", block: "center"});
 
 	// animazione scomparsa colore background dopo 3 secondi:
 	var backgroundAnimation = window.parent.document.createElement('style'); // può andare in contrsto con la funzione che cambia lo stile dell'articolo?
@@ -554,19 +555,7 @@ function highlight(spanId, iFrameN, event) {
 	var curInstance = elmnt.getElementById(spanId);
 	curInstance.style.backgroundColor = "#ffff00";
 	//curInstance.scrollIntoView(true);
-	//curInstance.parentNode.scrollTop = curInstance.offsetTop;
-	curInstance.scrollIntoView({behavior: "smooth", block: "center"}); // ?? In alcuni browser non va
-	
-	//const elementRect = curInstance.getBoundingClientRect();
-	//const absoluteElementTop = elementRect.top + window.pageYOffset;
-	//const middle = absoluteElementTop - (window.innerHeight / 2);
-	//window.scrollTo(0, middle);
-	//event.stopPropagation();
-
-	//var top = curInstance.documentOffsetTop() - ( window.innerHeight / 2 );
-	//var top= curInstance.offsetTop-( curInstance.offsetTop-(window.innerHeight / 2 ));
-	//curInstance.scrollTo( 0, top );
-
+	curInstance.scrollIntoView({behavior: "smooth", block: "center"});
 
 	// animazione scomparsa colore background dopo 10 secondi:
 	var cssAnimation = elmnt.createElement('style'); // può andare in contrsto con la funzione che cambia lo stile dell'articolo?
@@ -717,11 +706,6 @@ function showSlides() {
 	curTimeout = setTimeout(showSlides, 2500);
 	// setTime();
 }
-
-/*function setTime(){
-	clearTimeout(curTimeOut);
-	var curTimeOut = setTimeout(showSlides, 2500);
-}*/
 
 function currentSlide(n, m) {showCurSlide(indexList[m-1]=n, m);}
 
