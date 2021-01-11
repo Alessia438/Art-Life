@@ -298,6 +298,13 @@ p a{color: black;}
 }
 
 
+@media screen and (max-width: 900px) {
+
+   #cover p{
+    font-size: 1.3em;
+    width: 60vmin; 
+  }
+}
 
   /* FOR SMARTPHONE*/  
 @media screen and (max-width: 600px) {
@@ -308,7 +315,7 @@ p a{color: black;}
   }
 
   #cover p{
-    font-size: 0.9em;
+    font-size: 0.8em;
     width: 60vmin; 
   }
 
