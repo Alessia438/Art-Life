@@ -428,6 +428,8 @@ blockquote.person, blockquote.place, blockquote.artwork, blockquote.work, blockq
 		text-align: left;
 	}
 	
+	p:first-of-type {padding-top: .5em;}
+	
 	p.subtitle {
 		font-size: 0.7em;
 		letter-spacing: .1em;
@@ -441,6 +443,15 @@ blockquote.person, blockquote.place, blockquote.artwork, blockquote.work, blockq
 	section+p {margin-top: 10em;}
 	
 	section:nth-child(2) {margin-top: 10em;}
+	
+	[id^="SECTION-2-"] p:first-child {margin-top: 10em;}
+	
+	figcaption {
+		font-size: .55em;
+		line-height: 1.2em;
+		hyphens: auto;
+	}
+
 }
 
 
