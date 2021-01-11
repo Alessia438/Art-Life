@@ -759,7 +759,7 @@ p.quoteAuthor {
 
     /*section:first-of-type > figure {margin: 0.5em 0 0.5em 0;}*/
 
-    img:nth-of-type(odd):not(:first-child), img:nth-of-type(even) {
+    figure > img, img:nth-of-type(odd):not(:first-child), img:nth-of-type(even) {
 	    width: 100%;
 	    margin: 0.5em 0 0.5em 0;
 	    max-height: none;
@@ -841,7 +841,7 @@ p.quoteAuthor {
 
 	#coverText p:nth-of-type(2) {margin-top: 2em;}
 
-	#coverText p:nth-of-type(2):before { margin-left: -35%; width: 55vw; }
+	#coverText p:nth-of-type(2):before { margin-left: -95%; width: 55vw; }
 
 	#coverText p:nth-of-type(3) {margin-top: 15vw;}
 
@@ -852,7 +852,7 @@ p.quoteAuthor {
     	width: 60%;
 	}
 
-	#coverText p:nth-of-type(5):before { margin-left: -45%; }
+	#coverText p:nth-of-type(5):before { margin-left: -95%; }
 
 
 	body:after {
