@@ -817,8 +817,9 @@ div#coverText {
 
     #coverText h1 { 
         font-size: 95px;
-        margin-top: 2.5em;
+        margin-top: 2em;
         width: 90% !important;
+        padding: 0; 
     }
 
     #coverText p { font-size: 16px; }
