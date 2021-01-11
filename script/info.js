@@ -97,11 +97,11 @@ var articleInfo = [
 		'issueFile': 'Issue4.html#coverPage4',
 		 'articles': [
 			 {
-				'articleName': 'How This Con Man’s Wild Testimony Sent Dozens to Jail, and 4 to Death Row',
+				'articleName': 'Validation of a Functional Pyelocalyceal Renal Model for the Evaluation of Renal Calculi Passage While Riding a Roller Coaster',
 				'articleFile': 'Issue4.html#article16',
-				'authorName': 'Miao miao',
-				'imgName': 'img01.jpg',
-				'htmlName': 'NYTimes.html'
+				'authorName': 'Marc A. Mitchell, DO and David D. Wartinger, DO, JD',
+				'imgName': 'img/img1.png',
+				'htmlName': 'roller-stone.html'
 			}
 		 ]
 	}
