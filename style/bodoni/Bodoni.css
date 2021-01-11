@@ -246,7 +246,10 @@ section:nth-child(2) {
         box-ordinal-group: 3;
 }
 
-figure {margin: 0;}
+figure {
+	margin: 0;
+	text-align: center;
+}
 
 [id^="FIGURE-1-"] img, [id^="FIGURE-1-"] video{
 	border-radius: 50%;
