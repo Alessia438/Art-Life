@@ -187,7 +187,7 @@ figcaption {
 }*/
 
 
-body:after {
+body:not(#cover):after {
 	content: "";
     background-image: url(social_icons.png);
     width: 25em;
@@ -713,7 +713,7 @@ p.quoteAuthor {
 
 	#coverText h1:before { margin-left:-20%; }
 
-	#coverText h1:after {width: 70%; margin-left: 3em; height: 45%;}
+	#coverText h1:after {width: 70%; margin-left: 2em; height: 35%;}
 
 	#coverText p { font-size: 2em; width: 60% !important; }
 
@@ -837,7 +837,7 @@ p.quoteAuthor {
 		height: 2em;
 		width: 4em;
 		margin-top: -0.5em;
-		margin-left: 50%;
+		margin-left: 35%;
 	}
 
 	#coverText p { 
@@ -863,7 +863,7 @@ p.quoteAuthor {
 	#coverText p:nth-of-type(5):before { margin-left: -55%; }
 
 
-	body:after {
+	body:not(#cover):after {
 	    width: 15em;
 	    height: 3em;
 	}
