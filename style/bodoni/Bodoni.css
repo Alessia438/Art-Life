@@ -81,6 +81,7 @@ body{
 	padding-top: 20vW;
 	padding-bottom: 30vW;
 	background-size: contain;
+	text-align:center;
 }
 
 h1, .byline {font-family: "Bodoni Seventytwo ITC";}
