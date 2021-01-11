@@ -96,13 +96,13 @@ var articleInfo = [
 		'issueName': 'Issue 4',
 		'issueFile': 'Issue4.html#coverPage4',
 		 'articles': [
-			 {
-				'articleName': 'Validation of a Functional Pyelocalyceal Renal Model for the Evaluation of Renal Calculi Passage While Riding a Roller Coaster',
+			/* {
+				'articleName': '',
 				'articleFile': 'Issue4.html#article16',
-				'authorName': 'Marc A. Mitchell, DO and David D. Wartinger, DO, JD',
-				'imgName': 'img/img1.png',
-				'htmlName': 'roller-stone.html'
-			}
+				'authorName': '',
+				'imgName': '',
+				'htmlName': '.html'
+			} */
 		 ]
 	}
 ]
