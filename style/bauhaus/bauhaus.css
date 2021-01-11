@@ -302,6 +302,15 @@ p a{color: black;}
   /* FOR SMARTPHONE*/  
 @media screen and (max-width: 600px) {
 
+  #cover h1{
+  position:relative;
+  top: -3vw;
+  }
+
+  #cover p{
+    font-size: 0.9em;
+    width: 60vmin; 
+  }
 
   .biblioItem, .pubnote{
   border: 2px solid #d00606; 
@@ -317,13 +326,18 @@ p a{color: black;}
 
 @media screen and (max-width: 400px) {
   #cover p{
-  width: 40vmin;
+    font-size: 1em;
+    width: 60vmin;
   }
+
+  #cover h1{font-size: 1.8em;}
 
   body{font-size: 0.7em;}
 }
 
 @media screen and (max-width: 300px) {
+
+   #cover p{width: 50vmin;}
  
   body{font-size: 0.5em;}
 
@@ -331,6 +345,12 @@ p a{color: black;}
 }
 
 @media screen and (max-width: 200px) {
+
+   #cover p{
+    width: 45vmin;
+    position: relative;
+    right: 9vw;
+ }
  
   body{font-size: 0.3em;}
 
