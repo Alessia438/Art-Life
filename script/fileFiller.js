@@ -3,7 +3,7 @@ function fillTheGaps(){
 		if (articleInfo[n].articles.length>0){
 			var issueBut = document.createElement('a');
 			issueBut.setAttribute('class', 'buttonIssue');
-			issueBut.setAttribute('href', 'https://alessia438.github.io/cookbook-cakes/'+articleInfo[n].issueFile);
+			issueBut.setAttribute('href', 'https://alessia438.github.io/Art-Life/'+articleInfo[n].issueFile);
 			issueBut.innerHTML = articleInfo[n].issueName;
 			if (window.location.href.includes(articleInfo[n].issueFile.split('#')[0])){
 				var curIssue = "issue"+(n+1);
