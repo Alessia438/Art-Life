@@ -199,6 +199,12 @@ p.publicationDate, p.publicationTime, p.lastModification {
 	/*margin-bottom:5em;*/
 }
 
+p.biblioItem {
+    font-style: italic;
+    font-size: .9em;
+    text-indent: initial;
+}
+
 figcaption {margin-bottom:2em;}
 
 [id^="SECTION-1-"] {
