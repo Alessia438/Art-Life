@@ -113,7 +113,7 @@ p{
 	font-size:1em;
 }
 
-p:first-of-type:not(.subtitle):not(.byline):first-letter{
+p:first-of-type:not(.subtitle):not(.byline):not(.biblioItem):first-letter{
 	font-size: 2em;
 	text-transform:uppercase;
 }
