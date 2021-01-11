@@ -540,15 +540,17 @@ p:nth-of-type(9n+9) {
 
 /* COVER ////////////////////////////////////////////////////*/
 
-div#coverText {
-	display: flex;
-    flex-direction: column;
-    -webkit-backdrop-filter: blur(2px);
-  	backdrop-filter: blur(2px); 
-  	background-image: url(quizzes.png), url(annoying-bg.gif);
+#cover {
+    background-image: url(quizzes.png), url(annoying-bg.gif);
     background-repeat: no-repeat, no-repeat;
     background-size: 30%, cover;
     background-position: -2vw -3vw, center;
+}
+
+
+div#coverText {
+    display: flex;
+    flex-direction: column;
 }
 
 #coverText h1 {
@@ -985,6 +987,13 @@ div#coverText {
         margin: -1.5em 0.5em 0.5em 0.5;
     }
 
+    #cover {
+        background-image: url(annoying-bg.gif);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
     #coverText h1 { 
         font-size: 70px;
         margin: 1.5em 0 -0.2em 0em;
@@ -1007,9 +1016,11 @@ div#coverText {
 
 
     #coverText p:nth-of-type(1):before {
-        width: 110%;
+        width: 100%;
         height: 100%;
     }
+
+    #coverText p:nth-of-type(1):after {height: 0;}
 
     #coverText p:nth-of-type(2) {
         background-size: 100% 3em;
@@ -1092,6 +1103,11 @@ div#coverText {
      #coverText p:nth-of-type(1):after {height: 0; content: "";}
 
      #coverText h1 {padding-top: 1.5em;}
+
+     #coverText p:nth-of-type(2) {
+        max-width: 45% !important;
+        width: 45%;
+    }
 }
 
 
