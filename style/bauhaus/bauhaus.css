@@ -186,7 +186,7 @@ p.subtitle{
   font-style:lowercase;
   transform: rotate(90deg);
   box-sizing: content-box;  
-  width: 25%;
+  width: 30%;
   height: 60px;  
   border: 0px;
   position: relative;
@@ -298,6 +298,13 @@ p a{color: black;}
 }
 
 
+@media screen and (max-width: 900px) {
+
+   #cover p{
+    font-size: 1.3em;
+    width: 60vmin; 
+  }
+}
 
   /* FOR SMARTPHONE*/  
 @media screen and (max-width: 600px) {
@@ -308,7 +315,7 @@ p a{color: black;}
   }
 
   #cover p{
-    font-size: 0.9em;
+    font-size: 0.8em;
     width: 60vmin; 
   }
 
@@ -320,6 +327,8 @@ p a{color: black;}
     border-bottom: 30px dotted #0066cc;
     bottom: 20pt;
   }
+
+  .subtitle{font-size:0.8em;}
 
 }  /*chiusura mediaquery*/
 
@@ -337,7 +346,7 @@ p a{color: black;}
 
 @media screen and (max-width: 300px) {
 
-   #cover p{width: 50vmin;}
+  #cover p{width: 50vmin;}
  
   body{font-size: 0.5em;}
 
@@ -353,6 +362,8 @@ p a{color: black;}
  }
  
   body{font-size: 0.3em;}
+
+  .subtitle{font-size:0.4em;}
 
   figcaption{
     width:40vmin;
