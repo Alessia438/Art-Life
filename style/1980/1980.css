@@ -177,7 +177,7 @@ blockquote{
 }
 
 /*nth-child(1)*/
-p:first-of-type:not(.byline):not(.subtitle):not(.publicationDate):first-letter { 
+p:first-of-type:not(.byline):not(.subtitle):not(.publicationDate):not(.quoteAuthor):first-letter { 
     font-weight: bold;
     font-size: 2em;  
     color: #1f1e1e;
