@@ -9,7 +9,10 @@ It is then possible to browse Art&Life issues and read the respective articles s
 
 The documents (articles) contained in this web site have been selected for their length and complexity from existing magazines, webzines and journals. Their publication here is not intended to be an alternative or replace their original locations.
 
+The styles used for this project are Bodoni, Liberty, Bauhaus, Early Eighties, Nineties and Minimalistic Future.
+
 ## Copyrights
 
 All copyrights and related rights on the content remain with their original owners.
+
 All copyright on the typographic and layout choices are 2020 © Alessia Cioffi, Sara Coppini and Ariele Santello.
